@@ -1,0 +1,73 @@
+/* GENERATED FILE */
+<template>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 256 256"
+    :width="displaySize"
+    :height="displaySize"
+    :fill="displayColor"
+    :transform="displayMirrored"
+    v-bind="$attrs"
+    v-on="$listeners"
+  >
+    <g v-if="displayWeight === 'bold'">
+  <rect width="256" height="256" fill="none"/>
+  <rect x="40" y="40" width="176" height="176" rx="8" stroke-width="24" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</g>
+    <g v-if="displayWeight === 'duotone'">
+  <rect width="256" height="256" fill="none"/>
+  <rect x="40" y="40" width="176" height="176" rx="8" opacity="0.2"/>
+  <rect x="40" y="40" width="176" height="176" rx="8" stroke-width="16" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</g>
+    <g v-if="displayWeight === 'fill'">
+  <rect width="256" height="256" fill="none"/>
+  <rect x="32" y="32" width="192" height="192" rx="16"/>
+</g>
+    <g v-if="displayWeight === 'light'">
+  <rect width="256" height="256" fill="none"/>
+  <rect x="40" y="40" width="176" height="176" rx="8" stroke-width="12" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</g>
+    <g v-if="displayWeight === 'thin'">
+  <rect width="256" height="256" fill="none"/>
+  <rect x="40" y="40" width="176" height="176" rx="8" stroke-width="8" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</g>
+    <g v-if="displayWeight === 'regular'">
+  <rect width="256" height="256" fill="none"/>
+  <rect x="40" y="40" width="176" height="176" rx="8" stroke-width="16" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</g>
+  </svg>
+</template>
+
+<script lang="ts">
+import Vue from "vue";
+import {
+  IconComputed,
+  IconProps,
+  PropValidator,
+  IconContext,
+  ContextGetter,
+} from "@/lib/types";
+export default Vue.extend<{}, {}, IconComputed, IconProps>({
+  name: "Stop",
+  props: PropValidator,
+  inject: ContextGetter,
+  computed: {
+    displayWeight() {
+      const { weight, contextWeight } = this as IconProps & IconContext;
+      return weight ?? contextWeight;
+    },
+    displaySize() {
+      const { size, contextSize } = this as IconProps & IconContext;
+      return size ?? contextSize;
+    },
+    displayColor() {
+      const { color, contextColor } = this as IconProps & IconContext;
+      return color ?? contextColor;
+    },
+    displayMirrored() {
+      const { mirrored, contextMirrored } = this as IconProps & IconContext;
+      return mirrored ?? contextMirrored ? "scale(-1, 1)" : undefined;
+    },
+  },
+});
+</script>

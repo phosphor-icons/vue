@@ -1,0 +1,87 @@
+/* GENERATED FILE */
+<template>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 256 256"
+    :width="displaySize"
+    :height="displaySize"
+    :fill="displayColor"
+    :transform="displayMirrored"
+    v-bind="$attrs"
+    v-on="$listeners"
+  >
+    <g v-if="displayWeight === 'bold'">
+  <rect x="60.11775" y="68.11775" width="135.7645" height="135.7645" transform="translate(-58.67619 130.34315) rotate(-45)" stroke-width="24" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <line x1="128" y1="40" x2="104" y2="16" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
+  <line x1="32" y1="136" x2="224" y2="136" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
+  <line x1="223.99414" y1="136.00586" x2="223.99414" y2="200.00586" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
+</g>
+    <g v-if="displayWeight === 'duotone'">
+  <polygon points="224 136 128 232 32 136 224 136" opacity="0.2"/>
+  <rect x="60.11775" y="68.11775" width="135.7645" height="135.7645" transform="translate(-58.67619 130.34315) rotate(-45)" stroke-width="16" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <line x1="128" y1="40" x2="104" y2="16" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
+  <line x1="32" y1="136" x2="224" y2="136" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
+  <line x1="223.99414" y1="136.00586" x2="223.99414" y2="200.00586" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
+</g>
+    <g v-if="displayWeight === 'fill'">
+  <rect x="60.11775" y="68.11775" width="135.7645" height="135.7645" transform="translate(-58.67619 130.34315) rotate(-45)" stroke-width="16" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <polygon points="224 136 128 232 32 136 224 136"/>
+  <line x1="128" y1="40" x2="104" y2="16" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
+  <line x1="32" y1="136" x2="224" y2="136" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
+  <line x1="223.99414" y1="136.00586" x2="223.99414" y2="200.00586" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
+  <rect x="60.11775" y="68.11775" width="135.7645" height="135.7645" transform="translate(-58.67619 130.34315) rotate(-45)" stroke-width="16" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</g>
+    <g v-if="displayWeight === 'light'">
+  <rect x="60.11775" y="68.11775" width="135.7645" height="135.7645" transform="translate(-58.67619 130.34315) rotate(-45)" stroke-width="12" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <line x1="128" y1="40" x2="104" y2="16" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
+  <line x1="32" y1="136" x2="224" y2="136" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
+  <line x1="223.99414" y1="136.00586" x2="223.99414" y2="200.00586" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
+</g>
+    <g v-if="displayWeight === 'thin'">
+  <rect x="60.11775" y="68.11775" width="135.7645" height="135.7645" transform="translate(-58.67619 130.34315) rotate(-45)" stroke-width="8" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <line x1="128" y1="40" x2="104" y2="16" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+  <line x1="32" y1="136" x2="224" y2="136" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+  <line x1="223.99414" y1="136.00586" x2="223.99414" y2="200.00586" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+</g>
+    <g v-if="displayWeight === 'regular'">
+  <rect x="60.11775" y="68.11775" width="135.7645" height="135.7645" transform="translate(-58.67619 130.34315) rotate(-45)" stroke-width="16" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <line x1="128" y1="40" x2="104" y2="16" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
+  <line x1="32" y1="136" x2="224" y2="136" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
+  <line x1="223.99414" y1="136.00586" x2="223.99414" y2="200.00586" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
+</g>
+  </svg>
+</template>
+
+<script lang="ts">
+import Vue from "vue";
+import {
+  IconComputed,
+  IconProps,
+  PropValidator,
+  IconContext,
+  ContextGetter,
+} from "@/lib/types";
+export default Vue.extend<{}, {}, IconComputed, IconProps>({
+  name: "PaintBucket",
+  props: PropValidator,
+  inject: ContextGetter,
+  computed: {
+    displayWeight() {
+      const { weight, contextWeight } = this as IconProps & IconContext;
+      return weight ?? contextWeight;
+    },
+    displaySize() {
+      const { size, contextSize } = this as IconProps & IconContext;
+      return size ?? contextSize;
+    },
+    displayColor() {
+      const { color, contextColor } = this as IconProps & IconContext;
+      return color ?? contextColor;
+    },
+    displayMirrored() {
+      const { mirrored, contextMirrored } = this as IconProps & IconContext;
+      return mirrored ?? contextMirrored ? "scale(-1, 1)" : undefined;
+    },
+  },
+});
+</script>
