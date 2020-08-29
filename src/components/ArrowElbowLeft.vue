@@ -14,23 +14,23 @@
   <polyline points="96 80 24 80 24 152" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
   <polyline points="232 96 136 192 24 80" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
 </g>
-    <g v-if="displayWeight === 'duotone'">
+    <g v-else-if="displayWeight === 'duotone'">
   <polyline points="96 80 24 80 24 152" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
   <polyline points="232 96 136 192 24 80" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
 </g>
-    <g v-if="displayWeight === 'fill'">
+    <g v-else-if="displayWeight === 'fill'">
   <polyline points="96 80 24 80 24 152" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
   <polyline points="232 96 136 192 24 80" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
 </g>
-    <g v-if="displayWeight === 'light'">
+    <g v-else-if="displayWeight === 'light'">
   <polyline points="96 80 24 80 24 152" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
   <polyline points="232 96 136 192 24 80" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
 </g>
-    <g v-if="displayWeight === 'thin'">
+    <g v-else-if="displayWeight === 'thin'">
   <polyline points="96 80 24 80 24 152" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
   <polyline points="232 96 136 192 24 80" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
 </g>
-    <g v-if="displayWeight === 'regular'">
+    <g v-else-if="displayWeight === 'regular'">
   <polyline points="96 80 24 80 24 152" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
   <polyline points="232 96 136 192 24 80" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
 </g>

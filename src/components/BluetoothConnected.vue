@@ -19,7 +19,7 @@
   <circle cx="196" cy="128.00647" r="16"/>
   <circle cx="52" cy="128.00647" r="16"/>
 </g>
-    <g v-if="displayWeight === 'duotone'">
+    <g v-else-if="displayWeight === 'duotone'">
   <rect width="256" height="256" fill="none"/>
   <polygon points="120 32.003 184 80.003 120 128.003 120 32.003" opacity="0.2"/>
   <polygon points="120 128.003 184 176.003 120 224.003 120 128.003" opacity="0.2"/>
@@ -30,7 +30,7 @@
   <circle cx="196" cy="128.00647" r="12"/>
   <circle cx="52" cy="128.00647" r="12"/>
 </g>
-    <g v-if="displayWeight === 'fill'">
+    <g v-else-if="displayWeight === 'fill'">
   <rect x="-0.00098" width="256" height="256" fill="none"/>
   <polygon points="119.999 32.003 183.999 80.003 119.999 128.003 119.999 32.003" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
   <polygon points="119.999 128.003 183.999 176.003 119.999 224.003 119.999 128.003" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
@@ -39,7 +39,7 @@
   <circle cx="195.99902" cy="128.00647" r="12"/>
   <circle cx="51.99902" cy="128.00647" r="12"/>
 </g>
-    <g v-if="displayWeight === 'light'">
+    <g v-else-if="displayWeight === 'light'">
   <rect width="256" height="256" fill="none"/>
   <polygon points="120 32.003 184 80.003 120 128.003 120 32.003" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
   <polygon points="120 128.003 184 176.003 120 224.003 120 128.003" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
@@ -48,7 +48,7 @@
   <circle cx="196" cy="128.00647" r="9"/>
   <circle cx="52" cy="128.00647" r="9"/>
 </g>
-    <g v-if="displayWeight === 'thin'">
+    <g v-else-if="displayWeight === 'thin'">
   <rect width="256" height="256" fill="none"/>
   <polygon points="120 32.003 184 80.003 120 128.003 120 32.003" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
   <polygon points="120 128.003 184 176.003 120 224.003 120 128.003" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
@@ -57,7 +57,7 @@
   <circle cx="196" cy="128.00647" r="6"/>
   <circle cx="52" cy="128.00647" r="6"/>
 </g>
-    <g v-if="displayWeight === 'regular'">
+    <g v-else-if="displayWeight === 'regular'">
   <rect width="256" height="256" fill="none"/>
   <polygon points="120 32.003 184 80.003 120 128.003 120 32.003" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
   <polygon points="120 128.003 184 176.003 120 224.003 120 128.003" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>

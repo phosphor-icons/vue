@@ -97,10 +97,13 @@ function generateComponents() {
       continue;
     }
 
-    for (let weight in icon) {
+    Object.keys(icon).forEach((weight, index) => {
+      // for (let weight in icon) {
       componentString += `\
-    <g v-if="displayWeight === '${weight}'">${icon[weight]}</g>\n`;
-    }
+    <g v${index > 0 ? "-else" : ""}-if="displayWeight === '${weight}'">${
+        icon[weight]
+      }</g>\n`;
+    });
     componentString += `\
   </svg>
 </template>
@@ -144,7 +147,7 @@ export default Vue.extend<{}, {}, IconComputed, IconProps>({
         path.join(COMPONENTS_PATH, `${name}.vue`),
         componentString,
         {
-          flag: "w",
+          flag: "w"
         }
       );
       console.log(`${chalk.inverse.green(" DONE ")} ${name}`);
@@ -183,7 +186,7 @@ export { default as ${name} } from "../components/${name}.vue";
   }
   try {
     fs.writeFileSync(INDEX_PATH, indexString, {
-      flag: "w",
+      flag: "w"
     });
     console.log(chalk.green("Export success"));
   } catch (err) {

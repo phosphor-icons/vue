@@ -16,31 +16,31 @@
   <line x1="112" y1="40" x2="80" y2="216" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
   <line x1="32" y1="160" x2="212.36376" y2="160" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
 </g>
-    <g v-if="displayWeight === 'duotone'">
+    <g v-else-if="displayWeight === 'duotone'">
   <line x1="43.63636" y1="96" x2="224" y2="96" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
   <line x1="176" y1="40" x2="144" y2="216" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
   <line x1="112" y1="40" x2="80" y2="216" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
   <line x1="32" y1="160" x2="212.36376" y2="160" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
 </g>
-    <g v-if="displayWeight === 'fill'">
+    <g v-else-if="displayWeight === 'fill'">
   <line x1="43.63636" y1="96" x2="224" y2="96" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
   <line x1="176" y1="40" x2="144" y2="216" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
   <line x1="112" y1="40" x2="80" y2="216" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
   <line x1="32" y1="160" x2="212.36376" y2="160" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
 </g>
-    <g v-if="displayWeight === 'light'">
+    <g v-else-if="displayWeight === 'light'">
   <line x1="43.63636" y1="96" x2="224" y2="96" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
   <line x1="176" y1="40" x2="144" y2="216" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
   <line x1="112" y1="40" x2="80" y2="216" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
   <line x1="32" y1="160" x2="212.36376" y2="160" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
 </g>
-    <g v-if="displayWeight === 'thin'">
+    <g v-else-if="displayWeight === 'thin'">
   <line x1="43.63636" y1="96" x2="224" y2="96" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
   <line x1="176" y1="40" x2="144" y2="216" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
   <line x1="112" y1="40" x2="80" y2="216" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
   <line x1="32" y1="160" x2="212.36376" y2="160" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
 </g>
-    <g v-if="displayWeight === 'regular'">
+    <g v-else-if="displayWeight === 'regular'">
   <line x1="43.63636" y1="96" x2="224" y2="96" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
   <line x1="176" y1="40" x2="144" y2="216" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
   <line x1="112" y1="40" x2="80" y2="216" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>

@@ -356,7 +356,7 @@ import {
   WifiHigh,
   WifiMedium,
   WifiLow,
-  WifiNone,
+  WifiNone
 } from "@/entry";
 
 interface AppData {
@@ -419,7 +419,7 @@ export default Vue.extend({
     WifiHigh,
     WifiMedium,
     WifiLow,
-    WifiNone,
+    WifiNone
   },
   data(): AppData {
     return {
@@ -436,21 +436,21 @@ export default Vue.extend({
       locked: true,
       muted: false,
       volume: "high",
-      wifi: "high",
+      wifi: "high"
     };
   },
   computed: {
     filled() {
       const { checked } = this as AppData;
       return checked ? "fill" : "regular";
-    },
+    }
   },
   provide() {
     return {
       weight: "duotone",
       size: 64,
       color: "#41B883",
-      mirrored: false,
+      mirrored: false
     };
   },
   methods: {
@@ -560,7 +560,7 @@ export default Vue.extend({
           this.wifi = "high";
           break;
       }
-    },
-  },
+    }
+  }
 });
 </script>

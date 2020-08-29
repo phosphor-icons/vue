@@ -19,7 +19,7 @@
   <path d="M119.99414,55.96668a96,96,0,0,1-96,96" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
   <path d="M61.46882,88.00088a96.03987,96.03987,0,0,0,90.52532,63.9658" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
 </g>
-    <g v-if="displayWeight === 'duotone'">
+    <g v-else-if="displayWeight === 'duotone'">
   <rect width="256" height="256" fill="none"/>
   <polyline points="231.994 216 175.994 104 119.994 216" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
   <line x1="135.99414" y1="184" x2="215.99414" y2="184" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
@@ -28,7 +28,7 @@
   <path d="M119.99414,55.96668a96,96,0,0,1-96,96" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
   <path d="M61.46882,88.00088a96.03987,96.03987,0,0,0,90.52532,63.9658" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
 </g>
-    <g v-if="displayWeight === 'fill'">
+    <g v-else-if="displayWeight === 'fill'">
   <rect x="-0.00586" width="256" height="256" fill="none"/>
   <polyline points="231.988 216 175.988 104 119.988 216" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
   <line x1="135.98828" y1="184" x2="215.98828" y2="184" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
@@ -37,7 +37,7 @@
   <path d="M119.98828,55.96668a96,96,0,0,1-96,96" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
   <path d="M61.463,88.00088a96.03987,96.03987,0,0,0,90.52532,63.9658" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
 </g>
-    <g v-if="displayWeight === 'light'">
+    <g v-else-if="displayWeight === 'light'">
   <rect width="256" height="256" fill="none"/>
   <polyline points="231.994 216 175.994 104 119.994 216" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
   <line x1="135.99414" y1="184" x2="215.99414" y2="184" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
@@ -46,7 +46,7 @@
   <path d="M119.99414,55.96668a96,96,0,0,1-96,96" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
   <path d="M61.46882,88.00088a96.03987,96.03987,0,0,0,90.52532,63.9658" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
 </g>
-    <g v-if="displayWeight === 'thin'">
+    <g v-else-if="displayWeight === 'thin'">
   <rect width="256" height="256" fill="none"/>
   <polyline points="231.994 216 175.994 104 119.994 216" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
   <line x1="135.99414" y1="184" x2="215.99414" y2="184" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
@@ -55,7 +55,7 @@
   <path d="M119.99414,55.96668a96,96,0,0,1-96,96" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
   <path d="M61.46882,88.00088a96.03987,96.03987,0,0,0,90.52532,63.9658" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
 </g>
-    <g v-if="displayWeight === 'regular'">
+    <g v-else-if="displayWeight === 'regular'">
   <rect width="256" height="256" fill="none"/>
   <polyline points="231.994 216 175.994 104 119.994 216" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
   <line x1="135.99414" y1="184" x2="215.99414" y2="184" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>

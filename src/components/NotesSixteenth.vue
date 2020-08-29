@@ -15,27 +15,27 @@
   <circle cx="88" cy="184" r="40" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
   <polyline points="128 184 128 40 216 40 216 88 128 88" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
 </g>
-    <g v-if="displayWeight === 'duotone'">
+    <g v-else-if="displayWeight === 'duotone'">
   <rect width="256" height="256" fill="none"/>
   <circle cx="88" cy="184" r="40" opacity="0.2"/>
   <circle cx="88" cy="184" r="40" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
   <polyline points="128 184 128 40 216 40 216 88 128 88" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
 </g>
-    <g v-if="displayWeight === 'fill'">
+    <g v-else-if="displayWeight === 'fill'">
   <rect width="256" height="256" fill="none"/>
   <path d="M216,32H128a8.00039,8.00039,0,0,0-8,8V148.26123A47.97353,47.97353,0,1,0,136,184V88h80a8.00039,8.00039,0,0,0,8-8V40A8.00039,8.00039,0,0,0,216,32Z"/>
 </g>
-    <g v-if="displayWeight === 'light'">
+    <g v-else-if="displayWeight === 'light'">
   <rect width="256" height="256" fill="none"/>
   <circle cx="88" cy="184" r="40" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
   <polyline points="128 184 128 40 216 40 216 88 128 88" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
 </g>
-    <g v-if="displayWeight === 'thin'">
+    <g v-else-if="displayWeight === 'thin'">
   <rect width="256" height="256" fill="none"/>
   <circle cx="88" cy="184" r="40" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
   <polyline points="128 184 128 40 216 40 216 88 128 88" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
 </g>
-    <g v-if="displayWeight === 'regular'">
+    <g v-else-if="displayWeight === 'regular'">
   <rect width="256" height="256" fill="none"/>
   <circle cx="88" cy="184" r="40" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
   <polyline points="128 184 128 40 216 40 216 88 128 88" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>

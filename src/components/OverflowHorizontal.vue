@@ -16,31 +16,31 @@
   <circle cx="128" cy="128" r="16"/>
   <circle cx="192" cy="128" r="16"/>
 </g>
-    <g v-if="displayWeight === 'duotone'">
+    <g v-else-if="displayWeight === 'duotone'">
   <rect width="256" height="256" fill="none"/>
   <circle cx="128" cy="128" r="12"/>
   <circle cx="64" cy="128" r="12"/>
   <circle cx="192" cy="128" r="12"/>
 </g>
-    <g v-if="displayWeight === 'fill'">
+    <g v-else-if="displayWeight === 'fill'">
   <rect width="256" height="256" fill="none"/>
   <circle cx="128" cy="128" r="32"/>
   <circle cx="48" cy="128" r="32"/>
   <circle cx="208" cy="128" r="32"/>
 </g>
-    <g v-if="displayWeight === 'light'">
+    <g v-else-if="displayWeight === 'light'">
   <rect width="256" height="256" fill="none"/>
   <circle cx="128" cy="128" r="9"/>
   <circle cx="64" cy="128" r="9"/>
   <circle cx="192" cy="128" r="9"/>
 </g>
-    <g v-if="displayWeight === 'thin'">
+    <g v-else-if="displayWeight === 'thin'">
   <rect width="256" height="256" fill="none"/>
   <circle cx="128" cy="128" r="6"/>
   <circle cx="64" cy="128" r="6"/>
   <circle cx="192" cy="128" r="6"/>
 </g>
-    <g v-if="displayWeight === 'regular'">
+    <g v-else-if="displayWeight === 'regular'">
   <rect x="0.00098" width="256" height="256" fill="none"/>
   <circle cx="128.00098" cy="128" r="12"/>
   <circle cx="64.00098" cy="128" r="12"/>

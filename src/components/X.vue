@@ -17,35 +17,35 @@
     <line x1="200" y1="200" x2="56" y2="56" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
   </g>
 </g>
-    <g v-if="displayWeight === 'duotone'">
+    <g v-else-if="displayWeight === 'duotone'">
   <rect width="256" height="256" fill="none"/>
   <g>
     <line x1="200" y1="56" x2="56" y2="200" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
     <line x1="200" y1="200" x2="56" y2="56" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
   </g>
 </g>
-    <g v-if="displayWeight === 'fill'">
+    <g v-else-if="displayWeight === 'fill'">
   <rect width="256" height="256" fill="none"/>
   <g>
     <line x1="200" y1="56" x2="56" y2="200" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
     <line x1="200" y1="200" x2="56" y2="56" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
   </g>
 </g>
-    <g v-if="displayWeight === 'light'">
+    <g v-else-if="displayWeight === 'light'">
   <rect width="256" height="256" fill="none"/>
   <g>
     <line x1="200" y1="56" x2="56" y2="200" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
     <line x1="200" y1="200" x2="56" y2="56" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
   </g>
 </g>
-    <g v-if="displayWeight === 'thin'">
+    <g v-else-if="displayWeight === 'thin'">
   <rect width="256" height="256" fill="none"/>
   <g>
     <line x1="200" y1="56" x2="56" y2="200" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
     <line x1="200" y1="200" x2="56" y2="56" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
   </g>
 </g>
-    <g v-if="displayWeight === 'regular'">
+    <g v-else-if="displayWeight === 'regular'">
   <rect width="256" height="256" fill="none"/>
   <g>
     <line x1="200" y1="56" x2="56" y2="200" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>

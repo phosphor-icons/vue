@@ -14,23 +14,23 @@
   <circle cx="128" cy="128" r="96" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
   <rect x="100" y="100" width="56" height="56" stroke-width="24" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
-    <g v-if="displayWeight === 'duotone'">
+    <g v-else-if="displayWeight === 'duotone'">
   <circle cx="128" cy="128" r="96" opacity="0.2"/>
   <circle cx="128" cy="128" r="96" fill="none" :stroke="displayColor" stroke-miterlimit="10" stroke-width="16"/>
   <rect x="100" y="100" width="56" height="56" stroke-width="16" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
-    <g v-if="displayWeight === 'fill'">
+    <g v-else-if="displayWeight === 'fill'">
   <path d="M128,24A104,104,0,1,0,232,128,104.11791,104.11791,0,0,0,128,24Zm36,132a8.00008,8.00008,0,0,1-8,8H100a8.00008,8.00008,0,0,1-8-8V100a8.00008,8.00008,0,0,1,8-8h56a8.00008,8.00008,0,0,1,8,8Z"/>
 </g>
-    <g v-if="displayWeight === 'light'">
+    <g v-else-if="displayWeight === 'light'">
   <circle cx="128" cy="128" r="96" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
   <rect x="100" y="100" width="56" height="56" stroke-width="12" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
-    <g v-if="displayWeight === 'thin'">
+    <g v-else-if="displayWeight === 'thin'">
   <circle cx="128" cy="128" r="96" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
   <rect x="100" y="100" width="56" height="56" stroke-width="8" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
-    <g v-if="displayWeight === 'regular'">
+    <g v-else-if="displayWeight === 'regular'">
   <circle cx="128" cy="128" r="96" fill="none" :stroke="displayColor" stroke-miterlimit="10" stroke-width="16"/>
   <rect x="100" y="100" width="56" height="56" stroke-width="16" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round"/>
 </g>

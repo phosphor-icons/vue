@@ -25,7 +25,7 @@ npm install --save phosphor-vue
 
 ## Usage
 
-```tsx
+```html
 <template>
   <div>
     <Horse />
@@ -35,15 +35,15 @@ npm install --save phosphor-vue
 </template>
 
 <script>
-import { Horse, Heart, Cube } from "phosphor-vue";
-export default {
-  name: "PhosphorVue",
-  components: {
-    Horse,
-    Heart,
-    Cube,
-  },
-};
+  import { Horse, Heart, Cube } from "phosphor-vue";
+  export default {
+    name: "PhosphorVue",
+    components: {
+      Horse,
+      Heart,
+      Cube
+    }
+  };
 </script>
 ```
 
@@ -60,31 +60,30 @@ Icon components accept all attributes that you can pass to a normal SVG element,
 
 Phosphor takes advantage of Vue's `provide`/`inject` options to make applying a default style to all icons simple. Create a `provide` object or function at the root of the app (or anywhere above the icons in the tree) that returns a configuration object with props to be applied by default to all icons below it in the tree:
 
-```tsx
+```html
 <template>
   <div>
-    <Horse /> {/* I'm lime-green, 32px, and bold! */}
-    <Heart /> {/* Me too! */}
-    <Cube />  {/* Me three :) */}
+    <Horse /> {/* I'm lime-green, 32px, and bold! */} <Heart /> {/* Me too! */}
+    <Cube /> {/* Me three :) */}
   </div>
 </template>
 
 <script>
-import { Horse, Heart, Cube } from "phosphor-vue";
-export default {
-  name: "PhosphorVue",
-  components: {
-    Horse,
-    Heart,
-    Cube,
-  },
-  provide: {
-    color: "limegreen",
-    size: 32,
-    weight: "bold",
-    mirrored: false,
-  },
-};
+  import { Horse, Heart, Cube } from "phosphor-vue";
+  export default {
+    name: "PhosphorVue",
+    components: {
+      Horse,
+      Heart,
+      Cube
+    },
+    provide: {
+      color: "limegreen",
+      size: 32,
+      weight: "bold",
+      mirrored: false
+    }
+  };
 </script>
 ```
 
@@ -92,7 +91,7 @@ You may create multiple providers for styling icons differently in separate regi
 
 **Note:** The **color**, **size**, **weight**, and **mirrored** properties are all _optional_ props when creating a context, but default to `"currentColor"`, `"1em"`, `"regular"` and `false`. Also be aware that when using this API, per Vue:
 
-> > The `provide` and `inject` bindings are NOT reactive. This is intentional. However, if you pass down an observed object, properties on that object do remain reactive.
+> The `provide` and `inject` bindings are NOT reactive. This is intentional. However, if you pass down an observed object, properties on that object do remain reactive.
 
 ## License
 

@@ -18,7 +18,7 @@
   </g>
   <rect x="40" y="40" width="176" height="176" rx="8" stroke-width="24" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
 </g>
-    <g v-if="displayWeight === 'duotone'">
+    <g v-else-if="displayWeight === 'duotone'">
   <rect width="256" height="256" fill="none"/>
   <rect x="40" y="40" width="176" height="176" rx="8" opacity="0.2"/>
   <g>
@@ -27,7 +27,7 @@
   </g>
   <rect x="40" y="40" width="176" height="176" rx="8" stroke-width="16" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
 </g>
-    <g v-if="displayWeight === 'fill'">
+    <g v-else-if="displayWeight === 'fill'">
   <rect width="256" height="256" fill="none"/>
   <g>
     <path d="M148,151.99219H100a8.006,8.006,0,0,1-7.54687-10.66406l24-67.99219a8.00328,8.00328,0,0,1,15.09375,5.32812l-20.24219,57.32813H148a8,8,0,0,1,0,16Z" fill="none"/>
@@ -35,7 +35,7 @@
   </g>
   <path d="M208,32H48A16.02085,16.02085,0,0,0,32,48V208a16.02085,16.02085,0,0,0,16,16H208a16.02085,16.02085,0,0,0,16-16V48A16.02085,16.02085,0,0,0,208,32ZM156,175.99219a8,8,0,0,1-16,0v-24H100a8.006,8.006,0,0,1-7.54687-10.66406l24-67.99219a8.00328,8.00328,0,0,1,15.09375,5.32812l-20.24219,57.32813H140v-24a8,8,0,0,1,16,0Z"/>
 </g>
-    <g v-if="displayWeight === 'light'">
+    <g v-else-if="displayWeight === 'light'">
   <rect width="256" height="256" fill="none"/>
   <g>
     <polyline points="123.998 76 100 143.994 148 143.994" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
@@ -43,7 +43,7 @@
   </g>
   <rect x="40" y="40" width="176" height="176" rx="8" stroke-width="12" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
 </g>
-    <g v-if="displayWeight === 'thin'">
+    <g v-else-if="displayWeight === 'thin'">
   <rect width="256" height="256" fill="none"/>
   <g>
     <polyline points="123.998 76 100 143.994 148 143.994" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
@@ -51,7 +51,7 @@
   </g>
   <rect x="40" y="40" width="176" height="176" rx="8" stroke-width="8" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
 </g>
-    <g v-if="displayWeight === 'regular'">
+    <g v-else-if="displayWeight === 'regular'">
   <rect width="256" height="256" fill="none"/>
   <g>
     <polyline points="123.998 76 100 143.994 148 143.994" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>

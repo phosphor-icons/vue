@@ -14,24 +14,24 @@
   <rect width="256" height="256" fill="none"/>
   <polygon points="168 16 48 128 168 240 168 16" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
 </g>
-    <g v-if="displayWeight === 'duotone'">
+    <g v-else-if="displayWeight === 'duotone'">
   <rect width="256" height="256" fill="none"/>
   <polygon points="168 16 48 128 168 240 168 16" opacity="0.2"/>
   <polygon points="168 16 48 128 168 240 168 16" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
 </g>
-    <g v-if="displayWeight === 'fill'">
+    <g v-else-if="displayWeight === 'fill'">
   <rect width="256" height="256" fill="none"/>
   <path d="M171.18848,8.6626a7.99868,7.99868,0,0,0-8.64746,1.48877l-120,112a8.00136,8.00136,0,0,0,0,11.69726l120,112A8.0002,8.0002,0,0,0,176,240V16A8.00032,8.00032,0,0,0,171.18848,8.6626Z"/>
 </g>
-    <g v-if="displayWeight === 'light'">
+    <g v-else-if="displayWeight === 'light'">
   <rect width="256" height="256" fill="none"/>
   <polygon points="168 16 48 128 168 240 168 16" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
 </g>
-    <g v-if="displayWeight === 'thin'">
+    <g v-else-if="displayWeight === 'thin'">
   <rect width="256" height="256" fill="none"/>
   <polygon points="168 16 48 128 168 240 168 16" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
 </g>
-    <g v-if="displayWeight === 'regular'">
+    <g v-else-if="displayWeight === 'regular'">
   <rect width="256" height="256" fill="none"/>
   <polygon points="168 16 48 128 168 240 168 16" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
 </g>

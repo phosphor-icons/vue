@@ -22,7 +22,7 @@
   <circle cx="232" cy="128" r="18"/>
   <circle cx="201.53911" cy="54.46089" r="18"/>
 </g>
-    <g v-if="displayWeight === 'duotone'">
+    <g v-else-if="displayWeight === 'duotone'">
   <rect width="256" height="256" fill="none"/>
   <circle cx="128" cy="128" r="64" opacity="0.2"/>
   <circle cx="128" cy="128" r="64" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
@@ -35,7 +35,7 @@
   <circle cx="232" cy="128" r="12"/>
   <circle cx="201.53911" cy="54.46089" r="12"/>
 </g>
-    <g v-if="displayWeight === 'fill'">
+    <g v-else-if="displayWeight === 'fill'">
   <rect width="256" height="256" fill="none"/>
   <g>
     <circle cx="128" cy="128" r="72"/>
@@ -49,7 +49,7 @@
     <circle cx="201.53912" cy="54.46094" r="12.00006"/>
   </g>
 </g>
-    <g v-if="displayWeight === 'light'">
+    <g v-else-if="displayWeight === 'light'">
   <rect width="256" height="256" fill="none"/>
   <circle cx="128" cy="128" r="64" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
   <circle cx="128" cy="24" r="9"/>
@@ -61,7 +61,7 @@
   <circle cx="232" cy="128" r="9"/>
   <circle cx="201.53911" cy="54.46089" r="9"/>
 </g>
-    <g v-if="displayWeight === 'thin'">
+    <g v-else-if="displayWeight === 'thin'">
   <rect width="256" height="256" fill="none"/>
   <circle cx="128" cy="128" r="64" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
   <circle cx="128" cy="24" r="6"/>
@@ -73,7 +73,7 @@
   <circle cx="232" cy="128" r="6"/>
   <circle cx="201.53911" cy="54.46089" r="6"/>
 </g>
-    <g v-if="displayWeight === 'regular'">
+    <g v-else-if="displayWeight === 'regular'">
   <rect width="256" height="256" fill="none"/>
   <circle cx="128" cy="128" r="64" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
   <circle cx="128" cy="24" r="12"/>

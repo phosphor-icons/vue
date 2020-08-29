@@ -18,7 +18,7 @@
   </g>
   <line x1="48" y1="215.99627" x2="208" y2="215.99627" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
 </g>
-    <g v-if="displayWeight === 'duotone'">
+    <g v-else-if="displayWeight === 'duotone'">
   <rect width="256" height="256" fill="none"/>
   <g>
     <line x1="128" y1="23.99627" x2="128" y2="183.99627" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
@@ -26,7 +26,7 @@
   </g>
   <line x1="48" y1="215.99627" x2="208" y2="215.99627" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
 </g>
-    <g v-if="displayWeight === 'fill'">
+    <g v-else-if="displayWeight === 'fill'">
   <rect width="256" height="256" fill="none"/>
   <g>
     <line x1="128" y1="23.99627" x2="128" y2="183.99627" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
@@ -34,7 +34,7 @@
   </g>
   <line x1="48" y1="215.99627" x2="208" y2="215.99627" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
 </g>
-    <g v-if="displayWeight === 'light'">
+    <g v-else-if="displayWeight === 'light'">
   <rect width="256" height="256" fill="none"/>
   <g>
     <line x1="128" y1="23.99627" x2="128" y2="183.99627" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
@@ -42,7 +42,7 @@
   </g>
   <line x1="48" y1="215.99627" x2="208" y2="215.99627" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
 </g>
-    <g v-if="displayWeight === 'thin'">
+    <g v-else-if="displayWeight === 'thin'">
   <rect width="256" height="256" fill="none"/>
   <g>
     <line x1="128" y1="23.99627" x2="128" y2="183.99627" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
@@ -50,7 +50,7 @@
   </g>
   <line x1="48" y1="215.99627" x2="208" y2="215.99627" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
 </g>
-    <g v-if="displayWeight === 'regular'">
+    <g v-else-if="displayWeight === 'regular'">
   <g>
     <rect width="256" height="256" fill="none"/>
     <g>

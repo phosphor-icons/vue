@@ -25,7 +25,7 @@
   <path d="M192.00623,128.009a258.52451,258.52451,0,0,1-1.98054,31.99945" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
   <path d="M183.94126,192.00844q-2.2851,8.87835-5.18116,17.5" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
 </g>
-    <g v-if="displayWeight === 'duotone'">
+    <g v-else-if="displayWeight === 'duotone'">
   <rect width="256" height="256" fill="none"/>
   <path d="M32.00586,128.00847a95.845,95.845,0,0,1-5.46267,32.00025" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
   <path d="M96.00623,128.009a32,32,0,0,1,64,0" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
@@ -40,7 +40,7 @@
   <path d="M192.00623,128.009a258.52451,258.52451,0,0,1-1.98054,31.99945" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
   <path d="M183.94126,192.00844q-2.2851,8.87835-5.18116,17.5" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
 </g>
-    <g v-if="displayWeight === 'fill'">
+    <g v-else-if="displayWeight === 'fill'">
   <rect width="256" height="256" fill="none"/>
   <path d="M32.00586,128.00847a95.845,95.845,0,0,1-5.46267,32.00025" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
   <path d="M96.00623,128.009a32,32,0,0,1,64,0" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
@@ -55,7 +55,7 @@
   <path d="M192.00623,128.009a258.52451,258.52451,0,0,1-1.98054,31.99945" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
   <path d="M183.94126,192.00844q-2.2851,8.87835-5.18116,17.5" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
 </g>
-    <g v-if="displayWeight === 'light'">
+    <g v-else-if="displayWeight === 'light'">
   <rect width="256" height="256" fill="none"/>
   <path d="M32.00586,128.00847a95.845,95.845,0,0,1-5.46267,32.00025" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
   <path d="M96.00623,128.009a32,32,0,0,1,64,0" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
@@ -70,7 +70,7 @@
   <path d="M192.00623,128.009a258.52451,258.52451,0,0,1-1.98054,31.99945" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
   <path d="M183.94126,192.00844q-2.2851,8.87835-5.18116,17.5" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
 </g>
-    <g v-if="displayWeight === 'thin'">
+    <g v-else-if="displayWeight === 'thin'">
   <rect width="256" height="256" fill="none"/>
   <path d="M32.00586,128.00847a95.845,95.845,0,0,1-5.46267,32.00025" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
   <path d="M96.00623,128.009a32,32,0,0,1,64,0" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
@@ -85,7 +85,7 @@
   <path d="M192.00623,128.009a258.52451,258.52451,0,0,1-1.98054,31.99945" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
   <path d="M183.94126,192.00844q-2.2851,8.87835-5.18116,17.5" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
 </g>
-    <g v-if="displayWeight === 'regular'">
+    <g v-else-if="displayWeight === 'regular'">
   <rect width="256" height="256" fill="none"/>
   <path d="M32.00586,128.00847a95.845,95.845,0,0,1-5.46267,32.00025" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
   <path d="M96.00623,128.009a32,32,0,0,1,64,0" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>

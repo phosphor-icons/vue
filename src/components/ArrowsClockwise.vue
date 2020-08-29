@@ -16,31 +16,31 @@
   <polyline points="79.833 156.284 31.833 156.284 31.833 204.284" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
   <path d="M190.2254,190.2254a88,88,0,0,1-124.4508,0L31.83348,156.28427" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
 </g>
-    <g v-if="displayWeight === 'duotone'">
+    <g v-else-if="displayWeight === 'duotone'">
   <polyline points="176.167 99.716 224.167 99.716 224.167 51.716" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
   <path d="M65.7746,65.7746a88,88,0,0,1,124.4508,0l33.94112,33.94113" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
   <polyline points="79.833 156.284 31.833 156.284 31.833 204.284" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
   <path d="M190.2254,190.2254a88,88,0,0,1-124.4508,0L31.83348,156.28427" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
 </g>
-    <g v-if="displayWeight === 'fill'">
+    <g v-else-if="displayWeight === 'fill'">
   <polyline points="176.167 99.716 224.167 99.716 224.167 51.716" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
   <path d="M65.7746,65.7746a88,88,0,0,1,124.4508,0l33.94112,33.94113" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
   <polyline points="79.833 156.284 31.833 156.284 31.833 204.284" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
   <path d="M190.2254,190.2254a88,88,0,0,1-124.4508,0L31.83348,156.28427" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
 </g>
-    <g v-if="displayWeight === 'light'">
+    <g v-else-if="displayWeight === 'light'">
   <polyline points="176.167 99.716 224.167 99.716 224.167 51.716" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
   <path d="M65.7746,65.7746a88,88,0,0,1,124.4508,0l33.94112,33.94113" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
   <polyline points="79.833 156.284 31.833 156.284 31.833 204.284" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
   <path d="M190.2254,190.2254a88,88,0,0,1-124.4508,0L31.83348,156.28427" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
 </g>
-    <g v-if="displayWeight === 'thin'">
+    <g v-else-if="displayWeight === 'thin'">
   <polyline points="176.167 99.716 224.167 99.716 224.167 51.716" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
   <path d="M65.7746,65.7746a88,88,0,0,1,124.4508,0l33.94112,33.94113" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
   <polyline points="79.833 156.284 31.833 156.284 31.833 204.284" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
   <path d="M190.2254,190.2254a88,88,0,0,1-124.4508,0L31.83348,156.28427" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
 </g>
-    <g v-if="displayWeight === 'regular'">
+    <g v-else-if="displayWeight === 'regular'">
   <polyline points="176.167 99.716 224.167 99.716 224.167 51.716" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
   <path d="M65.7746,65.7746a88,88,0,0,1,124.4508,0l33.94112,33.94113" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
   <polyline points="79.833 156.284 31.833 156.284 31.833 204.284" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>

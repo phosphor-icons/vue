@@ -22,7 +22,7 @@
   <path d="M110.567,208.009q-3.04226,6.62844-6.56532,12.97841" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
   <path d="M127.97656,128.00842a192.34737,192.34737,0,0,1-6.0489,48.00023" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
 </g>
-    <g v-if="displayWeight === 'duotone'">
+    <g v-else-if="displayWeight === 'duotone'">
   <rect x="-0.0293" width="256" height="256" fill="none"/>
   <path d="M175.97656,128.009a239.296,239.296,0,0,1-17.934,91.1974" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
   <path d="M79.97656,128.009a143.35055,143.35055,0,0,1-17.98007,69.73221" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
@@ -34,7 +34,7 @@
   <path d="M110.55525,208.009q-3.04226,6.62844-6.56531,12.97841" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
   <path d="M127.96484,128.00842a192.34737,192.34737,0,0,1-6.0489,48.00023" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
 </g>
-    <g v-if="displayWeight === 'fill'">
+    <g v-else-if="displayWeight === 'fill'">
   <rect x="-0.02344" width="256" height="256" fill="none"/>
   <path d="M175.98242,128.009a239.296,239.296,0,0,1-17.934,91.1974" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
   <path d="M79.98242,128.009a143.35055,143.35055,0,0,1-17.98007,69.73221" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
@@ -46,7 +46,7 @@
   <path d="M110.56111,208.009q-3.04225,6.62844-6.56531,12.97841" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
   <path d="M127.9707,128.00842a192.34737,192.34737,0,0,1-6.0489,48.00023" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
 </g>
-    <g v-if="displayWeight === 'light'">
+    <g v-else-if="displayWeight === 'light'">
   <rect x="-0.01172" width="256" height="256" fill="none"/>
   <path d="M175.99414,128.009a239.296,239.296,0,0,1-17.934,91.1974" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
   <path d="M79.99414,128.009a143.35045,143.35045,0,0,1-17.98008,69.73221" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
@@ -58,7 +58,7 @@
   <path d="M110.57283,208.009q-3.04225,6.62844-6.56532,12.97841" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
   <path d="M127.98242,128.00842a192.34737,192.34737,0,0,1-6.0489,48.00023" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
 </g>
-    <g v-if="displayWeight === 'thin'">
+    <g v-else-if="displayWeight === 'thin'">
   <rect x="-0.00586" width="256" height="256" fill="none"/>
   <path d="M176,128.009a239.296,239.296,0,0,1-17.934,91.1974" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
   <path d="M80,128.009a143.35045,143.35045,0,0,1-17.98008,69.73221" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
@@ -70,7 +70,7 @@
   <path d="M110.57869,208.009q-3.04225,6.62844-6.56532,12.97841" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
   <path d="M127.98828,128.00842a192.34737,192.34737,0,0,1-6.0489,48.00023" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
 </g>
-    <g v-if="displayWeight === 'regular'">
+    <g v-else-if="displayWeight === 'regular'">
   <rect width="256" height="256" fill="none"/>
   <path d="M176.00586,128.009a239.296,239.296,0,0,1-17.934,91.1974" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
   <path d="M80.00586,128.009a143.35045,143.35045,0,0,1-17.98008,69.73221" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>

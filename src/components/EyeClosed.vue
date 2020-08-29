@@ -17,35 +17,35 @@
   <line x1="101.72972" y1="149.24366" x2="94.61483" y2="189.59423" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
   <line x1="54.80859" y1="127.27241" x2="31.88882" y2="166.97062" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
 </g>
-    <g v-if="displayWeight === 'duotone'">
+    <g v-else-if="displayWeight === 'duotone'">
   <path d="M16,80.00781S48,152,128,152,240,80.00781,240,80.00781" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
   <line x1="201.14971" y1="127.30467" x2="223.95961" y2="166.81257" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
   <line x1="154.18201" y1="149.26298" x2="161.29573" y2="189.60689" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
   <line x1="101.72972" y1="149.24366" x2="94.61483" y2="189.59423" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
   <line x1="54.80859" y1="127.27241" x2="31.88882" y2="166.97062" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
 </g>
-    <g v-if="displayWeight === 'fill'">
+    <g v-else-if="displayWeight === 'fill'">
   <path d="M16,80.00781S48,152,128,152,240,80.00781,240,80.00781" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
   <line x1="201.14971" y1="127.30467" x2="223.95961" y2="166.81257" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
   <line x1="154.18201" y1="149.26298" x2="161.29573" y2="189.60689" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
   <line x1="101.72972" y1="149.24366" x2="94.61483" y2="189.59423" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
   <line x1="54.80859" y1="127.27241" x2="31.88882" y2="166.97062" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
 </g>
-    <g v-if="displayWeight === 'light'">
+    <g v-else-if="displayWeight === 'light'">
   <path d="M16,80.00781S48,152,128,152,240,80.00781,240,80.00781" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
   <line x1="201.14971" y1="127.30467" x2="223.95961" y2="166.81257" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
   <line x1="154.18201" y1="149.26298" x2="161.29573" y2="189.60689" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
   <line x1="101.72972" y1="149.24366" x2="94.61483" y2="189.59423" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
   <line x1="54.80859" y1="127.27241" x2="31.88882" y2="166.97062" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
 </g>
-    <g v-if="displayWeight === 'thin'">
+    <g v-else-if="displayWeight === 'thin'">
   <path d="M16,80.00781S48,152,128,152,240,80.00781,240,80.00781" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
   <line x1="201.14971" y1="127.30467" x2="223.95961" y2="166.81257" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
   <line x1="154.18201" y1="149.26298" x2="161.29573" y2="189.60689" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
   <line x1="101.72972" y1="149.24366" x2="94.61483" y2="189.59423" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
   <line x1="54.80859" y1="127.27241" x2="31.88882" y2="166.97062" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
 </g>
-    <g v-if="displayWeight === 'regular'">
+    <g v-else-if="displayWeight === 'regular'">
   <path d="M16,80.00781S48,152,128,152,240,80.00781,240,80.00781" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
   <line x1="201.14971" y1="127.30467" x2="223.95961" y2="166.81257" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
   <line x1="154.18201" y1="149.26298" x2="161.29573" y2="189.60689" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>

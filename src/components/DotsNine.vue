@@ -22,7 +22,7 @@
   <circle cx="128" cy="196" r="18"/>
   <circle cx="196" cy="196" r="18"/>
 </g>
-    <g v-if="displayWeight === 'duotone'">
+    <g v-else-if="displayWeight === 'duotone'">
   <rect width="256" height="256" fill="none"/>
   <g>
     <circle cx="60" cy="60" r="12"/>
@@ -40,7 +40,7 @@
     <circle cx="196" cy="196" r="12"/>
   </g>
 </g>
-    <g v-if="displayWeight === 'fill'">
+    <g v-else-if="displayWeight === 'fill'">
   <rect width="256" height="256" fill="none"/>
   <g>
     <circle cx="60" cy="60" r="12"/>
@@ -58,7 +58,7 @@
     <circle cx="196" cy="196" r="12"/>
   </g>
 </g>
-    <g v-if="displayWeight === 'light'">
+    <g v-else-if="displayWeight === 'light'">
   <rect width="256" height="256" fill="none"/>
   <circle cx="60" cy="60" r="9"/>
   <circle cx="128" cy="60" r="9"/>
@@ -70,7 +70,7 @@
   <circle cx="128" cy="196" r="9"/>
   <circle cx="196" cy="196" r="9"/>
 </g>
-    <g v-if="displayWeight === 'thin'">
+    <g v-else-if="displayWeight === 'thin'">
   <rect width="256" height="256" fill="none"/>
   <circle cx="60" cy="60" r="6"/>
   <circle cx="128" cy="60" r="6"/>
@@ -85,7 +85,7 @@
     <rect x="-256" width="256" height="256" fill="none"/>
   </g>
 </g>
-    <g v-if="displayWeight === 'regular'">
+    <g v-else-if="displayWeight === 'regular'">
   <rect width="256" height="256" fill="none"/>
   <g>
     <circle cx="60" cy="60" r="12"/>

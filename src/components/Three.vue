@@ -14,26 +14,26 @@
   <rect width="256" height="256" fill="none"/>
   <path d="M79.99366,31.98432h96l-55.98732,80.01559a56,56,0,1,1-39.598,95.598" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
 </g>
-    <g v-if="displayWeight === 'duotone'">
+    <g v-else-if="displayWeight === 'duotone'">
   <rect width="256" height="256" fill="none"/>
   <path d="M79.99366,31.98432h96l-55.98732,80.01559a56,56,0,1,1-39.598,95.598" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
 </g>
-    <g v-if="displayWeight === 'fill'">
+    <g v-else-if="displayWeight === 'fill'">
   <g opacity="0.2">
     <rect x="256" width="256" height="256" fill="none"/>
   </g>
   <rect width="256" height="256" fill="none"/>
   <path d="M79.99366,31.98432h96l-55.98732,80.01559a56,56,0,1,1-39.598,95.598" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
 </g>
-    <g v-if="displayWeight === 'light'">
+    <g v-else-if="displayWeight === 'light'">
   <rect width="256" height="256" fill="none"/>
   <path d="M79.99366,31.98432h96l-55.98732,80.01559a56,56,0,1,1-39.598,95.598" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
 </g>
-    <g v-if="displayWeight === 'thin'">
+    <g v-else-if="displayWeight === 'thin'">
   <rect width="256" height="256" fill="none"/>
   <path d="M79.99366,31.98432h96l-55.98732,80.01559a56,56,0,1,1-39.598,95.598" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
 </g>
-    <g v-if="displayWeight === 'regular'">
+    <g v-else-if="displayWeight === 'regular'">
   <rect width="256" height="256" fill="none"/>
   <path d="M79.99366,31.98432h96l-55.98732,80.01559a56,56,0,1,1-39.598,95.598" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
 </g>
