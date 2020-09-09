@@ -89,7 +89,7 @@ function generateComponents() {
     if (!checkFiles(icon)) {
       fails += 1;
       console.error(
-        `${chalk.inverse.red(" FAIL ")} ${name} is missing weights`
+        `${chalk.inverse.red(" FAIL ")} Ph${name} is missing weights`
       );
       console.group();
       console.error(weights.filter((w) => !Object.keys(icon).includes(w)));
@@ -118,7 +118,7 @@ import {
   ContextGetter,
 } from "@/lib/types";
 export default Vue.extend<{}, {}, IconComputed, IconProps>({
-  name: "${name}",
+  name: "Ph${name}",
   props: PropValidator,
   inject: ContextGetter,
   computed: {
@@ -144,17 +144,17 @@ export default Vue.extend<{}, {}, IconComputed, IconProps>({
 `;
     try {
       fs.writeFileSync(
-        path.join(COMPONENTS_PATH, `${name}.vue`),
+        path.join(COMPONENTS_PATH, `Ph${name}.vue`),
         componentString,
         {
           flag: "w"
         }
       );
-      console.log(`${chalk.inverse.green(" DONE ")} ${name}`);
+      console.log(`${chalk.inverse.green(" DONE ")} Ph${name}`);
       passes += 1;
     } catch (err) {
       console.error(
-        `${chalk.inverse.red(" FAIL ")} ${name} could not be saved`
+        `${chalk.inverse.red(" FAIL ")} Ph${name} could not be saved`
       );
       console.group();
       console.error(err);
@@ -181,7 +181,7 @@ function generateExports() {
       .map((substr) => substr.replace(/^\w/, (c) => c.toUpperCase()))
       .join("");
     indexString += `\
-export { default as ${name} } from "../components/${name}.vue";
+export { default as Ph${name} } from "../components/Ph${name}.vue";
 `;
   }
   try {

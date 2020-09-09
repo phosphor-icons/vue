@@ -2,39 +2,56 @@
   <div id="app" style="user-select: none;">
     <section>
       <h1>Passed Props</h1>
-      <At :weight="weight" :size="size" :color="color" :mirrored="mirrored" />
-      <ChartPieSlice
+      <PhAt :weight="weight" :size="size" :color="color" :mirrored="mirrored" />
+      <PhChartPieSlice
         :weight="weight"
         :size="size"
         :color="color"
         :mirrored="mirrored"
       />
-      <FingerprintDense
+      <PhFingerprintDense
         :weight="weight"
         :size="size"
         :color="color"
         :mirrored="mirrored"
       />
-      <MapTrifold
+      <PhMapTrifold
         :weight="weight"
         :size="size"
         :color="color"
         :mirrored="mirrored"
       />
-      <Package
+      <PhPackage
         :weight="weight"
         :size="size"
         :color="color"
         :mirrored="mirrored"
       />
-      <Pen :weight="weight" :size="size" :color="color" :mirrored="mirrored" />
-      <StackIsometric
+      <PhPen
         :weight="weight"
         :size="size"
         :color="color"
         :mirrored="mirrored"
       />
-      <Truck
+      <PhStackIsometric
+        :weight="weight"
+        :size="size"
+        :color="color"
+        :mirrored="mirrored"
+      />
+      <PhTruck
+        :weight="weight"
+        :size="size"
+        :color="color"
+        :mirrored="mirrored"
+      />
+      <PhCircle
+        :weight="weight"
+        :size="size"
+        :color="color"
+        :mirrored="mirrored"
+      />
+      <PhTable
         :weight="weight"
         :size="size"
         :color="color"
@@ -43,25 +60,27 @@
     </section>
     <section>
       <h1>Injected Context</h1>
-      <At />
-      <ChartPieSlice />
-      <FingerprintDense />
-      <MapTrifold />
-      <Package />
-      <Pen />
-      <StackIsometric />
-      <Truck @click="test" />
+      <PhAt />
+      <PhChartPieSlice />
+      <PhFingerprintDense />
+      <PhMapTrifold />
+      <PhPackage />
+      <PhPen />
+      <PhStackIsometric />
+      <PhTruck @click="test" />
+      <PhCircle />
+      <PhTable />
     </section>
     <section>
       <h1>Toggleables</h1>
-      <Heart
+      <PhHeart
         :weight="filled"
         :size="size"
         :color="color"
         :mirrored="mirrored"
         @click="check"
       />
-      <Eye
+      <PhEye
         v-if="visible"
         :weight="filled"
         :size="size"
@@ -69,7 +88,7 @@
         :mirrored="mirrored"
         @click="hide"
       />
-      <EyeSlash
+      <PhEyeSlash
         v-if="!visible"
         :weight="filled"
         :size="size"
@@ -77,7 +96,7 @@
         :mirrored="mirrored"
         @click="hide"
       />
-      <Hourglass
+      <PhHourglass
         v-if="time === 'none'"
         :weight="filled"
         :size="size"
@@ -85,7 +104,7 @@
         :mirrored="mirrored"
         @click="elapse"
       />
-      <HourglassHigh
+      <PhHourglassHigh
         v-if="time === 'high'"
         :weight="filled"
         :size="size"
@@ -93,7 +112,7 @@
         :mirrored="mirrored"
         @click="elapse"
       />
-      <HourglassMedium
+      <PhHourglassMedium
         v-if="time === 'medium'"
         :weight="filled"
         :size="size"
@@ -101,7 +120,7 @@
         :mirrored="mirrored"
         @click="elapse"
       />
-      <HourglassLow
+      <PhHourglassLow
         v-if="time === 'low'"
         :weight="filled"
         :size="size"
@@ -109,7 +128,7 @@
         :mirrored="mirrored"
         @click="elapse"
       />
-      <BatteryFull
+      <PhBatteryFull
         v-if="charge === 'full'"
         :weight="filled"
         :size="size"
@@ -117,7 +136,7 @@
         :mirrored="mirrored"
         @click="discharge"
       />
-      <BatteryHigh
+      <PhBatteryHigh
         v-if="charge === 'high'"
         :weight="filled"
         :size="size"
@@ -125,7 +144,7 @@
         :mirrored="mirrored"
         @click="discharge"
       />
-      <BatteryMedium
+      <PhBatteryMedium
         v-if="charge === 'medium'"
         :weight="filled"
         :size="size"
@@ -133,7 +152,7 @@
         :mirrored="mirrored"
         @click="discharge"
       />
-      <BatteryLow
+      <PhBatteryLow
         v-if="charge === 'low'"
         :weight="filled"
         :size="size"
@@ -141,7 +160,7 @@
         :mirrored="mirrored"
         @click="discharge"
       />
-      <BatteryEmpty
+      <PhBatteryEmpty
         v-if="charge === 'empty'"
         :weight="filled"
         :size="size"
@@ -149,7 +168,7 @@
         :mirrored="mirrored"
         @click="discharge"
       />
-      <BatteryCharging
+      <PhBatteryCharging
         v-if="charge === 'charging'"
         :weight="filled"
         :size="size"
@@ -157,7 +176,7 @@
         :mirrored="mirrored"
         @click="discharge"
       />
-      <CellSignalFull
+      <PhCellSignalFull
         v-if="signal === 'full'"
         :weight="filled"
         :size="size"
@@ -165,7 +184,7 @@
         :mirrored="mirrored"
         @click="changeSignal"
       />
-      <CellSignalHigh
+      <PhCellSignalHigh
         v-if="signal === 'high'"
         :weight="filled"
         :size="size"
@@ -173,7 +192,7 @@
         :mirrored="mirrored"
         @click="changeSignal"
       />
-      <CellSignalMedium
+      <PhCellSignalMedium
         v-if="signal === 'medium'"
         :weight="filled"
         :size="size"
@@ -181,7 +200,7 @@
         :mirrored="mirrored"
         @click="changeSignal"
       />
-      <CellSignalLow
+      <PhCellSignalLow
         v-if="signal === 'low'"
         :weight="filled"
         :size="size"
@@ -189,7 +208,7 @@
         :mirrored="mirrored"
         @click="changeSignal"
       />
-      <CellSignalNone
+      <PhCellSignalNone
         v-if="signal === 'none'"
         :weight="filled"
         :size="size"
@@ -197,7 +216,7 @@
         :mirrored="mirrored"
         @click="changeSignal"
       />
-      <Folder
+      <PhFolder
         v-if="!open"
         :weight="filled"
         :size="size"
@@ -205,7 +224,7 @@
         :mirrored="mirrored"
         @click="changeOpen"
       />
-      <FolderOpen
+      <PhFolderOpen
         v-if="open"
         :weight="filled"
         :size="size"
@@ -213,7 +232,7 @@
         :mirrored="mirrored"
         @click="changeOpen"
       />
-      <LockKey
+      <PhLockKey
         v-if="locked"
         :weight="filled"
         :size="size"
@@ -221,7 +240,7 @@
         :mirrored="mirrored"
         @click="changeLock"
       />
-      <LockOpenKey
+      <PhLockOpenKey
         v-if="!locked"
         :weight="filled"
         :size="size"
@@ -229,7 +248,7 @@
         :mirrored="mirrored"
         @click="changeLock"
       />
-      <Microphone
+      <PhMicrophone
         v-if="!muted"
         :weight="filled"
         :size="size"
@@ -237,7 +256,7 @@
         :mirrored="mirrored"
         @click="changeMute"
       />
-      <MicrophoneOff
+      <PhMicrophoneOff
         v-if="muted"
         :weight="filled"
         :size="size"
@@ -245,7 +264,7 @@
         :mirrored="mirrored"
         @click="changeMute"
       />
-      <SpeakerHigh
+      <PhSpeakerHigh
         v-if="volume === 'high'"
         :weight="filled"
         :size="size"
@@ -253,7 +272,7 @@
         :mirrored="mirrored"
         @click="changeVolume"
       />
-      <SpeakerLow
+      <PhSpeakerLow
         v-if="volume === 'low'"
         :weight="filled"
         :size="size"
@@ -261,7 +280,7 @@
         :mirrored="mirrored"
         @click="changeVolume"
       />
-      <SpeakerNone
+      <PhSpeakerNone
         v-if="volume === 'none'"
         :weight="filled"
         :size="size"
@@ -269,7 +288,7 @@
         :mirrored="mirrored"
         @click="changeVolume"
       />
-      <SpeakerX
+      <PhSpeakerX
         v-if="volume === 'mute'"
         :weight="filled"
         :size="size"
@@ -277,7 +296,7 @@
         :mirrored="mirrored"
         @click="changeVolume"
       />
-      <WifiHigh
+      <PhWifiHigh
         v-if="wifi === 'high'"
         :weight="filled"
         :size="size"
@@ -285,7 +304,7 @@
         :mirrored="mirrored"
         @click="changeWifi"
       />
-      <WifiMedium
+      <PhWifiMedium
         v-if="wifi === 'medium'"
         :weight="filled"
         :size="size"
@@ -293,7 +312,7 @@
         :mirrored="mirrored"
         @click="changeWifi"
       />
-      <WifiLow
+      <PhWifiLow
         v-if="wifi === 'low'"
         :weight="filled"
         :size="size"
@@ -301,7 +320,7 @@
         :mirrored="mirrored"
         @click="changeWifi"
       />
-      <WifiNone
+      <PhWifiNone
         v-if="wifi === 'none'"
         :weight="filled"
         :size="size"
@@ -316,47 +335,49 @@
 <script lang="ts">
 import Vue from "vue";
 import {
-  Android,
-  At,
-  BatteryFull,
-  BatteryHigh,
-  BatteryMedium,
-  BatteryLow,
-  BatteryEmpty,
-  BatteryCharging,
-  CellSignalFull,
-  CellSignalHigh,
-  CellSignalMedium,
-  CellSignalLow,
-  CellSignalNone,
-  ChartPieSlice,
-  Eye,
-  EyeSlash,
-  FingerprintDense,
-  Folder,
-  FolderOpen,
-  Heart,
-  Hourglass,
-  HourglassHigh,
-  HourglassMedium,
-  HourglassLow,
-  LockKey,
-  LockOpenKey,
-  MapTrifold,
-  Microphone,
-  MicrophoneOff,
-  Package,
-  Pen,
-  SpeakerHigh,
-  SpeakerLow,
-  SpeakerNone,
-  SpeakerX,
-  StackIsometric,
-  Truck,
-  WifiHigh,
-  WifiMedium,
-  WifiLow,
-  WifiNone
+  PhAndroid,
+  PhAt,
+  PhBatteryFull,
+  PhBatteryHigh,
+  PhBatteryMedium,
+  PhBatteryLow,
+  PhBatteryEmpty,
+  PhBatteryCharging,
+  PhCellSignalFull,
+  PhCellSignalHigh,
+  PhCellSignalMedium,
+  PhCellSignalLow,
+  PhCellSignalNone,
+  PhChartPieSlice,
+  PhEye,
+  PhEyeSlash,
+  PhFingerprintDense,
+  PhFolder,
+  PhFolderOpen,
+  PhHeart,
+  PhHourglass,
+  PhHourglassHigh,
+  PhHourglassMedium,
+  PhHourglassLow,
+  PhLockKey,
+  PhLockOpenKey,
+  PhMapTrifold,
+  PhMicrophone,
+  PhMicrophoneOff,
+  PhPackage,
+  PhPen,
+  PhSpeakerHigh,
+  PhSpeakerLow,
+  PhSpeakerNone,
+  PhSpeakerX,
+  PhStackIsometric,
+  PhTruck,
+  PhWifiHigh,
+  PhWifiMedium,
+  PhWifiLow,
+  PhWifiNone,
+  PhCircle,
+  PhTable
 } from "@/entry";
 
 interface AppData {
@@ -379,47 +400,49 @@ interface AppData {
 export default Vue.extend({
   name: "ServeDev",
   components: {
-    Android,
-    At,
-    BatteryFull,
-    BatteryHigh,
-    BatteryMedium,
-    BatteryLow,
-    BatteryEmpty,
-    BatteryCharging,
-    CellSignalFull,
-    CellSignalHigh,
-    CellSignalMedium,
-    CellSignalLow,
-    CellSignalNone,
-    ChartPieSlice,
-    Eye,
-    EyeSlash,
-    FingerprintDense,
-    Folder,
-    FolderOpen,
-    Heart,
-    Hourglass,
-    HourglassHigh,
-    HourglassMedium,
-    HourglassLow,
-    LockKey,
-    LockOpenKey,
-    MapTrifold,
-    Microphone,
-    MicrophoneOff,
-    Package,
-    Pen,
-    SpeakerHigh,
-    SpeakerLow,
-    SpeakerNone,
-    SpeakerX,
-    StackIsometric,
-    Truck,
-    WifiHigh,
-    WifiMedium,
-    WifiLow,
-    WifiNone
+    PhAndroid,
+    PhAt,
+    PhBatteryFull,
+    PhBatteryHigh,
+    PhBatteryMedium,
+    PhBatteryLow,
+    PhBatteryEmpty,
+    PhBatteryCharging,
+    PhCellSignalFull,
+    PhCellSignalHigh,
+    PhCellSignalMedium,
+    PhCellSignalLow,
+    PhCellSignalNone,
+    PhChartPieSlice,
+    PhEye,
+    PhEyeSlash,
+    PhFingerprintDense,
+    PhFolder,
+    PhFolderOpen,
+    PhHeart,
+    PhHourglass,
+    PhHourglassHigh,
+    PhHourglassMedium,
+    PhHourglassLow,
+    PhLockKey,
+    PhLockOpenKey,
+    PhMapTrifold,
+    PhMicrophone,
+    PhMicrophoneOff,
+    PhPackage,
+    PhPen,
+    PhSpeakerHigh,
+    PhSpeakerLow,
+    PhSpeakerNone,
+    PhSpeakerX,
+    PhStackIsometric,
+    PhTruck,
+    PhWifiHigh,
+    PhWifiMedium,
+    PhWifiLow,
+    PhWifiNone,
+    PhCircle,
+    PhTable
   },
   data(): AppData {
     return {
