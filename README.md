@@ -28,20 +28,20 @@ npm install --save phosphor-vue
 ```html
 <template>
   <div>
-    <Horse />
-    <Heart />
-    <Cube />
+    <PhHorse />
+    <PhHeart />
+    <PhCube />
   </div>
 </template>
 
 <script>
-  import { Horse, Heart, Cube } from "phosphor-vue";
+  import { PhHorse, PhHeart, PhCube } from "phosphor-vue";
   export default {
-    name: "PhosphorVue",
+    name: "App",
     components: {
-      Horse,
-      Heart,
-      Cube
+      PhHorse,
+      PhHeart,
+      PhCube
     }
   };
 </script>
@@ -63,19 +63,19 @@ Phosphor takes advantage of Vue's `provide`/`inject` options to make applying a 
 ```html
 <template>
   <div>
-    <Horse /> {/* I'm lime-green, 32px, and bold! */} <Heart /> {/* Me too! */}
-    <Cube /> {/* Me three :) */}
+    <PhHorse /> {/* I'm lime-green, 32px, and bold! */} <Heart /> {/* Me too!
+    */} <PhCube /> {/* Me three :) */}
   </div>
 </template>
 
 <script>
-  import { Horse, Heart, Cube } from "phosphor-vue";
+  import { PhHorse, PhHeart, PhCube } from "phosphor-vue";
   export default {
-    name: "PhosphorVue",
+    name: "App",
     components: {
-      Horse,
-      Heart,
-      Cube
+      PhHorse,
+      PhHeart,
+      PhCube
     },
     provide: {
       color: "limegreen",
