@@ -64,7 +64,7 @@ Phosphor takes advantage of Vue's `provide`/`inject` options to make applying a 
 <template>
   <div>
     <PhHorse /> {/* I'm lime-green, 32px, and bold! */} 
-    <PhHeart />   {/* Me too! */} 
+    <PhHeart /> {/* Me too! */} 
     <PhCube />  {/* Me three :) */}
   </div>
 </template>
