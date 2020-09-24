@@ -11,20 +11,16 @@
     v-on="$listeners"
   >
     <g v-if="displayWeight === 'bold'">
-      <rect
-        x="16"
-        y="56"
-        width="168"
-        height="144"
-        rx="8"
-        stroke-width="24"
+      <path
+        d="M24,60H152a32,32,0,0,1,32,32v96a8,8,0,0,1-8,8H48a32,32,0,0,1-32-32V68A8,8,0,0,1,24,60Z"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="24"
       />
       <polygon
-        points="240 176 184 152 184 104 240 80 240 176"
+        points="240 176 184 144 184 112 240 80 240 176"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -33,21 +29,20 @@
       />
     </g>
     <g v-else-if="displayWeight === 'duotone'">
-      <rect x="16" y="56" width="168" height="144" rx="8" opacity="0.2" />
-      <rect
-        x="16"
-        y="56"
-        width="168"
-        height="144"
-        rx="8"
-        stroke-width="16"
+      <path
+        d="M24,60H152a32,32,0,0,1,32,32v96a8,8,0,0,1-8,8H48a32,32,0,0,1-32-32V68A8,8,0,0,1,24,60Z"
+        opacity="0.2"
+      />
+      <path
+        d="M24,60H152a32,32,0,0,1,32,32v96a8,8,0,0,1-8,8H48a32,32,0,0,1-32-32V68A8,8,0,0,1,24,60Z"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
       <polygon
-        points="240 176 184 152 184 104 240 80 240 176"
+        points="240 176 184 144 184 112 240 80 240 176"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -56,25 +51,26 @@
       />
     </g>
     <g v-else-if="displayWeight === 'fill'">
-      <path
-        d="M244.4043,73.32129a8.005,8.005,0,0,0-7.55567-.67481L192,91.86731V64a16.01833,16.01833,0,0,0-16-16H24A16.01833,16.01833,0,0,0,8,64V192a16.01833,16.01833,0,0,0,16,16H176a16.01833,16.01833,0,0,0,16-16V164.13269l44.84863,19.22083A8.00014,8.00014,0,0,0,248,176V80A7.99913,7.99913,0,0,0,244.4043,73.32129Z"
-      />
+      <g>
+        <path
+          d="M192,157.78564V92a40.04584,40.04584,0,0,0-40-40H24A16.01833,16.01833,0,0,0,8,68v96a40.04584,40.04584,0,0,0,40,40H176a16.01833,16.01833,0,0,0,16-16Z"
+        />
+        <path
+          d="M244.01562,73.08105a8.001,8.001,0,0,0-7.98437-.02734L208,89.07153v77.85694l28.03125,16.01782A8.0003,8.0003,0,0,0,248,176V80A7.99807,7.99807,0,0,0,244.01562,73.08105Z"
+        />
+      </g>
     </g>
     <g v-else-if="displayWeight === 'light'">
-      <rect
-        x="16"
-        y="56"
-        width="168"
-        height="144"
-        rx="8"
-        stroke-width="12"
+      <path
+        d="M24,60H152a32,32,0,0,1,32,32v96a8,8,0,0,1-8,8H48a32,32,0,0,1-32-32V68A8,8,0,0,1,24,60Z"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="12"
       />
       <polygon
-        points="240 176 184 152 184 104 240 80 240 176"
+        points="240 176 184 144 184 112 240 80 240 176"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -83,20 +79,16 @@
       />
     </g>
     <g v-else-if="displayWeight === 'thin'">
-      <rect
-        x="16"
-        y="56"
-        width="168"
-        height="144"
-        rx="8"
-        stroke-width="8"
+      <path
+        d="M24,60H152a32,32,0,0,1,32,32v96a8,8,0,0,1-8,8H48a32,32,0,0,1-32-32V68A8,8,0,0,1,24,60Z"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="8"
       />
       <polygon
-        points="240 176 184 152 184 104 240 80 240 176"
+        points="240 176 184 144 184 112 240 80 240 176"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -105,20 +97,16 @@
       />
     </g>
     <g v-else-if="displayWeight === 'regular'">
-      <rect
-        x="16"
-        y="56"
-        width="168"
-        height="144"
-        rx="8"
-        stroke-width="16"
+      <path
+        d="M24,60H152a32,32,0,0,1,32,32v96a8,8,0,0,1-8,8H48a32,32,0,0,1-32-32V68A8,8,0,0,1,24,60Z"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
       <polygon
-        points="240 176 184 152 184 104 240 80 240 176"
+        points="240 176 184 144 184 112 240 80 240 176"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"

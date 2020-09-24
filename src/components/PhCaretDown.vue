@@ -21,8 +21,9 @@
       />
     </g>
     <g v-else-if="displayWeight === 'duotone'">
-      <polyline
-        points="208 96 128 176 48 96"
+      <polygon points="208 96 128 176 48 96 208 96" opacity="0.2" />
+      <polygon
+        points="208 96 128 176 48 96 208 96"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -31,13 +32,8 @@
       />
     </g>
     <g v-else-if="displayWeight === 'fill'">
-      <polyline
-        points="208 96 128 176 48 96"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="16"
+      <path
+        d="M215.39111,92.93848A8.00015,8.00015,0,0,0,208,88H48a8,8,0,0,0-5.65674,13.657l80,79.99976a7.99945,7.99945,0,0,0,11.31348,0l80-79.99976A8.00011,8.00011,0,0,0,215.39111,92.93848Z"
       />
     </g>
     <g v-else-if="displayWeight === 'light'">

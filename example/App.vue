@@ -9,7 +9,7 @@
         :color="color"
         :mirrored="mirrored"
       />
-      <PhFingerprintDense
+      <PhFingerprint
         :weight="weight"
         :size="size"
         :color="color"
@@ -33,7 +33,7 @@
         :color="color"
         :mirrored="mirrored"
       />
-      <PhStackIsometric
+      <PhStack
         :weight="weight"
         :size="size"
         :color="color"
@@ -62,11 +62,11 @@
       <h1>Injected Context</h1>
       <PhAt />
       <PhChartPieSlice />
-      <PhFingerprintDense />
+      <PhFingerprint />
       <PhMapTrifold />
       <PhPackage />
       <PhPen />
-      <PhStackIsometric />
+      <PhStack />
       <PhTruck @click="test" />
       <PhCircle />
       <PhTable />
@@ -240,7 +240,7 @@
         :mirrored="mirrored"
         @click="changeLock"
       />
-      <PhLockOpenKey
+      <PhLockKeyOpen
         v-if="!locked"
         :weight="filled"
         :size="size"
@@ -256,7 +256,7 @@
         :mirrored="mirrored"
         @click="changeMute"
       />
-      <PhMicrophoneOff
+      <PhMicrophoneSlash
         v-if="muted"
         :weight="filled"
         :size="size"
@@ -351,7 +351,7 @@ import {
   PhChartPieSlice,
   PhEye,
   PhEyeSlash,
-  PhFingerprintDense,
+  PhFingerprint,
   PhFolder,
   PhFolderOpen,
   PhHeart,
@@ -360,17 +360,17 @@ import {
   PhHourglassMedium,
   PhHourglassLow,
   PhLockKey,
-  PhLockOpenKey,
+  PhLockKeyOpen,
   PhMapTrifold,
   PhMicrophone,
-  PhMicrophoneOff,
+  PhMicrophoneSlash,
   PhPackage,
   PhPen,
   PhSpeakerHigh,
   PhSpeakerLow,
   PhSpeakerNone,
   PhSpeakerX,
-  PhStackIsometric,
+  PhStack,
   PhTruck,
   PhWifiHigh,
   PhWifiMedium,
@@ -416,7 +416,7 @@ export default Vue.extend({
     PhChartPieSlice,
     PhEye,
     PhEyeSlash,
-    PhFingerprintDense,
+    PhFingerprint,
     PhFolder,
     PhFolderOpen,
     PhHeart,
@@ -425,17 +425,17 @@ export default Vue.extend({
     PhHourglassMedium,
     PhHourglassLow,
     PhLockKey,
-    PhLockOpenKey,
+    PhLockKeyOpen,
     PhMapTrifold,
     PhMicrophone,
-    PhMicrophoneOff,
+    PhMicrophoneSlash,
     PhPackage,
     PhPen,
     PhSpeakerHigh,
     PhSpeakerLow,
     PhSpeakerNone,
     PhSpeakerX,
-    PhStackIsometric,
+    PhStack,
     PhTruck,
     PhWifiHigh,
     PhWifiMedium,

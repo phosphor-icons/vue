@@ -12,10 +12,10 @@
   >
     <g v-if="displayWeight === 'bold'">
       <rect
-        x="40"
-        y="40"
-        width="176"
-        height="176"
+        x="44"
+        y="44"
+        width="168"
+        height="168"
         rx="8"
         stroke-width="24"
         :stroke="displayColor"
@@ -25,9 +25,9 @@
       />
       <line
         x1="128"
-        y1="40"
+        y1="44"
         x2="128"
-        y2="216"
+        y2="212"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -35,9 +35,9 @@
         stroke-width="24"
       />
       <line
-        x1="216"
+        x1="212"
         y1="128"
-        x2="40"
+        x2="44"
         y2="128"
         fill="none"
         :stroke="displayColor"
@@ -47,12 +47,12 @@
       />
     </g>
     <g v-else-if="displayWeight === 'duotone'">
-      <rect x="40" y="40" width="176" height="176" rx="8" opacity="0.2" />
+      <path d="M128,128H44V52a8,8,0,0,1,8-8h76Z" opacity="0.2" />
       <rect
-        x="40"
-        y="40"
-        width="176"
-        height="176"
+        x="44"
+        y="44"
+        width="168"
+        height="168"
         rx="8"
         stroke-width="16"
         :stroke="displayColor"
@@ -62,9 +62,9 @@
       />
       <line
         x1="128"
-        y1="40"
+        y1="44"
         x2="128"
-        y2="216"
+        y2="212"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -72,9 +72,9 @@
         stroke-width="16"
       />
       <line
-        x1="216"
+        x1="212"
         y1="128"
-        x2="40"
+        x2="44"
         y2="128"
         fill="none"
         :stroke="displayColor"
@@ -85,18 +85,18 @@
     </g>
     <g v-else-if="displayWeight === 'fill'">
       <g>
-        <path d="M136,120h88V48a16.02085,16.02085,0,0,0-16-16H136Z" />
-        <path d="M120,120V32H48A16.02085,16.02085,0,0,0,32,48v72Z" />
-        <path d="M136,136v88h72a16.02085,16.02085,0,0,0,16-16V136Z" />
-        <path d="M120,136H32v72a16.02085,16.02085,0,0,0,16,16h72Z" />
+        <path d="M120,120V36H52A16.01833,16.01833,0,0,0,36,52v68Z" />
+        <path d="M136,120h84V52a16.01833,16.01833,0,0,0-16-16H136Z" />
+        <path d="M136,136v84h68a16.01833,16.01833,0,0,0,16-16V136Z" />
+        <path d="M120,136H36v68a16.01833,16.01833,0,0,0,16,16h68Z" />
       </g>
     </g>
     <g v-else-if="displayWeight === 'light'">
       <rect
-        x="40"
-        y="40"
-        width="176"
-        height="176"
+        x="44"
+        y="44"
+        width="168"
+        height="168"
         rx="8"
         stroke-width="12"
         :stroke="displayColor"
@@ -106,9 +106,9 @@
       />
       <line
         x1="128"
-        y1="40"
+        y1="44"
         x2="128"
-        y2="216"
+        y2="212"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -116,9 +116,9 @@
         stroke-width="12"
       />
       <line
-        x1="216"
+        x1="212"
         y1="128"
-        x2="40"
+        x2="44"
         y2="128"
         fill="none"
         :stroke="displayColor"
@@ -129,10 +129,10 @@
     </g>
     <g v-else-if="displayWeight === 'thin'">
       <rect
-        x="40"
-        y="40"
-        width="176"
-        height="176"
+        x="44"
+        y="44"
+        width="168"
+        height="168"
         rx="8"
         stroke-width="8"
         :stroke="displayColor"
@@ -142,9 +142,9 @@
       />
       <line
         x1="128"
-        y1="40"
+        y1="44"
         x2="128"
-        y2="216"
+        y2="212"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -152,9 +152,9 @@
         stroke-width="8"
       />
       <line
-        x1="216"
+        x1="212"
         y1="128"
-        x2="40"
+        x2="44"
         y2="128"
         fill="none"
         :stroke="displayColor"
@@ -165,10 +165,10 @@
     </g>
     <g v-else-if="displayWeight === 'regular'">
       <rect
-        x="40"
-        y="40"
-        width="176"
-        height="176"
+        x="44"
+        y="44"
+        width="168"
+        height="168"
         rx="8"
         stroke-width="16"
         :stroke="displayColor"
@@ -178,9 +178,9 @@
       />
       <line
         x1="128"
-        y1="40"
+        y1="44"
         x2="128"
-        y2="216"
+        y2="212"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -188,9 +188,9 @@
         stroke-width="16"
       />
       <line
-        x1="216"
+        x1="212"
         y1="128"
-        x2="40"
+        x2="44"
         y2="128"
         fill="none"
         :stroke="displayColor"

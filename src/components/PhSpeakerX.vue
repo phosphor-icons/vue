@@ -20,30 +20,28 @@
         stroke-linejoin="round"
         stroke-width="24"
       />
-      <g>
-        <line
-          x1="239.99997"
-          y1="104"
-          x2="191.99997"
-          y2="152"
-          fill="none"
-          :stroke="displayColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="24"
-        />
-        <line
-          x1="239.99997"
-          y1="152"
-          x2="191.99997"
-          y2="104"
-          fill="none"
-          :stroke="displayColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="24"
-        />
-      </g>
+      <line
+        x1="239.99997"
+        y1="104"
+        x2="191.99997"
+        y2="152"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="24"
+      />
+      <line
+        x1="239.99997"
+        y1="152"
+        x2="191.99997"
+        y2="104"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="24"
+      />
       <line
         x1="79.98242"
         y1="88"
@@ -67,30 +65,28 @@
         stroke-linejoin="round"
         stroke-width="16"
       />
-      <g>
-        <line
-          x1="239.99997"
-          y1="104"
-          x2="191.99997"
-          y2="152"
-          fill="none"
-          :stroke="displayColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="16"
-        />
-        <line
-          x1="239.99997"
-          y1="152"
-          x2="191.99997"
-          y2="104"
-          fill="none"
-          :stroke="displayColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="16"
-        />
-      </g>
+      <line
+        x1="239.99997"
+        y1="104"
+        x2="191.99997"
+        y2="152"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <line
+        x1="239.99997"
+        y1="152"
+        x2="191.99997"
+        y2="104"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
       <line
         x1="79.9707"
         y1="88"
@@ -104,20 +100,16 @@
       />
     </g>
     <g v-else-if="displayWeight === 'fill'">
-      <g>
-        <rect width="256" height="256" fill="none" />
-        <path
-          d="M227.30664,127.9971l18.34375-18.34375a7.99915,7.99915,0,0,0-11.3125-11.3125L215.99414,116.6846,197.65039,98.34085a7.99915,7.99915,0,0,0-11.3125,11.3125l18.34375,18.34375-18.34375,18.34375a7.99915,7.99915,0,1,0,11.3125,11.3125l18.34375-18.34375,18.34375,18.34375a7.99915,7.99915,0,0,0,11.3125-11.3125Z"
-        />
-        <g>
-          <path
-            d="M155.50977,24.80957a7.993,7.993,0,0,0-8.42188.875L83.089,75.45235A8,8,0,0,0,80,81.7676v92.45894a8,8,0,0,0,3.089,6.31525l63.99885,49.76778a7.99451,7.99451,0,0,0,12.90625-6.3125v-192A7.99374,7.99374,0,0,0,155.50977,24.80957Z"
-          />
-          <path
-            d="M56,79.99707H31.99414a16,16,0,0,0-16,16v64a16,16,0,0,0,16,16H56a8,8,0,0,0,8-8v-80A8,8,0,0,0,56,79.99707Z"
-          />
-        </g>
-      </g>
+      <rect width="256" height="256" fill="none" />
+      <path
+        d="M227.30664,127.9971l18.34375-18.34375a7.99915,7.99915,0,0,0-11.3125-11.3125L215.99414,116.6846,197.65039,98.34085a7.99915,7.99915,0,0,0-11.3125,11.3125l18.34375,18.34375-18.34375,18.34375a7.99915,7.99915,0,1,0,11.3125,11.3125l18.34375-18.34375,18.34375,18.34375a7.99915,7.99915,0,0,0,11.3125-11.3125Z"
+      />
+      <path
+        d="M155.50977,24.80957a7.993,7.993,0,0,0-8.42188.875L80,77.85449V178.13965l67.08789,52.16992a7.99451,7.99451,0,0,0,12.90625-6.3125v-192A7.99374,7.99374,0,0,0,155.50977,24.80957Z"
+      />
+      <path
+        d="M64,79.99707H31.99414a16,16,0,0,0-16,16v64a16,16,0,0,0,16,16H64Z"
+      />
     </g>
     <g v-else-if="displayWeight === 'light'">
       <rect width="256" height="256" fill="none" />
@@ -129,30 +121,28 @@
         stroke-linejoin="round"
         stroke-width="12"
       />
-      <g>
-        <line
-          x1="239.99997"
-          y1="104"
-          x2="191.99997"
-          y2="152"
-          fill="none"
-          :stroke="displayColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="12"
-        />
-        <line
-          x1="239.99997"
-          y1="152"
-          x2="191.99997"
-          y2="104"
-          fill="none"
-          :stroke="displayColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="12"
-        />
-      </g>
+      <line
+        x1="239.99997"
+        y1="104"
+        x2="191.99997"
+        y2="152"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="12"
+      />
+      <line
+        x1="239.99997"
+        y1="152"
+        x2="191.99997"
+        y2="104"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="12"
+      />
       <line
         x1="79.98828"
         y1="88"
@@ -175,30 +165,28 @@
         stroke-linejoin="round"
         stroke-width="8"
       />
-      <g>
-        <line
-          x1="239.99997"
-          y1="104"
-          x2="191.99997"
-          y2="152"
-          fill="none"
-          :stroke="displayColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="8"
-        />
-        <line
-          x1="239.99997"
-          y1="152"
-          x2="191.99997"
-          y2="104"
-          fill="none"
-          :stroke="displayColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="8"
-        />
-      </g>
+      <line
+        x1="239.99997"
+        y1="104"
+        x2="191.99997"
+        y2="152"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="8"
+      />
+      <line
+        x1="239.99997"
+        y1="152"
+        x2="191.99997"
+        y2="104"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="8"
+      />
       <line
         x1="79.99414"
         y1="88"
@@ -221,30 +209,28 @@
         stroke-linejoin="round"
         stroke-width="16"
       />
-      <g>
-        <line
-          x1="239.99997"
-          y1="104"
-          x2="191.99997"
-          y2="152"
-          fill="none"
-          :stroke="displayColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="16"
-        />
-        <line
-          x1="239.99997"
-          y1="152"
-          x2="191.99997"
-          y2="104"
-          fill="none"
-          :stroke="displayColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="16"
-        />
-      </g>
+      <line
+        x1="239.99997"
+        y1="104"
+        x2="191.99997"
+        y2="152"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <line
+        x1="239.99997"
+        y1="152"
+        x2="191.99997"
+        y2="104"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
       <line
         x1="80"
         y1="88"

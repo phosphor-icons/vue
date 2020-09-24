@@ -100,7 +100,6 @@
         stroke-miterlimit="10"
         stroke-width="16"
       />
-      <rect x="-256" width="256" height="256" fill="none" opacity="0.2" />
     </g>
     <g v-else-if="displayWeight === 'fill'">
       <rect width="256" height="256" fill="none" />

@@ -153,6 +153,9 @@
         stroke-linejoin="round"
         stroke-width="16"
       />
+      <polyline
+        points="128 128 85.327 95.995 85.327 95.995 170.34 95.995 170.34 95.996 128 128 128 128"
+      />
     </g>
   </svg>
 </template>

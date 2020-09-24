@@ -11,7 +11,6 @@
     v-on="$listeners"
   >
     <g v-if="displayWeight === 'bold'">
-      <rect width="256" height="256" fill="none" />
       <line
         x1="215.99609"
         y1="56"
@@ -45,17 +44,6 @@
         stroke-linejoin="round"
         stroke-width="24"
       />
-      <line
-        x1="88"
-        y1="24"
-        x2="168"
-        y2="24"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="24"
-      />
       <path
         d="M199.99609,56.00005V208a8,8,0,0,1-8,8h-128a8,8,0,0,1-8-8v-152"
         fill="none"
@@ -64,9 +52,16 @@
         stroke-linejoin="round"
         stroke-width="24"
       />
+      <path
+        d="M168,56V40a16,16,0,0,0-16-16H104A16,16,0,0,0,88,40V56"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="24"
+      />
     </g>
     <g v-else-if="displayWeight === 'duotone'">
-      <rect width="256" height="256" fill="none" />
       <path
         d="M199.99609,56.00005V208a8,8,0,0,1-8,8h-128a8,8,0,0,1-8-8v-152Z"
         opacity="0.2"
@@ -104,11 +99,8 @@
         stroke-linejoin="round"
         stroke-width="16"
       />
-      <line
-        x1="88"
-        y1="24"
-        x2="168"
-        y2="24"
+      <path
+        d="M199.99609,56.00005V208a8,8,0,0,1-8,8h-128a8,8,0,0,1-8-8v-152"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -116,7 +108,7 @@
         stroke-width="16"
       />
       <path
-        d="M199.99609,56.00005V208a8,8,0,0,1-8,8h-128a8,8,0,0,1-8-8v-152"
+        d="M168,56V40a16,16,0,0,0-16-16H104A16,16,0,0,0,88,40V56"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -125,14 +117,11 @@
       />
     </g>
     <g v-else-if="displayWeight === 'fill'">
-      <rect width="256" height="256" fill="none" />
-      <path d="M88,32h80a8,8,0,0,0,0-16H88a8,8,0,1,0,0,16Z" />
       <path
-        d="M216,48H40a8,8,0,0,0,0,16h8V208a16.01582,16.01582,0,0,0,16,16H192a16.01582,16.01582,0,0,0,16-16V64h8a8,8,0,1,0,0-16ZM112,168a8,8,0,1,1-16,0V104a8,8,0,1,1,16,0Zm48,0a8,8,0,1,1-16,0V104a8,8,0,1,1,16,0Z"
+        d="M215.99609,48H176V40a24.02718,24.02718,0,0,0-24-24H104A24.02718,24.02718,0,0,0,80,40v8H39.99609a8,8,0,0,0,0,16h8V208a16.01833,16.01833,0,0,0,16,16h128a16.01833,16.01833,0,0,0,16-16V64h8a8,8,0,0,0,0-16ZM112,168a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Zm48,0a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Zm0-120H96V40a8.00917,8.00917,0,0,1,8-8h48a8.00917,8.00917,0,0,1,8,8Z"
       />
     </g>
     <g v-else-if="displayWeight === 'light'">
-      <rect width="256" height="256" fill="none" />
       <line
         x1="215.99609"
         y1="56"
@@ -166,11 +155,8 @@
         stroke-linejoin="round"
         stroke-width="12"
       />
-      <line
-        x1="88"
-        y1="24"
-        x2="168"
-        y2="24"
+      <path
+        d="M199.99609,56.00005V208a8,8,0,0,1-8,8h-128a8,8,0,0,1-8-8v-152"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -178,7 +164,7 @@
         stroke-width="12"
       />
       <path
-        d="M199.99609,56.00005V208a8,8,0,0,1-8,8h-128a8,8,0,0,1-8-8v-152"
+        d="M168,56V40a16,16,0,0,0-16-16H104A16,16,0,0,0,88,40V56"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -187,7 +173,6 @@
       />
     </g>
     <g v-else-if="displayWeight === 'thin'">
-      <rect width="256" height="256" fill="none" />
       <line
         x1="215.99609"
         y1="56"
@@ -221,11 +206,8 @@
         stroke-linejoin="round"
         stroke-width="8"
       />
-      <line
-        x1="88"
-        y1="24"
-        x2="168"
-        y2="24"
+      <path
+        d="M199.99609,56.00005V208a8,8,0,0,1-8,8h-128a8,8,0,0,1-8-8v-152"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -233,7 +215,7 @@
         stroke-width="8"
       />
       <path
-        d="M199.99609,56.00005V208a8,8,0,0,1-8,8h-128a8,8,0,0,1-8-8v-152"
+        d="M168,56V40a16,16,0,0,0-16-16H104A16,16,0,0,0,88,40V56"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -242,7 +224,6 @@
       />
     </g>
     <g v-else-if="displayWeight === 'regular'">
-      <rect width="256" height="256" fill="none" />
       <line
         x1="215.99609"
         y1="56"
@@ -276,11 +257,8 @@
         stroke-linejoin="round"
         stroke-width="16"
       />
-      <line
-        x1="88"
-        y1="24"
-        x2="168"
-        y2="24"
+      <path
+        d="M199.99609,56.00005V208a8,8,0,0,1-8,8h-128a8,8,0,0,1-8-8v-152"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -288,7 +266,7 @@
         stroke-width="16"
       />
       <path
-        d="M199.99609,56.00005V208a8,8,0,0,1-8,8h-128a8,8,0,0,1-8-8v-152"
+        d="M168,56V40a16,16,0,0,0-16-16H104A16,16,0,0,0,88,40V56"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"

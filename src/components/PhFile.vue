@@ -22,11 +22,13 @@
       />
       <polyline
         points="152 32 152 88 208.008 88"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="24"
       />
+      <polygon points="152 32 152 88 208.008 88 152 32" />
     </g>
     <g v-else-if="displayWeight === 'duotone'">
       <rect width="256" height="256" fill="none" />

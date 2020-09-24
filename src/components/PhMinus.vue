@@ -39,21 +39,8 @@
       />
     </g>
     <g v-else-if="displayWeight === 'fill'">
-      <g opacity="0.2">
-        <rect x="256" width="256" height="256" fill="none" />
-      </g>
       <rect width="256" height="256" fill="none" />
-      <line
-        x1="40"
-        y1="128"
-        x2="216"
-        y2="128"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="16"
-      />
+      <path d="M216,136H40a8,8,0,0,1,0-16H216a8,8,0,0,1,0,16Z" />
     </g>
     <g v-else-if="displayWeight === 'light'">
       <rect width="256" height="256" fill="none" />

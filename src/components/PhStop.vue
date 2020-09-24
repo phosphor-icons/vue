@@ -13,11 +13,11 @@
     <g v-if="displayWeight === 'bold'">
       <rect width="256" height="256" fill="none" />
       <rect
-        x="40"
-        y="40"
-        width="176"
-        height="176"
-        rx="8"
+        x="52"
+        y="52"
+        width="152"
+        height="152"
+        rx="6.90909"
         stroke-width="24"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -27,13 +27,13 @@
     </g>
     <g v-else-if="displayWeight === 'duotone'">
       <rect width="256" height="256" fill="none" />
-      <rect x="40" y="40" width="176" height="176" rx="8" opacity="0.2" />
+      <rect x="52" y="52" width="152" height="152" rx="6.90909" opacity="0.2" />
       <rect
-        x="40"
-        y="40"
-        width="176"
-        height="176"
-        rx="8"
+        x="52"
+        y="52"
+        width="152"
+        height="152"
+        rx="6.90909"
         stroke-width="16"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -43,16 +43,16 @@
     </g>
     <g v-else-if="displayWeight === 'fill'">
       <rect width="256" height="256" fill="none" />
-      <rect x="32" y="32" width="192" height="192" rx="16" />
+      <rect x="44" y="44" width="168" height="168" rx="14.90918" />
     </g>
     <g v-else-if="displayWeight === 'light'">
       <rect width="256" height="256" fill="none" />
       <rect
-        x="40"
-        y="40"
-        width="176"
-        height="176"
-        rx="8"
+        x="52"
+        y="52"
+        width="152"
+        height="152"
+        rx="6.90909"
         stroke-width="12"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -63,11 +63,11 @@
     <g v-else-if="displayWeight === 'thin'">
       <rect width="256" height="256" fill="none" />
       <rect
-        x="40"
-        y="40"
-        width="176"
-        height="176"
-        rx="8"
+        x="52"
+        y="52"
+        width="152"
+        height="152"
+        rx="6.90909"
         stroke-width="8"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -78,11 +78,11 @@
     <g v-else-if="displayWeight === 'regular'">
       <rect width="256" height="256" fill="none" />
       <rect
-        x="40"
-        y="40"
-        width="176"
-        height="176"
-        rx="8"
+        x="52"
+        y="52"
+        width="152"
+        height="152"
+        rx="6.90909"
         stroke-width="16"
         :stroke="displayColor"
         stroke-linecap="round"

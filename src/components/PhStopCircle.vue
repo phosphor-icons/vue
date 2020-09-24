@@ -22,15 +22,17 @@
         stroke-width="24"
       />
       <rect
-        x="100"
-        y="100"
-        width="56"
-        height="56"
+        x="104"
+        y="104"
+        width="48"
+        height="48"
         stroke-width="24"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
+        fill="none"
       />
+      <rect x="104" y="104" width="48" height="48" />
     </g>
     <g v-else-if="displayWeight === 'duotone'">
       <circle cx="128" cy="128" r="96" opacity="0.2" />
@@ -44,19 +46,20 @@
         stroke-width="16"
       />
       <rect
-        x="100"
-        y="100"
-        width="56"
-        height="56"
+        x="104"
+        y="104"
+        width="48"
+        height="48"
         stroke-width="16"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
+        fill="none"
       />
     </g>
     <g v-else-if="displayWeight === 'fill'">
       <path
-        d="M128,24A104,104,0,1,0,232,128,104.11791,104.11791,0,0,0,128,24Zm36,132a8.00008,8.00008,0,0,1-8,8H100a8.00008,8.00008,0,0,1-8-8V100a8.00008,8.00008,0,0,1,8-8h56a8.00008,8.00008,0,0,1,8,8Z"
+        d="M128,24A104,104,0,1,0,232,128,104.11791,104.11791,0,0,0,128,24Zm32,128a8.00008,8.00008,0,0,1-8,8H104a8.00008,8.00008,0,0,1-8-8V104a8.00008,8.00008,0,0,1,8-8h48a8.00008,8.00008,0,0,1,8,8Z"
       />
     </g>
     <g v-else-if="displayWeight === 'light'">
@@ -71,14 +74,15 @@
         stroke-width="12"
       />
       <rect
-        x="100"
-        y="100"
-        width="56"
-        height="56"
+        x="104"
+        y="104"
+        width="48"
+        height="48"
         stroke-width="12"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
+        fill="none"
       />
     </g>
     <g v-else-if="displayWeight === 'thin'">
@@ -93,14 +97,15 @@
         stroke-width="8"
       />
       <rect
-        x="100"
-        y="100"
-        width="56"
-        height="56"
+        x="104"
+        y="104"
+        width="48"
+        height="48"
         stroke-width="8"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
+        fill="none"
       />
     </g>
     <g v-else-if="displayWeight === 'regular'">
@@ -114,14 +119,15 @@
         stroke-width="16"
       />
       <rect
-        x="100"
-        y="100"
-        width="56"
-        height="56"
+        x="104"
+        y="104"
+        width="48"
+        height="48"
         stroke-width="16"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
+        fill="none"
       />
     </g>
   </svg>

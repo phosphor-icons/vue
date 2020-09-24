@@ -57,8 +57,6 @@
         stroke-miterlimit="10"
         stroke-width="16"
       />
-      <rect x="-256" width="256" height="256" fill="none" opacity="0.2" />
-      <rect x="256" width="256" height="256" fill="red" opacity="0.2" />
       <line
         x1="32"
         y1="128"

@@ -22,11 +22,13 @@
       />
       <polyline
         points="152 32 152 88 208.008 88"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="24"
       />
+      <polygon points="152 32 152 88 208.008 88 152 32" />
       <polyline
         points="94.041 158.059 127.982 192 161.924 158.059"
         fill="none"

@@ -14,7 +14,7 @@
       <rect
         x="152"
         y="40"
-        width="48"
+        width="64"
         height="176"
         rx="8"
         stroke-width="24"
@@ -24,9 +24,9 @@
         fill="none"
       />
       <rect
-        x="56"
+        x="40"
         y="40"
-        width="48"
+        width="64"
         height="176"
         rx="8"
         stroke-width="24"
@@ -37,48 +37,44 @@
       />
     </g>
     <g v-else-if="displayWeight === 'duotone'">
-      <g opacity="0.2">
-        <rect x="152" y="40" width="48" height="176" rx="8" />
-        <rect x="56" y="40" width="48" height="176" rx="8" />
-      </g>
-      <g>
-        <rect
-          x="152"
-          y="40"
-          width="48"
-          height="176"
-          rx="8"
-          stroke-width="16"
-          :stroke="displayColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          fill="none"
-        />
-        <rect
-          x="56"
-          y="40"
-          width="48"
-          height="176"
-          rx="8"
-          stroke-width="16"
-          :stroke="displayColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          fill="none"
-        />
-      </g>
+      <rect x="152" y="40" width="64" height="176" rx="8" opacity="0.2" />
+      <rect x="40" y="40" width="64" height="176" rx="8" opacity="0.2" />
+      <rect
+        x="152"
+        y="40"
+        width="64"
+        height="176"
+        rx="8"
+        stroke-width="16"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        fill="none"
+      />
+      <rect
+        x="40"
+        y="40"
+        width="64"
+        height="176"
+        rx="8"
+        stroke-width="16"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        fill="none"
+      />
     </g>
     <g v-else-if="displayWeight === 'fill'">
       <g>
-        <rect x="144" y="32" width="64" height="192" rx="16" />
-        <rect x="48" y="32" width="64" height="192" rx="16" />
+        <rect x="144" y="32" width="80" height="192" rx="16" />
+        <rect x="32" y="32" width="80" height="192" rx="16" />
       </g>
     </g>
     <g v-else-if="displayWeight === 'light'">
       <rect
         x="152"
         y="40"
-        width="48"
+        width="64"
         height="176"
         rx="8"
         stroke-width="12"
@@ -88,9 +84,9 @@
         fill="none"
       />
       <rect
-        x="56"
+        x="40"
         y="40"
-        width="48"
+        width="64"
         height="176"
         rx="8"
         stroke-width="12"
@@ -104,7 +100,7 @@
       <rect
         x="152"
         y="40"
-        width="48"
+        width="64"
         height="176"
         rx="8"
         stroke-width="8"
@@ -114,9 +110,9 @@
         fill="none"
       />
       <rect
-        x="56"
+        x="40"
         y="40"
-        width="48"
+        width="64"
         height="176"
         rx="8"
         stroke-width="8"
@@ -130,7 +126,7 @@
       <rect
         x="152"
         y="40"
-        width="48"
+        width="64"
         height="176"
         rx="8"
         stroke-width="16"
@@ -140,9 +136,9 @@
         fill="none"
       />
       <rect
-        x="56"
+        x="40"
         y="40"
-        width="48"
+        width="64"
         height="176"
         rx="8"
         stroke-width="16"

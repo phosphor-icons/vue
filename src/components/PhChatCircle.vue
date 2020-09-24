@@ -74,9 +74,6 @@
         stroke-linejoin="round"
         stroke-width="16"
       />
-      <g opacity="0.2">
-        <rect x="255.99885" width="256" height="256" fill="none" />
-      </g>
     </g>
   </svg>
 </template>

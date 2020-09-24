@@ -1,0 +1,343 @@
+/* GENERATED FILE */
+<template>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 256 256"
+    :width="displaySize"
+    :height="displaySize"
+    :fill="displayColor"
+    :transform="displayMirrored"
+    v-bind="$attrs"
+    v-on="$listeners"
+  >
+    <g v-if="displayWeight === 'bold'">
+      <circle
+        cx="128"
+        cy="128"
+        r="96"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="24"
+      />
+      <line
+        x1="128"
+        y1="128"
+        x2="128"
+        y2="224"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="24"
+      />
+      <line
+        x1="128"
+        y1="128"
+        x2="206.6386"
+        y2="183.06334"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="24"
+      />
+      <line
+        x1="128"
+        y1="128"
+        x2="49.3614"
+        y2="183.06334"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="24"
+      />
+      <line
+        x1="128"
+        y1="128"
+        x2="128"
+        y2="32"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="24"
+      />
+    </g>
+    <g v-else-if="displayWeight === 'duotone'">
+      <circle cx="128" cy="128" r="96" opacity="0.2" />
+      <circle
+        cx="128"
+        cy="128"
+        r="96"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <line
+        x1="128"
+        y1="128"
+        x2="128"
+        y2="224"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <line
+        x1="128"
+        y1="128"
+        x2="206.6386"
+        y2="183.06334"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <line
+        x1="128"
+        y1="128"
+        x2="49.3614"
+        y2="183.06334"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <line
+        x1="128"
+        y1="128"
+        x2="128"
+        y2="32"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+    </g>
+    <g v-else-if="displayWeight === 'fill'">
+      <path
+        d="M120,123.8352V24.30469a103.95389,103.95389,0,0,0-81.50342,156.6001Z"
+      />
+      <path
+        d="M136,123.8352l81.50342,57.06959A103.95389,103.95389,0,0,0,136,24.30469Z"
+      />
+      <path
+        d="M136,143.36816v88.32715a103.89979,103.89979,0,0,0,72.313-37.69311Z"
+      />
+      <path
+        d="M120,143.36816l-72.313,50.634A103.89979,103.89979,0,0,0,120,231.69531Z"
+      />
+    </g>
+    <g v-else-if="displayWeight === 'light'">
+      <circle
+        cx="128"
+        cy="128"
+        r="96"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="12"
+      />
+      <line
+        x1="128"
+        y1="128"
+        x2="128"
+        y2="224"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="12"
+      />
+      <line
+        x1="128"
+        y1="128"
+        x2="206.6386"
+        y2="183.06334"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="12"
+      />
+      <line
+        x1="128"
+        y1="128"
+        x2="49.3614"
+        y2="183.06334"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="12"
+      />
+      <line
+        x1="128"
+        y1="128"
+        x2="128"
+        y2="32"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="12"
+      />
+    </g>
+    <g v-else-if="displayWeight === 'thin'">
+      <circle
+        cx="128"
+        cy="128"
+        r="96"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="8"
+      />
+      <line
+        x1="128"
+        y1="128"
+        x2="128"
+        y2="224"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="8"
+      />
+      <line
+        x1="128"
+        y1="128"
+        x2="206.6386"
+        y2="183.06334"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="8"
+      />
+      <line
+        x1="128"
+        y1="128"
+        x2="49.3614"
+        y2="183.06334"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="8"
+      />
+      <line
+        x1="128"
+        y1="128"
+        x2="128"
+        y2="32"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="8"
+      />
+    </g>
+    <g v-else-if="displayWeight === 'regular'">
+      <circle
+        cx="128"
+        cy="128"
+        r="96"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <line
+        x1="128"
+        y1="128"
+        x2="128"
+        y2="224"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <line
+        x1="128"
+        y1="128"
+        x2="206.6386"
+        y2="183.06334"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <line
+        x1="128"
+        y1="128"
+        x2="49.3614"
+        y2="183.06334"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <line
+        x1="128"
+        y1="128"
+        x2="128"
+        y2="32"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+    </g>
+  </svg>
+</template>
+
+<script lang="ts">
+import Vue from "vue";
+import {
+  IconComputed,
+  IconProps,
+  PropValidator,
+  IconContext,
+  ContextGetter
+} from "@/lib/types";
+export default Vue.extend<{}, {}, IconComputed, IconProps>({
+  name: "PhPeace",
+  props: PropValidator,
+  inject: ContextGetter,
+  computed: {
+    displayWeight() {
+      const { weight, contextWeight } = this as IconProps & IconContext;
+      return weight ?? contextWeight;
+    },
+    displaySize() {
+      const { size, contextSize } = this as IconProps & IconContext;
+      return size ?? contextSize;
+    },
+    displayColor() {
+      const { color, contextColor } = this as IconProps & IconContext;
+      return color ?? contextColor;
+    },
+    displayMirrored() {
+      const { mirrored, contextMirrored } = this as IconProps & IconContext;
+      return mirrored ?? contextMirrored ? "scale(-1, 1)" : undefined;
+    }
+  }
+});
+</script>

@@ -60,26 +60,8 @@
     </g>
     <g v-else-if="displayWeight === 'fill'">
       <rect width="256" height="256" fill="none" />
-      <line
-        x1="40"
-        y1="160"
-        x2="216"
-        y2="160"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="16"
-      />
-      <line
-        x1="40"
-        y1="96"
-        x2="216"
-        y2="96"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="16"
-      />
+      <path d="M216,152H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z" />
+      <path d="M40,104H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16Z" />
     </g>
     <g v-else-if="displayWeight === 'light'">
       <rect width="256" height="256" fill="none" />
@@ -133,28 +115,26 @@
     </g>
     <g v-else-if="displayWeight === 'regular'">
       <rect width="256" height="256" fill="none" />
-      <g>
-        <line
-          x1="40"
-          y1="160"
-          x2="216"
-          y2="160"
-          :stroke="displayColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="16"
-        />
-        <line
-          x1="40"
-          y1="96"
-          x2="216"
-          y2="96"
-          :stroke="displayColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="16"
-        />
-      </g>
+      <line
+        x1="40"
+        y1="160"
+        x2="216"
+        y2="160"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <line
+        x1="40"
+        y1="96"
+        x2="216"
+        y2="96"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
     </g>
   </svg>
 </template>
