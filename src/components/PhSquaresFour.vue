@@ -11,245 +11,45 @@
     v-on="$listeners"
   >
     <g v-if="displayWeight === 'bold'">
-      <rect
-        x="48"
-        y="48"
-        width="64"
-        height="64"
-        stroke-width="24"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        fill="none"
-      />
-      <rect
-        x="144"
-        y="48"
-        width="64"
-        height="64"
-        stroke-width="24"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        fill="none"
-      />
-      <rect
-        x="48"
-        y="144"
-        width="64"
-        height="64"
-        stroke-width="24"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        fill="none"
-      />
-      <rect
-        x="144"
-        y="144"
-        width="64"
-        height="64"
-        stroke-width="24"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        fill="none"
-      />
-    </g>
+  <rect x="48" y="48" width="64" height="64" stroke-width="24" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <rect x="144" y="48" width="64" height="64" stroke-width="24" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <rect x="48" y="144" width="64" height="64" stroke-width="24" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <rect x="144" y="144" width="64" height="64" stroke-width="24" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</g>
     <g v-else-if="displayWeight === 'duotone'">
-      <rect x="48" y="48" width="64" height="64" opacity="0.2" />
-      <rect x="144" y="48" width="64" height="64" opacity="0.2" />
-      <rect x="48" y="144" width="64" height="64" opacity="0.2" />
-      <rect
-        x="144"
-        y="144"
-        width="64"
-        height="64"
-        stroke-width="16"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        fill="none"
-      />
-      <rect
-        x="48"
-        y="48"
-        width="64"
-        height="64"
-        stroke-width="16"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        fill="none"
-      />
-      <rect
-        x="144"
-        y="48"
-        width="64"
-        height="64"
-        stroke-width="16"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        fill="none"
-      />
-      <rect
-        x="48"
-        y="144"
-        width="64"
-        height="64"
-        stroke-width="16"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        fill="none"
-      />
-      <rect x="144" y="144" width="64" height="64" opacity="0.2" />
-    </g>
+  <rect x="48" y="48" width="64" height="64" opacity="0.2"/>
+  <rect x="144" y="48" width="64" height="64" opacity="0.2"/>
+  <rect x="48" y="144" width="64" height="64" opacity="0.2"/>
+  <rect x="144" y="144" width="64" height="64" stroke-width="16" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <rect x="48" y="48" width="64" height="64" stroke-width="16" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <rect x="144" y="48" width="64" height="64" stroke-width="16" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <rect x="48" y="144" width="64" height="64" stroke-width="16" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <rect x="144" y="144" width="64" height="64" opacity="0.2"/>
+</g>
     <g v-else-if="displayWeight === 'fill'">
-      <rect x="40" y="40" width="80" height="80" rx="8" />
-      <rect x="136" y="40" width="80" height="80" rx="8" />
-      <rect x="40" y="136" width="80" height="80" rx="8" />
-      <rect x="136" y="136" width="80" height="80" rx="8" />
-    </g>
+  <rect x="40" y="40" width="80" height="80" rx="8"/>
+  <rect x="136" y="40" width="80" height="80" rx="8"/>
+  <rect x="40" y="136" width="80" height="80" rx="8"/>
+  <rect x="136" y="136" width="80" height="80" rx="8"/>
+</g>
     <g v-else-if="displayWeight === 'light'">
-      <rect
-        x="48"
-        y="48"
-        width="64"
-        height="64"
-        stroke-width="12"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        fill="none"
-      />
-      <rect
-        x="144"
-        y="48"
-        width="64"
-        height="64"
-        stroke-width="12"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        fill="none"
-      />
-      <rect
-        x="48"
-        y="144"
-        width="64"
-        height="64"
-        stroke-width="12"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        fill="none"
-      />
-      <rect
-        x="144"
-        y="144"
-        width="64"
-        height="64"
-        stroke-width="12"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        fill="none"
-      />
-    </g>
+  <rect x="48" y="48" width="64" height="64" stroke-width="12" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <rect x="144" y="48" width="64" height="64" stroke-width="12" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <rect x="48" y="144" width="64" height="64" stroke-width="12" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <rect x="144" y="144" width="64" height="64" stroke-width="12" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</g>
     <g v-else-if="displayWeight === 'thin'">
-      <rect
-        x="48"
-        y="48"
-        width="64"
-        height="64"
-        stroke-width="8"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        fill="none"
-      />
-      <rect
-        x="144"
-        y="48"
-        width="64"
-        height="64"
-        stroke-width="8"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        fill="none"
-      />
-      <rect
-        x="48"
-        y="144"
-        width="64"
-        height="64"
-        stroke-width="8"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        fill="none"
-      />
-      <rect
-        x="144"
-        y="144"
-        width="64"
-        height="64"
-        stroke-width="8"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        fill="none"
-      />
-    </g>
+  <rect x="48" y="48" width="64" height="64" stroke-width="8" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <rect x="144" y="48" width="64" height="64" stroke-width="8" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <rect x="48" y="144" width="64" height="64" stroke-width="8" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <rect x="144" y="144" width="64" height="64" stroke-width="8" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</g>
     <g v-else-if="displayWeight === 'regular'">
-      <rect
-        x="48"
-        y="48"
-        width="64"
-        height="64"
-        stroke-width="16"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        fill="none"
-      />
-      <rect
-        x="144"
-        y="48"
-        width="64"
-        height="64"
-        stroke-width="16"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        fill="none"
-      />
-      <rect
-        x="48"
-        y="144"
-        width="64"
-        height="64"
-        stroke-width="16"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        fill="none"
-      />
-      <rect
-        x="144"
-        y="144"
-        width="64"
-        height="64"
-        stroke-width="16"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        fill="none"
-      />
-    </g>
+  <rect x="48" y="48" width="64" height="64" stroke-width="16" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <rect x="144" y="48" width="64" height="64" stroke-width="16" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <rect x="48" y="144" width="64" height="64" stroke-width="16" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <rect x="144" y="144" width="64" height="64" stroke-width="16" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</g>
   </svg>
 </template>
 
@@ -260,7 +60,7 @@ import {
   IconProps,
   PropValidator,
   IconContext,
-  ContextGetter
+  ContextGetter,
 } from "@/lib/types";
 export default Vue.extend<{}, {}, IconComputed, IconProps>({
   name: "PhSquaresFour",
@@ -282,7 +82,7 @@ export default Vue.extend<{}, {}, IconComputed, IconProps>({
     displayMirrored() {
       const { mirrored, contextMirrored } = this as IconProps & IconContext;
       return mirrored ?? contextMirrored ? "scale(-1, 1)" : undefined;
-    }
-  }
+    },
+  },
 });
 </script>

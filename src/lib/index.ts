@@ -77,10 +77,11 @@ export { default as PhArrowsCounterClockwise } from "../components/PhArrowsCount
 export { default as PhArrowsDownUp } from "../components/PhArrowsDownUp.vue";
 export { default as PhArrowsIn } from "../components/PhArrowsIn.vue";
 export { default as PhArrowsInCardinal } from "../components/PhArrowsInCardinal.vue";
+export { default as PhArrowsInSimple } from "../components/PhArrowsInSimple.vue";
 export { default as PhArrowsLeftRight } from "../components/PhArrowsLeftRight.vue";
 export { default as PhArrowsOut } from "../components/PhArrowsOut.vue";
 export { default as PhArrowsOutCardinal } from "../components/PhArrowsOutCardinal.vue";
-export { default as PhArrowsOutwardSimple } from "../components/PhArrowsOutwardSimple.vue";
+export { default as PhArrowsOutSimple } from "../components/PhArrowsOutSimple.vue";
 export { default as PhArticle } from "../components/PhArticle.vue";
 export { default as PhAsterisk } from "../components/PhAsterisk.vue";
 export { default as PhAt } from "../components/PhAt.vue";

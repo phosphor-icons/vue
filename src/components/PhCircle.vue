@@ -11,73 +11,30 @@
     v-on="$listeners"
   >
     <g v-if="displayWeight === 'bold'">
-      <rect width="256" height="256" fill="none" />
-      <circle
-        cx="128"
-        cy="128"
-        r="96"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="24"
-      />
-    </g>
+  <rect width="256" height="256" fill="none"/>
+  <circle cx="128" cy="128" r="96" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
+</g>
     <g v-else-if="displayWeight === 'duotone'">
-      <rect width="256" height="256" fill="none" />
-      <circle cx="128" cy="128" r="96" opacity="0.2" />
-      <circle
-        cx="128"
-        cy="128"
-        r="96"
-        fill="none"
-        :stroke="displayColor"
-        stroke-miterlimit="10"
-        stroke-width="16"
-      />
-    </g>
+  <rect width="256" height="256" fill="none"/>
+  <circle cx="128" cy="128" r="96" opacity="0.2"/>
+  <circle cx="128" cy="128" r="96" fill="none" :stroke="displayColor" stroke-miterlimit="10" stroke-width="16"/>
+</g>
     <g v-else-if="displayWeight === 'fill'">
-      <rect width="256" height="256" fill="none" />
-      <circle cx="128" cy="128" r="104" />
-    </g>
+  <rect width="256" height="256" fill="none"/>
+  <circle cx="128" cy="128" r="104"/>
+</g>
     <g v-else-if="displayWeight === 'light'">
-      <rect width="256" height="256" fill="none" />
-      <circle
-        cx="128"
-        cy="128"
-        r="96"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="12"
-      />
-    </g>
+  <rect width="256" height="256" fill="none"/>
+  <circle cx="128" cy="128" r="96" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
+</g>
     <g v-else-if="displayWeight === 'thin'">
-      <rect width="256" height="256" fill="none" />
-      <circle
-        cx="128"
-        cy="128"
-        r="96"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="8"
-      />
-    </g>
+  <rect width="256" height="256" fill="none"/>
+  <circle cx="128" cy="128" r="96" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+</g>
     <g v-else-if="displayWeight === 'regular'">
-      <rect width="256" height="256" fill="none" />
-      <circle
-        cx="128"
-        cy="128"
-        r="96"
-        fill="none"
-        :stroke="displayColor"
-        stroke-miterlimit="10"
-        stroke-width="16"
-      />
-    </g>
+  <rect width="256" height="256" fill="none"/>
+  <circle cx="128" cy="128" r="96" fill="none" :stroke="displayColor" stroke-miterlimit="10" stroke-width="16"/>
+</g>
   </svg>
 </template>
 
@@ -88,7 +45,7 @@ import {
   IconProps,
   PropValidator,
   IconContext,
-  ContextGetter
+  ContextGetter,
 } from "@/lib/types";
 export default Vue.extend<{}, {}, IconComputed, IconProps>({
   name: "PhCircle",
@@ -110,7 +67,7 @@ export default Vue.extend<{}, {}, IconComputed, IconProps>({
     displayMirrored() {
       const { mirrored, contextMirrored } = this as IconProps & IconContext;
       return mirrored ?? contextMirrored ? "scale(-1, 1)" : undefined;
-    }
-  }
+    },
+  },
 });
 </script>
