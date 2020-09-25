@@ -29,7 +29,7 @@ npm install --save phosphor-vue
 <template>
   <div>
     <PhHorse />
-    <PhHeart />
+    <PhHeart :size="32" color="hotpink" weight="fill" />
     <PhCube />
   </div>
 </template>
