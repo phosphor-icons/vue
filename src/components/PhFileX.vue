@@ -11,47 +11,221 @@
     v-on="$listeners"
   >
     <g v-if="displayWeight === 'bold'">
-  <rect width="256" height="256" fill="none"/>
-  <path d="M200,224.00005H55.99219a8,8,0,0,1-8-8V40a8,8,0,0,1,8-8L152,32l56,56v128A8,8,0,0,1,200,224.00005Z" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
-  <polyline points="152 32 152 88 208.008 88" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
-  <polygon points="152 32 152 88 208.008 88 152 32"/>
-  <line x1="103.98242" y1="128" x2="151.98242" y2="176" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
-  <line x1="151.98242" y1="128" x2="103.98242" y2="176" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
-</g>
+      <rect width="256" height="256" fill="none" />
+      <path
+        d="M200,224.00005H55.99219a8,8,0,0,1-8-8V40a8,8,0,0,1,8-8L152,32l56,56v128A8,8,0,0,1,200,224.00005Z"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="24"
+      />
+      <polyline
+        points="152 32 152 88 208.008 88"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="24"
+      />
+      <polygon points="152 32 152 88 208.008 88 152 32" />
+      <line
+        x1="103.98242"
+        y1="128"
+        x2="151.98242"
+        y2="176"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="24"
+      />
+      <line
+        x1="151.98242"
+        y1="128"
+        x2="103.98242"
+        y2="176"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="24"
+      />
+    </g>
     <g v-else-if="displayWeight === 'duotone'">
-  <rect width="256" height="256" fill="none"/>
-  <polygon points="152 32 152 88 208.008 88 152 32" opacity="0.2"/>
-  <path d="M200,224.00005H55.99219a8,8,0,0,1-8-8V40a8,8,0,0,1,8-8L152,32l56,56v128A8,8,0,0,1,200,224.00005Z" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
-  <polyline points="152 32 152 88 208.008 88" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
-  <line x1="103.9707" y1="128" x2="151.9707" y2="176" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
-  <line x1="151.9707" y1="128" x2="103.9707" y2="176" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
-</g>
+      <rect width="256" height="256" fill="none" />
+      <polygon points="152 32 152 88 208.008 88 152 32" opacity="0.2" />
+      <path
+        d="M200,224.00005H55.99219a8,8,0,0,1-8-8V40a8,8,0,0,1,8-8L152,32l56,56v128A8,8,0,0,1,200,224.00005Z"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <polyline
+        points="152 32 152 88 208.008 88"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <line
+        x1="103.9707"
+        y1="128"
+        x2="151.9707"
+        y2="176"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <line
+        x1="151.9707"
+        y1="128"
+        x2="103.9707"
+        y2="176"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+    </g>
     <g v-else-if="displayWeight === 'fill'">
-  <rect width="256" height="256" fill="none"/>
-  <polygon points="159.994 28.685 159.994 79.997 211.307 79.997 159.994 28.685"/>
-  <path d="M151.99414,95.9971a7.9954,7.9954,0,0,1-8-8v-64h-88a16.01583,16.01583,0,0,0-16,16v176a16.01582,16.01582,0,0,0,16,16h144a16.01581,16.01581,0,0,0,16-16v-120Zm5.64063,74.34278a7.99915,7.99915,0,1,1-11.3125,11.3125l-18.34375-18.34375-18.34375,18.34375a7.99915,7.99915,0,0,1-11.3125-11.3125L116.666,151.99613,98.32227,133.65238a7.99915,7.99915,0,0,1,11.3125-11.3125l18.34375,18.34375,18.34375-18.34375a7.99915,7.99915,0,0,1,11.3125,11.3125L139.291,151.99613Z"/>
-</g>
+      <rect width="256" height="256" fill="none" />
+      <polygon
+        points="159.994 28.685 159.994 79.997 211.307 79.997 159.994 28.685"
+      />
+      <path
+        d="M151.99414,95.9971a7.9954,7.9954,0,0,1-8-8v-64h-88a16.01583,16.01583,0,0,0-16,16v176a16.01582,16.01582,0,0,0,16,16h144a16.01581,16.01581,0,0,0,16-16v-120Zm5.64063,74.34278a7.99915,7.99915,0,1,1-11.3125,11.3125l-18.34375-18.34375-18.34375,18.34375a7.99915,7.99915,0,0,1-11.3125-11.3125L116.666,151.99613,98.32227,133.65238a7.99915,7.99915,0,0,1,11.3125-11.3125l18.34375,18.34375,18.34375-18.34375a7.99915,7.99915,0,0,1,11.3125,11.3125L139.291,151.99613Z"
+      />
+    </g>
     <g v-else-if="displayWeight === 'light'">
-  <rect width="256" height="256" fill="none"/>
-  <path d="M200,224.00005H55.99219a8,8,0,0,1-8-8V40a8,8,0,0,1,8-8L152,32l56,56v128A8,8,0,0,1,200,224.00005Z" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
-  <polyline points="152 32 152 88 208.008 88" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
-  <line x1="103.98828" y1="128" x2="151.98828" y2="176" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
-  <line x1="151.98828" y1="128" x2="103.98828" y2="176" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
-</g>
+      <rect width="256" height="256" fill="none" />
+      <path
+        d="M200,224.00005H55.99219a8,8,0,0,1-8-8V40a8,8,0,0,1,8-8L152,32l56,56v128A8,8,0,0,1,200,224.00005Z"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="12"
+      />
+      <polyline
+        points="152 32 152 88 208.008 88"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="12"
+      />
+      <line
+        x1="103.98828"
+        y1="128"
+        x2="151.98828"
+        y2="176"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="12"
+      />
+      <line
+        x1="151.98828"
+        y1="128"
+        x2="103.98828"
+        y2="176"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="12"
+      />
+    </g>
     <g v-else-if="displayWeight === 'thin'">
-  <rect width="256" height="256" fill="none"/>
-  <path d="M200,224.00005H55.99219a8,8,0,0,1-8-8V40a8,8,0,0,1,8-8L152,32l56,56v128A8,8,0,0,1,200,224.00005Z" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
-  <polyline points="152 32 152 88 208.008 88" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
-  <line x1="103.99414" y1="128" x2="151.99414" y2="176" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
-  <line x1="151.99414" y1="128" x2="103.99414" y2="176" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
-</g>
+      <rect width="256" height="256" fill="none" />
+      <path
+        d="M200,224.00005H55.99219a8,8,0,0,1-8-8V40a8,8,0,0,1,8-8L152,32l56,56v128A8,8,0,0,1,200,224.00005Z"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="8"
+      />
+      <polyline
+        points="152 32 152 88 208.008 88"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="8"
+      />
+      <line
+        x1="103.99414"
+        y1="128"
+        x2="151.99414"
+        y2="176"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="8"
+      />
+      <line
+        x1="151.99414"
+        y1="128"
+        x2="103.99414"
+        y2="176"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="8"
+      />
+    </g>
     <g v-else-if="displayWeight === 'regular'">
-  <rect width="256" height="256" fill="none"/>
-  <path d="M200,224.00005H55.99219a8,8,0,0,1-8-8V40a8,8,0,0,1,8-8L152,32l56,56v128A8,8,0,0,1,200,224.00005Z" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
-  <polyline points="152 32 152 88 208.008 88" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
-  <line x1="104" y1="128" x2="152" y2="176" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
-  <line x1="152" y1="128" x2="104" y2="176" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
-</g>
+      <rect width="256" height="256" fill="none" />
+      <path
+        d="M200,224.00005H55.99219a8,8,0,0,1-8-8V40a8,8,0,0,1,8-8L152,32l56,56v128A8,8,0,0,1,200,224.00005Z"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <polyline
+        points="152 32 152 88 208.008 88"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <line
+        x1="104"
+        y1="128"
+        x2="152"
+        y2="176"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <line
+        x1="152"
+        y1="128"
+        x2="104"
+        y2="176"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+    </g>
   </svg>
 </template>
 
@@ -62,7 +236,7 @@ import {
   IconProps,
   PropValidator,
   IconContext,
-  ContextGetter,
+  ContextGetter
 } from "@/lib/types";
 export default Vue.extend<{}, {}, IconComputed, IconProps>({
   name: "PhFileX",
@@ -84,7 +258,7 @@ export default Vue.extend<{}, {}, IconComputed, IconProps>({
     displayMirrored() {
       const { mirrored, contextMirrored } = this as IconProps & IconContext;
       return mirrored ?? contextMirrored ? "scale(-1, 1)" : undefined;
-    },
-  },
+    }
+  }
 });
 </script>

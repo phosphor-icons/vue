@@ -11,41 +11,41 @@
     v-on="$listeners"
   >
     <g v-if="displayWeight === 'bold'">
-  <rect width="256" height="256" fill="none"/>
-  <circle cx="64" cy="128" r="16"/>
-  <circle cx="128" cy="128" r="16"/>
-  <circle cx="192" cy="128" r="16"/>
-</g>
+      <rect width="256" height="256" fill="none" />
+      <circle cx="64" cy="128" r="16" />
+      <circle cx="128" cy="128" r="16" />
+      <circle cx="192" cy="128" r="16" />
+    </g>
     <g v-else-if="displayWeight === 'duotone'">
-  <rect width="256" height="256" fill="none"/>
-  <circle cx="128" cy="128" r="12"/>
-  <circle cx="64" cy="128" r="12"/>
-  <circle cx="192" cy="128" r="12"/>
-</g>
+      <rect width="256" height="256" fill="none" />
+      <circle cx="128" cy="128" r="12" />
+      <circle cx="64" cy="128" r="12" />
+      <circle cx="192" cy="128" r="12" />
+    </g>
     <g v-else-if="displayWeight === 'fill'">
-  <rect width="256" height="256" fill="none"/>
-  <circle cx="128" cy="128" r="32"/>
-  <circle cx="48" cy="128" r="32"/>
-  <circle cx="208" cy="128" r="32"/>
-</g>
+      <rect width="256" height="256" fill="none" />
+      <circle cx="128" cy="128" r="32" />
+      <circle cx="48" cy="128" r="32" />
+      <circle cx="208" cy="128" r="32" />
+    </g>
     <g v-else-if="displayWeight === 'light'">
-  <rect width="256" height="256" fill="none"/>
-  <circle cx="128" cy="128" r="9"/>
-  <circle cx="64" cy="128" r="9"/>
-  <circle cx="192" cy="128" r="9"/>
-</g>
+      <rect width="256" height="256" fill="none" />
+      <circle cx="128" cy="128" r="9" />
+      <circle cx="64" cy="128" r="9" />
+      <circle cx="192" cy="128" r="9" />
+    </g>
     <g v-else-if="displayWeight === 'thin'">
-  <rect width="256" height="256" fill="none"/>
-  <circle cx="128" cy="128" r="6"/>
-  <circle cx="64" cy="128" r="6"/>
-  <circle cx="192" cy="128" r="6"/>
-</g>
+      <rect width="256" height="256" fill="none" />
+      <circle cx="128" cy="128" r="6" />
+      <circle cx="64" cy="128" r="6" />
+      <circle cx="192" cy="128" r="6" />
+    </g>
     <g v-else-if="displayWeight === 'regular'">
-  <rect x="0.00098" width="256" height="256" fill="none"/>
-  <circle cx="128.00098" cy="128" r="12"/>
-  <circle cx="64.00098" cy="128" r="12"/>
-  <circle cx="192.00098" cy="128" r="12"/>
-</g>
+      <rect x="0.00098" width="256" height="256" fill="none" />
+      <circle cx="128.00098" cy="128" r="12" />
+      <circle cx="64.00098" cy="128" r="12" />
+      <circle cx="192.00098" cy="128" r="12" />
+    </g>
   </svg>
 </template>
 
@@ -56,7 +56,7 @@ import {
   IconProps,
   PropValidator,
   IconContext,
-  ContextGetter,
+  ContextGetter
 } from "@/lib/types";
 export default Vue.extend<{}, {}, IconComputed, IconProps>({
   name: "PhDotsThree",
@@ -78,7 +78,7 @@ export default Vue.extend<{}, {}, IconComputed, IconProps>({
     displayMirrored() {
       const { mirrored, contextMirrored } = this as IconProps & IconContext;
       return mirrored ?? contextMirrored ? "scale(-1, 1)" : undefined;
-    },
-  },
+    }
+  }
 });
 </script>
