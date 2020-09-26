@@ -329,58 +329,114 @@
         @click="changeWifi"
       />
     </section>
+    <input name="show" type="checkbox" :checked="showAll" @change="extend" />
+    <label for="show">Show All</label>
+    <section v-if="showAll">
+      <div class="row" v-for="icon in icons" :key="icon.options.name">
+        <span class="name">{{ icon.options.name }}</span>
+        <div class="icons" :title="icon.options.name">
+          <component :is="icon.options.name" />
+          <component
+            :is="icon.options.name"
+            mirrored
+            color="darkorange"
+            :size="24"
+          />
+          <component
+            :is="icon.options.name"
+            mirrored
+            color="darkmagenta"
+            :size="24"
+          />
+          <component
+            :is="icon.options.name"
+            mirrored
+            color="royalblue"
+            :size="24"
+          />
+          <component :is="icon.options.name" :weight="weight" :size="32" />
+          <component
+            :is="icon.options.name"
+            :weight="weight"
+            color="crimson"
+            :size="32"
+          />
+          <component
+            :is="icon.options.name"
+            :weight="weight"
+            color="teal"
+            :size="32"
+          />
+          <component
+            :is="icon.options.name"
+            weight="thin"
+            :color="color"
+            :size="48"
+          />
+          <component
+            :is="icon.options.name"
+            weight="light"
+            :color="color"
+            :size="48"
+          />
+          <component
+            :is="icon.options.name"
+            weight="regular"
+            :color="color"
+            :size="48"
+          />
+          <component
+            :is="icon.options.name"
+            weight="bold"
+            :color="color"
+            :size="48"
+          />
+          <component
+            :is="icon.options.name"
+            weight="fill"
+            :color="color"
+            :size="48"
+          />
+          <component
+            :is="icon.options.name"
+            weight="duotone"
+            :color="color"
+            :size="48"
+          />
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
-import {
-  PhAndroid,
-  PhAt,
-  PhBatteryFull,
-  PhBatteryHigh,
-  PhBatteryMedium,
-  PhBatteryLow,
-  PhBatteryEmpty,
-  PhBatteryCharging,
-  PhCellSignalFull,
-  PhCellSignalHigh,
-  PhCellSignalMedium,
-  PhCellSignalLow,
-  PhCellSignalNone,
-  PhChartPieSlice,
-  PhEye,
-  PhEyeSlash,
-  PhFingerprint,
-  PhFolder,
-  PhFolderOpen,
-  PhHeart,
-  PhHourglass,
-  PhHourglassHigh,
-  PhHourglassMedium,
-  PhHourglassLow,
-  PhLockKey,
-  PhLockKeyOpen,
-  PhMapTrifold,
-  PhMicrophone,
-  PhMicrophoneSlash,
-  PhPackage,
-  PhPen,
-  PhSpeakerHigh,
-  PhSpeakerLow,
-  PhSpeakerNone,
-  PhSpeakerX,
-  PhStack,
-  PhTruck,
-  PhWifiHigh,
-  PhWifiMedium,
-  PhWifiLow,
-  PhWifiNone,
-  PhCircle,
-  PhTable
-} from "@/entry";
+import * as Phosphor from "@/entry";
+import { ExtendedVue } from "vue/types/vue";
+import { IconProps } from "@/lib/types";
+import { IconComputed } from "@/lib/types";
+
+type VueIcon = ExtendedVue<Vue, {}, {}, IconComputed, IconProps> & {
+  options: { name: string };
+};
+
+function isIcon(candidate: any): candidate is VueIcon {
+  return candidate.options && candidate.options.name;
+}
+
+const Icon = Object.values(Phosphor).reduce((components, Icon) => {
+  if (isIcon(Icon)) return { ...components, [Icon.options!!.name]: Icon };
+  return components;
+}, {});
+
+const icons = Object.values(Icon);
+
+if (process.env.NODE_ENV === "development") {
+  console.log(`${icons.length} icons`);
+}
 
 interface AppData {
+  icons: any[];
   weight: string;
   size: number | string;
   color: string;
@@ -395,57 +451,15 @@ interface AppData {
   muted: boolean;
   volume: string;
   wifi: "high" | "medium" | "low" | "none";
+  showAll: boolean;
 }
 
 export default Vue.extend({
   name: "ServeDev",
-  components: {
-    PhAndroid,
-    PhAt,
-    PhBatteryFull,
-    PhBatteryHigh,
-    PhBatteryMedium,
-    PhBatteryLow,
-    PhBatteryEmpty,
-    PhBatteryCharging,
-    PhCellSignalFull,
-    PhCellSignalHigh,
-    PhCellSignalMedium,
-    PhCellSignalLow,
-    PhCellSignalNone,
-    PhChartPieSlice,
-    PhEye,
-    PhEyeSlash,
-    PhFingerprint,
-    PhFolder,
-    PhFolderOpen,
-    PhHeart,
-    PhHourglass,
-    PhHourglassHigh,
-    PhHourglassMedium,
-    PhHourglassLow,
-    PhLockKey,
-    PhLockKeyOpen,
-    PhMapTrifold,
-    PhMicrophone,
-    PhMicrophoneSlash,
-    PhPackage,
-    PhPen,
-    PhSpeakerHigh,
-    PhSpeakerLow,
-    PhSpeakerNone,
-    PhSpeakerX,
-    PhStack,
-    PhTruck,
-    PhWifiHigh,
-    PhWifiMedium,
-    PhWifiLow,
-    PhWifiNone,
-    PhCircle,
-    PhTable
-  },
+  components: Icon,
   data(): AppData {
     return {
+      icons,
       weight: "regular",
       size: 64,
       color: "indianred",
@@ -459,7 +473,8 @@ export default Vue.extend({
       locked: true,
       muted: false,
       volume: "high",
-      wifi: "high"
+      wifi: "high",
+      showAll: false
     };
   },
   computed: {
@@ -477,6 +492,9 @@ export default Vue.extend({
     };
   },
   methods: {
+    extend() {
+      this.showAll = !this.showAll;
+    },
     test() {
       console.log(`HI MOM! It's ${new Date().toLocaleTimeString()}`);
     },
@@ -587,3 +605,35 @@ export default Vue.extend({
   }
 });
 </script>
+
+<style>
+body {
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #242424;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.row {
+  position: relative;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  padding: 8px 0;
+}
+
+.name {
+  text-align: start;
+  width: 240px;
+}
+</style>
