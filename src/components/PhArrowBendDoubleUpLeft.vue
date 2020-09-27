@@ -35,56 +35,8 @@
         stroke-linejoin="round"
         stroke-width="24"
       />
-      <polyline
-        points="80 152 32 104 80 56"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="24"
-      />
-      <polyline
-        points="128 152 80 104 128 56"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="24"
-      />
-      <path
-        d="M224,200a96,96,0,0,0-96-96H80"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="24"
-      />
     </g>
     <g v-else-if="displayWeight === 'duotone'">
-      <polyline
-        points="80 152 32 104 80 56"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="16"
-      />
-      <polyline
-        points="128 152 80 104 128 56"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="16"
-      />
-      <path
-        d="M224,200a96,96,0,0,0-96-96H80"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="16"
-      />
       <polyline
         points="80 152 32 104 80 56"
         fill="none"
@@ -145,30 +97,6 @@
         stroke-linejoin="round"
         stroke-width="12"
       />
-      <polyline
-        points="80 152 32 104 80 56"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="12"
-      />
-      <polyline
-        points="128 152 80 104 128 56"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="12"
-      />
-      <path
-        d="M224,200a96,96,0,0,0-96-96H80"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="12"
-      />
     </g>
     <g v-else-if="displayWeight === 'thin'">
       <polyline
@@ -195,56 +123,8 @@
         stroke-linejoin="round"
         stroke-width="8"
       />
-      <polyline
-        points="80 152 32 104 80 56"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="8"
-      />
-      <polyline
-        points="128 152 80 104 128 56"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="8"
-      />
-      <path
-        d="M224,200a96,96,0,0,0-96-96H80"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="8"
-      />
     </g>
     <g v-else-if="displayWeight === 'regular'">
-      <polyline
-        points="80 152 32 104 80 56"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="16"
-      />
-      <polyline
-        points="128 152 80 104 128 56"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="16"
-      />
-      <path
-        d="M224,200a96,96,0,0,0-96-96H80"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="16"
-      />
       <polyline
         points="80 152 32 104 80 56"
         fill="none"

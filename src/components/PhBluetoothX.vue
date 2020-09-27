@@ -11,7 +11,7 @@
     v-on="$listeners"
   >
     <g v-if="displayWeight === 'bold'">
-      <rect width="256" height="256" fill="none" />
+      <rect x="0.00049" width="255.99951" height="256" fill="none" />
       <polygon
         points="120 128.003 184 176.003 120 224.003 120 128.003"
         fill="none"
@@ -74,7 +74,7 @@
       />
     </g>
     <g v-else-if="displayWeight === 'duotone'">
-      <rect width="256" height="256" fill="none" />
+      <rect x="0.00049" width="255.99951" height="256" fill="none" />
       <polygon
         points="119.971 32.003 183.971 80.003 119.971 128.003 119.971 32.003"
         opacity="0.2"
@@ -145,7 +145,7 @@
       />
     </g>
     <g v-else-if="displayWeight === 'fill'">
-      <rect width="256" height="256" fill="none" />
+      <rect x="0.00049" width="255.99951" height="256" fill="none" />
       <polygon
         points="120 128.003 184 176.003 120 224.003 120 128.003"
         fill="none"
@@ -208,7 +208,7 @@
       />
     </g>
     <g v-else-if="displayWeight === 'light'">
-      <rect width="256" height="256" fill="none" />
+      <rect x="0.00049" width="255.99951" height="256" fill="none" />
       <polygon
         points="120 128.003 184 176.003 120 224.003 120 128.003"
         fill="none"
@@ -271,7 +271,7 @@
       />
     </g>
     <g v-else-if="displayWeight === 'thin'">
-      <rect width="256" height="256" fill="none" />
+      <rect x="0.00049" width="255.99951" height="256" fill="none" />
       <polygon
         points="120 128.003 184 176.003 120 224.003 120 128.003"
         fill="none"
@@ -334,7 +334,7 @@
       />
     </g>
     <g v-else-if="displayWeight === 'regular'">
-      <rect width="256" height="256" fill="none" />
+      <rect x="0.00049" width="255.99951" height="256" fill="none" />
       <polygon
         points="120 128.003 184 176.003 120 224.003 120 128.003"
         fill="none"

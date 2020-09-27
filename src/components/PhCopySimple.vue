@@ -11,7 +11,6 @@
     v-on="$listeners"
   >
     <g v-if="displayWeight === 'bold'">
-      <rect width="255.99316" height="255.99316" fill="none" />
       <polyline
         points="215.993 183.995 215.993 39.994 71.986 39.994"
         fill="none"
@@ -33,7 +32,6 @@
       />
     </g>
     <g v-else-if="displayWeight === 'duotone'">
-      <rect width="255.99316" height="255.99316" fill="none" />
       <rect
         x="39.98633"
         y="71.99512"
@@ -62,14 +60,14 @@
       />
     </g>
     <g v-else-if="displayWeight === 'fill'">
-      <rect width="255.99316" height="255.99316" fill="none" />
-      <path
-        d="M71.98682,47.99414H207.99365v136.001a8,8,0,0,0,16,0V39.99414a8.00008,8.00008,0,0,0-8-8H71.98682a8,8,0,1,0,0,16Z"
-      />
-      <rect x="31.98682" y="63.99512" width="160.00586" height="160" rx="8" />
+      <g>
+        <path
+          d="M215.99365,31.99414H71.98682a8,8,0,1,0,0,16H207.99365v136.001a8,8,0,0,0,16,0V39.99414A8.00008,8.00008,0,0,0,215.99365,31.99414Z"
+        />
+        <rect x="31.98682" y="63.99512" width="160.00586" height="160" rx="8" />
+      </g>
     </g>
     <g v-else-if="displayWeight === 'light'">
-      <rect width="255.99316" height="255.99316" fill="none" />
       <polyline
         points="215.993 183.995 215.993 39.994 71.986 39.994"
         fill="none"
@@ -91,7 +89,6 @@
       />
     </g>
     <g v-else-if="displayWeight === 'thin'">
-      <rect width="255.99316" height="255.99316" fill="none" />
       <polyline
         points="215.993 183.995 215.993 39.994 71.986 39.994"
         fill="none"
@@ -113,7 +110,6 @@
       />
     </g>
     <g v-else-if="displayWeight === 'regular'">
-      <rect width="255.99316" height="255.99316" fill="none" />
       <polyline
         points="215.993 183.995 215.993 39.994 71.986 39.994"
         fill="none"

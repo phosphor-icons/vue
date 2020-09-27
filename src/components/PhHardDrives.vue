@@ -35,32 +35,6 @@
         stroke-linejoin="round"
         fill="none"
       />
-      <circle cx="180.00054" cy="80" r="12" />
-      <circle cx="180.00054" cy="176" r="12" />
-      <rect
-        x="40"
-        y="144"
-        width="176"
-        height="64"
-        rx="8"
-        stroke-width="24"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        fill="none"
-      />
-      <rect
-        x="40"
-        y="48"
-        width="176"
-        height="64"
-        rx="8"
-        stroke-width="24"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        fill="none"
-      />
       <circle cx="180.00054" cy="80" r="16" />
       <circle cx="180.00054" cy="176" r="16" />
     </g>

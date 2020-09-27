@@ -11,6 +11,7 @@
     v-on="$listeners"
   >
     <g v-if="displayWeight === 'bold'">
+      <circle cx="127.99414" cy="152" r="16" />
       <rect
         x="40"
         y="88"
@@ -23,7 +24,6 @@
         stroke-linejoin="round"
         fill="none"
       />
-      <circle cx="127.99414" cy="152" r="16" />
       <path
         d="M92,88V52a36,36,0,0,1,72,0"
         fill="none"

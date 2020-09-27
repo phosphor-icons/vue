@@ -11,6 +11,7 @@
     v-on="$listeners"
   >
     <g v-if="displayWeight === 'bold'">
+      <rect x="0.00049" width="255.99951" height="256" fill="none" />
       <line
         x1="55.99414"
         y1="176.00256"
@@ -51,7 +52,7 @@
       />
     </g>
     <g v-else-if="displayWeight === 'duotone'">
-      <rect width="256" height="256" fill="none" />
+      <rect x="0.00049" width="255.99951" height="256" fill="none" />
       <polygon
         points="119.971 32.003 183.971 80.003 119.971 128.003 119.971 32.003"
         opacity="0.2"
@@ -100,6 +101,7 @@
       />
     </g>
     <g v-else-if="displayWeight === 'fill'">
+      <rect x="0.00049" width="255.99951" height="256" fill="none" />
       <line
         x1="55.99414"
         y1="176.00256"
@@ -140,6 +142,7 @@
       />
     </g>
     <g v-else-if="displayWeight === 'light'">
+      <rect x="0.00049" width="255.99951" height="256" fill="none" />
       <line
         x1="55.99414"
         y1="176.00256"
@@ -180,6 +183,7 @@
       />
     </g>
     <g v-else-if="displayWeight === 'thin'">
+      <rect x="0.00049" width="255.99951" height="256" fill="none" />
       <line
         x1="55.99414"
         y1="176.00256"
@@ -220,14 +224,7 @@
       />
     </g>
     <g v-else-if="displayWeight === 'regular'">
-      <polyline
-        points="124.756 124.431 119.994 128.003 119.994 119.194"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="16"
-      />
+      <rect x="0.00049" width="255.99951" height="256" fill="none" />
       <line
         x1="55.99414"
         y1="176.00256"

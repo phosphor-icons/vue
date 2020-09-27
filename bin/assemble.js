@@ -16,7 +16,11 @@ function readFile(folder, pathname, weight) {
     .replace(/<svg.*/g, "")
     .replace(/<\/svg>\n/g, "")
     .replace(/<title.*/g, "")
-    .replace(/stroke="#000"/g, ':stroke="displayColor"');
+    .replace(/stroke="#000"/g, ':stroke="displayColor"')
+    .replace(
+      /<rect width="25[\d,\.]+" height="25[\d,\.]+" fill="none".*\/>/g,
+      ""
+    );
 }
 
 function readFiles() {

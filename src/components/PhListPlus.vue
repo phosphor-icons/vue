@@ -44,7 +44,6 @@
         stroke-linejoin="round"
         stroke-width="24"
       />
-      <rect width="256" height="256" fill="none" />
       <line
         x1="184"
         y1="188"
@@ -102,7 +101,6 @@
         stroke-linejoin="round"
         stroke-width="16"
       />
-      <rect y="0.00586" width="256" height="256" fill="none" />
       <line
         x1="184"
         y1="188.00586"
@@ -127,7 +125,6 @@
       />
     </g>
     <g v-else-if="displayWeight === 'fill'">
-      <rect y="0.00586" width="256" height="256" fill="none" />
       <g>
         <path d="M40,76H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16Z" />
         <path d="M216,120H40.00586a8,8,0,1,0,0,16H216a8,8,0,0,0,0-16Z" />
@@ -171,7 +168,6 @@
         stroke-linejoin="round"
         stroke-width="12"
       />
-      <rect y="0.00586" width="256" height="256" fill="none" />
       <line
         x1="184"
         y1="188.00586"
@@ -229,7 +225,6 @@
         stroke-linejoin="round"
         stroke-width="8"
       />
-      <rect width="256" height="256" fill="none" />
       <line
         x1="184"
         y1="188"
@@ -287,7 +282,6 @@
         stroke-linejoin="round"
         stroke-width="16"
       />
-      <rect width="256" height="256" fill="none" />
       <line
         x1="184"
         y1="188"

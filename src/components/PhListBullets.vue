@@ -11,44 +11,47 @@
     v-on="$listeners"
   >
     <g v-if="displayWeight === 'bold'">
-      <line
-        x1="88"
-        y1="68"
-        x2="216"
-        y2="68"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="24"
-      />
-      <line
-        x1="88.00614"
-        y1="128"
-        x2="216"
-        y2="128"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="24"
-      />
-      <line
-        x1="88.00614"
-        y1="188"
-        x2="216"
-        y2="188"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="24"
-      />
       <circle cx="44" cy="68" r="16" />
       <circle cx="44" cy="128" r="16" />
       <circle cx="44" cy="188.00586" r="16" />
+      <line
+        x1="88"
+        y1="68"
+        x2="216"
+        y2="68"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="24"
+      />
+      <line
+        x1="88.00614"
+        y1="128"
+        x2="216"
+        y2="128"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="24"
+      />
+      <line
+        x1="88.00614"
+        y1="188"
+        x2="216"
+        y2="188"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="24"
+      />
     </g>
     <g v-else-if="displayWeight === 'duotone'">
+      <circle cx="44" cy="68" r="12" />
+      <circle cx="44" cy="128" r="12" />
+      <circle cx="44" cy="188.00586" r="12" />
       <line
         x1="88"
         y1="68"
@@ -82,9 +85,6 @@
         stroke-linejoin="round"
         stroke-width="16"
       />
-      <circle cx="44" cy="68" r="12" />
-      <circle cx="44" cy="128" r="12" />
-      <circle cx="44" cy="188.00586" r="12" />
     </g>
     <g v-else-if="displayWeight === 'fill'">
       <g>
@@ -97,44 +97,9 @@
       </g>
     </g>
     <g v-else-if="displayWeight === 'light'">
-      <line
-        x1="88"
-        y1="68"
-        x2="216"
-        y2="68"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="12"
-      />
-      <line
-        x1="88.00614"
-        y1="128"
-        x2="216"
-        y2="128"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="12"
-      />
-      <line
-        x1="88.00614"
-        y1="188"
-        x2="216"
-        y2="188"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="12"
-      />
       <circle cx="44" cy="68" r="9" />
       <circle cx="44" cy="128" r="9" />
       <circle cx="44" cy="188.00586" r="9" opacity="0.8" />
-    </g>
-    <g v-else-if="displayWeight === 'thin'">
       <line
         x1="88"
         y1="68"
@@ -144,7 +109,7 @@
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        stroke-width="8"
+        stroke-width="12"
       />
       <line
         x1="88.00614"
@@ -155,7 +120,7 @@
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        stroke-width="8"
+        stroke-width="12"
       />
       <line
         x1="88.00614"
@@ -166,13 +131,51 @@
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        stroke-width="8"
+        stroke-width="12"
       />
+    </g>
+    <g v-else-if="displayWeight === 'thin'">
       <circle cx="44" cy="68" r="6" />
       <circle cx="44" cy="128" r="6" />
       <circle cx="44" cy="188.00586" r="6" />
+      <line
+        x1="88"
+        y1="68"
+        x2="216"
+        y2="68"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="8"
+      />
+      <line
+        x1="88.00614"
+        y1="128"
+        x2="216"
+        y2="128"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="8"
+      />
+      <line
+        x1="88.00614"
+        y1="188"
+        x2="216"
+        y2="188"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="8"
+      />
     </g>
     <g v-else-if="displayWeight === 'regular'">
+      <circle cx="44" cy="68" r="12" />
+      <circle cx="44" cy="128" r="12" />
+      <circle cx="44" cy="188.00586" r="12" />
       <line
         x1="88"
         y1="68"
@@ -206,9 +209,6 @@
         stroke-linejoin="round"
         stroke-width="16"
       />
-      <circle cx="44" cy="68" r="12" />
-      <circle cx="44" cy="128" r="12" />
-      <circle cx="44" cy="188.00586" r="12" />
     </g>
   </svg>
 </template>

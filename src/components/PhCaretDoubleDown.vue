@@ -48,24 +48,9 @@
       />
     </g>
     <g v-else-if="displayWeight === 'fill'">
-      <polygon
-        points="208 128 128 208 48 128 208 128"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="16"
+      <path
+        d="M208,120H147.31348l66.34326-66.34326A7.99981,7.99981,0,0,0,208,40H48a7.99981,7.99981,0,0,0-5.65674,13.65674L108.68652,120H48a7.99981,7.99981,0,0,0-5.65674,13.65674l80,80.00049a8.00063,8.00063,0,0,0,11.31348,0l80-80.00049A7.99981,7.99981,0,0,0,208,120Z"
       />
-      <polygon
-        points="208 48 128 128 48 48 208 48"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="16"
-      />
-      <polygon points="208 128 128 208 48 128 208 128" />
-      <polygon points="208 48 128 128 48 48 208 48" />
     </g>
     <g v-else-if="displayWeight === 'light'">
       <polyline

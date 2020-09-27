@@ -86,7 +86,8 @@
         y2="72"
         fill="none"
         :stroke="displayColor"
-        stroke-miterlimit="10"
+        stroke-linecap="round"
+        stroke-linejoin="round"
         stroke-width="16"
       />
     </g>
@@ -210,7 +211,8 @@
         y2="72"
         fill="none"
         :stroke="displayColor"
-        stroke-miterlimit="10"
+        stroke-linecap="round"
+        stroke-linejoin="round"
         stroke-width="16"
       />
     </g>

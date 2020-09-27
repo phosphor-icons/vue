@@ -12,18 +12,6 @@
   >
     <g v-if="displayWeight === 'bold'">
       <circle cx="188.00054" cy="128" r="12" />
-      <rect
-        x="24"
-        y="72"
-        width="208"
-        height="112"
-        rx="8"
-        stroke-width="24"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        fill="none"
-      />
       <circle cx="188.00054" cy="128" r="16" />
       <rect
         x="24"

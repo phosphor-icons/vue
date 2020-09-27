@@ -40,10 +40,12 @@
         stroke-linejoin="round"
         stroke-width="24"
       />
-      <polygon points="108 128 156 96 156 160 108 128" />
     </g>
     <g v-else-if="displayWeight === 'duotone'">
-      <circle cx="128" cy="128" r="96" opacity="0.2" />
+      <path
+        d="M128,32a96,96,0,1,0,96,96A95.99991,95.99991,0,0,0,128,32Zm28,128-48-32,48-32Z"
+        opacity="0.2"
+      />
       <circle
         cx="128"
         cy="128"

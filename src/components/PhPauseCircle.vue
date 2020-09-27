@@ -21,16 +21,6 @@
         stroke-linejoin="round"
         stroke-width="24"
       />
-      <circle
-        cx="128"
-        cy="128"
-        r="96"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="24"
-      />
       <line
         x1="104"
         y1="96"
@@ -128,16 +118,6 @@
       />
     </g>
     <g v-else-if="displayWeight === 'thin'">
-      <circle
-        cx="128"
-        cy="128"
-        r="96"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="8"
-      />
       <circle
         cx="128"
         cy="128"

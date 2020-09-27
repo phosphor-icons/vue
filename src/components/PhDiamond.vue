@@ -70,7 +70,6 @@
       />
     </g>
     <g v-else-if="displayWeight === 'thin'">
-      <rect width="256" height="256" fill="none" />
       <rect
         x="48.80404"
         y="48.80404"

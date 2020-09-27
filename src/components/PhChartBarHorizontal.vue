@@ -11,7 +11,6 @@
     v-on="$listeners"
   >
     <g v-if="displayWeight === 'bold'">
-      <rect width="256" height="256" fill="none" />
       <line
         x1="40"
         y1="216"
@@ -23,16 +22,13 @@
         stroke-linejoin="round"
         stroke-width="24"
       />
-      <rect
-        x="40"
-        y="56"
-        width="128"
-        height="48"
-        stroke-width="24"
+      <polyline
+        points="40 56 168 56 168 104"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="24"
       />
       <rect
         x="40"
@@ -45,20 +41,16 @@
         stroke-linejoin="round"
         fill="none"
       />
-      <rect
-        x="40"
-        y="152"
-        width="96"
-        height="48"
-        stroke-width="24"
+      <polyline
+        points="136 152 136 200 40 200"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="24"
       />
     </g>
     <g v-else-if="displayWeight === 'duotone'">
-      <rect width="256" height="256" fill="none" />
       <rect x="40" y="104" width="176" height="48" opacity="0.2" />
       <line
         x1="40"
@@ -71,16 +63,13 @@
         stroke-linejoin="round"
         stroke-width="16"
       />
-      <rect
-        x="40"
-        y="56"
-        width="128"
-        height="48"
-        stroke-width="16"
+      <polyline
+        points="40 56 168 56 168 104"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
       <rect
         x="40"
@@ -93,25 +82,21 @@
         stroke-linejoin="round"
         fill="none"
       />
-      <rect
-        x="40"
-        y="152"
-        width="96"
-        height="48"
-        stroke-width="16"
+      <polyline
+        points="136 152 136 200 40 200"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
     </g>
     <g v-else-if="displayWeight === 'fill'">
       <path
-        d="M216,148a7.99977,7.99977,0,0,0,8-8V116a7.99977,7.99977,0,0,0-8-8H48V92H176V64a7.99977,7.99977,0,0,0-8-8H48V40a8,8,0,0,0-16,0V216a8,8,0,0,0,16,0V200h88a7.99977,7.99977,0,0,0,8-8V164H48V148Z"
+        d="M216,96H176V56a7.99977,7.99977,0,0,0-8-8H48V40a8,8,0,0,0-16,0V216a8,8,0,0,0,16,0v-8h88a7.99977,7.99977,0,0,0,8-8V160h72a7.99977,7.99977,0,0,0,8-8V104A7.99977,7.99977,0,0,0,216,96ZM160,64V96H48V64ZM128,192H48V160h80Z"
       />
     </g>
     <g v-else-if="displayWeight === 'light'">
-      <rect width="256" height="256" fill="none" />
       <line
         x1="40"
         y1="216"
@@ -123,16 +108,13 @@
         stroke-linejoin="round"
         stroke-width="12"
       />
-      <rect
-        x="40"
-        y="56"
-        width="128"
-        height="48"
-        stroke-width="12"
+      <polyline
+        points="40 56 168 56 168 104"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="12"
       />
       <rect
         x="40"
@@ -145,20 +127,16 @@
         stroke-linejoin="round"
         fill="none"
       />
-      <rect
-        x="40"
-        y="152"
-        width="96"
-        height="48"
-        stroke-width="12"
+      <polyline
+        points="136 152 136 200 40 200"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="12"
       />
     </g>
     <g v-else-if="displayWeight === 'thin'">
-      <rect width="256" height="256" fill="none" />
       <line
         x1="40"
         y1="216"
@@ -170,16 +148,13 @@
         stroke-linejoin="round"
         stroke-width="8"
       />
-      <rect
-        x="40"
-        y="56"
-        width="128"
-        height="48"
-        stroke-width="8"
+      <polyline
+        points="40 56 168 56 168 104"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="8"
       />
       <rect
         x="40"
@@ -192,16 +167,13 @@
         stroke-linejoin="round"
         fill="none"
       />
-      <rect
-        x="40"
-        y="152"
-        width="96"
-        height="48"
-        stroke-width="8"
+      <polyline
+        points="136 152 136 200 40 200"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="8"
       />
     </g>
     <g v-else-if="displayWeight === 'regular'">
@@ -216,16 +188,13 @@
         stroke-linejoin="round"
         stroke-width="16"
       />
-      <rect
-        x="40"
-        y="56"
-        width="128"
-        height="48"
-        stroke-width="16"
+      <polyline
+        points="40 56 168 56 168 104"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
       <rect
         x="40"
@@ -238,16 +207,13 @@
         stroke-linejoin="round"
         fill="none"
       />
-      <rect
-        x="40"
-        y="152"
-        width="96"
-        height="48"
-        stroke-width="16"
+      <polyline
+        points="136 152 136 200 40 200"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
     </g>
   </svg>

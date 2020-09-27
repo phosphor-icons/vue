@@ -11,7 +11,7 @@
     v-on="$listeners"
   >
     <g v-if="displayWeight === 'bold'">
-      <rect width="256" height="256" fill="none" />
+      <rect x="0.00049" width="255.99951" height="256" fill="none" />
       <line
         x1="116"
         y1="88"
@@ -50,7 +50,7 @@
       />
     </g>
     <g v-else-if="displayWeight === 'duotone'">
-      <rect width="256" height="256" fill="none" />
+      <rect x="0.00049" width="255.99951" height="256" fill="none" />
       <rect
         x="44"
         y="36.00452"
@@ -98,16 +98,18 @@
       />
     </g>
     <g v-else-if="displayWeight === 'fill'">
-      <rect width="256" height="256" fill="none" />
-      <path
-        d="M240,88.00452a7.99977,7.99977,0,0,0-8,8v64a8,8,0,0,0,16,0v-64A7.99977,7.99977,0,0,0,240,88.00452Z"
-      />
-      <path
-        d="M192,48.00452H40a24.0275,24.0275,0,0,0-24,24v112a24.0275,24.0275,0,0,0,24,24H192a24.0275,24.0275,0,0,0,24-24v-112A24.0275,24.0275,0,0,0,192,48.00452Zm-84,39.9956a8,8,0,1,1,16,0v40a8,8,0,0,1-16,0Zm8,88a12,12,0,1,1,12-12A12,12,0,0,1,116,176.00012Z"
-      />
+      <rect x="0.00049" width="255.99951" height="256" fill="none" />
+      <g>
+        <path
+          d="M240,88.00452a7.99977,7.99977,0,0,0-8,8v64a8,8,0,0,0,16,0v-64A7.99977,7.99977,0,0,0,240,88.00452Z"
+        />
+        <path
+          d="M192,48.00452H40a24.0275,24.0275,0,0,0-24,24v112a24.0275,24.0275,0,0,0,24,24H192a24.0275,24.0275,0,0,0,24-24v-112A24.0275,24.0275,0,0,0,192,48.00452Zm-84,39.9956a8,8,0,1,1,16,0v40a8,8,0,0,1-16,0Zm8,88a12,12,0,1,1,12-12A12,12,0,0,1,116,176.00012Z"
+        />
+      </g>
     </g>
     <g v-else-if="displayWeight === 'light'">
-      <rect width="256" height="256" fill="none" />
+      <rect x="0.00049" width="255.99951" height="256" fill="none" />
       <line
         x1="116"
         y1="88"
@@ -146,7 +148,7 @@
       />
     </g>
     <g v-else-if="displayWeight === 'thin'">
-      <rect width="256" height="256" fill="none" />
+      <rect x="0.00049" width="255.99951" height="256" fill="none" />
       <line
         x1="116"
         y1="88"
@@ -185,6 +187,7 @@
       />
     </g>
     <g v-else-if="displayWeight === 'regular'">
+      <rect x="0.00049" width="255.99951" height="256" fill="none" />
       <line
         x1="116"
         y1="88"

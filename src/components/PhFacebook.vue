@@ -21,19 +21,8 @@
         stroke-linejoin="round"
         stroke-width="24"
       />
-      <line
-        x1="128"
-        y1="224.00094"
-        x2="128"
-        y2="112.00094"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="24"
-      />
       <path
-        d="M168,88.00094H152a24,24,0,0,0-24,24"
+        d="M168,88.00094H152a24,24,0,0,0-24,24v112"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -64,19 +53,8 @@
         stroke-linejoin="round"
         stroke-width="16"
       />
-      <line
-        x1="128"
-        y1="224.00094"
-        x2="128"
-        y2="112.00094"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="16"
-      />
       <path
-        d="M168,88.00094H152a24,24,0,0,0-24,24"
+        d="M168,88.00094H152a24,24,0,0,0-24,24v112"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -111,19 +89,8 @@
         stroke-linejoin="round"
         stroke-width="12"
       />
-      <line
-        x1="128"
-        y1="224.00094"
-        x2="128"
-        y2="112.00094"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="12"
-      />
       <path
-        d="M168,88.00094H152a24,24,0,0,0-24,24"
+        d="M168,88.00094H152a24,24,0,0,0-24,24v112"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -153,19 +120,8 @@
         stroke-linejoin="round"
         stroke-width="8"
       />
-      <line
-        x1="128"
-        y1="224.00094"
-        x2="128"
-        y2="112.00094"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="8"
-      />
       <path
-        d="M168,88.00094H152a24,24,0,0,0-24,24"
+        d="M168,88.00094H152a24,24,0,0,0-24,24v112"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -195,19 +151,8 @@
         stroke-linejoin="round"
         stroke-width="16"
       />
-      <line
-        x1="128"
-        y1="224.00094"
-        x2="128"
-        y2="112.00094"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="16"
-      />
       <path
-        d="M168,88.00094H152a24,24,0,0,0-24,24"
+        d="M168,88.00094H152a24,24,0,0,0-24,24v112"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"

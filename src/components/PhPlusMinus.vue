@@ -248,17 +248,6 @@
         stroke-linejoin="round"
         stroke-width="16"
       />
-      <line
-        x1="144"
-        y1="184"
-        x2="224"
-        y2="184"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="16"
-      />
     </g>
   </svg>
 </template>

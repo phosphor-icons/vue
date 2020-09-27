@@ -11,7 +11,6 @@
     v-on="$listeners"
   >
     <g v-if="displayWeight === 'bold'">
-      <rect width="256" height="256" fill="none" />
       <rect
         x="52"
         y="52"
@@ -26,7 +25,6 @@
       />
     </g>
     <g v-else-if="displayWeight === 'duotone'">
-      <rect width="256" height="256" fill="none" />
       <rect x="52" y="52" width="152" height="152" rx="6.90909" opacity="0.2" />
       <rect
         x="52"
@@ -42,11 +40,9 @@
       />
     </g>
     <g v-else-if="displayWeight === 'fill'">
-      <rect width="256" height="256" fill="none" />
       <rect x="44" y="44" width="168" height="168" rx="14.90918" />
     </g>
     <g v-else-if="displayWeight === 'light'">
-      <rect width="256" height="256" fill="none" />
       <rect
         x="52"
         y="52"
@@ -61,7 +57,6 @@
       />
     </g>
     <g v-else-if="displayWeight === 'thin'">
-      <rect width="256" height="256" fill="none" />
       <rect
         x="52"
         y="52"
@@ -76,7 +71,6 @@
       />
     </g>
     <g v-else-if="displayWeight === 'regular'">
-      <rect width="256" height="256" fill="none" />
       <rect
         x="52"
         y="52"

@@ -97,9 +97,9 @@
         stroke-width="12"
       />
       <line
-        x1="168"
+        x1="88"
         y1="128"
-        x2="88"
+        x2="168"
         y2="128"
         fill="none"
         :stroke="displayColor"
@@ -128,9 +128,9 @@
         stroke-width="8"
       />
       <line
-        x1="168"
+        x1="88"
         y1="128"
-        x2="88"
+        x2="168"
         y2="128"
         fill="none"
         :stroke="displayColor"
@@ -158,9 +158,9 @@
         stroke-width="16"
       />
       <line
-        x1="168"
+        x1="88"
         y1="128"
-        x2="88"
+        x2="168"
         y2="128"
         fill="none"
         :stroke="displayColor"

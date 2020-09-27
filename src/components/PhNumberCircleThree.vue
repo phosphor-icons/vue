@@ -11,7 +11,6 @@
     v-on="$listeners"
   >
     <g v-if="displayWeight === 'bold'">
-      <rect width="256" height="256" fill="none" />
       <circle
         cx="128"
         cy="128"
@@ -32,7 +31,6 @@
       />
     </g>
     <g v-else-if="displayWeight === 'duotone'">
-      <rect width="256" height="256" fill="none" />
       <circle cx="128" cy="128" r="96" opacity="0.2" />
       <circle
         cx="128"
@@ -53,13 +51,11 @@
       />
     </g>
     <g v-else-if="displayWeight === 'fill'">
-      <rect width="256" height="256" fill="none" />
       <path
         d="M128,24A104,104,0,1,0,232,128,104.12041,104.12041,0,0,0,128,24Zm21.46094,149.45313a35.99631,35.99631,0,0,1-50.91406,0,7.99915,7.99915,0,0,1,11.3125-11.3125,20.45749,20.45749,0,0,0,28.28906,0A20,20,0,0,0,124,128a8.001,8.001,0,0,1-6.55469-12.58594l19.1875-27.42187H104a8,8,0,0,1,0-16h48a8.001,8.001,0,0,1,6.55469,12.58594l-21.02344,30.03906a36.023,36.023,0,0,1,11.92969,58.83594Z"
       />
     </g>
     <g v-else-if="displayWeight === 'light'">
-      <rect width="256" height="256" fill="none" />
       <circle
         cx="128"
         cy="128"
@@ -80,7 +76,6 @@
       />
     </g>
     <g v-else-if="displayWeight === 'thin'">
-      <rect width="256" height="256" fill="none" />
       <circle
         cx="128"
         cy="128"
@@ -101,7 +96,6 @@
       />
     </g>
     <g v-else-if="displayWeight === 'regular'">
-      <rect width="256" height="256" fill="none" />
       <circle
         cx="128"
         cy="128"

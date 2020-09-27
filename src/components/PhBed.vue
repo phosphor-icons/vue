@@ -12,7 +12,7 @@
   >
     <g v-if="displayWeight === 'bold'">
       <path
-        d="M104,80H208a32,32,0,0,1,32,32v56a0,0,0,0,1,0,0H104a0,0,0,0,1,0,0V80A0,0,0,0,1,104,80Z"
+        d="M104,168V80H208a32,32,0,0,1,32,32v56"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -56,7 +56,7 @@
         opacity="0.2"
       />
       <path
-        d="M104,80H208a32,32,0,0,1,32,32v56a0,0,0,0,1,0,0H104a0,0,0,0,1,0,0V80A0,0,0,0,1,104,80Z"
+        d="M104,168V80H208a32,32,0,0,1,32,32v56"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -101,7 +101,7 @@
     </g>
     <g v-else-if="displayWeight === 'light'">
       <path
-        d="M104,80H208a32,32,0,0,1,32,32v56a0,0,0,0,1,0,0H104a0,0,0,0,1,0,0V80A0,0,0,0,1,104,80Z"
+        d="M104,168V80H208a32,32,0,0,1,32,32v56"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -141,7 +141,7 @@
     </g>
     <g v-else-if="displayWeight === 'thin'">
       <path
-        d="M104,80H208a32,32,0,0,1,32,32v56a0,0,0,0,1,0,0H104a0,0,0,0,1,0,0V80A0,0,0,0,1,104,80Z"
+        d="M104,168V80H208a32,32,0,0,1,32,32v56"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -181,7 +181,7 @@
     </g>
     <g v-else-if="displayWeight === 'regular'">
       <path
-        d="M104,80H208a32,32,0,0,1,32,32v56a0,0,0,0,1,0,0H104a0,0,0,0,1,0,0V80A0,0,0,0,1,104,80Z"
+        d="M104,168V80H208a32,32,0,0,1,32,32v56"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"

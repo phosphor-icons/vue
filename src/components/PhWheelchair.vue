@@ -29,19 +29,8 @@
         stroke-linejoin="round"
         stroke-width="24"
       />
-      <line
-        x1="95.88745"
-        y1="96"
-        x2="159.88745"
-        y2="96"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="24"
-      />
       <path
-        d="M167.76447,164.00014A64.001,64.001,0,1,1,103.88745,96"
+        d="M167.76447,164.00014A64.001,64.001,0,1,1,103.88745,96h56"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -69,19 +58,8 @@
         stroke-linejoin="round"
         stroke-width="16"
       />
-      <line
-        x1="95.88745"
-        y1="96"
-        x2="159.88745"
-        y2="96"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="16"
-      />
       <path
-        d="M167.76447,164.00014A64.001,64.001,0,1,1,103.88745,96"
+        d="M167.76447,164.00014A64.001,64.001,0,1,1,103.88745,96h56"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -113,19 +91,8 @@
         stroke-linejoin="round"
         stroke-width="12"
       />
-      <line
-        x1="95.88745"
-        y1="96"
-        x2="159.88745"
-        y2="96"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="12"
-      />
       <path
-        d="M167.76447,164.00014A64.001,64.001,0,1,1,103.88745,96"
+        d="M167.76447,164.00014A64.001,64.001,0,1,1,103.88745,96h56"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -152,19 +119,8 @@
         stroke-linejoin="round"
         stroke-width="8"
       />
-      <line
-        x1="95.88745"
-        y1="96"
-        x2="159.88745"
-        y2="96"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="8"
-      />
       <path
-        d="M167.76447,164.00014A64.001,64.001,0,1,1,103.88745,96"
+        d="M167.76447,164.00014A64.001,64.001,0,1,1,103.88745,96h56"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -191,19 +147,8 @@
         stroke-linejoin="round"
         stroke-width="16"
       />
-      <line
-        x1="95.88745"
-        y1="96"
-        x2="159.88745"
-        y2="96"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="16"
-      />
       <path
-        d="M167.76447,164.00014A64.001,64.001,0,1,1,103.88745,96"
+        d="M167.76447,164.00014A64.001,64.001,0,1,1,103.88745,96h56"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"

@@ -11,9 +11,6 @@
     v-on="$listeners"
   >
     <g v-if="displayWeight === 'bold'">
-      <g opacity="0.5">
-        <rect width="256" height="256" fill="none" />
-      </g>
       <polyline
         points="48 208 128 128 208 208"
         fill="none"
@@ -32,9 +29,6 @@
       />
     </g>
     <g v-else-if="displayWeight === 'duotone'">
-      <g opacity="0.5">
-        <rect width="256" height="256" fill="none" />
-      </g>
       <polygon points="48 208 128 128 208 208 48 208" opacity="0.2" />
       <polygon
         points="48 208 128 128 208 208 48 208"
@@ -54,32 +48,11 @@
       />
     </g>
     <g v-else-if="displayWeight === 'fill'">
-      <g opacity="0.5">
-        <rect width="256" height="256" fill="none" />
-      </g>
-      <polygon
-        points="48 208 128 128 208 208 48 208"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="16"
+      <path
+        d="M147.314,136H208a8.0001,8.0001,0,0,0,5.65674-13.65723l-80-80a8.00182,8.00182,0,0,0-11.31348,0l-80,80A8.0001,8.0001,0,0,0,48,136h60.686L42.34326,202.34277A8.0001,8.0001,0,0,0,48,216H208a8.0001,8.0001,0,0,0,5.65674-13.65723Z"
       />
-      <polygon
-        points="48 128 128 48 208 128 48 128"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="16"
-      />
-      <polygon points="48 208 128 128 208 208 48 208" />
-      <polygon points="48 128 128 48 208 128 48 128" />
     </g>
     <g v-else-if="displayWeight === 'light'">
-      <g opacity="0.5">
-        <rect width="256" height="256" fill="none" />
-      </g>
       <polyline
         points="48 208 128 128 208 208"
         fill="none"
@@ -98,9 +71,6 @@
       />
     </g>
     <g v-else-if="displayWeight === 'thin'">
-      <g opacity="0.5">
-        <rect width="256" height="256" fill="none" />
-      </g>
       <polyline
         points="48 208 128 128 208 208"
         fill="none"
@@ -119,9 +89,6 @@
       />
     </g>
     <g v-else-if="displayWeight === 'regular'">
-      <g opacity="0.5">
-        <rect width="256" height="256" fill="none" />
-      </g>
       <polyline
         points="48 208 128 128 208 208"
         fill="none"

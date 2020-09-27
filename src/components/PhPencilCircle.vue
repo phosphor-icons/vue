@@ -53,8 +53,12 @@
         stroke-linejoin="round"
         stroke-width="24"
       />
-      <polygon
-        points="128 72 150.154 120 105.846 120 128 72"
+      <line
+        x1="150.15385"
+        y1="120"
+        x2="105.84615"
+        y2="120"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
@@ -119,7 +123,6 @@
         stroke-linejoin="round"
         stroke-width="16"
       />
-      <polygon points="128 72 150.154 120 105.846 120 128 72" />
     </g>
     <g v-else-if="displayWeight === 'fill'">
       <path
@@ -290,7 +293,6 @@
         stroke-linejoin="round"
         stroke-width="16"
       />
-      <polygon points="128 72 150.154 120 105.846 120 128 72" />
     </g>
   </svg>
 </template>

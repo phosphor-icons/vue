@@ -11,7 +11,6 @@
     v-on="$listeners"
   >
     <g v-if="displayWeight === 'bold'">
-      <rect width="256" height="256" fill="none" />
       <circle cx="92" cy="108" r="16" />
       <circle cx="164" cy="108" r="16" />
       <circle
@@ -67,7 +66,6 @@
       />
     </g>
     <g v-else-if="displayWeight === 'light'">
-      <rect width="256" height="256" fill="none" />
       <path
         d="M100.99978,108A9,9,0,1,1,92,99,8.99982,8.99982,0,0,1,100.99978,108Z"
       />
@@ -97,7 +95,6 @@
       />
     </g>
     <g v-else-if="displayWeight === 'thin'">
-      <rect width="256" height="256" fill="none" />
       <circle cx="92" cy="108" r="6" />
       <circle cx="164" cy="108" r="6" />
       <circle

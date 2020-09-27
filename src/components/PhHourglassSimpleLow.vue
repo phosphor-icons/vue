@@ -19,15 +19,17 @@
         stroke-linejoin="round"
         stroke-width="24"
       />
-      <polygon
-        points="128 128 168 168 88 168 128 128"
+      <line
+        x1="168"
+        y1="168"
+        x2="88"
+        y2="168"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="24"
       />
-      <polygon points="128 128 168 168 88 168 128 128" />
     </g>
     <g v-else-if="displayWeight === 'duotone'">
       <path
@@ -110,15 +112,17 @@
         stroke-linejoin="round"
         stroke-width="16"
       />
-      <polygon
-        points="128 128 168 168 88 168 128 128"
+      <line
+        x1="168"
+        y1="168"
+        x2="88"
+        y2="168"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="16"
       />
-      <polygon points="128 128 168 168 88 168 128 128" />
     </g>
   </svg>
 </template>

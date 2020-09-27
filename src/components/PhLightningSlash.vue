@@ -11,7 +11,6 @@
     v-on="$listeners"
   >
     <g v-if="displayWeight === 'bold'">
-      <rect y="-0.01563" width="256" height="256" fill="none" />
       <line
         x1="48"
         y1="40.00391"
@@ -41,7 +40,6 @@
       />
     </g>
     <g v-else-if="displayWeight === 'duotone'">
-      <rect y="-0.02344" width="256" height="256" fill="none" />
       <polygon
         points="96 239.969 112 159.969 48 135.969 160 15.969 144 95.969 208 119.969 96 239.969"
         opacity="0.2"
@@ -75,7 +73,6 @@
       />
     </g>
     <g v-else-if="displayWeight === 'fill'">
-      <rect y="-0.02344" width="256" height="256" fill="none" />
       <g>
         <path
           d="M53.91943,34.61475A7.99991,7.99991,0,1,0,42.08057,45.37744l39.24072,43.1648-39.16992,41.968a8.00053,8.00053,0,0,0,3.03955,12.94922l57.63037,21.61133-14.666,73.3291a7.99991,7.99991,0,0,0,13.69336,7.02735l61.85083-66.26892,38.38111,42.21911a7.99991,7.99991,0,1,0,11.83886-10.76269Z"
@@ -86,7 +83,6 @@
       </g>
     </g>
     <g v-else-if="displayWeight === 'light'">
-      <rect y="-0.02344" width="256" height="256" fill="none" />
       <line
         x1="48"
         y1="39.99609"
@@ -116,7 +112,6 @@
       />
     </g>
     <g v-else-if="displayWeight === 'thin'">
-      <rect y="-0.02344" width="256" height="256" fill="none" />
       <line
         x1="48"
         y1="39.99609"
@@ -146,7 +141,6 @@
       />
     </g>
     <g v-else-if="displayWeight === 'regular'">
-      <rect y="-0.02344" width="256" height="256" fill="none" />
       <line
         x1="48"
         y1="39.99609"
