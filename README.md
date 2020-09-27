@@ -2,7 +2,7 @@
 
 # phosphor-vue
 
-A clear, playful, and adaptable icon family for Vue, too!
+A clear, playful, and adaptable icon family for Vue, too! A complete list of icons can be found on [our website](https://phosphoricons.com).
 
 [![NPM](https://img.shields.io/npm/v/phosphor-vue.svg?style=flat-square)](https://www.npmjs.com/package/phosphor-vue) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg?style=flat-square)](https://standardjs.com) [![Travis](https://img.shields.io/travis/com/rektdeckard/phosphor-vue.svg?style=flat-square)](https://travis-ci.com/github/rektdeckard/phosphor-vue)
 
@@ -93,6 +93,11 @@ You may create multiple providers for styling icons differently in separate regi
 **Note:** The **color**, **size**, **weight**, and **mirrored** properties are all _optional_ props when creating a context, but default to `"currentColor"`, `"1em"`, `"regular"` and `false`. Also be aware that when using this API, per Vue:
 
 > The `provide` and `inject` bindings are NOT reactive. This is intentional. However, if you pass down an observed object, properties on that object do remain reactive.
+
+## Related Projects
+
+- [phosphor-react](https://github.com/phosphor-icons/phosphor-react) ▲ Phosphor icon component library for React
+- [phosphor-icons](https://github.com/phosphor-icons/phosphor-icons) ▲ Phosphor icons for Vanilla JS
 
 ## License
 
