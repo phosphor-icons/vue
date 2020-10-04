@@ -101,4 +101,4 @@ You may create multiple providers for styling icons differently in separate regi
 
 ## License
 
-GPL-3.0 © [phosphor-icons](https://github.com/phosphor-icons)
+MIT © [phosphor-icons](https://github.com/phosphor-icons)
