@@ -3,7 +3,7 @@
   "version": "0.6.0",
   "description": "A clean and friendly icon family for Vue, too!",
   "author": "rektdeckard",
-  "license": "GPL-3.0",
+  "license": "MIT",
   "repository": "phosphor-icons/phosphor-vue",
   "homepage": "https://phosphoricons.com",
   "sideEffects": false,
