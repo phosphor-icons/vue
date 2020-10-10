@@ -68,8 +68,6 @@
         stroke-linejoin="round"
         stroke-width="24"
       />
-      <path d="M224,184v24a8,8,0,0,1-8,8H192a8,8,0,0,1-8-8V184Z" />
-      <path d="M72,184v24a8,8,0,0,1-8,8H40a8,8,0,0,1-8-8V184Z" />
     </g>
     <g v-else-if="displayWeight === 'duotone'">
       <path

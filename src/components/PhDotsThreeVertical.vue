@@ -11,40 +11,46 @@
     v-on="$listeners"
   >
     <g v-if="displayWeight === 'bold'">
-      <rect x="0.00049" width="255.99951" height="256" fill="none" />
-      <circle cx="128" cy="64" r="16" />
-      <circle cx="128" cy="192" r="16" />
-      <circle cx="128" cy="128" r="16" />
+      <g>
+        <circle cx="128" cy="64" r="16" />
+        <circle cx="128" cy="192" r="16" />
+        <circle cx="128" cy="128" r="16" />
+      </g>
     </g>
     <g v-else-if="displayWeight === 'duotone'">
-      <rect x="0.00049" width="255.99951" height="256" fill="none" />
-      <circle cx="128" cy="128" r="12" />
-      <circle cx="128" cy="64" r="12" />
-      <circle cx="128" cy="192" r="12" />
+      <g>
+        <circle cx="128" cy="128" r="12" />
+        <circle cx="128" cy="64" r="12" />
+        <circle cx="128" cy="192" r="12" />
+      </g>
     </g>
     <g v-else-if="displayWeight === 'fill'">
-      <rect x="0.00049" width="255.99951" height="256" fill="none" />
-      <circle cx="128" cy="128" r="32" />
-      <circle cx="128" cy="48" r="32" />
-      <circle cx="128" cy="208" r="32" />
+      <g>
+        <circle cx="128" cy="128" r="32" />
+        <circle cx="128" cy="48" r="32" />
+        <circle cx="128" cy="208" r="32" />
+      </g>
     </g>
     <g v-else-if="displayWeight === 'light'">
-      <rect x="0.00049" width="255.99951" height="256" fill="none" />
-      <circle cx="128" cy="128" r="9" />
-      <circle cx="128" cy="64" r="9" />
-      <circle cx="128" cy="192" r="9" />
+      <g>
+        <circle cx="128" cy="128" r="9" />
+        <circle cx="128" cy="64" r="9" />
+        <circle cx="128" cy="192" r="9" />
+      </g>
     </g>
     <g v-else-if="displayWeight === 'thin'">
-      <rect x="0.00049" width="255.99951" height="256" fill="none" />
-      <circle cx="128" cy="128" r="6" />
-      <circle cx="128" cy="64" r="6" />
-      <circle cx="128" cy="192" r="6" />
+      <g>
+        <circle cx="128" cy="128" r="6" />
+        <circle cx="128" cy="64" r="6" />
+        <circle cx="128" cy="192" r="6" />
+      </g>
     </g>
     <g v-else-if="displayWeight === 'regular'">
-      <rect x="0.00049" width="255.99951" height="256" fill="none" />
-      <circle cx="128" cy="128" r="12" />
-      <circle cx="128" cy="64" r="12" />
-      <circle cx="128" cy="192" r="12" />
+      <g>
+        <circle cx="128" cy="128" r="12" />
+        <circle cx="128" cy="64" r="12" />
+        <circle cx="128" cy="192" r="12" />
+      </g>
     </g>
   </svg>
 </template>

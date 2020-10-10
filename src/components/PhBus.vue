@@ -59,8 +59,6 @@
       />
       <circle cx="82" cy="156" r="16" />
       <circle cx="174" cy="156" r="16" />
-      <path d="M214,192v24a8,8,0,0,1-8,8H182a8,8,0,0,1-8-8V192Z" />
-      <path d="M82,192v24a8,8,0,0,1-8,8H50a8,8,0,0,1-8-8V192Z" />
     </g>
     <g v-else-if="displayWeight === 'duotone'">
       <path
