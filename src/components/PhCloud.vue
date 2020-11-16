@@ -10,30 +10,64 @@
     v-bind="$attrs"
   >
     <g v-if="displayWeight === 'bold'">
-  
-  <path d="M80,128a80,80,0,1,1,80,80H72A56,56,0,1,1,85.91924,97.74352" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
-</g>
+      <path
+        d="M80,128a80,80,0,1,1,80,80H72A56,56,0,1,1,85.91924,97.74352"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="24"
+      />
+    </g>
     <g v-else-if="displayWeight === 'duotone'">
-  
-  <path d="M80,128a80,80,0,1,1,80,80H72A56,56,0,1,1,85.91924,97.74352" opacity="0.2"/>
-  <path d="M80,128a80,80,0,1,1,80,80H72A56,56,0,1,1,85.91924,97.74352" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
-</g>
+      <path
+        d="M80,128a80,80,0,1,1,80,80H72A56,56,0,1,1,85.91924,97.74352"
+        opacity="0.2"
+      />
+      <path
+        d="M80,128a80,80,0,1,1,80,80H72A56,56,0,1,1,85.91924,97.74352"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+    </g>
     <g v-else-if="displayWeight === 'fill'">
-  
-  <path d="M160,40A88.102,88.102,0,0,0,81.28711,88.6709l-.00537-.00049A87.464,87.464,0,0,0,71.98828,128a8,8,0,0,1-16,0,103.43561,103.43561,0,0,1,7.78-39.45264A63.99161,63.99161,0,0,0,72,216h88a88,88,0,0,0,0-176Z"/>
-</g>
+      <path
+        d="M160,40A88.102,88.102,0,0,0,81.28711,88.6709l-.00537-.00049A87.464,87.464,0,0,0,71.98828,128a8,8,0,0,1-16,0,103.43561,103.43561,0,0,1,7.78-39.45264A63.99161,63.99161,0,0,0,72,216h88a88,88,0,0,0,0-176Z"
+      />
+    </g>
     <g v-else-if="displayWeight === 'light'">
-  
-  <path d="M80,128a80,80,0,1,1,80,80H72A56,56,0,1,1,85.91924,97.74352" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
-</g>
+      <path
+        d="M80,128a80,80,0,1,1,80,80H72A56,56,0,1,1,85.91924,97.74352"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="12"
+      />
+    </g>
     <g v-else-if="displayWeight === 'thin'">
-  
-  <path d="M80,128a80,80,0,1,1,80,80H72A56,56,0,1,1,85.91924,97.74352" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
-</g>
+      <path
+        d="M80,128a80,80,0,1,1,80,80H72A56,56,0,1,1,85.91924,97.74352"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="8"
+      />
+    </g>
     <g v-else-if="displayWeight === 'regular'">
-  
-  <path d="M80,128a80,80,0,1,1,80,80H72A56,56,0,1,1,85.91924,97.74352" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
-</g>
+      <path
+        d="M80,128a80,80,0,1,1,80,80H72A56,56,0,1,1,85.91924,97.74352"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+    </g>
   </svg>
 </template>
 
@@ -43,7 +77,7 @@ import {
   IconProps,
   PropValidator,
   IconContext,
-  ContextGetter,
+  ContextGetter
 } from "@/lib/types";
 export default defineComponent({
   name: "PhCloud",
@@ -65,7 +99,7 @@ export default defineComponent({
     displayMirrored() {
       const { mirrored, contextMirrored } = this as IconProps & IconContext;
       return mirrored ?? contextMirrored ? "scale(-1, 1)" : undefined;
-    },
-  },
+    }
+  }
 });
 </script>

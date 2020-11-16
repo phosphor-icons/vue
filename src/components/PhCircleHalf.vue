@@ -10,35 +10,126 @@
     v-bind="$attrs"
   >
     <g v-if="displayWeight === 'bold'">
-  
-  <circle cx="128" cy="128" r="96" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
-  <line x1="128" y1="32" x2="128" y2="224" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
-</g>
+      <circle
+        cx="128"
+        cy="128"
+        r="96"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="24"
+      />
+      <line
+        x1="128"
+        y1="32"
+        x2="128"
+        y2="224"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="24"
+      />
+    </g>
     <g v-else-if="displayWeight === 'duotone'">
-  
-  <path d="M128,32a96,96,0,0,1,0,192" opacity="0.2"/>
-  <circle cx="128" cy="128" r="96" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
-  <line x1="128" y1="32" x2="128" y2="224" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
-</g>
+      <path d="M128,32a96,96,0,0,1,0,192" opacity="0.2" />
+      <circle
+        cx="128"
+        cy="128"
+        r="96"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <line
+        x1="128"
+        y1="32"
+        x2="128"
+        y2="224"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+    </g>
     <g v-else-if="displayWeight === 'fill'">
-  
-  <path d="M128,24A104,104,0,1,0,232,128,104.11791,104.11791,0,0,0,128,24ZM40,128a88.11715,88.11715,0,0,1,80-87.63257V215.63257A88.11715,88.11715,0,0,1,40,128Z"/>
-</g>
+      <path
+        d="M128,24A104,104,0,1,0,232,128,104.11791,104.11791,0,0,0,128,24ZM40,128a88.11715,88.11715,0,0,1,80-87.63257V215.63257A88.11715,88.11715,0,0,1,40,128Z"
+      />
+    </g>
     <g v-else-if="displayWeight === 'light'">
-  
-  <circle cx="128" cy="128" r="96" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
-  <line x1="128" y1="32" x2="128" y2="224" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
-</g>
+      <circle
+        cx="128"
+        cy="128"
+        r="96"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="12"
+      />
+      <line
+        x1="128"
+        y1="32"
+        x2="128"
+        y2="224"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="12"
+      />
+    </g>
     <g v-else-if="displayWeight === 'thin'">
-  
-  <circle cx="128" cy="128" r="96" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
-  <line x1="128" y1="32" x2="128" y2="224" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
-</g>
+      <circle
+        cx="128"
+        cy="128"
+        r="96"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="8"
+      />
+      <line
+        x1="128"
+        y1="32"
+        x2="128"
+        y2="224"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="8"
+      />
+    </g>
     <g v-else-if="displayWeight === 'regular'">
-  
-  <circle cx="128" cy="128" r="96" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
-  <line x1="128" y1="32" x2="128" y2="224" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
-</g>
+      <circle
+        cx="128"
+        cy="128"
+        r="96"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <line
+        x1="128"
+        y1="32"
+        x2="128"
+        y2="224"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+    </g>
   </svg>
 </template>
 
@@ -48,7 +139,7 @@ import {
   IconProps,
   PropValidator,
   IconContext,
-  ContextGetter,
+  ContextGetter
 } from "@/lib/types";
 export default defineComponent({
   name: "PhCircleHalf",
@@ -70,7 +161,7 @@ export default defineComponent({
     displayMirrored() {
       const { mirrored, contextMirrored } = this as IconProps & IconContext;
       return mirrored ?? contextMirrored ? "scale(-1, 1)" : undefined;
-    },
-  },
+    }
+  }
 });
 </script>

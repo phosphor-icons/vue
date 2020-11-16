@@ -10,40 +10,164 @@
     v-bind="$attrs"
   >
     <g v-if="displayWeight === 'bold'">
-  
-  <circle cx="128" cy="128" r="96" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
-  <polyline points="108 156 156 156 156 108" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
-  <line x1="100" y1="100" x2="156" y2="156" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
-</g>
+      <circle
+        cx="128"
+        cy="128"
+        r="96"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="24"
+      />
+      <polyline
+        points="108 156 156 156 156 108"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="24"
+      />
+      <line
+        x1="100"
+        y1="100"
+        x2="156"
+        y2="156"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="24"
+      />
+    </g>
     <g v-else-if="displayWeight === 'duotone'">
-  
-  <circle cx="128" cy="128" r="96" opacity="0.2"/>
-  <circle cx="128" cy="128" r="96" fill="none" :stroke="displayColor" stroke-miterlimit="10" stroke-width="16"/>
-  <polyline points="108 156 156 156 156 108" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
-  <line x1="100" y1="100" x2="156" y2="156" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
-</g>
+      <circle cx="128" cy="128" r="96" opacity="0.2" />
+      <circle
+        cx="128"
+        cy="128"
+        r="96"
+        fill="none"
+        :stroke="displayColor"
+        stroke-miterlimit="10"
+        stroke-width="16"
+      />
+      <polyline
+        points="108 156 156 156 156 108"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <line
+        x1="100"
+        y1="100"
+        x2="156"
+        y2="156"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+    </g>
     <g v-else-if="displayWeight === 'fill'">
-  
-  <path d="M128,24A104,104,0,1,0,232,128,104.12041,104.12041,0,0,0,128,24Zm36,132a8.02752,8.02752,0,0,1-8,8H108a8,8,0,0,1,0-16h28.6875L94.34375,105.65625a7.99915,7.99915,0,0,1,11.3125-11.3125L148,136.6875V108a8,8,0,0,1,16,0Z"/>
-</g>
+      <path
+        d="M128,24A104,104,0,1,0,232,128,104.12041,104.12041,0,0,0,128,24Zm36,132a8.02752,8.02752,0,0,1-8,8H108a8,8,0,0,1,0-16h28.6875L94.34375,105.65625a7.99915,7.99915,0,0,1,11.3125-11.3125L148,136.6875V108a8,8,0,0,1,16,0Z"
+      />
+    </g>
     <g v-else-if="displayWeight === 'light'">
-  
-  <circle cx="128" cy="128" r="96" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
-  <polyline points="108 156 156 156 156 108" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
-  <line x1="100" y1="100" x2="156" y2="156" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
-</g>
+      <circle
+        cx="128"
+        cy="128"
+        r="96"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="12"
+      />
+      <polyline
+        points="108 156 156 156 156 108"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="12"
+      />
+      <line
+        x1="100"
+        y1="100"
+        x2="156"
+        y2="156"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="12"
+      />
+    </g>
     <g v-else-if="displayWeight === 'thin'">
-  
-  <circle cx="128" cy="128" r="96" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
-  <polyline points="108 156 156 156 156 108" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
-  <line x1="100" y1="100" x2="156" y2="156" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
-</g>
+      <circle
+        cx="128"
+        cy="128"
+        r="96"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="8"
+      />
+      <polyline
+        points="108 156 156 156 156 108"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="8"
+      />
+      <line
+        x1="100"
+        y1="100"
+        x2="156"
+        y2="156"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="8"
+      />
+    </g>
     <g v-else-if="displayWeight === 'regular'">
-  
-  <circle cx="128" cy="128" r="96" fill="none" :stroke="displayColor" stroke-miterlimit="10" stroke-width="16"/>
-  <polyline points="108 156 156 156 156 108" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
-  <line x1="100" y1="100" x2="156" y2="156" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
-</g>
+      <circle
+        cx="128"
+        cy="128"
+        r="96"
+        fill="none"
+        :stroke="displayColor"
+        stroke-miterlimit="10"
+        stroke-width="16"
+      />
+      <polyline
+        points="108 156 156 156 156 108"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <line
+        x1="100"
+        y1="100"
+        x2="156"
+        y2="156"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+    </g>
   </svg>
 </template>
 
@@ -53,7 +177,7 @@ import {
   IconProps,
   PropValidator,
   IconContext,
-  ContextGetter,
+  ContextGetter
 } from "@/lib/types";
 export default defineComponent({
   name: "PhArrowCircleDownRight",
@@ -75,7 +199,7 @@ export default defineComponent({
     displayMirrored() {
       const { mirrored, contextMirrored } = this as IconProps & IconContext;
       return mirrored ?? contextMirrored ? "scale(-1, 1)" : undefined;
-    },
-  },
+    }
+  }
 });
 </script>

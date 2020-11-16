@@ -10,30 +10,61 @@
     v-bind="$attrs"
   >
     <g v-if="displayWeight === 'bold'">
-  
-  <polyline points="48 160 128 80 208 160" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
-</g>
+      <polyline
+        points="48 160 128 80 208 160"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="24"
+      />
+    </g>
     <g v-else-if="displayWeight === 'duotone'">
-  
-  <polygon points="48 160 128 80 208 160 48 160" opacity="0.2"/>
-  <polygon points="48 160 128 80 208 160 48 160" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
-</g>
+      <polygon points="48 160 128 80 208 160 48 160" opacity="0.2" />
+      <polygon
+        points="48 160 128 80 208 160 48 160"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+    </g>
     <g v-else-if="displayWeight === 'fill'">
-  
-  <path d="M213.65674,154.34326l-80-80a8,8,0,0,0-11.31348,0l-80,80A7.99981,7.99981,0,0,0,48,168H208a7.99981,7.99981,0,0,0,5.65674-13.65674Z"/>
-</g>
+      <path
+        d="M213.65674,154.34326l-80-80a8,8,0,0,0-11.31348,0l-80,80A7.99981,7.99981,0,0,0,48,168H208a7.99981,7.99981,0,0,0,5.65674-13.65674Z"
+      />
+    </g>
     <g v-else-if="displayWeight === 'light'">
-  
-  <polyline points="48 160 128 80 208 160" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
-</g>
+      <polyline
+        points="48 160 128 80 208 160"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="12"
+      />
+    </g>
     <g v-else-if="displayWeight === 'thin'">
-  
-  <polyline points="48 160 128 80 208 160" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
-</g>
+      <polyline
+        points="48 160 128 80 208 160"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="8"
+      />
+    </g>
     <g v-else-if="displayWeight === 'regular'">
-  
-  <polyline points="48 160 128 80 208 160" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
-</g>
+      <polyline
+        points="48 160 128 80 208 160"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+    </g>
   </svg>
 </template>
 
@@ -43,7 +74,7 @@ import {
   IconProps,
   PropValidator,
   IconContext,
-  ContextGetter,
+  ContextGetter
 } from "@/lib/types";
 export default defineComponent({
   name: "PhCaretUp",
@@ -65,7 +96,7 @@ export default defineComponent({
     displayMirrored() {
       const { mirrored, contextMirrored } = this as IconProps & IconContext;
       return mirrored ?? contextMirrored ? "scale(-1, 1)" : undefined;
-    },
-  },
+    }
+  }
 });
 </script>

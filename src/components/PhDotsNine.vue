@@ -10,79 +10,73 @@
     v-bind="$attrs"
   >
     <g v-if="displayWeight === 'bold'">
-  
-  <circle cx="60" cy="60" r="16"/>
-  <circle cx="128" cy="60" r="16"/>
-  <circle cx="196" cy="60" r="16"/>
-  <circle cx="60" cy="128" r="16"/>
-  <circle cx="128" cy="128" r="16"/>
-  <circle cx="196" cy="128" r="16"/>
-  <circle cx="60" cy="196" r="16"/>
-  <circle cx="128" cy="196" r="16"/>
-  <circle cx="196" cy="196" r="16"/>
-</g>
+      <circle cx="60" cy="60" r="16" />
+      <circle cx="128" cy="60" r="16" />
+      <circle cx="196" cy="60" r="16" />
+      <circle cx="60" cy="128" r="16" />
+      <circle cx="128" cy="128" r="16" />
+      <circle cx="196" cy="128" r="16" />
+      <circle cx="60" cy="196" r="16" />
+      <circle cx="128" cy="196" r="16" />
+      <circle cx="196" cy="196" r="16" />
+    </g>
     <g v-else-if="displayWeight === 'duotone'">
-  
-  <circle cx="60" cy="60" r="12"/>
-  <circle cx="128" cy="60" r="12"/>
-  <circle cx="196" cy="60" r="12"/>
-  <circle cx="60" cy="128" r="12"/>
-  <circle cx="128" cy="128" r="12"/>
-  <circle cx="196" cy="128" r="12"/>
-  <circle cx="60" cy="196" r="12"/>
-  <circle cx="128" cy="196" r="12"/>
-  <circle cx="196" cy="196" r="12"/>
-</g>
+      <circle cx="60" cy="60" r="12" />
+      <circle cx="128" cy="60" r="12" />
+      <circle cx="196" cy="60" r="12" />
+      <circle cx="60" cy="128" r="12" />
+      <circle cx="128" cy="128" r="12" />
+      <circle cx="196" cy="128" r="12" />
+      <circle cx="60" cy="196" r="12" />
+      <circle cx="128" cy="196" r="12" />
+      <circle cx="196" cy="196" r="12" />
+    </g>
     <g v-else-if="displayWeight === 'fill'">
-  
-  <g>
-    <circle cx="60" cy="60" r="12"/>
-    <circle cx="128" cy="60" r="12"/>
-    <circle cx="196" cy="60" r="12"/>
-    <circle cx="60" cy="128" r="12"/>
-    <circle cx="128" cy="128" r="12"/>
-    <circle cx="196" cy="128" r="12"/>
-    <circle cx="60" cy="196" r="12"/>
-    <circle cx="128" cy="196" r="12"/>
-    <circle cx="196" cy="196" r="12"/>
-  </g>
-</g>
+      <g>
+        <circle cx="60" cy="60" r="12" />
+        <circle cx="128" cy="60" r="12" />
+        <circle cx="196" cy="60" r="12" />
+        <circle cx="60" cy="128" r="12" />
+        <circle cx="128" cy="128" r="12" />
+        <circle cx="196" cy="128" r="12" />
+        <circle cx="60" cy="196" r="12" />
+        <circle cx="128" cy="196" r="12" />
+        <circle cx="196" cy="196" r="12" />
+      </g>
+    </g>
     <g v-else-if="displayWeight === 'light'">
-  
-  <circle cx="60" cy="60" r="9"/>
-  <circle cx="128" cy="60" r="9"/>
-  <circle cx="196" cy="60" r="9"/>
-  <circle cx="60" cy="128" r="9"/>
-  <circle cx="128" cy="128" r="9"/>
-  <circle cx="196" cy="128" r="9"/>
-  <circle cx="60" cy="196" r="9"/>
-  <circle cx="128" cy="196" r="9"/>
-  <circle cx="196" cy="196" r="9"/>
-</g>
+      <circle cx="60" cy="60" r="9" />
+      <circle cx="128" cy="60" r="9" />
+      <circle cx="196" cy="60" r="9" />
+      <circle cx="60" cy="128" r="9" />
+      <circle cx="128" cy="128" r="9" />
+      <circle cx="196" cy="128" r="9" />
+      <circle cx="60" cy="196" r="9" />
+      <circle cx="128" cy="196" r="9" />
+      <circle cx="196" cy="196" r="9" />
+    </g>
     <g v-else-if="displayWeight === 'thin'">
-  
-  <circle cx="60" cy="60" r="6"/>
-  <circle cx="128" cy="60" r="6"/>
-  <circle cx="196" cy="60" r="6"/>
-  <circle cx="60" cy="128" r="6"/>
-  <circle cx="128" cy="128" r="6"/>
-  <circle cx="196" cy="128" r="6"/>
-  <circle cx="60" cy="196" r="6"/>
-  <circle cx="128" cy="196" r="6"/>
-  <circle cx="196" cy="196" r="6"/>
-</g>
+      <circle cx="60" cy="60" r="6" />
+      <circle cx="128" cy="60" r="6" />
+      <circle cx="196" cy="60" r="6" />
+      <circle cx="60" cy="128" r="6" />
+      <circle cx="128" cy="128" r="6" />
+      <circle cx="196" cy="128" r="6" />
+      <circle cx="60" cy="196" r="6" />
+      <circle cx="128" cy="196" r="6" />
+      <circle cx="196" cy="196" r="6" />
+    </g>
     <g v-else-if="displayWeight === 'regular'">
-  
-  <circle cx="60" cy="60" r="12"/>
-  <circle cx="128" cy="60" r="12"/>
-  <circle cx="196" cy="60" r="12"/>
-  <circle cx="60" cy="128" r="12"/>
-  <circle cx="128" cy="128" r="12"/>
-  <circle cx="196" cy="128" r="12"/>
-  <circle cx="60" cy="196" r="12"/>
-  <circle cx="128" cy="196" r="12"/>
-  <circle cx="196" cy="196" r="12"/>
-</g>
+      <circle cx="60" cy="60" r="12" />
+      <circle cx="128" cy="60" r="12" />
+      <circle cx="196" cy="60" r="12" />
+      <circle cx="60" cy="128" r="12" />
+      <circle cx="128" cy="128" r="12" />
+      <circle cx="196" cy="128" r="12" />
+      <circle cx="60" cy="196" r="12" />
+      <circle cx="128" cy="196" r="12" />
+      <circle cx="196" cy="196" r="12" />
+    </g>
   </svg>
 </template>
 
@@ -92,7 +86,7 @@ import {
   IconProps,
   PropValidator,
   IconContext,
-  ContextGetter,
+  ContextGetter
 } from "@/lib/types";
 export default defineComponent({
   name: "PhDotsNine",
@@ -114,7 +108,7 @@ export default defineComponent({
     displayMirrored() {
       const { mirrored, contextMirrored } = this as IconProps & IconContext;
       return mirrored ?? contextMirrored ? "scale(-1, 1)" : undefined;
-    },
-  },
+    }
+  }
 });
 </script>

@@ -10,36 +10,87 @@
     v-bind="$attrs"
   >
     <g v-if="displayWeight === 'bold'">
-  
-  <circle cx="188.00054" cy="128" r="12"/>
-  <circle cx="188.00054" cy="128" r="16"/>
-  <rect x="24" y="72" width="208" height="112" rx="8" stroke-width="24" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-</g>
+      <circle cx="188.00054" cy="128" r="12" />
+      <circle cx="188.00054" cy="128" r="16" />
+      <rect
+        x="24"
+        y="72"
+        width="208"
+        height="112"
+        rx="8"
+        stroke-width="24"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        fill="none"
+      />
+    </g>
     <g v-else-if="displayWeight === 'duotone'">
-  
-  <rect x="24" y="72" width="208" height="112" rx="8" opacity="0.2"/>
-  <circle cx="188.00054" cy="128" r="12"/>
-  <rect x="24" y="72" width="208" height="112" rx="8" stroke-width="16" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-</g>
+      <rect x="24" y="72" width="208" height="112" rx="8" opacity="0.2" />
+      <circle cx="188.00054" cy="128" r="12" />
+      <rect
+        x="24"
+        y="72"
+        width="208"
+        height="112"
+        rx="8"
+        stroke-width="16"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        fill="none"
+      />
+    </g>
     <g v-else-if="displayWeight === 'fill'">
-  
-  <path d="M224,64H32A16.01833,16.01833,0,0,0,16,80v96a16.01833,16.01833,0,0,0,16,16H224a16.01833,16.01833,0,0,0,16-16V80A16.01833,16.01833,0,0,0,224,64Zm-35.99951,76a12,12,0,1,1,12-12A12,12,0,0,1,188.00049,140Z"/>
-</g>
+      <path
+        d="M224,64H32A16.01833,16.01833,0,0,0,16,80v96a16.01833,16.01833,0,0,0,16,16H224a16.01833,16.01833,0,0,0,16-16V80A16.01833,16.01833,0,0,0,224,64Zm-35.99951,76a12,12,0,1,1,12-12A12,12,0,0,1,188.00049,140Z"
+      />
+    </g>
     <g v-else-if="displayWeight === 'light'">
-  
-  <circle cx="188.00054" cy="128" r="9"/>
-  <rect x="24" y="72" width="208" height="112" rx="8" stroke-width="12" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-</g>
+      <circle cx="188.00054" cy="128" r="9" />
+      <rect
+        x="24"
+        y="72"
+        width="208"
+        height="112"
+        rx="8"
+        stroke-width="12"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        fill="none"
+      />
+    </g>
     <g v-else-if="displayWeight === 'thin'">
-  
-  <circle cx="188.00054" cy="128" r="6"/>
-  <rect x="24" y="72" width="208" height="112" rx="8" stroke-width="8" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-</g>
+      <circle cx="188.00054" cy="128" r="6" />
+      <rect
+        x="24"
+        y="72"
+        width="208"
+        height="112"
+        rx="8"
+        stroke-width="8"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        fill="none"
+      />
+    </g>
     <g v-else-if="displayWeight === 'regular'">
-  
-  <circle cx="188.00054" cy="128" r="12"/>
-  <rect x="24" y="72" width="208" height="112" rx="8" stroke-width="16" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-</g>
+      <circle cx="188.00054" cy="128" r="12" />
+      <rect
+        x="24"
+        y="72"
+        width="208"
+        height="112"
+        rx="8"
+        stroke-width="16"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        fill="none"
+      />
+    </g>
   </svg>
 </template>
 
@@ -49,7 +100,7 @@ import {
   IconProps,
   PropValidator,
   IconContext,
-  ContextGetter,
+  ContextGetter
 } from "@/lib/types";
 export default defineComponent({
   name: "PhHardDrive",
@@ -71,7 +122,7 @@ export default defineComponent({
     displayMirrored() {
       const { mirrored, contextMirrored } = this as IconProps & IconContext;
       return mirrored ?? contextMirrored ? "scale(-1, 1)" : undefined;
-    },
-  },
+    }
+  }
 });
 </script>

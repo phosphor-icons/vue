@@ -10,35 +10,99 @@
     v-bind="$attrs"
   >
     <g v-if="displayWeight === 'bold'">
-  
-  <circle cx="128" cy="60" r="16"/>
-  <rect x="24" y="64" width="208" height="128" rx="16" transform="translate(256) rotate(90)" stroke-width="24" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-</g>
+      <circle cx="128" cy="60" r="16" />
+      <rect
+        x="24"
+        y="64"
+        width="208"
+        height="128"
+        rx="16"
+        transform="translate(256) rotate(90)"
+        stroke-width="24"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        fill="none"
+      />
+    </g>
     <g v-else-if="displayWeight === 'duotone'">
-  
-  <rect x="24" y="64" width="208" height="128" rx="16" transform="translate(256) rotate(90)" opacity="0.2"/>
-  <circle cx="128" cy="60" r="12"/>
-  <rect x="24" y="64" width="208" height="128" rx="16" transform="translate(256) rotate(90)" stroke-width="16" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-</g>
+      <rect
+        x="24"
+        y="64"
+        width="208"
+        height="128"
+        rx="16"
+        transform="translate(256) rotate(90)"
+        opacity="0.2"
+      />
+      <circle cx="128" cy="60" r="12" />
+      <rect
+        x="24"
+        y="64"
+        width="208"
+        height="128"
+        rx="16"
+        transform="translate(256) rotate(90)"
+        stroke-width="16"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        fill="none"
+      />
+    </g>
     <g v-else-if="displayWeight === 'fill'">
-  
-  <path d="M176,16H80A24.0275,24.0275,0,0,0,56,40V216a24.0275,24.0275,0,0,0,24,24h96a24.0275,24.0275,0,0,0,24-24V40A24.0275,24.0275,0,0,0,176,16ZM128,72a12,12,0,1,1,12-12A12,12,0,0,1,128,72Z"/>
-</g>
+      <path
+        d="M176,16H80A24.0275,24.0275,0,0,0,56,40V216a24.0275,24.0275,0,0,0,24,24h96a24.0275,24.0275,0,0,0,24-24V40A24.0275,24.0275,0,0,0,176,16ZM128,72a12,12,0,1,1,12-12A12,12,0,0,1,128,72Z"
+      />
+    </g>
     <g v-else-if="displayWeight === 'light'">
-  
-  <circle cx="128" cy="60" r="9"/>
-  <rect x="24" y="64" width="208" height="128" rx="16" transform="translate(256) rotate(90)" stroke-width="12" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-</g>
+      <circle cx="128" cy="60" r="9" />
+      <rect
+        x="24"
+        y="64"
+        width="208"
+        height="128"
+        rx="16"
+        transform="translate(256) rotate(90)"
+        stroke-width="12"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        fill="none"
+      />
+    </g>
     <g v-else-if="displayWeight === 'thin'">
-  
-  <circle cx="128" cy="60" r="6"/>
-  <rect x="24" y="64" width="208" height="128" rx="16" transform="translate(256) rotate(90)" stroke-width="8" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-</g>
+      <circle cx="128" cy="60" r="6" />
+      <rect
+        x="24"
+        y="64"
+        width="208"
+        height="128"
+        rx="16"
+        transform="translate(256) rotate(90)"
+        stroke-width="8"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        fill="none"
+      />
+    </g>
     <g v-else-if="displayWeight === 'regular'">
-  
-  <circle cx="128" cy="60" r="12"/>
-  <rect x="24" y="64" width="208" height="128" rx="16" transform="translate(256) rotate(90)" stroke-width="16" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-</g>
+      <circle cx="128" cy="60" r="12" />
+      <rect
+        x="24"
+        y="64"
+        width="208"
+        height="128"
+        rx="16"
+        transform="translate(256) rotate(90)"
+        stroke-width="16"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        fill="none"
+      />
+    </g>
   </svg>
 </template>
 
@@ -48,7 +112,7 @@ import {
   IconProps,
   PropValidator,
   IconContext,
-  ContextGetter,
+  ContextGetter
 } from "@/lib/types";
 export default defineComponent({
   name: "PhDeviceMobileCamera",
@@ -70,7 +134,7 @@ export default defineComponent({
     displayMirrored() {
       const { mirrored, contextMirrored } = this as IconProps & IconContext;
       return mirrored ?? contextMirrored ? "scale(-1, 1)" : undefined;
-    },
-  },
+    }
+  }
 });
 </script>
