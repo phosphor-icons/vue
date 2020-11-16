@@ -8,243 +8,67 @@
     :fill="displayColor"
     :transform="displayMirrored"
     v-bind="$attrs"
-    v-on="$listeners"
   >
     <g v-if="displayWeight === 'bold'">
-      <circle
-        cx="76"
-        cy="76"
-        r="36"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="24"
-      />
-      <circle
-        cx="180"
-        cy="76"
-        r="36"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="24"
-      />
-      <circle
-        cx="76"
-        cy="180"
-        r="36"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="24"
-      />
-      <circle
-        cx="180"
-        cy="180"
-        r="36"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="24"
-      />
-    </g>
+  
+  <circle cx="76" cy="76" r="36" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
+  <circle cx="180" cy="76" r="36" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
+  <circle cx="76" cy="180" r="36" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
+  <circle cx="180" cy="180" r="36" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
+</g>
     <g v-else-if="displayWeight === 'duotone'">
-      <circle cx="76" cy="180" r="36" opacity="0.2" />
-      <circle cx="76" cy="76" r="36" opacity="0.2" />
-      <circle cx="180" cy="76" r="36" opacity="0.2" />
-      <circle cx="180" cy="180" r="36" opacity="0.2" />
-      <circle
-        cx="76"
-        cy="76"
-        r="36"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="16"
-      />
-      <circle
-        cx="180"
-        cy="76"
-        r="36"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="16"
-      />
-      <circle
-        cx="180"
-        cy="180"
-        r="36"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="16"
-      />
-      <circle
-        cx="76"
-        cy="180"
-        r="36"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="16"
-      />
-    </g>
+  
+  <circle cx="76" cy="180" r="36" opacity="0.2"/>
+  <circle cx="76" cy="76" r="36" opacity="0.2"/>
+  <circle cx="180" cy="76" r="36" opacity="0.2"/>
+  <circle cx="180" cy="180" r="36" opacity="0.2"/>
+  <circle cx="76" cy="76" r="36" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
+  <circle cx="180" cy="76" r="36" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
+  <circle cx="180" cy="180" r="36" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
+  <circle cx="76" cy="180" r="36" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
+</g>
     <g v-else-if="displayWeight === 'fill'">
-      <g>
-        <circle cx="76" cy="76" r="44" />
-        <circle cx="180" cy="76" r="44" />
-        <circle cx="76" cy="180" r="44" />
-        <circle cx="180" cy="180" r="44" />
-      </g>
-    </g>
+  
+  <g>
+    <circle cx="76" cy="76" r="44"/>
+    <circle cx="180" cy="76" r="44"/>
+    <circle cx="76" cy="180" r="44"/>
+    <circle cx="180" cy="180" r="44"/>
+  </g>
+</g>
     <g v-else-if="displayWeight === 'light'">
-      <circle
-        cx="76"
-        cy="76"
-        r="36"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="12"
-      />
-      <circle
-        cx="180"
-        cy="76"
-        r="36"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="12"
-      />
-      <circle
-        cx="76"
-        cy="180"
-        r="36"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="12"
-      />
-      <circle
-        cx="180"
-        cy="180"
-        r="36"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="12"
-      />
-    </g>
+  
+  <circle cx="76" cy="76" r="36" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
+  <circle cx="180" cy="76" r="36" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
+  <circle cx="76" cy="180" r="36" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
+  <circle cx="180" cy="180" r="36" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
+</g>
     <g v-else-if="displayWeight === 'thin'">
-      <circle
-        cx="76"
-        cy="76"
-        r="36"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="8"
-      />
-      <circle
-        cx="180"
-        cy="76"
-        r="36"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="8"
-      />
-      <circle
-        cx="76"
-        cy="180"
-        r="36"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="8"
-      />
-      <circle
-        cx="180"
-        cy="180"
-        r="36"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="8"
-      />
-    </g>
+  
+  <circle cx="76" cy="76" r="36" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+  <circle cx="180" cy="76" r="36" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+  <circle cx="76" cy="180" r="36" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+  <circle cx="180" cy="180" r="36" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+</g>
     <g v-else-if="displayWeight === 'regular'">
-      <circle
-        cx="76"
-        cy="76"
-        r="36"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="16"
-      />
-      <circle
-        cx="180"
-        cy="76"
-        r="36"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="16"
-      />
-      <circle
-        cx="76"
-        cy="180"
-        r="36"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="16"
-      />
-      <circle
-        cx="180"
-        cy="180"
-        r="36"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="16"
-      />
-    </g>
+  
+  <circle cx="76" cy="76" r="36" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
+  <circle cx="180" cy="76" r="36" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
+  <circle cx="76" cy="180" r="36" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
+  <circle cx="180" cy="180" r="36" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
+</g>
   </svg>
 </template>
 
 <script lang="ts">
-import Vue from "vue";
+import { defineComponent } from "vue";
 import {
-  IconComputed,
   IconProps,
   PropValidator,
   IconContext,
-  ContextGetter
+  ContextGetter,
 } from "@/lib/types";
-export default Vue.extend<{}, {}, IconComputed, IconProps>({
+export default defineComponent({
   name: "PhCirclesFour",
   props: PropValidator,
   inject: ContextGetter,
@@ -264,7 +88,7 @@ export default Vue.extend<{}, {}, IconComputed, IconProps>({
     displayMirrored() {
       const { mirrored, contextMirrored } = this as IconProps & IconContext;
       return mirrored ?? contextMirrored ? "scale(-1, 1)" : undefined;
-    }
-  }
+    },
+  },
 });
 </script>

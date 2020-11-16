@@ -87,7 +87,6 @@ function generateComponents() {
     :fill="displayColor"
     :transform="displayMirrored"
     v-bind="$attrs"
-    v-on="$listeners"
   >
 `;
 
@@ -114,15 +113,14 @@ function generateComponents() {
 </template>
 
 <script lang="ts">
-import Vue from "vue";
+import { defineComponent } from "vue";
 import {
-  IconComputed,
   IconProps,
   PropValidator,
   IconContext,
   ContextGetter,
 } from "@/lib/types";
-export default Vue.extend<{}, {}, IconComputed, IconProps>({
+export default defineComponent({
   name: "Ph${name}",
   props: PropValidator,
   inject: ContextGetter,

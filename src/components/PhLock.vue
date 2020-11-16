@@ -8,142 +8,54 @@
     :fill="displayColor"
     :transform="displayMirrored"
     v-bind="$attrs"
-    v-on="$listeners"
   >
     <g v-if="displayWeight === 'bold'">
-      <circle cx="127.99414" cy="152" r="16" />
-      <rect
-        x="40"
-        y="88"
-        width="176"
-        height="128"
-        rx="8"
-        stroke-width="24"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        fill="none"
-      />
-      <path
-        d="M92,88V52a36,36,0,0,1,72,0V88"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="24"
-      />
-    </g>
+  
+  <circle cx="127.99414" cy="152" r="16"/>
+  <rect x="40" y="88" width="176" height="128" rx="8" stroke-width="24" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M92,88V52a36,36,0,0,1,72,0V88" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
+</g>
     <g v-else-if="displayWeight === 'duotone'">
-      <rect x="40" y="88" width="176" height="128" rx="8" opacity="0.2" />
-      <circle cx="127.99414" cy="152" r="12" />
-      <rect
-        x="40"
-        y="88"
-        width="176"
-        height="128"
-        rx="8"
-        stroke-width="16"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        fill="none"
-      />
-      <path
-        d="M92,88V52a36,36,0,0,1,72,0V88"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="16"
-      />
-    </g>
+  
+  <rect x="40" y="88" width="176" height="128" rx="8" opacity="0.2"/>
+  <circle cx="127.99414" cy="152" r="12"/>
+  <rect x="40" y="88" width="176" height="128" rx="8" stroke-width="16" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M92,88V52a36,36,0,0,1,72,0V88" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
+</g>
     <g v-else-if="displayWeight === 'fill'">
-      <path
-        d="M208,80H172V52a44,44,0,0,0-88,0V80H48A16.01833,16.01833,0,0,0,32,96V208a16.01833,16.01833,0,0,0,16,16H208a16.01833,16.01833,0,0,0,16-16V96A16.01833,16.01833,0,0,0,208,80Zm-80.00586,84a12,12,0,1,1,12-12A12,12,0,0,1,127.99414,164ZM156,80H100V52a28,28,0,0,1,56,0Z"
-      />
-    </g>
+  
+  <path d="M208,80H172V52a44,44,0,0,0-88,0V80H48A16.01833,16.01833,0,0,0,32,96V208a16.01833,16.01833,0,0,0,16,16H208a16.01833,16.01833,0,0,0,16-16V96A16.01833,16.01833,0,0,0,208,80Zm-80.00586,84a12,12,0,1,1,12-12A12,12,0,0,1,127.99414,164ZM156,80H100V52a28,28,0,0,1,56,0Z"/>
+</g>
     <g v-else-if="displayWeight === 'light'">
-      <circle cx="127.99414" cy="152" r="9" />
-      <rect
-        x="40"
-        y="88"
-        width="176"
-        height="128"
-        rx="8"
-        stroke-width="12"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        fill="none"
-      />
-      <path
-        d="M92,88V52a36,36,0,0,1,72,0V88"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="12"
-      />
-    </g>
+  
+  <circle cx="127.99414" cy="152" r="9"/>
+  <rect x="40" y="88" width="176" height="128" rx="8" stroke-width="12" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M92,88V52a36,36,0,0,1,72,0V88" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
+</g>
     <g v-else-if="displayWeight === 'thin'">
-      <circle cx="127.99414" cy="152" r="6" />
-      <rect
-        x="40"
-        y="88"
-        width="176"
-        height="128"
-        rx="8"
-        stroke-width="8"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        fill="none"
-      />
-      <path
-        d="M92,88V52a36,36,0,0,1,72,0V88"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="8"
-      />
-    </g>
+  
+  <circle cx="127.99414" cy="152" r="6"/>
+  <rect x="40" y="88" width="176" height="128" rx="8" stroke-width="8" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M92,88V52a36,36,0,0,1,72,0V88" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+</g>
     <g v-else-if="displayWeight === 'regular'">
-      <circle cx="127.99414" cy="152" r="12" />
-      <rect
-        x="40"
-        y="88"
-        width="176"
-        height="128"
-        rx="8"
-        stroke-width="16"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        fill="none"
-      />
-      <path
-        d="M92,88V52a36,36,0,0,1,72,0V88"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="16"
-      />
-    </g>
+  
+  <circle cx="127.99414" cy="152" r="12"/>
+  <rect x="40" y="88" width="176" height="128" rx="8" stroke-width="16" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M92,88V52a36,36,0,0,1,72,0V88" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
+</g>
   </svg>
 </template>
 
 <script lang="ts">
-import Vue from "vue";
+import { defineComponent } from "vue";
 import {
-  IconComputed,
   IconProps,
   PropValidator,
   IconContext,
-  ContextGetter
+  ContextGetter,
 } from "@/lib/types";
-export default Vue.extend<{}, {}, IconComputed, IconProps>({
+export default defineComponent({
   name: "PhLock",
   props: PropValidator,
   inject: ContextGetter,
@@ -163,7 +75,7 @@ export default Vue.extend<{}, {}, IconComputed, IconProps>({
     displayMirrored() {
       const { mirrored, contextMirrored } = this as IconProps & IconContext;
       return mirrored ?? contextMirrored ? "scale(-1, 1)" : undefined;
-    }
-  }
+    },
+  },
 });
 </script>

@@ -332,73 +332,73 @@
     <input name="show" type="checkbox" :checked="showAll" @change="extend" />
     <label for="show">Show All</label>
     <section v-if="showAll">
-      <div class="row" v-for="icon in icons" :key="icon.options.name">
-        <span class="name">{{ icon.options.name }}</span>
-        <div class="icons" :title="icon.options.name">
-          <component :is="icon.options.name" />
+      <div class="row" v-for="icon in icons" :key="icon">
+        <span class="name">{{ icon }}</span>
+        <div class="icons" :title="icon">
+          <component :is="icon" />
           <component
-            :is="icon.options.name"
+            :is="icon"
             mirrored
             color="darkorange"
             :size="24"
           />
           <component
-            :is="icon.options.name"
+            :is="icon"
             mirrored
             color="darkmagenta"
             :size="24"
           />
           <component
-            :is="icon.options.name"
+            :is="icon"
             mirrored
             color="royalblue"
             :size="24"
           />
-          <component :is="icon.options.name" :weight="weight" :size="32" />
+          <component :is="icon" :weight="weight" :size="32" />
           <component
-            :is="icon.options.name"
+            :is="icon"
             :weight="weight"
             color="crimson"
             :size="32"
           />
           <component
-            :is="icon.options.name"
+            :is="icon"
             :weight="weight"
             color="teal"
             :size="32"
           />
           <component
-            :is="icon.options.name"
+            :is="icon"
             weight="thin"
             :color="color"
             :size="48"
           />
           <component
-            :is="icon.options.name"
+            :is="icon"
             weight="light"
             :color="color"
             :size="48"
           />
           <component
-            :is="icon.options.name"
+            :is="icon"
             weight="regular"
             :color="color"
             :size="48"
           />
           <component
-            :is="icon.options.name"
+            :is="icon"
             weight="bold"
             :color="color"
             :size="48"
           />
           <component
-            :is="icon.options.name"
+            :is="icon"
             weight="fill"
             :color="color"
             :size="48"
           />
           <component
-            :is="icon.options.name"
+            :is="icon"
             weight="duotone"
             :color="color"
             :size="48"
@@ -410,29 +410,15 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
+import { defineComponent, computed, toRefs, ToRefs, Ref, provide, reactive } from "vue";
 import * as Phosphor from "@/entry";
-import { ExtendedVue } from "vue/types/vue";
-import { IconProps } from "@/lib/types";
-import { IconComputed } from "@/lib/types";
 
-type VueIcon = ExtendedVue<Vue, {}, {}, IconComputed, IconProps> & {
-  options: { name: string };
-};
-
-function isIcon(candidate: any): candidate is VueIcon {
-  return candidate.options && candidate.options.name;
-}
-
-const Icon = Object.values(Phosphor).reduce((components, Icon) => {
-  if (isIcon(Icon)) return { ...components, [Icon.options!!.name]: Icon };
-  return components;
-}, {});
-
-const icons = Object.values(Icon);
+// Technically more fragile than the former type guard, but Vue 3 doesn't 
+const { default: _, ...Icon } = Phosphor;
+const allIcons = Object.keys(Icon);
 
 if (process.env.NODE_ENV === "development") {
-  console.log(`${icons.length} icons`);
+  console.log(`${allIcons.length} icons`);
 }
 
 interface AppData {
@@ -449,17 +435,18 @@ interface AppData {
   open: boolean;
   locked: boolean;
   muted: boolean;
-  volume: string;
+  volume: "high" | "low" | "none" | "mute";
   wifi: "high" | "medium" | "low" | "none";
   showAll: boolean;
 }
 
-export default Vue.extend({
+export default defineComponent({
   name: "ServeDev",
-  components: Icon,
-  data(): AppData {
-    return {
-      icons,
+  setup() {
+    const toggle = (ref: Ref<boolean>) => ref.value = !ref.value;
+
+    const data: ToRefs<AppData> = toRefs(reactive({
+      icons: allIcons,
       weight: "regular",
       size: 64,
       color: "indianred",
@@ -475,134 +462,129 @@ export default Vue.extend({
       volume: "high",
       wifi: "high",
       showAll: false
-    };
-  },
-  computed: {
-    filled() {
-      const { checked } = this as AppData;
-      return checked ? "fill" : "regular";
-    }
-  },
-  provide() {
-    return {
-      weight: "duotone",
-      size: 64,
-      color: "#41B883",
-      mirrored: false
-    };
-  },
-  methods: {
-    extend() {
-      this.showAll = !this.showAll;
-    },
-    test() {
-      console.log(`HI MOM! It's ${new Date().toLocaleTimeString()}`);
-    },
-    check() {
-      this.checked = !this.checked;
-    },
-    elapse() {
-      switch (this.time) {
+    }));
+
+    const filled = computed(() => data.checked.value ? "fill" : "regular");
+
+    const extend = () => toggle(data.showAll);
+    const test = () => console.log(`HI MOM! It's ${new Date().toLocaleTimeString()}`);
+    const check = () => toggle(data.checked);
+    const elapse = () => {
+      switch (data.time.value) {
         case "none":
-          this.time = "high";
+          data.time.value = "high";
           break;
         case "high":
-          this.time = "medium";
+          data.time.value = "medium";
           break;
         case "medium":
-          this.time = "low";
+          data.time.value = "low";
           break;
         case "low":
-          this.time = "none";
+          data.time.value = "none";
           break;
       }
-    },
-    hide() {
-      this.visible = !this.visible;
-    },
-    discharge() {
-      switch (this.charge) {
+    };
+    const hide = () => toggle(data.visible);
+    const discharge = () => {
+      switch (data.charge.value) {
         case "full":
-          this.charge = "high";
+          data.charge.value = "high";
           break;
         case "high":
-          this.charge = "medium";
+          data.charge.value = "medium";
           break;
         case "medium":
-          this.charge = "low";
+          data.charge.value = "low";
           break;
         case "low":
-          this.charge = "empty";
+          data.charge.value = "empty";
           break;
         case "empty":
-          this.charge = "charging";
+          data.charge.value = "charging";
           break;
         case "charging":
-          this.charge = "full";
+          data.charge.value = "full";
           break;
       }
-    },
-    changeSignal() {
-      switch (this.signal) {
+    };
+    const changeSignal = () => {
+      switch (data.signal.value) {
         case "full":
-          this.signal = "high";
+          data.signal.value = "high";
           break;
         case "high":
-          this.signal = "medium";
+          data.signal.value = "medium";
           break;
         case "medium":
-          this.signal = "low";
+          data.signal.value = "low";
           break;
         case "low":
-          this.signal = "none";
+          data.signal.value = "none";
           break;
         case "none":
-          this.signal = "full";
+          data.signal.value = "full";
           break;
       }
-    },
-    changeOpen() {
-      this.open = !this.open;
-    },
-    changeLock() {
-      this.locked = !this.locked;
-    },
-    changeMute() {
-      this.muted = !this.muted;
-    },
-    changeVolume() {
-      switch (this.volume) {
+    };
+    const changeOpen = () => toggle(data.open);
+    const changeLock = () => toggle(data.locked);
+    const changeMute = () => toggle(data.muted);
+    const changeVolume = () => {
+      switch (data.volume.value) {
         case "high":
-          this.volume = "low";
+          data.volume.value = "low";
           break;
         case "low":
-          this.volume = "none";
+          data.volume.value = "none";
           break;
         case "none":
-          this.volume = "mute";
+          data.volume.value = "mute";
           break;
         case "mute":
-          this.volume = "high";
+          data.volume.value = "high";
           break;
       }
-    },
-    changeWifi() {
-      switch (this.wifi) {
+    };
+    const changeWifi = () => {
+      switch (data.wifi.value) {
         case "high":
-          this.wifi = "medium";
+          data.wifi.value = "medium";
           break;
         case "medium":
-          this.wifi = "low";
+          data.wifi.value = "low";
           break;
         case "low":
-          this.wifi = "none";
+          data.wifi.value = "none";
           break;
         case "none":
-          this.wifi = "high";
+          data.wifi.value = "high";
           break;
       }
-    }
-  }
+    };
+
+    provide('weight', "duotone");
+    provide('size', 64);
+    provide('color', "#41B883");
+    provide('mirrored', false);
+
+    return {
+      ...data,
+      filled,
+      extend,
+      test,
+      check,
+      elapse,
+      hide,
+      discharge,
+      changeSignal,
+      changeOpen,
+      changeLock,
+      changeMute,
+      changeVolume,
+      changeWifi,
+    };
+  },
 });
 </script>
 
