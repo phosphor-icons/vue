@@ -67,11 +67,13 @@
       <PhPackage />
       <PhPen />
       <PhStack />
-      <PhTruck @click="test" />
+      <span class="toggleables">
+        <PhTruck @click="test" />
+      </span>
       <PhCircle />
       <PhTable />
     </section>
-    <section>
+    <section class="toggleables">
       <h1>Toggleables</h1>
       <PhHeart
         :weight="filled"
@@ -329,7 +331,7 @@
         @click="changeWifi"
       />
     </section>
-    <input name="show" type="checkbox" :checked="showAll" @change="extend" />
+    <input id="show" name="show" type="checkbox" :checked="showAll" @change="extend" />
     <label for="show">Show All</label>
     <section v-if="showAll">
       <div class="row" v-for="icon in icons" :key="icon.options.name">
@@ -413,8 +415,7 @@
 import Vue from "vue";
 import * as Phosphor from "@/entry";
 import { ExtendedVue } from "vue/types/vue";
-import { IconProps } from "@/lib/types";
-import { IconComputed } from "@/lib/types";
+import { IconProps, IconComputed } from "@/lib/types";
 
 type VueIcon = ExtendedVue<Vue, {}, {}, IconComputed, IconProps> & {
   options: { name: string };
@@ -630,6 +631,10 @@ code {
   align-items: baseline;
   justify-content: center;
   padding: 8px 0;
+}
+
+.toggleables svg {
+  cursor: pointer;
 }
 
 .name {
