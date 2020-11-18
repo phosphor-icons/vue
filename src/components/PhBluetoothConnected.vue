@@ -10,6 +10,7 @@
     v-bind="$attrs"
     v-on="$listeners"
   >
+    <slot />
     <g v-if="displayWeight === 'bold'">
       <polygon
         points="120 32.003 184 80.003 120 128.003 120 32.003"

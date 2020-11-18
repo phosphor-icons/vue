@@ -10,6 +10,7 @@
     v-bind="$attrs"
     v-on="$listeners"
   >
+    <slot />
     <g v-if="displayWeight === 'bold'">
       <path
         d="M32,72H83.88306a8,8,0,0,1,6.50986,3.35009l75.21416,105.29982A8,8,0,0,0,172.11694,184H232"

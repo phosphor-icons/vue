@@ -10,6 +10,7 @@
     v-bind="$attrs"
     v-on="$listeners"
   >
+    <slot />
     <g v-if="displayWeight === 'bold'">
       <polyline
         points="86 81.971 128 39.971 170 81.971"

@@ -10,6 +10,7 @@
     v-bind="$attrs"
     v-on="$listeners"
   >
+    <slot />
     <g v-if="displayWeight === 'bold'">
       <rect x="-0.00002" width="256.00004" height="256.00004" fill="none" />
       <line

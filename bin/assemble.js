@@ -89,6 +89,7 @@ function generateComponents() {
     v-bind="$attrs"
     v-on="$listeners"
   >
+    <slot />
 `;
 
     if (!checkFiles(icon)) {

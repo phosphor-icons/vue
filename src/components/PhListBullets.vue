@@ -10,6 +10,7 @@
     v-bind="$attrs"
     v-on="$listeners"
   >
+    <slot />
     <g v-if="displayWeight === 'bold'">
       <circle cx="44" cy="68" r="16" />
       <circle cx="44" cy="128" r="16" />
