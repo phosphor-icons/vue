@@ -331,7 +331,36 @@
         @click="changeWifi"
       />
     </section>
-    <input id="show" name="show" type="checkbox" :checked="showAll" @change="extend" />
+    <section>
+      <h1>With Children</h1>
+      <PhCube>
+        <animate
+          attributeName="opacity"
+          values="0;1;0"
+          dur="4s"
+          repeatCount="indefinite"
+        />
+        <animateTransform
+          attributeName="transform"
+          attributeType="XML"
+          type="rotate"
+          dur="5s"
+          from="0 0 0"
+          to="360 0 0"
+          repeatCount="indefinite"
+        />
+      </PhCube>
+      <PhCheckSquareOffset>
+        <title>HI MOM</title>
+      </PhCheckSquareOffset>
+    </section>
+    <input
+      id="show"
+      name="show"
+      type="checkbox"
+      :checked="showAll"
+      @change="extend"
+    />
     <label for="show">Show All</label>
     <section v-if="showAll">
       <div class="row" v-for="icon in icons" :key="icon.options.name">
@@ -463,7 +492,7 @@ export default Vue.extend({
       icons,
       weight: "regular",
       size: 64,
-      color: "indianred",
+      color: "darkorange",
       mirrored: false,
       checked: false,
       time: "none",
@@ -488,7 +517,7 @@ export default Vue.extend({
     return {
       weight: "duotone",
       size: 64,
-      color: "#41B883",
+      color: "darkorchid",
       mirrored: false
     };
   },
