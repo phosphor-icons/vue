@@ -104,7 +104,7 @@ The following will cause the Cube icon to rotate and pulse:
 
 ```html
 <template>
-  <PhCube>
+  <PhCube color="darkorchid" weight="duotone">
     <animate
       attributeName="opacity"
       values="0;1;0"
