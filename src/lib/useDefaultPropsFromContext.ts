@@ -1,5 +1,5 @@
-import { computed, inject, Ref, ToRefs, isRef } from "vue";
-import { IconProps } from "@/lib/types";
+import { computed, inject, isRef, Ref, ToRefs } from "vue";
+import { IconProps, SetupIconProps } from "@/lib/types";
 
 const defaults: IconProps = {
   weight: "regular",
@@ -8,19 +8,17 @@ const defaults: IconProps = {
   mirrored: false
 };
 
-function unwrapPossibleRef<T>(obj: T | Ref<T>): T {
+function unwrapIfRef<T>(obj: T | Ref<T>): T {
   if (isRef(obj)) return obj.value;
   return obj;
 }
 
-export default function useDefaultPropsFromContext(
-  props: Readonly<Partial<IconProps>>
-): ToRefs<IconProps> {
+function useDefaultPropsFromContext(props: SetupIconProps): ToRefs<IconProps> {
   const contextProps: IconProps = {
-    weight: unwrapPossibleRef(inject("weight", defaults.weight)),
-    size: unwrapPossibleRef(inject("size", defaults.size)),
-    color: unwrapPossibleRef(inject("color", defaults.color)),
-    mirrored: unwrapPossibleRef(inject("mirrored", defaults.mirrored))
+    weight: unwrapIfRef(inject("weight", defaults.weight)),
+    size: unwrapIfRef(inject("size", defaults.size)),
+    color: unwrapIfRef(inject("color", defaults.color)),
+    mirrored: unwrapIfRef(inject("mirrored", defaults.mirrored))
   };
 
   return {
@@ -30,3 +28,4 @@ export default function useDefaultPropsFromContext(
     mirrored: computed(() => props.mirrored || contextProps.mirrored)
   };
 }
+export default useDefaultPropsFromContext;

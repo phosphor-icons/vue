@@ -417,14 +417,14 @@ import * as Phosphor from "@/entry";
 // typing magic in `defineComponent` that makes it hard to rigorously determine
 // the exact type of the component
 const { default: _, ...Icon } = Phosphor;
-const allIcons = Object.keys(Icon);
+const iconNames = Object.keys(Icon);
 
 if (process.env.NODE_ENV === "development") {
-  console.log(`${allIcons.length} icons`);
+  console.log(`${iconNames.length} icons`);
 }
 
 interface AppData {
-  icons: any[];
+  icons: string[];
   weight: string;
   size: number | string;
   color: string;
@@ -448,7 +448,7 @@ export default defineComponent({
     const toggle = (ref: Ref<boolean>) => ref.value = !ref.value;
 
     const data: ToRefs<AppData> = toRefs(reactive({
-      icons: allIcons,
+      icons: iconNames,
       weight: "regular",
       size: 64,
       color: "indianred",

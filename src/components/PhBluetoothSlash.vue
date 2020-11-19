@@ -232,13 +232,14 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import { IconProps, PropValidator } from "@/lib/types";
+import { SetupIconProps, PropValidator, PhosphorIcon } from "@/lib/types";
 import useDefaultPropsFromContext from "@/lib/useDefaultPropsFromContext";
 
-export default defineComponent({
+const component: PhosphorIcon = defineComponent({
   props: PropValidator,
-  setup(props: Readonly<Partial<IconProps>>) {
+  setup(props: SetupIconProps) {
     return { ...useDefaultPropsFromContext(props) };
   }
 });
+export default component;
 </script>
