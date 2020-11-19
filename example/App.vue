@@ -413,7 +413,9 @@
 import { defineComponent, computed, toRefs, ToRefs, Ref, provide, reactive } from "vue";
 import * as Phosphor from "@/entry";
 
-// Technically more fragile than the former type guard, but Vue 3 doesn't 
+// Technically more fragile than the former type guard, but Vue 3 does a lot of
+// typing magic in `defineComponent` that makes it hard to rigorously determine
+// the exact type of the component
 const { default: _, ...Icon } = Phosphor;
 const allIcons = Object.keys(Icon);
 

@@ -3,19 +3,19 @@
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 256 256"
-    :width="displaySize"
-    :height="displaySize"
-    :fill="displayColor"
-    :transform="displayMirrored"
+    :width="size"
+    :height="size"
+    :fill="color"
+    :transform="mirrored ? 'scale(-1, 1)' : undefined"
     v-bind="$attrs"
   >
-    <g v-if="displayWeight === 'bold'">
+    <g v-if="weight === 'bold'">
       <circle
         cx="127.88745"
         cy="44"
         r="28"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="24"
@@ -23,13 +23,13 @@
       <path
         d="M153.91044,134.715,188.657,161.74012a12,12,0,1,0,16.97056-16.97057l-39.598-50.91169A19.93738,19.93738,0,0,0,151.88746,88h-48a19.93739,19.93739,0,0,0-14.14213,5.85786l-39.598,50.91169A12,12,0,1,0,67.1179,161.74012L101.86446,134.715,74.13088,222.3089a12,12,0,0,0,21.75139,10.14284l32.0052-50.37108h0l32.0052,50.37108A12,12,0,0,0,181.644,222.3089Z"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="24"
       />
     </g>
-    <g v-else-if="displayWeight === 'duotone'">
+    <g v-else-if="weight === 'duotone'">
       <circle cx="127.88745" cy="44" r="28" opacity="0.2" />
       <path
         d="M153.91044,134.715,188.657,161.74012a12,12,0,1,0,16.97056-16.97057l-39.598-50.91169A19.93738,19.93738,0,0,0,151.88746,88h-48a19.93739,19.93739,0,0,0-14.14213,5.85786l-39.598,50.91169A12,12,0,1,0,67.1179,161.74012L101.86446,134.715,74.13088,222.3089a12,12,0,0,0,21.75139,10.14284l32.0052-50.37108h0l32.0052,50.37108A12,12,0,0,0,181.644,222.3089Z"
@@ -40,7 +40,7 @@
         cy="44"
         r="28"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="16"
@@ -48,13 +48,13 @@
       <path
         d="M153.91044,134.715,188.657,161.74012a12,12,0,1,0,16.97056-16.97057l-39.598-50.91169A19.93738,19.93738,0,0,0,151.88746,88h-48a19.93739,19.93739,0,0,0-14.14213,5.85786l-39.598,50.91169A12,12,0,1,0,67.1179,161.74012L101.86446,134.715,74.13088,222.3089a12,12,0,0,0,21.75139,10.14284l32.0052-50.37108h0l32.0052,50.37108A12,12,0,0,0,181.644,222.3089Z"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="16"
       />
     </g>
-    <g v-else-if="displayWeight === 'fill'">
+    <g v-else-if="weight === 'fill'">
       <g>
         <circle cx="127.88745" cy="44" r="36" />
         <path
@@ -62,13 +62,13 @@
         />
       </g>
     </g>
-    <g v-else-if="displayWeight === 'light'">
+    <g v-else-if="weight === 'light'">
       <circle
         cx="127.88745"
         cy="44"
         r="28"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="12"
@@ -76,19 +76,19 @@
       <path
         d="M153.91044,134.715,188.657,161.74012a12,12,0,1,0,16.97056-16.97057l-39.598-50.91169A19.93738,19.93738,0,0,0,151.88746,88h-48a19.93739,19.93739,0,0,0-14.14213,5.85786l-39.598,50.91169A12,12,0,1,0,67.1179,161.74012L101.86446,134.715,74.13088,222.3089a12,12,0,0,0,21.75139,10.14284l32.0052-50.37108h0l32.0052,50.37108A12,12,0,0,0,181.644,222.3089Z"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="12"
       />
     </g>
-    <g v-else-if="displayWeight === 'thin'">
+    <g v-else-if="weight === 'thin'">
       <circle
         cx="127.88745"
         cy="44"
         r="28"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="8"
@@ -96,19 +96,19 @@
       <path
         d="M153.91044,134.715,188.657,161.74012a12,12,0,1,0,16.97056-16.97057l-39.598-50.91169A19.93738,19.93738,0,0,0,151.88746,88h-48a19.93739,19.93739,0,0,0-14.14213,5.85786l-39.598,50.91169A12,12,0,1,0,67.1179,161.74012L101.86446,134.715,74.13088,222.3089a12,12,0,0,0,21.75139,10.14284l32.0052-50.37108h0l32.0052,50.37108A12,12,0,0,0,181.644,222.3089Z"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="8"
       />
     </g>
-    <g v-else-if="displayWeight === 'regular'">
+    <g v-else-if="weight === 'regular'">
       <circle
         cx="127.88745"
         cy="44"
         r="28"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="16"
@@ -116,7 +116,7 @@
       <path
         d="M153.91044,134.715,188.657,161.74012a12,12,0,1,0,16.97056-16.97057l-39.598-50.91169A19.93738,19.93738,0,0,0,151.88746,88h-48a19.93739,19.93739,0,0,0-14.14213,5.85786l-39.598,50.91169A12,12,0,1,0,67.1179,161.74012L101.86446,134.715,74.13088,222.3089a12,12,0,0,0,21.75139,10.14284l32.0052-50.37108h0l32.0052,50.37108A12,12,0,0,0,181.644,222.3089Z"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="16"
@@ -127,33 +127,13 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import {
-  IconProps,
-  PropValidator,
-  IconContext,
-  ContextGetter
-} from "@/lib/types";
+import { IconProps, PropValidator } from "@/lib/types";
+import useDefaultPropsFromContext from "@/lib/useDefaultPropsFromContext";
+
 export default defineComponent({
-  name: "PhPedestrian",
   props: PropValidator,
-  inject: ContextGetter,
-  computed: {
-    displayWeight() {
-      const { weight, contextWeight } = this as IconProps & IconContext;
-      return weight ?? contextWeight;
-    },
-    displaySize() {
-      const { size, contextSize } = this as IconProps & IconContext;
-      return size ?? contextSize;
-    },
-    displayColor() {
-      const { color, contextColor } = this as IconProps & IconContext;
-      return color ?? contextColor;
-    },
-    displayMirrored() {
-      const { mirrored, contextMirrored } = this as IconProps & IconContext;
-      return mirrored ?? contextMirrored ? "scale(-1, 1)" : undefined;
-    }
+  setup(props: Readonly<Partial<IconProps>>) {
+    return { ...useDefaultPropsFromContext(props) };
   }
 });
 </script>

@@ -1,5 +1,7 @@
-type Weight = "thin" | "light" | "regular" | "bold" | "fill" | "duotone";
-type Size = string | number;
+import { PropType } from "vue";
+
+export type Weight = "thin" | "light" | "regular" | "bold" | "fill" | "duotone";
+export type Size = string | number;
 
 export interface IconProps {
   weight: Weight;
@@ -10,28 +12,7 @@ export interface IconProps {
 
 export const PropValidator = {
   color: String,
-  size: [String, Number],
-  weight: { type: String as () => Weight },
+  size: [String, Number] as PropType<Size>,
+  weight: String as PropType<Weight>,
   mirrored: Boolean
-};
-
-export interface IconComputed {
-  displayWeight: Weight;
-  displaySize: Size;
-  displayColor: string;
-  displayMirrored: string | undefined;
-}
-
-export interface IconContext {
-  contextWeight?: Weight;
-  contextSize?: Size;
-  contextColor?: string;
-  contextMirrored?: boolean;
-}
-
-export const ContextGetter = {
-  contextWeight: { from: "weight", default: "regular" },
-  contextSize: { from: "size", default: "1em" },
-  contextColor: { from: "color", default: "currentColor" },
-  contextMirrored: { from: "mirrored", default: false }
 };

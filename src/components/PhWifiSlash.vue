@@ -3,13 +3,13 @@
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 256 256"
-    :width="displaySize"
-    :height="displaySize"
-    :fill="displayColor"
-    :transform="displayMirrored"
+    :width="size"
+    :height="size"
+    :fill="color"
+    :transform="mirrored ? 'scale(-1, 1)' : undefined"
     v-bind="$attrs"
   >
-    <g v-if="displayWeight === 'bold'">
+    <g v-if="weight === 'bold'">
       <circle cx="127.97461" cy="200.0029" r="16" />
       <line
         x1="47.98242"
@@ -17,7 +17,7 @@
         x2="207.98242"
         y2="216"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="24"
@@ -25,7 +25,7 @@
       <path
         d="M107.11226,57.47077a148.358,148.358,0,0,1,20.86235-1.46787A145.90176,145.90176,0,0,1,230.903,98.17952"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="24"
@@ -33,7 +33,7 @@
       <path
         d="M25.04621,98.17952A145.88673,145.88673,0,0,1,72.40779,66.8671"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="24"
@@ -41,7 +41,7 @@
       <path
         d="M152.10209,106.95874a97.88563,97.88563,0,0,1,44.88614,25.1619"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="24"
@@ -49,7 +49,7 @@
       <path
         d="M58.961,132.12064a97.89874,97.89874,0,0,1,49.03639-26.105"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="24"
@@ -57,13 +57,13 @@
       <path
         d="M92.90211,166.06177a50.81565,50.81565,0,0,1,67.576-2.317"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="24"
       />
     </g>
-    <g v-else-if="displayWeight === 'duotone'">
+    <g v-else-if="weight === 'duotone'">
       <path
         d="M20.20855,75.93124c63.48474-47.90809,152.098-47.90812,215.58263.00015a8.015,8.015,0,0,1,1.201,11.61025c-19.04723,22.44929-82.94714,97.76169-102.95188,121.33925a7.93583,7.93583,0,0,1-12.14044-.0705L19.03968,87.57941A8.055,8.055,0,0,1,20.20855,75.93124Z"
         opacity="0.2"
@@ -74,7 +74,7 @@
         x2="208"
         y2="215.99421"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="16"
@@ -82,7 +82,7 @@
       <path
         d="M166.62276,170.47925l-32.58244,38.40164a7.93583,7.93583,0,0,1-12.14044-.0705L19.03968,87.57941a8.055,8.055,0,0,1,1.16887-11.64817A177.24421,177.24421,0,0,1,60.07361,53.27507"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="16"
@@ -90,13 +90,13 @@
       <path
         d="M94.16029,43.19328A179.46662,179.46662,0,0,1,235.79118,75.93139a8.015,8.015,0,0,1,1.201,11.61025c-9.27624,10.93309-29.19069,34.40431-49.49207,58.33153"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="16"
       />
     </g>
-    <g v-else-if="displayWeight === 'fill'">
+    <g v-else-if="weight === 'fill'">
       <g>
         <path
           d="M53.91112,34.61237A8.00024,8.00024,0,1,0,42.07225,45.376l4.63013,5.093A185.37724,185.37724,0,0,0,15.38231,69.546,15.73769,15.73769,0,0,0,9.1704,80.48249a16.27706,16.27706,0,0,0,3.76123,12.27246L115.79149,213.98639a16.02792,16.02792,0,0,0,12.23389,5.6836,15.85367,15.85367,0,0,0,12.10693-5.61328l26.68958-31.45606L202.07225,221.376a8.00024,8.00024,0,1,0,11.83887-10.76367Z"
@@ -106,7 +106,7 @@
         />
       </g>
     </g>
-    <g v-else-if="displayWeight === 'light'">
+    <g v-else-if="weight === 'light'">
       <circle cx="127.98047" cy="200.0029" r="9" />
       <line
         x1="47.98828"
@@ -114,7 +114,7 @@
         x2="207.98828"
         y2="216"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="12"
@@ -122,7 +122,7 @@
       <path
         d="M107.11812,57.47077a148.358,148.358,0,0,1,20.86235-1.46787,145.90176,145.90176,0,0,1,102.9284,42.17662"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="12"
@@ -130,7 +130,7 @@
       <path
         d="M25.05207,98.17952A145.88673,145.88673,0,0,1,72.41365,66.8671"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="12"
@@ -138,7 +138,7 @@
       <path
         d="M152.10795,106.95874a97.88563,97.88563,0,0,1,44.88614,25.1619"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="12"
@@ -146,7 +146,7 @@
       <path
         d="M58.96685,132.12064a97.89874,97.89874,0,0,1,49.03639-26.105"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="12"
@@ -154,13 +154,13 @@
       <path
         d="M92.908,166.06177a50.81565,50.81565,0,0,1,67.576-2.317"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="12"
       />
     </g>
-    <g v-else-if="displayWeight === 'thin'">
+    <g v-else-if="weight === 'thin'">
       <circle cx="127.98633" cy="200.0029" r="6" />
       <line
         x1="47.99414"
@@ -168,7 +168,7 @@
         x2="207.99414"
         y2="216"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="8"
@@ -176,7 +176,7 @@
       <path
         d="M107.124,57.47077a148.358,148.358,0,0,1,20.86235-1.46787,145.90176,145.90176,0,0,1,102.9284,42.17662"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="8"
@@ -184,7 +184,7 @@
       <path
         d="M25.05793,98.17952A145.88673,145.88673,0,0,1,72.41951,66.8671"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="8"
@@ -192,7 +192,7 @@
       <path
         d="M152.11381,106.95874A97.88563,97.88563,0,0,1,197,132.12064"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="8"
@@ -200,7 +200,7 @@
       <path
         d="M58.97271,132.12064a97.89874,97.89874,0,0,1,49.03639-26.105"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="8"
@@ -208,13 +208,13 @@
       <path
         d="M92.91383,166.06177a50.81565,50.81565,0,0,1,67.576-2.317"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="8"
       />
     </g>
-    <g v-else-if="displayWeight === 'regular'">
+    <g v-else-if="weight === 'regular'">
       <circle cx="127.99219" cy="200.0029" r="12" />
       <line
         x1="48"
@@ -222,7 +222,7 @@
         x2="208"
         y2="216"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="16"
@@ -230,7 +230,7 @@
       <path
         d="M107.12984,57.47077a148.358,148.358,0,0,1,20.86235-1.46787,145.90176,145.90176,0,0,1,102.9284,42.17662"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="16"
@@ -238,7 +238,7 @@
       <path
         d="M25.06379,98.17952A145.88673,145.88673,0,0,1,72.42537,66.8671"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="16"
@@ -246,7 +246,7 @@
       <path
         d="M152.11967,106.95874a97.88568,97.88568,0,0,1,44.88614,25.1619"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="16"
@@ -254,7 +254,7 @@
       <path
         d="M58.97857,132.12064a97.89874,97.89874,0,0,1,49.03639-26.105"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="16"
@@ -262,7 +262,7 @@
       <path
         d="M92.91969,166.06177a50.81565,50.81565,0,0,1,67.576-2.317"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="16"
@@ -273,33 +273,13 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import {
-  IconProps,
-  PropValidator,
-  IconContext,
-  ContextGetter
-} from "@/lib/types";
+import { IconProps, PropValidator } from "@/lib/types";
+import useDefaultPropsFromContext from "@/lib/useDefaultPropsFromContext";
+
 export default defineComponent({
-  name: "PhWifiSlash",
   props: PropValidator,
-  inject: ContextGetter,
-  computed: {
-    displayWeight() {
-      const { weight, contextWeight } = this as IconProps & IconContext;
-      return weight ?? contextWeight;
-    },
-    displaySize() {
-      const { size, contextSize } = this as IconProps & IconContext;
-      return size ?? contextSize;
-    },
-    displayColor() {
-      const { color, contextColor } = this as IconProps & IconContext;
-      return color ?? contextColor;
-    },
-    displayMirrored() {
-      const { mirrored, contextMirrored } = this as IconProps & IconContext;
-      return mirrored ?? contextMirrored ? "scale(-1, 1)" : undefined;
-    }
+  setup(props: Readonly<Partial<IconProps>>) {
+    return { ...useDefaultPropsFromContext(props) };
   }
 });
 </script>

@@ -16,7 +16,7 @@ function readFile(folder, pathname, weight) {
     .replace(/<svg.*/g, "")
     .replace(/<\/svg>\n/g, "")
     .replace(/<title.*/g, "")
-    .replace(/stroke="#000"/g, ':stroke="displayColor"')
+    .replace(/stroke="#000"/g, ':stroke="color"')
     .replace(
       /<rect width="25[\d,\.]+" height="25[\d,\.]+" fill="none".*\/>/g,
       ""
@@ -82,10 +82,10 @@ function generateComponents() {
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 256 256"
-    :width="displaySize"
-    :height="displaySize"
-    :fill="displayColor"
-    :transform="displayMirrored"
+    :width="size"
+    :height="size"
+    :fill="color"
+    :transform="mirrored ? 'scale(-1, 1)' : undefined"
     v-bind="$attrs"
   >
 `;
@@ -104,7 +104,7 @@ function generateComponents() {
     Object.keys(icon).forEach((weight, index) => {
       // for (let weight in icon) {
       componentString += `\
-    <g v${index > 0 ? "-else" : ""}-if="displayWeight === '${weight}'">${
+    <g v${index > 0 ? "-else" : ""}-if="weight === '${weight}'">${
         icon[weight]
       }</g>\n`;
     });
@@ -114,33 +114,13 @@ function generateComponents() {
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import {
-  IconProps,
-  PropValidator,
-  IconContext,
-  ContextGetter,
-} from "@/lib/types";
+import { IconProps, PropValidator } from "@/lib/types";
+import useDefaultPropsFromContext from "@/lib/useDefaultPropsFromContext";
+
 export default defineComponent({
-  name: "Ph${name}",
   props: PropValidator,
-  inject: ContextGetter,
-  computed: {
-    displayWeight() {
-      const { weight, contextWeight } = this as IconProps & IconContext;
-      return weight ?? contextWeight;
-    },
-    displaySize() {
-      const { size, contextSize } = this as IconProps & IconContext;
-      return size ?? contextSize;
-    },
-    displayColor() {
-      const { color, contextColor } = this as IconProps & IconContext;
-      return color ?? contextColor;
-    },
-    displayMirrored() {
-      const { mirrored, contextMirrored } = this as IconProps & IconContext;
-      return mirrored ?? contextMirrored ? "scale(-1, 1)" : undefined;
-    },
+  setup(props: Readonly<Partial<IconProps>>) {
+    return { ...useDefaultPropsFromContext(props) };
   },
 });
 </script>

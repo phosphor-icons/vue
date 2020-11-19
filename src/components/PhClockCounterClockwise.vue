@@ -3,20 +3,20 @@
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 256 256"
-    :width="displaySize"
-    :height="displaySize"
-    :fill="displayColor"
-    :transform="displayMirrored"
+    :width="size"
+    :height="size"
+    :fill="color"
+    :transform="mirrored ? 'scale(-1, 1)' : undefined"
     v-bind="$attrs"
   >
-    <g v-if="displayWeight === 'bold'">
+    <g v-if="weight === 'bold'">
       <line
         x1="128"
         y1="80"
         x2="128"
         y2="128"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="24"
@@ -27,7 +27,7 @@
         x2="128"
         y2="128"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="24"
@@ -35,7 +35,7 @@
       <polyline
         points="71.833 99.716 31.833 99.716 31.833 59.716"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="24"
@@ -43,13 +43,13 @@
       <path
         d="M65.7746,190.2254a88,88,0,1,0,0-124.4508L31.83348,99.71573"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="24"
       />
     </g>
-    <g v-else-if="displayWeight === 'duotone'">
+    <g v-else-if="weight === 'duotone'">
       <circle cx="128" cy="128" r="88" opacity="0.2" />
       <line
         x1="128"
@@ -57,7 +57,7 @@
         x2="128"
         y2="128"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="16"
@@ -68,7 +68,7 @@
         x2="128"
         y2="128"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="16"
@@ -76,7 +76,7 @@
       <polyline
         points="71.833 99.716 31.833 99.716 31.833 59.716"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="16"
@@ -84,13 +84,13 @@
       <path
         d="M65.7746,190.2254a88,88,0,1,0,0-124.4508L31.83348,99.71573"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="16"
       />
     </g>
-    <g v-else-if="displayWeight === 'fill'">
+    <g v-else-if="weight === 'fill'">
       <g>
         <path
           d="M128,72a8.00008,8.00008,0,0,0-8,8v48c0,.07269.00879.14313.01074.21533.00489.16107.01026.32172.02442.48187.01074.124.02734.24573.04394.368.01758.12957.03516.25872.05908.38714.02588.142.05811.28156.09131.42084.02637.108.05274.2157.083.32257.0415.14606.08838.28943.13818.432.03516.10131.07129.20208.11036.30194.05419.13665.1123.27063.17334.4035.04833.1062.09863.21143.15185.31561.06055.11792.12451.2334.19043.34778.06641.11511.13477.22864.207.34058.063.09771.12891.19317.19629.2879.085.12.17236.23792.26416.35352.06641.08294.13477.16351.2041.24377.09961.11548.20117.22882.30811.339.07617.07849.15478.15381.23388.22913.105.09991.21094.19854.32276.29333.09765.0835.19922.16235.30127.24115.09912.07642.19775.153.30127.22534.12988.09131.26513.17548.40088.2591.0625.03839.11963.082.18359.11889l41.56934,24a8,8,0,0,0,8-13.85644L136,123.38116V80A8.00008,8.00008,0,0,0,128,72Z"
@@ -100,14 +100,14 @@
         />
       </g>
     </g>
-    <g v-else-if="displayWeight === 'light'">
+    <g v-else-if="weight === 'light'">
       <line
         x1="128"
         y1="80"
         x2="128"
         y2="128"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="12"
@@ -118,7 +118,7 @@
         x2="128"
         y2="128"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="12"
@@ -126,7 +126,7 @@
       <polyline
         points="71.833 99.716 31.833 99.716 31.833 59.716"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="12"
@@ -134,20 +134,20 @@
       <path
         d="M65.7746,190.2254a88,88,0,1,0,0-124.4508L31.83348,99.71573"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="12"
       />
     </g>
-    <g v-else-if="displayWeight === 'thin'">
+    <g v-else-if="weight === 'thin'">
       <line
         x1="128"
         y1="80"
         x2="128"
         y2="128"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="8"
@@ -158,7 +158,7 @@
         x2="128"
         y2="128"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="8"
@@ -166,7 +166,7 @@
       <polyline
         points="71.833 99.716 31.833 99.716 31.833 59.716"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="8"
@@ -174,20 +174,20 @@
       <path
         d="M65.7746,190.2254a88,88,0,1,0,0-124.4508L31.83348,99.71573"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="8"
       />
     </g>
-    <g v-else-if="displayWeight === 'regular'">
+    <g v-else-if="weight === 'regular'">
       <line
         x1="128"
         y1="80"
         x2="128"
         y2="128"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="16"
@@ -198,7 +198,7 @@
         x2="128"
         y2="128"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="16"
@@ -206,7 +206,7 @@
       <polyline
         points="71.833 99.716 31.833 99.716 31.833 59.716"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="16"
@@ -214,7 +214,7 @@
       <path
         d="M65.7746,190.2254a88,88,0,1,0,0-124.4508L31.83348,99.71573"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="16"
@@ -225,33 +225,13 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import {
-  IconProps,
-  PropValidator,
-  IconContext,
-  ContextGetter
-} from "@/lib/types";
+import { IconProps, PropValidator } from "@/lib/types";
+import useDefaultPropsFromContext from "@/lib/useDefaultPropsFromContext";
+
 export default defineComponent({
-  name: "PhClockCounterClockwise",
   props: PropValidator,
-  inject: ContextGetter,
-  computed: {
-    displayWeight() {
-      const { weight, contextWeight } = this as IconProps & IconContext;
-      return weight ?? contextWeight;
-    },
-    displaySize() {
-      const { size, contextSize } = this as IconProps & IconContext;
-      return size ?? contextSize;
-    },
-    displayColor() {
-      const { color, contextColor } = this as IconProps & IconContext;
-      return color ?? contextColor;
-    },
-    displayMirrored() {
-      const { mirrored, contextMirrored } = this as IconProps & IconContext;
-      return mirrored ?? contextMirrored ? "scale(-1, 1)" : undefined;
-    }
+  setup(props: Readonly<Partial<IconProps>>) {
+    return { ...useDefaultPropsFromContext(props) };
   }
 });
 </script>
