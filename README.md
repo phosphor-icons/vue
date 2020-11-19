@@ -100,11 +100,11 @@ You may create multiple providers for styling icons differently in separate regi
 
 Components have a `<slot>` for arbitrary SVG elements, so long as they are valid children of the `<svg>` element. This can be used to modify an icon with background layers or shapes, filters, animations and more. The slotted children will be placed *below* the normal icon contents.
 
-The following will cause the Star icon to rotate and pulse:
+The following will cause the Cube icon to rotate and pulse:
 
 ```html
 <template>
-  <PhStar>
+  <PhCube>
     <animate
       attributeName="opacity"
       values="0;1;0"
@@ -120,7 +120,7 @@ The following will cause the Star icon to rotate and pulse:
       to="360 0 0"
       repeatCount="indefinite"
     />
-  </PhStar>
+  </PhCube>
 </template>
 ```
 
