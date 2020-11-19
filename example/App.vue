@@ -350,9 +350,15 @@
           repeatCount="indefinite"
         />
       </PhCube>
-      <PhCheckSquareOffset>
+      <PhLightning>
         <title>HI MOM</title>
-      </PhCheckSquareOffset>
+      </PhLightning>
+      <span style="display: inline-flex; align-items: center;">
+        <PhSquare>
+          <PhSmiley :size="128" :x="64" :y="64" />
+        </PhSquare>
+        &lt;-- FOR DEMONSTRATION PURPOSES ONLY
+      </span>
     </section>
     <input
       id="show"
