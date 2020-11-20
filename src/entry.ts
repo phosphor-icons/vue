@@ -4,9 +4,9 @@ import { App, Plugin } from "vue";
 import * as components from "@/lib/index";
 
 // Define typescript interfaces for autoinstaller
-type PhPlugin = Plugin & { installed?: boolean };
+type PhosphorVuePlugin = Plugin & { installed?: boolean };
 
-const plugin: PhPlugin = {
+const PhosphorVue: PhosphorVuePlugin = {
   install(app: App) {
     if (this.installed) return;
     this.installed = true;
@@ -17,7 +17,7 @@ const plugin: PhPlugin = {
 };
 
 // Default export is library as a whole, registered via app.use()
-export default plugin;
+export default PhosphorVue;
 
 // To allow individual component use, export components
 // each can be registered via app.component()
