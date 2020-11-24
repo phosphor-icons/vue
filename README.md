@@ -28,9 +28,9 @@ npm install --save phosphor-vue
 ```html
 <template>
   <div>
-    <PhHorse />
-    <PhHeart :size="32" color="hotpink" weight="fill" />
-    <PhCube />
+    <ph-horse />
+    <ph-heart :size="32" color="hotpink" weight="fill" />
+    <ph-cube />
   </div>
 </template>
 
@@ -63,9 +63,9 @@ Phosphor takes advantage of Vue's `provide`/`inject` options to make applying a 
 ```html
 <template>
   <div>
-    <PhHorse /> {/* I'm lime-green, 32px, and bold! */} 
-    <PhHeart /> {/* Me too! */} 
-    <PhCube />  {/* Me three :) */}
+    <ph-horse /> {/* I'm lime-green, 32px, and bold! */} 
+    <ph-heart /> {/* Me too! */} 
+    <ph-cube />  {/* Me three :) */}
   </div>
 </template>
 
@@ -104,7 +104,7 @@ The following will cause the Cube icon to rotate and pulse:
 
 ```html
 <template>
-  <PhCube color="darkorchid" weight="duotone">
+  <ph-cube color="darkorchid" weight="duotone">
     <animate
       attributeName="opacity"
       values="0;1;0"
@@ -120,7 +120,7 @@ The following will cause the Cube icon to rotate and pulse:
       to="360 0 0"
       repeatCount="indefinite"
     />
-  </PhCube>
+  </ph-cube>
 </template>
 ```
 
