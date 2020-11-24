@@ -14,9 +14,9 @@
     <g v-if="displayWeight === 'bold'">
       <line
         x1="144"
-        y1="224"
+        y1="228"
         x2="112"
-        y2="224"
+        y2="228"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -31,7 +31,6 @@
         stroke-linejoin="round"
         stroke-width="24"
       />
-      <circle cx="128" cy="96" r="16" />
       <path
         d="M73.86661,111.36007,42.51644,148.98028a8,8,0,0,0-1.66373,6.85692l12.36292,55.63314a8,8,0,0,0,12.80706,4.51151L96,192"
         fill="none"
@@ -42,6 +41,16 @@
       />
       <path
         d="M181.53142,110.63771l31.95214,38.34257a8,8,0,0,1,1.66373,6.85692l-12.36292,55.63314a8,8,0,0,1-12.80706,4.51151L160,192"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="24"
+      />
+      <circle
+        cx="128"
+        cy="96"
+        r="4"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -77,7 +86,6 @@
         stroke-linejoin="round"
         stroke-width="16"
       />
-      <circle cx="128" cy="96" r="12" />
       <path
         d="M73.86661,111.36007,42.51644,148.98028a8,8,0,0,0-1.66373,6.85692l12.36292,55.63314a8,8,0,0,0,12.80706,4.51151L96,192"
         fill="none"
@@ -88,6 +96,16 @@
       />
       <path
         d="M181.53142,110.63771l31.95214,38.34257a8,8,0,0,1,1.66373,6.85692l-12.36292,55.63314a8,8,0,0,1-12.80706,4.51151L160,192"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <circle
+        cx="128"
+        cy="96"
+        r="4"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -123,7 +141,6 @@
         stroke-linejoin="round"
         stroke-width="12"
       />
-      <circle cx="128" cy="96" r="9" />
       <path
         d="M73.86661,111.36007,42.51644,148.98028a8,8,0,0,0-1.66373,6.85692l12.36292,55.63314a8,8,0,0,0,12.80706,4.51151L96,192"
         fill="none"
@@ -134,6 +151,16 @@
       />
       <path
         d="M181.53142,110.63771l31.95214,38.34257a8,8,0,0,1,1.66373,6.85692l-12.36292,55.63314a8,8,0,0,1-12.80706,4.51151L160,192"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="12"
+      />
+      <circle
+        cx="128"
+        cy="96"
+        r="4"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -161,7 +188,6 @@
         stroke-linejoin="round"
         stroke-width="8"
       />
-      <circle cx="128" cy="96" r="6" />
       <path
         d="M73.86661,111.36007,42.51644,148.98028a8,8,0,0,0-1.66373,6.85692l12.36292,55.63314a8,8,0,0,0,12.80706,4.51151L96,192"
         fill="none"
@@ -172,6 +198,16 @@
       />
       <path
         d="M181.53142,110.63771l31.95214,38.34257a8,8,0,0,1,1.66373,6.85692l-12.36292,55.63314a8,8,0,0,1-12.80706,4.51151L160,192"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="8"
+      />
+      <circle
+        cx="128"
+        cy="96"
+        r="4"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -199,7 +235,6 @@
         stroke-linejoin="round"
         stroke-width="16"
       />
-      <circle cx="128" cy="96" r="12" />
       <path
         d="M73.86661,111.36007,42.51644,148.98028a8,8,0,0,0-1.66373,6.85692l12.36292,55.63314a8,8,0,0,0,12.80706,4.51151L96,192"
         fill="none"
@@ -210,6 +245,16 @@
       />
       <path
         d="M181.53142,110.63771l31.95214,38.34257a8,8,0,0,1,1.66373,6.85692l-12.36292,55.63314a8,8,0,0,1-12.80706,4.51151L160,192"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <circle
+        cx="128"
+        cy="96"
+        r="4"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"

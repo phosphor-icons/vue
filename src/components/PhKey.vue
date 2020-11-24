@@ -12,9 +12,18 @@
   >
     <slot />
     <g v-if="displayWeight === 'bold'">
-      <circle cx="180" cy="76" r="16" />
       <path
         d="M93.16866,122.8328a71.93648,71.93648,0,1,1,40.0009,40.001l.00062-.00149L120.00244,176h-24v24h-24v24h-40V184l61.168-61.168Z"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="24"
+      />
+      <circle
+        cx="180"
+        cy="76"
+        r="4"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -28,9 +37,18 @@
           d="M93.16866,122.8328a71.93648,71.93648,0,1,1,40.0009,40.001l.00062-.00149L120.00244,176h-24v24h-24v24h-40V184l61.168-61.168Z"
         />
       </g>
-      <circle cx="180" cy="76" r="12" />
       <path
         d="M93.16866,122.8328a71.93648,71.93648,0,1,1,40.0009,40.001l.00062-.00149L120.00244,176h-24v24h-24v24h-40V184l61.168-61.168Z"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <circle
+        cx="180"
+        cy="76"
+        r="4"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -44,7 +62,6 @@
       />
     </g>
     <g v-else-if="displayWeight === 'light'">
-      <circle cx="180" cy="76" r="9" />
       <path
         d="M93.16866,122.8328a71.93648,71.93648,0,1,1,40.0009,40.001l.00062-.00149L120.00244,176h-24v24h-24v24h-40V184l61.168-61.168Z"
         fill="none"
@@ -53,9 +70,18 @@
         stroke-linejoin="round"
         stroke-width="12"
       />
+      <circle
+        cx="180"
+        cy="76"
+        r="4"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="12"
+      />
     </g>
     <g v-else-if="displayWeight === 'thin'">
-      <circle cx="180" cy="76" r="6" />
       <path
         d="M93.16866,122.8328a71.93648,71.93648,0,1,1,40.0009,40.001l.00062-.00149L120.00244,176h-24v24h-24v24h-40V184l61.168-61.168Z"
         fill="none"
@@ -64,11 +90,30 @@
         stroke-linejoin="round"
         stroke-width="8"
       />
+      <circle
+        cx="180"
+        cy="76"
+        r="4"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="8"
+      />
     </g>
     <g v-else-if="displayWeight === 'regular'">
-      <circle cx="180" cy="76" r="12" />
       <path
         d="M93.16866,122.8328a71.93648,71.93648,0,1,1,40.0009,40.001l.00062-.00149L120.00244,176h-24v24h-24v24h-40V184l61.168-61.168Z"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <circle
+        cx="180"
+        cy="76"
+        r="4"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"

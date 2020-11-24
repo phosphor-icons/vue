@@ -27,9 +27,9 @@
       />
       <line
         x1="160"
-        y1="224"
+        y1="228"
         x2="96"
-        y2="224"
+        y2="228"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"

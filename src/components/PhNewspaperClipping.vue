@@ -21,10 +21,10 @@
         stroke-width="24"
       />
       <line
-        x1="144"
-        y1="112"
-        x2="192"
-        y2="112"
+        x1="148"
+        y1="108"
+        x2="184"
+        y2="108"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -32,10 +32,10 @@
         stroke-width="24"
       />
       <line
-        x1="144"
-        y1="144"
-        x2="192"
-        y2="144"
+        x1="148"
+        y1="148"
+        x2="184"
+        y2="148"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -43,9 +43,9 @@
         stroke-width="24"
       />
       <rect
-        x="64"
+        x="72"
         y="96"
-        width="48"
+        width="40"
         height="64"
         stroke-width="24"
         :stroke="displayColor"

@@ -32,9 +32,9 @@
         stroke-width="24"
       />
       <line
-        x1="223.98828"
+        x1="227.98828"
         y1="88"
-        x2="223.98828"
+        x2="227.98828"
         y2="168"
         fill="none"
         :stroke="displayColor"

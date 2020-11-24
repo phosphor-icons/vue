@@ -13,10 +13,10 @@
     <slot />
     <g v-if="displayWeight === 'bold'">
       <line
-        x1="112"
-        y1="112"
+        x1="120"
+        y1="108"
         x2="176"
-        y2="112"
+        y2="108"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -24,10 +24,10 @@
         stroke-width="24"
       />
       <line
-        x1="112"
-        y1="144"
+        x1="120"
+        y1="148"
         x2="176"
-        y2="144"
+        y2="148"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"

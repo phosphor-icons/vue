@@ -13,9 +13,9 @@
     <slot />
     <g v-if="displayWeight === 'bold'">
       <circle
-        cx="76"
-        cy="76"
-        r="36"
+        cx="74"
+        cy="74"
+        r="34"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -23,9 +23,9 @@
         stroke-width="24"
       />
       <circle
-        cx="180"
-        cy="76"
-        r="36"
+        cx="182"
+        cy="74"
+        r="34"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -33,9 +33,9 @@
         stroke-width="24"
       />
       <circle
-        cx="76"
-        cy="180"
-        r="36"
+        cx="74"
+        cy="182"
+        r="34"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -43,9 +43,9 @@
         stroke-width="24"
       />
       <circle
-        cx="180"
-        cy="180"
-        r="36"
+        cx="182"
+        cy="182"
+        r="34"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"

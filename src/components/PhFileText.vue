@@ -21,7 +21,7 @@
         stroke-width="24"
       />
       <polyline
-        points="152 32 152 88 208.008 88"
+        points="148 32 148 92 208.008 92"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -30,9 +30,9 @@
       />
       <line
         x1="96"
-        y1="136"
+        y1="132"
         x2="160"
-        y2="136"
+        y2="132"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -41,9 +41,9 @@
       />
       <line
         x1="96"
-        y1="168"
+        y1="172"
         x2="160"
-        y2="168"
+        y2="172"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"

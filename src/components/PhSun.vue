@@ -24,9 +24,9 @@
       />
       <line
         x1="128"
-        y1="36"
+        y1="28"
         x2="128"
-        y2="16"
+        y2="12"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -34,10 +34,10 @@
         stroke-width="24"
       />
       <line
-        x1="62.94618"
-        y1="62.94618"
-        x2="48.80404"
-        y2="48.80404"
+        x1="198.71068"
+        y1="57.28932"
+        x2="210.02439"
+        y2="45.97561"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -45,9 +45,9 @@
         stroke-width="24"
       />
       <line
-        x1="36"
+        x1="228"
         y1="128"
-        x2="16"
+        x2="244"
         y2="128"
         fill="none"
         :stroke="displayColor"
@@ -56,10 +56,10 @@
         stroke-width="24"
       />
       <line
-        x1="62.94618"
-        y1="193.05382"
-        x2="48.80404"
-        y2="207.19596"
+        x1="198.71068"
+        y1="198.71068"
+        x2="210.02439"
+        y2="210.02439"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -68,9 +68,9 @@
       />
       <line
         x1="128"
-        y1="220"
+        y1="228"
         x2="128"
-        y2="240"
+        y2="244"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -78,10 +78,10 @@
         stroke-width="24"
       />
       <line
-        x1="193.05382"
-        y1="193.05382"
-        x2="207.19596"
-        y2="207.19596"
+        x1="57.28932"
+        y1="198.71068"
+        x2="45.97561"
+        y2="210.02439"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -89,9 +89,9 @@
         stroke-width="24"
       />
       <line
-        x1="220"
+        x1="28"
         y1="128"
-        x2="240"
+        x2="12"
         y2="128"
         fill="none"
         :stroke="displayColor"
@@ -100,10 +100,10 @@
         stroke-width="24"
       />
       <line
-        x1="193.05382"
-        y1="62.94618"
-        x2="207.19596"
-        y2="48.80404"
+        x1="57.28932"
+        y1="57.28932"
+        x2="45.97561"
+        y2="45.97561"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"

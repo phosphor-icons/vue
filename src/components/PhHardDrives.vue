@@ -12,23 +12,31 @@
   >
     <slot />
     <g v-if="displayWeight === 'bold'">
-      <rect
-        x="40"
-        y="144"
-        width="176"
-        height="64"
-        rx="8"
-        stroke-width="24"
+      <circle
+        cx="176"
+        cy="88"
+        r="4"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
+        stroke-width="24"
+      />
+      <circle
+        cx="176"
+        cy="168"
+        r="4"
         fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="24"
       />
       <rect
         x="40"
         y="48"
         width="176"
-        height="64"
+        height="160"
         rx="8"
         stroke-width="24"
         :stroke="displayColor"
@@ -36,8 +44,17 @@
         stroke-linejoin="round"
         fill="none"
       />
-      <circle cx="180.00054" cy="80" r="16" />
-      <circle cx="180.00054" cy="176" r="16" />
+      <line
+        x1="216"
+        y1="128"
+        x2="40"
+        y2="128"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="24"
+      />
     </g>
     <g v-else-if="displayWeight === 'duotone'">
       <rect x="40" y="144" width="176" height="64" rx="8" opacity="0.2" />
@@ -66,8 +83,26 @@
         stroke-linejoin="round"
         fill="none"
       />
-      <circle cx="180.00054" cy="80" r="12" />
-      <circle cx="180.00054" cy="176" r="12" />
+      <circle
+        cx="180"
+        cy="80"
+        r="4"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <circle
+        cx="180"
+        cy="176"
+        r="4"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
     </g>
     <g v-else-if="displayWeight === 'fill'">
       <g>
@@ -104,8 +139,26 @@
         stroke-linejoin="round"
         fill="none"
       />
-      <circle cx="180.00054" cy="80" r="9" />
-      <circle cx="180.00054" cy="176" r="9" />
+      <circle
+        cx="180"
+        cy="80"
+        r="4"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="12"
+      />
+      <circle
+        cx="180"
+        cy="176"
+        r="4"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="12"
+      />
     </g>
     <g v-else-if="displayWeight === 'thin'">
       <rect
@@ -132,8 +185,26 @@
         stroke-linejoin="round"
         fill="none"
       />
-      <circle cx="180.00054" cy="80" r="6" />
-      <circle cx="180.00054" cy="176" r="6" />
+      <circle
+        cx="180"
+        cy="80"
+        r="4"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="8"
+      />
+      <circle
+        cx="180"
+        cy="176"
+        r="4"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="8"
+      />
     </g>
     <g v-else-if="displayWeight === 'regular'">
       <rect
@@ -160,8 +231,26 @@
         stroke-linejoin="round"
         fill="none"
       />
-      <circle cx="180.00054" cy="80" r="12" />
-      <circle cx="180.00054" cy="176" r="12" />
+      <circle
+        cx="180"
+        cy="80"
+        r="4"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <circle
+        cx="180"
+        cy="176"
+        r="4"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
     </g>
   </svg>
 </template>

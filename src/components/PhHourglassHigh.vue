@@ -30,9 +30,9 @@
       />
       <line
         x1="64"
-        y1="63.99548"
+        y1="71.99548"
         x2="192"
-        y2="63.99548"
+        y2="71.99548"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"

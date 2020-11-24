@@ -13,7 +13,7 @@
     <slot />
     <g v-if="displayWeight === 'bold'">
       <rect
-        x="48"
+        x="52"
         y="56"
         width="40"
         height="144"
@@ -25,7 +25,7 @@
         fill="none"
       />
       <rect
-        x="168"
+        x="164"
         y="56"
         width="40"
         height="144"
@@ -53,9 +53,9 @@
         stroke-width="24"
       />
       <line
-        x1="88"
+        x1="92"
         y1="128"
-        x2="168"
+        x2="164"
         y2="128"
         fill="none"
         :stroke="displayColor"

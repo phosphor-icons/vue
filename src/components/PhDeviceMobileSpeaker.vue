@@ -26,10 +26,10 @@
         fill="none"
       />
       <line
-        x1="96"
-        y1="56"
-        x2="160"
-        y2="56"
+        x1="104"
+        y1="64"
+        x2="152"
+        y2="64"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"

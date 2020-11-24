@@ -15,8 +15,8 @@
       <rect
         x="48.00244"
         y="48"
-        width="64"
-        height="64"
+        width="60"
+        height="60"
         rx="8"
         stroke-width="24"
         :stroke="displayColor"
@@ -26,9 +26,9 @@
       />
       <rect
         x="48.00244"
-        y="144"
-        width="64"
-        height="64"
+        y="148"
+        width="60"
+        height="60"
         rx="8"
         stroke-width="24"
         :stroke="displayColor"
@@ -37,10 +37,10 @@
         fill="none"
       />
       <rect
-        x="144.00244"
+        x="148.00244"
         y="48"
-        width="64"
-        height="64"
+        width="60"
+        height="60"
         rx="8"
         stroke-width="24"
         :stroke="displayColor"
@@ -49,10 +49,10 @@
         fill="none"
       />
       <line
-        x1="144.00244"
-        y1="144"
-        x2="144.00244"
-        y2="176"
+        x1="148.00244"
+        y1="148"
+        x2="148.00244"
+        y2="172"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -60,7 +60,7 @@
         stroke-width="24"
       />
       <polyline
-        points="144.002 208 176.002 208 176.002 144"
+        points="148.002 208 184.002 208 184.002 148"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -68,21 +68,10 @@
         stroke-width="24"
       />
       <line
-        x1="176.00244"
-        y1="160"
+        x1="184.00244"
+        y1="164"
         x2="208.00244"
-        y2="160"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="24"
-      />
-      <line
-        x1="208.00244"
-        y1="192"
-        x2="208.00244"
-        y2="208"
+        y2="164"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"

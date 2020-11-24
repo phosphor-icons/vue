@@ -12,7 +12,6 @@
   >
     <slot />
     <g v-if="displayWeight === 'bold'">
-      <circle cx="99.99951" cy="92" r="16" />
       <rect
         x="40"
         y="40"
@@ -27,6 +26,16 @@
       />
       <path
         d="M215.99982,159.99982l-42.343-42.343a8,8,0,0,0-11.3137,0l-44.6863,44.6863a8,8,0,0,1-11.3137,0l-20.6863-20.6863a8,8,0,0,0-11.3137,0L40,176"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="24"
+      />
+      <circle
+        cx="100"
+        cy="92"
+        r="4"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -70,7 +79,6 @@
       </g>
     </g>
     <g v-else-if="displayWeight === 'light'">
-      <circle cx="99.99951" cy="92" r="9" />
       <rect
         x="40"
         y="40"
@@ -85,6 +93,16 @@
       />
       <path
         d="M215.99982,159.99982l-42.343-42.343a8,8,0,0,0-11.3137,0l-44.6863,44.6863a8,8,0,0,1-11.3137,0l-20.6863-20.6863a8,8,0,0,0-11.3137,0L40,176"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="12"
+      />
+      <circle
+        cx="100"
+        cy="92"
+        r="4"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -93,7 +111,6 @@
       />
     </g>
     <g v-else-if="displayWeight === 'thin'">
-      <circle cx="99.99951" cy="92" r="6" />
       <rect
         x="40"
         y="40"
@@ -114,9 +131,18 @@
         stroke-linejoin="round"
         stroke-width="8"
       />
+      <circle
+        cx="100"
+        cy="92"
+        r="4"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="8"
+      />
     </g>
     <g v-else-if="displayWeight === 'regular'">
-      <circle cx="99.99951" cy="92" r="12" />
       <rect
         x="40"
         y="40"
@@ -131,6 +157,16 @@
       />
       <path
         d="M215.99982,159.99982l-42.343-42.343a8,8,0,0,0-11.3137,0l-44.6863,44.6863a8,8,0,0,1-11.3137,0l-20.6863-20.6863a8,8,0,0,0-11.3137,0L40,176"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <circle
+        cx="100"
+        cy="92"
+        r="4"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"

@@ -23,9 +23,9 @@
         stroke-width="24"
       />
       <circle
-        cx="127.99414"
+        cx="128"
         cy="96"
-        r="48"
+        r="40"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"

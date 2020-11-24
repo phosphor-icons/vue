@@ -12,22 +12,11 @@
   >
     <slot />
     <g v-if="displayWeight === 'bold'">
-      <line
-        x1="96"
-        y1="16"
-        x2="160"
-        y2="16"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="24"
-      />
       <rect
         x="56"
         y="48"
         width="144"
-        height="184"
+        height="180"
         rx="16"
         stroke-width="24"
         :stroke="displayColor"
@@ -35,8 +24,19 @@
         stroke-linejoin="round"
         fill="none"
       />
+      <line
+        x1="96"
+        y1="12"
+        x2="160"
+        y2="12"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="24"
+      />
       <polyline
-        points="128 180 144 140 112 140 128 100"
+        points="128 178 144 138 112 138 128 98"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"

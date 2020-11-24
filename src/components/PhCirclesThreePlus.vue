@@ -13,9 +13,9 @@
     <slot />
     <g v-if="displayWeight === 'bold'">
       <circle
-        cx="76"
-        cy="76"
-        r="36"
+        cx="74"
+        cy="74"
+        r="34"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -23,9 +23,9 @@
         stroke-width="24"
       />
       <circle
-        cx="180"
-        cy="76"
-        r="36"
+        cx="182"
+        cy="74"
+        r="34"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -33,37 +33,39 @@
         stroke-width="24"
       />
       <circle
-        cx="76"
-        cy="180"
-        r="36"
+        cx="74"
+        cy="182"
+        r="34"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="24"
       />
-      <line
-        x1="180"
-        y1="152"
-        x2="180"
-        y2="208"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="24"
-      />
-      <line
-        x1="208"
-        y1="180"
-        x2="152"
-        y2="180"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="24"
-      />
+      <g>
+        <line
+          x1="182"
+          y1="156"
+          x2="182"
+          y2="208"
+          fill="none"
+          :stroke="displayColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="24"
+        />
+        <line
+          x1="208"
+          y1="182"
+          x2="156"
+          y2="182"
+          fill="none"
+          :stroke="displayColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="24"
+        />
+      </g>
     </g>
     <g v-else-if="displayWeight === 'duotone'">
       <circle cx="76" cy="76" r="36" opacity="0.2" />

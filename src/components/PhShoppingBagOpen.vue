@@ -26,9 +26,9 @@
       />
       <line
         x1="32"
-        y1="80"
+        y1="88"
         x2="224"
-        y2="80"
+        y2="88"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -36,7 +36,7 @@
         stroke-width="24"
       />
       <path
-        d="M168,112a40,40,0,0,1-80,0"
+        d="M168,124a40,40,0,0,1-80,0"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"

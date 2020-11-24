@@ -13,7 +13,7 @@
     <slot />
     <g v-if="displayWeight === 'bold'">
       <polyline
-        points="104 79.997 152 79.997 120 175.997"
+        points="104 84 152 84 120 180"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -36,7 +36,7 @@
     <g v-else-if="displayWeight === 'duotone'">
       <rect x="40" y="40" width="176" height="176" rx="8" opacity="0.2" />
       <polyline
-        points="104 79.997 152 79.997 120 175.997"
+        points="104 84 152 84 120 180"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -58,12 +58,12 @@
     </g>
     <g v-else-if="displayWeight === 'fill'">
       <path
-        d="M208,32H48A16.02085,16.02085,0,0,0,32,48V208a16.02085,16.02085,0,0,0,16,16H208a16.02085,16.02085,0,0,0,16-16V48A16.02085,16.02085,0,0,0,208,32ZM159.58594,82.53125l-32,96a7.99711,7.99711,0,1,1-15.17188-5.0625L140.89844,88H104a8,8,0,0,1,0-16h48a7.99231,7.99231,0,0,1,7.58594,10.53125Z"
+        d="M208,32H48A16.01833,16.01833,0,0,0,32,48V208a16.01833,16.01833,0,0,0,16,16H208a16.01833,16.01833,0,0,0,16-16V48A16.01833,16.01833,0,0,0,208,32ZM159.58984,86.53027l-32,96a8.0005,8.0005,0,1,1-15.17968-5.06054L140.90039,92H104a8,8,0,0,1,0-16h48a8.00022,8.00022,0,0,1,7.58984,10.53027Z"
       />
     </g>
     <g v-else-if="displayWeight === 'light'">
       <polyline
-        points="104 79.997 152 79.997 120 175.997"
+        points="104 84 152 84 120 180"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -85,7 +85,7 @@
     </g>
     <g v-else-if="displayWeight === 'thin'">
       <polyline
-        points="104 79.997 152 79.997 120 175.997"
+        points="104 84 152 84 120 180"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -107,7 +107,7 @@
     </g>
     <g v-else-if="displayWeight === 'regular'">
       <polyline
-        points="104 79.997 152 79.997 120 175.997"
+        points="104 84 152 84 120 180"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"

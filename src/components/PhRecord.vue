@@ -25,7 +25,7 @@
       <circle
         cx="128"
         cy="128"
-        r="64"
+        r="56"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"

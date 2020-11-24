@@ -12,9 +12,8 @@
   >
     <slot />
     <g v-if="displayWeight === 'bold'">
-      <circle cx="188.00054" cy="168" r="16" />
       <path
-        d="M176,128h48a8,8,0,0,1,8,8v64a8,8,0,0,1-8,8H32a8,8,0,0,1-8-8V136a8,8,0,0,1,8-8H80"
+        d="M172,128h52a8,8,0,0,1,8,8v64a8,8,0,0,1-8,8H32a8,8,0,0,1-8-8V136a8,8,0,0,1,8-8H84"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -40,9 +39,18 @@
         stroke-linejoin="round"
         stroke-width="24"
       />
+      <circle
+        cx="188"
+        cy="168"
+        r="4"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="24"
+      />
     </g>
     <g v-else-if="displayWeight === 'duotone'">
-      <circle cx="188.00054" cy="168" r="12" />
       <rect x="24" y="128" width="208" height="80" rx="8" opacity="0.2" />
       <path
         d="M176,128h48a8,8,0,0,1,8,8v64a8,8,0,0,1-8,8H32a8,8,0,0,1-8-8V136a8,8,0,0,1,8-8H80"
@@ -71,6 +79,16 @@
         stroke-linejoin="round"
         stroke-width="16"
       />
+      <circle
+        cx="188"
+        cy="168"
+        r="4"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
     </g>
     <g v-else-if="displayWeight === 'fill'">
       <g>
@@ -83,7 +101,6 @@
       </g>
     </g>
     <g v-else-if="displayWeight === 'light'">
-      <circle cx="188.00054" cy="168" r="9" />
       <path
         d="M176,128h48a8,8,0,0,1,8,8v64a8,8,0,0,1-8,8H32a8,8,0,0,1-8-8V136a8,8,0,0,1,8-8H80"
         fill="none"
@@ -105,6 +122,16 @@
       />
       <polyline
         points="80 72 128 24 176 72"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="12"
+      />
+      <circle
+        cx="188"
+        cy="168"
+        r="4"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -113,7 +140,6 @@
       />
     </g>
     <g v-else-if="displayWeight === 'thin'">
-      <circle cx="188.00054" cy="168" r="6" />
       <path
         d="M176,128h48a8,8,0,0,1,8,8v64a8,8,0,0,1-8,8H32a8,8,0,0,1-8-8V136a8,8,0,0,1,8-8H80"
         fill="none"
@@ -135,6 +161,16 @@
       />
       <polyline
         points="80 72 128 24 176 72"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="8"
+      />
+      <circle
+        cx="188"
+        cy="168"
+        r="4"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -143,7 +179,6 @@
       />
     </g>
     <g v-else-if="displayWeight === 'regular'">
-      <circle cx="188.00054" cy="168" r="12" />
       <path
         d="M176,128h48a8,8,0,0,1,8,8v64a8,8,0,0,1-8,8H32a8,8,0,0,1-8-8V136a8,8,0,0,1,8-8H80"
         fill="none"
@@ -165,6 +200,16 @@
       />
       <polyline
         points="80 72 128 24 176 72"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <circle
+        cx="188"
+        cy="168"
+        r="4"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"

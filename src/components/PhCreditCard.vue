@@ -25,10 +25,10 @@
         fill="none"
       />
       <line
-        x1="167.99414"
-        y1="168"
-        x2="199.99414"
-        y2="168"
+        x1="163.99414"
+        y1="164"
+        x2="195.99414"
+        y2="164"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -36,10 +36,10 @@
         stroke-width="24"
       />
       <line
-        x1="119.99414"
-        y1="168"
-        x2="135.99414"
-        y2="168"
+        x1="107.99414"
+        y1="164"
+        x2="123.99414"
+        y2="164"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"

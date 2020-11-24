@@ -12,19 +12,11 @@
   >
     <slot />
     <g v-if="displayWeight === 'bold'">
-      <path
-        d="M152.24871,122.00466a28,28,0,1,1,2.79721-21.24693A27.91233,27.91233,0,0,1,152.24871,122.00466Z"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="24"
-      />
       <line
         x1="152.24871"
-        y1="122.00466"
-        x2="121.07448"
-        y2="176.00001"
+        y1="126.00466"
+        x2="120"
+        y2="180.00001"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -42,23 +34,25 @@
         stroke-linecap="round"
         stroke-linejoin="round"
         fill="none"
+      />
+      <circle
+        cx="128"
+        cy="112"
+        r="28"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="24"
       />
     </g>
     <g v-else-if="displayWeight === 'duotone'">
       <rect x="40" y="40" width="176" height="176" rx="8" opacity="0.2" />
-      <path
-        d="M152.24871,122.00466a28,28,0,1,1,2.79721-21.24693A27.91233,27.91233,0,0,1,152.24871,122.00466Z"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="16"
-      />
       <line
         x1="152.24871"
-        y1="122.00466"
-        x2="121.07448"
-        y2="176.00001"
+        y1="126.00466"
+        x2="120"
+        y2="180.00001"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -76,32 +70,29 @@
         stroke-linecap="round"
         stroke-linejoin="round"
         fill="none"
+      />
+      <circle
+        cx="128"
+        cy="112"
+        r="28"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
       />
     </g>
     <g v-else-if="displayWeight === 'fill'">
-      <g>
-        <path
-          d="M138,90.6875a19.87769,19.87769,0,0,0-9.96875-2.69531,20.09907,20.09907,0,0,0-5.20313.69531,20.0058,20.0058,0,1,0,15.17188,2Z"
-        />
-        <path
-          d="M208,32H48A16.02085,16.02085,0,0,0,32,48V208a16.02085,16.02085,0,0,0,16,16H208a16.02085,16.02085,0,0,0,16-16V48A16.02085,16.02085,0,0,0,208,32Zm-48.82031,94.00781L128.00781,180a8.00128,8.00128,0,1,1-13.85937-8l16.20019-28.0603q-1.20593.082-2.41113.08374a36.01849,36.01849,0,1,1,31.24219-18.01563Z"
-        />
-      </g>
+      <path
+        d="M148,112a20,20,0,1,1-20-20A20.02229,20.02229,0,0,1,148,112Zm76-64V208a16.01833,16.01833,0,0,1-16,16H48a16.01833,16.01833,0,0,1-16-16V48A16.01833,16.01833,0,0,1,48,32H208A16.01833,16.01833,0,0,1,224,48Zm-60,64a36,36,0,1,0-36,36q.91626,0,1.82129-.04614l-16.68945,27.9436a8.00015,8.00015,0,1,0,13.73632,8.20508l32.249-53.99512c.09668-.16162.178-.32812.262-.49341A35.76746,35.76746,0,0,0,164,112Z"
+      />
     </g>
     <g v-else-if="displayWeight === 'light'">
-      <path
-        d="M152.24871,122.00466a28,28,0,1,1,2.79721-21.24693A27.91233,27.91233,0,0,1,152.24871,122.00466Z"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="12"
-      />
       <line
         x1="152.24871"
-        y1="122.00466"
-        x2="121.07448"
-        y2="176.00001"
+        y1="126.00466"
+        x2="120"
+        y2="180.00001"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -119,22 +110,24 @@
         stroke-linecap="round"
         stroke-linejoin="round"
         fill="none"
+      />
+      <circle
+        cx="128"
+        cy="112"
+        r="28"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="12"
       />
     </g>
     <g v-else-if="displayWeight === 'thin'">
-      <path
-        d="M152.24871,122.00466a28,28,0,1,1,2.79721-21.24693A27.91233,27.91233,0,0,1,152.24871,122.00466Z"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="8"
-      />
       <line
         x1="152.24871"
-        y1="122.00466"
-        x2="121.07448"
-        y2="176.00001"
+        y1="126.00466"
+        x2="120"
+        y2="180.00001"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -152,22 +145,24 @@
         stroke-linecap="round"
         stroke-linejoin="round"
         fill="none"
+      />
+      <circle
+        cx="128"
+        cy="112"
+        r="28"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="8"
       />
     </g>
     <g v-else-if="displayWeight === 'regular'">
-      <path
-        d="M152.24871,122.00466a28,28,0,1,1,2.79721-21.24693A27.91233,27.91233,0,0,1,152.24871,122.00466Z"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="16"
-      />
       <line
         x1="152.24871"
-        y1="122.00466"
-        x2="121.07448"
-        y2="176.00001"
+        y1="126.00466"
+        x2="120"
+        y2="180.00001"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -185,6 +180,16 @@
         stroke-linecap="round"
         stroke-linejoin="round"
         fill="none"
+      />
+      <circle
+        cx="128"
+        cy="112"
+        r="28"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
       />
     </g>
   </svg>

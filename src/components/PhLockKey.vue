@@ -12,27 +12,6 @@
   >
     <slot />
     <g v-if="displayWeight === 'bold'">
-      <circle
-        cx="127.99414"
-        cy="140"
-        r="20"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="24"
-      />
-      <line
-        x1="127.99414"
-        y1="160"
-        x2="127.99414"
-        y2="184"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="24"
-      />
       <rect
         x="39.99414"
         y="88"
@@ -47,6 +26,27 @@
       />
       <path
         d="M91.99414,88V52a36,36,0,1,1,72,0V88"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="24"
+      />
+      <circle
+        cx="127.99414"
+        cy="144"
+        r="20"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="24"
+      />
+      <line
+        x1="127.99414"
+        y1="164"
+        x2="127.99414"
+        y2="180"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"

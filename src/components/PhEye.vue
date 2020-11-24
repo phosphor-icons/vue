@@ -22,8 +22,8 @@
       />
       <circle
         cx="128"
-        cy="128.00061"
-        r="40"
+        cy="128"
+        r="32"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"

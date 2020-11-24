@@ -12,7 +12,6 @@
   >
     <slot />
     <g v-if="displayWeight === 'bold'">
-      <circle cx="127.99219" cy="200.0029" r="16" />
       <path
         d="M92.91969,166.06177a50.7769,50.7769,0,0,1,70.145,0"
         fill="none"
@@ -23,6 +22,16 @@
       />
       <path
         d="M58.97857,132.12064a98.75415,98.75415,0,0,1,138.02724,0"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="24"
+      />
+      <circle
+        cx="128"
+        cy="200"
+        r="4"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -58,7 +67,6 @@
       />
     </g>
     <g v-else-if="displayWeight === 'light'">
-      <circle cx="127.99219" cy="200.0029" r="9" />
       <path
         d="M92.91969,166.06177a50.7769,50.7769,0,0,1,70.145,0"
         fill="none"
@@ -69,6 +77,16 @@
       />
       <path
         d="M58.97857,132.12064a98.75415,98.75415,0,0,1,138.02724,0"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="12"
+      />
+      <circle
+        cx="128"
+        cy="200"
+        r="4"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -77,7 +95,6 @@
       />
     </g>
     <g v-else-if="displayWeight === 'thin'">
-      <circle cx="127.99219" cy="200.0029" r="6" />
       <path
         d="M92.91969,166.06177a50.7769,50.7769,0,0,1,70.145,0"
         fill="none"
@@ -94,9 +111,18 @@
         stroke-linejoin="round"
         stroke-width="8"
       />
+      <circle
+        cx="128"
+        cy="200"
+        r="4"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="8"
+      />
     </g>
     <g v-else-if="displayWeight === 'regular'">
-      <circle cx="127.99219" cy="200.0029" r="12" />
       <path
         d="M92.91969,166.06177a50.7769,50.7769,0,0,1,70.145,0"
         fill="none"
@@ -107,6 +133,16 @@
       />
       <path
         d="M58.97857,132.12064a98.75415,98.75415,0,0,1,138.02724,0"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <circle
+        cx="128"
+        cy="200"
+        r="4"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"

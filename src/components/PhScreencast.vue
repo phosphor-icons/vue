@@ -13,7 +13,7 @@
     <slot />
     <g v-if="displayWeight === 'bold'">
       <path
-        d="M32,96V56a8,8,0,0,1,8-8H216a8,8,0,0,1,8,8V200a8,8,0,0,1-8,8H144"
+        d="M36,68V60a8,8,0,0,1,8-8H212a8,8,0,0,1,8,8V196a8,8,0,0,1-8,8H172"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -21,7 +21,7 @@
         stroke-width="24"
       />
       <path
-        d="M32,192a16,16,0,0,1,16,16"
+        d="M36,188a16,16,0,0,1,16,16"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -29,7 +29,7 @@
         stroke-width="24"
       />
       <path
-        d="M32,160a48,48,0,0,1,48,48"
+        d="M36,148a56,56,0,0,1,56,56"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -37,7 +37,7 @@
         stroke-width="24"
       />
       <path
-        d="M32,128a80,80,0,0,1,80,80"
+        d="M36,108a96,96,0,0,1,96,96"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"

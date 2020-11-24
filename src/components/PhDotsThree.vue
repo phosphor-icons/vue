@@ -12,46 +12,169 @@
   >
     <slot />
     <g v-if="displayWeight === 'bold'">
-      <g>
-        <circle cx="64" cy="128" r="16" />
-        <circle cx="128" cy="128" r="16" />
-        <circle cx="192" cy="128" r="16" />
-      </g>
+      <circle
+        cx="64"
+        cy="128"
+        r="4"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="24"
+      />
+      <circle
+        cx="192"
+        cy="128"
+        r="4"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="24"
+      />
+      <circle
+        cx="128"
+        cy="128"
+        r="4"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="24"
+      />
     </g>
     <g v-else-if="displayWeight === 'duotone'">
-      <g>
-        <circle cx="128" cy="128" r="12" />
-        <circle cx="64" cy="128" r="12" />
-        <circle cx="192" cy="128" r="12" />
-      </g>
+      <circle
+        cx="64"
+        cy="128"
+        r="4"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <circle
+        cx="192"
+        cy="128"
+        r="4"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <circle
+        cx="128"
+        cy="128"
+        r="4"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
     </g>
     <g v-else-if="displayWeight === 'fill'">
-      <g>
-        <circle cx="128" cy="128" r="32" />
-        <circle cx="48" cy="128" r="32" />
-        <circle cx="208" cy="128" r="32" />
-      </g>
+      <path
+        d="M76,128a12,12,0,1,1-12-12A12.01375,12.01375,0,0,1,76,128Zm116-12a12,12,0,1,0,12,12A12.01375,12.01375,0,0,0,192,116Zm-64,0a12,12,0,1,0,12,12A12.01375,12.01375,0,0,0,128,116Z"
+      />
     </g>
     <g v-else-if="displayWeight === 'light'">
-      <g>
-        <circle cx="128" cy="128" r="9" />
-        <circle cx="64" cy="128" r="9" />
-        <circle cx="192" cy="128" r="9" />
-      </g>
+      <circle
+        cx="64"
+        cy="128"
+        r="4"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="12"
+      />
+      <circle
+        cx="192"
+        cy="128"
+        r="4"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="12"
+      />
+      <circle
+        cx="128"
+        cy="128"
+        r="4"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="12"
+      />
     </g>
     <g v-else-if="displayWeight === 'thin'">
-      <g>
-        <circle cx="128" cy="128" r="6" />
-        <circle cx="64" cy="128" r="6" />
-        <circle cx="192" cy="128" r="6" />
-      </g>
+      <circle
+        cx="64"
+        cy="128"
+        r="4"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="8"
+      />
+      <circle
+        cx="192"
+        cy="128"
+        r="4"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="8"
+      />
+      <circle
+        cx="128"
+        cy="128"
+        r="4"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="8"
+      />
     </g>
     <g v-else-if="displayWeight === 'regular'">
-      <g>
-        <circle cx="128.00098" cy="128" r="12" />
-        <circle cx="64.00098" cy="128" r="12" />
-        <circle cx="192.00098" cy="128" r="12" />
-      </g>
+      <circle
+        cx="64"
+        cy="128"
+        r="4"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <circle
+        cx="192"
+        cy="128"
+        r="4"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <circle
+        cx="128"
+        cy="128"
+        r="4"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
     </g>
   </svg>
 </template>

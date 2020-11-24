@@ -12,8 +12,6 @@
   >
     <slot />
     <g v-if="displayWeight === 'bold'">
-      <circle cx="188.00054" cy="128" r="12" />
-      <circle cx="188.00054" cy="128" r="16" />
       <rect
         x="24"
         y="72"
@@ -26,10 +24,19 @@
         stroke-linejoin="round"
         fill="none"
       />
+      <circle
+        cx="180"
+        cy="128"
+        r="4"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="24"
+      />
     </g>
     <g v-else-if="displayWeight === 'duotone'">
       <rect x="24" y="72" width="208" height="112" rx="8" opacity="0.2" />
-      <circle cx="188.00054" cy="128" r="12" />
       <rect
         x="24"
         y="72"
@@ -42,6 +49,16 @@
         stroke-linejoin="round"
         fill="none"
       />
+      <circle
+        cx="188"
+        cy="128"
+        r="4"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
     </g>
     <g v-else-if="displayWeight === 'fill'">
       <path
@@ -49,7 +66,6 @@
       />
     </g>
     <g v-else-if="displayWeight === 'light'">
-      <circle cx="188.00054" cy="128" r="9" />
       <rect
         x="24"
         y="72"
@@ -62,9 +78,18 @@
         stroke-linejoin="round"
         fill="none"
       />
+      <circle
+        cx="188"
+        cy="128"
+        r="4"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="12"
+      />
     </g>
     <g v-else-if="displayWeight === 'thin'">
-      <circle cx="188.00054" cy="128" r="6" />
       <rect
         x="24"
         y="72"
@@ -77,9 +102,18 @@
         stroke-linejoin="round"
         fill="none"
       />
+      <circle
+        cx="188"
+        cy="128"
+        r="4"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="8"
+      />
     </g>
     <g v-else-if="displayWeight === 'regular'">
-      <circle cx="188.00054" cy="128" r="12" />
       <rect
         x="24"
         y="72"
@@ -91,6 +125,16 @@
         stroke-linecap="round"
         stroke-linejoin="round"
         fill="none"
+      />
+      <circle
+        cx="188"
+        cy="128"
+        r="4"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
       />
     </g>
   </svg>

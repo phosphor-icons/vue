@@ -26,9 +26,9 @@
       />
       <line
         x1="176"
-        y1="24"
+        y1="20"
         x2="176"
-        y2="56"
+        y2="40"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -37,9 +37,9 @@
       />
       <line
         x1="80"
-        y1="24"
+        y1="20"
         x2="80"
-        y2="56"
+        y2="40"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"

@@ -13,7 +13,7 @@
     <slot />
     <g v-if="displayWeight === 'bold'">
       <circle
-        cx="88.00033"
+        cx="88"
         cy="108"
         r="52"
         fill="none"
@@ -31,7 +31,7 @@
         stroke-width="24"
       />
       <path
-        d="M15.99613,197.39669a88.01736,88.01736,0,0,1,144.00452-.00549"
+        d="M16,197.39665a88.013,88.013,0,0,1,144-.0055"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"

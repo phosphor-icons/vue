@@ -39,12 +39,10 @@
         stroke-linejoin="round"
         stroke-width="24"
       />
-      <circle cx="72" cy="132" r="16" />
-      <circle cx="184" cy="132" r="16" />
       <line
-        x1="144"
-        y1="128"
-        x2="144"
+        x1="128"
+        y1="136"
+        x2="128"
         y2="176"
         fill="none"
         :stroke="displayColor"
@@ -53,9 +51,20 @@
         stroke-width="24"
       />
       <line
-        x1="112"
-        y1="128"
-        x2="112"
+        x1="168"
+        y1="136"
+        x2="168"
+        y2="176"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="24"
+      />
+      <line
+        x1="88"
+        y1="136"
+        x2="88"
         y2="176"
         fill="none"
         :stroke="displayColor"
@@ -109,8 +118,6 @@
         stroke-linejoin="round"
         stroke-width="16"
       />
-      <circle cx="72" cy="132" r="12" />
-      <circle cx="184" cy="132" r="12" />
       <line
         x1="144"
         y1="128"
@@ -135,6 +142,26 @@
       />
       <path
         d="M220,176H36V96.00005l7.01877-49.13142A8,8,0,0,1,50.93836,40H205.06164a8,8,0,0,1,7.91959,6.86863L220,96.00005Z"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <circle
+        cx="72"
+        cy="132"
+        r="4"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <circle
+        cx="184"
+        cy="132"
+        r="4"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -175,8 +202,6 @@
         stroke-linejoin="round"
         stroke-width="12"
       />
-      <circle cx="72" cy="132" r="9" />
-      <circle cx="184" cy="132" r="9" />
       <line
         x1="144"
         y1="128"
@@ -201,6 +226,26 @@
       />
       <path
         d="M220,176H36V96.00005l7.01877-49.13142A8,8,0,0,1,50.93836,40H205.06164a8,8,0,0,1,7.91959,6.86863L220,96.00005Z"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="12"
+      />
+      <circle
+        cx="72"
+        cy="132"
+        r="4"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="12"
+      />
+      <circle
+        cx="184"
+        cy="132"
+        r="4"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -236,8 +281,6 @@
         stroke-linejoin="round"
         stroke-width="8"
       />
-      <circle cx="72" cy="132" r="6" />
-      <circle cx="184" cy="132" r="6" />
       <line
         x1="144"
         y1="128"
@@ -262,6 +305,26 @@
       />
       <path
         d="M220,176H36V96.00005l7.01877-49.13142A8,8,0,0,1,50.93836,40H205.06164a8,8,0,0,1,7.91959,6.86863L220,96.00005Z"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="8"
+      />
+      <circle
+        cx="72"
+        cy="132"
+        r="4"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="8"
+      />
+      <circle
+        cx="184"
+        cy="132"
+        r="4"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -297,8 +360,6 @@
         stroke-linejoin="round"
         stroke-width="16"
       />
-      <circle cx="72" cy="132" r="12" />
-      <circle cx="184" cy="132" r="12" />
       <line
         x1="144"
         y1="128"
@@ -323,6 +384,26 @@
       />
       <path
         d="M220,176H36V96.00005l7.01877-49.13142A8,8,0,0,1,50.93836,40H205.06164a8,8,0,0,1,7.91959,6.86863L220,96.00005Z"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <circle
+        cx="72"
+        cy="132"
+        r="4"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <circle
+        cx="184"
+        cy="132"
+        r="4"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"

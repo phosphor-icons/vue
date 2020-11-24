@@ -22,51 +22,54 @@
         stroke-linejoin="round"
         stroke-width="24"
       />
-      <ellipse
+      <line
+        x1="180"
+        y1="96"
+        x2="148"
+        y2="128"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="24"
+      />
+      <line
+        x1="180"
+        y1="128"
+        x2="148"
+        y2="96"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="24"
+      />
+      <line
+        x1="108"
+        y1="96"
+        x2="76"
+        y2="128"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="24"
+      />
+      <line
+        x1="108"
+        y1="128"
+        x2="76"
+        y2="96"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="24"
+      />
+      <circle
         cx="128"
         cy="180"
-        rx="16.03022"
-        ry="15.96779"
-        transform="translate(-89.76784 143.106) rotate(-44.96726)"
-      />
-      <line
-        x1="184"
-        y1="96"
-        x2="152"
-        y2="128"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="24"
-      />
-      <line
-        x1="184"
-        y1="128"
-        x2="152"
-        y2="96"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="24"
-      />
-      <line
-        x1="104"
-        y1="96"
-        x2="72"
-        y2="128"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="24"
-      />
-      <line
-        x1="104"
-        y1="128"
-        x2="72"
-        y2="96"
+        r="4"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -85,7 +88,6 @@
         stroke-miterlimit="10"
         stroke-width="16"
       />
-      <circle cx="128" cy="180" r="12" />
       <line
         x1="184"
         y1="96"
@@ -124,6 +126,16 @@
         y1="128"
         x2="72"
         y2="96"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <circle
+        cx="128"
+        cy="180"
+        r="4"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -147,7 +159,6 @@
         stroke-linejoin="round"
         stroke-width="12"
       />
-      <circle cx="128" cy="180" r="9" />
       <line
         x1="184"
         y1="96"
@@ -186,6 +197,16 @@
         y1="128"
         x2="72"
         y2="96"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="12"
+      />
+      <circle
+        cx="128"
+        cy="180"
+        r="4"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -204,7 +225,6 @@
         stroke-linejoin="round"
         stroke-width="8"
       />
-      <circle cx="128" cy="180" r="6" />
       <line
         x1="184"
         y1="96"
@@ -243,6 +263,16 @@
         y1="128"
         x2="72"
         y2="96"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="8"
+      />
+      <circle
+        cx="128"
+        cy="180"
+        r="4"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -260,7 +290,6 @@
         stroke-miterlimit="10"
         stroke-width="16"
       />
-      <circle cx="128" cy="180" r="12" />
       <line
         x1="184"
         y1="96"
@@ -299,6 +328,16 @@
         y1="128"
         x2="72"
         y2="96"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <circle
+        cx="128"
+        cy="180"
+        r="4"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"

@@ -22,9 +22,9 @@
       />
       <line
         x1="96.00049"
-        y1="112"
+        y1="108"
         x2="160.00049"
-        y2="112"
+        y2="108"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -33,9 +33,9 @@
       />
       <line
         x1="96.00049"
-        y1="144"
+        y1="148"
         x2="160.00049"
-        y2="144"
+        y2="148"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"

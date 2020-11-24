@@ -13,7 +13,7 @@
     <slot />
     <g v-if="displayWeight === 'bold'">
       <circle
-        cx="128"
+        cx="128.00146"
         cy="128"
         r="96"
         fill="none"
@@ -22,9 +22,18 @@
         stroke-linejoin="round"
         stroke-width="24"
       />
-      <circle cx="128" cy="84" r="16" />
       <polyline
-        points="120 120 128 120 128 176 136 176"
+        points="120.001 120 128.001 120 128.001 176 136.001 176"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="24"
+      />
+      <circle
+        cx="128.00146"
+        cy="80"
+        r="4"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -61,7 +70,7 @@
     </g>
     <g v-else-if="displayWeight === 'light'">
       <circle
-        cx="128"
+        cx="128.00098"
         cy="128"
         r="96"
         fill="none"
@@ -70,9 +79,18 @@
         stroke-linejoin="round"
         stroke-width="12"
       />
-      <circle cx="128" cy="84" r="9" />
       <polyline
-        points="120 120 128 120 128 176 136 176"
+        points="120 120 128.001 120 128 176 136 176"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="12"
+      />
+      <circle
+        cx="128.00098"
+        cy="84"
+        r="4"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -82,7 +100,7 @@
     </g>
     <g v-else-if="displayWeight === 'thin'">
       <circle
-        cx="128"
+        cx="128.00049"
         cy="128"
         r="96"
         fill="none"
@@ -91,9 +109,18 @@
         stroke-linejoin="round"
         stroke-width="8"
       />
-      <circle cx="128" cy="84" r="6" />
       <polyline
         points="120 120 128 120 128 176 136 176"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="8"
+      />
+      <circle
+        cx="128.00049"
+        cy="84"
+        r="4"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -112,9 +139,18 @@
         stroke-linejoin="round"
         stroke-width="16"
       />
-      <circle cx="128" cy="84" r="12" />
       <polyline
         points="120 120 128 120 128 176 136 176"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <circle
+        cx="128"
+        cy="84"
+        r="4"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
