@@ -64,7 +64,7 @@
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        stroke-width="16"
+        stroke-width="12"
       />
       <path
         d="M46.99,138.92889A64.12919,64.12919,0,0,1,9.6218,94.37955l.00023-.001A64.0566,64.0566,0,0,0,86.37854,17.622l.00084-.00019A64.02478,64.02478,0,0,1,136,80q0,1.51431-.06961,3.01174"
@@ -72,7 +72,7 @@
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        stroke-width="16"
+        stroke-width="12"
       />
     </g>
     <g v-else-if="displayWeight === 'thin'">
@@ -82,7 +82,7 @@
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        stroke-width="16"
+        stroke-width="8"
       />
       <path
         d="M46.99,138.92889A64.12919,64.12919,0,0,1,9.6218,94.37955l.00023-.001A64.0566,64.0566,0,0,0,86.37854,17.622l.00084-.00019A64.02478,64.02478,0,0,1,136,80q0,1.51431-.06961,3.01174"
@@ -90,7 +90,7 @@
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        stroke-width="16"
+        stroke-width="8"
       />
     </g>
     <g v-else-if="displayWeight === 'regular'">
