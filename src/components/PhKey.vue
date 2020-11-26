@@ -29,7 +29,9 @@
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="24"
+        opacity="0.5"
       />
+      <circle cx="180" cy="76" r="16" />
     </g>
     <g v-else-if="displayWeight === 'duotone'">
       <g opacity="0.2">
@@ -54,7 +56,9 @@
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="16"
+        opacity="0.5"
       />
+      <circle cx="180" cy="76" r="12" />
     </g>
     <g v-else-if="displayWeight === 'fill'">
       <path
@@ -79,7 +83,9 @@
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="12"
+        opacity="0.5"
       />
+      <circle cx="180" cy="76" r="10" />
     </g>
     <g v-else-if="displayWeight === 'thin'">
       <path
@@ -99,7 +105,9 @@
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="8"
+        opacity="0.5"
       />
+      <circle cx="180" cy="76" r="8" />
     </g>
     <g v-else-if="displayWeight === 'regular'">
       <path
@@ -119,7 +127,9 @@
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="16"
+        opacity="0.5"
       />
+      <circle cx="180" cy="76" r="12" />
     </g>
   </svg>
 </template>

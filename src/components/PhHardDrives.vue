@@ -12,26 +12,6 @@
   >
     <slot />
     <g v-if="displayWeight === 'bold'">
-      <circle
-        cx="176"
-        cy="88"
-        r="4"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="24"
-      />
-      <circle
-        cx="176"
-        cy="168"
-        r="4"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="24"
-      />
       <rect
         x="40"
         y="48"
@@ -55,6 +35,8 @@
         stroke-linejoin="round"
         stroke-width="24"
       />
+      <circle cx="176" cy="88" r="16" />
+      <circle cx="176" cy="168" r="16" />
     </g>
     <g v-else-if="displayWeight === 'duotone'">
       <rect x="40" y="144" width="176" height="64" rx="8" opacity="0.2" />
@@ -83,26 +65,8 @@
         stroke-linejoin="round"
         fill="none"
       />
-      <circle
-        cx="180"
-        cy="80"
-        r="4"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="16"
-      />
-      <circle
-        cx="180"
-        cy="176"
-        r="4"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="16"
-      />
+      <circle cx="180" cy="80" r="12" />
+      <circle cx="180" cy="176" r="12" />
     </g>
     <g v-else-if="displayWeight === 'fill'">
       <g>
@@ -139,26 +103,8 @@
         stroke-linejoin="round"
         fill="none"
       />
-      <circle
-        cx="180"
-        cy="80"
-        r="4"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="12"
-      />
-      <circle
-        cx="180"
-        cy="176"
-        r="4"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="12"
-      />
+      <circle cx="180" cy="80" r="10" />
+      <circle cx="180" cy="176" r="10" />
     </g>
     <g v-else-if="displayWeight === 'thin'">
       <rect
@@ -185,26 +131,8 @@
         stroke-linejoin="round"
         fill="none"
       />
-      <circle
-        cx="180"
-        cy="80"
-        r="4"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="8"
-      />
-      <circle
-        cx="180"
-        cy="176"
-        r="4"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="8"
-      />
+      <circle cx="180" cy="176" r="8" />
+      <circle cx="180" cy="80" r="8" />
     </g>
     <g v-else-if="displayWeight === 'regular'">
       <rect
@@ -231,26 +159,8 @@
         stroke-linejoin="round"
         fill="none"
       />
-      <circle
-        cx="180"
-        cy="80"
-        r="4"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="16"
-      />
-      <circle
-        cx="180"
-        cy="176"
-        r="4"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="16"
-      />
+      <circle cx="180" cy="80" r="12" />
+      <circle cx="180" cy="176" r="12" />
     </g>
   </svg>
 </template>

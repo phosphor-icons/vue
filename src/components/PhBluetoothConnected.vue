@@ -50,26 +50,8 @@
         stroke-linejoin="round"
         stroke-width="24"
       />
-      <circle
-        cx="196"
-        cy="128"
-        r="4"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="24"
-      />
-      <circle
-        cx="52"
-        cy="128"
-        r="4"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="24"
-      />
+      <circle cx="52" cy="128" r="16" />
+      <circle cx="196" cy="128" r="16" />
     </g>
     <g v-else-if="displayWeight === 'duotone'">
       <polygon points="120 32 184 80 120 128 120 32" opacity="0.2" />
@@ -112,26 +94,8 @@
         stroke-linejoin="round"
         stroke-width="16"
       />
-      <circle
-        cx="196"
-        cy="128"
-        r="4"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="16"
-      />
-      <circle
-        cx="52"
-        cy="128"
-        r="4"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="16"
-      />
+      <circle cx="52" cy="128" r="12" />
+      <circle cx="196" cy="128" r="12" />
     </g>
     <g v-else-if="displayWeight === 'fill'">
       <path
@@ -177,26 +141,8 @@
         stroke-linejoin="round"
         stroke-width="12"
       />
-      <circle
-        cx="196"
-        cy="128"
-        r="4"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="12"
-      />
-      <circle
-        cx="52"
-        cy="128"
-        r="4"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="12"
-      />
+      <circle cx="52" cy="128" r="10" />
+      <circle cx="196" cy="128" r="10" />
     </g>
     <g v-else-if="displayWeight === 'thin'">
       <polygon
@@ -237,26 +183,8 @@
         stroke-linejoin="round"
         stroke-width="8"
       />
-      <circle
-        cx="196"
-        cy="128"
-        r="4"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="8"
-      />
-      <circle
-        cx="52"
-        cy="128"
-        r="4"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="8"
-      />
+      <circle cx="52" cy="128" r="8" />
+      <circle cx="196" cy="128" r="8" />
     </g>
     <g v-else-if="displayWeight === 'regular'">
       <polygon
@@ -297,26 +225,8 @@
         stroke-linejoin="round"
         stroke-width="16"
       />
-      <circle
-        cx="196"
-        cy="128"
-        r="4"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="16"
-      />
-      <circle
-        cx="52"
-        cy="128"
-        r="4"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="16"
-      />
+      <circle cx="52" cy="128" r="12" />
+      <circle cx="196" cy="128" r="12" />
     </g>
   </svg>
 </template>

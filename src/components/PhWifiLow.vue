@@ -20,16 +20,7 @@
         stroke-linejoin="round"
         stroke-width="24"
       />
-      <circle
-        cx="128"
-        cy="200"
-        r="4"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="24"
-      />
+      <circle cx="128" cy="200" r="16" />
     </g>
     <g v-else-if="displayWeight === 'duotone'">
       <path
@@ -67,16 +58,7 @@
         stroke-linejoin="round"
         stroke-width="12"
       />
-      <circle
-        cx="128"
-        cy="200"
-        r="4"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="12"
-      />
+      <circle cx="128" cy="200" r="10" />
     </g>
     <g v-else-if="displayWeight === 'thin'">
       <path
@@ -87,16 +69,7 @@
         stroke-linejoin="round"
         stroke-width="8"
       />
-      <circle
-        cx="128"
-        cy="200"
-        r="4"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="8"
-      />
+      <circle cx="128" cy="200" r="8" />
     </g>
     <g v-else-if="displayWeight === 'regular'">
       <path
@@ -107,16 +80,7 @@
         stroke-linejoin="round"
         stroke-width="16"
       />
-      <circle
-        cx="128"
-        cy="200"
-        r="4"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="16"
-      />
+      <circle cx="128" cy="200" r="12" />
     </g>
   </svg>
 </template>
