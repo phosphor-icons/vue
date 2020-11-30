@@ -412,12 +412,15 @@
 <script lang="ts">
 import { defineComponent, computed, toRefs, ToRefs, Ref, provide, reactive } from "vue";
 import * as Phosphor from "@/entry";
+import { PhosphorIcon, PhosphorVuePlugin } from "@/lib/types";
 
-// Technically more fragile than the former type guard, but Vue 3 does a lot of
-// typing magic in `defineComponent` that makes it hard to rigorously determine
-// the exact type of the component
-const { default: _, ...Icon } = Phosphor;
-const iconNames = Object.keys(Icon);
+function isIcon(obj: PhosphorVuePlugin | PhosphorIcon) {
+  return (obj as PhosphorVuePlugin).install === undefined;
+}
+
+const iconNames = Object.entries(Phosphor)
+  .filter(([_, obj]) => isIcon(obj))
+  .map(([iconName, _]) => iconName);
 
 if (process.env.NODE_ENV === "development") {
   console.log(`${iconNames.length} icons`);
