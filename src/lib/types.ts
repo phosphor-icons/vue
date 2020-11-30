@@ -3,6 +3,7 @@ import {
   ComponentCustomProps,
   ComponentOptionsMixin,
   DefineComponent,
+  Plugin,
   PropType,
   ToRefs,
   VNodeProps,
@@ -28,6 +29,7 @@ export const PropValidator = {
   weight: String as PropType<Weight>,
   mirrored: Boolean,
 };
+export type PropValidator = typeof PropValidator;
 
 export type PhosphorIcon = DefineComponent<
   typeof PropValidator,
@@ -43,3 +45,5 @@ export type PhosphorIcon = DefineComponent<
   SetupIconProps,
   Required<Pick<IconProps, "mirrored">>
 >;
+
+export type PhosphorVuePlugin = Plugin & { installed?: boolean };

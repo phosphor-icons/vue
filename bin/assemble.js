@@ -3,7 +3,7 @@ const fs = require("fs");
 const path = require("path");
 const chalk = require("chalk");
 
-const { ASSETS_PATH, COMPONENTS_PATH, INDEX_PATH } = require("./index");
+const { ASSETS_PATH, COMPONENTS_PATH, INDEX_PATH, TYPES_PATH } = require("./index");
 
 const icons = {};
 const weights = ["thin", "light", "regular", "bold", "fill", "duotone"];
@@ -181,6 +181,67 @@ export { default as Ph${name} } from "../components/Ph${name}.vue";
   }
 }
 
+function generateTypes() {
+  let typesString = `import { AllowedComponentProps, ComponentCustomProps, ComponentOptionsMixin, DefineComponent, Plugin, PropType, ToRefs, VNodeProps } from 'vue';
+type PhosphorVuePlugin = Plugin & { installed?: boolean };
+declare const PhosphorVue: PhosphorVuePlugin;
+export default PhosphorVue;
+type Weight = "thin" | "light" | "regular" | "bold" | "fill" | "duotone";
+type Size = string | number;
+interface IconProps {
+  weight: Weight;
+  size: Size;
+  color: string;
+  mirrored: boolean;
+}
+type SetupIconProps = Readonly<
+  Required<Pick<IconProps, "mirrored">> & Partial<Omit<IconProps, "mirrored">>
+>;
+type PropValidator = {
+    color: StringConstructor;
+    size: PropType<Size>;
+    weight: PropType<Weight>;
+    mirrored: BooleanConstructor;
+}
+type PhosphorIcon = DefineComponent<
+  PropValidator,
+  ToRefs<IconProps>,
+  unknown,
+  {},
+  {},
+  ComponentOptionsMixin,
+  ComponentOptionsMixin,
+  Record<string, any>,
+  string,
+  VNodeProps & AllowedComponentProps & ComponentCustomProps,
+  SetupIconProps,
+  Required<Pick<IconProps, "mirrored">>
+>;
+`;
+
+  for (let key in icons) {
+      const name = key
+        .split("-")
+        .map((substr) => substr.replace(/^\w/, (c) => c.toUpperCase()))
+        .join("");
+      typesString += `\
+export const Ph${name}: PhosphorIcon;
+`;
+  }
+  try {
+    fs.writeFileSync(TYPES_PATH, typesString, {
+      flag: "w"
+    });
+    console.log(chalk.green("Types success"));
+  } catch (err) {
+    console.error(chalk.red("Types failed"));
+    console.group();
+    console.error(err);
+    console.groupEnd();
+  };
+}
+
 readFiles();
 generateComponents();
 generateExports();
+generateTypes();

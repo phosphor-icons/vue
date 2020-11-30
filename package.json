@@ -14,8 +14,7 @@
   "types": "phosphor-vue.d.ts",
   "files": [
     "dist/*",
-    "phosphor-vue.d.ts",
-    "src/**/*.vue"
+    "phosphor-vue.d.ts"
   ],
   "keywords": [
     "vue",
