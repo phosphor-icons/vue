@@ -13,7 +13,7 @@ const PhosphorVue: PhosphorVuePlugin = {
     Object.entries(components).forEach(([componentName, component]) =>
       app.component(componentName, component)
     );
-  }
+  },
 };
 
 // Default export is library as a whole, registered via app.use()
