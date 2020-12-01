@@ -8,8 +8,8 @@
   "homepage": "https://phosphoricons.com",
   "sideEffects": false,
   "main": "dist/phosphor-vue.ssr.js",
-  "browser": "dist/phosphor-vue.esm.js",
-  "module": "dist/phosphor-vue.esm.js",
+  "browser": "dist/esm/entry.js",
+  "module": "dist/esm/entry.js",
   "unpkg": "dist/phosphor-vue.min.js",
   "types": "phosphor-vue.d.ts",
   "files": [
