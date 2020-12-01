@@ -9,8 +9,8 @@
     :transform="mirrored ? 'scale(-1, 1)' : undefined"
     v-bind="$attrs"
   >
+    <slot />
     <g v-if="weight === 'bold'">
-      <circle cx="180" cy="76" r="16" />
       <path
         d="M93.16866,122.8328a71.93648,71.93648,0,1,1,40.0009,40.001l.00062-.00149L120.00244,176h-24v24h-24v24h-40V184l61.168-61.168Z"
         fill="none"
@@ -19,6 +19,18 @@
         stroke-linejoin="round"
         stroke-width="24"
       />
+      <circle
+        cx="180"
+        cy="76"
+        r="4"
+        fill="none"
+        :stroke="color"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="24"
+        opacity="0.5"
+      />
+      <circle cx="180" cy="76" r="16" />
     </g>
     <g v-else-if="weight === 'duotone'">
       <g opacity="0.2">
@@ -26,7 +38,6 @@
           d="M93.16866,122.8328a71.93648,71.93648,0,1,1,40.0009,40.001l.00062-.00149L120.00244,176h-24v24h-24v24h-40V184l61.168-61.168Z"
         />
       </g>
-      <circle cx="180" cy="76" r="12" />
       <path
         d="M93.16866,122.8328a71.93648,71.93648,0,1,1,40.0009,40.001l.00062-.00149L120.00244,176h-24v24h-24v24h-40V184l61.168-61.168Z"
         fill="none"
@@ -35,6 +46,18 @@
         stroke-linejoin="round"
         stroke-width="16"
       />
+      <circle
+        cx="180"
+        cy="76"
+        r="4"
+        fill="none"
+        :stroke="color"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+        opacity="0.5"
+      />
+      <circle cx="180" cy="76" r="12" />
     </g>
     <g v-else-if="weight === 'fill'">
       <path
@@ -42,7 +65,6 @@
       />
     </g>
     <g v-else-if="weight === 'light'">
-      <circle cx="180" cy="76" r="9" />
       <path
         d="M93.16866,122.8328a71.93648,71.93648,0,1,1,40.0009,40.001l.00062-.00149L120.00244,176h-24v24h-24v24h-40V184l61.168-61.168Z"
         fill="none"
@@ -51,9 +73,20 @@
         stroke-linejoin="round"
         stroke-width="12"
       />
+      <circle
+        cx="180"
+        cy="76"
+        r="4"
+        fill="none"
+        :stroke="color"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="12"
+        opacity="0.5"
+      />
+      <circle cx="180" cy="76" r="10" />
     </g>
     <g v-else-if="weight === 'thin'">
-      <circle cx="180" cy="76" r="6" />
       <path
         d="M93.16866,122.8328a71.93648,71.93648,0,1,1,40.0009,40.001l.00062-.00149L120.00244,176h-24v24h-24v24h-40V184l61.168-61.168Z"
         fill="none"
@@ -62,9 +95,20 @@
         stroke-linejoin="round"
         stroke-width="8"
       />
+      <circle
+        cx="180"
+        cy="76"
+        r="4"
+        fill="none"
+        :stroke="color"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="8"
+        opacity="0.5"
+      />
+      <circle cx="180" cy="76" r="8" />
     </g>
     <g v-else-if="weight === 'regular'">
-      <circle cx="180" cy="76" r="12" />
       <path
         d="M93.16866,122.8328a71.93648,71.93648,0,1,1,40.0009,40.001l.00062-.00149L120.00244,176h-24v24h-24v24h-40V184l61.168-61.168Z"
         fill="none"
@@ -73,6 +117,18 @@
         stroke-linejoin="round"
         stroke-width="16"
       />
+      <circle
+        cx="180"
+        cy="76"
+        r="4"
+        fill="none"
+        :stroke="color"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+        opacity="0.5"
+      />
+      <circle cx="180" cy="76" r="12" />
     </g>
   </svg>
 </template>

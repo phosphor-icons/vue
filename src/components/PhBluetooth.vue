@@ -9,6 +9,7 @@
     :transform="mirrored ? 'scale(-1, 1)' : undefined"
     v-bind="$attrs"
   >
+    <slot />
     <g v-if="weight === 'bold'">
       <polygon
         points="120 32.003 184 80.003 120 128.003 120 32.003"

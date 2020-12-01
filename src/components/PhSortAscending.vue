@@ -9,6 +9,7 @@
     :transform="mirrored ? 'scale(-1, 1)' : undefined"
     v-bind="$attrs"
   >
+    <slot />
     <g v-if="weight === 'bold'">
       <polyline
         points="144 167.994 184 207.994 223.999 168"

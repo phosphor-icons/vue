@@ -9,9 +9,8 @@
     :transform="mirrored ? 'scale(-1, 1)' : undefined"
     v-bind="$attrs"
   >
+    <slot />
     <g v-if="weight === 'bold'">
-      <circle cx="99.92969" cy="84" r="16" />
-      <circle cx="155.92969" cy="84" r="16" />
       <line
         x1="55.92969"
         y1="24"
@@ -44,20 +43,20 @@
       />
       <line
         x1="207.92969"
-        y1="120"
+        y1="124"
         x2="47.92969"
-        y2="120"
+        y2="124"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="24"
       />
+      <circle cx="156" cy="84" r="16" />
+      <circle cx="100" cy="84" r="16" />
     </g>
     <g v-else-if="weight === 'duotone'">
       <path d="M207.92969,120v32a80,80,0,0,1-160,0V120Z" opacity="0.2" />
-      <circle cx="99.92969" cy="84" r="12" />
-      <circle cx="155.92969" cy="84" r="12" />
       <line
         x1="55.92969"
         y1="24"
@@ -99,6 +98,8 @@
         stroke-linejoin="round"
         stroke-width="16"
       />
+      <circle cx="156" cy="84" r="12" />
+      <circle cx="100" cy="84" r="12" />
     </g>
     <g v-else-if="weight === 'fill'">
       <g>
@@ -110,8 +111,6 @@
       </g>
     </g>
     <g v-else-if="weight === 'light'">
-      <circle cx="99.92969" cy="84" r="9" />
-      <circle cx="155.92969" cy="84" r="9" />
       <line
         x1="55.92969"
         y1="24"
@@ -153,10 +152,10 @@
         stroke-linejoin="round"
         stroke-width="12"
       />
+      <circle cx="156" cy="84" r="10" />
+      <circle cx="100" cy="84" r="10" />
     </g>
     <g v-else-if="weight === 'thin'">
-      <circle cx="99.92969" cy="84" r="6" />
-      <circle cx="155.92969" cy="84" r="6" />
       <line
         x1="55.92969"
         y1="24"
@@ -198,10 +197,10 @@
         stroke-linejoin="round"
         stroke-width="8"
       />
+      <circle cx="156" cy="84" r="8" />
+      <circle cx="100" cy="84" r="8" />
     </g>
     <g v-else-if="weight === 'regular'">
-      <circle cx="100" cy="84" r="12" />
-      <circle cx="156" cy="84" r="12" />
       <line
         x1="56"
         y1="24"
@@ -243,6 +242,8 @@
         stroke-linejoin="round"
         stroke-width="16"
       />
+      <circle cx="156" cy="83.99998" r="12" />
+      <circle cx="100" cy="83.99998" r="12" />
     </g>
   </svg>
 </template>

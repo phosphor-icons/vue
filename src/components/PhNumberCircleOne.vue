@@ -9,6 +9,7 @@
     :transform="mirrored ? 'scale(-1, 1)' : undefined"
     v-bind="$attrs"
   >
+    <slot />
     <g v-if="weight === 'bold'">
       <circle
         cx="128"
@@ -21,7 +22,7 @@
         stroke-width="24"
       />
       <polyline
-        points="108.009 95.992 131.991 80 131.991 175.994"
+        points="108 99.993 132 84 132 176"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -41,7 +42,7 @@
         stroke-width="16"
       />
       <polyline
-        points="108.009 95.992 131.991 80 131.991 175.994"
+        points="108 99.993 132 84 132 176"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -51,7 +52,7 @@
     </g>
     <g v-else-if="weight === 'fill'">
       <path
-        d="M128,24A104,104,0,1,0,232,128,104.12041,104.12041,0,0,0,128,24Zm11.99219,151.99219a8,8,0,0,1-16,0V94.95313l-11.54688,7.69531a7.99982,7.99982,0,1,1-8.875-13.3125l23.98438-15.99219A7.99941,7.99941,0,0,1,139.99219,80Z"
+        d="M128,24A104,104,0,1,0,232,128,104.11791,104.11791,0,0,0,128,24Zm12,152a8,8,0,0,1-16,0V98.94434l-11.56348,7.70605a8.00008,8.00008,0,1,1-8.873-13.31445l24-15.99317A8.00039,8.00039,0,0,1,140,84Z"
       />
     </g>
     <g v-else-if="weight === 'light'">
@@ -66,7 +67,7 @@
         stroke-width="12"
       />
       <polyline
-        points="108.009 95.992 131.991 80 131.991 175.994"
+        points="108 99.993 132 84 132 176"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -86,7 +87,7 @@
         stroke-width="8"
       />
       <polyline
-        points="108.009 95.992 131.991 80 131.991 175.994"
+        points="108 99.993 132 84 132 176"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -105,7 +106,7 @@
         stroke-width="16"
       />
       <polyline
-        points="108.009 95.992 131.991 80 131.991 175.994"
+        points="108 99.993 132 84 132 176"
         fill="none"
         :stroke="color"
         stroke-linecap="round"

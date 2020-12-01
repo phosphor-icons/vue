@@ -9,6 +9,7 @@
     :transform="mirrored ? 'scale(-1, 1)' : undefined"
     v-bind="$attrs"
   >
+    <slot />
     <g v-if="weight === 'bold'">
       <path
         d="M92.68629,216H48a8,8,0,0,1-8-8V163.31371a8,8,0,0,1,2.34315-5.65686l120-120a8,8,0,0,1,11.3137,0l44.6863,44.6863a8,8,0,0,1,0,11.3137l-120,120A8,8,0,0,1,92.68629,216Z"
@@ -30,7 +31,7 @@
         stroke-width="24"
       />
       <polyline
-        points="160 192 200 152 192 120"
+        points="164 200 204 160 192 120"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -38,10 +39,10 @@
         stroke-width="24"
       />
       <line
-        x1="40.51057"
-        y1="160.51057"
-        x2="95.49105"
-        y2="215.49105"
+        x1="43.99996"
+        y1="155.99997"
+        x2="99.99999"
+        y2="212.00001"
         fill="none"
         :stroke="color"
         stroke-linecap="round"

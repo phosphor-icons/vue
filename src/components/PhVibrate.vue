@@ -9,12 +9,13 @@
     :transform="mirrored ? 'scale(-1, 1)' : undefined"
     v-bind="$attrs"
   >
+    <slot />
     <g v-if="weight === 'bold'">
       <rect
         x="40"
-        y="80"
+        y="76"
         width="176"
-        height="96"
+        height="104"
         rx="16"
         transform="translate(256) rotate(90)"
         stroke-width="24"
@@ -24,10 +25,10 @@
         fill="none"
       />
       <line
-        x1="208.00244"
-        y1="88"
-        x2="208.00244"
-        y2="168"
+        x1="220.00244"
+        y1="100"
+        x2="220.00244"
+        y2="156"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -35,32 +36,10 @@
         stroke-width="24"
       />
       <line
-        x1="240.00244"
-        y1="104"
-        x2="240.00244"
-        y2="152"
-        fill="none"
-        :stroke="color"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="24"
-      />
-      <line
-        x1="48"
-        y1="88"
-        x2="48"
-        y2="168"
-        fill="none"
-        :stroke="color"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="24"
-      />
-      <line
-        x1="16"
-        y1="104"
-        x2="16"
-        y2="152"
+        x1="36"
+        y1="100"
+        x2="36"
+        y2="156"
         fill="none"
         :stroke="color"
         stroke-linecap="round"

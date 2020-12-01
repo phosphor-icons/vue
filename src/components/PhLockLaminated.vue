@@ -9,12 +9,13 @@
     :transform="mirrored ? 'scale(-1, 1)' : undefined"
     v-bind="$attrs"
   >
+    <slot />
     <g v-if="weight === 'bold'">
       <line
         x1="39.99414"
-        y1="120"
+        y1="132"
         x2="215.99414"
-        y2="120"
+        y2="132"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -23,20 +24,9 @@
       />
       <line
         x1="39.99414"
-        y1="152"
+        y1="172"
         x2="215.99414"
-        y2="152"
-        fill="none"
-        :stroke="color"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="24"
-      />
-      <line
-        x1="39.99414"
-        y1="184"
-        x2="215.99414"
-        y2="184"
+        y2="172"
         fill="none"
         :stroke="color"
         stroke-linecap="round"

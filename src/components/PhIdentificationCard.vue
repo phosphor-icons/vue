@@ -9,12 +9,13 @@
     :transform="mirrored ? 'scale(-1, 1)' : undefined"
     v-bind="$attrs"
   >
+    <slot />
     <g v-if="weight === 'bold'">
       <line
         x1="152"
-        y1="112"
-        x2="192"
-        y2="112"
+        y1="108"
+        x2="184"
+        y2="108"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -23,9 +24,9 @@
       />
       <line
         x1="152"
-        y1="144"
-        x2="192"
-        y2="144"
+        y1="148"
+        x2="184"
+        y2="148"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -33,9 +34,9 @@
         stroke-width="24"
       />
       <circle
-        cx="92.10043"
-        cy="120"
-        r="24"
+        cx="94.1004"
+        cy="116.00005"
+        r="22"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -43,7 +44,7 @@
         stroke-width="24"
       />
       <path
-        d="M61.10869,167.99952a32.01032,32.01032,0,0,1,61.98292-.00215"
+        d="M72.1004,164a22,22,0,0,1,44,0"
         fill="none"
         :stroke="color"
         stroke-linecap="round"

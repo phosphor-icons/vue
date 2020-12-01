@@ -9,6 +9,7 @@
     :transform="mirrored ? 'scale(-1, 1)' : undefined"
     v-bind="$attrs"
   >
+    <slot />
     <g v-if="weight === 'bold'">
       <path
         d="M128,55.99219C48,55.99219,16,128,16,128s32,71.99219,112,71.99219S240,128,240,128,208,55.99219,128,55.99219Z"
@@ -20,8 +21,8 @@
       />
       <circle
         cx="128"
-        cy="128.00061"
-        r="40"
+        cy="128"
+        r="32"
         fill="none"
         :stroke="color"
         stroke-linecap="round"

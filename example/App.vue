@@ -2,56 +2,56 @@
   <div id="app" style="user-select: none;">
     <section>
       <h1>Passed Props</h1>
-      <PhAt :weight="weight" :size="size" :color="color" :mirrored="mirrored" />
-      <PhChartPieSlice
+      <ph-at :weight="weight" :size="size" :color="color" :mirrored="mirrored" />
+      <ph-chart-pie-slice
         :weight="weight"
         :size="size"
         :color="color"
         :mirrored="mirrored"
       />
-      <PhFingerprint
+      <ph-fingerprint
         :weight="weight"
         :size="size"
         :color="color"
         :mirrored="mirrored"
       />
-      <PhMapTrifold
+      <ph-map-trifold
         :weight="weight"
         :size="size"
         :color="color"
         :mirrored="mirrored"
       />
-      <PhPackage
+      <ph-package
         :weight="weight"
         :size="size"
         :color="color"
         :mirrored="mirrored"
       />
-      <PhPen
+      <ph-pen
         :weight="weight"
         :size="size"
         :color="color"
         :mirrored="mirrored"
       />
-      <PhStack
+      <ph-stack
         :weight="weight"
         :size="size"
         :color="color"
         :mirrored="mirrored"
       />
-      <PhTruck
+      <ph-truck
         :weight="weight"
         :size="size"
         :color="color"
         :mirrored="mirrored"
       />
-      <PhCircle
+      <ph-circle
         :weight="weight"
         :size="size"
         :color="color"
         :mirrored="mirrored"
       />
-      <PhTable
+      <ph-table
         :weight="weight"
         :size="size"
         :color="color"
@@ -60,27 +60,29 @@
     </section>
     <section>
       <h1>Injected Context</h1>
-      <PhAt />
-      <PhChartPieSlice />
-      <PhFingerprint />
-      <PhMapTrifold />
-      <PhPackage />
-      <PhPen />
-      <PhStack />
-      <PhTruck @click="test" />
-      <PhCircle />
-      <PhTable />
+      <ph-at />
+      <ph-chart-pie-slice />
+      <ph-fingerprint />
+      <ph-map-trifold />
+      <ph-package />
+      <ph-pen />
+      <ph-stack />
+      <span class="toggleables">
+        <ph-truck @click="test" />
+      </span>
+      <ph-circle />
+      <ph-table />
     </section>
-    <section>
+    <section class="toggleables">
       <h1>Toggleables</h1>
-      <PhHeart
+      <ph-heart
         :weight="filled"
         :size="size"
         :color="color"
         :mirrored="mirrored"
         @click="check"
       />
-      <PhEye
+      <ph-eye
         v-if="visible"
         :weight="filled"
         :size="size"
@@ -88,7 +90,7 @@
         :mirrored="mirrored"
         @click="hide"
       />
-      <PhEyeSlash
+      <ph-eye-slash
         v-if="!visible"
         :weight="filled"
         :size="size"
@@ -96,7 +98,7 @@
         :mirrored="mirrored"
         @click="hide"
       />
-      <PhHourglass
+      <ph-hourglass
         v-if="time === 'none'"
         :weight="filled"
         :size="size"
@@ -104,7 +106,7 @@
         :mirrored="mirrored"
         @click="elapse"
       />
-      <PhHourglassHigh
+      <ph-hourglass-high
         v-if="time === 'high'"
         :weight="filled"
         :size="size"
@@ -112,7 +114,7 @@
         :mirrored="mirrored"
         @click="elapse"
       />
-      <PhHourglassMedium
+      <ph-hourglass-medium
         v-if="time === 'medium'"
         :weight="filled"
         :size="size"
@@ -120,7 +122,7 @@
         :mirrored="mirrored"
         @click="elapse"
       />
-      <PhHourglassLow
+      <ph-hourglass-low
         v-if="time === 'low'"
         :weight="filled"
         :size="size"
@@ -128,7 +130,7 @@
         :mirrored="mirrored"
         @click="elapse"
       />
-      <PhBatteryFull
+      <ph-battery-full
         v-if="charge === 'full'"
         :weight="filled"
         :size="size"
@@ -136,7 +138,7 @@
         :mirrored="mirrored"
         @click="discharge"
       />
-      <PhBatteryHigh
+      <ph-battery-high
         v-if="charge === 'high'"
         :weight="filled"
         :size="size"
@@ -144,7 +146,7 @@
         :mirrored="mirrored"
         @click="discharge"
       />
-      <PhBatteryMedium
+      <ph-battery-medium
         v-if="charge === 'medium'"
         :weight="filled"
         :size="size"
@@ -152,7 +154,7 @@
         :mirrored="mirrored"
         @click="discharge"
       />
-      <PhBatteryLow
+      <ph-battery-low
         v-if="charge === 'low'"
         :weight="filled"
         :size="size"
@@ -160,7 +162,7 @@
         :mirrored="mirrored"
         @click="discharge"
       />
-      <PhBatteryEmpty
+      <ph-battery-empty
         v-if="charge === 'empty'"
         :weight="filled"
         :size="size"
@@ -168,7 +170,7 @@
         :mirrored="mirrored"
         @click="discharge"
       />
-      <PhBatteryCharging
+      <ph-battery-charging
         v-if="charge === 'charging'"
         :weight="filled"
         :size="size"
@@ -176,7 +178,7 @@
         :mirrored="mirrored"
         @click="discharge"
       />
-      <PhCellSignalFull
+      <ph-cell-signal-full
         v-if="signal === 'full'"
         :weight="filled"
         :size="size"
@@ -184,7 +186,7 @@
         :mirrored="mirrored"
         @click="changeSignal"
       />
-      <PhCellSignalHigh
+      <ph-cell-signal-high
         v-if="signal === 'high'"
         :weight="filled"
         :size="size"
@@ -192,7 +194,7 @@
         :mirrored="mirrored"
         @click="changeSignal"
       />
-      <PhCellSignalMedium
+      <ph-cell-signal-medium
         v-if="signal === 'medium'"
         :weight="filled"
         :size="size"
@@ -200,7 +202,7 @@
         :mirrored="mirrored"
         @click="changeSignal"
       />
-      <PhCellSignalLow
+      <ph-cell-signal-low
         v-if="signal === 'low'"
         :weight="filled"
         :size="size"
@@ -208,7 +210,7 @@
         :mirrored="mirrored"
         @click="changeSignal"
       />
-      <PhCellSignalNone
+      <ph-cell-signal-none
         v-if="signal === 'none'"
         :weight="filled"
         :size="size"
@@ -216,7 +218,7 @@
         :mirrored="mirrored"
         @click="changeSignal"
       />
-      <PhFolder
+      <ph-folder
         v-if="!open"
         :weight="filled"
         :size="size"
@@ -224,7 +226,7 @@
         :mirrored="mirrored"
         @click="changeOpen"
       />
-      <PhFolderOpen
+      <ph-folder-open
         v-if="open"
         :weight="filled"
         :size="size"
@@ -232,7 +234,7 @@
         :mirrored="mirrored"
         @click="changeOpen"
       />
-      <PhLockKey
+      <ph-lock-key
         v-if="locked"
         :weight="filled"
         :size="size"
@@ -240,7 +242,7 @@
         :mirrored="mirrored"
         @click="changeLock"
       />
-      <PhLockKeyOpen
+      <ph-lock-key-open
         v-if="!locked"
         :weight="filled"
         :size="size"
@@ -248,7 +250,7 @@
         :mirrored="mirrored"
         @click="changeLock"
       />
-      <PhMicrophone
+      <ph-microphone
         v-if="!muted"
         :weight="filled"
         :size="size"
@@ -256,7 +258,7 @@
         :mirrored="mirrored"
         @click="changeMute"
       />
-      <PhMicrophoneSlash
+      <ph-microphone-slash
         v-if="muted"
         :weight="filled"
         :size="size"
@@ -264,7 +266,7 @@
         :mirrored="mirrored"
         @click="changeMute"
       />
-      <PhSpeakerHigh
+      <ph-speaker-high
         v-if="volume === 'high'"
         :weight="filled"
         :size="size"
@@ -272,7 +274,7 @@
         :mirrored="mirrored"
         @click="changeVolume"
       />
-      <PhSpeakerLow
+      <ph-speaker-low
         v-if="volume === 'low'"
         :weight="filled"
         :size="size"
@@ -280,7 +282,7 @@
         :mirrored="mirrored"
         @click="changeVolume"
       />
-      <PhSpeakerNone
+      <ph-speaker-none
         v-if="volume === 'none'"
         :weight="filled"
         :size="size"
@@ -288,7 +290,7 @@
         :mirrored="mirrored"
         @click="changeVolume"
       />
-      <PhSpeakerX
+      <ph-speaker-x
         v-if="volume === 'mute'"
         :weight="filled"
         :size="size"
@@ -296,7 +298,7 @@
         :mirrored="mirrored"
         @click="changeVolume"
       />
-      <PhWifiHigh
+      <ph-wifi-high
         v-if="wifi === 'high'"
         :weight="filled"
         :size="size"
@@ -304,7 +306,7 @@
         :mirrored="mirrored"
         @click="changeWifi"
       />
-      <PhWifiMedium
+      <ph-wifi-medium
         v-if="wifi === 'medium'"
         :weight="filled"
         :size="size"
@@ -312,7 +314,7 @@
         :mirrored="mirrored"
         @click="changeWifi"
       />
-      <PhWifiLow
+      <ph-wifi-low
         v-if="wifi === 'low'"
         :weight="filled"
         :size="size"
@@ -320,7 +322,7 @@
         :mirrored="mirrored"
         @click="changeWifi"
       />
-      <PhWifiNone
+      <ph-wifi-none
         v-if="wifi === 'none'"
         :weight="filled"
         :size="size"
@@ -329,7 +331,48 @@
         @click="changeWifi"
       />
     </section>
-    <input name="show" type="checkbox" :checked="showAll" @change="extend" />
+    <section>
+      <h1>With Children</h1>
+      <ph-cube>
+        <animate
+          attributeName="opacity"
+          values="0;1;0"
+          dur="4s"
+          repeatCount="indefinite"
+        />
+        <animateTransform
+          attributeName="transform"
+          attributeType="XML"
+          type="rotate"
+          dur="5s"
+          from="0 0 0"
+          to="360 0 0"
+          repeatCount="indefinite"
+        />
+      </ph-cube>
+      <ph-lightning>
+        <title>HI MOM</title>
+      </ph-lightning>
+      <span style="display: inline-flex; align-items: center;">
+        <ph-diamond>
+          <ph-diamond :size="128" :x="64" :y="64">
+            <ph-diamond :size="128" :x="64" :y="64">
+              <ph-diamond :size="128" :x="64" :y="64">
+                <ph-diamond :size="128" :x="64" :y="64" />
+              </ph-diamond>
+            </ph-diamond>
+          </ph-diamond>
+        </ph-diamond>
+        &lt;-- FOR DEMONSTRATION PURPOSES ONLY
+      </span>
+    </section>
+    <input
+      id="show"
+      name="show"
+      type="checkbox"
+      :checked="showAll"
+      @change="extend"
+    />
     <label for="show">Show All</label>
     <section v-if="showAll">
       <div class="row" v-for="icon in icons" :key="icon">
@@ -454,7 +497,7 @@ export default defineComponent({
       icons: iconNames,
       weight: "regular",
       size: 64,
-      color: "indianred",
+      color: "darkorange",
       mirrored: false,
       checked: false,
       time: "none",
@@ -570,7 +613,7 @@ export default defineComponent({
 
     provide('weight', "duotone");
     provide('size', 64);
-    provide('color', "#41B883");
+    provide('color', "darkorchid");
     provide('mirrored', false);
 
     return {
@@ -597,7 +640,7 @@ export default defineComponent({
 body {
   color: white;
   margin: 0;
-  padding: 0;
+  padding: 0 32px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -617,6 +660,10 @@ code {
   align-items: baseline;
   justify-content: center;
   padding: 8px 0;
+}
+
+.toggleables svg {
+  cursor: pointer;
 }
 
 .name {

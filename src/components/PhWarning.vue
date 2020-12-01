@@ -9,19 +9,19 @@
     :transform="mirrored ? 'scale(-1, 1)' : undefined"
     v-bind="$attrs"
   >
+    <slot />
     <g v-if="weight === 'bold'">
       <line
         x1="128"
         y1="96"
         x2="128"
-        y2="144"
+        y2="136"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="24"
       />
-      <circle cx="128" cy="180" r="16" />
       <path
         d="M114.15243,39.98472,26.17616,191.977a16.00005,16.00005,0,0,0,13.84762,24.01535H215.97625A16,16,0,0,0,229.82386,191.977L141.84757,39.98472A16,16,0,0,0,114.15243,39.98472Z"
         fill="none"
@@ -30,6 +30,7 @@
         stroke-linejoin="round"
         stroke-width="24"
       />
+      <circle cx="128" cy="176" r="16" />
     </g>
     <g v-else-if="weight === 'duotone'">
       <path
@@ -47,7 +48,6 @@
         stroke-linejoin="round"
         stroke-width="16"
       />
-      <circle cx="128" cy="180" r="12" />
       <path
         d="M114.15243,39.98472,26.17616,191.977a16.00005,16.00005,0,0,0,13.84762,24.01535H215.97625A16,16,0,0,0,229.82386,191.977L141.84757,39.98472A16,16,0,0,0,114.15243,39.98472Z"
         fill="none"
@@ -56,6 +56,7 @@
         stroke-linejoin="round"
         stroke-width="16"
       />
+      <circle cx="128" cy="180" r="12" />
     </g>
     <g v-else-if="weight === 'fill'">
       <path
@@ -74,7 +75,6 @@
         stroke-linejoin="round"
         stroke-width="12"
       />
-      <circle cx="128" cy="180" r="9" />
       <path
         d="M114.15243,39.98472,26.17616,191.977a16.00005,16.00005,0,0,0,13.84762,24.01535H215.97625A16,16,0,0,0,229.82386,191.977L141.84757,39.98472A16,16,0,0,0,114.15243,39.98472Z"
         fill="none"
@@ -83,6 +83,7 @@
         stroke-linejoin="round"
         stroke-width="12"
       />
+      <circle cx="128" cy="180" r="10" />
     </g>
     <g v-else-if="weight === 'thin'">
       <line
@@ -96,7 +97,6 @@
         stroke-linejoin="round"
         stroke-width="8"
       />
-      <circle cx="128" cy="180" r="6" />
       <path
         d="M114.15243,39.98472,26.17616,191.977a16.00005,16.00005,0,0,0,13.84762,24.01535H215.97625A16,16,0,0,0,229.82386,191.977L141.84757,39.98472A16,16,0,0,0,114.15243,39.98472Z"
         fill="none"
@@ -105,6 +105,7 @@
         stroke-linejoin="round"
         stroke-width="8"
       />
+      <circle cx="128" cy="180" r="8" />
     </g>
     <g v-else-if="weight === 'regular'">
       <line
@@ -118,7 +119,6 @@
         stroke-linejoin="round"
         stroke-width="16"
       />
-      <circle cx="128" cy="180" r="12" />
       <path
         d="M114.15243,39.98472,26.17616,191.977a16.00005,16.00005,0,0,0,13.84762,24.01535H215.97625A16,16,0,0,0,229.82386,191.977L141.84757,39.98472A16,16,0,0,0,114.15243,39.98472Z"
         fill="none"
@@ -127,6 +127,7 @@
         stroke-linejoin="round"
         stroke-width="16"
       />
+      <circle cx="128" cy="180" r="12" />
     </g>
   </svg>
 </template>

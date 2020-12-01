@@ -9,9 +9,10 @@
     :transform="mirrored ? 'scale(-1, 1)' : undefined"
     v-bind="$attrs"
   >
+    <slot />
     <g v-if="weight === 'bold'">
       <polyline
-        points="108.009 95.992 131.991 80 131.991 175.994"
+        points="108 99.993 132 84 132 176"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -34,7 +35,7 @@
     <g v-else-if="weight === 'duotone'">
       <rect x="40" y="40" width="176" height="176" rx="8" opacity="0.2" />
       <polyline
-        points="108.009 95.992 131.991 80 131.991 175.994"
+        points="108 99.993 132 84 132 176"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -56,12 +57,12 @@
     </g>
     <g v-else-if="weight === 'fill'">
       <path
-        d="M208,32H48A16.02085,16.02085,0,0,0,32,48V208a16.02085,16.02085,0,0,0,16,16H208a16.02085,16.02085,0,0,0,16-16V48A16.02085,16.02085,0,0,0,208,32ZM139.99219,175.99219a8,8,0,0,1-16,0V94.95313l-11.54688,7.69531a7.99982,7.99982,0,1,1-8.875-13.3125l23.98438-15.99219A7.99941,7.99941,0,0,1,139.99219,80Z"
+        d="M208,32H48A16.02085,16.02085,0,0,0,32,48V208a16.02085,16.02085,0,0,0,16,16H208a16.02085,16.02085,0,0,0,16-16V48A16.02085,16.02085,0,0,0,208,32ZM139.99219,175.99219a8,8,0,0,1-16,0V98.95313l-11.54688,7.69531a7.99982,7.99982,0,1,1-8.875-13.3125l23.98438-15.99219A7.99941,7.99941,0,0,1,139.99219,84Z"
       />
     </g>
     <g v-else-if="weight === 'light'">
       <polyline
-        points="108.009 95.992 131.991 80 131.991 175.994"
+        points="108 99.993 132 84 132 176"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -83,7 +84,7 @@
     </g>
     <g v-else-if="weight === 'thin'">
       <polyline
-        points="108.009 95.992 131.991 80 131.991 175.994"
+        points="108 99.993 132 84 132 176"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -105,7 +106,7 @@
     </g>
     <g v-else-if="weight === 'regular'">
       <polyline
-        points="108.009 95.992 131.991 80 131.991 175.994"
+        points="108 99.993 132 84 132 176"
         fill="none"
         :stroke="color"
         stroke-linecap="round"

@@ -9,10 +9,11 @@
     :transform="mirrored ? 'scale(-1, 1)' : undefined"
     v-bind="$attrs"
   >
+    <slot />
     <g v-if="weight === 'bold'">
       <line
         x1="128.00098"
-        y1="120"
+        y1="124"
         x2="128.0011"
         y2="216"
         fill="none"
@@ -25,7 +26,7 @@
         x1="128.0011"
         y1="40"
         x2="128.00098"
-        y2="88"
+        y2="84"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -34,7 +35,7 @@
       />
       <line
         x1="200.00098"
-        y1="200"
+        y1="204"
         x2="200.00181"
         y2="216"
         fill="none"
@@ -47,7 +48,7 @@
         x1="200.00181"
         y1="40"
         x2="200.00098"
-        y2="168"
+        y2="164"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -56,9 +57,9 @@
       />
       <line
         x1="224.00098"
-        y1="168"
+        y1="164"
         x2="176.00098"
-        y2="168"
+        y2="164"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -67,7 +68,7 @@
       />
       <line
         x1="56.00098"
-        y1="168"
+        y1="172"
         x2="56.00039"
         y2="216"
         fill="none"
@@ -80,7 +81,7 @@
         x1="56.00039"
         y1="40"
         x2="56.00098"
-        y2="136"
+        y2="132"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -89,9 +90,9 @@
       />
       <line
         x1="32.00098"
-        y1="136"
+        y1="132"
         x2="80.00098"
-        y2="136"
+        y2="132"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -100,9 +101,9 @@
       />
       <line
         x1="152.00098"
-        y1="88"
+        y1="84"
         x2="104.00098"
-        y2="88"
+        y2="84"
         fill="none"
         :stroke="color"
         stroke-linecap="round"

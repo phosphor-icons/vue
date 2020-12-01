@@ -9,6 +9,7 @@
     :transform="mirrored ? 'scale(-1, 1)' : undefined"
     v-bind="$attrs"
   >
+    <slot />
     <g v-if="weight === 'bold'">
       <circle
         cx="128"
@@ -25,6 +26,39 @@
         y1="60.11775"
         x2="60.11775"
         y2="195.88225"
+        fill="none"
+        :stroke="color"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="24"
+      />
+      <line
+        x1="128"
+        y1="128"
+        x2="195.88224"
+        y2="195.88224"
+        fill="none"
+        :stroke="color"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="24"
+      />
+      <line
+        x1="164.00291"
+        y1="91.99705"
+        x2="221.56149"
+        y2="149.55563"
+        fill="none"
+        :stroke="color"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="24"
+      />
+      <line
+        x1="92.00294"
+        y1="163.99708"
+        x2="149.56507"
+        y2="221.55921"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -86,6 +120,50 @@
         stroke-linejoin="round"
         stroke-width="12"
       />
+      <line
+        x1="142.00291"
+        y1="113.99705"
+        x2="208.43906"
+        y2="180.4332"
+        fill="none"
+        :stroke="color"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="12"
+      />
+      <line
+        x1="114.00294"
+        y1="141.99708"
+        x2="180.44043"
+        y2="208.43457"
+        fill="none"
+        :stroke="color"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="12"
+      />
+      <line
+        x1="86.00586"
+        y1="170"
+        x2="139.33798"
+        y2="223.33212"
+        fill="none"
+        :stroke="color"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="12"
+      />
+      <line
+        x1="170.00001"
+        y1="86.00001"
+        x2="223.33246"
+        y2="139.33246"
+        fill="none"
+        :stroke="color"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="12"
+      />
     </g>
     <g v-else-if="weight === 'thin'">
       <circle
@@ -109,6 +187,50 @@
         stroke-linejoin="round"
         stroke-width="8"
       />
+      <line
+        x1="142.00291"
+        y1="113.99705"
+        x2="208.43906"
+        y2="180.4332"
+        fill="none"
+        :stroke="color"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="8"
+      />
+      <line
+        x1="114.00294"
+        y1="141.99708"
+        x2="180.44043"
+        y2="208.43457"
+        fill="none"
+        :stroke="color"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="8"
+      />
+      <line
+        x1="86.00586"
+        y1="170"
+        x2="139.33798"
+        y2="223.33212"
+        fill="none"
+        :stroke="color"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="8"
+      />
+      <line
+        x1="170.00001"
+        y1="86.00001"
+        x2="223.33246"
+        y2="139.33246"
+        fill="none"
+        :stroke="color"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="8"
+      />
     </g>
     <g v-else-if="weight === 'regular'">
       <circle
@@ -126,6 +248,50 @@
         y1="60.11775"
         x2="60.11775"
         y2="195.88225"
+        fill="none"
+        :stroke="color"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <line
+        x1="142.00291"
+        y1="113.99705"
+        x2="208.43906"
+        y2="180.4332"
+        fill="none"
+        :stroke="color"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <line
+        x1="114.00294"
+        y1="141.99708"
+        x2="180.44043"
+        y2="208.43457"
+        fill="none"
+        :stroke="color"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <line
+        x1="86.00586"
+        y1="170"
+        x2="139.33798"
+        y2="223.33212"
+        fill="none"
+        :stroke="color"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <line
+        x1="170.00001"
+        y1="86.00001"
+        x2="223.33246"
+        y2="139.33246"
         fill="none"
         :stroke="color"
         stroke-linecap="round"

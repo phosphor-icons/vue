@@ -9,9 +9,10 @@
     :transform="mirrored ? 'scale(-1, 1)' : undefined"
     v-bind="$attrs"
   >
+    <slot />
     <g v-if="weight === 'bold'">
       <polyline
-        points="123.997 24 76 159.989 172 159.989"
+        points="123.997 24 76 160 172 160"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -32,7 +33,7 @@
     </g>
     <g v-else-if="weight === 'duotone'">
       <polyline
-        points="123.997 24 76 159.989 172 159.989"
+        points="123.997 24 76 160 172 160"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -41,9 +42,9 @@
       />
       <line
         x1="172"
-        y1="95.98859"
+        y1="96"
         x2="172"
-        y2="223.98844"
+        y2="224"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -53,12 +54,12 @@
     </g>
     <g v-else-if="weight === 'fill'">
       <path
-        d="M172,87.98828a8.00039,8.00039,0,0,0-8,8v56H87.30762L131.541,26.66211a8,8,0,0,0-15.0879-5.3252L68.45605,157.32617A7.99994,7.99994,0,0,0,76,167.98828h88v56a8,8,0,1,0,16,0v-128A8.00039,8.00039,0,0,0,172,87.98828Z"
+        d="M180,96V224a8,8,0,0,1-16,0V168H76a8.00033,8.00033,0,0,1-7.54395-10.66211l47.99707-136a7.99988,7.99988,0,0,1,15.0879,5.32422L87.30664,152H164V96a8,8,0,0,1,16,0Z"
       />
     </g>
     <g v-else-if="weight === 'light'">
       <polyline
-        points="123.997 24 76 159.989 172 159.989"
+        points="123.997 24 76 160 172 160"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -67,9 +68,9 @@
       />
       <line
         x1="172"
-        y1="95.98859"
+        y1="96"
         x2="172"
-        y2="223.98844"
+        y2="224"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -79,7 +80,7 @@
     </g>
     <g v-else-if="weight === 'thin'">
       <polyline
-        points="123.997 24 76 159.989 172 159.989"
+        points="123.997 24 76 160 172 160"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -88,9 +89,9 @@
       />
       <line
         x1="172"
-        y1="95.98859"
+        y1="96"
         x2="172"
-        y2="223.98844"
+        y2="224"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -100,7 +101,7 @@
     </g>
     <g v-else-if="weight === 'regular'">
       <polyline
-        points="123.997 24 76 159.989 172 159.989"
+        points="123.997 24 76 160 172 160"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -109,9 +110,9 @@
       />
       <line
         x1="172"
-        y1="95.98859"
+        y1="96"
         x2="172"
-        y2="223.98844"
+        y2="224"
         fill="none"
         :stroke="color"
         stroke-linecap="round"

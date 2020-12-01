@@ -9,6 +9,7 @@
     :transform="mirrored ? 'scale(-1, 1)' : undefined"
     v-bind="$attrs"
   >
+    <slot />
     <g v-if="weight === 'bold'">
       <path
         d="M39.99951,106.66667V48a8,8,0,0,1,8-8h160a8,8,0,0,1,8,8v58.66667c0,84.01533-71.306,111.85016-85.5438,116.57058a7.54755,7.54755,0,0,1-4.9124,0C111.30553,218.51683,39.99951,190.682,39.99951,106.66667Z"
@@ -20,16 +21,16 @@
       />
       <line
         x1="127.99951"
-        y1="88"
+        y1="84"
         x2="127.99951"
-        y2="128"
+        y2="124"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="24"
       />
-      <circle cx="127.99951" cy="164" r="16" />
+      <circle cx="128" cy="164" r="16" />
     </g>
     <g v-else-if="weight === 'duotone'">
       <path
@@ -55,7 +56,7 @@
         stroke-linejoin="round"
         stroke-width="16"
       />
-      <circle cx="127.99951" cy="164" r="12" />
+      <circle cx="128" cy="164" r="12" />
     </g>
     <g v-else-if="weight === 'fill'">
       <path
@@ -82,7 +83,7 @@
         stroke-linejoin="round"
         stroke-width="12"
       />
-      <circle cx="127.99951" cy="164" r="9" />
+      <circle cx="128" cy="164" r="10" />
     </g>
     <g v-else-if="weight === 'thin'">
       <path
@@ -104,7 +105,7 @@
         stroke-linejoin="round"
         stroke-width="8"
       />
-      <circle cx="127.99951" cy="164" r="6" />
+      <circle cx="128" cy="164" r="8" />
     </g>
     <g v-else-if="weight === 'regular'">
       <path

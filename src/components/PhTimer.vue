@@ -9,10 +9,11 @@
     :transform="mirrored ? 'scale(-1, 1)' : undefined"
     v-bind="$attrs"
   >
+    <slot />
     <g v-if="weight === 'bold'">
       <circle
         cx="128"
-        cy="128"
+        cy="140"
         r="88"
         fill="none"
         :stroke="color"
@@ -22,9 +23,9 @@
       />
       <line
         x1="128"
-        y1="128"
-        x2="167.59798"
-        y2="88.40202"
+        y1="140"
+        x2="161.94113"
+        y2="106.05887"
         fill="none"
         :stroke="color"
         stroke-linecap="round"

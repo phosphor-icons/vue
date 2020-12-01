@@ -9,8 +9,9 @@
     :transform="mirrored ? 'scale(-1, 1)' : undefined"
     v-bind="$attrs"
   >
+    <slot />
     <g v-if="weight === 'bold'">
-      <circle cx="127.99219" cy="200.00293" r="16" />
+      <circle cx="128" cy="200" r="16" />
     </g>
     <g v-else-if="weight === 'duotone'">
       <path
@@ -28,13 +29,13 @@
       />
     </g>
     <g v-else-if="weight === 'light'">
-      <circle cx="127.99219" cy="200.00293" r="9" />
+      <circle cx="128" cy="200" r="10" />
     </g>
     <g v-else-if="weight === 'thin'">
-      <circle cx="127.99219" cy="200.00293" r="6" />
+      <circle cx="128" cy="200" r="8" />
     </g>
     <g v-else-if="weight === 'regular'">
-      <circle cx="127.99219" cy="200.00293" r="12" />
+      <circle cx="128" cy="200" r="12" />
     </g>
   </svg>
 </template>

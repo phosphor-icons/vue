@@ -9,20 +9,13 @@
     :transform="mirrored ? 'scale(-1, 1)' : undefined"
     v-bind="$attrs"
   >
+    <slot />
     <g v-if="weight === 'bold'">
       <line
         x1="128"
         y1="192"
         x2="128"
         y2="240"
-        fill="none"
-        :stroke="color"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="24"
-      />
-      <path
-        d="M191.83532,150.32672,180.72054,39.20379A8,8,0,0,0,172.76026,32H83.974"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -42,6 +35,14 @@
         y1="24"
         x2="222.5"
         y2="232"
+        fill="none"
+        :stroke="color"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="24"
+      />
+      <path
+        d="M190.53671,137.3435l-9.81617-98.13971A8,8,0,0,0,172.76026,32H94.81593"
         fill="none"
         :stroke="color"
         stroke-linecap="round"

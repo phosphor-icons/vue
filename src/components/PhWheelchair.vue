@@ -9,6 +9,7 @@
     :transform="mirrored ? 'scale(-1, 1)' : undefined"
     v-bind="$attrs"
   >
+    <slot />
     <g v-if="weight === 'bold'">
       <circle
         cx="95.88745"
@@ -21,7 +22,7 @@
         stroke-width="24"
       />
       <polyline
-        points="95.887 60 95.887 132 183.887 132 215.887 196 239.887 188"
+        points="95.887 60 95.887 136 183.887 136 215.887 200 239.887 192"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -29,7 +30,7 @@
         stroke-width="24"
       />
       <path
-        d="M167.76447,164.00014A64.001,64.001,0,1,1,103.88745,96h56"
+        d="M163.20563,184.07319A64.00734,64.00734,0,1,1,103.88745,96h56"
         fill="none"
         :stroke="color"
         stroke-linecap="round"

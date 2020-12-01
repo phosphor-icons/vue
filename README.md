@@ -28,9 +28,9 @@ npm install --save phosphor-vue
 ```html
 <template>
   <div>
-    <PhHorse />
-    <PhHeart :size="32" color="hotpink" weight="fill" />
-    <PhCube />
+    <ph-horse />
+    <ph-heart :size="32" color="hotpink" weight="fill" />
+    <ph-cube />
   </div>
 </template>
 
@@ -63,9 +63,9 @@ Phosphor takes advantage of Vue's `provide`/`inject` options to make applying a 
 ```html
 <template>
   <div>
-    <PhHorse /> {/* I'm lime-green, 32px, and bold! */} 
-    <PhHeart /> {/* Me too! */} 
-    <PhCube />  {/* Me three :) */}
+    <ph-horse /> {/* I'm lime-green, 32px, and bold! */} 
+    <ph-heart /> {/* Me too! */} 
+    <ph-cube />  {/* Me three :) */}
   </div>
 </template>
 
@@ -93,6 +93,38 @@ You may create multiple providers for styling icons differently in separate regi
 **Note:** The **color**, **size**, **weight**, and **mirrored** properties are all _optional_ props when creating a context, but default to `"currentColor"`, `"1em"`, `"regular"` and `false`. Also be aware that when using this API, per Vue:
 
 > The `provide` and `inject` bindings are NOT reactive. This is intentional. However, if you pass down an observed object, properties on that object do remain reactive.
+
+### Slots
+
+<img src="/meta/cube-rotate.svg" width="128" align="right" />
+
+Components have a `<slot>` for arbitrary SVG elements, so long as they are valid children of the `<svg>` element. This can be used to modify an icon with background layers or shapes, filters, animations and more. The slotted children will be placed *below* the normal icon contents.
+
+The following will cause the Cube icon to rotate and pulse:
+
+```html
+<template>
+  <ph-cube color="darkorchid" weight="duotone">
+    <animate
+      attributeName="opacity"
+      values="0;1;0"
+      dur="4s"
+      repeatCount="indefinite"
+    />
+    <animateTransform
+      attributeName="transform"
+      attributeType="XML"
+      type="rotate"
+      dur="5s"
+      from="0 0 0"
+      to="360 0 0"
+      repeatCount="indefinite"
+    />
+  </ph-cube>
+</template>
+```
+
+**Note:** The coordinate space of slotted elements is relative to the contents of the icon `viewBox`, which is a 256x256 square. Only [valid SVG elements](https://developer.mozilla.org/en-US/docs/Web/SVG/Element#SVG_elements_by_category) will be rendered.
 
 ## Related Projects
 

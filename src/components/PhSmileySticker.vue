@@ -9,9 +9,8 @@
     :transform="mirrored ? 'scale(-1, 1)' : undefined"
     v-bind="$attrs"
   >
+    <slot />
     <g v-if="weight === 'bold'">
-      <circle cx="92" cy="108" r="16" />
-      <circle cx="164" cy="108" r="16" />
       <path
         d="M169.57812,151.99627a48.02731,48.02731,0,0,1-83.15624.00073"
         fill="none"
@@ -28,14 +27,14 @@
         stroke-linejoin="round"
         stroke-width="24"
       />
+      <circle cx="92" cy="108" r="16" />
+      <circle cx="164" cy="108" r="16" />
     </g>
     <g v-else-if="weight === 'duotone'">
       <path
         d="M156.21732,219.78606a95.898,95.898,0,1,1,63.57-63.573Z"
         opacity="0.2"
       />
-      <circle cx="92" cy="108" r="12" />
-      <circle cx="164" cy="108" r="12" />
       <path
         d="M169.57812,151.99627a48.02731,48.02731,0,0,1-83.15624.00073"
         fill="none"
@@ -52,6 +51,8 @@
         stroke-linejoin="round"
         stroke-width="16"
       />
+      <circle cx="92" cy="108" r="12" />
+      <circle cx="164" cy="108" r="12" />
     </g>
     <g v-else-if="weight === 'fill'">
       <path
@@ -59,8 +60,6 @@
       />
     </g>
     <g v-else-if="weight === 'light'">
-      <circle cx="92" cy="108" r="9" />
-      <circle cx="164" cy="108" r="9" />
       <path
         d="M169.57812,151.99627a48.02731,48.02731,0,0,1-83.15624.00073"
         fill="none"
@@ -77,10 +76,10 @@
         stroke-linejoin="round"
         stroke-width="12"
       />
+      <circle cx="92" cy="108" r="10" />
+      <circle cx="164" cy="108" r="10" />
     </g>
     <g v-else-if="weight === 'thin'">
-      <circle cx="92" cy="108" r="6" />
-      <circle cx="164" cy="108" r="6" />
       <path
         d="M169.57812,151.99627a48.02731,48.02731,0,0,1-83.15624.00073"
         fill="none"
@@ -97,10 +96,10 @@
         stroke-linejoin="round"
         stroke-width="8"
       />
+      <circle cx="92" cy="108" r="8" />
+      <circle cx="164" cy="108" r="8" />
     </g>
     <g v-else-if="weight === 'regular'">
-      <circle cx="92" cy="108" r="12" />
-      <circle cx="164" cy="108" r="12" />
       <path
         d="M169.57812,151.99627a48.02731,48.02731,0,0,1-83.15624.00073"
         fill="none"
@@ -117,6 +116,8 @@
         stroke-linejoin="round"
         stroke-width="16"
       />
+      <circle cx="92" cy="108" r="12" />
+      <circle cx="164" cy="108" r="12" />
     </g>
   </svg>
 </template>

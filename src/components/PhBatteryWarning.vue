@@ -9,23 +9,25 @@
     :transform="mirrored ? 'scale(-1, 1)' : undefined"
     v-bind="$attrs"
   >
+    <slot />
     <g v-if="weight === 'bold'">
-      <line
-        x1="116"
-        y1="88"
-        x2="116"
-        y2="128"
-        fill="none"
+      <rect
+        x="46"
+        y="38.00452"
+        width="144"
+        height="180"
+        rx="16"
+        transform="translate(246.00452 10.00452) rotate(90)"
+        stroke-width="24"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        stroke-width="24"
+        fill="none"
       />
-      <circle cx="116" cy="164" r="16" />
       <line
-        x1="240"
+        x1="244"
         y1="96.00452"
-        x2="240"
+        x2="244"
         y2="160.00452"
         fill="none"
         :stroke="color"
@@ -33,28 +35,27 @@
         stroke-linejoin="round"
         stroke-width="24"
       />
-      <rect
-        x="44"
-        y="36.00452"
-        width="144"
-        height="184"
-        rx="16"
-        transform="translate(244.00452 12.00452) rotate(90)"
-        stroke-width="24"
+      <line
+        x1="116"
+        y1="92"
+        x2="116"
+        y2="120"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="24"
       />
+      <circle cx="116" cy="160" r="16" />
     </g>
     <g v-else-if="weight === 'duotone'">
       <rect
         x="44"
-        y="36.00452"
+        y="36"
         width="144"
         height="184"
         rx="16"
-        transform="translate(244.00452 12.00452) rotate(90)"
+        transform="translate(244 12) rotate(90)"
         opacity="0.2"
       />
       <line
@@ -68,12 +69,11 @@
         stroke-linejoin="round"
         stroke-width="16"
       />
-      <circle cx="116" cy="164" r="12" />
       <line
         x1="240"
-        y1="96.00452"
+        y1="96"
         x2="240"
-        y2="160.00452"
+        y2="160"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -82,27 +82,23 @@
       />
       <rect
         x="44"
-        y="36.00452"
+        y="36"
         width="144"
         height="184"
         rx="16"
-        transform="translate(244.00452 12.00452) rotate(90)"
+        transform="translate(244 12) rotate(90)"
         stroke-width="16"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         fill="none"
       />
+      <circle cx="116" cy="164" r="12" />
     </g>
     <g v-else-if="weight === 'fill'">
-      <g>
-        <path
-          d="M240,88.00452a7.99977,7.99977,0,0,0-8,8v64a8,8,0,0,0,16,0v-64A7.99977,7.99977,0,0,0,240,88.00452Z"
-        />
-        <path
-          d="M192,48.00452H40a24.0275,24.0275,0,0,0-24,24v112a24.0275,24.0275,0,0,0,24,24H192a24.0275,24.0275,0,0,0,24-24v-112A24.0275,24.0275,0,0,0,192,48.00452Zm-84,39.9956a8,8,0,1,1,16,0v40a8,8,0,0,1-16,0Zm8,88a12,12,0,1,1,12-12A12,12,0,0,1,116,176.00012Z"
-        />
-      </g>
+      <path
+        d="M248,96.00012v64a8,8,0,1,1-16,0v-64a8,8,0,1,1,16,0Zm-32-24v112a24.0275,24.0275,0,0,1-24,24H40a24.0275,24.0275,0,0,1-24-24v-112a24.0275,24.0275,0,0,1,24-24H192A24.0275,24.0275,0,0,1,216,72.00012Zm-108,56a8,8,0,0,0,16,0v-40a8,8,0,1,0-16,0Zm20,36a12,12,0,1,0-12,12A12.01375,12.01375,0,0,0,128,164.00012Z"
+      />
     </g>
     <g v-else-if="weight === 'light'">
       <line
@@ -116,12 +112,11 @@
         stroke-linejoin="round"
         stroke-width="12"
       />
-      <circle cx="116" cy="164.00452" r="9" />
       <line
         x1="240"
-        y1="96.00452"
+        y1="96"
         x2="240"
-        y2="160.00452"
+        y2="160"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -130,17 +125,18 @@
       />
       <rect
         x="44"
-        y="36.00452"
+        y="36"
         width="144"
         height="184"
         rx="16"
-        transform="translate(244.00452 12.00452) rotate(90)"
+        transform="translate(244 12) rotate(90)"
         stroke-width="12"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         fill="none"
       />
+      <circle cx="116" cy="164" r="10" />
     </g>
     <g v-else-if="weight === 'thin'">
       <line
@@ -154,12 +150,11 @@
         stroke-linejoin="round"
         stroke-width="8"
       />
-      <circle cx="116" cy="164" r="6" />
       <line
         x1="240"
-        y1="96.00452"
+        y1="96"
         x2="240"
-        y2="160.00452"
+        y2="160"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -168,17 +163,18 @@
       />
       <rect
         x="44"
-        y="36.00452"
+        y="36"
         width="144"
         height="184"
         rx="16"
-        transform="translate(244.00452 12.00452) rotate(90)"
+        transform="translate(244 12) rotate(90)"
         stroke-width="8"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         fill="none"
       />
+      <circle cx="116" cy="164" r="8" />
     </g>
     <g v-else-if="weight === 'regular'">
       <line
@@ -192,12 +188,11 @@
         stroke-linejoin="round"
         stroke-width="16"
       />
-      <circle cx="116" cy="164" r="12" />
       <line
         x1="240"
-        y1="96.00452"
+        y1="96"
         x2="240"
-        y2="160.00452"
+        y2="160"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -206,17 +201,18 @@
       />
       <rect
         x="44"
-        y="36.00452"
+        y="36"
         width="144"
         height="184"
         rx="16"
-        transform="translate(244.00452 12.00452) rotate(90)"
+        transform="translate(244 12) rotate(90)"
         stroke-width="16"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         fill="none"
       />
+      <circle cx="116" cy="164" r="12" />
     </g>
   </svg>
 </template>

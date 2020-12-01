@@ -9,6 +9,7 @@
     :transform="mirrored ? 'scale(-1, 1)' : undefined"
     v-bind="$attrs"
   >
+    <slot />
     <g v-if="weight === 'bold'">
       <polygon
         points="120 128.003 184 176.003 120 224.003 120 128.003"
@@ -63,7 +64,7 @@
         stroke-width="24"
       />
       <polyline
-        points="152 104.002 120 128.003 120 32.003 151.999 56.002"
+        points="144.406 109.698 120 128.003 120 32.003 144.405 50.307"
         fill="none"
         :stroke="color"
         stroke-linecap="round"

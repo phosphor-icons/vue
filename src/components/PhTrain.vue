@@ -9,6 +9,7 @@
     :transform="mirrored ? 'scale(-1, 1)' : undefined"
     v-bind="$attrs"
   >
+    <slot />
     <g v-if="weight === 'bold'">
       <line
         x1="44"
@@ -77,8 +78,8 @@
         stroke-linejoin="round"
         stroke-width="24"
       />
-      <circle cx="84" cy="172" r="18" />
-      <circle cx="172" cy="172" r="18" />
+      <circle cx="88" cy="168" r="16" />
+      <circle cx="168" cy="168" r="16" />
     </g>
     <g v-else-if="weight === 'duotone'">
       <rect x="44" y="72" width="168" height="56" opacity="0.2" />
@@ -225,8 +226,8 @@
         stroke-linejoin="round"
         stroke-width="12"
       />
-      <circle cx="84" cy="172" r="9" opacity="0.8" />
-      <circle cx="172" cy="172" r="9" />
+      <circle cx="172" cy="172" r="10" />
+      <circle cx="84" cy="172" r="10" />
     </g>
     <g v-else-if="weight === 'thin'">
       <line
@@ -296,8 +297,8 @@
         stroke-linejoin="round"
         stroke-width="8"
       />
-      <circle cx="84" cy="172" r="6" />
-      <circle cx="172" cy="172" r="6" />
+      <circle cx="84" cy="172" r="8" />
+      <circle cx="172" cy="172" r="8" />
     </g>
     <g v-else-if="weight === 'regular'">
       <line

@@ -9,6 +9,7 @@
     :transform="mirrored ? 'scale(-1, 1)' : undefined"
     v-bind="$attrs"
   >
+    <slot />
     <g v-if="weight === 'bold'">
       <polygon
         points="128 160 96 160 96 128 192 32 224 64 128 160"
@@ -19,10 +20,10 @@
         stroke-width="24"
       />
       <line
-        x1="168"
-        y1="56"
-        x2="200"
-        y2="88"
+        x1="164"
+        y1="60"
+        x2="196"
+        y2="92"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -30,7 +31,7 @@
         stroke-width="24"
       />
       <path
-        d="M216,120v88a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V48a8,8,0,0,1,8-8h88"
+        d="M216,128.56836V208a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V48a8,8,0,0,1,8-8h79.43163"
         fill="none"
         :stroke="color"
         stroke-linecap="round"

@@ -9,30 +9,31 @@
     :transform="mirrored ? 'scale(-1, 1)' : undefined"
     v-bind="$attrs"
   >
+    <slot />
     <g v-if="weight === 'bold'">
+      <rect
+        x="46"
+        y="38"
+        width="144"
+        height="180"
+        rx="16"
+        transform="translate(246 10) rotate(90)"
+        stroke-width="24"
+        :stroke="color"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        fill="none"
+      />
       <line
-        x1="240"
+        x1="244"
         y1="96"
-        x2="240"
+        x2="244"
         y2="160"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="24"
-      />
-      <rect
-        x="44"
-        y="36"
-        width="144"
-        height="184"
-        rx="16"
-        transform="translate(244 12) rotate(90)"
-        stroke-width="24"
-        :stroke="color"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        fill="none"
       />
     </g>
     <g v-else-if="weight === 'duotone'">

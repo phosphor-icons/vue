@@ -88,6 +88,7 @@ function generateComponents() {
     :transform="mirrored ? 'scale(-1, 1)' : undefined"
     v-bind="$attrs"
   >
+    <slot />
 `;
 
     if (!checkFiles(icon)) {

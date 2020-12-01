@@ -9,9 +9,10 @@
     :transform="mirrored ? 'scale(-1, 1)' : undefined"
     v-bind="$attrs"
   >
+    <slot />
     <g v-if="weight === 'bold'">
       <polyline
-        points="128 72 128 128 184 128"
+        points="128 80 128 128 176 128"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -29,10 +30,10 @@
         stroke-width="24"
       />
       <line
-        x1="195.88225"
-        y1="26.17662"
-        x2="229.82338"
-        y2="60.11775"
+        x1="201.53911"
+        y1="20.51977"
+        x2="235.48023"
+        y2="54.46089"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -40,10 +41,10 @@
         stroke-width="24"
       />
       <line
-        x1="26.17662"
-        y1="60.11775"
-        x2="60.11775"
-        y2="26.17662"
+        x1="20.51977"
+        y1="54.46089"
+        x2="54.46089"
+        y2="20.51977"
         fill="none"
         :stroke="color"
         stroke-linecap="round"

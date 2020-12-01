@@ -9,8 +9,8 @@
     :transform="mirrored ? 'scale(-1, 1)' : undefined"
     v-bind="$attrs"
   >
+    <slot />
     <g v-if="weight === 'bold'">
-      <circle cx="128" cy="60" r="16" />
       <rect
         x="24"
         y="64"
@@ -24,6 +24,7 @@
         stroke-linejoin="round"
         fill="none"
       />
+      <circle cx="128" cy="68" r="16" />
     </g>
     <g v-else-if="weight === 'duotone'">
       <rect
@@ -35,7 +36,6 @@
         transform="translate(256) rotate(90)"
         opacity="0.2"
       />
-      <circle cx="128" cy="60" r="12" />
       <rect
         x="24"
         y="64"
@@ -49,6 +49,7 @@
         stroke-linejoin="round"
         fill="none"
       />
+      <circle cx="128" cy="60" r="12" />
     </g>
     <g v-else-if="weight === 'fill'">
       <path
@@ -56,7 +57,6 @@
       />
     </g>
     <g v-else-if="weight === 'light'">
-      <circle cx="128" cy="60" r="9" />
       <rect
         x="24"
         y="64"
@@ -70,9 +70,9 @@
         stroke-linejoin="round"
         fill="none"
       />
+      <circle cx="128" cy="60" r="10" />
     </g>
     <g v-else-if="weight === 'thin'">
-      <circle cx="128" cy="60" r="6" />
       <rect
         x="24"
         y="64"
@@ -86,9 +86,9 @@
         stroke-linejoin="round"
         fill="none"
       />
+      <circle cx="128" cy="60" r="8" />
     </g>
     <g v-else-if="weight === 'regular'">
-      <circle cx="128" cy="60" r="12" />
       <rect
         x="24"
         y="64"
@@ -102,6 +102,7 @@
         stroke-linejoin="round"
         fill="none"
       />
+      <circle cx="128" cy="60" r="12" />
     </g>
   </svg>
 </template>

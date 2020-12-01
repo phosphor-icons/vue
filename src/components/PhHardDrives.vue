@@ -9,24 +9,13 @@
     :transform="mirrored ? 'scale(-1, 1)' : undefined"
     v-bind="$attrs"
   >
+    <slot />
     <g v-if="weight === 'bold'">
-      <rect
-        x="40"
-        y="144"
-        width="176"
-        height="64"
-        rx="8"
-        stroke-width="24"
-        :stroke="color"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        fill="none"
-      />
       <rect
         x="40"
         y="48"
         width="176"
-        height="64"
+        height="160"
         rx="8"
         stroke-width="24"
         :stroke="color"
@@ -34,8 +23,19 @@
         stroke-linejoin="round"
         fill="none"
       />
-      <circle cx="180.00054" cy="80" r="16" />
-      <circle cx="180.00054" cy="176" r="16" />
+      <line
+        x1="216"
+        y1="128"
+        x2="40"
+        y2="128"
+        fill="none"
+        :stroke="color"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="24"
+      />
+      <circle cx="176" cy="88" r="16" />
+      <circle cx="176" cy="168" r="16" />
     </g>
     <g v-else-if="weight === 'duotone'">
       <rect x="40" y="144" width="176" height="64" rx="8" opacity="0.2" />
@@ -64,8 +64,8 @@
         stroke-linejoin="round"
         fill="none"
       />
-      <circle cx="180.00054" cy="80" r="12" />
-      <circle cx="180.00054" cy="176" r="12" />
+      <circle cx="180" cy="80" r="12" />
+      <circle cx="180" cy="176" r="12" />
     </g>
     <g v-else-if="weight === 'fill'">
       <g>
@@ -102,8 +102,8 @@
         stroke-linejoin="round"
         fill="none"
       />
-      <circle cx="180.00054" cy="80" r="9" />
-      <circle cx="180.00054" cy="176" r="9" />
+      <circle cx="180" cy="80" r="10" />
+      <circle cx="180" cy="176" r="10" />
     </g>
     <g v-else-if="weight === 'thin'">
       <rect
@@ -130,8 +130,8 @@
         stroke-linejoin="round"
         fill="none"
       />
-      <circle cx="180.00054" cy="80" r="6" />
-      <circle cx="180.00054" cy="176" r="6" />
+      <circle cx="180" cy="176" r="8" />
+      <circle cx="180" cy="80" r="8" />
     </g>
     <g v-else-if="weight === 'regular'">
       <rect
@@ -158,8 +158,8 @@
         stroke-linejoin="round"
         fill="none"
       />
-      <circle cx="180.00054" cy="80" r="12" />
-      <circle cx="180.00054" cy="176" r="12" />
+      <circle cx="180" cy="80" r="12" />
+      <circle cx="180" cy="176" r="12" />
     </g>
   </svg>
 </template>

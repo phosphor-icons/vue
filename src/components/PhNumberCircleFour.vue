@@ -9,6 +9,7 @@
     :transform="mirrored ? 'scale(-1, 1)' : undefined"
     v-bind="$attrs"
   >
+    <slot />
     <g v-if="weight === 'bold'">
       <circle
         cx="128"
@@ -21,7 +22,7 @@
         stroke-width="24"
       />
       <polyline
-        points="123.998 76 100 143.994 148 143.994"
+        points="123.998 76 100 144 148 144"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -30,9 +31,9 @@
       />
       <line
         x1="148"
-        y1="111.99435"
+        y1="112"
         x2="148"
-        y2="175.99435"
+        y2="176"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -52,7 +53,7 @@
         stroke-width="16"
       />
       <polyline
-        points="123.998 76 100 143.994 148 143.994"
+        points="123.998 76 100 144 148 144"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -61,9 +62,9 @@
       />
       <line
         x1="148"
-        y1="111.99435"
+        y1="112"
         x2="148"
-        y2="175.99435"
+        y2="176"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -73,7 +74,7 @@
     </g>
     <g v-else-if="weight === 'fill'">
       <path
-        d="M128,24A104,104,0,1,0,232,128,104.12041,104.12041,0,0,0,128,24Zm28,151.99219a8,8,0,0,1-16,0v-24H100a8.006,8.006,0,0,1-7.54687-10.66406l24-67.99219a8.00328,8.00328,0,0,1,15.09375,5.32812l-20.24219,57.32813H140v-24a8,8,0,0,1,16,0Z"
+        d="M128,24A104,104,0,1,0,232,128,104.11791,104.11791,0,0,0,128,24Zm28,152a8,8,0,0,1-16,0V152H100a7.99995,7.99995,0,0,1-7.54395-10.66211l23.998-68A7.99987,7.99987,0,1,1,131.542,78.66211L111.30664,136H140V112a8,8,0,0,1,16,0Z"
       />
     </g>
     <g v-else-if="weight === 'light'">
@@ -88,7 +89,7 @@
         stroke-width="12"
       />
       <polyline
-        points="123.998 76 100 143.994 148 143.994"
+        points="123.998 76 100 144 148 144"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -97,9 +98,9 @@
       />
       <line
         x1="148"
-        y1="111.99435"
+        y1="112"
         x2="148"
-        y2="175.99435"
+        y2="176"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -119,7 +120,7 @@
         stroke-width="8"
       />
       <polyline
-        points="123.998 76 100 143.994 148 143.994"
+        points="123.998 76 100 144 148 144"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -128,9 +129,9 @@
       />
       <line
         x1="148"
-        y1="111.99435"
+        y1="112"
         x2="148"
-        y2="175.99435"
+        y2="176"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -149,7 +150,7 @@
         stroke-width="16"
       />
       <polyline
-        points="123.998 76 100 143.994 148 143.994"
+        points="123.998 76 100 144 148 144"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -158,9 +159,9 @@
       />
       <line
         x1="148"
-        y1="111.99435"
+        y1="112"
         x2="148"
-        y2="175.99435"
+        y2="176"
         fill="none"
         :stroke="color"
         stroke-linecap="round"

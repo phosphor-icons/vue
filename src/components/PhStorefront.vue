@@ -9,6 +9,7 @@
     :transform="mirrored ? 'scale(-1, 1)' : undefined"
     v-bind="$attrs"
   >
+    <slot />
     <g v-if="weight === 'bold'">
       <path
         d="M48,139.58816V208a8,8,0,0,0,8,8H200a8,8,0,0,0,8-8V139.58972"
