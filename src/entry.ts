@@ -1,6 +1,6 @@
 import { App } from "vue";
 import * as components from "@/lib/index";
-import { PhosphorVuePlugin } from './lib/types';
+import { PhosphorVuePlugin } from "./lib/types";
 
 export const PhosphorVue: PhosphorVuePlugin = {
   install(app: App) {
