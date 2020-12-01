@@ -3,20 +3,20 @@
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 256 256"
-    :width="displaySize"
-    :height="displaySize"
-    :fill="displayColor"
-    :transform="displayMirrored"
+    :width="size"
+    :height="size"
+    :fill="color"
+    :transform="mirrored ? 'scale(-1, 1)' : undefined"
     v-bind="$attrs"
-    v-on="$listeners"
   >
-    <g v-if="displayWeight === 'bold'">
+    <slot />
+    <g v-if="weight === 'bold'">
       <circle
         cx="96"
         cy="96"
         r="72"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="24"
@@ -26,24 +26,24 @@
         cy="160"
         r="72"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="24"
       />
       <line
-        x1="110.51671"
-        y1="110.51671"
-        x2="145.48427"
-        y2="145.48427"
+        x1="109.08829"
+        y1="109.08829"
+        x2="146.9117"
+        y2="146.9117"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="24"
       />
     </g>
-    <g v-else-if="displayWeight === 'duotone'">
+    <g v-else-if="weight === 'duotone'">
       <path
         d="M88,160a70.51259,70.51259,0,0,0,.73242,7.26758A70.51259,70.51259,0,0,0,96,168a71.99981,71.99981,0,0,0,72-72,70.51259,70.51259,0,0,0-.73242-7.26758A70.51259,70.51259,0,0,0,160,88,71.99981,71.99981,0,0,0,88,160Z"
         opacity="0.2"
@@ -53,7 +53,7 @@
         cy="96"
         r="72"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="16"
@@ -63,24 +63,24 @@
         cy="160"
         r="72"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="16"
       />
     </g>
-    <g v-else-if="displayWeight === 'fill'">
+    <g v-else-if="weight === 'fill'">
       <path
         d="M174.63477,81.36523a79.99168,79.99168,0,1,0-93.26954,93.26954,79.99168,79.99168,0,1,0,93.26954-93.26954ZM32,96A64.00385,64.00385,0,0,1,157.98779,80.05127,80.06522,80.06522,0,0,0,80.051,157.98779,64.1144,64.1144,0,0,1,32,96ZM160,224a64.11421,64.11421,0,0,1-61.98779-48.05127A80.06522,80.06522,0,0,0,175.949,98.01221,64.00389,64.00389,0,0,1,160,224Z"
       />
     </g>
-    <g v-else-if="displayWeight === 'light'">
+    <g v-else-if="weight === 'light'">
       <circle
         cx="96"
         cy="96"
         r="72"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="12"
@@ -90,7 +90,7 @@
         cy="160"
         r="72"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="12"
@@ -101,7 +101,7 @@
         x2="157.48457"
         y2="133.48457"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="12"
@@ -112,19 +112,19 @@
         x2="133.48323"
         y2="157.48323"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="12"
       />
     </g>
-    <g v-else-if="displayWeight === 'thin'">
+    <g v-else-if="weight === 'thin'">
       <circle
         cx="96"
         cy="96"
         r="72"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="8"
@@ -134,7 +134,7 @@
         cy="160"
         r="72"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="8"
@@ -145,7 +145,7 @@
         x2="157.48457"
         y2="133.48457"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="8"
@@ -156,19 +156,19 @@
         x2="133.48323"
         y2="157.48323"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="8"
       />
     </g>
-    <g v-else-if="displayWeight === 'regular'">
+    <g v-else-if="weight === 'regular'">
       <circle
         cx="96"
         cy="96"
         r="72"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="16"
@@ -178,7 +178,7 @@
         cy="160"
         r="72"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="16"
@@ -189,7 +189,7 @@
         x2="157.48457"
         y2="133.48457"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="16"
@@ -200,7 +200,7 @@
         x2="133.48323"
         y2="157.48323"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="16"
@@ -210,35 +210,15 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
-import {
-  IconComputed,
-  IconProps,
-  PropValidator,
-  IconContext,
-  ContextGetter
-} from "@/lib/types";
-export default Vue.extend<{}, {}, IconComputed, IconProps>({
-  name: "PhIntersect",
+import { defineComponent } from "vue";
+import { SetupIconProps, PropValidator, PhosphorIcon } from "@/lib/types";
+import useDefaultPropsFromContext from "@/lib/useDefaultPropsFromContext";
+
+const component: PhosphorIcon = defineComponent({
   props: PropValidator,
-  inject: ContextGetter,
-  computed: {
-    displayWeight() {
-      const { weight, contextWeight } = this as IconProps & IconContext;
-      return weight ?? contextWeight;
-    },
-    displaySize() {
-      const { size, contextSize } = this as IconProps & IconContext;
-      return size ?? contextSize;
-    },
-    displayColor() {
-      const { color, contextColor } = this as IconProps & IconContext;
-      return color ?? contextColor;
-    },
-    displayMirrored() {
-      const { mirrored, contextMirrored } = this as IconProps & IconContext;
-      return mirrored ?? contextMirrored ? "scale(-1, 1)" : undefined;
-    }
-  }
+  setup(props: SetupIconProps) {
+    return { ...useDefaultPropsFromContext(props) };
+  },
 });
+export default component;
 </script>

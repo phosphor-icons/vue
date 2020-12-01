@@ -3,18 +3,18 @@
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 256 256"
-    :width="displaySize"
-    :height="displaySize"
-    :fill="displayColor"
-    :transform="displayMirrored"
+    :width="size"
+    :height="size"
+    :fill="color"
+    :transform="mirrored ? 'scale(-1, 1)' : undefined"
     v-bind="$attrs"
-    v-on="$listeners"
   >
-    <g v-if="displayWeight === 'bold'">
+    <slot />
+    <g v-if="weight === 'bold'">
       <polyline
-        points="123.998 76 100 143.994 148 143.994"
+        points="123.998 76 100 144 148 144"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="24"
@@ -25,7 +25,7 @@
         x2="148"
         y2="175.99435"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="24"
@@ -37,29 +37,29 @@
         height="176"
         rx="8"
         stroke-width="24"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         fill="none"
       />
     </g>
-    <g v-else-if="displayWeight === 'duotone'">
+    <g v-else-if="weight === 'duotone'">
       <rect x="40" y="40" width="176" height="176" rx="8" opacity="0.2" />
       <polyline
-        points="123.998 76 100 143.994 148 143.994"
+        points="123.998 76 100 144 148 144"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="16"
       />
       <line
         x1="148"
-        y1="111.99435"
+        y1="112"
         x2="148"
-        y2="175.99435"
+        y2="176"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="16"
@@ -71,33 +71,33 @@
         height="176"
         rx="8"
         stroke-width="16"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         fill="none"
       />
     </g>
-    <g v-else-if="displayWeight === 'fill'">
+    <g v-else-if="weight === 'fill'">
       <path
-        d="M208,32H48A16.02085,16.02085,0,0,0,32,48V208a16.02085,16.02085,0,0,0,16,16H208a16.02085,16.02085,0,0,0,16-16V48A16.02085,16.02085,0,0,0,208,32ZM156,175.99219a8,8,0,0,1-16,0v-24H100a8.006,8.006,0,0,1-7.54687-10.66406l24-67.99219a8.00328,8.00328,0,0,1,15.09375,5.32812l-20.24219,57.32813H140v-24a8,8,0,0,1,16,0Z"
+        d="M208,32H48A16.01833,16.01833,0,0,0,32,48V208a16.01833,16.01833,0,0,0,16,16H208a16.01833,16.01833,0,0,0,16-16V48A16.01833,16.01833,0,0,0,208,32ZM156,176a8,8,0,0,1-16,0V152H100a8.00052,8.00052,0,0,1-7.54395-10.6626l23.998-68A8,8,0,0,1,131.542,78.6626L111.30664,136H140V112a8,8,0,0,1,16,0Z"
       />
     </g>
-    <g v-else-if="displayWeight === 'light'">
+    <g v-else-if="weight === 'light'">
       <polyline
-        points="123.998 76 100 143.994 148 143.994"
+        points="123.998 76 100 144 148 144"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="12"
       />
       <line
         x1="148"
-        y1="111.99435"
+        y1="112"
         x2="148"
-        y2="175.99435"
+        y2="176"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="12"
@@ -109,28 +109,28 @@
         height="176"
         rx="8"
         stroke-width="12"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         fill="none"
       />
     </g>
-    <g v-else-if="displayWeight === 'thin'">
+    <g v-else-if="weight === 'thin'">
       <polyline
-        points="123.998 76 100 143.994 148 143.994"
+        points="123.998 76 100 144 148 144"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="8"
       />
       <line
         x1="148"
-        y1="111.99435"
+        y1="112"
         x2="148"
-        y2="175.99435"
+        y2="176"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="8"
@@ -142,28 +142,28 @@
         height="176"
         rx="8"
         stroke-width="8"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         fill="none"
       />
     </g>
-    <g v-else-if="displayWeight === 'regular'">
+    <g v-else-if="weight === 'regular'">
       <polyline
-        points="123.998 76 100 143.994 148 143.994"
+        points="123.998 76 100 144 148 144"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="16"
       />
       <line
         x1="148"
-        y1="111.99435"
+        y1="112"
         x2="148"
-        y2="175.99435"
+        y2="176"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="16"
@@ -175,7 +175,7 @@
         height="176"
         rx="8"
         stroke-width="16"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         fill="none"
@@ -185,35 +185,15 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
-import {
-  IconComputed,
-  IconProps,
-  PropValidator,
-  IconContext,
-  ContextGetter
-} from "@/lib/types";
-export default Vue.extend<{}, {}, IconComputed, IconProps>({
-  name: "PhNumberSquareFour",
+import { defineComponent } from "vue";
+import { SetupIconProps, PropValidator, PhosphorIcon } from "@/lib/types";
+import useDefaultPropsFromContext from "@/lib/useDefaultPropsFromContext";
+
+const component: PhosphorIcon = defineComponent({
   props: PropValidator,
-  inject: ContextGetter,
-  computed: {
-    displayWeight() {
-      const { weight, contextWeight } = this as IconProps & IconContext;
-      return weight ?? contextWeight;
-    },
-    displaySize() {
-      const { size, contextSize } = this as IconProps & IconContext;
-      return size ?? contextSize;
-    },
-    displayColor() {
-      const { color, contextColor } = this as IconProps & IconContext;
-      return color ?? contextColor;
-    },
-    displayMirrored() {
-      const { mirrored, contextMirrored } = this as IconProps & IconContext;
-      return mirrored ?? contextMirrored ? "scale(-1, 1)" : undefined;
-    }
-  }
+  setup(props: SetupIconProps) {
+    return { ...useDefaultPropsFromContext(props) };
+  },
 });
+export default component;
 </script>

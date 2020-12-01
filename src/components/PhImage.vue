@@ -3,15 +3,14 @@
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 256 256"
-    :width="displaySize"
-    :height="displaySize"
-    :fill="displayColor"
-    :transform="displayMirrored"
+    :width="size"
+    :height="size"
+    :fill="color"
+    :transform="mirrored ? 'scale(-1, 1)' : undefined"
     v-bind="$attrs"
-    v-on="$listeners"
   >
-    <g v-if="displayWeight === 'bold'">
-      <circle cx="155.99951" cy="100" r="16" />
+    <slot />
+    <g v-if="weight === 'bold'">
       <rect
         x="32"
         y="48"
@@ -19,26 +18,26 @@
         height="160"
         rx="8"
         stroke-width="24"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         fill="none"
       />
-      <polyline
-        points="32 168 88 112 144 168 176 136 224 184"
+      <path
+        d="M32,167.99982l50.343-50.343a8,8,0,0,1,11.31371,0l44.68629,44.6863a8,8,0,0,0,11.31371,0l20.68629-20.6863a8,8,0,0,1,11.31371,0L223.99982,184"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="24"
       />
+      <circle cx="156" cy="100" r="16" />
     </g>
-    <g v-else-if="displayWeight === 'duotone'">
+    <g v-else-if="weight === 'duotone'">
       <path
-        d="M32,167.99982,87.99981,112l56,56,32-32,48,48L224,56a8,8,0,0,0-8-8H40a8,8,0,0,0-8,8Z"
+        d="M32,167.99982l50.343-50.343a8,8,0,0,1,11.31371,0l44.68629,44.6863a8,8,0,0,0,11.31371,0l20.68629-20.6863a8,8,0,0,1,11.31371,0L223.99982,184,224,56a8,8,0,0,0-8-8H40a8,8,0,0,0-8,8Z"
         opacity="0.2"
       />
-      <circle cx="155.99951" cy="100" r="12" />
       <rect
         x="32"
         y="48"
@@ -46,30 +45,27 @@
         height="160"
         rx="8"
         stroke-width="16"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         fill="none"
       />
-      <polyline
-        points="32 168 88 112 144 168 176 136 224 184"
+      <path
+        d="M32,167.99982l50.343-50.343a8,8,0,0,1,11.31371,0l44.68629,44.6863a8,8,0,0,0,11.31371,0l20.68629-20.6863a8,8,0,0,1,11.31371,0L223.99982,184"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="16"
       />
+      <circle cx="156" cy="100" r="12" />
     </g>
-    <g v-else-if="displayWeight === 'fill'">
-      <g>
-        <circle cx="155.99951" cy="100" r="12" />
-        <path
-          d="M216.00049,40.00012h-176a16.01833,16.01833,0,0,0-16,16V199.99963a16.01833,16.01833,0,0,0,16,16h176a16.01833,16.01833,0,0,0,16-16V56.00012A16.01834,16.01834,0,0,0,216.00049,40.00012Zm-34.34375,90.34326a8.00121,8.00121,0,0,0-11.31445,0l-26.34278,26.34278L93.65674,106.34338a8.00121,8.00121,0,0,0-11.31445,0l-42.3418,42.34107V56.00012h176l.00732,108.69367Z"
-        />
-      </g>
+    <g v-else-if="weight === 'fill'">
+      <path
+        d="M168.001,100.00017v.00341a12.00175,12.00175,0,1,1,0-.00341ZM232,56V200a16.01835,16.01835,0,0,1-16,16H40a16.01835,16.01835,0,0,1-16-16V56A16.01835,16.01835,0,0,1,40,40H216A16.01835,16.01835,0,0,1,232,56Zm-15.9917,108.6936L216,56H40v92.68575L76.68652,112.0002a16.01892,16.01892,0,0,1,22.62793,0L144.001,156.68685l20.68554-20.68658a16.01891,16.01891,0,0,1,22.62793,0Z"
+      />
     </g>
-    <g v-else-if="displayWeight === 'light'">
-      <circle cx="155.99951" cy="100" r="9" />
+    <g v-else-if="weight === 'light'">
       <rect
         x="32"
         y="48"
@@ -77,22 +73,22 @@
         height="160"
         rx="8"
         stroke-width="12"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         fill="none"
       />
-      <polyline
-        points="32 168 88 112 144 168 176 136 224 184"
+      <path
+        d="M32,167.99982l50.343-50.343a8,8,0,0,1,11.31371,0l44.68629,44.6863a8,8,0,0,0,11.31371,0l20.68629-20.6863a8,8,0,0,1,11.31371,0L223.99982,184"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="12"
       />
+      <circle cx="156" cy="100" r="10" />
     </g>
-    <g v-else-if="displayWeight === 'thin'">
-      <circle cx="155.99951" cy="100" r="6" />
+    <g v-else-if="weight === 'thin'">
       <rect
         x="32"
         y="48"
@@ -100,22 +96,22 @@
         height="160"
         rx="8"
         stroke-width="8"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         fill="none"
       />
-      <polyline
-        points="32 168 88 112 144 168 176 136 224 184"
+      <path
+        d="M32,167.99982l50.343-50.343a8,8,0,0,1,11.31371,0l44.68629,44.6863a8,8,0,0,0,11.31371,0l20.68629-20.6863a8,8,0,0,1,11.31371,0L223.99982,184"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="8"
       />
+      <circle cx="156" cy="100" r="8" />
     </g>
-    <g v-else-if="displayWeight === 'regular'">
-      <circle cx="155.99951" cy="100" r="12" />
+    <g v-else-if="weight === 'regular'">
       <rect
         x="32"
         y="48"
@@ -123,53 +119,34 @@
         height="160"
         rx="8"
         stroke-width="16"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         fill="none"
       />
-      <polyline
-        points="32 168 88 112 144 168 176 136 224 184"
+      <path
+        d="M32,167.99982l50.343-50.343a8,8,0,0,1,11.31371,0l44.68629,44.6863a8,8,0,0,0,11.31371,0l20.68629-20.6863a8,8,0,0,1,11.31371,0L223.99982,184"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="16"
       />
+      <circle cx="156" cy="100" r="12" />
     </g>
   </svg>
 </template>
 
 <script lang="ts">
-import Vue from "vue";
-import {
-  IconComputed,
-  IconProps,
-  PropValidator,
-  IconContext,
-  ContextGetter
-} from "@/lib/types";
-export default Vue.extend<{}, {}, IconComputed, IconProps>({
-  name: "PhImage",
+import { defineComponent } from "vue";
+import { SetupIconProps, PropValidator, PhosphorIcon } from "@/lib/types";
+import useDefaultPropsFromContext from "@/lib/useDefaultPropsFromContext";
+
+const component: PhosphorIcon = defineComponent({
   props: PropValidator,
-  inject: ContextGetter,
-  computed: {
-    displayWeight() {
-      const { weight, contextWeight } = this as IconProps & IconContext;
-      return weight ?? contextWeight;
-    },
-    displaySize() {
-      const { size, contextSize } = this as IconProps & IconContext;
-      return size ?? contextSize;
-    },
-    displayColor() {
-      const { color, contextColor } = this as IconProps & IconContext;
-      return color ?? contextColor;
-    },
-    displayMirrored() {
-      const { mirrored, contextMirrored } = this as IconProps & IconContext;
-      return mirrored ?? contextMirrored ? "scale(-1, 1)" : undefined;
-    }
-  }
+  setup(props: SetupIconProps) {
+    return { ...useDefaultPropsFromContext(props) };
+  },
 });
+export default component;
 </script>

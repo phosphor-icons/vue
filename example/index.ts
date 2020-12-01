@@ -1,8 +1,7 @@
-import Vue, { VNode } from "vue";
+import { createApp } from "vue";
+import PhosphorVue from '@/entry';
 import Dev from "./App.vue";
 
-Vue.config.productionTip = false;
-
-new Vue({
-  render: (h): VNode => h(Dev),
-}).$mount("#app");
+const app = createApp(Dev);
+app.use(PhosphorVue);
+app.mount("#app");

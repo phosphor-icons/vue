@@ -3,112 +3,112 @@
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 256 256"
-    :width="displaySize"
-    :height="displaySize"
-    :fill="displayColor"
-    :transform="displayMirrored"
+    :width="size"
+    :height="size"
+    :fill="color"
+    :transform="mirrored ? 'scale(-1, 1)' : undefined"
     v-bind="$attrs"
-    v-on="$listeners"
   >
-    <g v-if="displayWeight === 'bold'">
+    <slot />
+    <g v-if="weight === 'bold'">
       <circle
         cx="128"
         cy="128"
         r="96"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="24"
       />
       <path
-        d="M151.89873,79.9958h-39.997l-7.802,48.20365a28,28,0,1,1,0,39.598"
+        d="M152,84H111.83477L104,132.20232a27.99935,27.99935,0,1,1,0,39.5969"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="24"
       />
     </g>
-    <g v-else-if="displayWeight === 'duotone'">
+    <g v-else-if="weight === 'duotone'">
       <circle cx="128" cy="128" r="96" opacity="0.2" />
       <circle
         cx="128"
         cy="128"
         r="96"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-miterlimit="10"
         stroke-width="16"
       />
       <path
-        d="M151.89873,79.9958h-39.997l-7.802,48.20365a28,28,0,1,1,0,39.598"
+        d="M152,84H111.83477L104,132.20232a27.99935,27.99935,0,1,1,0,39.5969"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="16"
       />
     </g>
-    <g v-else-if="displayWeight === 'fill'">
+    <g v-else-if="weight === 'fill'">
       <path
-        d="M128,24A104,104,0,1,0,232,128,104.12041,104.12041,0,0,0,128,24Zm21.35938,98.54688A36.00168,36.00168,0,0,1,98.4375,173.45313a8.00467,8.00467,0,1,1,11.32813-11.3125c7.53125,7.5625,20.73437,7.5625,28.26562,0a19.97387,19.97387,0,0,0,.00781-28.27344c-7.54687-7.57813-20.74218-7.57031-28.27343-.00781a8.004,8.004,0,0,1-13.5625-6.9375l7.80468-48.21094a7.99881,7.99881,0,0,1,7.89844-6.71875h39.99219a8,8,0,0,1,0,16H118.71875l-4.08594,25.20312A36.59418,36.59418,0,0,1,149.35938,122.54688Z"
+        d="M128,24A104,104,0,1,0,232,128,104.11791,104.11791,0,0,0,128,24ZM123.88184,116.002A35.99912,35.99912,0,1,1,98.35449,177.4668a7.99985,7.99985,0,1,1,11.291-11.33594,20.20173,20.20173,0,0,0,28.47461-.001,19.91646,19.91646,0,0,0-.001-28.25976,20.20412,20.20412,0,0,0-28.47461.001,7.99971,7.99971,0,0,1-13.541-6.95214l7.835-48.20215A8.00076,8.00076,0,0,1,111.835,76H152a8,8,0,0,1,0,16H118.63965L114.542,117.21094A36.413,36.413,0,0,1,123.88184,116.002Z"
       />
     </g>
-    <g v-else-if="displayWeight === 'light'">
+    <g v-else-if="weight === 'light'">
       <circle
         cx="128"
         cy="128"
         r="96"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="12"
       />
       <path
-        d="M151.89873,79.9958h-39.997l-7.802,48.20365a28,28,0,1,1,0,39.598"
+        d="M152,84H111.83477L104,132.20232a27.99935,27.99935,0,1,1,0,39.5969"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="12"
       />
     </g>
-    <g v-else-if="displayWeight === 'thin'">
+    <g v-else-if="weight === 'thin'">
       <circle
         cx="128"
         cy="128"
         r="96"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="8"
       />
       <path
-        d="M151.89873,79.9958h-39.997l-7.802,48.20365a28,28,0,1,1,0,39.598"
+        d="M152,84H111.83477L104,132.20232a27.99935,27.99935,0,1,1,0,39.5969"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="8"
       />
     </g>
-    <g v-else-if="displayWeight === 'regular'">
+    <g v-else-if="weight === 'regular'">
       <circle
         cx="128"
         cy="128"
         r="96"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-miterlimit="10"
         stroke-width="16"
       />
       <path
-        d="M151.89873,79.9958h-39.997l-7.802,48.20365a28,28,0,1,1,0,39.598"
+        d="M152,84H111.83477L104,132.20232a27.99935,27.99935,0,1,1,0,39.5969"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="16"
@@ -118,35 +118,15 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
-import {
-  IconComputed,
-  IconProps,
-  PropValidator,
-  IconContext,
-  ContextGetter
-} from "@/lib/types";
-export default Vue.extend<{}, {}, IconComputed, IconProps>({
-  name: "PhNumberCircleFive",
+import { defineComponent } from "vue";
+import { SetupIconProps, PropValidator, PhosphorIcon } from "@/lib/types";
+import useDefaultPropsFromContext from "@/lib/useDefaultPropsFromContext";
+
+const component: PhosphorIcon = defineComponent({
   props: PropValidator,
-  inject: ContextGetter,
-  computed: {
-    displayWeight() {
-      const { weight, contextWeight } = this as IconProps & IconContext;
-      return weight ?? contextWeight;
-    },
-    displaySize() {
-      const { size, contextSize } = this as IconProps & IconContext;
-      return size ?? contextSize;
-    },
-    displayColor() {
-      const { color, contextColor } = this as IconProps & IconContext;
-      return color ?? contextColor;
-    },
-    displayMirrored() {
-      const { mirrored, contextMirrored } = this as IconProps & IconContext;
-      return mirrored ?? contextMirrored ? "scale(-1, 1)" : undefined;
-    }
-  }
+  setup(props: SetupIconProps) {
+    return { ...useDefaultPropsFromContext(props) };
+  },
 });
+export default component;
 </script>

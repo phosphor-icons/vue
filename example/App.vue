@@ -2,56 +2,56 @@
   <div id="app" style="user-select: none;">
     <section>
       <h1>Passed Props</h1>
-      <PhAt :weight="weight" :size="size" :color="color" :mirrored="mirrored" />
-      <PhChartPieSlice
+      <ph-at :weight="weight" :size="size" :color="color" :mirrored="mirrored" />
+      <ph-chart-pie-slice
         :weight="weight"
         :size="size"
         :color="color"
         :mirrored="mirrored"
       />
-      <PhFingerprint
+      <ph-fingerprint
         :weight="weight"
         :size="size"
         :color="color"
         :mirrored="mirrored"
       />
-      <PhMapTrifold
+      <ph-map-trifold
         :weight="weight"
         :size="size"
         :color="color"
         :mirrored="mirrored"
       />
-      <PhPackage
+      <ph-package
         :weight="weight"
         :size="size"
         :color="color"
         :mirrored="mirrored"
       />
-      <PhPen
+      <ph-pen
         :weight="weight"
         :size="size"
         :color="color"
         :mirrored="mirrored"
       />
-      <PhStack
+      <ph-stack
         :weight="weight"
         :size="size"
         :color="color"
         :mirrored="mirrored"
       />
-      <PhTruck
+      <ph-truck
         :weight="weight"
         :size="size"
         :color="color"
         :mirrored="mirrored"
       />
-      <PhCircle
+      <ph-circle
         :weight="weight"
         :size="size"
         :color="color"
         :mirrored="mirrored"
       />
-      <PhTable
+      <ph-table
         :weight="weight"
         :size="size"
         :color="color"
@@ -60,27 +60,29 @@
     </section>
     <section>
       <h1>Injected Context</h1>
-      <PhAt />
-      <PhChartPieSlice />
-      <PhFingerprint />
-      <PhMapTrifold />
-      <PhPackage />
-      <PhPen />
-      <PhStack />
-      <PhTruck @click="test" />
-      <PhCircle />
-      <PhTable />
+      <ph-at />
+      <ph-chart-pie-slice />
+      <ph-fingerprint />
+      <ph-map-trifold />
+      <ph-package />
+      <ph-pen />
+      <ph-stack />
+      <span class="toggleables">
+        <ph-truck @click="test" />
+      </span>
+      <ph-circle />
+      <ph-table />
     </section>
-    <section>
+    <section class="toggleables">
       <h1>Toggleables</h1>
-      <PhHeart
+      <ph-heart
         :weight="filled"
         :size="size"
         :color="color"
         :mirrored="mirrored"
         @click="check"
       />
-      <PhEye
+      <ph-eye
         v-if="visible"
         :weight="filled"
         :size="size"
@@ -88,7 +90,7 @@
         :mirrored="mirrored"
         @click="hide"
       />
-      <PhEyeSlash
+      <ph-eye-slash
         v-if="!visible"
         :weight="filled"
         :size="size"
@@ -96,7 +98,7 @@
         :mirrored="mirrored"
         @click="hide"
       />
-      <PhHourglass
+      <ph-hourglass
         v-if="time === 'none'"
         :weight="filled"
         :size="size"
@@ -104,7 +106,7 @@
         :mirrored="mirrored"
         @click="elapse"
       />
-      <PhHourglassHigh
+      <ph-hourglass-high
         v-if="time === 'high'"
         :weight="filled"
         :size="size"
@@ -112,7 +114,7 @@
         :mirrored="mirrored"
         @click="elapse"
       />
-      <PhHourglassMedium
+      <ph-hourglass-medium
         v-if="time === 'medium'"
         :weight="filled"
         :size="size"
@@ -120,7 +122,7 @@
         :mirrored="mirrored"
         @click="elapse"
       />
-      <PhHourglassLow
+      <ph-hourglass-low
         v-if="time === 'low'"
         :weight="filled"
         :size="size"
@@ -128,7 +130,7 @@
         :mirrored="mirrored"
         @click="elapse"
       />
-      <PhBatteryFull
+      <ph-battery-full
         v-if="charge === 'full'"
         :weight="filled"
         :size="size"
@@ -136,7 +138,7 @@
         :mirrored="mirrored"
         @click="discharge"
       />
-      <PhBatteryHigh
+      <ph-battery-high
         v-if="charge === 'high'"
         :weight="filled"
         :size="size"
@@ -144,7 +146,7 @@
         :mirrored="mirrored"
         @click="discharge"
       />
-      <PhBatteryMedium
+      <ph-battery-medium
         v-if="charge === 'medium'"
         :weight="filled"
         :size="size"
@@ -152,7 +154,7 @@
         :mirrored="mirrored"
         @click="discharge"
       />
-      <PhBatteryLow
+      <ph-battery-low
         v-if="charge === 'low'"
         :weight="filled"
         :size="size"
@@ -160,7 +162,7 @@
         :mirrored="mirrored"
         @click="discharge"
       />
-      <PhBatteryEmpty
+      <ph-battery-empty
         v-if="charge === 'empty'"
         :weight="filled"
         :size="size"
@@ -168,7 +170,7 @@
         :mirrored="mirrored"
         @click="discharge"
       />
-      <PhBatteryCharging
+      <ph-battery-charging
         v-if="charge === 'charging'"
         :weight="filled"
         :size="size"
@@ -176,7 +178,7 @@
         :mirrored="mirrored"
         @click="discharge"
       />
-      <PhCellSignalFull
+      <ph-cell-signal-full
         v-if="signal === 'full'"
         :weight="filled"
         :size="size"
@@ -184,7 +186,7 @@
         :mirrored="mirrored"
         @click="changeSignal"
       />
-      <PhCellSignalHigh
+      <ph-cell-signal-high
         v-if="signal === 'high'"
         :weight="filled"
         :size="size"
@@ -192,7 +194,7 @@
         :mirrored="mirrored"
         @click="changeSignal"
       />
-      <PhCellSignalMedium
+      <ph-cell-signal-medium
         v-if="signal === 'medium'"
         :weight="filled"
         :size="size"
@@ -200,7 +202,7 @@
         :mirrored="mirrored"
         @click="changeSignal"
       />
-      <PhCellSignalLow
+      <ph-cell-signal-low
         v-if="signal === 'low'"
         :weight="filled"
         :size="size"
@@ -208,7 +210,7 @@
         :mirrored="mirrored"
         @click="changeSignal"
       />
-      <PhCellSignalNone
+      <ph-cell-signal-none
         v-if="signal === 'none'"
         :weight="filled"
         :size="size"
@@ -216,7 +218,7 @@
         :mirrored="mirrored"
         @click="changeSignal"
       />
-      <PhFolder
+      <ph-folder
         v-if="!open"
         :weight="filled"
         :size="size"
@@ -224,7 +226,7 @@
         :mirrored="mirrored"
         @click="changeOpen"
       />
-      <PhFolderOpen
+      <ph-folder-open
         v-if="open"
         :weight="filled"
         :size="size"
@@ -232,7 +234,7 @@
         :mirrored="mirrored"
         @click="changeOpen"
       />
-      <PhLockKey
+      <ph-lock-key
         v-if="locked"
         :weight="filled"
         :size="size"
@@ -240,7 +242,7 @@
         :mirrored="mirrored"
         @click="changeLock"
       />
-      <PhLockKeyOpen
+      <ph-lock-key-open
         v-if="!locked"
         :weight="filled"
         :size="size"
@@ -248,7 +250,7 @@
         :mirrored="mirrored"
         @click="changeLock"
       />
-      <PhMicrophone
+      <ph-microphone
         v-if="!muted"
         :weight="filled"
         :size="size"
@@ -256,7 +258,7 @@
         :mirrored="mirrored"
         @click="changeMute"
       />
-      <PhMicrophoneSlash
+      <ph-microphone-slash
         v-if="muted"
         :weight="filled"
         :size="size"
@@ -264,7 +266,7 @@
         :mirrored="mirrored"
         @click="changeMute"
       />
-      <PhSpeakerHigh
+      <ph-speaker-high
         v-if="volume === 'high'"
         :weight="filled"
         :size="size"
@@ -272,7 +274,7 @@
         :mirrored="mirrored"
         @click="changeVolume"
       />
-      <PhSpeakerLow
+      <ph-speaker-low
         v-if="volume === 'low'"
         :weight="filled"
         :size="size"
@@ -280,7 +282,7 @@
         :mirrored="mirrored"
         @click="changeVolume"
       />
-      <PhSpeakerNone
+      <ph-speaker-none
         v-if="volume === 'none'"
         :weight="filled"
         :size="size"
@@ -288,7 +290,7 @@
         :mirrored="mirrored"
         @click="changeVolume"
       />
-      <PhSpeakerX
+      <ph-speaker-x
         v-if="volume === 'mute'"
         :weight="filled"
         :size="size"
@@ -296,7 +298,7 @@
         :mirrored="mirrored"
         @click="changeVolume"
       />
-      <PhWifiHigh
+      <ph-wifi-high
         v-if="wifi === 'high'"
         :weight="filled"
         :size="size"
@@ -304,7 +306,7 @@
         :mirrored="mirrored"
         @click="changeWifi"
       />
-      <PhWifiMedium
+      <ph-wifi-medium
         v-if="wifi === 'medium'"
         :weight="filled"
         :size="size"
@@ -312,7 +314,7 @@
         :mirrored="mirrored"
         @click="changeWifi"
       />
-      <PhWifiLow
+      <ph-wifi-low
         v-if="wifi === 'low'"
         :weight="filled"
         :size="size"
@@ -320,7 +322,7 @@
         :mirrored="mirrored"
         @click="changeWifi"
       />
-      <PhWifiNone
+      <ph-wifi-none
         v-if="wifi === 'none'"
         :weight="filled"
         :size="size"
@@ -329,76 +331,117 @@
         @click="changeWifi"
       />
     </section>
-    <input name="show" type="checkbox" :checked="showAll" @change="extend" />
+    <section>
+      <h1>With Children</h1>
+      <ph-cube>
+        <animate
+          attributeName="opacity"
+          values="0;1;0"
+          dur="4s"
+          repeatCount="indefinite"
+        />
+        <animateTransform
+          attributeName="transform"
+          attributeType="XML"
+          type="rotate"
+          dur="5s"
+          from="0 0 0"
+          to="360 0 0"
+          repeatCount="indefinite"
+        />
+      </ph-cube>
+      <ph-lightning>
+        <title>HI MOM</title>
+      </ph-lightning>
+      <span style="display: inline-flex; align-items: center;">
+        <ph-diamond>
+          <ph-diamond :size="128" :x="64" :y="64">
+            <ph-diamond :size="128" :x="64" :y="64">
+              <ph-diamond :size="128" :x="64" :y="64">
+                <ph-diamond :size="128" :x="64" :y="64" />
+              </ph-diamond>
+            </ph-diamond>
+          </ph-diamond>
+        </ph-diamond>
+        &lt;-- FOR DEMONSTRATION PURPOSES ONLY
+      </span>
+    </section>
+    <input
+      id="show"
+      name="show"
+      type="checkbox"
+      :checked="showAll"
+      @change="extend"
+    />
     <label for="show">Show All</label>
     <section v-if="showAll">
-      <div class="row" v-for="icon in icons" :key="icon.options.name">
-        <span class="name">{{ icon.options.name }}</span>
-        <div class="icons" :title="icon.options.name">
-          <component :is="icon.options.name" />
+      <div class="row" v-for="icon in icons" :key="icon">
+        <span class="name">{{ icon }}</span>
+        <div class="icons" :title="icon">
+          <component :is="icon" />
           <component
-            :is="icon.options.name"
+            :is="icon"
             mirrored
             color="darkorange"
             :size="24"
           />
           <component
-            :is="icon.options.name"
+            :is="icon"
             mirrored
             color="darkmagenta"
             :size="24"
           />
           <component
-            :is="icon.options.name"
+            :is="icon"
             mirrored
             color="royalblue"
             :size="24"
           />
-          <component :is="icon.options.name" :weight="weight" :size="32" />
+          <component :is="icon" :weight="weight" :size="32" />
           <component
-            :is="icon.options.name"
+            :is="icon"
             :weight="weight"
             color="crimson"
             :size="32"
           />
           <component
-            :is="icon.options.name"
+            :is="icon"
             :weight="weight"
             color="teal"
             :size="32"
           />
           <component
-            :is="icon.options.name"
+            :is="icon"
             weight="thin"
             :color="color"
             :size="48"
           />
           <component
-            :is="icon.options.name"
+            :is="icon"
             weight="light"
             :color="color"
             :size="48"
           />
           <component
-            :is="icon.options.name"
+            :is="icon"
             weight="regular"
             :color="color"
             :size="48"
           />
           <component
-            :is="icon.options.name"
+            :is="icon"
             weight="bold"
             :color="color"
             :size="48"
           />
           <component
-            :is="icon.options.name"
+            :is="icon"
             weight="fill"
             :color="color"
             :size="48"
           />
           <component
-            :is="icon.options.name"
+            :is="icon"
             weight="duotone"
             :color="color"
             :size="48"
@@ -410,33 +453,24 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
+import { defineComponent, computed, toRefs, ToRefs, Ref, provide, reactive } from "vue";
 import * as Phosphor from "@/entry";
-import { ExtendedVue } from "vue/types/vue";
-import { IconProps } from "@/lib/types";
-import { IconComputed } from "@/lib/types";
+import { PhosphorIcon, PhosphorVuePlugin } from "@/lib/types";
 
-type VueIcon = ExtendedVue<Vue, {}, {}, IconComputed, IconProps> & {
-  options: { name: string };
-};
-
-function isIcon(candidate: any): candidate is VueIcon {
-  return candidate.options && candidate.options.name;
+function isIcon(obj: PhosphorVuePlugin | PhosphorIcon) {
+  return (obj as PhosphorVuePlugin).install === undefined;
 }
 
-const Icon = Object.values(Phosphor).reduce((components, Icon) => {
-  if (isIcon(Icon)) return { ...components, [Icon.options!!.name]: Icon };
-  return components;
-}, {});
-
-const icons = Object.values(Icon);
+const iconNames = Object.entries(Phosphor)
+  .filter(([_, obj]) => isIcon(obj))
+  .map(([iconName, _]) => iconName);
 
 if (process.env.NODE_ENV === "development") {
-  console.log(`${icons.length} icons`);
+  console.log(`${iconNames.length} icons`);
 }
 
 interface AppData {
-  icons: any[];
+  icons: string[];
   weight: string;
   size: number | string;
   color: string;
@@ -449,20 +483,21 @@ interface AppData {
   open: boolean;
   locked: boolean;
   muted: boolean;
-  volume: string;
+  volume: "high" | "low" | "none" | "mute";
   wifi: "high" | "medium" | "low" | "none";
   showAll: boolean;
 }
 
-export default Vue.extend({
+export default defineComponent({
   name: "ServeDev",
-  components: Icon,
-  data(): AppData {
-    return {
-      icons,
+  setup() {
+    const toggle = (ref: Ref<boolean>) => ref.value = !ref.value;
+
+    const data: ToRefs<AppData> = toRefs(reactive({
+      icons: iconNames,
       weight: "regular",
       size: 64,
-      color: "indianred",
+      color: "darkorange",
       mirrored: false,
       checked: false,
       time: "none",
@@ -475,134 +510,129 @@ export default Vue.extend({
       volume: "high",
       wifi: "high",
       showAll: false
-    };
-  },
-  computed: {
-    filled() {
-      const { checked } = this as AppData;
-      return checked ? "fill" : "regular";
-    }
-  },
-  provide() {
-    return {
-      weight: "duotone",
-      size: 64,
-      color: "#41B883",
-      mirrored: false
-    };
-  },
-  methods: {
-    extend() {
-      this.showAll = !this.showAll;
-    },
-    test() {
-      console.log(`HI MOM! It's ${new Date().toLocaleTimeString()}`);
-    },
-    check() {
-      this.checked = !this.checked;
-    },
-    elapse() {
-      switch (this.time) {
+    }));
+
+    const filled = computed(() => data.checked.value ? "fill" : "regular");
+
+    const extend = () => toggle(data.showAll);
+    const test = () => console.log(`HI MOM! It's ${new Date().toLocaleTimeString()}`);
+    const check = () => toggle(data.checked);
+    const elapse = () => {
+      switch (data.time.value) {
         case "none":
-          this.time = "high";
+          data.time.value = "high";
           break;
         case "high":
-          this.time = "medium";
+          data.time.value = "medium";
           break;
         case "medium":
-          this.time = "low";
+          data.time.value = "low";
           break;
         case "low":
-          this.time = "none";
+          data.time.value = "none";
           break;
       }
-    },
-    hide() {
-      this.visible = !this.visible;
-    },
-    discharge() {
-      switch (this.charge) {
+    };
+    const hide = () => toggle(data.visible);
+    const discharge = () => {
+      switch (data.charge.value) {
         case "full":
-          this.charge = "high";
+          data.charge.value = "high";
           break;
         case "high":
-          this.charge = "medium";
+          data.charge.value = "medium";
           break;
         case "medium":
-          this.charge = "low";
+          data.charge.value = "low";
           break;
         case "low":
-          this.charge = "empty";
+          data.charge.value = "empty";
           break;
         case "empty":
-          this.charge = "charging";
+          data.charge.value = "charging";
           break;
         case "charging":
-          this.charge = "full";
+          data.charge.value = "full";
           break;
       }
-    },
-    changeSignal() {
-      switch (this.signal) {
+    };
+    const changeSignal = () => {
+      switch (data.signal.value) {
         case "full":
-          this.signal = "high";
+          data.signal.value = "high";
           break;
         case "high":
-          this.signal = "medium";
+          data.signal.value = "medium";
           break;
         case "medium":
-          this.signal = "low";
+          data.signal.value = "low";
           break;
         case "low":
-          this.signal = "none";
+          data.signal.value = "none";
           break;
         case "none":
-          this.signal = "full";
+          data.signal.value = "full";
           break;
       }
-    },
-    changeOpen() {
-      this.open = !this.open;
-    },
-    changeLock() {
-      this.locked = !this.locked;
-    },
-    changeMute() {
-      this.muted = !this.muted;
-    },
-    changeVolume() {
-      switch (this.volume) {
+    };
+    const changeOpen = () => toggle(data.open);
+    const changeLock = () => toggle(data.locked);
+    const changeMute = () => toggle(data.muted);
+    const changeVolume = () => {
+      switch (data.volume.value) {
         case "high":
-          this.volume = "low";
+          data.volume.value = "low";
           break;
         case "low":
-          this.volume = "none";
+          data.volume.value = "none";
           break;
         case "none":
-          this.volume = "mute";
+          data.volume.value = "mute";
           break;
         case "mute":
-          this.volume = "high";
+          data.volume.value = "high";
           break;
       }
-    },
-    changeWifi() {
-      switch (this.wifi) {
+    };
+    const changeWifi = () => {
+      switch (data.wifi.value) {
         case "high":
-          this.wifi = "medium";
+          data.wifi.value = "medium";
           break;
         case "medium":
-          this.wifi = "low";
+          data.wifi.value = "low";
           break;
         case "low":
-          this.wifi = "none";
+          data.wifi.value = "none";
           break;
         case "none":
-          this.wifi = "high";
+          data.wifi.value = "high";
           break;
       }
-    }
-  }
+    };
+
+    provide('weight', "duotone");
+    provide('size', 64);
+    provide('color', "darkorchid");
+    provide('mirrored', false);
+
+    return {
+      ...data,
+      filled,
+      extend,
+      test,
+      check,
+      elapse,
+      hide,
+      discharge,
+      changeSignal,
+      changeOpen,
+      changeLock,
+      changeMute,
+      changeVolume,
+      changeWifi,
+    };
+  },
 });
 </script>
 
@@ -610,7 +640,7 @@ export default Vue.extend({
 body {
   color: white;
   margin: 0;
-  padding: 0;
+  padding: 0 32px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -630,6 +660,10 @@ code {
   align-items: baseline;
   justify-content: center;
   padding: 8px 0;
+}
+
+.toggleables svg {
+  cursor: pointer;
 }
 
 .name {

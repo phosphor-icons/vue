@@ -3,14 +3,14 @@
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 256 256"
-    :width="displaySize"
-    :height="displaySize"
-    :fill="displayColor"
-    :transform="displayMirrored"
+    :width="size"
+    :height="size"
+    :fill="color"
+    :transform="mirrored ? 'scale(-1, 1)' : undefined"
     v-bind="$attrs"
-    v-on="$listeners"
   >
-    <g v-if="displayWeight === 'bold'">
+    <slot />
+    <g v-if="weight === 'bold'">
       <rect
         x="40"
         y="40"
@@ -18,40 +18,40 @@
         height="176"
         rx="8"
         stroke-width="24"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         fill="none"
       />
       <polyline
-        points="94.059 118.059 128 152 161.941 118.059"
+        points="99.716 115.716 128 144 156.284 115.716"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="24"
       />
       <line
         x1="128"
-        y1="72"
+        y1="76"
         x2="128"
-        y2="152"
+        y2="144"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="24"
       />
       <path
-        d="M39.99414,160H76.68043a8,8,0,0,1,5.65686,2.34315l19.3137,19.3137A8,8,0,0,0,107.30785,184h41.37258a8,8,0,0,0,5.65686-2.34315l19.3137-19.3137A8,8,0,0,1,179.30785,160h36.68629"
+        d="M39.99414,156H76.68043a8,8,0,0,1,5.65686,2.34315l19.3137,19.3137A8,8,0,0,0,107.30785,180h41.37258a8,8,0,0,0,5.65686-2.34315l19.3137-19.3137A8,8,0,0,1,179.30785,156h36.68629"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="24"
       />
     </g>
-    <g v-else-if="displayWeight === 'duotone'">
+    <g v-else-if="weight === 'duotone'">
       <path
         d="M76.68066,160a7.9996,7.9996,0,0,1,5.65674,2.34326l19.31348,19.31348A7.99962,7.99962,0,0,0,107.30762,184h41.373a7.9996,7.9996,0,0,0,5.65674-2.34326l19.31348-19.31348A7.99962,7.99962,0,0,1,179.30762,160h36.68652l.00586.00439V48a7.99977,7.99977,0,0,0-8-8H48a7.99977,7.99977,0,0,0-8,8V160Z"
         opacity="0.2"
@@ -63,7 +63,7 @@
         height="176"
         rx="8"
         stroke-width="16"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         fill="none"
@@ -71,7 +71,7 @@
       <polyline
         points="94.059 118.059 128 152 161.941 118.059"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="16"
@@ -82,7 +82,7 @@
         x2="128"
         y2="152"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="16"
@@ -90,18 +90,18 @@
       <path
         d="M39.99414,160H76.68043a8,8,0,0,1,5.65686,2.34315l19.3137,19.3137A8,8,0,0,0,107.30785,184h41.37258a8,8,0,0,0,5.65686-2.34315l19.3137-19.3137A8,8,0,0,1,179.30785,160h36.68629"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="16"
       />
     </g>
-    <g v-else-if="displayWeight === 'fill'">
+    <g v-else-if="weight === 'fill'">
       <path
         d="M208,32H48A16.01833,16.01833,0,0,0,32,48V159.88379c-.00049.03906-.00586.07715-.00586.11621s.00537.07715.00586.11621V208a16.01833,16.01833,0,0,0,16,16H208a16.01833,16.01833,0,0,0,16-16V48A16.01833,16.01833,0,0,0,208,32ZM88.40234,112.40137a8.0018,8.0018,0,0,1,11.31348,0L120,132.686V72a8,8,0,0,1,16,0v60.686l20.28418-20.28467a8.00035,8.00035,0,0,1,11.314,11.31445l-33.94091,33.94141c-.0542.0542-.11426.10107-.16944.15332-.1333.126-.26611.25244-.4082.36914-.06689.05517-.13867.10254-.207.15527-.13916.10693-.27686.21484-.42285.313-.05616.0376-.11621.06885-.17334.105-.16358.104-.32813.207-.49951.29883-.04248.023-.08692.041-.12989.0625-.18945.09765-.38135.1914-.57959.27392-.02832.01221-.05859.02051-.0874.03223-.2124.08545-.42725.16455-.64844.23193-.02929.00928-.05957.01465-.08886.02295-.21973.064-.44141.12256-.668.168-.06543.01319-.13282.01856-.19873.03028-.19092.0332-.38184.06689-.57715.08593a7.89257,7.89257,0,0,1-1.59766,0c-.19531-.019-.38623-.05273-.57715-.08593-.06591-.01172-.1333-.01709-.19873-.03028-.22656-.04541-.44824-.104-.668-.168-.02929-.0083-.05957-.01367-.08886-.02295-.22168-.06738-.438-.14746-.65088-.23291-.02783-.01123-.05713-.01953-.085-.03125-.19824-.08252-.39014-.17627-.58008-.27392-.04248-.022-.08692-.03955-.1294-.0625-.17138-.0918-.33593-.19483-.49951-.29883-.05713-.03613-.11718-.06738-.17334-.105-.146-.09815-.28369-.20606-.42285-.313-.06836-.05273-.14014-.1001-.207-.15527-.13818-.11328-.26709-.23731-.39746-.35938-.05908-.05566-.12256-.10547-.18018-.16308L88.40186,123.71582A8.00076,8.00076,0,0,1,88.40234,112.40137ZM208,208H48V168l28.68066-.001,19.31446,19.31641A15.89834,15.89834,0,0,0,107.30762,192h41.373a15.89606,15.89606,0,0,0,11.31348-4.68652L179.30762,168h28.6997l.00245,40Z"
       />
     </g>
-    <g v-else-if="displayWeight === 'light'">
+    <g v-else-if="weight === 'light'">
       <rect
         x="40"
         y="40"
@@ -109,7 +109,7 @@
         height="176"
         rx="8"
         stroke-width="12"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         fill="none"
@@ -117,7 +117,7 @@
       <polyline
         points="94.059 118.059 128 152 161.941 118.059"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="12"
@@ -128,7 +128,7 @@
         x2="128"
         y2="152"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="12"
@@ -136,13 +136,13 @@
       <path
         d="M39.99414,160H76.68043a8,8,0,0,1,5.65686,2.34315l19.3137,19.3137A8,8,0,0,0,107.30785,184h41.37258a8,8,0,0,0,5.65686-2.34315l19.3137-19.3137A8,8,0,0,1,179.30785,160h36.68629"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="12"
       />
     </g>
-    <g v-else-if="displayWeight === 'thin'">
+    <g v-else-if="weight === 'thin'">
       <rect
         x="40"
         y="40"
@@ -150,7 +150,7 @@
         height="176"
         rx="8"
         stroke-width="8"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         fill="none"
@@ -158,7 +158,7 @@
       <polyline
         points="94.059 118.059 128 152 161.941 118.059"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="8"
@@ -169,7 +169,7 @@
         x2="128"
         y2="152"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="8"
@@ -177,13 +177,13 @@
       <path
         d="M39.99414,160H76.68043a8,8,0,0,1,5.65686,2.34315l19.3137,19.3137A8,8,0,0,0,107.30785,184h41.37258a8,8,0,0,0,5.65686-2.34315l19.3137-19.3137A8,8,0,0,1,179.30785,160h36.68629"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="8"
       />
     </g>
-    <g v-else-if="displayWeight === 'regular'">
+    <g v-else-if="weight === 'regular'">
       <rect
         x="40"
         y="40"
@@ -191,7 +191,7 @@
         height="176"
         rx="8"
         stroke-width="16"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         fill="none"
@@ -199,7 +199,7 @@
       <polyline
         points="94.059 118.059 128 152 161.941 118.059"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="16"
@@ -210,7 +210,7 @@
         x2="128"
         y2="152"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="16"
@@ -218,7 +218,7 @@
       <path
         d="M39.99414,160H76.68043a8,8,0,0,1,5.65686,2.34315l19.3137,19.3137A8,8,0,0,0,107.30785,184h41.37258a8,8,0,0,0,5.65686-2.34315l19.3137-19.3137A8,8,0,0,1,179.30785,160h36.68629"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="16"
@@ -228,35 +228,15 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
-import {
-  IconComputed,
-  IconProps,
-  PropValidator,
-  IconContext,
-  ContextGetter
-} from "@/lib/types";
-export default Vue.extend<{}, {}, IconComputed, IconProps>({
-  name: "PhArchiveTray",
+import { defineComponent } from "vue";
+import { SetupIconProps, PropValidator, PhosphorIcon } from "@/lib/types";
+import useDefaultPropsFromContext from "@/lib/useDefaultPropsFromContext";
+
+const component: PhosphorIcon = defineComponent({
   props: PropValidator,
-  inject: ContextGetter,
-  computed: {
-    displayWeight() {
-      const { weight, contextWeight } = this as IconProps & IconContext;
-      return weight ?? contextWeight;
-    },
-    displaySize() {
-      const { size, contextSize } = this as IconProps & IconContext;
-      return size ?? contextSize;
-    },
-    displayColor() {
-      const { color, contextColor } = this as IconProps & IconContext;
-      return color ?? contextColor;
-    },
-    displayMirrored() {
-      const { mirrored, contextMirrored } = this as IconProps & IconContext;
-      return mirrored ?? contextMirrored ? "scale(-1, 1)" : undefined;
-    }
-  }
+  setup(props: SetupIconProps) {
+    return { ...useDefaultPropsFromContext(props) };
+  },
 });
+export default component;
 </script>

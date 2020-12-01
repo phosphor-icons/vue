@@ -1,5 +1,16 @@
-type Weight = "thin" | "light" | "regular" | "bold" | "fill" | "duotone";
-type Size = string | number;
+import {
+  AllowedComponentProps,
+  ComponentCustomProps,
+  ComponentOptionsMixin,
+  DefineComponent,
+  Plugin,
+  PropType,
+  ToRefs,
+  VNodeProps,
+} from "vue";
+
+export type Weight = "thin" | "light" | "regular" | "bold" | "fill" | "duotone";
+export type Size = string | number;
 
 export interface IconProps {
   weight: Weight;
@@ -8,30 +19,31 @@ export interface IconProps {
   mirrored: boolean;
 }
 
+export type SetupIconProps = Readonly<
+  Required<Pick<IconProps, "mirrored">> & Partial<Omit<IconProps, "mirrored">>
+>;
+
 export const PropValidator = {
   color: String,
-  size: [String, Number],
-  weight: { type: String as () => Weight },
-  mirrored: Boolean
+  size: [String, Number] as PropType<Size>,
+  weight: String as PropType<Weight>,
+  mirrored: Boolean,
 };
+export type PropValidator = typeof PropValidator;
 
-export interface IconComputed {
-  displayWeight: Weight;
-  displaySize: Size;
-  displayColor: string;
-  displayMirrored: string | undefined;
-}
+export type PhosphorIcon = DefineComponent<
+  typeof PropValidator,
+  ToRefs<IconProps>,
+  unknown,
+  {},
+  {},
+  ComponentOptionsMixin,
+  ComponentOptionsMixin,
+  Record<string, any>,
+  string,
+  VNodeProps & AllowedComponentProps & ComponentCustomProps,
+  SetupIconProps,
+  Required<Pick<IconProps, "mirrored">>
+>;
 
-export interface IconContext {
-  contextWeight?: Weight;
-  contextSize?: Size;
-  contextColor?: string;
-  contextMirrored?: boolean;
-}
-
-export const ContextGetter = {
-  contextWeight: { from: "weight", default: "regular" },
-  contextSize: { from: "size", default: "1em" },
-  contextColor: { from: "color", default: "currentColor" },
-  contextMirrored: { from: "mirrored", default: false }
-};
+export type PhosphorVuePlugin = Plugin & { installed?: boolean };

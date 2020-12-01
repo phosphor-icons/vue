@@ -3,7 +3,7 @@ const fs = require("fs");
 const path = require("path");
 const chalk = require("chalk");
 
-const { ASSETS_PATH, COMPONENTS_PATH, INDEX_PATH } = require("./index");
+const { ASSETS_PATH, COMPONENTS_PATH, INDEX_PATH, TYPES_PATH } = require("./index");
 
 const icons = {};
 const weights = ["thin", "light", "regular", "bold", "fill", "duotone"];
@@ -16,7 +16,7 @@ function readFile(folder, pathname, weight) {
     .replace(/<svg.*/g, "")
     .replace(/<\/svg>\n/g, "")
     .replace(/<title.*/g, "")
-    .replace(/stroke="#000"/g, ':stroke="displayColor"')
+    .replace(/stroke="#000"/g, ':stroke="color"')
     .replace(
       /<rect width="25[\d,\.]+" height="25[\d,\.]+" fill="none".*\/>/g,
       ""
@@ -82,13 +82,13 @@ function generateComponents() {
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 256 256"
-    :width="displaySize"
-    :height="displaySize"
-    :fill="displayColor"
-    :transform="displayMirrored"
+    :width="size"
+    :height="size"
+    :fill="color"
+    :transform="mirrored ? 'scale(-1, 1)' : undefined"
     v-bind="$attrs"
-    v-on="$listeners"
   >
+    <slot />
 `;
 
     if (!checkFiles(icon)) {
@@ -105,7 +105,7 @@ function generateComponents() {
     Object.keys(icon).forEach((weight, index) => {
       // for (let weight in icon) {
       componentString += `\
-    <g v${index > 0 ? "-else" : ""}-if="displayWeight === '${weight}'">${
+    <g v${index > 0 ? "-else" : ""}-if="weight === '${weight}'">${
         icon[weight]
       }</g>\n`;
     });
@@ -114,37 +114,17 @@ function generateComponents() {
 </template>
 
 <script lang="ts">
-import Vue from "vue";
-import {
-  IconComputed,
-  IconProps,
-  PropValidator,
-  IconContext,
-  ContextGetter,
-} from "@/lib/types";
-export default Vue.extend<{}, {}, IconComputed, IconProps>({
-  name: "Ph${name}",
+import { defineComponent } from "vue";
+import { SetupIconProps, PropValidator, PhosphorIcon } from "@/lib/types";
+import useDefaultPropsFromContext from "@/lib/useDefaultPropsFromContext";
+
+const component: PhosphorIcon = defineComponent({
   props: PropValidator,
-  inject: ContextGetter,
-  computed: {
-    displayWeight() {
-      const { weight, contextWeight } = this as IconProps & IconContext;
-      return weight ?? contextWeight;
-    },
-    displaySize() {
-      const { size, contextSize } = this as IconProps & IconContext;
-      return size ?? contextSize;
-    },
-    displayColor() {
-      const { color, contextColor } = this as IconProps & IconContext;
-      return color ?? contextColor;
-    },
-    displayMirrored() {
-      const { mirrored, contextMirrored } = this as IconProps & IconContext;
-      return mirrored ?? contextMirrored ? "scale(-1, 1)" : undefined;
-    },
-  },
+  setup(props: SetupIconProps) {
+    return { ...useDefaultPropsFromContext(props) };
+  }
 });
+export default component;
 </script>
 `;
     try {
@@ -202,6 +182,67 @@ export { default as Ph${name} } from "../components/Ph${name}.vue";
   }
 }
 
+function generateTypes() {
+  let typesString = `import { AllowedComponentProps, ComponentCustomProps, ComponentOptionsMixin, DefineComponent, Plugin, PropType, ToRefs, VNodeProps } from 'vue';
+type PhosphorVuePlugin = Plugin & { installed?: boolean };
+declare const PhosphorVue: PhosphorVuePlugin;
+export default PhosphorVue;
+type Weight = "thin" | "light" | "regular" | "bold" | "fill" | "duotone";
+type Size = string | number;
+interface IconProps {
+  weight: Weight;
+  size: Size;
+  color: string;
+  mirrored: boolean;
+}
+type SetupIconProps = Readonly<
+  Required<Pick<IconProps, "mirrored">> & Partial<Omit<IconProps, "mirrored">>
+>;
+type PropValidator = {
+    color: StringConstructor;
+    size: PropType<Size>;
+    weight: PropType<Weight>;
+    mirrored: BooleanConstructor;
+}
+type PhosphorIcon = DefineComponent<
+  PropValidator,
+  ToRefs<IconProps>,
+  unknown,
+  {},
+  {},
+  ComponentOptionsMixin,
+  ComponentOptionsMixin,
+  Record<string, any>,
+  string,
+  VNodeProps & AllowedComponentProps & ComponentCustomProps,
+  SetupIconProps,
+  Required<Pick<IconProps, "mirrored">>
+>;
+`;
+
+  for (let key in icons) {
+      const name = key
+        .split("-")
+        .map((substr) => substr.replace(/^\w/, (c) => c.toUpperCase()))
+        .join("");
+      typesString += `\
+export const Ph${name}: PhosphorIcon;
+`;
+  }
+  try {
+    fs.writeFileSync(TYPES_PATH, typesString, {
+      flag: "w"
+    });
+    console.log(chalk.green("Types success"));
+  } catch (err) {
+    console.error(chalk.red("Types failed"));
+    console.group();
+    console.error(err);
+    console.groupEnd();
+  };
+}
+
 readFiles();
 generateComponents();
 generateExports();
+generateTypes();

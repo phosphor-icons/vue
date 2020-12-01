@@ -3,30 +3,21 @@
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 256 256"
-    :width="displaySize"
-    :height="displaySize"
-    :fill="displayColor"
-    :transform="displayMirrored"
+    :width="size"
+    :height="size"
+    :fill="color"
+    :transform="mirrored ? 'scale(-1, 1)' : undefined"
     v-bind="$attrs"
-    v-on="$listeners"
   >
-    <g v-if="displayWeight === 'bold'">
-      <circle cx="188.00054" cy="168" r="16" />
-      <path
-        d="M176,128h48a8,8,0,0,1,8,8v64a8,8,0,0,1-8,8H32a8,8,0,0,1-8-8V136a8,8,0,0,1,8-8H80"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="24"
-      />
+    <slot />
+    <g v-if="weight === 'bold'">
       <line
         x1="128"
         y1="24"
         x2="128"
         y2="128"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="24"
@@ -34,19 +25,27 @@
       <polyline
         points="80 80 128 128 176 80"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="24"
       />
+      <path
+        d="M184.56836,128H224a8,8,0,0,1,8,8v64a8,8,0,0,1-8,8H32a8,8,0,0,1-8-8V136a8,8,0,0,1,8-8H71.43164"
+        fill="none"
+        :stroke="color"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="24"
+      />
+      <circle cx="188" cy="168" r="16" />
     </g>
-    <g v-else-if="displayWeight === 'duotone'">
+    <g v-else-if="weight === 'duotone'">
       <rect x="24" y="128" width="208" height="80" rx="8" opacity="0.2" />
-      <circle cx="188.00054" cy="168" r="12" />
       <path
         d="M176,128h48a8,8,0,0,1,8,8v64a8,8,0,0,1-8,8H32a8,8,0,0,1-8-8V136a8,8,0,0,1,8-8H80"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="16"
@@ -57,7 +56,7 @@
         x2="128"
         y2="128"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="16"
@@ -65,13 +64,14 @@
       <polyline
         points="80 80 128 128 176 80"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="16"
       />
+      <circle cx="188" cy="168" r="12" />
     </g>
-    <g v-else-if="displayWeight === 'fill'">
+    <g v-else-if="weight === 'fill'">
       <g>
         <path
           d="M122.34326,133.65723c.02588.02588.05469.04785.08106.07324.16211.15771.32861.31152.50341.45508.09766.08008.20118.15039.30176.22558.1084.08106.21485.165.32764.24073.11621.07812.2373.1455.35693.21679.10449.0625.20655.12793.31446.18555.12011.06445.24414.11914.36669.17676.11426.0542.22657.11084.34327.15967.11816.04882.23925.08837.35937.13134.126.04541.251.09375.37988.13282.11963.03613.24122.063.36231.09326.13184.0332.26269.07031.397.09716.13965.02735.28028.04395.42041.064.11817.01709.23389.03906.353.05078.26269.02588.52588.04.78955.04s.52686-.01416.78955-.04c.11914-.01172.23486-.03369.353-.05078.14013-.02.28076-.03662.42041-.064.13428-.02685.26513-.064.397-.09716.12109-.03028.24268-.05713.36231-.09326.1289-.03907.2539-.08741.37988-.13282.12012-.043.24121-.08252.35937-.13134.1167-.04883.229-.10547.34327-.15967.12255-.05762.24658-.11231.36669-.17676.10791-.05762.21-.12305.31446-.18555.11963-.07129.24072-.13867.35693-.21679.11279-.07569.21924-.15967.32764-.24073.10058-.07519.2041-.1455.30176-.22558.17822-.14649.34765-.30225.51269-.46338.023-.023.04883-.042.07178-.06494l48-48a8.00018,8.00018,0,1,0-11.31348-11.31446L136,108.68652V24a8,8,0,0,0-16,0v84.68652L85.65674,74.34277A8.00018,8.00018,0,0,0,74.34326,85.65723Z"
@@ -81,12 +81,11 @@
         />
       </g>
     </g>
-    <g v-else-if="displayWeight === 'light'">
-      <circle cx="188.00054" cy="168" r="9" />
+    <g v-else-if="weight === 'light'">
       <path
         d="M176,128h48a8,8,0,0,1,8,8v64a8,8,0,0,1-8,8H32a8,8,0,0,1-8-8V136a8,8,0,0,1,8-8H80"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="12"
@@ -97,7 +96,7 @@
         x2="128"
         y2="128"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="12"
@@ -105,18 +104,18 @@
       <polyline
         points="80 80 128 128 176 80"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="12"
       />
+      <circle cx="188" cy="168" r="10" />
     </g>
-    <g v-else-if="displayWeight === 'thin'">
-      <circle cx="188.00054" cy="168" r="6" />
+    <g v-else-if="weight === 'thin'">
       <path
         d="M176,128h48a8,8,0,0,1,8,8v64a8,8,0,0,1-8,8H32a8,8,0,0,1-8-8V136a8,8,0,0,1,8-8H80"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="8"
@@ -127,7 +126,7 @@
         x2="128"
         y2="128"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="8"
@@ -135,18 +134,18 @@
       <polyline
         points="80 80 128 128 176 80"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="8"
       />
+      <circle cx="188" cy="168" r="8" />
     </g>
-    <g v-else-if="displayWeight === 'regular'">
-      <circle cx="188.00054" cy="168" r="12" />
+    <g v-else-if="weight === 'regular'">
       <path
         d="M176,128h48a8,8,0,0,1,8,8v64a8,8,0,0,1-8,8H32a8,8,0,0,1-8-8V136a8,8,0,0,1,8-8H80"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="16"
@@ -157,7 +156,7 @@
         x2="128"
         y2="128"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="16"
@@ -165,45 +164,26 @@
       <polyline
         points="80 80 128 128 176 80"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="16"
       />
+      <circle cx="188" cy="168" r="12" />
     </g>
   </svg>
 </template>
 
 <script lang="ts">
-import Vue from "vue";
-import {
-  IconComputed,
-  IconProps,
-  PropValidator,
-  IconContext,
-  ContextGetter
-} from "@/lib/types";
-export default Vue.extend<{}, {}, IconComputed, IconProps>({
-  name: "PhDownload",
+import { defineComponent } from "vue";
+import { SetupIconProps, PropValidator, PhosphorIcon } from "@/lib/types";
+import useDefaultPropsFromContext from "@/lib/useDefaultPropsFromContext";
+
+const component: PhosphorIcon = defineComponent({
   props: PropValidator,
-  inject: ContextGetter,
-  computed: {
-    displayWeight() {
-      const { weight, contextWeight } = this as IconProps & IconContext;
-      return weight ?? contextWeight;
-    },
-    displaySize() {
-      const { size, contextSize } = this as IconProps & IconContext;
-      return size ?? contextSize;
-    },
-    displayColor() {
-      const { color, contextColor } = this as IconProps & IconContext;
-      return color ?? contextColor;
-    },
-    displayMirrored() {
-      const { mirrored, contextMirrored } = this as IconProps & IconContext;
-      return mirrored ?? contextMirrored ? "scale(-1, 1)" : undefined;
-    }
-  }
+  setup(props: SetupIconProps) {
+    return { ...useDefaultPropsFromContext(props) };
+  },
 });
+export default component;
 </script>

@@ -3,30 +3,20 @@
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 256 256"
-    :width="displaySize"
-    :height="displaySize"
-    :fill="displayColor"
-    :transform="displayMirrored"
+    :width="size"
+    :height="size"
+    :fill="color"
+    :transform="mirrored ? 'scale(-1, 1)' : undefined"
     v-bind="$attrs"
-    v-on="$listeners"
   >
-    <g v-if="displayWeight === 'bold'">
+    <slot />
+    <g v-if="weight === 'bold'">
       <circle
         cx="128"
         cy="128"
-        r="24"
+        r="20"
         fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="24"
-      />
-      <circle
-        cx="48"
-        cy="128"
-        r="24"
-        fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="24"
@@ -34,15 +24,25 @@
       <circle
         cx="208"
         cy="128"
-        r="24"
+        r="20"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="24"
+      />
+      <circle
+        cx="48"
+        cy="128"
+        r="20"
+        fill="none"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="24"
       />
     </g>
-    <g v-else-if="displayWeight === 'duotone'">
+    <g v-else-if="weight === 'duotone'">
       <circle cx="128" cy="128" r="24" opacity="0.1" />
       <circle cx="48" cy="128" r="24" opacity="0.1" />
       <circle cx="208" cy="128" r="24" opacity="0.1" />
@@ -51,7 +51,7 @@
         cy="128"
         r="24"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-miterlimit="10"
         stroke-width="16"
       />
@@ -60,7 +60,7 @@
         cy="128"
         r="24"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-miterlimit="10"
         stroke-width="16"
       />
@@ -69,23 +69,23 @@
         cy="128"
         r="24"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-miterlimit="10"
         stroke-width="16"
       />
     </g>
-    <g v-else-if="displayWeight === 'fill'">
+    <g v-else-if="weight === 'fill'">
       <circle cx="128" cy="128" r="32" />
       <circle cx="48" cy="128" r="32" />
       <circle cx="208" cy="128" r="32" />
     </g>
-    <g v-else-if="displayWeight === 'light'">
+    <g v-else-if="weight === 'light'">
       <circle
         cx="128"
         cy="128"
         r="24"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="12"
@@ -95,7 +95,7 @@
         cy="128"
         r="24"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="12"
@@ -105,19 +105,19 @@
         cy="128"
         r="24"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="12"
       />
     </g>
-    <g v-else-if="displayWeight === 'thin'">
+    <g v-else-if="weight === 'thin'">
       <circle
         cx="128"
         cy="128"
         r="24"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="8"
@@ -127,7 +127,7 @@
         cy="128"
         r="24"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="8"
@@ -137,19 +137,19 @@
         cy="128"
         r="24"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="8"
       />
     </g>
-    <g v-else-if="displayWeight === 'regular'">
+    <g v-else-if="weight === 'regular'">
       <circle
         cx="128"
         cy="128"
         r="24"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-miterlimit="10"
         stroke-width="16"
       />
@@ -158,7 +158,7 @@
         cy="128"
         r="24"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-miterlimit="10"
         stroke-width="16"
       />
@@ -167,7 +167,7 @@
         cy="128"
         r="24"
         fill="none"
-        :stroke="displayColor"
+        :stroke="color"
         stroke-miterlimit="10"
         stroke-width="16"
       />
@@ -176,35 +176,15 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
-import {
-  IconComputed,
-  IconProps,
-  PropValidator,
-  IconContext,
-  ContextGetter
-} from "@/lib/types";
-export default Vue.extend<{}, {}, IconComputed, IconProps>({
-  name: "PhDotsThreeOutline",
+import { defineComponent } from "vue";
+import { SetupIconProps, PropValidator, PhosphorIcon } from "@/lib/types";
+import useDefaultPropsFromContext from "@/lib/useDefaultPropsFromContext";
+
+const component: PhosphorIcon = defineComponent({
   props: PropValidator,
-  inject: ContextGetter,
-  computed: {
-    displayWeight() {
-      const { weight, contextWeight } = this as IconProps & IconContext;
-      return weight ?? contextWeight;
-    },
-    displaySize() {
-      const { size, contextSize } = this as IconProps & IconContext;
-      return size ?? contextSize;
-    },
-    displayColor() {
-      const { color, contextColor } = this as IconProps & IconContext;
-      return color ?? contextColor;
-    },
-    displayMirrored() {
-      const { mirrored, contextMirrored } = this as IconProps & IconContext;
-      return mirrored ?? contextMirrored ? "scale(-1, 1)" : undefined;
-    }
-  }
+  setup(props: SetupIconProps) {
+    return { ...useDefaultPropsFromContext(props) };
+  },
 });
+export default component;
 </script>
