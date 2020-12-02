@@ -14,16 +14,65 @@ Phosphor is a flexible icon family for interfaces, diagrams, presentations — w
 ## Installation
 
 ```bash
-yarn add phosphor-vue
+yarn add phosphor-vue@next
 ```
 
 or
 
 ```bash
-npm install --save phosphor-vue
+npm install --save phosphor-vue@next
 ```
 
 ## Usage
+
+### Registration
+
+Before you can use Phosphor icons in your project, you'll need to register the ones you intend to use, just like any other Vue component.
+
+#### Global Plugin
+
+The easiest way to use Phosphor in your Vue project is to load the whole library as a global plugin in your app entry point like so:
+
+```js
+import { createApp } from "vue";
+import PhosphorVue from "phosphor-vue";
+import App from "./App.vue";
+
+const app = createApp(App);
+app.use(PhosphorVue);
+app.mount("#app");
+```
+
+You can then use any of the icons in your app's templates without specifically registering them:
+
+```html
+<!-- SomeComponent.vue -->
+<template>
+  <div>
+    <ph-horse />
+    <ph-heart :size="32" color="hotpink" weight="fill" />
+    <ph-cube />
+  </div>
+</template>
+```
+
+#### Register Individual Icons
+
+If you're only using a few Phosphor icons and want to take advantage of tree-shaking, you can globally register just the icons you need:
+
+```js
+import { createApp } from "vue";
+import { PhHorse, PhHeart, PhCube } from "phosphor-vue";
+import App from "./App.vue";
+
+const app = createApp(App);
+app.component("PhHorse", PhHorse);
+app.component("PhHeart", PhHeart);
+app.component("PhCube", PhCube);
+app.mount("#app");
+```
+
+You can also register them locally directly in SFCs if you prefer:
 
 ```html
 <template>
@@ -58,7 +107,7 @@ Icon components accept all attributes that you can pass to a normal SVG element,
 
 ### Composition
 
-Phosphor takes advantage of Vue's `provide`/`inject` options to make applying a default style to all icons simple. Create a `provide` object or function at the root of the app (or anywhere above the icons in the tree) that returns a configuration object with props to be applied by default to all icons below it in the tree:
+Phosphor takes advantage of [Vue's `provide`/`inject` options](https://v3.vuejs.org/guide/component-provide-inject.htm) to make applying a default style to all icons simple. Declare a `provide` at the root of the app (or anywhere above the icons in the tree) with props to be applied by default to all icons below it in the tree:
 
 ```html
 <template>
@@ -70,8 +119,10 @@ Phosphor takes advantage of Vue's `provide`/`inject` options to make applying a 
 </template>
 
 <script>
+  import { defineComponent, provide } from "vue";
   import { PhHorse, PhHeart, PhCube } from "phosphor-vue";
-  export default {
+
+  export default defineComponent({
     name: "App",
     components: {
       PhHorse,
@@ -83,16 +134,33 @@ Phosphor takes advantage of Vue's `provide`/`inject` options to make applying a 
       size: 32,
       weight: "bold",
       mirrored: false
-    }
-  };
+    },
+    // Or using the Composition API
+    setup() {
+      // ... other setup code ...
+      provide("color", "limegreen");
+      provide("size", 32);
+      provide("weight", "bold");
+      provide("mirrored", false);
+
+      return { /* ... */ };
+    },
+  });
 </script>
 ```
 
 You may create multiple providers for styling icons differently in separate regions of an application; icons use the nearest provider above them to determine their style.
 
-**Note:** The **color**, **size**, **weight**, and **mirrored** properties are all _optional_ props when creating a context, but default to `"currentColor"`, `"1em"`, `"regular"` and `false`. Also be aware that when using this API, per Vue:
+**Note:** The **color**, **size**, **weight**, and **mirrored** properties are all _optional_ props when creating a context, but default to `"currentColor"`, `"1em"`, `"regular"` and `false`. Also be aware that when using this API, per [Vue](https://v3.vuejs.org/guide/component-provide-inject.html#working-with-reactivity):
 
-> The `provide` and `inject` bindings are NOT reactive. This is intentional. However, if you pass down an observed object, properties on that object do remain reactive.
+> ... `provide`/`inject` bindings are not reactive by default. We can change this behavior by passing a `ref` property or `reactive` object to `provide`.
+
+For example, this will make child icons sizes react to changes to `iconSize`:
+
+```js
+const iconSize = ref(32);
+provide("size", iconSize);
+```
 
 ### Slots
 
