@@ -6,7 +6,6 @@
   "license": "MIT",
   "repository": "phosphor-icons/phosphor-vue",
   "homepage": "https://phosphoricons.com",
-  "sideEffects": false,
   "main": "dist/phosphor-vue.ssr.js",
   "browser": "dist/esm/entry.js",
   "module": "dist/esm/entry.js",
