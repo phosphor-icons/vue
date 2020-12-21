@@ -4,6 +4,8 @@
 
 Phosphor is a flexible icon family for interfaces, diagrams, presentations — whatever, really. Explore all our icons at [phosphoricons.com](https://phosphoricons.com).
 
+<img alt="Due to a Rollup bug, tree-shaking of library components currently does not work in Vue 3. See issue #6 for details." src="/meta/tree-shaking-warning.svg" />
+
 For Vue 2 support, check out the [vue2](https://github.com/phosphor-icons/phosphor-vue) branch.
 
 [![NPM](https://img.shields.io/npm/v/phosphor-vue/next?style=flat-square)](https://www.npmjs.com/package/phosphor-vue) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg?style=flat-square)](https://standardjs.com) [![Travis](https://img.shields.io/travis/com/rektdeckard/phosphor-vue/next?style=flat-square)](https://travis-ci.com/github/rektdeckard/phosphor-vue)
