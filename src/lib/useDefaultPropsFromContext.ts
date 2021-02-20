@@ -1,5 +1,5 @@
 import { computed, inject, isRef, Ref, ToRefs } from "vue";
-import { IconProps, SetupIconProps } from "@/lib/types";
+import { IconProps, SetupIconProps } from "./types";
 
 const defaults: IconProps = {
   weight: "regular",
