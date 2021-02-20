@@ -98,6 +98,8 @@ You can also register them locally directly in SFCs if you prefer:
 </script>
 ```
 
+**Note:** Due to a [bug](https://github.com/vuejs/rollup-plugin-vue/issues/401) in rollup-plugin-vue, tree-shaking is currently broken in this version.
+
 ### Props
 
 Icon components accept all attributes that you can pass to a normal SVG element, including inline `height`/`width`, `x`/`y`, `opacity`, plus `@click` and other `v-on` handlers. The main way of styling them will usually be with the following props:
