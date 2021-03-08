@@ -23,7 +23,6 @@
       />
       <polygon
         points="88 156 124 128 88 100 88 156"
-        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
@@ -31,14 +30,11 @@
       />
       <polygon
         points="144 156 180 128 144 100 144 156"
-        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="24"
       />
-      <polygon points="88 156 124 128 88 100 88 156" />
-      <polygon points="144 156 180 128 144 100 144 156" />
     </g>
     <g v-else-if="weight === 'duotone'">
       <path

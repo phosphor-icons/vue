@@ -11,10 +11,8 @@
   >
     <slot />
     <g v-if="weight === 'bold'">
-      <circle
-        cx="52"
-        cy="160"
-        r="40"
+      <path
+        d="M208,80a16,16,0,0,0-16-16H148l56,96"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -31,8 +29,10 @@
         stroke-linejoin="round"
         stroke-width="24"
       />
-      <polyline
-        points="52 64 79.2 64 132 160"
+      <circle
+        cx="52"
+        cy="160"
+        r="40"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -40,7 +40,7 @@
         stroke-width="24"
       />
       <polyline
-        points="52 160 96.8 96 168.8 96"
+        points="166.667 96 102.667 96 52 160"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -48,7 +48,7 @@
         stroke-width="24"
       />
       <polyline
-        points="184 64 151.2 64 204 160"
+        points="52 64 84 64 128.333 140"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -57,10 +57,18 @@
       />
     </g>
     <g v-else-if="weight === 'duotone'">
-      <circle cx="52" cy="160" r="40" opacity="0.2" />
-      <circle cx="204" cy="160" r="40" opacity="0.2" />
+      <circle cx="208" cy="160" r="40" opacity="0.2" />
+      <circle cx="48" cy="160" r="40" opacity="0.2" />
+      <path
+        d="M208,80a16,16,0,0,0-16-16H152l56,96"
+        fill="none"
+        :stroke="color"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
       <circle
-        cx="52"
+        cx="208"
         cy="160"
         r="40"
         fill="none"
@@ -70,7 +78,7 @@
         stroke-width="16"
       />
       <circle
-        cx="204"
+        cx="48"
         cy="160"
         r="40"
         fill="none"
@@ -80,7 +88,7 @@
         stroke-width="16"
       />
       <polyline
-        points="52 64 79.2 64 132 160"
+        points="48 64 76 64 132 160"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -88,15 +96,7 @@
         stroke-width="16"
       />
       <polyline
-        points="52 160 96.8 96 168.8 96"
-        fill="none"
-        :stroke="color"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="16"
-      />
-      <polyline
-        points="184 64 151.2 64 204 160"
+        points="170.087 96 94.667 96 48 160"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -105,21 +105,21 @@
       />
     </g>
     <g v-else-if="weight === 'fill'">
-      <g>
-        <path
-          d="M51.99292,168.00049A8.00066,8.00066,0,0,1,45.446,155.41211l27.13623-38.76636a48.15264,48.15264,0,1,0,13.09522,9.19312l-27.124,38.749A7.989,7.989,0,0,1,51.99292,168.00049Z"
-        />
-        <path
-          d="M203.99975,112a47.7705,47.7705,0,0,0-15.79443,2.68237l22.8042,41.46216A8.00009,8.00009,0,1,1,196.99,163.85547l-22.79248-41.44141A47.96118,47.96118,0,1,0,203.99975,112Z"
-        />
-        <path
-          d="M175.842,92.20337l-.02027-.03662L164.73022,72h19.26953a8,8,0,0,0,0-16H151.2a7.99969,7.99969,0,0,0-7.00977,11.85547L155.26977,88H101.53L86.20971,60.14453A8.00017,8.00017,0,0,0,79.2,56H51.99975a8,8,0,0,0,0,16H74.46948L87.38989,95.49194,72.58227,116.64575a48.20354,48.20354,0,0,1,13.09522,9.19312L95.9834,111.11621,124.99,163.85547a8.00009,8.00009,0,1,0,14.01953-7.71094L110.33008,104h53.73974l10.12769,18.41406a47.94767,47.94767,0,0,1,14.00781-7.73169Z"
-        />
-      </g>
+      <path
+        d="M256,160a48,48,0,1,1-78.74414-36.82715l23.834,40.85791a7.99983,7.99983,0,1,0,13.82032-8.06152l-23.84375-40.87549A47.983,47.983,0,0,1,256,160ZM47.99316,168.00049a8.00038,8.00038,0,0,1-6.457-12.71387l27.875-38.22827a48.13563,48.13563,0,1,0,12.918,9.43994L54.46387,164.71338A7.98855,7.98855,0,0,1,47.99316,168.00049ZM165.92871,72H192a8.00917,8.00917,0,0,1,8,8,8,8,0,0,0,16,0,24.02718,24.02718,0,0,0-24-24H152a7.99957,7.99957,0,0,0-6.91016,12.03076L156.73853,88H99.26147L82.91016,59.96924A7.999,7.999,0,0,0,76,56H48a8,8,0,0,0,0,16H71.40527L85.12134,95.51318,69.41113,117.05835a48.23239,48.23239,0,0,1,12.918,9.43994l11.59278-15.89844,31.168,53.43091a7.99983,7.99983,0,1,0,13.82032-8.06152L108.59473,104h57.477l11.18408,19.17285a48.02278,48.02278,0,0,1,13.81055-8.0791Z"
+      />
     </g>
     <g v-else-if="weight === 'light'">
+      <path
+        d="M208,80a16,16,0,0,0-16-16H152l56,96"
+        fill="none"
+        :stroke="color"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="12"
+      />
       <circle
-        cx="52"
+        cx="208"
         cy="160"
         r="40"
         fill="none"
@@ -129,7 +129,7 @@
         stroke-width="12"
       />
       <circle
-        cx="204"
+        cx="48"
         cy="160"
         r="40"
         fill="none"
@@ -139,7 +139,7 @@
         stroke-width="12"
       />
       <polyline
-        points="52 64 79.2 64 132 160"
+        points="48 64 76 64 132 160"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -147,15 +147,7 @@
         stroke-width="12"
       />
       <polyline
-        points="52 160 96.8 96 168.8 96"
-        fill="none"
-        :stroke="color"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="12"
-      />
-      <polyline
-        points="184 64 151.2 64 204 160"
+        points="170.087 96 94.667 96 48 160"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -164,8 +156,16 @@
       />
     </g>
     <g v-else-if="weight === 'thin'">
+      <path
+        d="M208,80a16,16,0,0,0-16-16H152l56,96"
+        fill="none"
+        :stroke="color"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="8"
+      />
       <circle
-        cx="52"
+        cx="208"
         cy="160"
         r="40"
         fill="none"
@@ -175,7 +175,7 @@
         stroke-width="8"
       />
       <circle
-        cx="204"
+        cx="48"
         cy="160"
         r="40"
         fill="none"
@@ -185,7 +185,7 @@
         stroke-width="8"
       />
       <polyline
-        points="52 64 79.2 64 132 160"
+        points="48 64 76 64 132 160"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -193,15 +193,7 @@
         stroke-width="8"
       />
       <polyline
-        points="52 160 96.8 96 168.8 96"
-        fill="none"
-        :stroke="color"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="8"
-      />
-      <polyline
-        points="184 64 151.2 64 204 160"
+        points="170.087 96 94.667 96 48 160"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -210,8 +202,16 @@
       />
     </g>
     <g v-else-if="weight === 'regular'">
+      <path
+        d="M208,80a16,16,0,0,0-16-16H152l56,96"
+        fill="none"
+        :stroke="color"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
       <circle
-        cx="52"
+        cx="208"
         cy="160"
         r="40"
         fill="none"
@@ -221,7 +221,7 @@
         stroke-width="16"
       />
       <circle
-        cx="204"
+        cx="48"
         cy="160"
         r="40"
         fill="none"
@@ -231,7 +231,7 @@
         stroke-width="16"
       />
       <polyline
-        points="52 64 79.2 64 132 160"
+        points="48 64 76 64 132 160"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -239,15 +239,7 @@
         stroke-width="16"
       />
       <polyline
-        points="52 160 96.8 96 168.8 96"
-        fill="none"
-        :stroke="color"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="16"
-      />
-      <polyline
-        points="184 64 151.2 64 204 160"
+        points="170.087 96 94.667 96 48 160"
         fill="none"
         :stroke="color"
         stroke-linecap="round"

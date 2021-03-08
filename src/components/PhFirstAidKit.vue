@@ -201,8 +201,8 @@
     </g>
     <g v-else-if="weight === 'regular'">
       <rect
-        x="32.00781"
-        y="72.00005"
+        x="32"
+        y="72"
         width="192"
         height="144"
         rx="8"

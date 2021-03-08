@@ -12,10 +12,10 @@
     <slot />
     <g v-if="weight === 'bold'">
       <rect
-        x="32"
-        y="48"
-        width="192"
-        height="48"
+        x="24"
+        y="56"
+        width="208"
+        height="40"
         rx="7.99999"
         stroke-width="24"
         :stroke="color"
@@ -24,7 +24,7 @@
         fill="none"
       />
       <path
-        d="M208,96V200a8,8,0,0,1-8,8H56a8,8,0,0,1-8-8V96"
+        d="M216,96v96a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V96"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -44,12 +44,12 @@
       />
     </g>
     <g v-else-if="weight === 'duotone'">
-      <path d="M208,96V200a8,8,0,0,1-8,8H56a8,8,0,0,1-8-8V96Z" opacity="0.2" />
+      <path d="M216,96v96a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V96Z" opacity="0.2" />
       <rect
-        x="32"
-        y="48"
-        width="192"
-        height="48"
+        x="24"
+        y="56"
+        width="208"
+        height="40"
         rx="7.99999"
         stroke-width="16"
         :stroke="color"
@@ -58,7 +58,7 @@
         fill="none"
       />
       <path
-        d="M208,96V200a8,8,0,0,1-8,8H56a8,8,0,0,1-8-8V96"
+        d="M216,96v96a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V96"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -79,15 +79,15 @@
     </g>
     <g v-else-if="weight === 'fill'">
       <path
-        d="M216,40H40A16.01833,16.01833,0,0,0,24,56V88a16.01833,16.01833,0,0,0,16,16v96a16.01833,16.01833,0,0,0,16,16H200a16.01833,16.01833,0,0,0,16-16V104a16.01833,16.01833,0,0,0,16-16V56A16.01833,16.01833,0,0,0,216,40ZM152,144H104a8,8,0,0,1,0-16h48a8,8,0,0,1,0,16Zm64-56H40V56H216l.00977,32Z"
+        d="M224,48H32A16.01833,16.01833,0,0,0,16,64V88a16.01833,16.01833,0,0,0,16,16v88a16.01833,16.01833,0,0,0,16,16H208a16.01833,16.01833,0,0,0,16-16V104a16.01833,16.01833,0,0,0,16-16V64A16.01833,16.01833,0,0,0,224,48Zm-72,96H104a8,8,0,0,1,0-16h48a8,8,0,0,1,0,16Zm72-56H32V64H224l.00977,24Z"
       />
     </g>
     <g v-else-if="weight === 'light'">
       <rect
-        x="32"
-        y="48"
-        width="192"
-        height="48"
+        x="24"
+        y="56"
+        width="208"
+        height="40"
         rx="7.99999"
         stroke-width="12"
         :stroke="color"
@@ -96,7 +96,7 @@
         fill="none"
       />
       <path
-        d="M208,96V200a8,8,0,0,1-8,8H56a8,8,0,0,1-8-8V96"
+        d="M216,96v96a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V96"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -117,10 +117,10 @@
     </g>
     <g v-else-if="weight === 'thin'">
       <rect
-        x="32"
-        y="48"
-        width="192"
-        height="48"
+        x="24"
+        y="56"
+        width="208"
+        height="40"
         rx="7.99999"
         stroke-width="8"
         :stroke="color"
@@ -129,7 +129,7 @@
         fill="none"
       />
       <path
-        d="M208,96V200a8,8,0,0,1-8,8H56a8,8,0,0,1-8-8V96"
+        d="M216,96v96a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V96"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -150,10 +150,10 @@
     </g>
     <g v-else-if="weight === 'regular'">
       <rect
-        x="32"
-        y="48"
-        width="192"
-        height="48"
+        x="24"
+        y="56"
+        width="208"
+        height="40"
         rx="7.99999"
         stroke-width="16"
         :stroke="color"
@@ -162,7 +162,7 @@
         fill="none"
       />
       <path
-        d="M208,96V200a8,8,0,0,1-8,8H56a8,8,0,0,1-8-8V96"
+        d="M216,96v96a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V96"
         fill="none"
         :stroke="color"
         stroke-linecap="round"

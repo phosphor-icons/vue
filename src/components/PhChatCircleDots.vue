@@ -19,9 +19,8 @@
         stroke-linejoin="round"
         stroke-width="24"
       />
-      <circle cx="128" cy="128" r="16" />
-      <circle cx="176" cy="128" r="16" />
-      <circle cx="80" cy="128" r="16" />
+      <circle cx="99.99951" cy="127.99902" r="16" />
+      <circle cx="155.99951" cy="127.99902" r="16" />
     </g>
     <g v-else-if="weight === 'duotone'">
       <path

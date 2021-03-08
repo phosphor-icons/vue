@@ -12,7 +12,7 @@
     <slot />
     <g v-if="weight === 'bold'">
       <polyline
-        points="86 81.971 128 39.971 170 81.971"
+        points="86 81.989 128 40 170 81.989"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -23,7 +23,7 @@
         x1="128"
         y1="152"
         x2="128"
-        y2="40"
+        y2="40.02943"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -31,7 +31,7 @@
         stroke-width="24"
       />
       <path
-        d="M224,136v72a8,8,0,0,1-8,8H40a8,8,0,0,1-8-8V136"
+        d="M216,152v56a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V152"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -41,7 +41,7 @@
     </g>
     <g v-else-if="weight === 'duotone'">
       <polyline
-        points="86 81.971 128 39.971 170 81.971"
+        points="86 81.989 128 40 170 81.989"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -52,7 +52,7 @@
         x1="128"
         y1="152"
         x2="128"
-        y2="40"
+        y2="40.02943"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -60,7 +60,7 @@
         stroke-width="16"
       />
       <path
-        d="M224,136v72a8,8,0,0,1-8,8H40a8,8,0,0,1-8-8V136"
+        d="M216,152v56a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V152"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -69,18 +69,13 @@
       />
     </g>
     <g v-else-if="weight === 'fill'">
-      <g>
-        <path
-          d="M91.65674,87.62793,120,59.2843V152a8,8,0,0,0,16,0V59.2843l28.34326,28.34363a8.00018,8.00018,0,1,0,11.31348-11.31445l-42-42a8.0018,8.0018,0,0,0-11.31348,0l-42,42A8.00018,8.00018,0,1,0,91.65674,87.62793Z"
-        />
-        <path
-          d="M224,128a8.00039,8.00039,0,0,0-8,8v72H40V136a8,8,0,0,0-16,0v72a16.01833,16.01833,0,0,0,16,16H216a16.01833,16.01833,0,0,0,16-16V136A8.00039,8.00039,0,0,0,224,128Z"
-        />
-      </g>
+      <path
+        d="M80.34277,87.64551a7.9996,7.9996,0,0,1,.001-11.31348l42-41.98926a8.00063,8.00063,0,0,1,11.3125,0l42,41.98926a7.99983,7.99983,0,1,1-11.3125,11.31445L136,59.3103V152a8,8,0,0,1-16,0V59.3103L91.65625,87.64648A7.99914,7.99914,0,0,1,80.34277,87.64551ZM216,144a8.00039,8.00039,0,0,0-8,8v56H48V152a8,8,0,0,0-16,0v56a16.01833,16.01833,0,0,0,16,16H208a16.01833,16.01833,0,0,0,16-16V152A8.00039,8.00039,0,0,0,216,144Z"
+      />
     </g>
     <g v-else-if="weight === 'light'">
       <polyline
-        points="86 81.971 128 39.971 170 81.971"
+        points="86 81.989 128 40 170 81.989"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -91,7 +86,7 @@
         x1="128"
         y1="152"
         x2="128"
-        y2="40"
+        y2="40.02943"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -99,7 +94,7 @@
         stroke-width="12"
       />
       <path
-        d="M224,136v72a8,8,0,0,1-8,8H40a8,8,0,0,1-8-8V136"
+        d="M216,152v56a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V152"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -109,7 +104,7 @@
     </g>
     <g v-else-if="weight === 'thin'">
       <polyline
-        points="86 81.971 128 39.971 170 81.971"
+        points="86 81.989 128 40 170 81.989"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -120,7 +115,7 @@
         x1="128"
         y1="152"
         x2="128"
-        y2="40"
+        y2="40.02943"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -128,7 +123,7 @@
         stroke-width="8"
       />
       <path
-        d="M224,136v72a8,8,0,0,1-8,8H40a8,8,0,0,1-8-8V136"
+        d="M216,152v56a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V152"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -138,7 +133,7 @@
     </g>
     <g v-else-if="weight === 'regular'">
       <polyline
-        points="86 81.971 128 39.971 170 81.971"
+        points="86 81.989 128 40 170 81.989"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -149,7 +144,7 @@
         x1="128"
         y1="152"
         x2="128"
-        y2="40"
+        y2="40.02943"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -157,7 +152,7 @@
         stroke-width="16"
       />
       <path
-        d="M224,136v72a8,8,0,0,1-8,8H40a8,8,0,0,1-8-8V136"
+        d="M216,152v56a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V152"
         fill="none"
         :stroke="color"
         stroke-linecap="round"

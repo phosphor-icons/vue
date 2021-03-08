@@ -22,8 +22,7 @@
         stroke-width="24"
       />
       <polygon
-        points="164 128 108 92 108 164 164 128"
-        fill="none"
+        points="156 128 116 100 116 156 156 128"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
