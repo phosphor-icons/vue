@@ -46,7 +46,7 @@
         stroke-width="24"
       />
       <path
-        d="M199.99609,60.00005V208a8,8,0,0,1-8,8h-128a8,8,0,0,1-8-8v-148"
+        d="M200,60V208a8,8,0,0,1-8,8H64a8,8,0,0,1-8-8V60"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -101,7 +101,7 @@
         stroke-width="16"
       />
       <path
-        d="M199.99609,56.00005V208a8,8,0,0,1-8,8h-128a8,8,0,0,1-8-8v-152"
+        d="M200,56V208a8,8,0,0,1-8,8H64a8,8,0,0,1-8-8V56"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -157,7 +157,7 @@
         stroke-width="12"
       />
       <path
-        d="M199.99609,56.00005V208a8,8,0,0,1-8,8h-128a8,8,0,0,1-8-8v-152"
+        d="M200,56V208a8,8,0,0,1-8,8H64a8,8,0,0,1-8-8V56"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -208,7 +208,7 @@
         stroke-width="8"
       />
       <path
-        d="M199.99609,56.00005V208a8,8,0,0,1-8,8h-128a8,8,0,0,1-8-8v-152"
+        d="M200,56V208a8,8,0,0,1-8,8H64a8,8,0,0,1-8-8V56"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -259,7 +259,7 @@
         stroke-width="16"
       />
       <path
-        d="M199.99609,56.00005V208a8,8,0,0,1-8,8h-128a8,8,0,0,1-8-8v-152"
+        d="M200,56V208a8,8,0,0,1-8,8H64a8,8,0,0,1-8-8V56"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"

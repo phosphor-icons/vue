@@ -22,9 +22,8 @@
         stroke-linejoin="round"
         stroke-width="24"
       />
-      <circle cx="128" cy="80" r="16" />
-      <circle cx="128" cy="128" r="16" />
-      <circle cx="128" cy="176" r="16" />
+      <circle cx="128" cy="100" r="16" />
+      <circle cx="128" cy="156" r="16" />
     </g>
     <g v-else-if="displayWeight === 'duotone'">
       <circle cx="128" cy="128" r="96" opacity="0.2" />

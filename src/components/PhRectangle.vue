@@ -80,8 +80,8 @@
     </g>
     <g v-else-if="displayWeight === 'regular'">
       <rect
-        x="32.00781"
-        y="48.00005"
+        x="32"
+        y="48"
         width="192"
         height="160"
         rx="8"

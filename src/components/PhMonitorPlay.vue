@@ -12,6 +12,13 @@
   >
     <slot />
     <g v-if="displayWeight === 'bold'">
+      <polygon
+        points="156 120 116 92 116 148 156 120"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="24"
+      />
       <rect
         x="32"
         y="48"
@@ -30,14 +37,6 @@
         y1="228"
         x2="96"
         y2="228"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="24"
-      />
-      <polygon
-        points="164 120 108 84 108 156 164 120"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"

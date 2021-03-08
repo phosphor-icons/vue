@@ -1,0 +1,447 @@
+/* GENERATED FILE */
+<template>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 256 256"
+    :width="displaySize"
+    :height="displaySize"
+    :fill="displayColor"
+    :transform="displayMirrored"
+    v-bind="$attrs"
+    v-on="$listeners"
+  >
+    <slot />
+    <g v-if="displayWeight === 'bold'">
+      <circle cx="156" cy="88" r="16" />
+      <circle cx="100" cy="88" r="16" />
+      <line
+        x1="128"
+        y1="128"
+        x2="128"
+        y2="216"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="24"
+      />
+      <line
+        x1="244"
+        y1="128.00007"
+        x2="12"
+        y2="128"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="24"
+      />
+      <path
+        d="M208,144a80,80,0,0,1-160,0V112a80,80,0,0,1,160,0Z"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="24"
+      />
+      <line
+        x1="231.92301"
+        y1="188.00006"
+        x2="203.18198"
+        y2="171.40642"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="24"
+      />
+      <line
+        x1="231.92308"
+        y1="68.00006"
+        x2="203.18193"
+        y2="84.59378"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="24"
+      />
+      <line
+        x1="24.07695"
+        y1="68"
+        x2="52.81817"
+        y2="84.59375"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="24"
+      />
+      <line
+        x1="24.07695"
+        y1="188"
+        x2="52.81789"
+        y2="171.40641"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="24"
+      />
+    </g>
+    <g v-else-if="displayWeight === 'duotone'">
+      <g opacity="0.2">
+        <path d="M208,128v16a80,80,0,0,1-160,0V128Z" />
+      </g>
+      <circle cx="155.92969" cy="91.99998" r="12" />
+      <circle cx="99.92969" cy="91.99998" r="12" />
+      <line
+        x1="128"
+        y1="128"
+        x2="128"
+        y2="216"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <line
+        x1="244"
+        y1="128.00007"
+        x2="12"
+        y2="128"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <path
+        d="M208,144a80,80,0,0,1-160,0V112a80,80,0,0,1,160,0Z"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <line
+        x1="231.92301"
+        y1="188.00006"
+        x2="203.18198"
+        y2="171.40642"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <line
+        x1="231.92308"
+        y1="68.00006"
+        x2="203.18193"
+        y2="84.59378"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <line
+        x1="24.07695"
+        y1="68"
+        x2="52.81817"
+        y2="84.59375"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <line
+        x1="24.07695"
+        y1="188"
+        x2="52.81789"
+        y2="171.40641"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+    </g>
+    <g v-else-if="displayWeight === 'fill'">
+      <path
+        d="M167.92969,92a12,12,0,1,1-12-12A12,12,0,0,1,167.92969,92Zm-68-12a12,12,0,1,0,12,12A12,12,0,0,0,99.92969,80ZM252,128a8.00039,8.00039,0,0,1-8,8H216v8a87.78437,87.78437,0,0,1-3.24438,23.69629l23.16723,13.37549a8,8,0,1,1-8,13.85644l-20.96533-12.104a87.9757,87.9757,0,0,1-157.915,0l-20.96533,12.104a8,8,0,1,1-8-13.85644l23.16723-13.37549A87.78437,87.78437,0,0,1,40,144v-8H12a8,8,0,0,1,0-16H40v-8a87.787,87.787,0,0,1,3.24438-23.69629L20.07715,74.92822a8,8,0,0,1,8-13.85644L49.04248,73.17627a87.97531,87.97531,0,0,1,157.915,0l20.96533-12.10449a8,8,0,0,1,8,13.85644L212.75562,88.30371A87.787,87.787,0,0,1,216,112v8h28A8.00039,8.00039,0,0,1,252,128ZM136,144a8,8,0,0,0-16,0v64a8,8,0,0,0,16,0Zm64-32a72,72,0,0,0-144,0v8H200Z"
+      />
+    </g>
+    <g v-else-if="displayWeight === 'light'">
+      <circle cx="156" cy="92" r="10" />
+      <circle cx="100" cy="92" r="10" />
+      <line
+        x1="128"
+        y1="128"
+        x2="128"
+        y2="216"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="12"
+      />
+      <line
+        x1="244"
+        y1="128.00007"
+        x2="12"
+        y2="128"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="12"
+      />
+      <path
+        d="M208,144a80,80,0,0,1-160,0V112a80,80,0,0,1,160,0Z"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="12"
+      />
+      <line
+        x1="231.92301"
+        y1="188.00006"
+        x2="203.18198"
+        y2="171.40642"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="12"
+      />
+      <line
+        x1="231.92308"
+        y1="68.00006"
+        x2="203.18193"
+        y2="84.59378"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="12"
+      />
+      <line
+        x1="24.07695"
+        y1="68"
+        x2="52.81817"
+        y2="84.59375"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="12"
+      />
+      <line
+        x1="24.07695"
+        y1="188"
+        x2="52.81789"
+        y2="171.40641"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="12"
+      />
+    </g>
+    <g v-else-if="displayWeight === 'thin'">
+      <circle cx="156" cy="92" r="8" />
+      <circle cx="100" cy="92" r="8" />
+      <line
+        x1="128"
+        y1="128"
+        x2="128"
+        y2="216"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="8"
+      />
+      <line
+        x1="244"
+        y1="128.00007"
+        x2="12"
+        y2="128"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="8"
+      />
+      <path
+        d="M208,144a80,80,0,0,1-160,0V112a80,80,0,0,1,160,0Z"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="8"
+      />
+      <line
+        x1="231.92301"
+        y1="188.00006"
+        x2="203.18198"
+        y2="171.40642"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="8"
+      />
+      <line
+        x1="231.92308"
+        y1="68.00006"
+        x2="203.18193"
+        y2="84.59378"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="8"
+      />
+      <line
+        x1="24.07695"
+        y1="68"
+        x2="52.81817"
+        y2="84.59375"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="8"
+      />
+      <line
+        x1="24.07695"
+        y1="188"
+        x2="52.81789"
+        y2="171.40641"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="8"
+      />
+    </g>
+    <g v-else-if="displayWeight === 'regular'">
+      <circle cx="156" cy="92" r="12" />
+      <circle cx="100" cy="92" r="12" />
+      <line
+        x1="128"
+        y1="128"
+        x2="128"
+        y2="216"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <line
+        x1="244"
+        y1="128.00007"
+        x2="12"
+        y2="128"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <path
+        d="M208,144a80,80,0,0,1-160,0V112a80,80,0,0,1,160,0Z"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <line
+        x1="231.92301"
+        y1="188.00006"
+        x2="203.18198"
+        y2="171.40642"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <line
+        x1="231.92308"
+        y1="68.00006"
+        x2="203.18193"
+        y2="84.59378"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <line
+        x1="24.07695"
+        y1="68"
+        x2="52.81817"
+        y2="84.59375"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <line
+        x1="24.07695"
+        y1="188"
+        x2="52.81789"
+        y2="171.40641"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+    </g>
+  </svg>
+</template>
+
+<script lang="ts">
+import Vue from "vue";
+import {
+  IconComputed,
+  IconProps,
+  PropValidator,
+  IconContext,
+  ContextGetter
+} from "@/lib/types";
+export default Vue.extend<{}, {}, IconComputed, IconProps>({
+  name: "PhBug",
+  props: PropValidator,
+  inject: ContextGetter,
+  computed: {
+    displayWeight() {
+      const { weight, contextWeight } = this as IconProps & IconContext;
+      return weight ?? contextWeight;
+    },
+    displaySize() {
+      const { size, contextSize } = this as IconProps & IconContext;
+      return size ?? contextSize;
+    },
+    displayColor() {
+      const { color, contextColor } = this as IconProps & IconContext;
+      return color ?? contextColor;
+    },
+    displayMirrored() {
+      const { mirrored, contextMirrored } = this as IconProps & IconContext;
+      return mirrored ?? contextMirrored ? "scale(-1, 1)" : undefined;
+    }
+  }
+});
+</script>

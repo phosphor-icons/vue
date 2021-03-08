@@ -27,7 +27,7 @@
       <circle
         cx="128"
         cy="128"
-        r="32"
+        r="28"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -35,10 +35,10 @@
         stroke-width="24"
       />
       <line
-        x1="172"
+        x1="168"
         y1="64"
         x2="240"
-        y2="124"
+        y2="128"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -46,10 +46,10 @@
         stroke-width="24"
       />
       <line
-        x1="172"
+        x1="168"
         y1="192"
         x2="240"
-        y2="132"
+        y2="128"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -57,10 +57,10 @@
         stroke-width="24"
       />
       <line
-        x1="84"
+        x1="88"
         y1="64"
         x2="16"
-        y2="124"
+        y2="128"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -68,10 +68,10 @@
         stroke-width="24"
       />
       <line
-        x1="84"
+        x1="88"
         y1="192"
         x2="16"
-        y2="132"
+        y2="128"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"

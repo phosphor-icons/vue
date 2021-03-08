@@ -14,9 +14,9 @@
     <g v-if="displayWeight === 'bold'">
       <line
         x1="151.99414"
-        y1="59.99512"
+        y1="55.99512"
         x2="103.99414"
-        y2="195.99512"
+        y2="199.99512"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -25,9 +25,9 @@
       />
       <line
         x1="63.99414"
-        y1="195.99512"
+        y1="199.99512"
         x2="143.99414"
-        y2="195.99512"
+        y2="199.99512"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -36,9 +36,9 @@
       />
       <line
         x1="111.99414"
-        y1="59.99512"
+        y1="55.99512"
         x2="191.99414"
-        y2="59.99512"
+        y2="55.99512"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"

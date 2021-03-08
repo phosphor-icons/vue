@@ -23,15 +23,14 @@
         stroke-width="24"
       />
       <rect
-        x="104"
-        y="104"
-        width="48"
-        height="48"
+        x="108"
+        y="108"
+        width="40"
+        height="40"
         stroke-width="24"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
       />
     </g>
     <g v-else-if="displayWeight === 'duotone'">
