@@ -121,7 +121,7 @@ import {
   IconProps,
   PropValidator,
   IconContext,
-  ContextGetter
+  ContextGetter,
 } from "@/lib/types";
 export default Vue.extend<{}, {}, IconComputed, IconProps>({
   name: "PhLink",
@@ -143,7 +143,7 @@ export default Vue.extend<{}, {}, IconComputed, IconProps>({
     displayMirrored() {
       const { mirrored, contextMirrored } = this as IconProps & IconContext;
       return mirrored ?? contextMirrored ? "scale(-1, 1)" : undefined;
-    }
-  }
+    },
+  },
 });
 </script>

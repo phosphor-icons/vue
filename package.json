@@ -1,6 +1,6 @@
 {
   "name": "phosphor-vue",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "A clean and friendly icon family for Vue, too!",
   "author": "rektdeckard",
   "license": "MIT",
@@ -38,13 +38,13 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@types/vue": "^2.0.0",
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.5",
     "@babel/preset-typescript": "^7.9.0",
     "@rollup/plugin-alias": "^2.2.0",
     "@rollup/plugin-commonjs": "^11.1.0",
     "@rollup/plugin-replace": "^2.3.2",
+    "@types/vue": "^2.0.0",
     "@vue/cli-plugin-babel": "^4.3.1",
     "@vue/cli-plugin-typescript": "^4.3.1",
     "@vue/cli-service": "^4.3.1",

@@ -22,7 +22,7 @@ const install: InstallFunction = function installPhosphorVueTs(
 
 // Create module definition for Vue.use()
 const plugin = {
-  install
+  install,
 };
 
 // To auto-install on non-es builds, when vue is found

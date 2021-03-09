@@ -41,7 +41,10 @@
       />
     </g>
     <g v-else-if="displayWeight === 'duotone'">
-      <path d="M64,180v36a8,8,0,0,0,8,8H184a8,8,0,0,0,8-8V180.3588Z" />
+      <path
+        d="M64,180v36a8,8,0,0,0,8,8H184a8,8,0,0,0,8-8V180.3588Z"
+        opacity="0.2"
+      />
       <path
         d="M128,128,67.2,82.4A8,8,0,0,1,64,76V40a8,8,0,0,1,8-8H184a8,8,0,0,1,8,8V75.6412a8,8,0,0,1-3.17594,6.38188L128,128h0"
         fill="none"
@@ -172,7 +175,7 @@ import {
   IconProps,
   PropValidator,
   IconContext,
-  ContextGetter
+  ContextGetter,
 } from "@/lib/types";
 export default Vue.extend<{}, {}, IconComputed, IconProps>({
   name: "PhHourglassLow",
@@ -194,7 +197,7 @@ export default Vue.extend<{}, {}, IconComputed, IconProps>({
     displayMirrored() {
       const { mirrored, contextMirrored } = this as IconProps & IconContext;
       return mirrored ?? contextMirrored ? "scale(-1, 1)" : undefined;
-    }
-  }
+    },
+  },
 });
 </script>

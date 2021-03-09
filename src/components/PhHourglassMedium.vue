@@ -52,7 +52,10 @@
       />
     </g>
     <g v-else-if="displayWeight === 'duotone'">
-      <polygon points="128 128 180.923 87.995 74.661 87.995 128 128" />
+      <polygon
+        points="128 128 180.923 87.995 74.661 87.995 128 128"
+        opacity="0.2"
+      />
       <path
         d="M128,128,67.2,82.4A8,8,0,0,1,64,76V40a8,8,0,0,1,8-8H184a8,8,0,0,1,8,8V75.6412a8,8,0,0,1-3.17594,6.38188L128,128h0"
         fill="none"
@@ -227,7 +230,7 @@ import {
   IconProps,
   PropValidator,
   IconContext,
-  ContextGetter
+  ContextGetter,
 } from "@/lib/types";
 export default Vue.extend<{}, {}, IconComputed, IconProps>({
   name: "PhHourglassMedium",
@@ -249,7 +252,7 @@ export default Vue.extend<{}, {}, IconComputed, IconProps>({
     displayMirrored() {
       const { mirrored, contextMirrored } = this as IconProps & IconContext;
       return mirrored ?? contextMirrored ? "scale(-1, 1)" : undefined;
-    }
-  }
+    },
+  },
 });
 </script>
