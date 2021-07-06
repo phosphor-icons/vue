@@ -6,7 +6,7 @@ import {
   Plugin,
   PropType,
   ToRefs,
-  VNodeProps,
+  VNodeProps
 } from "vue";
 
 export type Weight = "thin" | "light" | "regular" | "bold" | "fill" | "duotone";
@@ -27,7 +27,7 @@ export const PropValidator = {
   color: String,
   size: [String, Number] as PropType<Size>,
   weight: String as PropType<Weight>,
-  mirrored: Boolean,
+  mirrored: Boolean
 };
 export type PropValidator = typeof PropValidator;
 

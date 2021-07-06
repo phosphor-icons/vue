@@ -55,11 +55,10 @@
       />
     </g>
     <g v-else-if="weight === 'duotone'">
-      <g opacity="0.2">
-        <path
-          d="M160,128a32,32,0,1,1-9.3726-22.62743h0l45.25483-45.25483h0A96,96,0,1,0,224,128Z"
-        />
-      </g>
+      <path
+        d="M160,128a32,32,0,1,1-9.3726-22.62743h0l45.25483-45.25483h0A96,96,0,1,0,224,128Z"
+        opacity="0.2"
+      />
       <circle
         cx="128"
         cy="128"
@@ -252,7 +251,7 @@ const component: PhosphorIcon = defineComponent({
   props: PropValidator,
   setup(props: SetupIconProps) {
     return { ...useDefaultPropsFromContext(props) };
-  },
+  }
 });
 export default component;
 </script>

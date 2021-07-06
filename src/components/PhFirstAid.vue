@@ -21,11 +21,10 @@
       />
     </g>
     <g v-else-if="weight === 'duotone'">
-      <g opacity="0.2">
-        <path
-          d="M96,160H40a8,8,0,0,1-8-8V104a8,8,0,0,1,8-8H96V40a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8V96h56a8,8,0,0,1,8,8v48a8,8,0,0,1-8,8H160v56a8,8,0,0,1-8,8H104a8,8,0,0,1-8-8V160Z"
-        />
-      </g>
+      <path
+        d="M96,160H40a8,8,0,0,1-8-8V104a8,8,0,0,1,8-8H96V40a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8V96h56a8,8,0,0,1,8,8v48a8,8,0,0,1-8,8H160v56a8,8,0,0,1-8,8H104a8,8,0,0,1-8-8V160Z"
+        opacity="0.2"
+      />
       <path
         d="M96,160H40a8,8,0,0,1-8-8V104a8,8,0,0,1,8-8H96V40a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8V96h56a8,8,0,0,1,8,8v48a8,8,0,0,1-8,8H160v56a8,8,0,0,1-8,8H104a8,8,0,0,1-8-8V160Z"
         fill="none"
@@ -82,7 +81,7 @@ const component: PhosphorIcon = defineComponent({
   props: PropValidator,
   setup(props: SetupIconProps) {
     return { ...useDefaultPropsFromContext(props) };
-  },
+  }
 });
 export default component;
 </script>

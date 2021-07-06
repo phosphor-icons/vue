@@ -34,27 +34,25 @@
       </g>
     </g>
     <g v-else-if="weight === 'duotone'">
-      <g>
-        <line
-          x1="56"
-          y1="132"
-          x2="136"
-          y2="132"
-          fill="none"
-          :stroke="color"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="16"
-        />
-        <path
-          d="M184,208H56a36,36,0,0,0,36-36V84a44,44,0,0,1,75.11269-31.11271"
-          fill="none"
-          :stroke="color"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="16"
-        />
-      </g>
+      <line
+        x1="56"
+        y1="132"
+        x2="136"
+        y2="132"
+        fill="none"
+        :stroke="color"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <path
+        d="M184,208H56a36,36,0,0,0,36-36V84a44,44,0,0,1,75.11269-31.11271"
+        fill="none"
+        :stroke="color"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
     </g>
     <g v-else-if="weight === 'fill'">
       <path
@@ -142,7 +140,7 @@ const component: PhosphorIcon = defineComponent({
   props: PropValidator,
   setup(props: SetupIconProps) {
     return { ...useDefaultPropsFromContext(props) };
-  },
+  }
 });
 export default component;
 </script>

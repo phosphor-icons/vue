@@ -51,7 +51,8 @@
         r="96"
         fill="none"
         :stroke="color"
-        stroke-miterlimit="10"
+        stroke-linecap="round"
+        stroke-linejoin="round"
         stroke-width="16"
       />
       <circle
@@ -60,7 +61,8 @@
         r="40"
         fill="none"
         :stroke="color"
-        stroke-miterlimit="10"
+        stroke-linecap="round"
+        stroke-linejoin="round"
         stroke-width="16"
       />
       <path
@@ -147,7 +149,8 @@
         r="96"
         fill="none"
         :stroke="color"
-        stroke-miterlimit="10"
+        stroke-linecap="round"
+        stroke-linejoin="round"
         stroke-width="16"
       />
       <circle
@@ -156,7 +159,8 @@
         r="40"
         fill="none"
         :stroke="color"
-        stroke-miterlimit="10"
+        stroke-linecap="round"
+        stroke-linejoin="round"
         stroke-width="16"
       />
       <path
@@ -180,7 +184,7 @@ const component: PhosphorIcon = defineComponent({
   props: PropValidator,
   setup(props: SetupIconProps) {
     return { ...useDefaultPropsFromContext(props) };
-  },
+  }
 });
 export default component;
 </script>

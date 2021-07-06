@@ -5,7 +5,7 @@ const defaults: IconProps = {
   weight: "regular",
   size: "1em",
   color: "currentColor",
-  mirrored: false,
+  mirrored: false
 };
 
 function unwrapIfRef<T>(obj: T | Ref<T>): T {
@@ -18,14 +18,14 @@ function useDefaultPropsFromContext(props: SetupIconProps): ToRefs<IconProps> {
     weight: unwrapIfRef(inject("weight", defaults.weight)),
     size: unwrapIfRef(inject("size", defaults.size)),
     color: unwrapIfRef(inject("color", defaults.color)),
-    mirrored: unwrapIfRef(inject("mirrored", defaults.mirrored)),
+    mirrored: unwrapIfRef(inject("mirrored", defaults.mirrored))
   };
 
   return {
     weight: computed(() => props.weight ?? contextProps.weight),
     size: computed(() => props.size ?? contextProps.size),
     color: computed(() => props.color ?? contextProps.color),
-    mirrored: computed(() => props.mirrored || contextProps.mirrored),
+    mirrored: computed(() => props.mirrored || contextProps.mirrored)
   };
 }
 export default useDefaultPropsFromContext;

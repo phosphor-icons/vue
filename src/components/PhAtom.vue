@@ -44,6 +44,14 @@
         rx="44"
         ry="116"
         transform="translate(-53.01934 128) rotate(-45)"
+        opacity="0.2"
+      />
+      <ellipse
+        cx="128"
+        cy="128"
+        rx="44"
+        ry="116"
+        transform="translate(-53.01934 128) rotate(-45)"
         stroke-width="16"
         :stroke="color"
         stroke-linecap="round"
@@ -162,7 +170,7 @@ const component: PhosphorIcon = defineComponent({
   props: PropValidator,
   setup(props: SetupIconProps) {
     return { ...useDefaultPropsFromContext(props) };
-  },
+  }
 });
 export default component;
 </script>

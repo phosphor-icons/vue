@@ -78,27 +78,25 @@
         stroke-linejoin="round"
         stroke-width="16"
       />
-      <g>
-        <line
-          x1="128"
-          y1="136"
-          x2="128"
-          y2="216"
-          fill="none"
-          :stroke="color"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="16"
-        />
-        <polyline
-          points="200 48 128 136 56 48"
-          fill="none"
-          :stroke="color"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="16"
-        />
-      </g>
+      <line
+        x1="128"
+        y1="136"
+        x2="128"
+        y2="216"
+        fill="none"
+        :stroke="color"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <polyline
+        points="200 48 128 136 56 48"
+        fill="none"
+        :stroke="color"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
     </g>
     <g v-else-if="weight === 'fill'">
       <path
@@ -252,7 +250,7 @@ const component: PhosphorIcon = defineComponent({
   props: PropValidator,
   setup(props: SetupIconProps) {
     return { ...useDefaultPropsFromContext(props) };
-  },
+  }
 });
 export default component;
 </script>

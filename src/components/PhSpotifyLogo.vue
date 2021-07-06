@@ -50,32 +50,30 @@
         stroke-linejoin="round"
         stroke-width="16"
       />
-      <g>
-        <path
-          d="M179.1333,108.32931a112.19069,112.19069,0,0,0-102.3584.04859"
-          fill="none"
-          :stroke="color"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="16"
-        />
-        <path
-          d="M164.29541,136.71457a79.94058,79.94058,0,0,0-72.68359.04736"
-          fill="none"
-          :stroke="color"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="16"
-        />
-        <path
-          d="M149.47217,165.07248a47.97816,47.97816,0,0,0-43.03662.04736"
-          fill="none"
-          :stroke="color"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="16"
-        />
-      </g>
+      <path
+        d="M179.1333,108.32931a112.19069,112.19069,0,0,0-102.3584.04859"
+        fill="none"
+        :stroke="color"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <path
+        d="M164.29541,136.71457a79.94058,79.94058,0,0,0-72.68359.04736"
+        fill="none"
+        :stroke="color"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <path
+        d="M149.47217,165.07248a47.97816,47.97816,0,0,0-43.03662.04736"
+        fill="none"
+        :stroke="color"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
     </g>
     <g v-else-if="weight === 'fill'">
       <path
@@ -208,7 +206,7 @@ const component: PhosphorIcon = defineComponent({
   props: PropValidator,
   setup(props: SetupIconProps) {
     return { ...useDefaultPropsFromContext(props) };
-  },
+  }
 });
 export default component;
 </script>

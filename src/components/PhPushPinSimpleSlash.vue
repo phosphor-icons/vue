@@ -79,11 +79,7 @@
       />
     </g>
     <g v-else-if="weight === 'duotone'">
-      <polygon points="56 176 74.798 69.478 171.636 176 56 176" opacity="0.2" />
-      <polyline
-        points="91.246 40 176 40 196.415 155.686 138.867 92.383 91.246 40"
-        opacity="0.2"
-      />
+      <polygon points="56 176 80 40 176 40 200 176 56 176" opacity="0.2" />
       <line
         x1="91.24627"
         y1="40"
@@ -372,7 +368,7 @@ const component: PhosphorIcon = defineComponent({
   props: PropValidator,
   setup(props: SetupIconProps) {
     return { ...useDefaultPropsFromContext(props) };
-  },
+  }
 });
 export default component;
 </script>
