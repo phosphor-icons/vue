@@ -34,24 +34,22 @@
         d="M136,216V184a48,48,0,0,1,48-48h32C208,160,160,208,136,216Z"
         opacity="0.2"
       />
-      <g>
-        <path
-          d="M136,216H88a48,48,0,0,1-48-48V88A48,48,0,0,1,88,40h80a48,48,0,0,1,48,48v48C208,160,160,208,136,216Z"
-          fill="none"
-          :stroke="displayColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="16"
-        />
-        <path
-          d="M136,216V184a48,48,0,0,1,48-48h32"
-          fill="none"
-          :stroke="displayColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="16"
-        />
-      </g>
+      <path
+        d="M136,216H88a48,48,0,0,1-48-48V88A48,48,0,0,1,88,40h80a48,48,0,0,1,48,48v48C208,160,160,208,136,216Z"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <path
+        d="M136,216V184a48,48,0,0,1,48-48h32"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
     </g>
     <g v-else-if="displayWeight === 'fill'">
       <path
@@ -122,7 +120,7 @@ import {
   IconProps,
   PropValidator,
   IconContext,
-  ContextGetter,
+  ContextGetter
 } from "@/lib/types";
 export default Vue.extend<{}, {}, IconComputed, IconProps>({
   name: "PhSticker",
@@ -144,7 +142,7 @@ export default Vue.extend<{}, {}, IconComputed, IconProps>({
     displayMirrored() {
       const { mirrored, contextMirrored } = this as IconProps & IconContext;
       return mirrored ?? contextMirrored ? "scale(-1, 1)" : undefined;
-    },
-  },
+    }
+  }
 });
 </script>

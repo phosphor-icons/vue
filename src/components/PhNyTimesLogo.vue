@@ -50,11 +50,10 @@
       />
     </g>
     <g v-else-if="displayWeight === 'duotone'">
-      <g opacity="0.2">
-        <path
-          d="M95.92964,217.34328a79.7299,79.7299,0,0,0,32,6.65672V112l-32,17.06667h0v88.2765Z"
-        />
-      </g>
+      <path
+        d="M95.92964,217.34328a79.7299,79.7299,0,0,0,32,6.65672V112l-32,17.06667h0v88.2765Z"
+        opacity="0.2"
+      />
       <circle cx="171.92969" cy="148" r="12" />
       <path
         d="M205.57177,163.35784A80.00853,80.00853,0,1,1,127.92969,64"
@@ -221,7 +220,7 @@ import {
   IconProps,
   PropValidator,
   IconContext,
-  ContextGetter,
+  ContextGetter
 } from "@/lib/types";
 export default Vue.extend<{}, {}, IconComputed, IconProps>({
   name: "PhNyTimesLogo",
@@ -243,7 +242,7 @@ export default Vue.extend<{}, {}, IconComputed, IconProps>({
     displayMirrored() {
       const { mirrored, contextMirrored } = this as IconProps & IconContext;
       return mirrored ?? contextMirrored ? "scale(-1, 1)" : undefined;
-    },
-  },
+    }
+  }
 });
 </script>

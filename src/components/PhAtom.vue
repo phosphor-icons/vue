@@ -45,6 +45,14 @@
         rx="44"
         ry="116"
         transform="translate(-53.01934 128) rotate(-45)"
+        opacity="0.2"
+      />
+      <ellipse
+        cx="128"
+        cy="128"
+        rx="44"
+        ry="116"
+        transform="translate(-53.01934 128) rotate(-45)"
         stroke-width="16"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -161,7 +169,7 @@ import {
   IconProps,
   PropValidator,
   IconContext,
-  ContextGetter,
+  ContextGetter
 } from "@/lib/types";
 export default Vue.extend<{}, {}, IconComputed, IconProps>({
   name: "PhAtom",
@@ -183,7 +191,7 @@ export default Vue.extend<{}, {}, IconComputed, IconProps>({
     displayMirrored() {
       const { mirrored, contextMirrored } = this as IconProps & IconContext;
       return mirrored ?? contextMirrored ? "scale(-1, 1)" : undefined;
-    },
-  },
+    }
+  }
 });
 </script>

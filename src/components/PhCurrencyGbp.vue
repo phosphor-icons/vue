@@ -35,27 +35,25 @@
       </g>
     </g>
     <g v-else-if="displayWeight === 'duotone'">
-      <g>
-        <line
-          x1="56"
-          y1="132"
-          x2="136"
-          y2="132"
-          fill="none"
-          :stroke="displayColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="16"
-        />
-        <path
-          d="M184,208H56a36,36,0,0,0,36-36V84a44,44,0,0,1,75.11269-31.11271"
-          fill="none"
-          :stroke="displayColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="16"
-        />
-      </g>
+      <line
+        x1="56"
+        y1="132"
+        x2="136"
+        y2="132"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <path
+        d="M184,208H56a36,36,0,0,0,36-36V84a44,44,0,0,1,75.11269-31.11271"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
     </g>
     <g v-else-if="displayWeight === 'fill'">
       <path
@@ -141,7 +139,7 @@ import {
   IconProps,
   PropValidator,
   IconContext,
-  ContextGetter,
+  ContextGetter
 } from "@/lib/types";
 export default Vue.extend<{}, {}, IconComputed, IconProps>({
   name: "PhCurrencyGbp",
@@ -163,7 +161,7 @@ export default Vue.extend<{}, {}, IconComputed, IconProps>({
     displayMirrored() {
       const { mirrored, contextMirrored } = this as IconProps & IconContext;
       return mirrored ?? contextMirrored ? "scale(-1, 1)" : undefined;
-    },
-  },
+    }
+  }
 });
 </script>

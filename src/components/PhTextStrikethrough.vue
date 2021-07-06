@@ -54,24 +54,22 @@
         stroke-linejoin="round"
         stroke-width="16"
       />
-      <g>
-        <path
-          d="M76.334,96.00294A25.48209,25.48209,0,0,1,75.11111,88c0-22.09139,21.96094-40,52.88889-40,23.77865,0,42.25677,10.58606,49.529,25.52014"
-          fill="none"
-          :stroke="displayColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="16"
-        />
-        <path
-          d="M72,168c0,22.09139,25.07205,40,56,40s56-17.90861,56-40c0-23.76634-21.62275-32.97043-45.59723-40.00076"
-          fill="none"
-          :stroke="displayColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="16"
-        />
-      </g>
+      <path
+        d="M76.334,96.00294A25.48209,25.48209,0,0,1,75.11111,88c0-22.09139,21.96094-40,52.88889-40,23.77865,0,42.25677,10.58606,49.529,25.52014"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <path
+        d="M72,168c0,22.09139,25.07205,40,56,40s56-17.90861,56-40c0-23.76634-21.62275-32.97043-45.59723-40.00076"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
     </g>
     <g v-else-if="displayWeight === 'fill'">
       <path
@@ -181,7 +179,7 @@ import {
   IconProps,
   PropValidator,
   IconContext,
-  ContextGetter,
+  ContextGetter
 } from "@/lib/types";
 export default Vue.extend<{}, {}, IconComputed, IconProps>({
   name: "PhTextStrikethrough",
@@ -203,7 +201,7 @@ export default Vue.extend<{}, {}, IconComputed, IconProps>({
     displayMirrored() {
       const { mirrored, contextMirrored } = this as IconProps & IconContext;
       return mirrored ?? contextMirrored ? "scale(-1, 1)" : undefined;
-    },
-  },
+    }
+  }
 });
 </script>

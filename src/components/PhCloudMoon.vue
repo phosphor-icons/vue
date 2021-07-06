@@ -30,11 +30,10 @@
       />
     </g>
     <g v-else-if="displayWeight === 'duotone'">
-      <g opacity="0.2">
-        <path
-          d="M90.30559,130.37786a68.14083,68.14083,0,0,1,45.47328-47.32071l.15152-.04541Q135.99975,81.51458,136,80A64.02478,64.02478,0,0,0,86.37938,17.62177l-.00084.00019A64.05661,64.05661,0,0,1,9.622,94.37856l-.00023.001A64.12919,64.12919,0,0,0,46.99,138.92889l-.00581-.00661a44.06953,44.06953,0,0,1,43.32161-8.54436Z"
-        />
-      </g>
+      <path
+        d="M90.30559,130.37786a68.14083,68.14083,0,0,1,45.47328-47.32071l.15152-.04541Q135.99975,81.51458,136,80A64.02478,64.02478,0,0,0,86.37938,17.62177l-.00084.00019A64.05661,64.05661,0,0,1,9.622,94.37856l-.00023.001A64.12919,64.12919,0,0,0,46.99,138.92889l-.00581-.00661a44.06953,44.06953,0,0,1,43.32161-8.54436Z"
+        opacity="0.2"
+      />
       <path
         d="M88,148a68,68,0,1,1,68,68H76a44,44,0,1,1,14.30583-85.62208"
         fill="none"
@@ -121,7 +120,7 @@ import {
   IconProps,
   PropValidator,
   IconContext,
-  ContextGetter,
+  ContextGetter
 } from "@/lib/types";
 export default Vue.extend<{}, {}, IconComputed, IconProps>({
   name: "PhCloudMoon",
@@ -143,7 +142,7 @@ export default Vue.extend<{}, {}, IconComputed, IconProps>({
     displayMirrored() {
       const { mirrored, contextMirrored } = this as IconProps & IconContext;
       return mirrored ?? contextMirrored ? "scale(-1, 1)" : undefined;
-    },
-  },
+    }
+  }
 });
 </script>

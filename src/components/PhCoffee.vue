@@ -13,39 +13,6 @@
     <slot />
     <g v-if="displayWeight === 'bold'">
       <line
-        x1="84"
-        y1="24"
-        x2="84"
-        y2="56"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="24"
-      />
-      <line
-        x1="120"
-        y1="24"
-        x2="120"
-        y2="56"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="24"
-      />
-      <line
-        x1="156"
-        y1="24"
-        x2="156"
-        y2="56"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="24"
-      />
-      <line
         x1="32"
         y1="216"
         x2="208"
@@ -66,6 +33,39 @@
       />
       <path
         d="M208,88h4a32,32,0,0,1,32,32V128a32,32,0,0,1-32,32h-7.37846"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="24"
+      />
+      <line
+        x1="80"
+        y1="24"
+        x2="80"
+        y2="48"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="24"
+      />
+      <line
+        x1="120"
+        y1="24"
+        x2="120"
+        y2="48"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="24"
+      />
+      <line
+        x1="160"
+        y1="24"
+        x2="160"
+        y2="48"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -340,7 +340,7 @@ import {
   IconProps,
   PropValidator,
   IconContext,
-  ContextGetter,
+  ContextGetter
 } from "@/lib/types";
 export default Vue.extend<{}, {}, IconComputed, IconProps>({
   name: "PhCoffee",
@@ -362,7 +362,7 @@ export default Vue.extend<{}, {}, IconComputed, IconProps>({
     displayMirrored() {
       const { mirrored, contextMirrored } = this as IconProps & IconContext;
       return mirrored ?? contextMirrored ? "scale(-1, 1)" : undefined;
-    },
-  },
+    }
+  }
 });
 </script>

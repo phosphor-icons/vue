@@ -18,7 +18,7 @@
         x1="128"
         y1="128"
         x2="128"
-        y2="216"
+        y2="224"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -90,16 +90,14 @@
       />
     </g>
     <g v-else-if="displayWeight === 'duotone'">
-      <g opacity="0.2">
-        <path d="M208,128v16a80,80,0,0,1-160,0V128Z" />
-      </g>
+      <path d="M208,128v16a80,80,0,0,1-160,0V128Z" opacity="0.2" />
       <circle cx="155.92969" cy="91.99998" r="12" />
       <circle cx="99.92969" cy="91.99998" r="12" />
       <line
         x1="128"
         y1="128"
         x2="128"
-        y2="216"
+        y2="224"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -182,7 +180,7 @@
         x1="128"
         y1="128"
         x2="128"
-        y2="216"
+        y2="224"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -260,7 +258,7 @@
         x1="128"
         y1="128"
         x2="128"
-        y2="216"
+        y2="224"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -338,7 +336,7 @@
         x1="128"
         y1="128"
         x2="128"
-        y2="216"
+        y2="224"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -419,7 +417,7 @@ import {
   IconProps,
   PropValidator,
   IconContext,
-  ContextGetter,
+  ContextGetter
 } from "@/lib/types";
 export default Vue.extend<{}, {}, IconComputed, IconProps>({
   name: "PhBug",
@@ -441,7 +439,7 @@ export default Vue.extend<{}, {}, IconComputed, IconProps>({
     displayMirrored() {
       const { mirrored, contextMirrored } = this as IconProps & IconContext;
       return mirrored ?? contextMirrored ? "scale(-1, 1)" : undefined;
-    },
-  },
+    }
+  }
 });
 </script>

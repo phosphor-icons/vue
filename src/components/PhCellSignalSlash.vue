@@ -53,27 +53,25 @@
         stroke-linejoin="round"
         stroke-width="16"
       />
-      <g>
-        <line
-          x1="47.99463"
-          y1="40.00842"
-          x2="207.99463"
-          y2="216.00842"
-          fill="none"
-          :stroke="displayColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="16"
-        />
-        <path
-          d="M207.99463,216H27.31371a8,8,0,0,1-5.65686-13.65685l91.09823-91.09823"
-          fill="none"
-          :stroke="displayColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="16"
-        />
-      </g>
+      <line
+        x1="47.99463"
+        y1="40.00842"
+        x2="207.99463"
+        y2="216.00842"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <path
+        d="M207.99463,216H27.31371a8,8,0,0,1-5.65686-13.65685l91.09823-91.09823"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
     </g>
     <g v-else-if="displayWeight === 'fill'">
       <g>
@@ -182,7 +180,7 @@ import {
   IconProps,
   PropValidator,
   IconContext,
-  ContextGetter,
+  ContextGetter
 } from "@/lib/types";
 export default Vue.extend<{}, {}, IconComputed, IconProps>({
   name: "PhCellSignalSlash",
@@ -204,7 +202,7 @@ export default Vue.extend<{}, {}, IconComputed, IconProps>({
     displayMirrored() {
       const { mirrored, contextMirrored } = this as IconProps & IconContext;
       return mirrored ?? contextMirrored ? "scale(-1, 1)" : undefined;
-    },
-  },
+    }
+  }
 });
 </script>

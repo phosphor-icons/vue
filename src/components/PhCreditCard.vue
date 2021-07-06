@@ -59,11 +59,10 @@
       />
     </g>
     <g v-else-if="displayWeight === 'duotone'">
-      <g opacity="0.2">
-        <path
-          d="M23.99414,96.85228h208L232,192a8,8,0,0,1-8,8H32a8,8,0,0,1-8-8Z"
-        />
-      </g>
+      <path
+        d="M23.99414,96.85228h208L232,192a8,8,0,0,1-8,8H32a8,8,0,0,1-8-8Z"
+        opacity="0.2"
+      />
       <rect
         x="24"
         y="56"
@@ -266,7 +265,7 @@ import {
   IconProps,
   PropValidator,
   IconContext,
-  ContextGetter,
+  ContextGetter
 } from "@/lib/types";
 export default Vue.extend<{}, {}, IconComputed, IconProps>({
   name: "PhCreditCard",
@@ -288,7 +287,7 @@ export default Vue.extend<{}, {}, IconComputed, IconProps>({
     displayMirrored() {
       const { mirrored, contextMirrored } = this as IconProps & IconContext;
       return mirrored ?? contextMirrored ? "scale(-1, 1)" : undefined;
-    },
-  },
+    }
+  }
 });
 </script>

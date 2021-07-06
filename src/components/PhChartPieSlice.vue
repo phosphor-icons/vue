@@ -52,11 +52,10 @@
       />
     </g>
     <g v-else-if="displayWeight === 'duotone'">
-      <g opacity="0.2">
-        <path
-          d="M33.60061,145.5506A96.15147,96.15147,0,0,1,95.99845,37.46313V109.5252Z"
-        />
-      </g>
+      <path
+        d="M33.60061,145.5506A96.15147,96.15147,0,0,1,95.99845,37.46313V109.5252Z"
+        opacity="0.2"
+      />
       <line
         x1="128"
         y1="128"
@@ -236,7 +235,7 @@ import {
   IconProps,
   PropValidator,
   IconContext,
-  ContextGetter,
+  ContextGetter
 } from "@/lib/types";
 export default Vue.extend<{}, {}, IconComputed, IconProps>({
   name: "PhChartPieSlice",
@@ -258,7 +257,7 @@ export default Vue.extend<{}, {}, IconComputed, IconProps>({
     displayMirrored() {
       const { mirrored, contextMirrored } = this as IconProps & IconContext;
       return mirrored ?? contextMirrored ? "scale(-1, 1)" : undefined;
-    },
-  },
+    }
+  }
 });
 </script>

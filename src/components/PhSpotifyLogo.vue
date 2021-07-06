@@ -51,32 +51,30 @@
         stroke-linejoin="round"
         stroke-width="16"
       />
-      <g>
-        <path
-          d="M179.1333,108.32931a112.19069,112.19069,0,0,0-102.3584.04859"
-          fill="none"
-          :stroke="displayColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="16"
-        />
-        <path
-          d="M164.29541,136.71457a79.94058,79.94058,0,0,0-72.68359.04736"
-          fill="none"
-          :stroke="displayColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="16"
-        />
-        <path
-          d="M149.47217,165.07248a47.97816,47.97816,0,0,0-43.03662.04736"
-          fill="none"
-          :stroke="displayColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="16"
-        />
-      </g>
+      <path
+        d="M179.1333,108.32931a112.19069,112.19069,0,0,0-102.3584.04859"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <path
+        d="M164.29541,136.71457a79.94058,79.94058,0,0,0-72.68359.04736"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <path
+        d="M149.47217,165.07248a47.97816,47.97816,0,0,0-43.03662.04736"
+        fill="none"
+        :stroke="displayColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
     </g>
     <g v-else-if="displayWeight === 'fill'">
       <path
@@ -207,7 +205,7 @@ import {
   IconProps,
   PropValidator,
   IconContext,
-  ContextGetter,
+  ContextGetter
 } from "@/lib/types";
 export default Vue.extend<{}, {}, IconComputed, IconProps>({
   name: "PhSpotifyLogo",
@@ -229,7 +227,7 @@ export default Vue.extend<{}, {}, IconComputed, IconProps>({
     displayMirrored() {
       const { mirrored, contextMirrored } = this as IconProps & IconContext;
       return mirrored ?? contextMirrored ? "scale(-1, 1)" : undefined;
-    },
-  },
+    }
+  }
 });
 </script>

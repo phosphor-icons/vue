@@ -80,11 +80,7 @@
       />
     </g>
     <g v-else-if="displayWeight === 'duotone'">
-      <polygon points="56 176 74.798 69.478 171.636 176 56 176" opacity="0.2" />
-      <polyline
-        points="91.246 40 176 40 196.415 155.686 138.867 92.383 91.246 40"
-        opacity="0.2"
-      />
+      <polygon points="56 176 80 40 176 40 200 176 56 176" opacity="0.2" />
       <line
         x1="91.24627"
         y1="40"
@@ -371,7 +367,7 @@ import {
   IconProps,
   PropValidator,
   IconContext,
-  ContextGetter,
+  ContextGetter
 } from "@/lib/types";
 export default Vue.extend<{}, {}, IconComputed, IconProps>({
   name: "PhPushPinSimpleSlash",
@@ -393,7 +389,7 @@ export default Vue.extend<{}, {}, IconComputed, IconProps>({
     displayMirrored() {
       const { mirrored, contextMirrored } = this as IconProps & IconContext;
       return mirrored ?? contextMirrored ? "scale(-1, 1)" : undefined;
-    },
-  },
+    }
+  }
 });
 </script>

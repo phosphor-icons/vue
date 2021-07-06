@@ -60,11 +60,10 @@
       />
     </g>
     <g v-else-if="displayWeight === 'duotone'">
-      <g opacity="0.2">
-        <path
-          d="M216,136c0,51.50493-74.43964,69.17367-86.39,71.67832a7.80809,7.80809,0,0,1-3.21992,0C114.43964,205.17367,40,187.50493,40,136V77.60342a8,8,0,0,1,5.26606-7.51835l80-29.09091a8,8,0,0,1,5.46788,0l80,29.09091A8,8,0,0,1,216,77.60342Z"
-        />
-      </g>
+      <path
+        d="M216,136c0,51.50493-74.43964,69.17367-86.39,71.67832a7.80809,7.80809,0,0,1-3.21992,0C114.43964,205.17367,40,187.50493,40,136V77.60342a8,8,0,0,1,5.26606-7.51835l80-29.09091a8,8,0,0,1,5.46788,0l80,29.09091A8,8,0,0,1,216,77.60342Z"
+        opacity="0.2"
+      />
       <path
         d="M216,136c0,51.50493-74.43964,69.17367-86.39,71.67832a7.80809,7.80809,0,0,1-3.21992,0C114.43964,205.17367,40,187.50493,40,136V77.60342a8,8,0,0,1,5.26606-7.51835l80-29.09091a8,8,0,0,1,5.46788,0l80,29.09091A8,8,0,0,1,216,77.60342Z"
         fill="none"
@@ -271,7 +270,7 @@ import {
   IconProps,
   PropValidator,
   IconContext,
-  ContextGetter,
+  ContextGetter
 } from "@/lib/types";
 export default Vue.extend<{}, {}, IconComputed, IconProps>({
   name: "PhFaceMask",
@@ -293,7 +292,7 @@ export default Vue.extend<{}, {}, IconComputed, IconProps>({
     displayMirrored() {
       const { mirrored, contextMirrored } = this as IconProps & IconContext;
       return mirrored ?? contextMirrored ? "scale(-1, 1)" : undefined;
-    },
-  },
+    }
+  }
 });
 </script>

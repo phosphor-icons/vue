@@ -78,16 +78,14 @@
       />
     </g>
     <g v-else-if="displayWeight === 'duotone'">
-      <g opacity="0.2">
-        <path
-          d="M195.88225,60.11775a96,96,0,0,1,0,135.7645l-39.598-39.598a40,40,0,0,0,0-56.56854Z"
-        />
-      </g>
-      <g opacity="0.2">
-        <path
-          d="M60.11775,195.88225a96,96,0,0,1,0-135.7645l39.598,39.598a40,40,0,0,0,0,56.56854Z"
-        />
-      </g>
+      <path
+        d="M195.88225,60.11775a96,96,0,0,1,0,135.7645l-39.598-39.598a40,40,0,0,0,0-56.56854Z"
+        opacity="0.2"
+      />
+      <path
+        d="M60.11775,195.88225a96,96,0,0,1,0-135.7645l39.598,39.598a40,40,0,0,0,0,56.56854Z"
+        opacity="0.2"
+      />
       <circle
         cx="128"
         cy="128"
@@ -366,7 +364,7 @@ import {
   IconProps,
   PropValidator,
   IconContext,
-  ContextGetter,
+  ContextGetter
 } from "@/lib/types";
 export default Vue.extend<{}, {}, IconComputed, IconProps>({
   name: "PhLifebuoy",
@@ -388,7 +386,7 @@ export default Vue.extend<{}, {}, IconComputed, IconProps>({
     displayMirrored() {
       const { mirrored, contextMirrored } = this as IconProps & IconContext;
       return mirrored ?? contextMirrored ? "scale(-1, 1)" : undefined;
-    },
-  },
+    }
+  }
 });
 </script>

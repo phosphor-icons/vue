@@ -33,11 +33,10 @@
       />
     </g>
     <g v-else-if="displayWeight === 'duotone'">
-      <g opacity="0.2">
-        <path
-          d="M136,64l56,56,26.34315-26.34315a8,8,0,0,0,0-11.3137l-44.6863-44.6863a8,8,0,0,0-11.3137,0Z"
-        />
-      </g>
+      <path
+        d="M136,64l56,56,26.34315-26.34315a8,8,0,0,0,0-11.3137l-44.6863-44.6863a8,8,0,0,0-11.3137,0Z"
+        opacity="0.2"
+      />
       <line
         x1="136"
         y1="64"
@@ -136,7 +135,7 @@ import {
   IconProps,
   PropValidator,
   IconContext,
-  ContextGetter,
+  ContextGetter
 } from "@/lib/types";
 export default Vue.extend<{}, {}, IconComputed, IconProps>({
   name: "PhPencilSimple",
@@ -158,7 +157,7 @@ export default Vue.extend<{}, {}, IconComputed, IconProps>({
     displayMirrored() {
       const { mirrored, contextMirrored } = this as IconProps & IconContext;
       return mirrored ?? contextMirrored ? "scale(-1, 1)" : undefined;
-    },
-  },
+    }
+  }
 });
 </script>

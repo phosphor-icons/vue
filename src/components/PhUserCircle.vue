@@ -52,7 +52,8 @@
         r="96"
         fill="none"
         :stroke="displayColor"
-        stroke-miterlimit="10"
+        stroke-linecap="round"
+        stroke-linejoin="round"
         stroke-width="16"
       />
       <circle
@@ -61,7 +62,8 @@
         r="40"
         fill="none"
         :stroke="displayColor"
-        stroke-miterlimit="10"
+        stroke-linecap="round"
+        stroke-linejoin="round"
         stroke-width="16"
       />
       <path
@@ -148,7 +150,8 @@
         r="96"
         fill="none"
         :stroke="displayColor"
-        stroke-miterlimit="10"
+        stroke-linecap="round"
+        stroke-linejoin="round"
         stroke-width="16"
       />
       <circle
@@ -157,7 +160,8 @@
         r="40"
         fill="none"
         :stroke="displayColor"
-        stroke-miterlimit="10"
+        stroke-linecap="round"
+        stroke-linejoin="round"
         stroke-width="16"
       />
       <path
@@ -179,7 +183,7 @@ import {
   IconProps,
   PropValidator,
   IconContext,
-  ContextGetter,
+  ContextGetter
 } from "@/lib/types";
 export default Vue.extend<{}, {}, IconComputed, IconProps>({
   name: "PhUserCircle",
@@ -201,7 +205,7 @@ export default Vue.extend<{}, {}, IconComputed, IconProps>({
     displayMirrored() {
       const { mirrored, contextMirrored } = this as IconProps & IconContext;
       return mirrored ?? contextMirrored ? "scale(-1, 1)" : undefined;
-    },
-  },
+    }
+  }
 });
 </script>

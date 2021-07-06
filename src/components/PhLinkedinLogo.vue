@@ -13,10 +13,10 @@
     <slot />
     <g v-if="displayWeight === 'bold'">
       <rect
-        x="40"
-        y="40"
-        width="176"
-        height="176"
+        x="36"
+        y="36"
+        width="184"
+        height="184"
         rx="8"
         stroke-width="24"
         :stroke="displayColor"
@@ -57,12 +57,12 @@
       <circle cx="84" cy="79.99998" r="16" />
     </g>
     <g v-else-if="displayWeight === 'duotone'">
-      <rect x="40" y="40" width="176" height="176" rx="8" opacity="0.2" />
+      <rect x="36" y="36" width="184" height="184" rx="8" opacity="0.2" />
       <rect
-        x="40"
-        y="40"
-        width="176"
-        height="176"
+        x="36"
+        y="36"
+        width="184"
+        height="184"
         rx="8"
         stroke-width="16"
         :stroke="displayColor"
@@ -104,15 +104,15 @@
     </g>
     <g v-else-if="displayWeight === 'fill'">
       <path
-        d="M208,32H48A16.01833,16.01833,0,0,0,32,48V208a16.01833,16.01833,0,0,0,16,16H208a16.01833,16.01833,0,0,0,16-16V48A16.01833,16.01833,0,0,0,208,32ZM96,176.00094a8,8,0,0,1-16,0v-64a8,8,0,0,1,16,0Zm-8-84a12,12,0,1,1,12-12A12,12,0,0,1,88,92.00094Zm96,84a8,8,0,0,1-16,0v-36a20,20,0,1,0-40,0v36a8,8,0,0,1-16,0v-64a7.99729,7.99729,0,0,1,15.79492-1.77856A35.98123,35.98123,0,0,1,184,140.00094Z"
+        d="M212,28H44A16.01817,16.01817,0,0,0,28,44V212a16.01833,16.01833,0,0,0,16,16H212a16.01833,16.01833,0,0,0,16-16V44A16.01817,16.01817,0,0,0,212,28ZM96,176.001a8,8,0,1,1-16,0v-64a8,8,0,0,1,16,0ZM88,92a12,12,0,1,1,12-12A12,12,0,0,1,88,92Zm96,84.001a8,8,0,1,1-16,0v-36a20,20,0,0,0-40,0v36a8,8,0,1,1-16,0v-64a7.99729,7.99729,0,0,1,15.79492-1.77857A35.98125,35.98125,0,0,1,184,140.001Z"
       />
     </g>
     <g v-else-if="displayWeight === 'light'">
       <rect
-        x="40"
-        y="40"
-        width="176"
-        height="176"
+        x="36"
+        y="36"
+        width="184"
+        height="184"
         rx="8"
         stroke-width="12"
         :stroke="displayColor"
@@ -154,10 +154,10 @@
     </g>
     <g v-else-if="displayWeight === 'thin'">
       <rect
-        x="40"
-        y="40"
-        width="176"
-        height="176"
+        x="36"
+        y="36"
+        width="184"
+        height="184"
         rx="8"
         stroke-width="8"
         :stroke="displayColor"
@@ -199,10 +199,10 @@
     </g>
     <g v-else-if="displayWeight === 'regular'">
       <rect
-        x="40"
-        y="40"
-        width="176"
-        height="176"
+        x="36"
+        y="36"
+        width="184"
+        height="184"
         rx="8"
         stroke-width="16"
         :stroke="displayColor"
@@ -252,7 +252,7 @@ import {
   IconProps,
   PropValidator,
   IconContext,
-  ContextGetter,
+  ContextGetter
 } from "@/lib/types";
 export default Vue.extend<{}, {}, IconComputed, IconProps>({
   name: "PhLinkedinLogo",
@@ -274,7 +274,7 @@ export default Vue.extend<{}, {}, IconComputed, IconProps>({
     displayMirrored() {
       const { mirrored, contextMirrored } = this as IconProps & IconContext;
       return mirrored ?? contextMirrored ? "scale(-1, 1)" : undefined;
-    },
-  },
+    }
+  }
 });
 </script>

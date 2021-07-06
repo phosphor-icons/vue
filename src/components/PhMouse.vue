@@ -48,9 +48,7 @@
       />
     </g>
     <g v-else-if="displayWeight === 'duotone'">
-      <g opacity="0.2">
-        <path d="M128.00007,32H108A56,56,0,0,0,52,88v24h76Z" />
-      </g>
+      <path d="M128.00007,32H108A56,56,0,0,0,52,88v24h76Z" opacity="0.2" />
       <rect
         x="52"
         y="32"
@@ -209,7 +207,7 @@ import {
   IconProps,
   PropValidator,
   IconContext,
-  ContextGetter,
+  ContextGetter
 } from "@/lib/types";
 export default Vue.extend<{}, {}, IconComputed, IconProps>({
   name: "PhMouse",
@@ -231,7 +229,7 @@ export default Vue.extend<{}, {}, IconComputed, IconProps>({
     displayMirrored() {
       const { mirrored, contextMirrored } = this as IconProps & IconContext;
       return mirrored ?? contextMirrored ? "scale(-1, 1)" : undefined;
-    },
-  },
+    }
+  }
 });
 </script>

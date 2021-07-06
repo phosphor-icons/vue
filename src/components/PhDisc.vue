@@ -56,11 +56,10 @@
       />
     </g>
     <g v-else-if="displayWeight === 'duotone'">
-      <g opacity="0.2">
-        <path
-          d="M160,128a32,32,0,1,1-9.3726-22.62743h0l45.25483-45.25483h0A96,96,0,1,0,224,128Z"
-        />
-      </g>
+      <path
+        d="M160,128a32,32,0,1,1-9.3726-22.62743h0l45.25483-45.25483h0A96,96,0,1,0,224,128Z"
+        opacity="0.2"
+      />
       <circle
         cx="128"
         cy="128"
@@ -251,7 +250,7 @@ import {
   IconProps,
   PropValidator,
   IconContext,
-  ContextGetter,
+  ContextGetter
 } from "@/lib/types";
 export default Vue.extend<{}, {}, IconComputed, IconProps>({
   name: "PhDisc",
@@ -273,7 +272,7 @@ export default Vue.extend<{}, {}, IconComputed, IconProps>({
     displayMirrored() {
       const { mirrored, contextMirrored } = this as IconProps & IconContext;
       return mirrored ?? contextMirrored ? "scale(-1, 1)" : undefined;
-    },
-  },
+    }
+  }
 });
 </script>

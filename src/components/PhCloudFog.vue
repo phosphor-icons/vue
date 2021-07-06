@@ -103,7 +103,7 @@
     </g>
     <g v-else-if="displayWeight === 'fill'">
       <path
-        d="M120,200H72a8,8,0,0,1,0-16h48a8,8,0,0,1,0,16Zm64-16H160a8,8,0,0,0,0,16h24a8,8,0,0,0,0-16Zm-24,32H104a8,8,0,0,0,0,16h56a8,8,0,0,0,0-16ZM156,16A76.13113,76.13113,0,0,0,85.03711,64.7832,52.0037,52.0037,0,1,0,76,168h80a76,76,0,0,0,0-152Z"
+        d="M168,224a8.00008,8.00008,0,0,1-8,8H104a8,8,0,0,1,0-16h56A8.00008,8.00008,0,0,1,168,224Zm-40-32a8.00008,8.00008,0,0,0-8-8H72a8,8,0,0,0,0,16h48A8.00008,8.00008,0,0,0,128,192Zm56-8H160a8,8,0,0,0,0,16h24a8,8,0,0,0,0-16ZM156,16A76.13113,76.13113,0,0,0,85.03711,64.7832l-.00537-.001A76.1764,76.1764,0,0,0,80,92a8,8,0,0,1-16,0,92.24056,92.24056,0,0,1,4.17639-27.41064A52.00137,52.00137,0,0,0,76,168h80a76,76,0,0,0,0-152Z"
       />
     </g>
     <g v-else-if="displayWeight === 'light'">
@@ -245,7 +245,7 @@ import {
   IconProps,
   PropValidator,
   IconContext,
-  ContextGetter,
+  ContextGetter
 } from "@/lib/types";
 export default Vue.extend<{}, {}, IconComputed, IconProps>({
   name: "PhCloudFog",
@@ -267,7 +267,7 @@ export default Vue.extend<{}, {}, IconComputed, IconProps>({
     displayMirrored() {
       const { mirrored, contextMirrored } = this as IconProps & IconContext;
       return mirrored ?? contextMirrored ? "scale(-1, 1)" : undefined;
-    },
-  },
+    }
+  }
 });
 </script>
