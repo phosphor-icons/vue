@@ -23,7 +23,7 @@
         stroke-width="24"
       />
       <polyline
-        points="123.998 76 100 144 148 144"
+        points="124 76 100 144 148 144"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -54,7 +54,7 @@
         stroke-width="16"
       />
       <polyline
-        points="123.998 76 100 144 148 144"
+        points="124 76 100 144 148 144"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -75,7 +75,7 @@
     </g>
     <g v-else-if="displayWeight === 'fill'">
       <path
-        d="M128,24A104,104,0,1,0,232,128,104.11791,104.11791,0,0,0,128,24Zm28,152a8,8,0,0,1-16,0V152H100a7.99995,7.99995,0,0,1-7.54395-10.66211l23.998-68A7.99987,7.99987,0,1,1,131.542,78.66211L111.30664,136H140V112a8,8,0,0,1,16,0Z"
+        d="M128,24A104,104,0,1,0,232,128,104.2,104.2,0,0,0,128,24Zm28,152a8,8,0,0,1-16,0V152H100a8,8,0,0,1-6.5-3.4,7.9,7.9,0,0,1-1-7.3l24-68a8,8,0,0,1,15,5.4L111.3,136H140V112a8,8,0,0,1,16,0Z"
       />
     </g>
     <g v-else-if="displayWeight === 'light'">
@@ -90,7 +90,7 @@
         stroke-width="12"
       />
       <polyline
-        points="123.998 76 100 144 148 144"
+        points="124 76 100 144 148 144"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -121,7 +121,7 @@
         stroke-width="8"
       />
       <polyline
-        points="123.998 76 100 144 148 144"
+        points="124 76 100 144 148 144"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -151,7 +151,7 @@
         stroke-width="16"
       />
       <polyline
-        points="123.998 76 100 144 148 144"
+        points="124 76 100 144 148 144"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"

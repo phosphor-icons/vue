@@ -13,7 +13,7 @@
     <slot />
     <g v-if="displayWeight === 'bold'">
       <path
-        d="M48,208a24,24,0,0,1,24-24H208V32H72A24,24,0,0,0,48,56Z"
+        d="M48,208a23.9,23.9,0,0,1,24-24H208V32H72A23.9,23.9,0,0,0,48,56Z"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -31,11 +31,11 @@
     </g>
     <g v-else-if="displayWeight === 'duotone'">
       <path
-        d="M48,216a24,24,0,0,1,24-24H208V32H72A24,24,0,0,0,48,56Z"
+        d="M48,216a23.9,23.9,0,0,1,24-24H208V32H72A23.9,23.9,0,0,0,48,56Z"
         opacity="0.2"
       />
       <path
-        d="M48,216a24,24,0,0,1,24-24H208V32H72A24,24,0,0,0,48,56Z"
+        d="M48,216a23.9,23.9,0,0,1,24-24H208V32H72A23.9,23.9,0,0,0,48,56Z"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -53,12 +53,12 @@
     </g>
     <g v-else-if="displayWeight === 'fill'">
       <path
-        d="M216,32V192a8.00039,8.00039,0,0,1-8,8H72a16.01833,16.01833,0,0,0-16,16H192a8,8,0,0,1,0,16H48a8.00039,8.00039,0,0,1-8-8V56A32.03667,32.03667,0,0,1,72,24H208A8.00039,8.00039,0,0,1,216,32Z"
+        d="M216,32V192a8,8,0,0,1-8,8H72a16,16,0,0,0-16,16H192a8,8,0,0,1,0,16H48a8,8,0,0,1-8-8V56A32.1,32.1,0,0,1,72,24H208A8,8,0,0,1,216,32Z"
       />
     </g>
     <g v-else-if="displayWeight === 'light'">
       <path
-        d="M48,216a24,24,0,0,1,24-24H208V32H72A24,24,0,0,0,48,56Z"
+        d="M48,216a23.9,23.9,0,0,1,24-24H208V32H72A23.9,23.9,0,0,0,48,56Z"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -76,7 +76,7 @@
     </g>
     <g v-else-if="displayWeight === 'thin'">
       <path
-        d="M48,216a24,24,0,0,1,24-24H208V32H72A24,24,0,0,0,48,56Z"
+        d="M48,216a23.9,23.9,0,0,1,24-24H208V32H72A23.9,23.9,0,0,0,48,56Z"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -94,7 +94,7 @@
     </g>
     <g v-else-if="displayWeight === 'regular'">
       <path
-        d="M48,216a24,24,0,0,1,24-24H208V32H72A24,24,0,0,0,48,56Z"
+        d="M48,216a23.9,23.9,0,0,1,24-24H208V32H72A23.9,23.9,0,0,0,48,56Z"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"

@@ -21,9 +21,9 @@
         stroke-width="24"
       />
       <line
-        x1="143.99414"
+        x1="144"
         y1="160"
-        x2="175.99414"
+        x2="176"
         y2="160"
         fill="none"
         :stroke="displayColor"
@@ -36,16 +36,16 @@
         y="48"
         width="192"
         height="160"
-        rx="8.48528"
-        stroke-width="24"
+        rx="8.5"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="24"
       />
     </g>
     <g v-else-if="displayWeight === 'duotone'">
-      <rect x="32" y="48" width="192" height="160" rx="8.48528" opacity="0.2" />
+      <rect x="32" y="48" width="192" height="160" rx="8.5" opacity="0.2" />
       <polyline
         points="80 96 120 128 80 160"
         fill="none"
@@ -55,9 +55,9 @@
         stroke-width="16"
       />
       <line
-        x1="135.99414"
+        x1="136"
         y1="160"
-        x2="175.99414"
+        x2="176"
         y2="160"
         fill="none"
         :stroke="displayColor"
@@ -70,17 +70,17 @@
         y="48"
         width="192"
         height="160"
-        rx="8.48528"
-        stroke-width="16.97056"
+        rx="8.5"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16.97"
       />
     </g>
     <g v-else-if="displayWeight === 'fill'">
       <path
-        d="M215.51465,39.51465H40.48535a16.99025,16.99025,0,0,0-16.9707,16.9707v143.0293a16.99025,16.99025,0,0,0,16.9707,16.9707h175.0293a16.99025,16.99025,0,0,0,16.9707-16.9707V56.48535A16.99025,16.99025,0,0,0,215.51465,39.51465Zm-94.51758,94.73242-40,32a7.99979,7.99979,0,1,1-9.99414-12.49414L103.19336,128,71.00293,102.24707a7.99979,7.99979,0,1,1,9.99414-12.49414l40,32a7.99943,7.99943,0,0,1,0,12.49414ZM179.99414,168h-40a8,8,0,0,1,0-16h40a8,8,0,1,1,0,16Z"
+        d="M215.5,39.5H40.5a17,17,0,0,0-17,17v143a17,17,0,0,0,17,17h175a17,17,0,0,0,17-17V56.5A17,17,0,0,0,215.5,39.5ZM121,134.2l-40,32a7.9,7.9,0,0,1-5,1.8,7.8,7.8,0,0,1-6.2-3A7.9,7.9,0,0,1,71,153.8L103.2,128,71,102.2A8,8,0,1,1,81,89.8l40,32a7.9,7.9,0,0,1,0,12.4ZM180,168H140a8,8,0,0,1,0-16h40a8,8,0,0,1,0,16Z"
       />
     </g>
     <g v-else-if="displayWeight === 'light'">
@@ -93,9 +93,9 @@
         stroke-width="12"
       />
       <line
-        x1="135.99414"
+        x1="136"
         y1="160"
-        x2="175.99414"
+        x2="176"
         y2="160"
         fill="none"
         :stroke="displayColor"
@@ -108,12 +108,12 @@
         y="48"
         width="192"
         height="160"
-        rx="8.48528"
-        stroke-width="12"
+        rx="8.5"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="12"
       />
     </g>
     <g v-else-if="displayWeight === 'thin'">
@@ -126,9 +126,9 @@
         stroke-width="8"
       />
       <line
-        x1="135.99414"
+        x1="136"
         y1="160"
-        x2="175.99414"
+        x2="176"
         y2="160"
         fill="none"
         :stroke="displayColor"
@@ -141,12 +141,12 @@
         y="48"
         width="192"
         height="160"
-        rx="8.48528"
-        stroke-width="8"
+        rx="8.5"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="8"
       />
     </g>
     <g v-else-if="displayWeight === 'regular'">
@@ -159,9 +159,9 @@
         stroke-width="16"
       />
       <line
-        x1="135.99414"
+        x1="136"
         y1="160"
-        x2="175.99414"
+        x2="176"
         y2="160"
         fill="none"
         :stroke="displayColor"
@@ -174,12 +174,12 @@
         y="48"
         width="192"
         height="160"
-        rx="8.48528"
-        stroke-width="16.97056"
+        rx="8.5"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16.97"
       />
     </g>
   </svg>

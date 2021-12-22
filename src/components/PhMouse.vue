@@ -18,11 +18,11 @@
         width="152"
         height="192"
         rx="56"
-        stroke-width="24"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="24"
       />
       <line
         x1="52"
@@ -38,7 +38,7 @@
       <line
         x1="128"
         y1="112"
-        x2="128.00007"
+        x2="128"
         y2="32"
         fill="none"
         :stroke="displayColor"
@@ -48,18 +48,18 @@
       />
     </g>
     <g v-else-if="displayWeight === 'duotone'">
-      <path d="M128.00007,32H108A56,56,0,0,0,52,88v24h76Z" opacity="0.2" />
+      <path d="M128,32H108A56,56,0,0,0,52,88v24h76Z" opacity="0.2" />
       <rect
         x="52"
         y="32"
         width="152"
         height="192"
         rx="56"
-        stroke-width="16"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
       <line
         x1="52"
@@ -75,7 +75,7 @@
       <line
         x1="128"
         y1="112"
-        x2="128.00007"
+        x2="128"
         y2="32"
         fill="none"
         :stroke="displayColor"
@@ -86,7 +86,7 @@
     </g>
     <g v-else-if="displayWeight === 'fill'">
       <path
-        d="M148,24H108A64.07239,64.07239,0,0,0,44,88v80a64.07239,64.07239,0,0,0,64,64h40a64.07239,64.07239,0,0,0,64-64V88A64.07239,64.07239,0,0,0,148,24Zm48,64v16H136V40h12A48.05468,48.05468,0,0,1,196,88ZM108,40h12v64H60V88A48.05468,48.05468,0,0,1,108,40Z"
+        d="M148,24H108A64.1,64.1,0,0,0,44,88v80a64.1,64.1,0,0,0,64,64h40a64.1,64.1,0,0,0,64-64V88A64.1,64.1,0,0,0,148,24Zm48,64v16H136V40h12A48,48,0,0,1,196,88ZM108,40h12v64H60V88A48,48,0,0,1,108,40Z"
       />
     </g>
     <g v-else-if="displayWeight === 'light'">
@@ -96,11 +96,11 @@
         width="152"
         height="192"
         rx="56"
-        stroke-width="12"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="12"
       />
       <line
         x1="52"
@@ -116,7 +116,7 @@
       <line
         x1="128"
         y1="112"
-        x2="128.00007"
+        x2="128"
         y2="32"
         fill="none"
         :stroke="displayColor"
@@ -132,11 +132,11 @@
         width="152"
         height="192"
         rx="56"
-        stroke-width="8"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="8"
       />
       <line
         x1="52"
@@ -152,7 +152,7 @@
       <line
         x1="128"
         y1="112"
-        x2="128.00007"
+        x2="128"
         y2="32"
         fill="none"
         :stroke="displayColor"
@@ -168,11 +168,11 @@
         width="152"
         height="192"
         rx="56"
-        stroke-width="16"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
       <line
         x1="52"
@@ -188,7 +188,7 @@
       <line
         x1="128"
         y1="112"
-        x2="128.00007"
+        x2="128"
         y2="32"
         fill="none"
         :stroke="displayColor"

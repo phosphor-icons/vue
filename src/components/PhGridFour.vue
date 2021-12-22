@@ -18,11 +18,11 @@
         width="168"
         height="168"
         rx="8"
-        stroke-width="24"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="24"
       />
       <line
         x1="128"
@@ -55,11 +55,11 @@
         width="168"
         height="168"
         rx="8"
-        stroke-width="16"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
       <line
         x1="128"
@@ -86,7 +86,7 @@
     </g>
     <g v-else-if="displayWeight === 'fill'">
       <path
-        d="M204,36H52A16.01833,16.01833,0,0,0,36,52V204a16.01833,16.01833,0,0,0,16,16H204a16.01833,16.01833,0,0,0,16-16V52A16.01833,16.01833,0,0,0,204,36Zm.00439,92H128V52h76ZM52,128h76v76H52Z"
+        d="M204,36H52A16,16,0,0,0,36,52V204a16,16,0,0,0,16,16H204a16,16,0,0,0,16-16V52A16,16,0,0,0,204,36Zm0,92H128V52h76ZM52,128h76v76H52Z"
       />
     </g>
     <g v-else-if="displayWeight === 'light'">
@@ -96,11 +96,11 @@
         width="168"
         height="168"
         rx="8"
-        stroke-width="12"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="12"
       />
       <line
         x1="128"
@@ -132,11 +132,11 @@
         width="168"
         height="168"
         rx="8"
-        stroke-width="8"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="8"
       />
       <line
         x1="128"
@@ -168,11 +168,11 @@
         width="168"
         height="168"
         rx="8"
-        stroke-width="16"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
       <line
         x1="128"

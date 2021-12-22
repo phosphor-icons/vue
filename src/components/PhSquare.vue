@@ -18,11 +18,11 @@
         width="176"
         height="176"
         rx="8"
-        stroke-width="24"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="24"
       />
     </g>
     <g v-else-if="displayWeight === 'duotone'">
@@ -33,11 +33,11 @@
         width="176"
         height="176"
         rx="8"
-        stroke-width="16"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
     </g>
     <g v-else-if="displayWeight === 'fill'">
@@ -50,11 +50,11 @@
         width="176"
         height="176"
         rx="8"
-        stroke-width="12"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="12"
       />
     </g>
     <g v-else-if="displayWeight === 'thin'">
@@ -64,11 +64,11 @@
         width="176"
         height="176"
         rx="8"
-        stroke-width="8"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="8"
       />
     </g>
     <g v-else-if="displayWeight === 'regular'">
@@ -78,11 +78,11 @@
         width="176"
         height="176"
         rx="8"
-        stroke-width="16"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
     </g>
   </svg>

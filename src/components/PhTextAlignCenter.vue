@@ -35,9 +35,9 @@
         stroke-width="24"
       />
       <line
-        x1="40.00307"
+        x1="40"
         y1="148"
-        x2="215.99693"
+        x2="216"
         y2="148"
         fill="none"
         :stroke="displayColor"
@@ -46,9 +46,9 @@
         stroke-width="24"
       />
       <line
-        x1="64.00307"
+        x1="64"
         y1="188"
-        x2="191.99693"
+        x2="192"
         y2="188"
         fill="none"
         :stroke="displayColor"
@@ -81,9 +81,9 @@
         stroke-width="16"
       />
       <line
-        x1="40.00307"
+        x1="40"
         y1="148"
-        x2="215.99693"
+        x2="216"
         y2="148"
         fill="none"
         :stroke="displayColor"
@@ -92,9 +92,9 @@
         stroke-width="16"
       />
       <line
-        x1="64.00307"
+        x1="64"
         y1="188"
-        x2="191.99693"
+        x2="192"
         y2="188"
         fill="none"
         :stroke="displayColor"
@@ -104,16 +104,10 @@
       />
     </g>
     <g v-else-if="displayWeight === 'fill'">
-      <g>
-        <path d="M40,76H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16Z" />
-        <path d="M64,100a8,8,0,0,0,0,16H192a8,8,0,0,0,0-16Z" />
-        <path
-          d="M215.99707,140H40.00293a8,8,0,1,0,0,16H215.99707a8,8,0,0,0,0-16Z"
-        />
-        <path
-          d="M191.99707,180H64.00293a8,8,0,0,0,0,16H191.99707a8,8,0,0,0,0-16Z"
-        />
-      </g>
+      <path d="M40,76H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16Z" />
+      <path d="M64,100a8,8,0,0,0,0,16H192a8,8,0,0,0,0-16Z" />
+      <path d="M216,140H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z" />
+      <path d="M192,180H64a8,8,0,0,0,0,16H192a8,8,0,0,0,0-16Z" />
     </g>
     <g v-else-if="displayWeight === 'light'">
       <line
@@ -139,9 +133,9 @@
         stroke-width="12"
       />
       <line
-        x1="40.00307"
+        x1="40"
         y1="148"
-        x2="215.99693"
+        x2="216"
         y2="148"
         fill="none"
         :stroke="displayColor"
@@ -150,9 +144,9 @@
         stroke-width="12"
       />
       <line
-        x1="64.00307"
+        x1="64"
         y1="188"
-        x2="191.99693"
+        x2="192"
         y2="188"
         fill="none"
         :stroke="displayColor"
@@ -185,9 +179,9 @@
         stroke-width="8"
       />
       <line
-        x1="40.00307"
+        x1="40"
         y1="148"
-        x2="215.99693"
+        x2="216"
         y2="148"
         fill="none"
         :stroke="displayColor"
@@ -196,9 +190,9 @@
         stroke-width="8"
       />
       <line
-        x1="64.00307"
+        x1="64"
         y1="188"
-        x2="191.99693"
+        x2="192"
         y2="188"
         fill="none"
         :stroke="displayColor"
@@ -231,9 +225,9 @@
         stroke-width="16"
       />
       <line
-        x1="40.00307"
+        x1="40"
         y1="148"
-        x2="215.99693"
+        x2="216"
         y2="148"
         fill="none"
         :stroke="displayColor"
@@ -242,9 +236,9 @@
         stroke-width="16"
       />
       <line
-        x1="64.00307"
+        x1="64"
         y1="188"
-        x2="191.99693"
+        x2="192"
         y2="188"
         fill="none"
         :stroke="displayColor"

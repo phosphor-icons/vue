@@ -35,7 +35,7 @@
         stroke-width="24"
       />
       <path
-        d="M184,40h24a8,8,0,0,1,8,8V71.99963"
+        d="M184,40h24a8,8,0,0,1,8,8V72"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -44,9 +44,9 @@
       />
       <line
         x1="216"
-        y1="143.99963"
+        y1="144"
         x2="216"
-        y2="111.99963"
+        y2="112"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -54,7 +54,7 @@
         stroke-width="24"
       />
       <path
-        d="M184,216h24a8,8,0,0,0,8-8V183.99963"
+        d="M184,216h24a8,8,0,0,0,8-8V184"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -63,9 +63,9 @@
       />
       <line
         x1="40"
-        y1="111.99963"
+        y1="112"
         x2="40"
-        y2="143.99963"
+        y2="144"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -73,7 +73,7 @@
         stroke-width="24"
       />
       <path
-        d="M72,216H48a8,8,0,0,1-8-8V183.99963"
+        d="M72,216H48a8,8,0,0,1-8-8V184"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -81,7 +81,7 @@
         stroke-width="24"
       />
       <path
-        d="M72,40H48a8,8,0,0,0-8,8V71.99963"
+        d="M72,40H48a8,8,0,0,0-8,8V72"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -113,7 +113,7 @@
         stroke-width="16"
       />
       <path
-        d="M184,40h24a8,8,0,0,1,8,8V71.99963"
+        d="M184,40h24a8,8,0,0,1,8,8V72"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -122,9 +122,9 @@
       />
       <line
         x1="216"
-        y1="143.99963"
+        y1="144"
         x2="216"
-        y2="111.99963"
+        y2="112"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -132,7 +132,7 @@
         stroke-width="16"
       />
       <path
-        d="M184,216h24a8,8,0,0,0,8-8V183.99963"
+        d="M184,216h24a8,8,0,0,0,8-8V184"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -141,9 +141,9 @@
       />
       <line
         x1="40"
-        y1="111.99963"
+        y1="112"
         x2="40"
-        y2="143.99963"
+        y2="144"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -151,7 +151,7 @@
         stroke-width="16"
       />
       <path
-        d="M72,216H48a8,8,0,0,1-8-8V183.99963"
+        d="M72,216H48a8,8,0,0,1-8-8V184"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -159,7 +159,7 @@
         stroke-width="16"
       />
       <path
-        d="M72,40H48a8,8,0,0,0-8,8V71.99963"
+        d="M72,40H48a8,8,0,0,0-8,8V72"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -169,7 +169,7 @@
     </g>
     <g v-else-if="displayWeight === 'fill'">
       <path
-        d="M152,40a7.99977,7.99977,0,0,1-8,8H112a8,8,0,0,1,0-16h32A7.99977,7.99977,0,0,1,152,40Zm-8,168H112a8,8,0,0,0,0,16h32a8,8,0,0,0,0-16ZM208,32H184a8,8,0,0,0,0,16h24V71.99951a8,8,0,0,0,16,0V48A16.01833,16.01833,0,0,0,208,32Zm8,71.99951a7.99977,7.99977,0,0,0-8,8v32a8,8,0,0,0,16,0v-32A7.99977,7.99977,0,0,0,216,103.99951Zm0,72a7.99977,7.99977,0,0,0-8,8V208H184a8,8,0,0,0,0,16h24a16.01833,16.01833,0,0,0,16-16V183.99951A7.99977,7.99977,0,0,0,216,175.99951Zm-176-24a7.99977,7.99977,0,0,0,8-8v-32a8,8,0,1,0-16,0v32A7.99977,7.99977,0,0,0,40,151.99951ZM72,208H48V183.99951a8,8,0,0,0-16,0V208a16.01833,16.01833,0,0,0,16,16H72a8,8,0,0,0,0-16ZM72,32H48A16.01833,16.01833,0,0,0,32,48V71.99951a8,8,0,0,0,16,0V48H72a8,8,0,0,0,0-16Z"
+        d="M152,40a8,8,0,0,1-8,8H112a8,8,0,0,1,0-16h32A8,8,0,0,1,152,40Zm-8,168H112a8,8,0,0,0,0,16h32a8,8,0,0,0,0-16ZM208,32H184a8,8,0,0,0,0,16h24V72a8,8,0,0,0,16,0V48A16,16,0,0,0,208,32Zm8,72a8,8,0,0,0-8,8v32a8,8,0,0,0,16,0V112A8,8,0,0,0,216,104Zm0,72a8,8,0,0,0-8,8v24H184a8,8,0,0,0,0,16h24a16,16,0,0,0,16-16V184A8,8,0,0,0,216,176ZM40,152a8,8,0,0,0,8-8V112a8,8,0,0,0-16,0v32A8,8,0,0,0,40,152Zm32,56H48V184a8,8,0,0,0-16,0v24a16,16,0,0,0,16,16H72a8,8,0,0,0,0-16ZM72,32H48A16,16,0,0,0,32,48V72a8,8,0,0,0,16,0V48H72a8,8,0,0,0,0-16Z"
       />
     </g>
     <g v-else-if="displayWeight === 'light'">
@@ -196,7 +196,7 @@
         stroke-width="12"
       />
       <path
-        d="M184,40h24a8,8,0,0,1,8,8V71.99963"
+        d="M184,40h24a8,8,0,0,1,8,8V72"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -205,9 +205,9 @@
       />
       <line
         x1="216"
-        y1="143.99963"
+        y1="144"
         x2="216"
-        y2="111.99963"
+        y2="112"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -215,7 +215,7 @@
         stroke-width="12"
       />
       <path
-        d="M184,216h24a8,8,0,0,0,8-8V183.99963"
+        d="M184,216h24a8,8,0,0,0,8-8V184"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -224,9 +224,9 @@
       />
       <line
         x1="40"
-        y1="111.99963"
+        y1="112"
         x2="40"
-        y2="143.99963"
+        y2="144"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -234,7 +234,7 @@
         stroke-width="12"
       />
       <path
-        d="M72,216H48a8,8,0,0,1-8-8V183.99963"
+        d="M72,216H48a8,8,0,0,1-8-8V184"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -242,7 +242,7 @@
         stroke-width="12"
       />
       <path
-        d="M72,40H48a8,8,0,0,0-8,8V71.99963"
+        d="M72,40H48a8,8,0,0,0-8,8V72"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -274,7 +274,7 @@
         stroke-width="8"
       />
       <path
-        d="M184,40h24a8,8,0,0,1,8,8V71.99963"
+        d="M184,40h24a8,8,0,0,1,8,8V72"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -283,9 +283,9 @@
       />
       <line
         x1="216"
-        y1="143.99963"
+        y1="144"
         x2="216"
-        y2="111.99963"
+        y2="112"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -293,7 +293,7 @@
         stroke-width="8"
       />
       <path
-        d="M184,216h24a8,8,0,0,0,8-8V183.99963"
+        d="M184,216h24a8,8,0,0,0,8-8V184"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -302,9 +302,9 @@
       />
       <line
         x1="40"
-        y1="111.99963"
+        y1="112"
         x2="40"
-        y2="143.99963"
+        y2="144"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -312,7 +312,7 @@
         stroke-width="8"
       />
       <path
-        d="M72,216H48a8,8,0,0,1-8-8V183.99963"
+        d="M72,216H48a8,8,0,0,1-8-8V184"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -320,7 +320,7 @@
         stroke-width="8"
       />
       <path
-        d="M72,40H48a8,8,0,0,0-8,8V71.99963"
+        d="M72,40H48a8,8,0,0,0-8,8V72"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -352,7 +352,7 @@
         stroke-width="16"
       />
       <path
-        d="M184,40h24a8,8,0,0,1,8,8V71.99963"
+        d="M184,40h24a8,8,0,0,1,8,8V72"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -361,9 +361,9 @@
       />
       <line
         x1="216"
-        y1="143.99963"
+        y1="144"
         x2="216"
-        y2="111.99963"
+        y2="112"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -371,7 +371,7 @@
         stroke-width="16"
       />
       <path
-        d="M184,216h24a8,8,0,0,0,8-8V183.99963"
+        d="M184,216h24a8,8,0,0,0,8-8V184"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -380,9 +380,9 @@
       />
       <line
         x1="40"
-        y1="111.99963"
+        y1="112"
         x2="40"
-        y2="143.99963"
+        y2="144"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -390,7 +390,7 @@
         stroke-width="16"
       />
       <path
-        d="M72,216H48a8,8,0,0,1-8-8V183.99963"
+        d="M72,216H48a8,8,0,0,1-8-8V184"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -398,7 +398,7 @@
         stroke-width="16"
       />
       <path
-        d="M72,40H48a8,8,0,0,0-8,8V71.99963"
+        d="M72,40H48a8,8,0,0,0-8,8V72"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"

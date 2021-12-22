@@ -83,11 +83,11 @@
         y="56"
         width="192"
         height="144"
-        stroke-width="24"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="24"
       />
     </g>
     <g v-else-if="displayWeight === 'duotone'">
@@ -165,23 +165,21 @@
         y="56"
         width="192"
         height="144"
-        stroke-width="16"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
     </g>
     <g v-else-if="displayWeight === 'fill'">
-      <g>
-        <path d="M136,92h96V56a8.00008,8.00008,0,0,0-8-8H136Z" />
-        <rect x="184" y="108" width="48" height="44" />
-        <rect x="88" y="108" width="80" height="44" />
-        <rect x="24" y="108" width="48" height="44" />
-        <path d="M136,168v40h88a8.00008,8.00008,0,0,0,8-8V168Z" />
-        <path d="M120,92V48H32a8.00008,8.00008,0,0,0-8,8V92Z" />
-        <path d="M120,168H24v32a8.00008,8.00008,0,0,0,8,8h88Z" />
-      </g>
+      <path d="M136,92h92a4,4,0,0,0,4-4V56a8,8,0,0,0-8-8H140a4,4,0,0,0-4,4Z" />
+      <path d="M184,152h44a4,4,0,0,0,4-4V112a4,4,0,0,0-4-4H184Z" />
+      <rect x="88" y="108" width="80" height="44" />
+      <path d="M72,108H28a4,4,0,0,0-4,4v36a4,4,0,0,0,4,4H72Z" />
+      <path d="M136,168v36a4,4,0,0,0,4,4h84a8,8,0,0,0,8-8V172a4,4,0,0,0-4-4Z" />
+      <path d="M120,92V52a4,4,0,0,0-4-4H32a8,8,0,0,0-8,8V88a4,4,0,0,0,4,4Z" />
+      <path d="M120,168H28a4,4,0,0,0-4,4v28a8,8,0,0,0,8,8h84a4,4,0,0,0,4-4Z" />
     </g>
     <g v-else-if="displayWeight === 'light'">
       <line
@@ -255,11 +253,11 @@
         y="56"
         width="192"
         height="144"
-        stroke-width="12"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="12"
       />
     </g>
     <g v-else-if="displayWeight === 'thin'">
@@ -334,11 +332,11 @@
         y="56"
         width="192"
         height="144"
-        stroke-width="8"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="8"
       />
     </g>
     <g v-else-if="displayWeight === 'regular'">
@@ -413,11 +411,11 @@
         y="56"
         width="192"
         height="144"
-        stroke-width="16"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
     </g>
   </svg>

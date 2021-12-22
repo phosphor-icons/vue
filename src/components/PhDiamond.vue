@@ -13,91 +13,91 @@
     <slot />
     <g v-if="displayWeight === 'bold'">
       <rect
-        x="51.63247"
-        y="51.63247"
-        width="152.73506"
-        height="152.73506"
+        x="51.6"
+        y="51.6"
+        width="152.7"
+        height="152.74"
         rx="8"
-        transform="translate(-53.01934 128) rotate(-45)"
-        stroke-width="24"
+        transform="translate(-53 128) rotate(-45)"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="24"
       />
     </g>
     <g v-else-if="displayWeight === 'duotone'">
       <rect
-        x="51.63247"
-        y="51.63247"
-        width="152.73506"
-        height="152.73506"
+        x="51.6"
+        y="51.6"
+        width="152.7"
+        height="152.74"
         rx="8"
-        transform="translate(-53.01934 128) rotate(-45)"
+        transform="translate(-53 128) rotate(-45)"
         opacity="0.2"
       />
       <rect
-        x="51.63247"
-        y="51.63247"
-        width="152.73506"
-        height="152.73506"
+        x="51.6"
+        y="51.6"
+        width="152.7"
+        height="152.74"
         rx="8"
-        transform="translate(-53.01934 128) rotate(-45)"
-        stroke-width="16"
+        transform="translate(-53 128) rotate(-45)"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
     </g>
     <g v-else-if="displayWeight === 'fill'">
       <path
-        d="M236,139.31348,139.31348,236a16.01779,16.01779,0,0,1-22.627,0L20,139.31348a16.01779,16.01779,0,0,1,0-22.627L116.68652,20a16.01779,16.01779,0,0,1,22.627,0L236,116.68652A16.01779,16.01779,0,0,1,236,139.31348Z"
+        d="M236,139.3,139.3,236a15.9,15.9,0,0,1-22.6,0L20,139.3a16.1,16.1,0,0,1,0-22.6L116.7,20a16.1,16.1,0,0,1,22.6,0L236,116.7A16.1,16.1,0,0,1,236,139.3Z"
       />
     </g>
     <g v-else-if="displayWeight === 'light'">
       <rect
-        x="51.63247"
-        y="51.63247"
-        width="152.73506"
-        height="152.73506"
+        x="51.6"
+        y="51.6"
+        width="152.7"
+        height="152.74"
         rx="8"
-        transform="translate(-53.01934 128) rotate(-45)"
-        stroke-width="12"
+        transform="translate(-53 128) rotate(-45)"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="12"
       />
     </g>
     <g v-else-if="displayWeight === 'thin'">
       <rect
-        x="51.63247"
-        y="51.63247"
-        width="152.73506"
-        height="152.73506"
+        x="51.6"
+        y="51.6"
+        width="152.7"
+        height="152.74"
         rx="8"
-        transform="translate(-53.01934 128) rotate(-45)"
-        stroke-width="8"
+        transform="translate(-53 128) rotate(-45)"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="8"
       />
     </g>
     <g v-else-if="displayWeight === 'regular'">
       <rect
-        x="51.63247"
-        y="51.63247"
-        width="152.73506"
-        height="152.73506"
+        x="51.6"
+        y="51.6"
+        width="152.7"
+        height="152.74"
         rx="8"
-        transform="translate(-53.01934 128) rotate(-45)"
-        stroke-width="16"
+        transform="translate(-53 128) rotate(-45)"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
     </g>
   </svg>

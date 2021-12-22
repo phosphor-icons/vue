@@ -36,11 +36,11 @@
         y="104"
         width="176"
         height="48"
-        stroke-width="24"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="24"
       />
       <polyline
         points="136 152 136 200 40 200"
@@ -77,11 +77,11 @@
         y="104"
         width="176"
         height="48"
-        stroke-width="16"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
       <polyline
         points="136 152 136 200 40 200"
@@ -94,7 +94,7 @@
     </g>
     <g v-else-if="displayWeight === 'fill'">
       <path
-        d="M216,96H176V56a7.99977,7.99977,0,0,0-8-8H48V40a8,8,0,0,0-16,0V216a8,8,0,0,0,16,0v-8h88a7.99977,7.99977,0,0,0,8-8V160h72a7.99977,7.99977,0,0,0,8-8V104A7.99977,7.99977,0,0,0,216,96ZM160,64V96H48V64ZM128,192H48V160h80Z"
+        d="M216,96H176V56a8,8,0,0,0-8-8H48V40a8,8,0,0,0-16,0V216a8,8,0,0,0,16,0v-8h88a8,8,0,0,0,8-8V160h72a8,8,0,0,0,8-8V104A8,8,0,0,0,216,96ZM160,64V96H48V64ZM128,192H48V160h80Z"
       />
     </g>
     <g v-else-if="displayWeight === 'light'">
@@ -122,11 +122,11 @@
         y="104"
         width="176"
         height="48"
-        stroke-width="12"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="12"
       />
       <polyline
         points="136 152 136 200 40 200"
@@ -162,11 +162,11 @@
         y="104"
         width="176"
         height="48"
-        stroke-width="8"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="8"
       />
       <polyline
         points="136 152 136 200 40 200"
@@ -202,11 +202,11 @@
         y="104"
         width="176"
         height="48"
-        stroke-width="16"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
       <polyline
         points="136 152 136 200 40 200"

@@ -18,11 +18,11 @@
         width="176"
         height="176"
         rx="24"
-        stroke-width="24"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="24"
       />
       <circle cx="96" cy="84" r="16" />
       <circle cx="160" cy="84" r="16" />
@@ -39,11 +39,11 @@
         width="176"
         height="176"
         rx="24"
-        stroke-width="16"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
       <circle cx="92" cy="84" r="12" />
       <circle cx="164" cy="84" r="12" />
@@ -54,7 +54,7 @@
     </g>
     <g v-else-if="displayWeight === 'fill'">
       <path
-        d="M192,32H64A32.03667,32.03667,0,0,0,32,64V192a32.03667,32.03667,0,0,0,32,32H192a32.03667,32.03667,0,0,0,32-32V64A32.03667,32.03667,0,0,0,192,32ZM92,184a12,12,0,1,1,12-12A12,12,0,0,1,92,184Zm0-44a12,12,0,1,1,12-12A12,12,0,0,1,92,140Zm0-44a12,12,0,1,1,12-12A12,12,0,0,1,92,96Zm72,88a12,12,0,1,1,12-12A12,12,0,0,1,164,184Zm0-44a12,12,0,1,1,12-12A12,12,0,0,1,164,140Zm0-44a12,12,0,1,1,12-12A12,12,0,0,1,164,96Z"
+        d="M192,32H64A32.1,32.1,0,0,0,32,64V192a32.1,32.1,0,0,0,32,32H192a32.1,32.1,0,0,0,32-32V64A32.1,32.1,0,0,0,192,32ZM92,184a12,12,0,1,1,12-12A12,12,0,0,1,92,184Zm0-44a12,12,0,1,1,12-12A12,12,0,0,1,92,140Zm0-44a12,12,0,1,1,12-12A12,12,0,0,1,92,96Zm72,88a12,12,0,1,1,12-12A12,12,0,0,1,164,184Zm0-44a12,12,0,1,1,12-12A12,12,0,0,1,164,140Zm0-44a12,12,0,1,1,12-12A12,12,0,0,1,164,96Z"
       />
     </g>
     <g v-else-if="displayWeight === 'light'">
@@ -64,11 +64,11 @@
         width="176"
         height="176"
         rx="24"
-        stroke-width="12"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="12"
       />
       <circle cx="92" cy="84" r="10" />
       <circle cx="164" cy="84" r="10" />
@@ -84,11 +84,11 @@
         width="176"
         height="176"
         rx="24"
-        stroke-width="8"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="8"
       />
       <circle cx="92" cy="84" r="8" />
       <circle cx="164" cy="84" r="8" />
@@ -104,11 +104,11 @@
         width="176"
         height="176"
         rx="24"
-        stroke-width="16"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
       <circle cx="92" cy="84" r="12" />
       <circle cx="164" cy="84" r="12" />

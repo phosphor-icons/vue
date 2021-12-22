@@ -13,7 +13,7 @@
     <slot />
     <g v-if="displayWeight === 'bold'">
       <polygon
-        points="24.002 96 232.002 96 128.002 32 24.002 96"
+        points="24 96 232 96 128 32 24 96"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -21,9 +21,9 @@
         stroke-width="24"
       />
       <line
-        x1="56.00244"
+        x1="56"
         y1="96"
-        x2="56.00244"
+        x2="56"
         y2="168"
         fill="none"
         :stroke="displayColor"
@@ -32,9 +32,9 @@
         stroke-width="24"
       />
       <line
-        x1="104.00244"
+        x1="104"
         y1="96"
-        x2="104.00244"
+        x2="104"
         y2="168"
         fill="none"
         :stroke="displayColor"
@@ -43,9 +43,9 @@
         stroke-width="24"
       />
       <line
-        x1="152.00244"
+        x1="152"
         y1="96"
-        x2="152.00244"
+        x2="152"
         y2="168"
         fill="none"
         :stroke="displayColor"
@@ -54,9 +54,9 @@
         stroke-width="24"
       />
       <line
-        x1="200.00244"
+        x1="200"
         y1="96"
-        x2="200.00244"
+        x2="200"
         y2="168"
         fill="none"
         :stroke="displayColor"
@@ -65,9 +65,9 @@
         stroke-width="24"
       />
       <line
-        x1="32.00244"
+        x1="32"
         y1="168"
-        x2="224.00244"
+        x2="224"
         y2="168"
         fill="none"
         :stroke="displayColor"
@@ -76,9 +76,9 @@
         stroke-width="24"
       />
       <line
-        x1="16.00244"
+        x1="16"
         y1="208"
-        x2="240.00244"
+        x2="240"
         y2="208"
         fill="none"
         :stroke="displayColor"
@@ -88,12 +88,9 @@
       />
     </g>
     <g v-else-if="displayWeight === 'duotone'">
+      <polygon points="24 96 232 96 128 32 24 96" opacity="0.2" />
       <polygon
-        points="24.002 96 232.002 96 128.002 32 24.002 96"
-        opacity="0.2"
-      />
-      <polygon
-        points="24.002 96 232.002 96 128.002 32 24.002 96"
+        points="24 96 232 96 128 32 24 96"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -101,9 +98,9 @@
         stroke-width="16"
       />
       <line
-        x1="56.00244"
+        x1="56"
         y1="96"
-        x2="56.00244"
+        x2="56"
         y2="176"
         fill="none"
         :stroke="displayColor"
@@ -112,9 +109,9 @@
         stroke-width="16"
       />
       <line
-        x1="104.00244"
+        x1="104"
         y1="96"
-        x2="104.00244"
+        x2="104"
         y2="176"
         fill="none"
         :stroke="displayColor"
@@ -123,9 +120,9 @@
         stroke-width="16"
       />
       <line
-        x1="152.00244"
+        x1="152"
         y1="96"
-        x2="152.00244"
+        x2="152"
         y2="176"
         fill="none"
         :stroke="displayColor"
@@ -134,9 +131,9 @@
         stroke-width="16"
       />
       <line
-        x1="200.00244"
+        x1="200"
         y1="96"
-        x2="200.00244"
+        x2="200"
         y2="176"
         fill="none"
         :stroke="displayColor"
@@ -145,9 +142,9 @@
         stroke-width="16"
       />
       <line
-        x1="32.00244"
+        x1="32"
         y1="176"
-        x2="224.00244"
+        x2="224"
         y2="176"
         fill="none"
         :stroke="displayColor"
@@ -156,9 +153,9 @@
         stroke-width="16"
       />
       <line
-        x1="16.00244"
+        x1="16"
         y1="208"
-        x2="240.00244"
+        x2="240"
         y2="208"
         fill="none"
         :stroke="displayColor"
@@ -169,12 +166,12 @@
     </g>
     <g v-else-if="displayWeight === 'fill'">
       <path
-        d="M248.00244,208a8.00039,8.00039,0,0,1-8,8h-224a8,8,0,0,1,0-16h224A8.00039,8.00039,0,0,1,248.00244,208ZM16.30518,98.17871a7.99868,7.99868,0,0,1,3.50488-8.99219l104-64a7.9998,7.9998,0,0,1,8.38476,0l104,64A8.0001,8.0001,0,0,1,232.00244,104h-24v64h16a8,8,0,0,1,0,16h-192a8,8,0,0,1,0-16h16V104h-24A7.999,7.999,0,0,1,16.30518,98.17871ZM144.00244,160a8,8,0,0,0,16,0V112a8,8,0,1,0-16,0Zm-48,0a8,8,0,0,0,16,0V112a8,8,0,0,0-16,0Z"
+        d="M248,208a8,8,0,0,1-8,8H16a8,8,0,0,1,0-16H240A8,8,0,0,1,248,208ZM16.3,98.2a8,8,0,0,1,3.5-9l104-64a7.9,7.9,0,0,1,8.4,0l104,64A8,8,0,0,1,232,104H208v64h16a8,8,0,0,1,0,16H32a8,8,0,0,1,0-16H48V104H24A8,8,0,0,1,16.3,98.2ZM144,160a8,8,0,0,0,16,0V112a8,8,0,0,0-16,0Zm-48,0a8,8,0,0,0,16,0V112a8,8,0,0,0-16,0Z"
       />
     </g>
     <g v-else-if="displayWeight === 'light'">
       <polygon
-        points="24.002 96 232.002 96 128.002 32 24.002 96"
+        points="24 96 232 96 128 32 24 96"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -182,9 +179,9 @@
         stroke-width="12"
       />
       <line
-        x1="56.00244"
+        x1="56"
         y1="96"
-        x2="56.00244"
+        x2="56"
         y2="176"
         fill="none"
         :stroke="displayColor"
@@ -193,9 +190,9 @@
         stroke-width="12"
       />
       <line
-        x1="104.00244"
+        x1="104"
         y1="96"
-        x2="104.00244"
+        x2="104"
         y2="176"
         fill="none"
         :stroke="displayColor"
@@ -204,9 +201,9 @@
         stroke-width="12"
       />
       <line
-        x1="152.00244"
+        x1="152"
         y1="96"
-        x2="152.00244"
+        x2="152"
         y2="176"
         fill="none"
         :stroke="displayColor"
@@ -215,9 +212,9 @@
         stroke-width="12"
       />
       <line
-        x1="200.00244"
+        x1="200"
         y1="96"
-        x2="200.00244"
+        x2="200"
         y2="176"
         fill="none"
         :stroke="displayColor"
@@ -226,9 +223,9 @@
         stroke-width="12"
       />
       <line
-        x1="32.00244"
+        x1="32"
         y1="176"
-        x2="224.00244"
+        x2="224"
         y2="176"
         fill="none"
         :stroke="displayColor"
@@ -237,9 +234,9 @@
         stroke-width="12"
       />
       <line
-        x1="16.00244"
+        x1="16"
         y1="208"
-        x2="240.00244"
+        x2="240"
         y2="208"
         fill="none"
         :stroke="displayColor"
@@ -250,7 +247,7 @@
     </g>
     <g v-else-if="displayWeight === 'thin'">
       <polygon
-        points="24.002 96 232.002 96 128.002 32 24.002 96"
+        points="24 96 232 96 128 32 24 96"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -258,9 +255,9 @@
         stroke-width="8"
       />
       <line
-        x1="56.00244"
+        x1="56"
         y1="96"
-        x2="56.00244"
+        x2="56"
         y2="176"
         fill="none"
         :stroke="displayColor"
@@ -269,9 +266,9 @@
         stroke-width="8"
       />
       <line
-        x1="104.00244"
+        x1="104"
         y1="96"
-        x2="104.00244"
+        x2="104"
         y2="176"
         fill="none"
         :stroke="displayColor"
@@ -280,9 +277,9 @@
         stroke-width="8"
       />
       <line
-        x1="152.00244"
+        x1="152"
         y1="96"
-        x2="152.00244"
+        x2="152"
         y2="176"
         fill="none"
         :stroke="displayColor"
@@ -291,9 +288,9 @@
         stroke-width="8"
       />
       <line
-        x1="200.00244"
+        x1="200"
         y1="96"
-        x2="200.00244"
+        x2="200"
         y2="176"
         fill="none"
         :stroke="displayColor"
@@ -302,9 +299,9 @@
         stroke-width="8"
       />
       <line
-        x1="32.00244"
+        x1="32"
         y1="176"
-        x2="224.00244"
+        x2="224"
         y2="176"
         fill="none"
         :stroke="displayColor"
@@ -313,9 +310,9 @@
         stroke-width="8"
       />
       <line
-        x1="16.00244"
+        x1="16"
         y1="208"
-        x2="240.00244"
+        x2="240"
         y2="208"
         fill="none"
         :stroke="displayColor"
@@ -326,7 +323,7 @@
     </g>
     <g v-else-if="displayWeight === 'regular'">
       <polygon
-        points="24.002 96 232.002 96 128.002 32 24.002 96"
+        points="24 96 232 96 128 32 24 96"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -334,9 +331,9 @@
         stroke-width="16"
       />
       <line
-        x1="56.00244"
+        x1="56"
         y1="96"
-        x2="56.00244"
+        x2="56"
         y2="176"
         fill="none"
         :stroke="displayColor"
@@ -345,9 +342,9 @@
         stroke-width="16"
       />
       <line
-        x1="104.00244"
+        x1="104"
         y1="96"
-        x2="104.00244"
+        x2="104"
         y2="176"
         fill="none"
         :stroke="displayColor"
@@ -356,9 +353,9 @@
         stroke-width="16"
       />
       <line
-        x1="152.00244"
+        x1="152"
         y1="96"
-        x2="152.00244"
+        x2="152"
         y2="176"
         fill="none"
         :stroke="displayColor"
@@ -367,9 +364,9 @@
         stroke-width="16"
       />
       <line
-        x1="200.00244"
+        x1="200"
         y1="96"
-        x2="200.00244"
+        x2="200"
         y2="176"
         fill="none"
         :stroke="displayColor"
@@ -378,9 +375,9 @@
         stroke-width="16"
       />
       <line
-        x1="32.00244"
+        x1="32"
         y1="176"
-        x2="224.00244"
+        x2="224"
         y2="176"
         fill="none"
         :stroke="displayColor"
@@ -389,9 +386,9 @@
         stroke-width="16"
       />
       <line
-        x1="16.00244"
+        x1="16"
         y1="208"
-        x2="240.00244"
+        x2="240"
         y2="208"
         fill="none"
         :stroke="displayColor"

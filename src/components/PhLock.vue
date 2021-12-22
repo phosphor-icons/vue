@@ -18,11 +18,11 @@
         width="176"
         height="128"
         rx="8"
-        stroke-width="24"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="24"
       />
       <path
         d="M92,88V52a36,36,0,0,1,72,0V88"
@@ -42,11 +42,11 @@
         width="176"
         height="128"
         rx="8"
-        stroke-width="16"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
       <path
         d="M92,88V52a36,36,0,0,1,72,0V88"
@@ -60,7 +60,7 @@
     </g>
     <g v-else-if="displayWeight === 'fill'">
       <path
-        d="M208,80H172V52a44,44,0,0,0-88,0V80H48A16.01833,16.01833,0,0,0,32,96V208a16.01833,16.01833,0,0,0,16,16H208a16.01833,16.01833,0,0,0,16-16V96A16.01833,16.01833,0,0,0,208,80Zm-80.00586,84a12,12,0,1,1,12-12A12,12,0,0,1,127.99414,164ZM156,80H100V52a28,28,0,0,1,56,0Z"
+        d="M208,80H172V52a44,44,0,0,0-88,0V80H48A16,16,0,0,0,32,96V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V96A16,16,0,0,0,208,80Zm-80,84a12,12,0,1,1,12-12A12,12,0,0,1,128,164Zm28-84H100V52a28,28,0,0,1,56,0Z"
       />
     </g>
     <g v-else-if="displayWeight === 'light'">
@@ -70,11 +70,11 @@
         width="176"
         height="128"
         rx="8"
-        stroke-width="12"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="12"
       />
       <path
         d="M92,88V52a36,36,0,0,1,72,0V88"
@@ -93,11 +93,11 @@
         width="176"
         height="128"
         rx="8"
-        stroke-width="8"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="8"
       />
       <path
         d="M92,88V52a36,36,0,0,1,72,0V88"
@@ -116,11 +116,11 @@
         width="176"
         height="128"
         rx="8"
-        stroke-width="16"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
       <path
         d="M92,88V52a36,36,0,0,1,72,0V88"

@@ -13,69 +13,62 @@
     <slot />
     <g v-if="displayWeight === 'bold'">
       <rect
-        x="32.00781"
-        y="48.00005"
+        x="32"
+        y="48"
         width="192"
         height="160"
         rx="8"
-        stroke-width="24"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="24"
       />
     </g>
     <g v-else-if="displayWeight === 'duotone'">
+      <rect x="32" y="48" width="192" height="160" rx="8" opacity="0.2" />
       <rect
-        x="32.00781"
-        y="48.00005"
+        x="32"
+        y="48"
         width="192"
         height="160"
         rx="8"
-        opacity="0.2"
-      />
-      <rect
-        x="32.00781"
-        y="48.00005"
-        width="192"
-        height="160"
-        rx="8"
-        stroke-width="16"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
     </g>
     <g v-else-if="displayWeight === 'fill'">
-      <rect x="24.00781" y="40" width="208" height="176" rx="16" />
+      <rect x="24" y="40" width="208" height="176" rx="16" />
     </g>
     <g v-else-if="displayWeight === 'light'">
       <rect
-        x="32.00781"
-        y="48.00005"
+        x="32"
+        y="48"
         width="192"
         height="160"
         rx="8"
-        stroke-width="12"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="12"
       />
     </g>
     <g v-else-if="displayWeight === 'thin'">
       <rect
-        x="32.00781"
-        y="48.00005"
+        x="32"
+        y="48"
         width="192"
         height="160"
         rx="8"
-        stroke-width="8"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="8"
       />
     </g>
     <g v-else-if="displayWeight === 'regular'">
@@ -85,11 +78,11 @@
         width="192"
         height="160"
         rx="8"
-        stroke-width="16"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
     </g>
   </svg>

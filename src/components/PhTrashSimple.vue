@@ -13,10 +13,10 @@
     <slot />
     <g v-if="displayWeight === 'bold'">
       <line
-        x1="215.99609"
+        x1="216"
         y1="60"
-        x2="39.99609"
-        y2="60.00005"
+        x2="40"
+        y2="60"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -44,15 +44,12 @@
       />
     </g>
     <g v-else-if="displayWeight === 'duotone'">
-      <path
-        d="M199.99609,56.00005V208a8,8,0,0,1-8,8h-128a8,8,0,0,1-8-8v-152Z"
-        opacity="0.2"
-      />
+      <path d="M200,56V208a8,8,0,0,1-8,8H64a8,8,0,0,1-8-8V56Z" opacity="0.2" />
       <line
-        x1="215.99609"
+        x1="216"
         y1="56"
-        x2="39.99609"
-        y2="56.00005"
+        x2="40"
+        y2="56"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -81,15 +78,15 @@
     </g>
     <g v-else-if="displayWeight === 'fill'">
       <path
-        d="M224,56a8.00008,8.00008,0,0,1-8,8h-8V208a16.01833,16.01833,0,0,1-16,16H64a16.01833,16.01833,0,0,1-16-16V64H40a8,8,0,0,1,0-16H216A8.00008,8.00008,0,0,1,224,56ZM88.00391,32h80a8,8,0,0,0,0-16h-80a8,8,0,0,0,0,16Z"
+        d="M224,56a8,8,0,0,1-8,8h-8V208a16,16,0,0,1-16,16H64a16,16,0,0,1-16-16V64H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,56ZM88,32h80a8,8,0,0,0,0-16H88a8,8,0,0,0,0,16Z"
       />
     </g>
     <g v-else-if="displayWeight === 'light'">
       <line
-        x1="215.99609"
+        x1="216"
         y1="56"
-        x2="39.99609"
-        y2="56.00005"
+        x2="40"
+        y2="56"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -118,10 +115,10 @@
     </g>
     <g v-else-if="displayWeight === 'thin'">
       <line
-        x1="215.99609"
+        x1="216"
         y1="56"
-        x2="39.99609"
-        y2="56.00005"
+        x2="40"
+        y2="56"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -150,10 +147,10 @@
     </g>
     <g v-else-if="displayWeight === 'regular'">
       <line
-        x1="215.99609"
+        x1="216"
         y1="56"
-        x2="39.99609"
-        y2="56.00005"
+        x2="40"
+        y2="56"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"

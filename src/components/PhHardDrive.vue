@@ -18,11 +18,11 @@
         width="208"
         height="112"
         rx="8"
-        stroke-width="24"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="24"
       />
       <circle cx="180" cy="128" r="16" />
     </g>
@@ -34,17 +34,17 @@
         width="208"
         height="112"
         rx="8"
-        stroke-width="16"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
       <circle cx="188" cy="128" r="12" />
     </g>
     <g v-else-if="displayWeight === 'fill'">
       <path
-        d="M224,64H32A16.01833,16.01833,0,0,0,16,80v96a16.01833,16.01833,0,0,0,16,16H224a16.01833,16.01833,0,0,0,16-16V80A16.01833,16.01833,0,0,0,224,64Zm-35.99951,76a12,12,0,1,1,12-12A12,12,0,0,1,188.00049,140Z"
+        d="M224,64H32A16,16,0,0,0,16,80v96a16,16,0,0,0,16,16H224a16,16,0,0,0,16-16V80A16,16,0,0,0,224,64Zm-36,76a12,12,0,1,1,12-12A12,12,0,0,1,188,140Z"
       />
     </g>
     <g v-else-if="displayWeight === 'light'">
@@ -54,11 +54,11 @@
         width="208"
         height="112"
         rx="8"
-        stroke-width="12"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="12"
       />
       <circle cx="188" cy="128" r="10" />
     </g>
@@ -69,11 +69,11 @@
         width="208"
         height="112"
         rx="8"
-        stroke-width="8"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="8"
       />
       <circle cx="188" cy="128" r="8" />
     </g>
@@ -84,11 +84,11 @@
         width="208"
         height="112"
         rx="8"
-        stroke-width="16"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
       <circle cx="188" cy="128" r="12" />
     </g>

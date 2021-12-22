@@ -18,11 +18,11 @@
         width="192"
         height="160"
         rx="8"
-        stroke-width="24"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="24"
       />
       <line
         x1="32"
@@ -52,11 +52,11 @@
         width="192"
         height="160"
         rx="8"
-        stroke-width="16"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
       <line
         x1="32"
@@ -80,7 +80,7 @@
     </g>
     <g v-else-if="displayWeight === 'fill'">
       <path
-        d="M216,40H40A16.01833,16.01833,0,0,0,24,56V200a16.01833,16.01833,0,0,0,16,16H216a16.01833,16.01833,0,0,0,16-16V56A16.01833,16.01833,0,0,0,216,40ZM128,160a48.054,48.054,0,0,1-48-48,8,8,0,0,1,16,0,32,32,0,0,0,64,0,8,8,0,0,1,16,0A48.054,48.054,0,0,1,128,160ZM40,72V56H216l.001,16Z"
+        d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40ZM128,160a48,48,0,0,1-48-48,8,8,0,0,1,16,0,32,32,0,0,0,64,0,8,8,0,0,1,16,0A48,48,0,0,1,128,160ZM40,72V56H216V72Z"
       />
     </g>
     <g v-else-if="displayWeight === 'light'">
@@ -90,11 +90,11 @@
         width="192"
         height="160"
         rx="8"
-        stroke-width="12"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="12"
       />
       <line
         x1="32"
@@ -123,11 +123,11 @@
         width="192"
         height="160"
         rx="8"
-        stroke-width="8"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="8"
       />
       <line
         x1="32"
@@ -156,11 +156,11 @@
         width="192"
         height="160"
         rx="8"
-        stroke-width="16"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
       <line
         x1="32"

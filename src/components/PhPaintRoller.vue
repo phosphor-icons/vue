@@ -18,14 +18,14 @@
         width="160"
         height="80"
         rx="8"
-        stroke-width="24"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="24"
       />
       <path
-        d="M204,96h28a8,8,0,0,1,8,8v49.96559a8,8,0,0,1-5.80223,7.69219L133.80223,190.34222A8,8,0,0,0,128,198.03441V232"
+        d="M204,96h28a8,8,0,0,1,8,8v50a8.1,8.1,0,0,1-5.8,7.7L133.8,190.3A8.1,8.1,0,0,0,128,198v34"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -52,14 +52,14 @@
         width="168"
         height="80"
         rx="8"
-        stroke-width="16"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
       <path
-        d="M208,96h24a8,8,0,0,1,8,8v49.96559a8,8,0,0,1-5.80223,7.69219L133.80223,190.34222A8,8,0,0,0,128,198.03441V232"
+        d="M208,96h24a8,8,0,0,1,8,8v50a8.1,8.1,0,0,1-5.8,7.7L133.8,190.3A8.1,8.1,0,0,0,128,198v34"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -80,7 +80,7 @@
     </g>
     <g v-else-if="displayWeight === 'fill'">
       <path
-        d="M248,104v49.96582a16.06941,16.06941,0,0,1-11.60352,15.38477L135.999,198.03418,136,232a8,8,0,0,1-16,0V198.03418a16.06941,16.06941,0,0,1,11.60352-15.38477L232.001,153.96582,232,104H216v24a16.01833,16.01833,0,0,1-16,16H48a16.01833,16.01833,0,0,1-16-16V104H16a8,8,0,0,1,0-16H32V64A16.01833,16.01833,0,0,1,48,48H200a16.01833,16.01833,0,0,1,16,16V88h16A16.01833,16.01833,0,0,1,248,104Z"
+        d="M248,104v50a16.2,16.2,0,0,1-11.6,15.4L136,198v34a8,8,0,0,1-16,0V198a16.2,16.2,0,0,1,11.6-15.4L232,154V104H216v24a16,16,0,0,1-16,16H48a16,16,0,0,1-16-16V104H16a8,8,0,0,1,0-16H32V64A16,16,0,0,1,48,48H200a16,16,0,0,1,16,16V88h16A16,16,0,0,1,248,104Z"
       />
     </g>
     <g v-else-if="displayWeight === 'light'">
@@ -90,14 +90,14 @@
         width="168"
         height="80"
         rx="8"
-        stroke-width="12"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="12"
       />
       <path
-        d="M208,96h24a8,8,0,0,1,8,8v49.96559a8,8,0,0,1-5.80223,7.69219L133.80223,190.34222A8,8,0,0,0,128,198.03441V232"
+        d="M208,96h24a8,8,0,0,1,8,8v50a8.1,8.1,0,0,1-5.8,7.7L133.8,190.3A8.1,8.1,0,0,0,128,198v34"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -123,14 +123,14 @@
         width="168"
         height="80"
         rx="8"
-        stroke-width="8"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="8"
       />
       <path
-        d="M208,96h24a8,8,0,0,1,8,8v49.96559a8,8,0,0,1-5.80223,7.69219L133.80223,190.34222A8,8,0,0,0,128,198.03441V232"
+        d="M208,96h24a8,8,0,0,1,8,8v50a8.1,8.1,0,0,1-5.8,7.7L133.8,190.3A8.1,8.1,0,0,0,128,198v34"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -156,14 +156,14 @@
         width="168"
         height="80"
         rx="8"
-        stroke-width="16"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
       <path
-        d="M208,96h24a8,8,0,0,1,8,8v49.96559a8,8,0,0,1-5.80223,7.69219L133.80223,190.34222A8,8,0,0,0,128,198.03441V232"
+        d="M208,96h24a8,8,0,0,1,8,8v50a8.1,8.1,0,0,1-5.8,7.7L133.8,190.3A8.1,8.1,0,0,0,128,198v34"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"

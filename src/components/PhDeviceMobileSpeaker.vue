@@ -19,11 +19,11 @@
         height="128"
         rx="16"
         transform="translate(256) rotate(90)"
-        stroke-width="24"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="24"
       />
       <line
         x1="104"
@@ -54,11 +54,11 @@
         height="128"
         rx="16"
         transform="translate(256) rotate(90)"
-        stroke-width="16"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
       <line
         x1="96"
@@ -74,7 +74,7 @@
     </g>
     <g v-else-if="displayWeight === 'fill'">
       <path
-        d="M176,16H80A24.0275,24.0275,0,0,0,56,40V216a24.0275,24.0275,0,0,0,24,24h96a24.0275,24.0275,0,0,0,24-24V40A24.0275,24.0275,0,0,0,176,16ZM160,64H96a8,8,0,0,1,0-16h64a8,8,0,0,1,0,16Z"
+        d="M176,16H80A24.1,24.1,0,0,0,56,40V216a24.1,24.1,0,0,0,24,24h96a24.1,24.1,0,0,0,24-24V40A24.1,24.1,0,0,0,176,16ZM160,64H96a8,8,0,0,1,0-16h64a8,8,0,0,1,0,16Z"
       />
     </g>
     <g v-else-if="displayWeight === 'light'">
@@ -85,11 +85,11 @@
         height="128"
         rx="16"
         transform="translate(256) rotate(90)"
-        stroke-width="12"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="12"
       />
       <line
         x1="96"
@@ -111,11 +111,11 @@
         height="128"
         rx="16"
         transform="translate(256) rotate(90)"
-        stroke-width="8"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="8"
       />
       <line
         x1="96"
@@ -137,11 +137,11 @@
         height="128"
         rx="16"
         transform="translate(256) rotate(90)"
-        stroke-width="16"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
       <line
         x1="96"

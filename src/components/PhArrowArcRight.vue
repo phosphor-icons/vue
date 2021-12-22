@@ -13,7 +13,7 @@
     <slot />
     <g v-if="displayWeight === 'bold'">
       <polyline
-        points="163.882 148.118 227.882 148.118 227.882 84.118"
+        points="163.9 148.1 227.9 148.1 227.9 84.1"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -21,7 +21,7 @@
         stroke-width="24"
       />
       <path
-        d="M32,184a96,96,0,0,1,163.88225-67.88229l32,32"
+        d="M32,184a96,96,0,0,1,163.9-67.9l32,32"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -31,7 +31,7 @@
     </g>
     <g v-else-if="displayWeight === 'duotone'">
       <polyline
-        points="163.882 148.118 227.882 148.118 227.882 84.118"
+        points="163.9 148.1 227.9 148.1 227.9 84.1"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -39,7 +39,7 @@
         stroke-width="16"
       />
       <path
-        d="M32,184a96,96,0,0,1,163.88225-67.88229l32,32"
+        d="M32,184a96,96,0,0,1,163.9-67.9l32,32"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -49,12 +49,12 @@
     </g>
     <g v-else-if="displayWeight === 'fill'">
       <path
-        d="M235.88184,84.11816v64a8.0004,8.0004,0,0,1-8,8h-64a8.00064,8.00064,0,0,1-5.65723-13.65722l26.08032-26.08008A87.99487,87.99487,0,0,0,40,184a8,8,0,0,1-16,0,104.00481,104.00481,0,0,1,171.667-78.98145l26.55762-26.55761a8.00065,8.00065,0,0,1,13.65723,5.65722Z"
+        d="M235.9,84.1v64a8,8,0,0,1-8,8h-64a7.9,7.9,0,0,1-7.4-4.9,8,8,0,0,1,1.7-8.7l26.1-26.1A88,88,0,0,0,40,184a8,8,0,0,1-16,0A104.1,104.1,0,0,1,128,80a103.3,103.3,0,0,1,67.7,25l26.5-26.5a8,8,0,0,1,13.7,5.6Z"
       />
     </g>
     <g v-else-if="displayWeight === 'light'">
       <polyline
-        points="163.882 148.118 227.882 148.118 227.882 84.118"
+        points="163.9 148.1 227.9 148.1 227.9 84.1"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -62,7 +62,7 @@
         stroke-width="12"
       />
       <path
-        d="M32,184a96,96,0,0,1,163.88225-67.88229l32,32"
+        d="M32,184a96,96,0,0,1,163.9-67.9l32,32"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -72,7 +72,7 @@
     </g>
     <g v-else-if="displayWeight === 'thin'">
       <polyline
-        points="163.882 148.118 227.882 148.118 227.882 84.118"
+        points="163.9 148.1 227.9 148.1 227.9 84.1"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -80,7 +80,7 @@
         stroke-width="8"
       />
       <path
-        d="M32,184a96,96,0,0,1,163.88225-67.88229l32,32"
+        d="M32,184a96,96,0,0,1,163.9-67.9l32,32"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -90,7 +90,7 @@
     </g>
     <g v-else-if="displayWeight === 'regular'">
       <polyline
-        points="163.882 148.118 227.882 148.118 227.882 84.118"
+        points="163.9 148.1 227.9 148.1 227.9 84.1"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -98,7 +98,7 @@
         stroke-width="16"
       />
       <path
-        d="M32,184a96,96,0,0,1,163.88225-67.88229l32,32"
+        d="M32,184a96,96,0,0,1,163.9-67.9l32,32"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"

@@ -19,11 +19,11 @@
         height="180"
         rx="16"
         transform="translate(246 10) rotate(90)"
-        stroke-width="24"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="24"
       />
       <line
         x1="64"
@@ -87,17 +87,17 @@
         height="184"
         rx="16"
         transform="translate(252 4) rotate(90)"
-        stroke-width="16"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
       <line
         x1="105.6"
-        y1="168.00043"
+        y1="168"
         x2="105.6"
-        y2="88.00043"
+        y2="88"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -106,9 +106,9 @@
       />
       <line
         x1="68.8"
-        y1="168.00043"
+        y1="168"
         x2="68.8"
-        y2="88.00043"
+        y2="88"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -117,15 +117,11 @@
       />
     </g>
     <g v-else-if="displayWeight === 'fill'">
-      <g>
-        <path
-          d="M248,88a7.99977,7.99977,0,0,0-8,8v64a8,8,0,0,0,16,0V96A7.99977,7.99977,0,0,0,248,88Z"
-        />
-        <path
-          d="M200,48H48A24.0275,24.0275,0,0,0,24,72V184a24.0275,24.0275,0,0,0,24,24H200a24.0275,24.0275,0,0,0,24-24V72A24.0275,24.0275,0,0,0,200,48Zm8,136a8.00917,8.00917,0,0,1-8,8H48a8.00917,8.00917,0,0,1-8-8V72a8.00917,8.00917,0,0,1,8-8H200a8.00917,8.00917,0,0,1,8,8Z"
-        />
-        <rect x="56" y="80.00049" width="72" height="96" rx="8" />
-      </g>
+      <path d="M248,88a8,8,0,0,0-8,8v64a8,8,0,0,0,16,0V96A8,8,0,0,0,248,88Z" />
+      <path
+        d="M200,48H48A24.1,24.1,0,0,0,24,72V184a24.1,24.1,0,0,0,24,24H200a24.1,24.1,0,0,0,24-24V72A24.1,24.1,0,0,0,200,48Zm8,136a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V72a8,8,0,0,1,8-8H200a8,8,0,0,1,8,8Z"
+      />
+      <rect x="56" y="80" width="72" height="96" rx="8" />
     </g>
     <g v-else-if="displayWeight === 'light'">
       <line
@@ -146,17 +142,17 @@
         height="184"
         rx="16"
         transform="translate(252 4) rotate(90)"
-        stroke-width="12"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="12"
       />
       <line
         x1="105.6"
-        y1="168.00043"
+        y1="168"
         x2="105.6"
-        y2="88.00043"
+        y2="88"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -165,9 +161,9 @@
       />
       <line
         x1="68.8"
-        y1="168.00043"
+        y1="168"
         x2="68.8"
-        y2="88.00043"
+        y2="88"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -194,17 +190,17 @@
         height="184"
         rx="16"
         transform="translate(252 4) rotate(90)"
-        stroke-width="8"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="8"
       />
       <line
         x1="105.6"
-        y1="168.00043"
+        y1="168"
         x2="105.6"
-        y2="88.00043"
+        y2="88"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -213,9 +209,9 @@
       />
       <line
         x1="68.8"
-        y1="168.00043"
+        y1="168"
         x2="68.8"
-        y2="88.00043"
+        y2="88"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -242,17 +238,17 @@
         height="184"
         rx="16"
         transform="translate(252 4) rotate(90)"
-        stroke-width="16"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
       <line
         x1="105.6"
-        y1="168.00043"
+        y1="168"
         x2="105.6"
-        y2="88.00043"
+        y2="88"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -261,9 +257,9 @@
       />
       <line
         x1="68.8"
-        y1="168.00043"
+        y1="168"
         x2="68.8"
-        y2="88.00043"
+        y2="88"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"

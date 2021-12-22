@@ -19,11 +19,11 @@
         height="128"
         rx="16"
         transform="translate(256) rotate(90)"
-        stroke-width="24"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="24"
       />
       <circle cx="128" cy="68" r="16" />
     </g>
@@ -44,17 +44,17 @@
         height="128"
         rx="16"
         transform="translate(256) rotate(90)"
-        stroke-width="16"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
       <circle cx="128" cy="60" r="12" />
     </g>
     <g v-else-if="displayWeight === 'fill'">
       <path
-        d="M176,16H80A24.0275,24.0275,0,0,0,56,40V216a24.0275,24.0275,0,0,0,24,24h96a24.0275,24.0275,0,0,0,24-24V40A24.0275,24.0275,0,0,0,176,16ZM128,72a12,12,0,1,1,12-12A12,12,0,0,1,128,72Z"
+        d="M176,16H80A24.1,24.1,0,0,0,56,40V216a24.1,24.1,0,0,0,24,24h96a24.1,24.1,0,0,0,24-24V40A24.1,24.1,0,0,0,176,16ZM128,72a12,12,0,1,1,12-12A12,12,0,0,1,128,72Z"
       />
     </g>
     <g v-else-if="displayWeight === 'light'">
@@ -65,11 +65,11 @@
         height="128"
         rx="16"
         transform="translate(256) rotate(90)"
-        stroke-width="12"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="12"
       />
       <circle cx="128" cy="60" r="10" />
     </g>
@@ -81,11 +81,11 @@
         height="128"
         rx="16"
         transform="translate(256) rotate(90)"
-        stroke-width="8"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="8"
       />
       <circle cx="128" cy="60" r="8" />
     </g>
@@ -97,11 +97,11 @@
         height="128"
         rx="16"
         transform="translate(256) rotate(90)"
-        stroke-width="16"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
       <circle cx="128" cy="60" r="12" />
     </g>

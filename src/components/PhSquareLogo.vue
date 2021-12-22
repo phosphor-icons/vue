@@ -14,132 +14,132 @@
     <g v-if="displayWeight === 'bold'">
       <rect
         x="40"
-        y="40.00002"
+        y="40"
         width="176"
         height="176"
         rx="8"
-        stroke-width="24"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="24"
       />
       <rect
         x="96"
-        y="96.00002"
+        y="96"
         width="64"
         height="64"
-        stroke-width="24"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="24"
       />
     </g>
     <g v-else-if="displayWeight === 'duotone'">
-      <rect x="96" y="96.00002" width="64" height="64" opacity="0.2" />
+      <rect x="96" y="96" width="64" height="64" opacity="0.2" />
       <rect
         x="40"
-        y="40.00002"
+        y="40"
         width="176"
         height="176"
         rx="8"
-        stroke-width="16"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
       <rect
         x="96"
-        y="96.00002"
+        y="96"
         width="64"
         height="64"
-        stroke-width="16"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
     </g>
     <g v-else-if="displayWeight === 'fill'">
       <path
-        d="M208,32H48A16.01833,16.01833,0,0,0,32,48V208a16.01833,16.01833,0,0,0,16,16H208a16.01833,16.01833,0,0,0,16-16V48A16.01833,16.01833,0,0,0,208,32Zm0,176H48V48H208l.01025,159.99951ZM168,96v64a7.99977,7.99977,0,0,1-8,8H96a7.99977,7.99977,0,0,1-8-8V96a7.99977,7.99977,0,0,1,8-8h64A7.99977,7.99977,0,0,1,168,96Z"
+        d="M208,32H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32Zm0,176H48V48H208V208ZM168,96v64a8,8,0,0,1-8,8H96a8,8,0,0,1-8-8V96a8,8,0,0,1,8-8h64A8,8,0,0,1,168,96Z"
       />
     </g>
     <g v-else-if="displayWeight === 'light'">
       <rect
         x="40"
-        y="40.00002"
+        y="40"
         width="176"
         height="176"
         rx="8"
-        stroke-width="12"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="12"
       />
       <rect
         x="96"
-        y="96.00002"
+        y="96"
         width="64"
         height="64"
-        stroke-width="12"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="12"
       />
     </g>
     <g v-else-if="displayWeight === 'thin'">
       <rect
         x="40"
-        y="40.00002"
+        y="40"
         width="176"
         height="176"
         rx="8"
-        stroke-width="8"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="8"
       />
       <rect
         x="96"
-        y="96.00002"
+        y="96"
         width="64"
         height="64"
-        stroke-width="8"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="8"
       />
     </g>
     <g v-else-if="displayWeight === 'regular'">
       <rect
         x="40"
-        y="40.00002"
+        y="40"
         width="176"
         height="176"
         rx="8"
-        stroke-width="16"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
       <rect
         x="96"
-        y="96.00002"
+        y="96"
         width="64"
         height="64"
-        stroke-width="16"
+        fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
     </g>
   </svg>

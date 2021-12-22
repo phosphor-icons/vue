@@ -40,9 +40,9 @@
         stroke-width="24"
       />
       <line
-        x1="72.57437"
+        x1="72.6"
         y1="96"
-        x2="183.42563"
+        x2="183.4"
         y2="160"
         fill="none"
         :stroke="displayColor"
@@ -51,7 +51,7 @@
         stroke-width="24"
       />
       <polyline
-        points="39.79 104.785 72.574 96 63.79 63.215"
+        points="39.8 104.8 72.6 96 63.8 63.2"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -59,7 +59,7 @@
         stroke-width="24"
       />
       <polyline
-        points="192.21 192.785 183.426 160 216.21 151.215"
+        points="192.2 192.8 183.4 160 216.2 151.2"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -67,9 +67,9 @@
         stroke-width="24"
       />
       <line
-        x1="72.57437"
+        x1="72.6"
         y1="160"
-        x2="183.42563"
+        x2="183.4"
         y2="96"
         fill="none"
         :stroke="displayColor"
@@ -78,7 +78,7 @@
         stroke-width="24"
       />
       <polyline
-        points="63.79 192.785 72.574 160 39.79 151.215"
+        points="63.8 192.8 72.6 160 39.8 151.2"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -86,7 +86,7 @@
         stroke-width="24"
       />
       <polyline
-        points="216.21 104.785 183.426 96 192.21 63.215"
+        points="216.2 104.8 183.4 96 192.2 63.2"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -123,9 +123,9 @@
         stroke-width="16"
       />
       <line
-        x1="72.57437"
+        x1="72.6"
         y1="96"
-        x2="183.42563"
+        x2="183.4"
         y2="160"
         fill="none"
         :stroke="displayColor"
@@ -134,7 +134,7 @@
         stroke-width="16"
       />
       <polyline
-        points="39.79 104.785 72.574 96 63.79 63.215"
+        points="39.8 104.8 72.6 96 63.8 63.2"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -142,7 +142,7 @@
         stroke-width="16"
       />
       <polyline
-        points="192.21 192.785 183.426 160 216.21 151.215"
+        points="192.2 192.8 183.4 160 216.2 151.2"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -150,9 +150,9 @@
         stroke-width="16"
       />
       <line
-        x1="72.57437"
+        x1="72.6"
         y1="160"
-        x2="183.42563"
+        x2="183.4"
         y2="96"
         fill="none"
         :stroke="displayColor"
@@ -161,7 +161,7 @@
         stroke-width="16"
       />
       <polyline
-        points="63.79 192.785 72.574 160 39.79 151.215"
+        points="63.8 192.8 72.6 160 39.8 151.2"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -169,7 +169,7 @@
         stroke-width="16"
       />
       <polyline
-        points="216.21 104.785 183.426 96 192.21 63.215"
+        points="216.2 104.8 183.4 96 192.2 63.2"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -179,7 +179,7 @@
     </g>
     <g v-else-if="displayWeight === 'fill'">
       <path
-        d="M223.938,149.14551a7.99991,7.99991,0,0,1-5.65723,9.79785l-25.05713,6.71387,6.71436,25.05664a8.00007,8.00007,0,1,1-15.45508,4.14062l-7.927-29.58374L136,141.856V188.686l21.65674,21.65673a8.00018,8.00018,0,0,1-11.31348,11.31446L128,203.31348l-18.34326,18.34375a8.00018,8.00018,0,0,1-11.31348-11.31446L120,188.686V141.856L79.44409,165.27075l-7.927,29.58374A8.00007,8.00007,0,1,1,56.062,190.71387l6.71436-25.05664-25.05713-6.71387a8.00007,8.00007,0,1,1,4.14062-15.45508L71.44458,151.415,112.00073,128,71.44458,104.585l-29.58472,7.92676a8.00007,8.00007,0,1,1-4.14062-15.45508l25.05713-6.71387L56.062,65.28613a8.00007,8.00007,0,1,1,15.45508-4.14062l7.927,29.58374L120,114.144V67.314L98.34326,45.65723a8.00018,8.00018,0,0,1,11.31348-11.31446L128,52.68652l18.34326-18.34375a8.00018,8.00018,0,1,1,11.31348,11.31446L136,67.314V114.144l40.55591-23.41479,7.927-29.58374A8.00007,8.00007,0,1,1,199.938,65.28613l-6.71436,25.05664,25.05713,6.71387a8.00007,8.00007,0,1,1-4.14062,15.45508L184.55542,104.585,143.99927,128l40.55615,23.415,29.58472-7.92676A8.00062,8.00062,0,0,1,223.938,149.14551Z"
+        d="M223.9,149.1a7.9,7.9,0,0,1-5.6,9.8l-25.1,6.8,6.7,25a7.9,7.9,0,0,1-5.6,9.8l-2.1.3a8,8,0,0,1-7.7-5.9l-7.9-29.6L136,141.9v46.8l21.7,21.6a8.1,8.1,0,0,1,0,11.4,8.2,8.2,0,0,1-11.4,0L128,203.3l-18.3,18.4a8.1,8.1,0,0,1-11.4-11.4L120,188.7V141.9L79.4,165.3l-7.9,29.6a8,8,0,0,1-7.7,5.9l-2.1-.3a7.9,7.9,0,0,1-5.6-9.8l6.7-25-25.1-6.8a8,8,0,1,1,4.2-15.4l29.5,7.9L112,128,71.4,104.6l-29.5,7.9a7.6,7.6,0,0,1-2.1.3,8,8,0,0,1-2.1-15.7l25.1-6.8-6.7-25a8,8,0,0,1,15.4-4.2l7.9,29.6L120,114.1V67.3L98.3,45.7a8.1,8.1,0,0,1,11.4-11.4L128,52.7l18.3-18.4a8.1,8.1,0,0,1,11.4,11.4L136,67.3v46.8l40.6-23.4,7.9-29.6a8,8,0,1,1,15.4,4.2l-6.7,25,25.1,6.8a8,8,0,0,1-2.1,15.7l-2.1-.3-29.5-7.9L144,128l40.6,23.4,29.5-7.9A7.9,7.9,0,0,1,223.9,149.1Z"
       />
     </g>
     <g v-else-if="displayWeight === 'light'">
@@ -211,9 +211,9 @@
         stroke-width="12"
       />
       <line
-        x1="72.57437"
+        x1="72.6"
         y1="96"
-        x2="183.42563"
+        x2="183.4"
         y2="160"
         fill="none"
         :stroke="displayColor"
@@ -222,7 +222,7 @@
         stroke-width="12"
       />
       <polyline
-        points="39.79 104.785 72.574 96 63.79 63.215"
+        points="39.8 104.8 72.6 96 63.8 63.2"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -230,7 +230,7 @@
         stroke-width="12"
       />
       <polyline
-        points="192.21 192.785 183.426 160 216.21 151.215"
+        points="192.2 192.8 183.4 160 216.2 151.2"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -238,9 +238,9 @@
         stroke-width="12"
       />
       <line
-        x1="72.57437"
+        x1="72.6"
         y1="160"
-        x2="183.42563"
+        x2="183.4"
         y2="96"
         fill="none"
         :stroke="displayColor"
@@ -249,7 +249,7 @@
         stroke-width="12"
       />
       <polyline
-        points="63.79 192.785 72.574 160 39.79 151.215"
+        points="63.8 192.8 72.6 160 39.8 151.2"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -257,7 +257,7 @@
         stroke-width="12"
       />
       <polyline
-        points="216.21 104.785 183.426 96 192.21 63.215"
+        points="216.2 104.8 183.4 96 192.2 63.2"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -294,9 +294,9 @@
         stroke-width="8"
       />
       <line
-        x1="72.57437"
+        x1="72.6"
         y1="96"
-        x2="183.42563"
+        x2="183.4"
         y2="160"
         fill="none"
         :stroke="displayColor"
@@ -305,7 +305,7 @@
         stroke-width="8"
       />
       <polyline
-        points="39.79 104.785 72.574 96 63.79 63.215"
+        points="39.8 104.8 72.6 96 63.8 63.2"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -313,7 +313,7 @@
         stroke-width="8"
       />
       <polyline
-        points="192.21 192.785 183.426 160 216.21 151.215"
+        points="192.2 192.8 183.4 160 216.2 151.2"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -321,9 +321,9 @@
         stroke-width="8"
       />
       <line
-        x1="72.57437"
+        x1="72.6"
         y1="160"
-        x2="183.42563"
+        x2="183.4"
         y2="96"
         fill="none"
         :stroke="displayColor"
@@ -332,7 +332,7 @@
         stroke-width="8"
       />
       <polyline
-        points="63.79 192.785 72.574 160 39.79 151.215"
+        points="63.8 192.8 72.6 160 39.8 151.2"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -340,7 +340,7 @@
         stroke-width="8"
       />
       <polyline
-        points="216.21 104.785 183.426 96 192.21 63.215"
+        points="216.2 104.8 183.4 96 192.2 63.2"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -377,9 +377,9 @@
         stroke-width="16"
       />
       <line
-        x1="72.57437"
+        x1="72.6"
         y1="96"
-        x2="183.42563"
+        x2="183.4"
         y2="160"
         fill="none"
         :stroke="displayColor"
@@ -388,7 +388,7 @@
         stroke-width="16"
       />
       <polyline
-        points="39.79 104.785 72.574 96 63.79 63.215"
+        points="39.8 104.8 72.6 96 63.8 63.2"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -396,7 +396,7 @@
         stroke-width="16"
       />
       <polyline
-        points="192.21 192.785 183.426 160 216.21 151.215"
+        points="192.2 192.8 183.4 160 216.2 151.2"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -404,9 +404,9 @@
         stroke-width="16"
       />
       <line
-        x1="72.57437"
+        x1="72.6"
         y1="160"
-        x2="183.42563"
+        x2="183.4"
         y2="96"
         fill="none"
         :stroke="displayColor"
@@ -415,7 +415,7 @@
         stroke-width="16"
       />
       <polyline
-        points="63.79 192.785 72.574 160 39.79 151.215"
+        points="63.8 192.8 72.6 160 39.8 151.2"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
@@ -423,7 +423,7 @@
         stroke-width="16"
       />
       <polyline
-        points="216.21 104.785 183.426 96 192.21 63.215"
+        points="216.2 104.8 183.4 96 192.2 63.2"
         fill="none"
         :stroke="displayColor"
         stroke-linecap="round"
