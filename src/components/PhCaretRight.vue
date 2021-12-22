@@ -33,7 +33,7 @@
     </g>
     <g v-else-if="weight === 'fill'">
       <path
-        d="M181.65674,122.34277l-80-80A8.0001,8.0001,0,0,0,88,48V208a8.00018,8.00018,0,0,0,13.65674,5.65723l80-80A8.00034,8.00034,0,0,0,181.65674,122.34277Z"
+        d="M181.7,122.3l-80-80a8.4,8.4,0,0,0-8.8-1.7A8,8,0,0,0,88,48V208a8,8,0,0,0,4.9,7.4,8.5,8.5,0,0,0,3.1.6,8.3,8.3,0,0,0,5.7-2.3l80-80A8.1,8.1,0,0,0,181.7,122.3Z"
       />
     </g>
     <g v-else-if="weight === 'light'">
@@ -78,7 +78,7 @@ const component: PhosphorIcon = defineComponent({
   props: PropValidator,
   setup(props: SetupIconProps) {
     return { ...useDefaultPropsFromContext(props) };
-  }
+  },
 });
 export default component;
 </script>

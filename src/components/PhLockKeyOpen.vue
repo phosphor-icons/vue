@@ -12,7 +12,7 @@
     <slot />
     <g v-if="weight === 'bold'">
       <circle
-        cx="127.99414"
+        cx="128"
         cy="144"
         r="20"
         fill="none"
@@ -22,9 +22,9 @@
         stroke-width="24"
       />
       <line
-        x1="127.99414"
+        x1="128"
         y1="164"
-        x2="127.99414"
+        x2="128"
         y2="180"
         fill="none"
         :stroke="color"
@@ -33,19 +33,19 @@
         stroke-width="24"
       />
       <rect
-        x="39.99414"
+        x="40"
         y="88"
         width="176"
         height="128"
         rx="8"
-        stroke-width="24"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="24"
       />
       <path
-        d="M91.99414,88V52a36.00169,36.00169,0,0,1,71.78028-4"
+        d="M92,88V52a36,36,0,0,1,71.8-4"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -55,11 +55,11 @@
     </g>
     <g v-else-if="weight === 'duotone'">
       <path
-        d="M207.99414,88h-160a8,8,0,0,0-8,8V208a8,8,0,0,0,8,8h160a8,8,0,0,0,8-8V96A8,8,0,0,0,207.99414,88Zm-80,72a20,20,0,1,1,20-20A20.00006,20.00006,0,0,1,127.99414,160Z"
+        d="M208,88H48a8,8,0,0,0-8,8V208a8,8,0,0,0,8,8H208a8,8,0,0,0,8-8V96A8,8,0,0,0,208,88Zm-80,72a20,20,0,1,1,20-20A20,20,0,0,1,128,160Z"
         opacity="0.2"
       />
       <circle
-        cx="127.99414"
+        cx="128"
         cy="140"
         r="20"
         fill="none"
@@ -69,9 +69,9 @@
         stroke-width="16"
       />
       <line
-        x1="127.99414"
+        x1="128"
         y1="160"
-        x2="127.99414"
+        x2="128"
         y2="184"
         fill="none"
         :stroke="color"
@@ -80,19 +80,19 @@
         stroke-width="16"
       />
       <rect
-        x="39.99414"
+        x="40"
         y="88"
         width="176"
         height="128"
         rx="8"
-        stroke-width="16"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
       <path
-        d="M91.99414,88V52a36,36,0,1,1,72,0"
+        d="M92,88V52a36,36,0,0,1,72,0"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -101,16 +101,14 @@
       />
     </g>
     <g v-else-if="weight === 'fill'">
-      <g>
-        <circle cx="127.99414" cy="140" r="12" />
-        <path
-          d="M207.99414,80h-108V52a28,28,0,1,1,56,0,8,8,0,0,0,16,0,44,44,0,1,0-88,0V80h-36a16.01833,16.01833,0,0,0-16,16V208a16.01833,16.01833,0,0,0,16,16h160a16.01833,16.01833,0,0,0,16-16V96A16.01833,16.01833,0,0,0,207.99414,80Zm-72,86.82935V184a8,8,0,1,1-16,0V166.82935a28,28,0,1,1,16,0Z"
-        />
-      </g>
+      <circle cx="128" cy="140" r="12" />
+      <path
+        d="M208,80H100V52a28,28,0,0,1,56,0,8,8,0,0,0,16,0,44,44,0,0,0-88,0V80H48A16,16,0,0,0,32,96V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V96A16,16,0,0,0,208,80Zm-72,86.8V184a8,8,0,0,1-16,0V166.8a28,28,0,1,1,16,0Z"
+      />
     </g>
     <g v-else-if="weight === 'light'">
       <circle
-        cx="127.99414"
+        cx="128"
         cy="140"
         r="20"
         fill="none"
@@ -120,9 +118,9 @@
         stroke-width="12"
       />
       <line
-        x1="127.99414"
+        x1="128"
         y1="160"
-        x2="127.99414"
+        x2="128"
         y2="184"
         fill="none"
         :stroke="color"
@@ -131,19 +129,19 @@
         stroke-width="12"
       />
       <rect
-        x="39.99414"
+        x="40"
         y="88"
         width="176"
         height="128"
         rx="8"
-        stroke-width="12"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="12"
       />
       <path
-        d="M91.99414,88V52a36,36,0,1,1,72,0"
+        d="M92,88V52a36,36,0,0,1,72,0"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -153,7 +151,7 @@
     </g>
     <g v-else-if="weight === 'thin'">
       <circle
-        cx="127.99414"
+        cx="128"
         cy="140"
         r="20"
         fill="none"
@@ -163,9 +161,9 @@
         stroke-width="8"
       />
       <line
-        x1="127.99414"
+        x1="128"
         y1="160"
-        x2="127.99414"
+        x2="128"
         y2="184"
         fill="none"
         :stroke="color"
@@ -174,19 +172,19 @@
         stroke-width="8"
       />
       <rect
-        x="39.99414"
+        x="40"
         y="88"
         width="176"
         height="128"
         rx="8"
-        stroke-width="8"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="8"
       />
       <path
-        d="M91.99414,88V52a36,36,0,1,1,72,0"
+        d="M92,88V52a36,36,0,0,1,72,0"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -196,7 +194,7 @@
     </g>
     <g v-else-if="weight === 'regular'">
       <circle
-        cx="127.99414"
+        cx="128"
         cy="140"
         r="20"
         fill="none"
@@ -206,9 +204,9 @@
         stroke-width="16"
       />
       <line
-        x1="127.99414"
+        x1="128"
         y1="160"
-        x2="127.99414"
+        x2="128"
         y2="184"
         fill="none"
         :stroke="color"
@@ -217,19 +215,19 @@
         stroke-width="16"
       />
       <rect
-        x="39.99414"
+        x="40"
         y="88"
         width="176"
         height="128"
         rx="8"
-        stroke-width="16"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
       <path
-        d="M91.99414,88V52a36,36,0,1,1,72,0"
+        d="M92,88V52a36,36,0,0,1,72,0"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -249,7 +247,7 @@ const component: PhosphorIcon = defineComponent({
   props: PropValidator,
   setup(props: SetupIconProps) {
     return { ...useDefaultPropsFromContext(props) };
-  }
+  },
 });
 export default component;
 </script>

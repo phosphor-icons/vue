@@ -17,11 +17,11 @@
         width="52"
         height="176"
         rx="8"
-        stroke-width="24"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="24"
       />
       <rect
         x="48"
@@ -29,11 +29,11 @@
         width="52"
         height="176"
         rx="8"
-        stroke-width="24"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="24"
       />
     </g>
     <g v-else-if="weight === 'duotone'">
@@ -45,11 +45,11 @@
         width="52"
         height="176"
         rx="8"
-        stroke-width="16"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
       <rect
         x="48"
@@ -57,16 +57,16 @@
         width="52"
         height="176"
         rx="8"
-        stroke-width="16"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
     </g>
     <g v-else-if="weight === 'fill'">
       <path
-        d="M216,48V208a16.01833,16.01833,0,0,1-16,16H164a16.01833,16.01833,0,0,1-16-16V48a16.01833,16.01833,0,0,1,16-16h36A16.01833,16.01833,0,0,1,216,48ZM92,32H56A16.01833,16.01833,0,0,0,40,48V208a16.01833,16.01833,0,0,0,16,16H92a16.01833,16.01833,0,0,0,16-16V48A16.01833,16.01833,0,0,0,92,32Z"
+        d="M216,48V208a16,16,0,0,1-16,16H164a16,16,0,0,1-16-16V48a16,16,0,0,1,16-16h36A16,16,0,0,1,216,48ZM92,32H56A16,16,0,0,0,40,48V208a16,16,0,0,0,16,16H92a16,16,0,0,0,16-16V48A16,16,0,0,0,92,32Z"
       />
     </g>
     <g v-else-if="weight === 'light'">
@@ -76,11 +76,11 @@
         width="52"
         height="176"
         rx="8"
-        stroke-width="12"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="12"
       />
       <rect
         x="48"
@@ -88,11 +88,11 @@
         width="52"
         height="176"
         rx="8"
-        stroke-width="12"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="12"
       />
     </g>
     <g v-else-if="weight === 'thin'">
@@ -102,11 +102,11 @@
         width="52"
         height="176"
         rx="8"
-        stroke-width="8"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="8"
       />
       <rect
         x="48"
@@ -114,11 +114,11 @@
         width="52"
         height="176"
         rx="8"
-        stroke-width="8"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="8"
       />
     </g>
     <g v-else-if="weight === 'regular'">
@@ -128,11 +128,11 @@
         width="52"
         height="176"
         rx="8"
-        stroke-width="16"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
       <rect
         x="48"
@@ -140,11 +140,11 @@
         width="52"
         height="176"
         rx="8"
-        stroke-width="16"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
     </g>
   </svg>
@@ -159,7 +159,7 @@ const component: PhosphorIcon = defineComponent({
   props: PropValidator,
   setup(props: SetupIconProps) {
     return { ...useDefaultPropsFromContext(props) };
-  }
+  },
 });
 export default component;
 </script>

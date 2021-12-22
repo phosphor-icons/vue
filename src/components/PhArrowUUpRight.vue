@@ -20,7 +20,7 @@
         stroke-width="24"
       />
       <path
-        d="M176,200H88a56,56,0,0,1-56-56v-.00011A55.99988,55.99988,0,0,1,87.99989,88H224"
+        d="M176,200H88a56,56,0,0,1-56-56h0A56,56,0,0,1,88,88H224"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -38,7 +38,7 @@
         stroke-width="16"
       />
       <path
-        d="M176,200H88a56,56,0,0,1-56-56v-.00011A55.99988,55.99988,0,0,1,87.99989,88H224"
+        d="M176,200H88a56,56,0,0,1-56-56h0A56,56,0,0,1,88,88H224"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -48,7 +48,7 @@
     </g>
     <g v-else-if="weight === 'fill'">
       <path
-        d="M168,136V96H88a48,48,0,0,0,0,96h88a8,8,0,0,1,0,16H88A64,64,0,0,1,88,80h80V40a8.0001,8.0001,0,0,1,13.65723-5.65674l48,48a8,8,0,0,1,0,11.31348l-48,48A8.0001,8.0001,0,0,1,168,136Z"
+        d="M168,136V96H88a48,48,0,0,0,0,96h88a8,8,0,0,1,0,16H88A64,64,0,0,1,88,80h80V40a8,8,0,0,1,4.9-7.4,8.4,8.4,0,0,1,8.8,1.7l48,48a8.1,8.1,0,0,1,0,11.4l-48,48A8.3,8.3,0,0,1,176,144a8.5,8.5,0,0,1-3.1-.6A8,8,0,0,1,168,136Z"
       />
     </g>
     <g v-else-if="weight === 'light'">
@@ -61,7 +61,7 @@
         stroke-width="12"
       />
       <path
-        d="M176,200H88a56,56,0,0,1-56-56v-.00011A55.99988,55.99988,0,0,1,87.99989,88H224"
+        d="M176,200H88a56,56,0,0,1-56-56h0A56,56,0,0,1,88,88H224"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -79,7 +79,7 @@
         stroke-width="8"
       />
       <path
-        d="M176,200H88a56,56,0,0,1-56-56v-.00011A55.99988,55.99988,0,0,1,87.99989,88H224"
+        d="M176,200H88a56,56,0,0,1-56-56h0A56,56,0,0,1,88,88H224"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -97,7 +97,7 @@
         stroke-width="16"
       />
       <path
-        d="M176,200H88a56,56,0,0,1-56-56v-.00011A55.99988,55.99988,0,0,1,87.99989,88H224"
+        d="M176,200H88a56,56,0,0,1-56-56h0A56,56,0,0,1,88,88H224"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -117,7 +117,7 @@ const component: PhosphorIcon = defineComponent({
   props: PropValidator,
   setup(props: SetupIconProps) {
     return { ...useDefaultPropsFromContext(props) };
-  }
+  },
 });
 export default component;
 </script>

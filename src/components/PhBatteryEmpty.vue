@@ -18,11 +18,11 @@
         height="180"
         rx="16"
         transform="translate(246 10) rotate(90)"
-        stroke-width="24"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="24"
       />
       <line
         x1="244"
@@ -64,22 +64,18 @@
         height="184"
         rx="16"
         transform="translate(252 4) rotate(90)"
-        stroke-width="16"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
     </g>
     <g v-else-if="weight === 'fill'">
-      <g>
-        <path
-          d="M248,88a8.00008,8.00008,0,0,0-8,8v64a8,8,0,0,0,16,0V96A8.00008,8.00008,0,0,0,248,88Z"
-        />
-        <path
-          d="M200,48H48A24.0275,24.0275,0,0,0,24,72V184a24.0275,24.0275,0,0,0,24,24H200a24.0275,24.0275,0,0,0,24-24V72A24.0275,24.0275,0,0,0,200,48Zm8,136a8.00917,8.00917,0,0,1-8,8H48a8.00917,8.00917,0,0,1-8-8V72a8.00917,8.00917,0,0,1,8-8H200a8.00917,8.00917,0,0,1,8,8Z"
-        />
-      </g>
+      <path d="M248,88a8,8,0,0,0-8,8v64a8,8,0,0,0,16,0V96A8,8,0,0,0,248,88Z" />
+      <path
+        d="M200,48H48A24.1,24.1,0,0,0,24,72V184a24.1,24.1,0,0,0,24,24H200a24.1,24.1,0,0,0,24-24V72A24.1,24.1,0,0,0,200,48Zm8,136a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V72a8,8,0,0,1,8-8H200a8,8,0,0,1,8,8Z"
+      />
     </g>
     <g v-else-if="weight === 'light'">
       <line
@@ -100,11 +96,11 @@
         height="184"
         rx="16"
         transform="translate(252 4) rotate(90)"
-        stroke-width="12"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="12"
       />
     </g>
     <g v-else-if="weight === 'thin'">
@@ -126,11 +122,11 @@
         height="184"
         rx="16"
         transform="translate(252 4) rotate(90)"
-        stroke-width="8"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="8"
       />
     </g>
     <g v-else-if="weight === 'regular'">
@@ -152,11 +148,11 @@
         height="184"
         rx="16"
         transform="translate(252 4) rotate(90)"
-        stroke-width="16"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
     </g>
   </svg>
@@ -171,7 +167,7 @@ const component: PhosphorIcon = defineComponent({
   props: PropValidator,
   setup(props: SetupIconProps) {
     return { ...useDefaultPropsFromContext(props) };
-  }
+  },
 });
 export default component;
 </script>

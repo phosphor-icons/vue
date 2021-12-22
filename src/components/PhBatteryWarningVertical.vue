@@ -23,16 +23,16 @@
         stroke-width="24"
       />
       <rect
-        x="56.00586"
+        x="56"
         y="48"
         width="144"
         height="180"
         rx="16"
-        stroke-width="24"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="24"
       />
       <line
         x1="128"
@@ -77,17 +77,17 @@
         width="144"
         height="184"
         rx="16"
-        stroke-width="16"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
       <circle cx="128" cy="168" r="12" />
     </g>
     <g v-else-if="weight === 'fill'">
       <path
-        d="M88,8a7.99977,7.99977,0,0,1,8-8h64a8,8,0,0,1,0,16H96A7.99977,7.99977,0,0,1,88,8ZM208,56V208a24.0275,24.0275,0,0,1-24,24H72a24.0275,24.0275,0,0,1-24-24V56A24.0275,24.0275,0,0,1,72,32H184A24.0275,24.0275,0,0,1,208,56Zm-88,76a8,8,0,0,0,16,0V92a8,8,0,0,0-16,0Zm20,36a12,12,0,1,0-12,12A12.01375,12.01375,0,0,0,140,168Z"
+        d="M88,8a8,8,0,0,1,8-8h64a8,8,0,0,1,0,16H96A8,8,0,0,1,88,8ZM208,56V208a24.1,24.1,0,0,1-24,24H72a24.1,24.1,0,0,1-24-24V56A24.1,24.1,0,0,1,72,32H184A24.1,24.1,0,0,1,208,56Zm-88,76a8,8,0,0,0,16,0V92a8,8,0,0,0-16,0Zm20,36a12,12,0,1,0-12,12A12,12,0,0,0,140,168Z"
       />
     </g>
     <g v-else-if="weight === 'light'">
@@ -119,11 +119,11 @@
         width="144"
         height="184"
         rx="16"
-        stroke-width="12"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="12"
       />
       <circle cx="128" cy="168" r="10" />
     </g>
@@ -156,11 +156,11 @@
         width="144"
         height="184"
         rx="16"
-        stroke-width="8"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="8"
       />
       <circle cx="128" cy="168" r="8" />
     </g>
@@ -193,11 +193,11 @@
         width="144"
         height="184"
         rx="16"
-        stroke-width="16"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
       <circle cx="128" cy="168" r="12" />
     </g>
@@ -213,7 +213,7 @@ const component: PhosphorIcon = defineComponent({
   props: PropValidator,
   setup(props: SetupIconProps) {
     return { ...useDefaultPropsFromContext(props) };
-  }
+  },
 });
 export default component;
 </script>

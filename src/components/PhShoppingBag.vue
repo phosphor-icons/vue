@@ -17,11 +17,11 @@
         width="192"
         height="160"
         rx="8"
-        stroke-width="24"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="24"
       />
       <path
         d="M168,88a40,40,0,0,1-80,0"
@@ -40,11 +40,11 @@
         width="192"
         height="160"
         rx="8"
-        stroke-width="16"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
       <path
         d="M168,88a40,40,0,0,1-80,0"
@@ -57,7 +57,7 @@
     </g>
     <g v-else-if="weight === 'fill'">
       <path
-        d="M216,40H40A16.01833,16.01833,0,0,0,24,56V200a16.01833,16.01833,0,0,0,16,16H216a16.01833,16.01833,0,0,0,16-16V56A16.01833,16.01833,0,0,0,216,40Zm-88,96A48.054,48.054,0,0,1,80,88a8,8,0,0,1,16,0,32,32,0,0,0,64,0,8,8,0,0,1,16,0A48.054,48.054,0,0,1,128,136Z"
+        d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm-88,96A48,48,0,0,1,80,88a8,8,0,0,1,16,0,32,32,0,0,0,64,0,8,8,0,0,1,16,0A48,48,0,0,1,128,136Z"
       />
     </g>
     <g v-else-if="weight === 'light'">
@@ -67,11 +67,11 @@
         width="192"
         height="160"
         rx="8"
-        stroke-width="12"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="12"
       />
       <path
         d="M168,88a40,40,0,0,1-80,0"
@@ -89,11 +89,11 @@
         width="192"
         height="160"
         rx="8"
-        stroke-width="8"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="8"
       />
       <path
         d="M168,88a40,40,0,0,1-80,0"
@@ -111,11 +111,11 @@
         width="192"
         height="160"
         rx="8"
-        stroke-width="16"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
       <path
         d="M168,88a40,40,0,0,1-80,0"
@@ -138,7 +138,7 @@ const component: PhosphorIcon = defineComponent({
   props: PropValidator,
   setup(props: SetupIconProps) {
     return { ...useDefaultPropsFromContext(props) };
-  }
+  },
 });
 export default component;
 </script>

@@ -16,11 +16,11 @@
         y="100"
         width="56"
         height="56"
-        stroke-width="24"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="24"
       />
       <rect
         x="48"
@@ -28,11 +28,11 @@
         width="160"
         height="160"
         rx="8"
-        stroke-width="24"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="24"
       />
       <line
         x1="208"
@@ -125,7 +125,7 @@
     </g>
     <g v-else-if="weight === 'duotone'">
       <path
-        d="M200,48H56a7.99993,7.99993,0,0,0-8,8V200a7.99993,7.99993,0,0,0,8,8H200a7.99993,7.99993,0,0,0,8-8V56A7.99993,7.99993,0,0,0,200,48ZM156,156H100V100h56Z"
+        d="M200,48H56a8,8,0,0,0-8,8V200a8,8,0,0,0,8,8H200a8,8,0,0,0,8-8V56A8,8,0,0,0,200,48ZM156,156H100V100h56Z"
         opacity="0.2"
       />
       <rect
@@ -133,11 +133,11 @@
         y="100"
         width="56"
         height="56"
-        stroke-width="16"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
       <rect
         x="48"
@@ -145,11 +145,11 @@
         width="160"
         height="160"
         rx="8"
-        stroke-width="16"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
       <line
         x1="208"
@@ -242,7 +242,7 @@
     </g>
     <g v-else-if="weight === 'fill'">
       <path
-        d="M232,144H216V112h16a8,8,0,0,0,0-16H216V56a16.01833,16.01833,0,0,0-16-16H160V24a8,8,0,0,0-16,0V40H112V24a8,8,0,0,0-16,0V40H56A16.01833,16.01833,0,0,0,40,56V96H24a8,8,0,0,0,0,16H40v32H24a8,8,0,0,0,0,16H40v40a16.01833,16.01833,0,0,0,16,16H96v16a8,8,0,0,0,16,0V216h32v16a8,8,0,0,0,16,0V216h40a16.01833,16.01833,0,0,0,16-16V160h16a8,8,0,0,0,0-16Zm-68,12a8.00039,8.00039,0,0,1-8,8H100a8.00039,8.00039,0,0,1-8-8V100a8.00039,8.00039,0,0,1,8-8h56a8.00039,8.00039,0,0,1,8,8Zm-56-48h40v40H108Z"
+        d="M232,144H216V112h16a8,8,0,0,0,0-16H216V56a16,16,0,0,0-16-16H160V24a8,8,0,0,0-16,0V40H112V24a8,8,0,0,0-16,0V40H56A16,16,0,0,0,40,56V96H24a8,8,0,0,0,0,16H40v32H24a8,8,0,0,0,0,16H40v40a16,16,0,0,0,16,16H96v16a8,8,0,0,0,16,0V216h32v16a8,8,0,0,0,16,0V216h40a16,16,0,0,0,16-16V160h16a8,8,0,0,0,0-16Zm-68,12a8,8,0,0,1-8,8H100a8,8,0,0,1-8-8V100a8,8,0,0,1,8-8h56a8,8,0,0,1,8,8Zm-56-48h40v40H108Z"
       />
     </g>
     <g v-else-if="weight === 'light'">
@@ -251,11 +251,11 @@
         y="100"
         width="56"
         height="56"
-        stroke-width="12"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="12"
       />
       <rect
         x="48"
@@ -263,11 +263,11 @@
         width="160"
         height="160"
         rx="8"
-        stroke-width="12"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="12"
       />
       <line
         x1="208"
@@ -364,11 +364,11 @@
         y="100"
         width="56"
         height="56"
-        stroke-width="8"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="8"
       />
       <rect
         x="48"
@@ -376,11 +376,11 @@
         width="160"
         height="160"
         rx="8"
-        stroke-width="8"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="8"
       />
       <line
         x1="208"
@@ -477,11 +477,11 @@
         y="100"
         width="56"
         height="56"
-        stroke-width="16"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
       <rect
         x="48"
@@ -489,11 +489,11 @@
         width="160"
         height="160"
         rx="8"
-        stroke-width="16"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
       <line
         x1="208"
@@ -596,7 +596,7 @@ const component: PhosphorIcon = defineComponent({
   props: PropValidator,
   setup(props: SetupIconProps) {
     return { ...useDefaultPropsFromContext(props) };
-  }
+  },
 });
 export default component;
 </script>

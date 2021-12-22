@@ -12,7 +12,7 @@
     <slot />
     <g v-if="weight === 'bold'">
       <path
-        d="M47.99414,144a64,64,0,0,1,64,64"
+        d="M48,144a64,64,0,0,1,64,64"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -20,7 +20,7 @@
         stroke-width="24"
       />
       <path
-        d="M47.99414,96a112,112,0,0,1,112,112"
+        d="M48,96A112,112,0,0,1,160,208"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -28,7 +28,7 @@
         stroke-width="24"
       />
       <path
-        d="M47.99414,48a160,160,0,0,1,160,160"
+        d="M48,48A159.1,159.1,0,0,1,161.1,94.9,159.1,159.1,0,0,1,208,208"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -38,92 +38,6 @@
       <circle cx="52" cy="204" r="16" />
     </g>
     <g v-else-if="weight === 'duotone'">
-      <path
-        d="M47.99414,144a64,64,0,0,1,64,64"
-        fill="none"
-        :stroke="color"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="16"
-      />
-      <path
-        d="M47.99414,96a112,112,0,0,1,112,112"
-        fill="none"
-        :stroke="color"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="16"
-      />
-      <path
-        d="M47.99414,48a160,160,0,0,1,160,160"
-        fill="none"
-        :stroke="color"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="16"
-      />
-      <circle cx="52" cy="204" r="12" />
-    </g>
-    <g v-else-if="weight === 'fill'">
-      <path
-        d="M98.90576,157.08752a71.531,71.531,0,0,1,21.08838,50.91211,8,8,0,0,1-16,0,56.00027,56.00027,0,0,0-56-56,8,8,0,1,1,0-16A71.53147,71.53147,0,0,1,98.90576,157.08752ZM47.99414,87.99963a8,8,0,1,0,0,16,104.00183,104.00183,0,0,1,104,104,8,8,0,0,0,16,0,120.00093,120.00093,0,0,0-120-120Zm118.794,1.20606A166.90561,166.90561,0,0,0,47.99414,39.99963a8,8,0,0,0,0,16,151.00491,151.00491,0,0,1,107.48047,44.52051,151.00328,151.00328,0,0,1,44.51953,107.47949,8,8,0,0,0,16,0A166.90191,166.90191,0,0,0,166.78809,89.20569ZM51.99414,191.99963a12,12,0,1,0,12,12A12.01344,12.01344,0,0,0,51.99414,191.99963Z"
-      />
-    </g>
-    <g v-else-if="weight === 'light'">
-      <path
-        d="M47.99414,144a64,64,0,0,1,64,64"
-        fill="none"
-        :stroke="color"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="12"
-      />
-      <path
-        d="M47.99414,96a112,112,0,0,1,112,112"
-        fill="none"
-        :stroke="color"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="12"
-      />
-      <path
-        d="M47.99414,48a160,160,0,0,1,160,160"
-        fill="none"
-        :stroke="color"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="12"
-      />
-      <circle cx="52" cy="204" r="10" />
-    </g>
-    <g v-else-if="weight === 'thin'">
-      <path
-        d="M47.99414,144a64,64,0,0,1,64,64"
-        fill="none"
-        :stroke="color"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="8"
-      />
-      <path
-        d="M47.99414,96a112,112,0,0,1,112,112"
-        fill="none"
-        :stroke="color"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="8"
-      />
-      <path
-        d="M47.99414,48a160,160,0,0,1,160,160"
-        fill="none"
-        :stroke="color"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="8"
-      />
-      <circle cx="52" cy="204" r="8" />
-    </g>
-    <g v-else-if="weight === 'regular'">
       <path
         d="M48,144a64,64,0,0,1,64,64"
         fill="none"
@@ -141,7 +55,93 @@
         stroke-width="16"
       />
       <path
-        d="M48,48A160,160,0,0,1,208,208"
+        d="M48,48A159.1,159.1,0,0,1,161.1,94.9,159.1,159.1,0,0,1,208,208"
+        fill="none"
+        :stroke="color"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <circle cx="52" cy="204" r="12" />
+    </g>
+    <g v-else-if="weight === 'fill'">
+      <path
+        d="M98.9,157.1A71.6,71.6,0,0,1,120,208a8,8,0,0,1-16,0,56,56,0,0,0-56-56,8,8,0,0,1,0-16A71.6,71.6,0,0,1,98.9,157.1ZM48,88a8,8,0,0,0,0,16,102.9,102.9,0,0,1,73.5,30.5A102.9,102.9,0,0,1,152,208a8,8,0,0,0,16,0,119.2,119.2,0,0,0-35.2-84.9A119.3,119.3,0,0,0,48,88Zm118.8,1.2A166.9,166.9,0,0,0,48,40a8,8,0,0,0,0,16,151.1,151.1,0,0,1,107.5,44.5A151.1,151.1,0,0,1,200,208a8,8,0,0,0,16,0A166.9,166.9,0,0,0,166.8,89.2ZM52,192a12,12,0,1,0,12,12A12,12,0,0,0,52,192Z"
+      />
+    </g>
+    <g v-else-if="weight === 'light'">
+      <path
+        d="M48,144a64,64,0,0,1,64,64"
+        fill="none"
+        :stroke="color"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="12"
+      />
+      <path
+        d="M48,96A112,112,0,0,1,160,208"
+        fill="none"
+        :stroke="color"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="12"
+      />
+      <path
+        d="M48,48A159.1,159.1,0,0,1,161.1,94.9,159.1,159.1,0,0,1,208,208"
+        fill="none"
+        :stroke="color"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="12"
+      />
+      <circle cx="52" cy="204" r="10" />
+    </g>
+    <g v-else-if="weight === 'thin'">
+      <path
+        d="M48,144a64,64,0,0,1,64,64"
+        fill="none"
+        :stroke="color"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="8"
+      />
+      <path
+        d="M48,96A112,112,0,0,1,160,208"
+        fill="none"
+        :stroke="color"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="8"
+      />
+      <path
+        d="M48,48A159.1,159.1,0,0,1,161.1,94.9,159.1,159.1,0,0,1,208,208"
+        fill="none"
+        :stroke="color"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="8"
+      />
+      <circle cx="52" cy="204" r="8" />
+    </g>
+    <g v-else-if="weight === 'regular'">
+      <path
+        d="M48,144a63.8,63.8,0,0,1,64,64"
+        fill="none"
+        :stroke="color"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <path
+        d="M48,96A112,112,0,0,1,160,208"
+        fill="none"
+        :stroke="color"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <path
+        d="M48,48A159.1,159.1,0,0,1,161.1,94.9,159.1,159.1,0,0,1,208,208"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -162,7 +162,7 @@ const component: PhosphorIcon = defineComponent({
   props: PropValidator,
   setup(props: SetupIconProps) {
     return { ...useDefaultPropsFromContext(props) };
-  }
+  },
 });
 export default component;
 </script>

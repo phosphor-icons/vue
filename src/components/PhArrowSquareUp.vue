@@ -17,14 +17,14 @@
         width="176"
         height="176"
         rx="8"
-        stroke-width="24"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="24"
       />
       <polyline
-        points="94.059 121.941 128 88 161.941 121.941"
+        points="94.1 121.9 128 88 161.9 121.9"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -51,14 +51,14 @@
         width="176"
         height="176"
         rx="8"
-        stroke-width="16"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
       <polyline
-        points="94.059 121.941 128 88 161.941 121.941"
+        points="94.1 121.9 128 88 161.9 121.9"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -79,7 +79,7 @@
     </g>
     <g v-else-if="weight === 'fill'">
       <path
-        d="M223.99414,208V48a16.01582,16.01582,0,0,0-16-16h-160a16.01583,16.01583,0,0,0-16,16V208a16.01583,16.01583,0,0,0,16,16h160A16.01582,16.01582,0,0,0,223.99414,208Zm-56.39062-80.40625a7.99708,7.99708,0,0,1-11.3125,0l-20.29688-20.28613V168a8,8,0,1,1-16,0V107.3125L99.71289,127.59375a7.99915,7.99915,0,0,1-11.3125-11.3125l33.92773-33.92773a8.02367,8.02367,0,0,1,11.332,0l33.94336,33.92773A7.99708,7.99708,0,0,1,167.60352,127.59375Z"
+        d="M224,208V48a16,16,0,0,0-16-16H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208A16,16,0,0,0,224,208Zm-56.4-80.4a8,8,0,0,1-11.3,0L136,107.3V168a8,8,0,0,1-16,0V107.3L99.7,127.6a8,8,0,0,1-11.3-11.3l33.9-33.9a8.7,8.7,0,0,1,2.6-1.8A8.5,8.5,0,0,1,128,80a7.7,7.7,0,0,1,3,.6,8,8,0,0,1,2.7,1.8l33.9,33.9A8,8,0,0,1,167.6,127.6Z"
       />
     </g>
     <g v-else-if="weight === 'light'">
@@ -89,14 +89,14 @@
         width="176"
         height="176"
         rx="8"
-        stroke-width="12"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="12"
       />
       <polyline
-        points="94.059 121.941 128 88 161.941 121.941"
+        points="94.1 121.9 128 88 161.9 121.9"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -122,14 +122,14 @@
         width="176"
         height="176"
         rx="8"
-        stroke-width="8"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="8"
       />
       <polyline
-        points="94.059 121.941 128 88 161.941 121.941"
+        points="94.1 121.9 128 88 161.9 121.9"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -155,14 +155,14 @@
         width="176"
         height="176"
         rx="8"
-        stroke-width="16"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
       <polyline
-        points="94.059 121.941 128 88 161.941 121.941"
+        points="94.1 121.9 128 88 161.9 121.9"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -193,7 +193,7 @@ const component: PhosphorIcon = defineComponent({
   props: PropValidator,
   setup(props: SetupIconProps) {
     return { ...useDefaultPropsFromContext(props) };
-  }
+  },
 });
 export default component;
 </script>

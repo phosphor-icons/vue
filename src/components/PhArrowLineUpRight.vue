@@ -32,9 +32,9 @@
       />
       <line
         x1="40"
-        y1="215.99627"
+        y1="216"
         x2="216"
-        y2="215.99627"
+        y2="216"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -64,9 +64,9 @@
       />
       <line
         x1="40"
-        y1="215.99627"
+        y1="216"
         x2="216"
-        y2="215.99627"
+        y2="216"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -76,7 +76,7 @@
     </g>
     <g v-else-if="weight === 'fill'">
       <path
-        d="M74.34277,173.65674a8,8,0,0,1,0-11.31348L130.68652,106,86.34277,61.65674A8.0001,8.0001,0,0,1,92,48H192a8.00008,8.00008,0,0,1,8,8V156a8.00018,8.00018,0,0,1-13.65723,5.65674L142,117.31372l-56.34277,56.343a8.00063,8.00063,0,0,1-11.31446,0ZM216,207.99609H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"
+        d="M74.3,173.7a8.1,8.1,0,0,1,0-11.4L130.7,106,86.3,61.7a8.4,8.4,0,0,1-1.7-8.8A8,8,0,0,1,92,48H192a8,8,0,0,1,8,8V156a8,8,0,0,1-4.9,7.4,8.5,8.5,0,0,1-3.1.6,8.3,8.3,0,0,1-5.7-2.3L142,117.3,85.7,173.7a8.2,8.2,0,0,1-11.4,0ZM216,208H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"
       />
     </g>
     <g v-else-if="weight === 'light'">
@@ -101,9 +101,9 @@
       />
       <line
         x1="40"
-        y1="215.99627"
+        y1="216"
         x2="216"
-        y2="215.99627"
+        y2="216"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -133,9 +133,9 @@
       />
       <line
         x1="40"
-        y1="215.99627"
+        y1="216"
         x2="216"
-        y2="215.99627"
+        y2="216"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -165,9 +165,9 @@
       />
       <line
         x1="40"
-        y1="215.99627"
+        y1="216"
         x2="216"
-        y2="215.99627"
+        y2="216"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -187,7 +187,7 @@ const component: PhosphorIcon = defineComponent({
   props: PropValidator,
   setup(props: SetupIconProps) {
     return { ...useDefaultPropsFromContext(props) };
-  }
+  },
 });
 export default component;
 </script>

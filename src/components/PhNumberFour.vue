@@ -12,7 +12,7 @@
     <slot />
     <g v-if="weight === 'bold'">
       <polyline
-        points="123.997 24 76 160 172 160"
+        points="124 24 76 160 172 160"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -21,9 +21,9 @@
       />
       <line
         x1="172"
-        y1="95.98859"
+        y1="96"
         x2="172"
-        y2="223.98844"
+        y2="224"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -33,7 +33,7 @@
     </g>
     <g v-else-if="weight === 'duotone'">
       <polyline
-        points="123.997 24 76 160 172 160"
+        points="124 24 76 160 172 160"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -54,12 +54,12 @@
     </g>
     <g v-else-if="weight === 'fill'">
       <path
-        d="M180,96V224a8,8,0,0,1-16,0V168H76a8.00033,8.00033,0,0,1-7.54395-10.66211l47.99707-136a7.99988,7.99988,0,0,1,15.0879,5.32422L87.30664,152H164V96a8,8,0,0,1,16,0Z"
+        d="M180,96V224a8,8,0,0,1-16,0V168H76a8,8,0,0,1-6.5-3.4,7.9,7.9,0,0,1-1-7.3l48-136a8,8,0,0,1,15,5.4L87.3,152H164V96a8,8,0,0,1,16,0Z"
       />
     </g>
     <g v-else-if="weight === 'light'">
       <polyline
-        points="123.997 24 76 160 172 160"
+        points="124 24 76 160 172 160"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -80,7 +80,7 @@
     </g>
     <g v-else-if="weight === 'thin'">
       <polyline
-        points="123.997 24 76 160 172 160"
+        points="124 24 76 160 172 160"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -101,7 +101,7 @@
     </g>
     <g v-else-if="weight === 'regular'">
       <polyline
-        points="123.997 24 76 160 172 160"
+        points="124 24 76 160 172 160"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -132,7 +132,7 @@ const component: PhosphorIcon = defineComponent({
   props: PropValidator,
   setup(props: SetupIconProps) {
     return { ...useDefaultPropsFromContext(props) };
-  }
+  },
 });
 export default component;
 </script>

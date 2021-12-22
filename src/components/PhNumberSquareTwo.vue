@@ -17,14 +17,14 @@
         width="176"
         height="176"
         rx="8"
-        stroke-width="24"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="24"
       />
       <path
-        d="M105.886,94.65812a24.00387,24.00387,0,1,1,42.01514,22.7605v0L104,176v-.00575h48"
+        d="M105.9,94.7A24,24,0,0,1,152,104a23.6,23.6,0,0,1-4.1,13.4h0L104,176h48"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -40,14 +40,14 @@
         width="176"
         height="176"
         rx="8"
-        stroke-width="16"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
       <path
-        d="M105.886,94.65812a24.00387,24.00387,0,1,1,42.01514,22.7605v0L104,176v-.00575h48"
+        d="M105.9,94.7A24,24,0,0,1,152,104a23.6,23.6,0,0,1-4.1,13.4h0L104,176h48"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -57,7 +57,7 @@
     </g>
     <g v-else-if="weight === 'fill'">
       <path
-        d="M208,32H48A16.01833,16.01833,0,0,0,32,48V208a16.01833,16.01833,0,0,0,16,16H208a16.01833,16.01833,0,0,0,16-16V48A16.01833,16.01833,0,0,0,208,32ZM152,167.99414a8,8,0,0,1,0,16H104.31738c-.10644.0044-.21191.00635-.31836.00635a8.00251,8.00251,0,0,1-6.30078-12.93164L141.37012,112.793a16.0039,16.0039,0,1,0-28.11621-15.01856A8,8,0,1,1,98.51758,91.542a32.00411,32.00411,0,1,1,56.01269,30.35547c-.07324.10791-.14843.21436-.22754.31836l-34.30566,45.77832Z"
+        d="M208,32H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM152,168a8,8,0,0,1,0,16H104a7.3,7.3,0,0,1-2.5-.4A8,8,0,0,1,96,176a7.5,7.5,0,0,1,1.7-4.9l43.7-58.3A16,16,0,0,0,128,88a15.9,15.9,0,0,0-14.7,9.8,8.1,8.1,0,0,1-10.5,4.2,8,8,0,0,1-4.3-10.5,32,32,0,1,1,56,30.4l-.2.3L120,168Z"
       />
     </g>
     <g v-else-if="weight === 'light'">
@@ -67,14 +67,14 @@
         width="176"
         height="176"
         rx="8"
-        stroke-width="12"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="12"
       />
       <path
-        d="M105.886,94.65812a24.00387,24.00387,0,1,1,42.01514,22.7605v0L104,176v-.00575h48"
+        d="M105.9,94.7A24,24,0,0,1,152,104a23.6,23.6,0,0,1-4.1,13.4h0L104,176h48"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -89,14 +89,14 @@
         width="176"
         height="176"
         rx="8"
-        stroke-width="8"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="8"
       />
       <path
-        d="M105.886,94.65812a24.00387,24.00387,0,1,1,42.01514,22.7605v0L104,176v-.00575h48"
+        d="M105.9,94.7A24,24,0,0,1,152,104a23.6,23.6,0,0,1-4.1,13.4h0L104,176h48"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -111,14 +111,14 @@
         width="176"
         height="176"
         rx="8"
-        stroke-width="16"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
       <path
-        d="M105.886,94.65812a24.00387,24.00387,0,1,1,42.01514,22.7605v0L104,176v-.00575h48"
+        d="M105.9,94.7A24,24,0,0,1,152,104a23.6,23.6,0,0,1-4.1,13.4h0L104,176h48"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -138,7 +138,7 @@ const component: PhosphorIcon = defineComponent({
   props: PropValidator,
   setup(props: SetupIconProps) {
     return { ...useDefaultPropsFromContext(props) };
-  }
+  },
 });
 export default component;
 </script>

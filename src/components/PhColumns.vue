@@ -18,11 +18,11 @@
         height="52"
         rx="8"
         transform="translate(210 46) rotate(90)"
-        stroke-width="24"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="24"
       />
       <rect
         x="86"
@@ -31,11 +31,11 @@
         height="52"
         rx="8"
         transform="translate(302 -46) rotate(90)"
-        stroke-width="24"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="24"
       />
     </g>
     <g v-else-if="weight === 'duotone'">
@@ -64,11 +64,11 @@
         height="56"
         rx="8"
         transform="translate(212 44) rotate(90)"
-        stroke-width="16"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
       <rect
         x="84"
@@ -77,16 +77,16 @@
         height="56"
         rx="8"
         transform="translate(300 -44) rotate(90)"
-        stroke-width="16"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
     </g>
     <g v-else-if="weight === 'fill'">
       <path
-        d="M120,48V208a16.01833,16.01833,0,0,1-16,16H64a16.01833,16.01833,0,0,1-16-16V48A16.01833,16.01833,0,0,1,64,32h40A16.01833,16.01833,0,0,1,120,48Zm72-16H152a16.01833,16.01833,0,0,0-16,16V208a16.01833,16.01833,0,0,0,16,16h40a16.01833,16.01833,0,0,0,16-16V48A16.01833,16.01833,0,0,0,192,32Z"
+        d="M120,48V208a16,16,0,0,1-16,16H64a16,16,0,0,1-16-16V48A16,16,0,0,1,64,32h40A16,16,0,0,1,120,48Zm72-16H152a16,16,0,0,0-16,16V208a16,16,0,0,0,16,16h40a16,16,0,0,0,16-16V48A16,16,0,0,0,192,32Z"
       />
     </g>
     <g v-else-if="weight === 'light'">
@@ -97,11 +97,11 @@
         height="56"
         rx="8"
         transform="translate(212 44) rotate(90)"
-        stroke-width="12"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="12"
       />
       <rect
         x="84"
@@ -110,11 +110,11 @@
         height="56"
         rx="8"
         transform="translate(300 -44) rotate(90)"
-        stroke-width="12"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="12"
       />
     </g>
     <g v-else-if="weight === 'thin'">
@@ -125,11 +125,11 @@
         height="56"
         rx="8"
         transform="translate(212 44) rotate(90)"
-        stroke-width="8"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="8"
       />
       <rect
         x="84"
@@ -138,11 +138,11 @@
         height="56"
         rx="8"
         transform="translate(300 -44) rotate(90)"
-        stroke-width="8"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="8"
       />
     </g>
     <g v-else-if="weight === 'regular'">
@@ -153,11 +153,11 @@
         height="56"
         rx="8"
         transform="translate(212 44) rotate(90)"
-        stroke-width="16"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
       <rect
         x="84"
@@ -166,11 +166,11 @@
         height="56"
         rx="8"
         transform="translate(300 -44) rotate(90)"
-        stroke-width="16"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
     </g>
   </svg>
@@ -185,7 +185,7 @@ const component: PhosphorIcon = defineComponent({
   props: PropValidator,
   setup(props: SetupIconProps) {
     return { ...useDefaultPropsFromContext(props) };
-  }
+  },
 });
 export default component;
 </script>

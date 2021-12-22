@@ -12,7 +12,7 @@
     <slot />
     <g v-if="weight === 'bold'">
       <polygon
-        points="100 108 100 61.091 40 72 40 108 100 108"
+        points="100 108 100 61.1 40 72 40 108 100 108"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -20,7 +20,7 @@
         stroke-width="24"
       />
       <polygon
-        points="216 108 216 40 140 53.818 140 108 216 108"
+        points="216 108 216 40 140 53.8 140 108 216 108"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -28,7 +28,7 @@
         stroke-width="24"
       />
       <polygon
-        points="100 148 100 194.909 40 184 40 148 100 148"
+        points="100 148 100 194.9 40 184 40 148 100 148"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -36,7 +36,7 @@
         stroke-width="24"
       />
       <polygon
-        points="216 148 216 216 140 202.182 140 148 216 148"
+        points="216 148 216 216 140 202.2 140 148 216 148"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -46,23 +46,20 @@
     </g>
     <g v-else-if="weight === 'duotone'">
       <polygon
-        points="216 216 136 201.455 136 201.455 136 144 216 144 216 216"
+        points="216 216 136 201.5 136 201.5 136 144 216 144 216 216"
         opacity="0.2"
       />
       <polygon
-        points="104 195.636 40 184 40 144 104 144 104 195.636"
+        points="104 195.6 40 184 40 144 104 144 104 195.6"
         opacity="0.2"
       />
       <polygon
-        points="216 40 136 54.545 136 54.545 136 112 216 112 216 40"
+        points="216 40 136 54.5 136 54.5 136 112 216 112 216 40"
         opacity="0.2"
       />
+      <polygon points="104 60.4 40 72 40 112 104 112 104 60.4" opacity="0.2" />
       <polygon
-        points="104 60.364 40 72 40 112 104 112 104 60.364"
-        opacity="0.2"
-      />
-      <polygon
-        points="216 216 136 201.455 136 201.455 136 144 216 144 216 216"
+        points="216 216 136 201.5 136 201.5 136 144 216 144 216 216"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -70,7 +67,7 @@
         stroke-width="16"
       />
       <polygon
-        points="104 195.636 40 184 40 144 104 144 104 195.636"
+        points="104 195.6 40 184 40 144 104 144 104 195.6"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -78,7 +75,7 @@
         stroke-width="16"
       />
       <polygon
-        points="216 40 136 54.545 136 54.545 136 112 216 112 216 40"
+        points="216 40 136 54.5 136 54.5 136 112 216 112 216 40"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -86,7 +83,7 @@
         stroke-width="16"
       />
       <polygon
-        points="104 60.364 40 72 40 112 104 112 104 60.364"
+        points="104 60.4 40 72 40 112 104 112 104 60.4"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -96,12 +93,12 @@
     </g>
     <g v-else-if="weight === 'fill'">
       <path
-        d="M112,144v51.63672a7.9983,7.9983,0,0,1-9.43115,7.87061l-64-11.63623A8.00019,8.00019,0,0,1,32,184V144a8.00008,8.00008,0,0,1,8-8h64A8.00008,8.00008,0,0,1,112,144ZM109.126,54.2217a7.995,7.995,0,0,0-6.55713-1.729l-64,11.63623A8.00017,8.00017,0,0,0,32,72v40a8.00008,8.00008,0,0,0,8,8h64a8.00008,8.00008,0,0,0,8-8V60.3633A7.99853,7.99853,0,0,0,109.126,54.2217ZM216,136H136a8.00008,8.00008,0,0,0-8,8v57.45459a7.99967,7.99967,0,0,0,6.56885,7.87061l80,14.5459A8.0001,8.0001,0,0,0,224,216V144A8.00008,8.00008,0,0,0,216,136Zm5.126-102.14209a7.99714,7.99714,0,0,0-6.55713-1.729l-80,14.5459A7.99965,7.99965,0,0,0,128,54.54543V112a8.00008,8.00008,0,0,0,8,8h80a8.00008,8.00008,0,0,0,8-8V40A8.00028,8.00028,0,0,0,221.126,33.85793Z"
+        d="M112,144v51.6a8.1,8.1,0,0,1-2.9,6.2,7.8,7.8,0,0,1-5.1,1.8h-1.4l-64-11.6A8,8,0,0,1,32,184V144a8,8,0,0,1,8-8h64A8,8,0,0,1,112,144Zm-2.9-89.8a8,8,0,0,0-6.5-1.7l-64,11.6A8,8,0,0,0,32,72v40a8,8,0,0,0,8,8h64a8,8,0,0,0,8-8V60.4A8.1,8.1,0,0,0,109.1,54.2ZM216,136H136a8,8,0,0,0-8,8v57.5a8,8,0,0,0,6.6,7.8l80,14.6H216a7.4,7.4,0,0,0,5.1-1.9A7.9,7.9,0,0,0,224,216V144A8,8,0,0,0,216,136Zm5.1-102.1a7.7,7.7,0,0,0-6.5-1.8l-80,14.6a8,8,0,0,0-6.6,7.8V112a8,8,0,0,0,8,8h80a8,8,0,0,0,8-8V40A7.9,7.9,0,0,0,221.1,33.9Z"
       />
     </g>
     <g v-else-if="weight === 'light'">
       <polygon
-        points="216 216 136 201.455 136 201.455 136 144 216 144 216 216"
+        points="216 216 136 201.5 136 201.5 136 144 216 144 216 216"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -109,7 +106,7 @@
         stroke-width="12"
       />
       <polygon
-        points="104 195.636 40 184 40 144 104 144 104 195.636"
+        points="104 195.6 40 184 40 144 104 144 104 195.6"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -117,7 +114,7 @@
         stroke-width="12"
       />
       <polygon
-        points="216 40 136 54.545 136 54.545 136 112 216 112 216 40"
+        points="216 40 136 54.5 136 54.5 136 112 216 112 216 40"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -125,7 +122,7 @@
         stroke-width="12"
       />
       <polygon
-        points="104 60.364 40 72 40 112 104 112 104 60.364"
+        points="104 60.4 40 72 40 112 104 112 104 60.4"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -135,7 +132,7 @@
     </g>
     <g v-else-if="weight === 'thin'">
       <polygon
-        points="216 216 136 201.455 136 201.455 136 144 216 144 216 216"
+        points="216 216 136 201.5 136 201.5 136 144 216 144 216 216"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -143,7 +140,7 @@
         stroke-width="8"
       />
       <polygon
-        points="104 195.636 40 184 40 144 104 144 104 195.636"
+        points="104 195.6 40 184 40 144 104 144 104 195.6"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -151,7 +148,7 @@
         stroke-width="8"
       />
       <polygon
-        points="216 40 136 54.545 136 54.545 136 112 216 112 216 40"
+        points="216 40 136 54.5 136 54.5 136 112 216 112 216 40"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -159,7 +156,7 @@
         stroke-width="8"
       />
       <polygon
-        points="104 60.364 40 72 40 112 104 112 104 60.364"
+        points="104 60.4 40 72 40 112 104 112 104 60.4"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -169,7 +166,7 @@
     </g>
     <g v-else-if="weight === 'regular'">
       <polygon
-        points="216 216 136 201.455 136 201.455 136 144 216 144 216 216"
+        points="216 216 136 201.5 136 201.5 136 144 216 144 216 216"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -177,7 +174,7 @@
         stroke-width="16"
       />
       <polygon
-        points="104 195.636 40 184 40 144 104 144 104 195.636"
+        points="104 195.6 40 184 40 144 104 144 104 195.6"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -185,7 +182,7 @@
         stroke-width="16"
       />
       <polygon
-        points="216 40 136 54.545 136 54.545 136 112 216 112 216 40"
+        points="216 40 136 54.5 136 54.5 136 112 216 112 216 40"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -193,7 +190,7 @@
         stroke-width="16"
       />
       <polygon
-        points="104 60.364 40 72 40 112 104 112 104 60.364"
+        points="104 60.4 40 72 40 112 104 112 104 60.4"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -213,7 +210,7 @@ const component: PhosphorIcon = defineComponent({
   props: PropValidator,
   setup(props: SetupIconProps) {
     return { ...useDefaultPropsFromContext(props) };
-  }
+  },
 });
 export default component;
 </script>

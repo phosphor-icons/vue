@@ -12,7 +12,7 @@
     <slot />
     <g v-if="weight === 'bold'">
       <polyline
-        points="172.002 32 172.002 128 139.995 104 108.002 128 108.002 32"
+        points="172 32 172 128 140 104 108 128 108 32"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -20,7 +20,7 @@
         stroke-width="24"
       />
       <path
-        d="M48.00244,208a24,24,0,0,1,24-24h136V32h-136a24,24,0,0,0-24,24Z"
+        d="M48,208a23.9,23.9,0,0,1,24-24H208V32H72A23.9,23.9,0,0,0,48,56Z"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -28,7 +28,7 @@
         stroke-width="24"
       />
       <polyline
-        points="48.002 208 48.002 224 192.002 224"
+        points="48 208 48 224 192 224"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -38,11 +38,11 @@
     </g>
     <g v-else-if="weight === 'duotone'">
       <path
-        d="M176.00244,32v96l-32.00732-24-31.99268,24V32h-40a23.99994,23.99994,0,0,0-24,24V216a23.99994,23.99994,0,0,1,24-24h136V32Z"
+        d="M176,32v96l-32-24-32,24V32H72A23.9,23.9,0,0,0,48,56V216a23.9,23.9,0,0,1,24-24H208V32Z"
         opacity="0.2"
       />
       <polyline
-        points="48.002 216 48.002 224 192.002 224"
+        points="48 216 48 224 192 224"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -50,7 +50,7 @@
         stroke-width="16"
       />
       <polyline
-        points="176.002 32 176.002 128 143.995 104 112.002 128 112.002 32"
+        points="176 32 176 128 144 104 112 128 112 32"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -58,7 +58,7 @@
         stroke-width="16"
       />
       <path
-        d="M48.00244,216a24,24,0,0,1,24-24h136V32h-136a24,24,0,0,0-24,24Z"
+        d="M48,216a23.9,23.9,0,0,1,24-24H208V32H72A23.9,23.9,0,0,0,48,56Z"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -68,12 +68,12 @@
     </g>
     <g v-else-if="weight === 'fill'">
       <path
-        d="M208.00244,24h-136a32.03667,32.03667,0,0,0-32,32V224a8.00039,8.00039,0,0,0,8,8h144a8,8,0,0,0,0-16h-136a16.01833,16.01833,0,0,1,16-16h136a8.00039,8.00039,0,0,0,8-8V32A8.00039,8.00039,0,0,0,208.00244,24Zm-24,96.001L158.394,100.7998a4.0005,4.0005,0,0,0-4.7998,0L128.00244,119.999V40h56Z"
+        d="M208,24H72A32.1,32.1,0,0,0,40,56V224a8,8,0,0,0,8,8H192a8,8,0,0,0,0-16H56a16,16,0,0,1,16-16H208a8,8,0,0,0,8-8V32A8,8,0,0,0,208,24Zm-24,96-25.6-19.2a3.9,3.9,0,0,0-4.8,0L128,120V40h56Z"
       />
     </g>
     <g v-else-if="weight === 'light'">
       <polyline
-        points="176.002 32 176.002 128 143.995 104 112.002 128 112.002 32"
+        points="176 32 176 128 144 104 112 128 112 32"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -81,7 +81,7 @@
         stroke-width="12"
       />
       <path
-        d="M48.00244,216a24,24,0,0,1,24-24h136V32h-136a24,24,0,0,0-24,24Z"
+        d="M48,216a23.9,23.9,0,0,1,24-24H208V32H72A23.9,23.9,0,0,0,48,56Z"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -89,7 +89,7 @@
         stroke-width="12"
       />
       <polyline
-        points="48.002 216 48.002 224 192.002 224"
+        points="48 216 48 224 192 224"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -99,7 +99,7 @@
     </g>
     <g v-else-if="weight === 'thin'">
       <polyline
-        points="176.002 32 176.002 128 143.995 104 112.002 128 112.002 32"
+        points="176 32 176 128 144 104 112 128 112 32"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -107,7 +107,7 @@
         stroke-width="8"
       />
       <path
-        d="M48.00244,216a24,24,0,0,1,24-24h136V32h-136a24,24,0,0,0-24,24Z"
+        d="M48,216a23.9,23.9,0,0,1,24-24H208V32H72A23.9,23.9,0,0,0,48,56Z"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -115,7 +115,7 @@
         stroke-width="8"
       />
       <polyline
-        points="48.002 216 48.002 224 192.002 224"
+        points="48 216 48 224 192 224"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -125,7 +125,7 @@
     </g>
     <g v-else-if="weight === 'regular'">
       <polyline
-        points="176.002 32 176.002 128 143.995 104 112.002 128 112.002 32"
+        points="176 32 176 128 144 104 112 128 112 32"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -133,7 +133,7 @@
         stroke-width="16"
       />
       <path
-        d="M48.00244,216a24,24,0,0,1,24-24h136V32h-136a24,24,0,0,0-24,24Z"
+        d="M48,216a23.9,23.9,0,0,1,24-24H208V32H72A23.9,23.9,0,0,0,48,56Z"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -141,7 +141,7 @@
         stroke-width="16"
       />
       <polyline
-        points="48.002 216 48.002 224 192.002 224"
+        points="48 216 48 224 192 224"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -161,7 +161,7 @@ const component: PhosphorIcon = defineComponent({
   props: PropValidator,
   setup(props: SetupIconProps) {
     return { ...useDefaultPropsFromContext(props) };
-  }
+  },
 });
 export default component;
 </script>

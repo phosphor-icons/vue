@@ -16,31 +16,31 @@
         y="52"
         width="152"
         height="152"
-        rx="6.90909"
-        stroke-width="24"
+        rx="6.9"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="24"
       />
     </g>
     <g v-else-if="weight === 'duotone'">
-      <rect x="52" y="52" width="152" height="152" rx="6.90909" opacity="0.2" />
+      <rect x="52" y="52" width="152" height="152" rx="6.9" opacity="0.2" />
       <rect
         x="52"
         y="52"
         width="152"
         height="152"
-        rx="6.90909"
-        stroke-width="16"
+        rx="6.9"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
     </g>
     <g v-else-if="weight === 'fill'">
-      <rect x="44" y="44" width="168" height="168" rx="14.90918" />
+      <rect x="44" y="44" width="168" height="168" rx="14.9" />
     </g>
     <g v-else-if="weight === 'light'">
       <rect
@@ -48,12 +48,12 @@
         y="52"
         width="152"
         height="152"
-        rx="6.90909"
-        stroke-width="12"
+        rx="6.9"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="12"
       />
     </g>
     <g v-else-if="weight === 'thin'">
@@ -62,12 +62,12 @@
         y="52"
         width="152"
         height="152"
-        rx="6.90909"
-        stroke-width="8"
+        rx="6.9"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="8"
       />
     </g>
     <g v-else-if="weight === 'regular'">
@@ -76,12 +76,12 @@
         y="52"
         width="152"
         height="152"
-        rx="6.90909"
-        stroke-width="16"
+        rx="6.9"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
     </g>
   </svg>
@@ -96,7 +96,7 @@ const component: PhosphorIcon = defineComponent({
   props: PropValidator,
   setup(props: SetupIconProps) {
     return { ...useDefaultPropsFromContext(props) };
-  }
+  },
 });
 export default component;
 </script>

@@ -33,27 +33,25 @@
         stroke-linejoin="round"
         stroke-width="24"
       />
-      <g>
-        <line
-          x1="128"
-          y1="136"
-          x2="128"
-          y2="216"
-          fill="none"
-          :stroke="color"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="24"
-        />
-        <polyline
-          points="200 48 128 136 56 48"
-          fill="none"
-          :stroke="color"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="24"
-        />
-      </g>
+      <line
+        x1="128"
+        y1="136"
+        x2="128"
+        y2="216"
+        fill="none"
+        :stroke="color"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="24"
+      />
+      <polyline
+        points="200 48 128 136 56 48"
+        fill="none"
+        :stroke="color"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="24"
+      />
     </g>
     <g v-else-if="weight === 'duotone'">
       <line
@@ -100,7 +98,7 @@
     </g>
     <g v-else-if="weight === 'fill'">
       <path
-        d="M206.19141,53.06592,144.88184,128H176a8,8,0,0,1,0,16H136v16h40a8,8,0,0,1,0,16H136v40a8,8,0,0,1-16,0V176H80a8,8,0,0,1,0-16h40V144H80a8,8,0,0,1,0-16h31.11816L49.80859,53.06592A7.99982,7.99982,0,1,1,62.19141,42.93408L128,123.3667l65.80859-80.43262a7.99982,7.99982,0,1,1,12.38282,10.13184Z"
+        d="M206.2,53.1,144.9,128H176a8,8,0,0,1,0,16H136v16h40a8,8,0,0,1,0,16H136v40a8,8,0,0,1-16,0V176H80a8,8,0,0,1,0-16h40V144H80a8,8,0,0,1,0-16h31.1L49.8,53.1A8,8,0,0,1,62.2,42.9L128,123.4l65.8-80.5a8,8,0,0,1,12.4,10.2Z"
       />
     </g>
     <g v-else-if="weight === 'light'">
@@ -126,27 +124,25 @@
         stroke-linejoin="round"
         stroke-width="12"
       />
-      <g>
-        <line
-          x1="128"
-          y1="136"
-          x2="128"
-          y2="216"
-          fill="none"
-          :stroke="color"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="12"
-        />
-        <polyline
-          points="200 48 128 136 56 48"
-          fill="none"
-          :stroke="color"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="12"
-        />
-      </g>
+      <line
+        x1="128"
+        y1="136"
+        x2="128"
+        y2="216"
+        fill="none"
+        :stroke="color"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="12"
+      />
+      <polyline
+        points="200 48 128 136 56 48"
+        fill="none"
+        :stroke="color"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="12"
+      />
     </g>
     <g v-else-if="weight === 'thin'">
       <line
@@ -171,27 +167,25 @@
         stroke-linejoin="round"
         stroke-width="8"
       />
-      <g>
-        <line
-          x1="128"
-          y1="136"
-          x2="128"
-          y2="216"
-          fill="none"
-          :stroke="color"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="8"
-        />
-        <polyline
-          points="200 48 128 136 56 48"
-          fill="none"
-          :stroke="color"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="8"
-        />
-      </g>
+      <line
+        x1="128"
+        y1="136"
+        x2="128"
+        y2="216"
+        fill="none"
+        :stroke="color"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="8"
+      />
+      <polyline
+        points="200 48 128 136 56 48"
+        fill="none"
+        :stroke="color"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="8"
+      />
     </g>
     <g v-else-if="weight === 'regular'">
       <line
@@ -216,27 +210,25 @@
         stroke-linejoin="round"
         stroke-width="16"
       />
-      <g>
-        <line
-          x1="128"
-          y1="136"
-          x2="128"
-          y2="216"
-          fill="none"
-          :stroke="color"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="16"
-        />
-        <polyline
-          points="200 48 128 136 56 48"
-          fill="none"
-          :stroke="color"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="16"
-        />
-      </g>
+      <line
+        x1="128"
+        y1="136"
+        x2="128"
+        y2="216"
+        fill="none"
+        :stroke="color"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <polyline
+        points="200 48 128 136 56 48"
+        fill="none"
+        :stroke="color"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
     </g>
   </svg>
 </template>
@@ -250,7 +242,7 @@ const component: PhosphorIcon = defineComponent({
   props: PropValidator,
   setup(props: SetupIconProps) {
     return { ...useDefaultPropsFromContext(props) };
-  }
+  },
 });
 export default component;
 </script>

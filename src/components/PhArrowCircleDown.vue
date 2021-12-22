@@ -22,7 +22,7 @@
         stroke-width="24"
       />
       <polyline
-        points="94.059 134.059 128 168 161.941 134.059"
+        points="94.1 134.1 128 168 161.9 134.1"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -53,7 +53,7 @@
         stroke-width="16"
       />
       <polyline
-        points="94.059 134.059 128 168 161.941 134.059"
+        points="94.1 134.1 128 168 161.9 134.1"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -74,7 +74,7 @@
     </g>
     <g v-else-if="weight === 'fill'">
       <path
-        d="M128,24A104,104,0,1,0,232,128,104.12041,104.12041,0,0,0,128,24Zm39.59375,115.71875L133.666,173.64648a8.02367,8.02367,0,0,1-11.332,0L88.40625,139.71875a7.99915,7.99915,0,0,1,11.3125-11.3125L120,148.6875V88a8,8,0,0,1,16,0v60.6875l20.28125-20.28125a7.99915,7.99915,0,0,1,11.3125,11.3125Z"
+        d="M128,24A104,104,0,1,0,232,128,104.2,104.2,0,0,0,128,24Zm39.6,115.7-33.9,34a8.2,8.2,0,0,1-11.4,0l-33.9-34a8,8,0,0,1,11.3-11.3L120,148.7V88a8,8,0,0,1,16,0v60.7l20.3-20.3a8,8,0,0,1,11.3,11.3Z"
       />
     </g>
     <g v-else-if="weight === 'light'">
@@ -89,7 +89,7 @@
         stroke-width="12"
       />
       <polyline
-        points="94.059 134.059 128 168 161.941 134.059"
+        points="94.1 134.1 128 168 161.9 134.1"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -120,7 +120,7 @@
         stroke-width="8"
       />
       <polyline
-        points="94.059 134.059 128 168 161.941 134.059"
+        points="94.1 134.1 128 168 161.9 134.1"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -150,7 +150,7 @@
         stroke-width="16"
       />
       <polyline
-        points="94.059 134.059 128 168 161.941 134.059"
+        points="94.1 134.1 128 168 161.9 134.1"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -181,7 +181,7 @@ const component: PhosphorIcon = defineComponent({
   props: PropValidator,
   setup(props: SetupIconProps) {
     return { ...useDefaultPropsFromContext(props) };
-  }
+  },
 });
 export default component;
 </script>

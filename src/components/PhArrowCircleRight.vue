@@ -22,7 +22,7 @@
         stroke-width="24"
       />
       <polyline
-        points="134.059 161.941 168 128 134.059 94.059"
+        points="134.1 161.9 168 128 134.1 94.1"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -53,7 +53,7 @@
         stroke-width="16"
       />
       <polyline
-        points="134.059 161.941 168 128 134.059 94.059"
+        points="134.1 161.9 168 128 134.1 94.1"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -74,7 +74,7 @@
     </g>
     <g v-else-if="weight === 'fill'">
       <path
-        d="M128,24A104,104,0,1,0,232,128,104.12041,104.12041,0,0,0,128,24Zm47.38477,107.05469a7.99866,7.99866,0,0,1-1.73829,2.61133l-33.92773,33.92773a7.99915,7.99915,0,0,1-11.3125-11.3125L148.6875,136H88a8,8,0,0,1,0-16h60.6875L128.40625,99.71875a7.99915,7.99915,0,0,1,11.3125-11.3125L173.64648,122.334a8.02367,8.02367,0,0,1,1.73829,8.72071Z"
+        d="M128,24A104,104,0,1,0,232,128,104.2,104.2,0,0,0,128,24Zm47.4,107.1a8.7,8.7,0,0,1-1.8,2.6l-33.9,33.9a7.6,7.6,0,0,1-5.6,2.3,7.8,7.8,0,0,1-5.7-2.3,8,8,0,0,1,0-11.3L148.7,136H88a8,8,0,0,1,0-16h60.7L128.4,99.7a8,8,0,0,1,11.3-11.3l33.9,33.9a8.7,8.7,0,0,1,1.8,2.6A8.3,8.3,0,0,1,175.4,131.1Z"
       />
     </g>
     <g v-else-if="weight === 'light'">
@@ -89,7 +89,7 @@
         stroke-width="12"
       />
       <polyline
-        points="134.059 161.941 168 128 134.059 94.059"
+        points="134.1 161.9 168 128 134.1 94.1"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -120,7 +120,7 @@
         stroke-width="8"
       />
       <polyline
-        points="134.059 161.941 168 128 134.059 94.059"
+        points="134.1 161.9 168 128 134.1 94.1"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -150,7 +150,7 @@
         stroke-width="16"
       />
       <polyline
-        points="134.059 161.941 168 128 134.059 94.059"
+        points="134.1 161.9 168 128 134.1 94.1"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -181,7 +181,7 @@ const component: PhosphorIcon = defineComponent({
   props: PropValidator,
   setup(props: SetupIconProps) {
     return { ...useDefaultPropsFromContext(props) };
-  }
+  },
 });
 export default component;
 </script>

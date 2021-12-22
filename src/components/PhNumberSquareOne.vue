@@ -12,7 +12,7 @@
     <slot />
     <g v-if="weight === 'bold'">
       <polyline
-        points="108 99.993 132 84 132 176"
+        points="108 100 132 84 132 176"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -25,17 +25,17 @@
         width="176"
         height="176"
         rx="8"
-        stroke-width="24"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="24"
       />
     </g>
     <g v-else-if="weight === 'duotone'">
       <rect x="40" y="40" width="176" height="176" rx="8" opacity="0.2" />
       <polyline
-        points="108 99.993 132 84 132 176"
+        points="108 100 132 84 132 176"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -48,21 +48,21 @@
         width="176"
         height="176"
         rx="8"
-        stroke-width="16"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
     </g>
     <g v-else-if="weight === 'fill'">
       <path
-        d="M208,32H48A16.02085,16.02085,0,0,0,32,48V208a16.02085,16.02085,0,0,0,16,16H208a16.02085,16.02085,0,0,0,16-16V48A16.02085,16.02085,0,0,0,208,32ZM139.99219,175.99219a8,8,0,0,1-16,0V98.95313l-11.54688,7.69531a7.99982,7.99982,0,1,1-8.875-13.3125l23.98438-15.99219A7.99941,7.99941,0,0,1,139.99219,84Z"
+        d="M208,32H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM140,176a8,8,0,0,1-16,0V99l-11.6,7.6a7.8,7.8,0,0,1-11-2.2,8,8,0,0,1,2.2-11.1l24-16A8,8,0,0,1,140,84Z"
       />
     </g>
     <g v-else-if="weight === 'light'">
       <polyline
-        points="108 99.993 132 84 132 176"
+        points="108 100 132 84 132 176"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -75,16 +75,16 @@
         width="176"
         height="176"
         rx="8"
-        stroke-width="12"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="12"
       />
     </g>
     <g v-else-if="weight === 'thin'">
       <polyline
-        points="108 99.993 132 84 132 176"
+        points="108 100 132 84 132 176"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -97,16 +97,16 @@
         width="176"
         height="176"
         rx="8"
-        stroke-width="8"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="8"
       />
     </g>
     <g v-else-if="weight === 'regular'">
       <polyline
-        points="108 99.993 132 84 132 176"
+        points="108 100 132 84 132 176"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -119,11 +119,11 @@
         width="176"
         height="176"
         rx="8"
-        stroke-width="16"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
     </g>
   </svg>
@@ -138,7 +138,7 @@ const component: PhosphorIcon = defineComponent({
   props: PropValidator,
   setup(props: SetupIconProps) {
     return { ...useDefaultPropsFromContext(props) };
-  }
+  },
 });
 export default component;
 </script>

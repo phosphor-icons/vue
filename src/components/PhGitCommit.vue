@@ -12,7 +12,7 @@
     <slot />
     <g v-if="weight === 'bold'">
       <circle
-        cx="128.00244"
+        cx="128"
         cy="128"
         r="52"
         fill="none"
@@ -22,9 +22,9 @@
         stroke-width="24"
       />
       <line
-        x1="12.00244"
+        x1="12"
         y1="128"
-        x2="76.00244"
+        x2="76"
         y2="128"
         fill="none"
         :stroke="color"
@@ -33,9 +33,9 @@
         stroke-width="24"
       />
       <line
-        x1="180.00244"
+        x1="180"
         y1="128"
-        x2="244.00244"
+        x2="244"
         y2="128"
         fill="none"
         :stroke="color"
@@ -45,9 +45,9 @@
       />
     </g>
     <g v-else-if="weight === 'duotone'">
-      <circle cx="128.00244" cy="128" r="52" opacity="0.2" />
+      <circle cx="128" cy="128" r="52" opacity="0.2" />
       <circle
-        cx="128.00244"
+        cx="128"
         cy="128"
         r="52"
         fill="none"
@@ -57,9 +57,9 @@
         stroke-width="16"
       />
       <line
-        x1="8.00244"
+        x1="8"
         y1="128"
-        x2="76.00244"
+        x2="76"
         y2="128"
         fill="none"
         :stroke="color"
@@ -68,9 +68,9 @@
         stroke-width="16"
       />
       <line
-        x1="180.00244"
+        x1="180"
         y1="128"
-        x2="248.00244"
+        x2="248"
         y2="128"
         fill="none"
         :stroke="color"
@@ -81,12 +81,12 @@
     </g>
     <g v-else-if="weight === 'fill'">
       <path
-        d="M248.00244,120H187.45312a59.98446,59.98446,0,0,0-118.90136,0H8.00244a8,8,0,0,0,0,16H68.55176a59.98446,59.98446,0,0,0,118.90136,0h60.54932a8,8,0,0,0,0-16Z"
+        d="M248,120H187.5a60,60,0,0,0-118.9,0H8a8,8,0,0,0,0,16H68.6a60,60,0,0,0,118.9,0H248a8,8,0,0,0,0-16Z"
       />
     </g>
     <g v-else-if="weight === 'light'">
       <circle
-        cx="128.00244"
+        cx="128"
         cy="128"
         r="52"
         fill="none"
@@ -96,9 +96,9 @@
         stroke-width="12"
       />
       <line
-        x1="8.00244"
+        x1="8"
         y1="128"
-        x2="76.00244"
+        x2="76"
         y2="128"
         fill="none"
         :stroke="color"
@@ -107,9 +107,9 @@
         stroke-width="12"
       />
       <line
-        x1="180.00244"
+        x1="180"
         y1="128"
-        x2="248.00244"
+        x2="248"
         y2="128"
         fill="none"
         :stroke="color"
@@ -120,7 +120,7 @@
     </g>
     <g v-else-if="weight === 'thin'">
       <circle
-        cx="128.00244"
+        cx="128"
         cy="128"
         r="52"
         fill="none"
@@ -130,9 +130,9 @@
         stroke-width="8"
       />
       <line
-        x1="8.00244"
+        x1="8"
         y1="128"
-        x2="76.00244"
+        x2="76"
         y2="128"
         fill="none"
         :stroke="color"
@@ -141,9 +141,9 @@
         stroke-width="8"
       />
       <line
-        x1="180.00244"
+        x1="180"
         y1="128"
-        x2="248.00244"
+        x2="248"
         y2="128"
         fill="none"
         :stroke="color"
@@ -154,7 +154,7 @@
     </g>
     <g v-else-if="weight === 'regular'">
       <circle
-        cx="128.00244"
+        cx="128"
         cy="128"
         r="52"
         fill="none"
@@ -164,9 +164,9 @@
         stroke-width="16"
       />
       <line
-        x1="8.00244"
+        x1="8"
         y1="128"
-        x2="76.00244"
+        x2="76"
         y2="128"
         fill="none"
         :stroke="color"
@@ -175,9 +175,9 @@
         stroke-width="16"
       />
       <line
-        x1="180.00244"
+        x1="180"
         y1="128"
-        x2="248.00244"
+        x2="248"
         y2="128"
         fill="none"
         :stroke="color"
@@ -198,7 +198,7 @@ const component: PhosphorIcon = defineComponent({
   props: PropValidator,
   setup(props: SetupIconProps) {
     return { ...useDefaultPropsFromContext(props) };
-  }
+  },
 });
 export default component;
 </script>

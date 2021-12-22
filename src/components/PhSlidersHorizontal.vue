@@ -12,10 +12,10 @@
     <slot />
     <g v-if="weight === 'bold'">
       <line
-        x1="147.99951"
-        y1="171.99353"
-        x2="39.99951"
-        y2="171.99365"
+        x1="148"
+        y1="172"
+        x2="40"
+        y2="172"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -23,10 +23,10 @@
         stroke-width="24"
       />
       <line
-        x1="215.99951"
-        y1="171.99365"
-        x2="187.99951"
-        y2="171.99353"
+        x1="216"
+        y1="172"
+        x2="188"
+        y2="172"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -34,8 +34,8 @@
         stroke-width="24"
       />
       <circle
-        cx="167.99951"
-        cy="171.99353"
+        cx="168"
+        cy="172"
         r="20"
         :stroke="color"
         stroke-linecap="round"
@@ -43,10 +43,10 @@
         stroke-width="24"
       />
       <line
-        x1="83.99951"
-        y1="83.99353"
-        x2="39.99951"
-        y2="83.99294"
+        x1="84"
+        y1="84"
+        x2="40"
+        y2="84"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -54,10 +54,10 @@
         stroke-width="24"
       />
       <line
-        x1="215.99951"
-        y1="83.99294"
-        x2="123.99951"
-        y2="83.99353"
+        x1="216"
+        y1="84"
+        x2="124"
+        y2="84"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -65,8 +65,8 @@
         stroke-width="24"
       />
       <circle
-        cx="103.99951"
-        cy="83.99353"
+        cx="104"
+        cy="84"
         r="20"
         :stroke="color"
         stroke-linecap="round"
@@ -75,12 +75,12 @@
       />
     </g>
     <g v-else-if="weight === 'duotone'">
-      <circle cx="103.99951" cy="83.99353" r="20" opacity="0.2" />
+      <circle cx="104" cy="84" r="20" opacity="0.2" />
       <line
-        x1="147.99951"
-        y1="171.99353"
-        x2="39.99951"
-        y2="171.99365"
+        x1="148"
+        y1="172"
+        x2="40"
+        y2="172"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -88,10 +88,10 @@
         stroke-width="16"
       />
       <line
-        x1="215.99951"
-        y1="171.99365"
-        x2="187.99951"
-        y2="171.99353"
+        x1="216"
+        y1="172"
+        x2="188"
+        y2="172"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -99,8 +99,8 @@
         stroke-width="16"
       />
       <circle
-        cx="167.99951"
-        cy="171.99353"
+        cx="168"
+        cy="172"
         r="20"
         fill="none"
         :stroke="color"
@@ -109,10 +109,10 @@
         stroke-width="16"
       />
       <line
-        x1="83.99951"
-        y1="83.99353"
-        x2="39.99951"
-        y2="83.99294"
+        x1="84"
+        y1="84"
+        x2="40"
+        y2="84"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -120,10 +120,10 @@
         stroke-width="16"
       />
       <line
-        x1="215.99951"
-        y1="83.99294"
-        x2="123.99951"
-        y2="83.99353"
+        x1="216"
+        y1="84"
+        x2="124"
+        y2="84"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -131,8 +131,8 @@
         stroke-width="16"
       />
       <circle
-        cx="103.99951"
-        cy="83.99353"
+        cx="104"
+        cy="84"
         r="20"
         fill="none"
         :stroke="color"
@@ -142,21 +142,19 @@
       />
     </g>
     <g v-else-if="weight === 'fill'">
-      <g>
-        <path
-          d="M215.99951,163.99353H194.8291a27.99567,27.99567,0,0,0-53.65918,0H39.99951a8,8,0,0,0,0,16H141.16992a27.99567,27.99567,0,0,0,53.65918,0h21.17041a8,8,0,0,0,0-16Z"
-        />
-        <path
-          d="M39.999,91.99255l37.1709.001a27.99567,27.99567,0,0,0,53.65918,0l85.17041-.001a8,8,0,0,0,0-16l-85.17041.001a27.99567,27.99567,0,0,0-53.65918,0L40,75.99255h-.00049a8,8,0,0,0-.00049,16Z"
-        />
-      </g>
+      <path
+        d="M216,164H194.8a28,28,0,0,0-53.6,0H40a8,8,0,0,0,0,16H141.2a28,28,0,0,0,53.6,0H216a8,8,0,0,0,0-16Z"
+      />
+      <path
+        d="M40,92H77.2a28,28,0,0,0,53.6,0H216a8,8,0,0,0,0-16H130.8a28,28,0,0,0-53.6,0H40a8,8,0,0,0,0,16Z"
+      />
     </g>
     <g v-else-if="weight === 'light'">
       <line
-        x1="147.99951"
-        y1="171.99353"
-        x2="39.99951"
-        y2="171.99365"
+        x1="148"
+        y1="172"
+        x2="40"
+        y2="172"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -164,10 +162,10 @@
         stroke-width="12"
       />
       <line
-        x1="215.99951"
-        y1="171.99365"
-        x2="187.99951"
-        y2="171.99353"
+        x1="216"
+        y1="172"
+        x2="188"
+        y2="172"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -175,8 +173,8 @@
         stroke-width="12"
       />
       <circle
-        cx="167.99951"
-        cy="171.99353"
+        cx="168"
+        cy="172"
         r="20"
         fill="none"
         :stroke="color"
@@ -185,10 +183,10 @@
         stroke-width="12"
       />
       <line
-        x1="83.99951"
-        y1="83.99353"
-        x2="39.99951"
-        y2="83.99294"
+        x1="84"
+        y1="84"
+        x2="40"
+        y2="84"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -196,10 +194,10 @@
         stroke-width="12"
       />
       <line
-        x1="215.99951"
-        y1="83.99294"
-        x2="123.99951"
-        y2="83.99353"
+        x1="216"
+        y1="84"
+        x2="124"
+        y2="84"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -207,8 +205,8 @@
         stroke-width="12"
       />
       <circle
-        cx="103.99951"
-        cy="83.99353"
+        cx="104"
+        cy="84"
         r="20"
         fill="none"
         :stroke="color"
@@ -219,10 +217,10 @@
     </g>
     <g v-else-if="weight === 'thin'">
       <line
-        x1="147.99951"
-        y1="171.99353"
-        x2="39.99951"
-        y2="171.99365"
+        x1="148"
+        y1="172"
+        x2="40"
+        y2="172"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -230,10 +228,10 @@
         stroke-width="8"
       />
       <line
-        x1="215.99951"
-        y1="171.99365"
-        x2="187.99951"
-        y2="171.99353"
+        x1="216"
+        y1="172"
+        x2="188"
+        y2="172"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -241,8 +239,8 @@
         stroke-width="8"
       />
       <circle
-        cx="167.99951"
-        cy="171.99353"
+        cx="168"
+        cy="172"
         r="20"
         fill="none"
         :stroke="color"
@@ -251,10 +249,10 @@
         stroke-width="8"
       />
       <line
-        x1="83.99951"
-        y1="83.99353"
-        x2="39.99951"
-        y2="83.99294"
+        x1="84"
+        y1="84"
+        x2="40"
+        y2="84"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -262,10 +260,10 @@
         stroke-width="8"
       />
       <line
-        x1="215.99951"
-        y1="83.99294"
-        x2="123.99951"
-        y2="83.99353"
+        x1="216"
+        y1="84"
+        x2="124"
+        y2="84"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -273,8 +271,8 @@
         stroke-width="8"
       />
       <circle
-        cx="103.99951"
-        cy="83.99353"
+        cx="104"
+        cy="84"
         r="20"
         fill="none"
         :stroke="color"
@@ -285,10 +283,10 @@
     </g>
     <g v-else-if="weight === 'regular'">
       <line
-        x1="147.99951"
-        y1="171.99353"
-        x2="39.99951"
-        y2="171.99365"
+        x1="148"
+        y1="172"
+        x2="40"
+        y2="172"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -296,10 +294,10 @@
         stroke-width="16"
       />
       <line
-        x1="215.99951"
-        y1="171.99365"
-        x2="187.99951"
-        y2="171.99353"
+        x1="216"
+        y1="172"
+        x2="188"
+        y2="172"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -307,8 +305,8 @@
         stroke-width="16"
       />
       <circle
-        cx="167.99951"
-        cy="171.99353"
+        cx="168"
+        cy="172"
         r="20"
         fill="none"
         :stroke="color"
@@ -317,10 +315,10 @@
         stroke-width="16"
       />
       <line
-        x1="83.99951"
-        y1="83.99353"
-        x2="39.99951"
-        y2="83.99294"
+        x1="84"
+        y1="84"
+        x2="40"
+        y2="84"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -328,10 +326,10 @@
         stroke-width="16"
       />
       <line
-        x1="215.99951"
-        y1="83.99294"
-        x2="123.99951"
-        y2="83.99353"
+        x1="216"
+        y1="84"
+        x2="124"
+        y2="84"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -339,8 +337,8 @@
         stroke-width="16"
       />
       <circle
-        cx="103.99951"
-        cy="83.99353"
+        cx="104"
+        cy="84"
         r="20"
         fill="none"
         :stroke="color"
@@ -361,7 +359,7 @@ const component: PhosphorIcon = defineComponent({
   props: PropValidator,
   setup(props: SetupIconProps) {
     return { ...useDefaultPropsFromContext(props) };
-  }
+  },
 });
 export default component;
 </script>

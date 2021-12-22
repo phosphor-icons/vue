@@ -18,11 +18,11 @@
         height="144"
         rx="16"
         transform="translate(256 240) rotate(180)"
-        stroke-width="24"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="24"
       />
       <line
         x1="160"
@@ -53,11 +53,11 @@
         height="144"
         rx="16"
         transform="translate(256 240) rotate(180)"
-        stroke-width="16"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
       <line
         x1="160"
@@ -72,10 +72,8 @@
       />
     </g>
     <g v-else-if="weight === 'fill'">
-      <g>
-        <rect x="24" y="40.0002" width="208" height="160" rx="24" />
-        <path d="M160,216.0002H96a8,8,0,0,0,0,16h64a8,8,0,0,0,0-16Z" />
-      </g>
+      <rect x="24" y="40" width="208" height="160" rx="24" />
+      <path d="M160,216H96a8,8,0,0,0,0,16h64a8,8,0,0,0,0-16Z" />
     </g>
     <g v-else-if="weight === 'light'">
       <rect
@@ -85,11 +83,11 @@
         height="144"
         rx="16"
         transform="translate(256 240) rotate(180)"
-        stroke-width="12"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="12"
       />
       <line
         x1="160"
@@ -111,11 +109,11 @@
         height="144"
         rx="16"
         transform="translate(256 240) rotate(180)"
-        stroke-width="8"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="8"
       />
       <line
         x1="160"
@@ -137,11 +135,11 @@
         height="144"
         rx="16"
         transform="translate(256 240) rotate(180)"
-        stroke-width="16"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
       <line
         x1="160"
@@ -167,7 +165,7 @@ const component: PhosphorIcon = defineComponent({
   props: PropValidator,
   setup(props: SetupIconProps) {
     return { ...useDefaultPropsFromContext(props) };
-  }
+  },
 });
 export default component;
 </script>

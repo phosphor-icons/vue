@@ -26,15 +26,15 @@
         y="108"
         width="40"
         height="40"
-        stroke-width="24"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
+        stroke-width="24"
       />
     </g>
     <g v-else-if="weight === 'duotone'">
       <path
-        d="M128,32a96,96,0,1,0,96,96A95.99991,95.99991,0,0,0,128,32Zm24,120H104V104h48Z"
+        d="M128,32a96,96,0,1,0,96,96A96,96,0,0,0,128,32Zm24,120H104V104h48Z"
         opacity="0.2"
       />
       <circle
@@ -51,16 +51,16 @@
         y="104"
         width="48"
         height="48"
-        stroke-width="16"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
     </g>
     <g v-else-if="weight === 'fill'">
       <path
-        d="M128,24A104,104,0,1,0,232,128,104.11791,104.11791,0,0,0,128,24Zm32,128a8.00008,8.00008,0,0,1-8,8H104a8.00008,8.00008,0,0,1-8-8V104a8.00008,8.00008,0,0,1,8-8h48a8.00008,8.00008,0,0,1,8,8Z"
+        d="M128,24A104,104,0,1,0,232,128,104.2,104.2,0,0,0,128,24Zm32,128a8,8,0,0,1-8,8H104a8,8,0,0,1-8-8V104a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8Z"
       />
     </g>
     <g v-else-if="weight === 'light'">
@@ -79,11 +79,11 @@
         y="104"
         width="48"
         height="48"
-        stroke-width="12"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="12"
       />
     </g>
     <g v-else-if="weight === 'thin'">
@@ -102,11 +102,11 @@
         y="104"
         width="48"
         height="48"
-        stroke-width="8"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="8"
       />
     </g>
     <g v-else-if="weight === 'regular'">
@@ -124,11 +124,11 @@
         y="104"
         width="48"
         height="48"
-        stroke-width="16"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
     </g>
   </svg>
@@ -143,7 +143,7 @@ const component: PhosphorIcon = defineComponent({
   props: PropValidator,
   setup(props: SetupIconProps) {
     return { ...useDefaultPropsFromContext(props) };
-  }
+  },
 });
 export default component;
 </script>

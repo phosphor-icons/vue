@@ -30,13 +30,12 @@
         r="96"
         fill="none"
         :stroke="color"
-        stroke-miterlimit="10"
+        stroke-linecap="round"
+        stroke-linejoin="round"
         stroke-width="16"
       />
     </g>
-    <g v-else-if="weight === 'fill'">
-      <circle cx="128" cy="128" r="104" />
-    </g>
+    <g v-else-if="weight === 'fill'"><circle cx="128" cy="128" r="104" /></g>
     <g v-else-if="weight === 'light'">
       <circle
         cx="128"
@@ -68,7 +67,8 @@
         r="96"
         fill="none"
         :stroke="color"
-        stroke-miterlimit="10"
+        stroke-linecap="round"
+        stroke-linejoin="round"
         stroke-width="16"
       />
     </g>
@@ -84,7 +84,7 @@ const component: PhosphorIcon = defineComponent({
   props: PropValidator,
   setup(props: SetupIconProps) {
     return { ...useDefaultPropsFromContext(props) };
-  }
+  },
 });
 export default component;
 </script>

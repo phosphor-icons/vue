@@ -78,11 +78,9 @@
       />
     </g>
     <g v-else-if="weight === 'fill'">
-      <g>
-        <circle cx="128" cy="68" r="48" />
-        <circle cx="188" cy="172" r="48" />
-        <circle cx="68" cy="172" r="48" />
-      </g>
+      <circle cx="128" cy="68" r="48" />
+      <circle cx="188" cy="172" r="48" />
+      <circle cx="68" cy="172" r="48" />
     </g>
     <g v-else-if="weight === 'light'">
       <circle
@@ -192,7 +190,7 @@ const component: PhosphorIcon = defineComponent({
   props: PropValidator,
   setup(props: SetupIconProps) {
     return { ...useDefaultPropsFromContext(props) };
-  }
+  },
 });
 export default component;
 </script>

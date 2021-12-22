@@ -23,9 +23,9 @@
       />
       <line
         x1="32"
-        y1="108.00005"
+        y1="108"
         x2="56"
-        y2="108.00005"
+        y2="108"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -34,9 +34,9 @@
       />
       <line
         x1="32"
-        y1="68.00005"
+        y1="68"
         x2="56"
-        y2="68.00005"
+        y2="68"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -45,9 +45,9 @@
       />
       <line
         x1="32"
-        y1="148.00005"
+        y1="148"
         x2="56"
-        y2="148.00005"
+        y2="148"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -56,9 +56,9 @@
       />
       <line
         x1="32"
-        y1="188.00005"
+        y1="188"
         x2="56"
-        y2="188.00005"
+        y2="188"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -72,14 +72,14 @@
         height="160"
         rx="8"
         transform="translate(264 -8) rotate(90)"
-        stroke-width="24"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="24"
       />
       <path
-        d="M91.99963,167.20785a60.00083,60.00083,0,0,1,88.00067-.00007"
+        d="M92,167.2a60,60,0,0,1,88,0"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -104,9 +104,9 @@
       />
       <line
         x1="32"
-        y1="108.00005"
+        y1="108"
         x2="56"
-        y2="108.00005"
+        y2="108"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -115,9 +115,9 @@
       />
       <line
         x1="32"
-        y1="68.00005"
+        y1="68"
         x2="56"
-        y2="68.00005"
+        y2="68"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -126,9 +126,9 @@
       />
       <line
         x1="32"
-        y1="148.00005"
+        y1="148"
         x2="56"
-        y2="148.00005"
+        y2="148"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -137,9 +137,9 @@
       />
       <line
         x1="32"
-        y1="188.00005"
+        y1="188"
         x2="56"
-        y2="188.00005"
+        y2="188"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -147,7 +147,7 @@
         stroke-width="16"
       />
       <path
-        d="M87.99717,167.99792a60.00878,60.00878,0,0,1,96.004-.00225"
+        d="M88,168a60,60,0,0,1,96,0"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -161,16 +161,16 @@
         height="160"
         rx="8"
         transform="translate(264 -8) rotate(90)"
-        stroke-width="16"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
     </g>
     <g v-else-if="weight === 'fill'">
       <path
-        d="M160,112a24,24,0,1,1-24-24A24.0275,24.0275,0,0,1,160,112Zm64-72V216a16.01833,16.01833,0,0,1-16,16H64a16.01833,16.01833,0,0,1-16-16V196H32a8,8,0,0,1,0-16H48V156H32a8,8,0,0,1,0-16H48V116H32a8,8,0,0,1,0-16H48V76H32a8,8,0,0,1,0-16H48V40A16.01833,16.01833,0,0,1,64,24H208A16.01833,16.01833,0,0,1,224,40ZM190.397,163.19141a67.80622,67.80622,0,0,0-27.42627-21.68067,40,40,0,1,0-53.94153-.00012,67.80949,67.80949,0,0,0-27.42858,21.68274,8,8,0,1,0,12.793,9.60937,52.0088,52.0088,0,0,1,83.21143-.00195,7.99961,7.99961,0,1,0,12.792-9.60937Z"
+        d="M160,112a24,24,0,1,1-24-24A24.1,24.1,0,0,1,160,112Zm64-72V216a16,16,0,0,1-16,16H64a16,16,0,0,1-16-16V196H32a8,8,0,0,1,0-16H48V156H32a8,8,0,0,1,0-16H48V116H32a8,8,0,0,1,0-16H48V76H32a8,8,0,0,1,0-16H48V40A16,16,0,0,1,64,24H208A16,16,0,0,1,224,40ZM190.4,163.2A67.8,67.8,0,0,0,163,141.5a40,40,0,1,0-54,0,67.8,67.8,0,0,0-27.4,21.7,8,8,0,0,0,1.6,11.2A7.7,7.7,0,0,0,88,176a8,8,0,0,0,6.4-3.2,52,52,0,0,1,83.2,0,8.1,8.1,0,0,0,11.2,1.6A8,8,0,0,0,190.4,163.2Z"
       />
     </g>
     <g v-else-if="weight === 'light'">
@@ -186,9 +186,9 @@
       />
       <line
         x1="32"
-        y1="108.00005"
+        y1="108"
         x2="56"
-        y2="108.00005"
+        y2="108"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -197,9 +197,9 @@
       />
       <line
         x1="32"
-        y1="68.00005"
+        y1="68"
         x2="56"
-        y2="68.00005"
+        y2="68"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -208,9 +208,9 @@
       />
       <line
         x1="32"
-        y1="148.00005"
+        y1="148"
         x2="56"
-        y2="148.00005"
+        y2="148"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -219,9 +219,9 @@
       />
       <line
         x1="32"
-        y1="188.00005"
+        y1="188"
         x2="56"
-        y2="188.00005"
+        y2="188"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -229,7 +229,7 @@
         stroke-width="12"
       />
       <path
-        d="M87.99717,167.99792a60.00878,60.00878,0,0,1,96.004-.00225"
+        d="M88,168a60,60,0,0,1,96,0"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -243,11 +243,11 @@
         height="160"
         rx="8"
         transform="translate(264 -8) rotate(90)"
-        stroke-width="12"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="12"
       />
     </g>
     <g v-else-if="weight === 'thin'">
@@ -263,9 +263,9 @@
       />
       <line
         x1="32"
-        y1="108.00005"
+        y1="108"
         x2="56"
-        y2="108.00005"
+        y2="108"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -274,9 +274,9 @@
       />
       <line
         x1="32"
-        y1="68.00005"
+        y1="68"
         x2="56"
-        y2="68.00005"
+        y2="68"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -285,9 +285,9 @@
       />
       <line
         x1="32"
-        y1="148.00005"
+        y1="148"
         x2="56"
-        y2="148.00005"
+        y2="148"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -296,9 +296,9 @@
       />
       <line
         x1="32"
-        y1="188.00005"
+        y1="188"
         x2="56"
-        y2="188.00005"
+        y2="188"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -306,7 +306,7 @@
         stroke-width="8"
       />
       <path
-        d="M87.99717,167.99792a60.00878,60.00878,0,0,1,96.004-.00225"
+        d="M88,168a60,60,0,0,1,96,0"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -320,11 +320,11 @@
         height="160"
         rx="8"
         transform="translate(264 -8) rotate(90)"
-        stroke-width="8"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="8"
       />
     </g>
     <g v-else-if="weight === 'regular'">
@@ -340,9 +340,9 @@
       />
       <line
         x1="32"
-        y1="108.00005"
+        y1="108"
         x2="56"
-        y2="108.00005"
+        y2="108"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -351,9 +351,9 @@
       />
       <line
         x1="32"
-        y1="68.00005"
+        y1="68"
         x2="56"
-        y2="68.00005"
+        y2="68"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -362,9 +362,9 @@
       />
       <line
         x1="32"
-        y1="148.00005"
+        y1="148"
         x2="56"
-        y2="148.00005"
+        y2="148"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -373,9 +373,9 @@
       />
       <line
         x1="32"
-        y1="188.00005"
+        y1="188"
         x2="56"
-        y2="188.00005"
+        y2="188"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -383,7 +383,7 @@
         stroke-width="16"
       />
       <path
-        d="M87.99717,167.99792a60.00878,60.00878,0,0,1,96.004-.00225"
+        d="M88,168a60,60,0,0,1,96,0"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -397,11 +397,11 @@
         height="160"
         rx="8"
         transform="translate(264 -8) rotate(90)"
-        stroke-width="16"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
     </g>
   </svg>
@@ -416,7 +416,7 @@ const component: PhosphorIcon = defineComponent({
   props: PropValidator,
   setup(props: SetupIconProps) {
     return { ...useDefaultPropsFromContext(props) };
-  }
+  },
 });
 export default component;
 </script>

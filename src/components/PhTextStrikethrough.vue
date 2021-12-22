@@ -22,24 +22,22 @@
         stroke-linejoin="round"
         stroke-width="24"
       />
-      <g>
-        <path
-          d="M75.11111,88c0-22.09139,21.96094-40,52.88889-40,23.77865,0,42.25677,10.58606,49.529,25.52014"
-          fill="none"
-          :stroke="color"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="24"
-        />
-        <path
-          d="M72,168c0,22.09139,25.07205,40,56,40s56-17.90861,56-40c0-23.76634-21.62275-32.97043-45.59723-40.00076"
-          fill="none"
-          :stroke="color"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="24"
-        />
-      </g>
+      <path
+        d="M75.1,88c0-22.1,22-40,52.9-40,23.8,0,42.3,10.6,49.5,25.5"
+        fill="none"
+        :stroke="color"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="24"
+      />
+      <path
+        d="M72,168c0,22.1,25.1,40,56,40s56-17.9,56-40c0-23.8-21.6-33-45.6-40"
+        fill="none"
+        :stroke="color"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="24"
+      />
     </g>
     <g v-else-if="weight === 'duotone'">
       <line
@@ -54,7 +52,7 @@
         stroke-width="16"
       />
       <path
-        d="M76.334,96.00294A25.48209,25.48209,0,0,1,75.11111,88c0-22.09139,21.96094-40,52.88889-40,23.77865,0,42.25677,10.58606,49.529,25.52014"
+        d="M76.3,96a25.3,25.3,0,0,1-1.2-8c0-22.1,22-40,52.9-40,23.8,0,42.3,10.6,49.5,25.5"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -62,7 +60,7 @@
         stroke-width="16"
       />
       <path
-        d="M72,168c0,22.09139,25.07205,40,56,40s56-17.90861,56-40c0-23.76634-21.62275-32.97043-45.59723-40.00076"
+        d="M72,168c0,22.1,25.1,40,56,40s56-17.9,56-40c0-23.8-21.6-33-45.6-40"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -72,7 +70,7 @@
     </g>
     <g v-else-if="weight === 'fill'">
       <path
-        d="M224,128a7.99977,7.99977,0,0,1-8,8H175.93091C185.11755,143.11133,192,153.20166,192,168c0,13.33936-7.01465,25.6958-19.75244,34.79395C160.32568,211.31006,144.61133,216,128,216S95.67432,211.31006,83.75244,202.794C71.01465,193.6958,64,181.33936,64,168a8,8,0,0,1,16,0c0,17.3457,21.98145,32,48,32s48-14.6543,48-32c0-14.85425-10.54053-23.58228-38.76587-32H40a8,8,0,0,1,0-16h98.239c.03028-.00049.06055.00024.0907,0H216A7.99977,7.99977,0,0,1,224,128ZM76.33252,104.00488a8.00573,8.00573,0,0,0,7.60254-10.49609A17.42935,17.42935,0,0,1,83.11133,88c0-18.24316,19.29785-32,44.88867-32,19.5,0,36.11768,8.25195,42.33643,21.02246a7.99984,7.99984,0,1,0,14.38476-7.00488C175.70557,51.502,153.97119,40,128,40,93.2876,40,67.11133,60.63574,67.11133,88a33.60555,33.60555,0,0,0,1.62158,10.49707A8.00289,8.00289,0,0,0,76.33252,104.00488Z"
+        d="M224,128a8,8,0,0,1-8,8H175.9c9.2,7.1,16.1,17.2,16.1,32s-7,25.7-19.8,34.8S144.6,216,128,216s-32.3-4.7-44.2-13.2S64,181.3,64,168a8,8,0,0,1,16,0c0,17.3,22,32,48,32s48-14.7,48-32c0-14.9-10.5-23.6-38.8-32H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM76.3,104a6.9,6.9,0,0,0,2.5-.4,8,8,0,0,0,5.1-10.1,19.2,19.2,0,0,1-.8-5.5c0-18.2,19.3-32,44.9-32,19.5,0,36.1,8.3,42.3,21A8.1,8.1,0,0,0,181,80.7,7.9,7.9,0,0,0,184.7,70c-9-18.5-30.7-30-56.7-30C93.3,40,67.1,60.6,67.1,88a36,36,0,0,0,1.6,10.5A8,8,0,0,0,76.3,104Z"
       />
     </g>
     <g v-else-if="weight === 'light'">
@@ -87,24 +85,22 @@
         stroke-linejoin="round"
         stroke-width="12"
       />
-      <g>
-        <path
-          d="M76.334,96.00294A25.48209,25.48209,0,0,1,75.11111,88c0-22.09139,21.96094-40,52.88889-40,23.77865,0,42.25677,10.58606,49.529,25.52014"
-          fill="none"
-          :stroke="color"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="12"
-        />
-        <path
-          d="M72,168c0,22.09139,25.07205,40,56,40s56-17.90861,56-40c0-23.76634-21.62275-32.97043-45.59723-40.00076"
-          fill="none"
-          :stroke="color"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="12"
-        />
-      </g>
+      <path
+        d="M76.3,96a25.3,25.3,0,0,1-1.2-8c0-22.1,22-40,52.9-40,23.8,0,42.3,10.6,49.5,25.5"
+        fill="none"
+        :stroke="color"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="12"
+      />
+      <path
+        d="M72,168c0,22.1,25.1,40,56,40s56-17.9,56-40c0-23.8-21.6-33-45.6-40"
+        fill="none"
+        :stroke="color"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="12"
+      />
     </g>
     <g v-else-if="weight === 'thin'">
       <line
@@ -118,24 +114,22 @@
         stroke-linejoin="round"
         stroke-width="8"
       />
-      <g>
-        <path
-          d="M76.334,96.00294A25.48209,25.48209,0,0,1,75.11111,88c0-22.09139,21.96094-40,52.88889-40,23.77865,0,42.25677,10.58606,49.529,25.52014"
-          fill="none"
-          :stroke="color"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="8"
-        />
-        <path
-          d="M72,168c0,22.09139,25.07205,40,56,40s56-17.90861,56-40c0-23.76634-21.62275-32.97043-45.59723-40.00076"
-          fill="none"
-          :stroke="color"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="8"
-        />
-      </g>
+      <path
+        d="M76.3,96a25.3,25.3,0,0,1-1.2-8c0-22.1,22-40,52.9-40,23.8,0,42.3,10.6,49.5,25.5"
+        fill="none"
+        :stroke="color"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="8"
+      />
+      <path
+        d="M72,168c0,22.1,25.1,40,56,40s56-17.9,56-40c0-23.8-21.6-33-45.6-40"
+        fill="none"
+        :stroke="color"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="8"
+      />
     </g>
     <g v-else-if="weight === 'regular'">
       <line
@@ -149,24 +143,22 @@
         stroke-linejoin="round"
         stroke-width="16"
       />
-      <g>
-        <path
-          d="M76.334,96.00294A25.48209,25.48209,0,0,1,75.11111,88c0-22.09139,21.96094-40,52.88889-40,23.77865,0,42.25677,10.58606,49.529,25.52014"
-          fill="none"
-          :stroke="color"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="16"
-        />
-        <path
-          d="M72,168c0,22.09139,25.07205,40,56,40s56-17.90861,56-40c0-23.76634-21.62275-32.97043-45.59723-40.00076"
-          fill="none"
-          :stroke="color"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="16"
-        />
-      </g>
+      <path
+        d="M76.3,96a25.3,25.3,0,0,1-1.2-8c0-22.1,22-40,52.9-40,23.8,0,42.3,10.6,49.5,25.5"
+        fill="none"
+        :stroke="color"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <path
+        d="M72,168c0,22.1,25.1,40,56,40s56-17.9,56-40c0-23.8-21.6-33-45.6-40"
+        fill="none"
+        :stroke="color"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
     </g>
   </svg>
 </template>
@@ -180,7 +172,7 @@ const component: PhosphorIcon = defineComponent({
   props: PropValidator,
   setup(props: SetupIconProps) {
     return { ...useDefaultPropsFromContext(props) };
-  }
+  },
 });
 export default component;
 </script>

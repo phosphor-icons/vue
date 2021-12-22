@@ -12,7 +12,7 @@
     <slot />
     <g v-if="weight === 'bold'">
       <path
-        d="M191.98242,224,127.975,184l-63.9926,40V48a8,8,0,0,1,8-8h112a8,8,0,0,1,8,8Z"
+        d="M192,224l-64-40L64,224V48a8,8,0,0,1,8-8H184a8,8,0,0,1,8,8Z"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -22,11 +22,11 @@
     </g>
     <g v-else-if="weight === 'duotone'">
       <path
-        d="M191.9707,224l-64.0074-40L63.9707,224V48a8,8,0,0,1,8-8h112a8,8,0,0,1,8,8Z"
+        d="M192,224l-64-40L64,224V48a8,8,0,0,1,8-8H184a8,8,0,0,1,8,8Z"
         opacity="0.2"
       />
       <path
-        d="M191.9707,224l-64.0074-40L63.9707,224V48a8,8,0,0,1,8-8h112a8,8,0,0,1,8,8Z"
+        d="M192,224l-64-40L64,224V48a8,8,0,0,1,8-8H184a8,8,0,0,1,8,8Z"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -36,12 +36,12 @@
     </g>
     <g v-else-if="weight === 'fill'">
       <path
-        d="M183.97656,32h-112a16.01833,16.01833,0,0,0-16,16V224a8.00043,8.00043,0,0,0,12.24024,6.78418l59.75293-37.35059,59.76709,37.35059A8,8,0,0,0,199.97656,224V48A16.01833,16.01833,0,0,0,183.97656,32Z"
+        d="M184,32H72A16,16,0,0,0,56,48V224a8.1,8.1,0,0,0,4.1,7,7.6,7.6,0,0,0,3.9,1,7.9,7.9,0,0,0,4.2-1.2L128,193.4l59.7,37.4a8.3,8.3,0,0,0,8.2.2,8.1,8.1,0,0,0,4.1-7V48A16,16,0,0,0,184,32Z"
       />
     </g>
     <g v-else-if="weight === 'light'">
       <path
-        d="M191.98828,224l-64.0074-40-63.9926,40V48a8,8,0,0,1,8-8h112a8,8,0,0,1,8,8Z"
+        d="M192,224l-64-40L64,224V48a8,8,0,0,1,8-8H184a8,8,0,0,1,8,8Z"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -51,7 +51,7 @@
     </g>
     <g v-else-if="weight === 'thin'">
       <path
-        d="M191.99414,224l-64.0074-40-63.9926,40V48a8,8,0,0,1,8-8h112a8,8,0,0,1,8,8Z"
+        d="M192,224l-64-40L64,224V48a8,8,0,0,1,8-8H184a8,8,0,0,1,8,8Z"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -61,7 +61,7 @@
     </g>
     <g v-else-if="weight === 'regular'">
       <path
-        d="M192,224l-64.0074-40L64,224V48a8,8,0,0,1,8-8H184a8,8,0,0,1,8,8Z"
+        d="M192,224l-64-40L64,224V48a8,8,0,0,1,8-8H184a8,8,0,0,1,8,8Z"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -81,7 +81,7 @@ const component: PhosphorIcon = defineComponent({
   props: PropValidator,
   setup(props: SetupIconProps) {
     return { ...useDefaultPropsFromContext(props) };
-  }
+  },
 });
 export default component;
 </script>

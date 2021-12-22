@@ -16,12 +16,12 @@
         y="56"
         width="208"
         height="144"
-        rx="8.48528"
-        stroke-width="24"
+        rx="8.5"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="24"
       />
       <line
         x1="64"
@@ -80,18 +80,18 @@
       />
     </g>
     <g v-else-if="weight === 'duotone'">
-      <rect x="24" y="56" width="208" height="144" rx="8.48528" opacity="0.2" />
+      <rect x="24" y="56" width="208" height="144" rx="8.5" opacity="0.2" />
       <rect
         x="24"
         y="56"
         width="208"
         height="144"
-        rx="8.48528"
-        stroke-width="16.97056"
+        rx="8.5"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16.97"
       />
       <line
         x1="56"
@@ -151,7 +151,7 @@
     </g>
     <g v-else-if="weight === 'fill'">
       <path
-        d="M223.51465,47.51465H32.48535a16.99025,16.99025,0,0,0-16.9707,16.9707v127.0293a16.99025,16.99025,0,0,0,16.9707,16.9707h191.0293a16.99025,16.99025,0,0,0,16.9707-16.9707V64.48535A16.99025,16.99025,0,0,0,223.51465,47.51465ZM64,168H56a8,8,0,0,1,0-16h8a8,8,0,0,1,0,16Zm96,0H96a8,8,0,0,1,0-16h64a8,8,0,0,1,0,16Zm40,0h-8a8,8,0,0,1,0-16h8a8,8,0,0,1,0,16Zm0-32H56a8,8,0,0,1,0-16H200a8,8,0,0,1,0,16Zm0-32H56a8,8,0,0,1,0-16H200a8,8,0,0,1,0,16Z"
+        d="M223.5,47.5H32.5a17,17,0,0,0-17,17v127a17,17,0,0,0,17,17h191a17,17,0,0,0,17-17V64.5A17,17,0,0,0,223.5,47.5ZM64,168H56a8,8,0,0,1,0-16h8a8,8,0,0,1,0,16Zm96,0H96a8,8,0,0,1,0-16h64a8,8,0,0,1,0,16Zm40,0h-8a8,8,0,0,1,0-16h8a8,8,0,0,1,0,16Zm0-32H56a8,8,0,0,1,0-16H200a8,8,0,0,1,0,16Zm0-32H56a8,8,0,0,1,0-16H200a8,8,0,0,1,0,16Z"
       />
     </g>
     <g v-else-if="weight === 'light'">
@@ -160,12 +160,12 @@
         y="56"
         width="208"
         height="144"
-        rx="8.48528"
-        stroke-width="12"
+        rx="8.5"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="12"
       />
       <line
         x1="56"
@@ -229,12 +229,12 @@
         y="56"
         width="208"
         height="144"
-        rx="8.48528"
-        stroke-width="8"
+        rx="8.5"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="8"
       />
       <line
         x1="56"
@@ -298,12 +298,12 @@
         y="56"
         width="208"
         height="144"
-        rx="8.48528"
-        stroke-width="16.97056"
+        rx="8.5"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16.97"
       />
       <line
         x1="56"
@@ -373,7 +373,7 @@ const component: PhosphorIcon = defineComponent({
   props: PropValidator,
   setup(props: SetupIconProps) {
     return { ...useDefaultPropsFromContext(props) };
-  }
+  },
 });
 export default component;
 </script>

@@ -17,14 +17,25 @@
         width="192"
         height="160"
         rx="8"
-        stroke-width="24"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="24"
       />
       <line
-        x1="204"
+        x1="128"
+        y1="48"
+        x2="128"
+        y2="208"
+        fill="none"
+        :stroke="color"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="24"
+      />
+      <line
+        x1="32"
         y1="88"
         x2="224"
         y2="88"
@@ -35,7 +46,7 @@
         stroke-width="24"
       />
       <line
-        x1="204"
+        x1="32"
         y1="168"
         x2="224"
         y2="168"
@@ -46,9 +57,9 @@
         stroke-width="24"
       />
       <line
-        x1="32"
-        y1="88"
-        x2="52"
+        x1="80"
+        y1="48"
+        x2="80"
         y2="88"
         fill="none"
         :stroke="color"
@@ -57,20 +68,9 @@
         stroke-width="24"
       />
       <line
-        x1="32"
-        y1="168"
-        x2="52"
-        y2="168"
-        fill="none"
-        :stroke="color"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="24"
-      />
-      <line
-        x1="92"
-        y1="88"
-        x2="108"
+        x1="176"
+        y1="48"
+        x2="176"
         y2="88"
         fill="none"
         :stroke="color"
@@ -79,10 +79,10 @@
         stroke-width="24"
       />
       <line
-        x1="92"
+        x1="80"
         y1="168"
-        x2="108"
-        y2="168"
+        x2="80"
+        y2="208"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -90,21 +90,10 @@
         stroke-width="24"
       />
       <line
-        x1="148"
-        y1="88"
-        x2="164"
-        y2="88"
-        fill="none"
-        :stroke="color"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="24"
-      />
-      <line
-        x1="148"
+        x1="176"
         y1="168"
-        x2="164"
-        y2="168"
+        x2="176"
+        y2="208"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -113,21 +102,33 @@
       />
     </g>
     <g v-else-if="weight === 'duotone'">
-      <rect x="32" y="48" width="192" height="160" rx="8" opacity="0.2" />
+      <path d="M32,176H224v24a8,8,0,0,1-8,8H40a8,8,0,0,1-8-8Z" opacity="0.2" />
+      <path d="M224,80H32V56a8,8,0,0,1,8-8H216a8,8,0,0,1,8,8Z" opacity="0.2" />
       <rect
         x="32"
         y="48"
         width="192"
         height="160"
         rx="8"
-        stroke-width="16"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
       <line
-        x1="204"
+        x1="128"
+        y1="48"
+        x2="128"
+        y2="208"
+        fill="none"
+        :stroke="color"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <line
+        x1="32"
         y1="80"
         x2="224"
         y2="80"
@@ -138,7 +139,7 @@
         stroke-width="16"
       />
       <line
-        x1="204"
+        x1="32"
         y1="176"
         x2="224"
         y2="176"
@@ -149,9 +150,9 @@
         stroke-width="16"
       />
       <line
-        x1="32"
-        y1="80"
-        x2="52"
+        x1="80"
+        y1="48"
+        x2="80"
         y2="80"
         fill="none"
         :stroke="color"
@@ -160,20 +161,9 @@
         stroke-width="16"
       />
       <line
-        x1="32"
-        y1="176"
-        x2="52"
-        y2="176"
-        fill="none"
-        :stroke="color"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="16"
-      />
-      <line
-        x1="92"
-        y1="80"
-        x2="108"
+        x1="176"
+        y1="48"
+        x2="176"
         y2="80"
         fill="none"
         :stroke="color"
@@ -182,10 +172,10 @@
         stroke-width="16"
       />
       <line
-        x1="92"
+        x1="80"
         y1="176"
-        x2="108"
-        y2="176"
+        x2="80"
+        y2="208"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -193,21 +183,10 @@
         stroke-width="16"
       />
       <line
-        x1="148"
-        y1="80"
-        x2="164"
-        y2="80"
-        fill="none"
-        :stroke="color"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="16"
-      />
-      <line
-        x1="148"
+        x1="176"
         y1="176"
-        x2="164"
-        y2="176"
+        x2="176"
+        y2="208"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -217,7 +196,7 @@
     </g>
     <g v-else-if="weight === 'fill'">
       <path
-        d="M208,64h24V56a16.01833,16.01833,0,0,0-16-16H40A16.01833,16.01833,0,0,0,24,56v8H48a8,8,0,0,1,0,16H24v96H48a8,8,0,0,1,0,16H24v8a16.01833,16.01833,0,0,0,16,16H216a16.01833,16.01833,0,0,0,16-16v-8H208a8,8,0,0,1,0-16h24V80H208a8,8,0,0,1,0-16ZM108,192H88a8,8,0,0,1,0-16h20a8,8,0,0,1,0,16Zm0-112H88a8,8,0,0,1,0-16h20a8,8,0,0,1,0,16Zm60,112H148a8,8,0,0,1,0-16h20a8,8,0,0,1,0,16Zm0-112H148a8,8,0,0,1,0-16h20a8,8,0,0,1,0,16Z"
+        d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40ZM184,56h32V72H184Zm-48,0h32V72H136ZM88,56h32V72H88ZM72,200H40V184H72ZM72,72H40V56H72ZM88,200V185.3h32V200Zm48,0V185.3h32V200Zm80,0H184V185.3h9.2V184H216v16Z"
       />
     </g>
     <g v-else-if="weight === 'light'">
@@ -227,14 +206,25 @@
         width="192"
         height="160"
         rx="8"
-        stroke-width="12"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="12"
       />
       <line
-        x1="204"
+        x1="128"
+        y1="48"
+        x2="128"
+        y2="208"
+        fill="none"
+        :stroke="color"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="12"
+      />
+      <line
+        x1="32"
         y1="80"
         x2="224"
         y2="80"
@@ -245,7 +235,7 @@
         stroke-width="12"
       />
       <line
-        x1="204"
+        x1="32"
         y1="176"
         x2="224"
         y2="176"
@@ -256,9 +246,9 @@
         stroke-width="12"
       />
       <line
-        x1="32"
-        y1="80"
-        x2="52"
+        x1="80"
+        y1="48"
+        x2="80"
         y2="80"
         fill="none"
         :stroke="color"
@@ -267,20 +257,9 @@
         stroke-width="12"
       />
       <line
-        x1="32"
-        y1="176"
-        x2="52"
-        y2="176"
-        fill="none"
-        :stroke="color"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="12"
-      />
-      <line
-        x1="92"
-        y1="80"
-        x2="108"
+        x1="176"
+        y1="48"
+        x2="176"
         y2="80"
         fill="none"
         :stroke="color"
@@ -289,10 +268,10 @@
         stroke-width="12"
       />
       <line
-        x1="92"
+        x1="80"
         y1="176"
-        x2="108"
-        y2="176"
+        x2="80"
+        y2="208"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -300,21 +279,10 @@
         stroke-width="12"
       />
       <line
-        x1="148"
-        y1="80"
-        x2="164"
-        y2="80"
-        fill="none"
-        :stroke="color"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="12"
-      />
-      <line
-        x1="148"
+        x1="176"
         y1="176"
-        x2="164"
-        y2="176"
+        x2="176"
+        y2="208"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -329,14 +297,25 @@
         width="192"
         height="160"
         rx="8"
-        stroke-width="8"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="8"
       />
       <line
-        x1="204"
+        x1="128"
+        y1="48"
+        x2="128"
+        y2="208"
+        fill="none"
+        :stroke="color"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="8"
+      />
+      <line
+        x1="32"
         y1="80"
         x2="224"
         y2="80"
@@ -347,7 +326,7 @@
         stroke-width="8"
       />
       <line
-        x1="204"
+        x1="32"
         y1="176"
         x2="224"
         y2="176"
@@ -358,9 +337,9 @@
         stroke-width="8"
       />
       <line
-        x1="32"
-        y1="80"
-        x2="52"
+        x1="80"
+        y1="48"
+        x2="80"
         y2="80"
         fill="none"
         :stroke="color"
@@ -369,20 +348,9 @@
         stroke-width="8"
       />
       <line
-        x1="32"
-        y1="176"
-        x2="52"
-        y2="176"
-        fill="none"
-        :stroke="color"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="8"
-      />
-      <line
-        x1="92"
-        y1="80"
-        x2="108"
+        x1="176"
+        y1="48"
+        x2="176"
         y2="80"
         fill="none"
         :stroke="color"
@@ -391,10 +359,10 @@
         stroke-width="8"
       />
       <line
-        x1="92"
+        x1="80"
         y1="176"
-        x2="108"
-        y2="176"
+        x2="80"
+        y2="208"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -402,21 +370,10 @@
         stroke-width="8"
       />
       <line
-        x1="148"
-        y1="80"
-        x2="164"
-        y2="80"
-        fill="none"
-        :stroke="color"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="8"
-      />
-      <line
-        x1="148"
+        x1="176"
         y1="176"
-        x2="164"
-        y2="176"
+        x2="176"
+        y2="208"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -431,14 +388,25 @@
         width="192"
         height="160"
         rx="8"
-        stroke-width="16"
+        fill="none"
         :stroke="color"
         stroke-linecap="round"
         stroke-linejoin="round"
-        fill="none"
+        stroke-width="16"
       />
       <line
-        x1="204"
+        x1="128"
+        y1="48"
+        x2="128"
+        y2="208"
+        fill="none"
+        :stroke="color"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="16"
+      />
+      <line
+        x1="32"
         y1="80"
         x2="224"
         y2="80"
@@ -449,7 +417,7 @@
         stroke-width="16"
       />
       <line
-        x1="204"
+        x1="32"
         y1="176"
         x2="224"
         y2="176"
@@ -460,9 +428,9 @@
         stroke-width="16"
       />
       <line
-        x1="32"
-        y1="80"
-        x2="52"
+        x1="80"
+        y1="48"
+        x2="80"
         y2="80"
         fill="none"
         :stroke="color"
@@ -471,20 +439,9 @@
         stroke-width="16"
       />
       <line
-        x1="32"
-        y1="176"
-        x2="52"
-        y2="176"
-        fill="none"
-        :stroke="color"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="16"
-      />
-      <line
-        x1="92"
-        y1="80"
-        x2="108"
+        x1="176"
+        y1="48"
+        x2="176"
         y2="80"
         fill="none"
         :stroke="color"
@@ -493,10 +450,10 @@
         stroke-width="16"
       />
       <line
-        x1="92"
+        x1="80"
         y1="176"
-        x2="108"
-        y2="176"
+        x2="80"
+        y2="208"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -504,21 +461,10 @@
         stroke-width="16"
       />
       <line
-        x1="148"
-        y1="80"
-        x2="164"
-        y2="80"
-        fill="none"
-        :stroke="color"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="16"
-      />
-      <line
-        x1="148"
+        x1="176"
         y1="176"
-        x2="164"
-        y2="176"
+        x2="176"
+        y2="208"
         fill="none"
         :stroke="color"
         stroke-linecap="round"
@@ -538,7 +484,7 @@ const component: PhosphorIcon = defineComponent({
   props: PropValidator,
   setup(props: SetupIconProps) {
     return { ...useDefaultPropsFromContext(props) };
-  }
+  },
 });
 export default component;
 </script>

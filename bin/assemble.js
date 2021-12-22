@@ -12,13 +12,13 @@ function readFile(folder, pathname, weight) {
   const file = fs.readFileSync(pathname);
   icons[folder][weight] = file
     .toString("utf-8")
-    .replace(/^.*<\?xml.*/g, "")
-    .replace(/<svg.*/g, "")
-    .replace(/<\/svg>\n/g, "")
-    .replace(/<title.*/g, "")
+    .replace(/^.*<\?xml.*?\>/g, "")
+    .replace(/<svg.*?>/g, "")
+    .replace(/<\/svg>/g, "")
+    .replace(/<title.*?/, "")
     .replace(/stroke="#000"/g, ':stroke="color"')
     .replace(
-      /<rect width="25[\d,\.]+" height="25[\d,\.]+" fill="none".*\/>/g,
+      /<rect width="25[\d,\.]+" height="25[\d,\.]+" fill="none".*?\/>/g,
       ""
     );
 }
@@ -221,11 +221,11 @@ type PhosphorIcon = DefineComponent<
 `;
 
   for (let key in icons) {
-      const name = key
-        .split("-")
-        .map((substr) => substr.replace(/^\w/, (c) => c.toUpperCase()))
-        .join("");
-      typesString += `\
+    const name = key
+      .split("-")
+      .map((substr) => substr.replace(/^\w/, (c) => c.toUpperCase()))
+      .join("");
+    typesString += `\
 export const Ph${name}: PhosphorIcon;
 `;
   }
@@ -239,7 +239,7 @@ export const Ph${name}: PhosphorIcon;
     console.group();
     console.error(err);
     console.groupEnd();
-  };
+  }
 }
 
 readFiles();
