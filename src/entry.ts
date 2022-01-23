@@ -1,48 +1,17 @@
-import _Vue, { PluginFunction } from "vue";
+// iife/cjs usage extends esm default export - so import it all
+import plugin, * as components from '@/entry.esm';
 
-// Import vue components
-import * as components from "@/lib/index";
-
-// Define typescript interfaces for autoinstaller
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-interface InstallFunction extends PluginFunction<any> {
-  installed?: boolean;
-}
-
-// install function executed by Vue.use()
-const install: InstallFunction = function installPhosphorVueTs(
-  Vue: typeof _Vue
-) {
-  if (install.installed) return;
-  install.installed = true;
-  Object.entries(components).forEach(([componentName, component]) => {
-    Vue.component(componentName, component);
-  });
-};
-
-// Create module definition for Vue.use()
-const plugin = {
-  install
-};
-
-// To auto-install on non-es builds, when vue is found
-// eslint-disable-next-line no-redeclare
-/* global window, global */
-if ("false" === process.env.ES_BUILD) {
-  let GlobalVue = null;
-  if (typeof window !== "undefined") {
-    GlobalVue = window.Vue;
-  } else if (typeof global !== "undefined") {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    GlobalVue = (global as any).Vue;
+// Attach named exports directly to plugin. IIFE/CJS will
+// only expose one global var, with component exports exposed as properties of
+// that global var (eg. plugin.component)
+type NamedExports = Exclude<typeof components, 'default'>;
+type ExtendedPlugin = typeof plugin & NamedExports;
+Object.entries(components).forEach(([componentName, component]) => {
+  if (componentName !== 'default') {
+    const key = componentName as Exclude<keyof NamedExports, 'default'>;
+    const val = component as Exclude<ExtendedPlugin, typeof plugin>;
+    (plugin as ExtendedPlugin)[key] = val;
   }
-  if (GlobalVue) {
-    (GlobalVue as typeof _Vue).use(plugin);
-  }
-}
-// Default export is library as a whole, registered via Vue.use()
+});
+
 export default plugin;
-
-// To allow individual component use, export components
-// each can be registered via Vue.component()
-export * from "@/lib/index";

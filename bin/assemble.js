@@ -66,7 +66,7 @@ function generateComponents() {
   let fails = 0;
 
   if (fs.existsSync(COMPONENTS_PATH)) {
-    fs.rmdirSync(COMPONENTS_PATH, { recursive: true });
+    fs.rmSync(COMPONENTS_PATH, { recursive: true });
   }
   fs.mkdirSync(COMPONENTS_PATH);
 
@@ -121,9 +121,10 @@ import {
   IconProps,
   PropValidator,
   IconContext,
-  ContextGetter,
-} from "@/lib/types";
-export default Vue.extend<{}, {}, IconComputed, IconProps>({
+  ContextGetter
+} from "../types";
+
+export default /*#__PURE__*/Vue.extend<{}, {}, IconComputed, IconProps>({
   name: "Ph${name}",
   props: PropValidator,
   inject: ContextGetter,
@@ -187,7 +188,7 @@ function generateExports() {
       .map((substr) => substr.replace(/^\w/, (c) => c.toUpperCase()))
       .join("");
     indexString += `\
-export { default as Ph${name} } from "../components/Ph${name}.vue";
+export { default as Ph${name} } from "./Ph${name}.vue";
 `;
   }
   try {

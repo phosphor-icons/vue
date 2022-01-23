@@ -1,35 +1,44 @@
 {
-  "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
-    "strict": true,
-    "declaration": true,
-    "declarationDir": "dist",
-    "rootDirs": [
-      "./src"
-    ] /* List of root folders whose combined content represents the structure of the project at runtime. */,
-    "typeRoots": [
-      "./src/lib",
-      "./src/components"
-      //   "node_modules/@types"
-    ] /* List of folders to include type definitions from. */,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "importHelpers": true,
-    "moduleResolution": "node",
-    "experimentalDecorators": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "sourceMap": true,
-    "baseUrl": ".",
-    "types": [
-      "node",
-      "vue"
-    ] /* Type declaration files to be included in compilation. */,
-    "paths": {
-      "@/*": ["src/*"]
+    "compilerOptions": {
+        "target": "es6",
+        "module": "es6",
+        "strict": true,
+        "declaration": true,
+        "declarationDir": "dist/types",
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "importHelpers": true,
+        "moduleResolution": "node",
+        "experimentalDecorators": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "sourceMap": true,
+        "baseUrl": ".",
+        "newLine": "lf",
+        "types": [
+            "node",
+            "vue"
+        ],
+        "paths": {
+            "@/*": [
+                "src/*"
+            ]
+        },
+        "plugins": [
+            {
+                "transform":"@zerollup/ts-transform-paths",
+                "exclude": ["*"]
+            }
+        ],
+        "lib": [
+            "esnext",
+            "dom",
+            "dom.iterable",
+            "scripthost"
+        ]
     },
-    "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
-  },
-  "exclude": ["node_modules", "dist"]
+    "exclude": [
+        "node_modules",
+        "dist"
+    ]
 }
