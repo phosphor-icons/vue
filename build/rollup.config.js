@@ -71,8 +71,9 @@ if (!argv.format || argv.format === "es") {
     ...baseConfig,
     external,
     output: {
-      file: "dist/phosphor-vue.esm.js",
-      format: "esm",
+      dir: "dist/esm",
+      format: "es",
+      preserveModules: true,
       exports: "named",
     },
     plugins: [
@@ -105,10 +106,11 @@ if (!argv.format || argv.format === "cjs") {
     external,
     output: {
       compact: true,
-      file: "dist/phosphor-vue.ssr.js",
       format: "cjs",
       name: "PhosphorVue",
       exports: "named",
+      dir: "dist/cjs",
+      preserveModules: true,
       globals,
     },
     plugins: [
