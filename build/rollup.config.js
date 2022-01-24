@@ -131,7 +131,7 @@ if (!argv.format || argv.format === "cjs") {
       file: "dist/phosphor-vue.ssr.js",
       format: "cjs",
       name: "PhosphorVue",
-      exports: "auto",
+      exports: "named",
       globals,
     },
     plugins: [
@@ -160,7 +160,7 @@ if (!argv.format || argv.format === "iife") {
       file: "dist/phosphor-vue.min.js",
       format: "iife",
       name: "PhosphorVue",
-      exports: "auto",
+      exports: "named",
       globals,
     },
     plugins: [
