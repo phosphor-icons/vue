@@ -29,10 +29,9 @@ const baseConfig = {
     preVue: [
       alias({
         resolve: [".js", ".jsx", ".ts", ".tsx", ".vue"],
-        entries:
-          {
-            "@": path.resolve(projectRoot, "src"),
-          },
+        entries: {
+          "@": path.resolve(projectRoot, "src"),
+        },
       }),
     ],
     replace: {
