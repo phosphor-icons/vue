@@ -5,7 +5,7 @@ import * as components from "@/lib-components/index";
 
 // install function executed by Vue.use()
 const install: PluginFunction<any> = function installPhosphorVue(
-  Vue: typeof _Vue,
+  Vue: typeof _Vue
 ) {
   Object.entries(components).forEach(([componentName, component]) => {
     Vue.component(componentName, component);

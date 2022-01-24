@@ -166,7 +166,6 @@ import {
   IconContext,
   ContextGetter,
 } from "../types";
-
 export default /*#__PURE__*/ Vue.extend<{}, {}, IconComputed, IconProps>({
   name: "PhUmbrella",
   props: PropValidator,
