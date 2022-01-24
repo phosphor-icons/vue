@@ -11,74 +11,12 @@
     v-on="$listeners"
   >
     <slot />
-    <g v-if="displayWeight === 'bold'">
-      <line
-        x1="40"
-        y1="128"
-        x2="216"
-        y2="128"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="24"
-      />
-    </g>
-    <g v-else-if="displayWeight === 'duotone'">
-      <line
-        x1="40"
-        y1="128"
-        x2="216"
-        y2="128"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="16"
-      />
-    </g>
-    <g v-else-if="displayWeight === 'fill'">
-      <path d="M216,136H40a8,8,0,0,1,0-16H216a8,8,0,0,1,0,16Z" />
-    </g>
-    <g v-else-if="displayWeight === 'light'">
-      <line
-        x1="40"
-        y1="128"
-        x2="216"
-        y2="128"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="12"
-      />
-    </g>
-    <g v-else-if="displayWeight === 'thin'">
-      <line
-        x1="40"
-        y1="128"
-        x2="216"
-        y2="128"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="8"
-      />
-    </g>
-    <g v-else-if="displayWeight === 'regular'">
-      <line
-        x1="40"
-        y1="128"
-        x2="216"
-        y2="128"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="16"
-      />
-    </g>
+    <g v-if="displayWeight === 'bold'"><line x1="40" y1="128" x2="216" y2="128" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/></g>
+    <g v-else-if="displayWeight === 'duotone'"><line x1="40" y1="128" x2="216" y2="128" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></g>
+    <g v-else-if="displayWeight === 'fill'"><path d="M216,136H40a8,8,0,0,1,0-16H216a8,8,0,0,1,0,16Z"/></g>
+    <g v-else-if="displayWeight === 'light'"><line x1="40" y1="128" x2="216" y2="128" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/></g>
+    <g v-else-if="displayWeight === 'thin'"><line x1="40" y1="128" x2="216" y2="128" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/></g>
+    <g v-else-if="displayWeight === 'regular'"><line x1="40" y1="128" x2="216" y2="128" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></g>
   </svg>
 </template>
 
@@ -89,9 +27,9 @@ import {
   IconProps,
   PropValidator,
   IconContext,
-  ContextGetter,
+  ContextGetter
 } from "../types";
-export default /*#__PURE__*/ Vue.extend<{}, {}, IconComputed, IconProps>({
+export default /*#__PURE__*/Vue.extend<{}, {}, IconComputed, IconProps>({
   name: "PhMinus",
   props: PropValidator,
   inject: ContextGetter,
@@ -111,7 +49,7 @@ export default /*#__PURE__*/ Vue.extend<{}, {}, IconComputed, IconProps>({
     displayMirrored() {
       const { mirrored, contextMirrored } = this as IconProps & IconContext;
       return mirrored ?? contextMirrored ? "scale(-1, 1)" : undefined;
-    },
-  },
+    }
+  }
 });
 </script>

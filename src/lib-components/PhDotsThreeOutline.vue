@@ -11,168 +11,12 @@
     v-on="$listeners"
   >
     <slot />
-    <g v-if="displayWeight === 'bold'">
-      <circle
-        cx="128"
-        cy="128"
-        r="20"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="24"
-      />
-      <circle
-        cx="208"
-        cy="128"
-        r="20"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="24"
-      />
-      <circle
-        cx="48"
-        cy="128"
-        r="20"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="24"
-      />
-    </g>
-    <g v-else-if="displayWeight === 'duotone'">
-      <circle cx="128" cy="128" r="24" opacity="0.1" />
-      <circle cx="48" cy="128" r="24" opacity="0.1" />
-      <circle cx="208" cy="128" r="24" opacity="0.1" />
-      <circle
-        cx="128"
-        cy="128"
-        r="24"
-        fill="none"
-        :stroke="displayColor"
-        stroke-miterlimit="10"
-        stroke-width="16"
-      />
-      <circle
-        cx="48"
-        cy="128"
-        r="24"
-        fill="none"
-        :stroke="displayColor"
-        stroke-miterlimit="10"
-        stroke-width="16"
-      />
-      <circle
-        cx="208"
-        cy="128"
-        r="24"
-        fill="none"
-        :stroke="displayColor"
-        stroke-miterlimit="10"
-        stroke-width="16"
-      />
-    </g>
-    <g v-else-if="displayWeight === 'fill'">
-      <path
-        d="M156,128a28,28,0,1,1-28-28A28.1,28.1,0,0,1,156,128ZM48,100a28,28,0,1,0,28,28A28.1,28.1,0,0,0,48,100Zm160,0a28,28,0,1,0,28,28A28.1,28.1,0,0,0,208,100Z"
-      />
-    </g>
-    <g v-else-if="displayWeight === 'light'">
-      <circle
-        cx="128"
-        cy="128"
-        r="24"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="12"
-      />
-      <circle
-        cx="48"
-        cy="128"
-        r="24"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="12"
-      />
-      <circle
-        cx="208"
-        cy="128"
-        r="24"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="12"
-      />
-    </g>
-    <g v-else-if="displayWeight === 'thin'">
-      <circle
-        cx="128"
-        cy="128"
-        r="24"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="8"
-      />
-      <circle
-        cx="48"
-        cy="128"
-        r="24"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="8"
-      />
-      <circle
-        cx="208"
-        cy="128"
-        r="24"
-        fill="none"
-        :stroke="displayColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="8"
-      />
-    </g>
-    <g v-else-if="displayWeight === 'regular'">
-      <circle
-        cx="128"
-        cy="128"
-        r="24"
-        fill="none"
-        :stroke="displayColor"
-        stroke-miterlimit="10"
-        stroke-width="16"
-      />
-      <circle
-        cx="48"
-        cy="128"
-        r="24"
-        fill="none"
-        :stroke="displayColor"
-        stroke-miterlimit="10"
-        stroke-width="16"
-      />
-      <circle
-        cx="208"
-        cy="128"
-        r="24"
-        fill="none"
-        :stroke="displayColor"
-        stroke-miterlimit="10"
-        stroke-width="16"
-      />
-    </g>
+    <g v-if="displayWeight === 'bold'"><circle cx="128" cy="128" r="20" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/><circle cx="208" cy="128" r="20" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/><circle cx="48" cy="128" r="20" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/></g>
+    <g v-else-if="displayWeight === 'duotone'"><circle cx="128" cy="128" r="24" opacity="0.1"/><circle cx="48" cy="128" r="24" opacity="0.1"/><circle cx="208" cy="128" r="24" opacity="0.1"/><circle cx="128" cy="128" r="24" fill="none" :stroke="displayColor" stroke-miterlimit="10" stroke-width="16"/><circle cx="48" cy="128" r="24" fill="none" :stroke="displayColor" stroke-miterlimit="10" stroke-width="16"/><circle cx="208" cy="128" r="24" fill="none" :stroke="displayColor" stroke-miterlimit="10" stroke-width="16"/></g>
+    <g v-else-if="displayWeight === 'fill'"><path d="M156,128a28,28,0,1,1-28-28A28.1,28.1,0,0,1,156,128ZM48,100a28,28,0,1,0,28,28A28.1,28.1,0,0,0,48,100Zm160,0a28,28,0,1,0,28,28A28.1,28.1,0,0,0,208,100Z"/></g>
+    <g v-else-if="displayWeight === 'light'"><circle cx="128" cy="128" r="24" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/><circle cx="48" cy="128" r="24" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/><circle cx="208" cy="128" r="24" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/></g>
+    <g v-else-if="displayWeight === 'thin'"><circle cx="128" cy="128" r="24" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/><circle cx="48" cy="128" r="24" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/><circle cx="208" cy="128" r="24" fill="none" :stroke="displayColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/></g>
+    <g v-else-if="displayWeight === 'regular'"><circle cx="128" cy="128" r="24" fill="none" :stroke="displayColor" stroke-miterlimit="10" stroke-width="16"/><circle cx="48" cy="128" r="24" fill="none" :stroke="displayColor" stroke-miterlimit="10" stroke-width="16"/><circle cx="208" cy="128" r="24" fill="none" :stroke="displayColor" stroke-miterlimit="10" stroke-width="16"/></g>
   </svg>
 </template>
 
@@ -183,9 +27,9 @@ import {
   IconProps,
   PropValidator,
   IconContext,
-  ContextGetter,
+  ContextGetter
 } from "../types";
-export default /*#__PURE__*/ Vue.extend<{}, {}, IconComputed, IconProps>({
+export default /*#__PURE__*/Vue.extend<{}, {}, IconComputed, IconProps>({
   name: "PhDotsThreeOutline",
   props: PropValidator,
   inject: ContextGetter,
@@ -205,7 +49,7 @@ export default /*#__PURE__*/ Vue.extend<{}, {}, IconComputed, IconProps>({
     displayMirrored() {
       const { mirrored, contextMirrored } = this as IconProps & IconContext;
       return mirrored ?? contextMirrored ? "scale(-1, 1)" : undefined;
-    },
-  },
+    }
+  }
 });
 </script>

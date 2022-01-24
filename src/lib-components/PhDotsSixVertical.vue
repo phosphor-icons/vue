@@ -11,51 +11,12 @@
     v-on="$listeners"
   >
     <slot />
-    <g v-if="displayWeight === 'bold'">
-      <circle cx="92" cy="60" r="16" />
-      <circle cx="164" cy="60" r="16" />
-      <circle cx="92" cy="128" r="16" />
-      <circle cx="164" cy="128" r="16" />
-      <circle cx="92" cy="196" r="16" />
-      <circle cx="164" cy="196" r="16" />
-    </g>
-    <g v-else-if="displayWeight === 'duotone'">
-      <circle cx="92" cy="60" r="12" />
-      <circle cx="164" cy="60" r="12" />
-      <circle cx="92" cy="128" r="12" />
-      <circle cx="164" cy="128" r="12" />
-      <circle cx="92" cy="196" r="12" />
-      <circle cx="164" cy="196" r="12" />
-    </g>
-    <g v-else-if="displayWeight === 'fill'">
-      <path
-        d="M104,60A12,12,0,1,1,92,48,12,12,0,0,1,104,60Zm60,12a12,12,0,1,0-12-12A12,12,0,0,0,164,72ZM92,116a12,12,0,1,0,12,12A12,12,0,0,0,92,116Zm72,0a12,12,0,1,0,12,12A12,12,0,0,0,164,116ZM92,184a12,12,0,1,0,12,12A12,12,0,0,0,92,184Zm72,0a12,12,0,1,0,12,12A12,12,0,0,0,164,184Z"
-      />
-    </g>
-    <g v-else-if="displayWeight === 'light'">
-      <circle cx="92" cy="60" r="10" />
-      <circle cx="164" cy="60" r="10" />
-      <circle cx="92" cy="128" r="10" />
-      <circle cx="164" cy="128" r="10" />
-      <circle cx="92" cy="196" r="10" />
-      <circle cx="164" cy="196" r="10" />
-    </g>
-    <g v-else-if="displayWeight === 'thin'">
-      <circle cx="92" cy="60" r="8" />
-      <circle cx="164" cy="60" r="8" />
-      <circle cx="92" cy="128" r="8" />
-      <circle cx="164" cy="128" r="8" />
-      <circle cx="92" cy="196" r="8" />
-      <circle cx="164" cy="196" r="8" />
-    </g>
-    <g v-else-if="displayWeight === 'regular'">
-      <circle cx="92" cy="60" r="12" />
-      <circle cx="164" cy="60" r="12" />
-      <circle cx="92" cy="128" r="12" />
-      <circle cx="164" cy="128" r="12" />
-      <circle cx="92" cy="196" r="12" />
-      <circle cx="164" cy="196" r="12" />
-    </g>
+    <g v-if="displayWeight === 'bold'"><circle cx="92" cy="60" r="16"/><circle cx="164" cy="60" r="16"/><circle cx="92" cy="128" r="16"/><circle cx="164" cy="128" r="16"/><circle cx="92" cy="196" r="16"/><circle cx="164" cy="196" r="16"/></g>
+    <g v-else-if="displayWeight === 'duotone'"><circle cx="92" cy="60" r="12"/><circle cx="164" cy="60" r="12"/><circle cx="92" cy="128" r="12"/><circle cx="164" cy="128" r="12"/><circle cx="92" cy="196" r="12"/><circle cx="164" cy="196" r="12"/></g>
+    <g v-else-if="displayWeight === 'fill'"><path d="M104,60A12,12,0,1,1,92,48,12,12,0,0,1,104,60Zm60,12a12,12,0,1,0-12-12A12,12,0,0,0,164,72ZM92,116a12,12,0,1,0,12,12A12,12,0,0,0,92,116Zm72,0a12,12,0,1,0,12,12A12,12,0,0,0,164,116ZM92,184a12,12,0,1,0,12,12A12,12,0,0,0,92,184Zm72,0a12,12,0,1,0,12,12A12,12,0,0,0,164,184Z"/></g>
+    <g v-else-if="displayWeight === 'light'"><circle cx="92" cy="60" r="10"/><circle cx="164" cy="60" r="10"/><circle cx="92" cy="128" r="10"/><circle cx="164" cy="128" r="10"/><circle cx="92" cy="196" r="10"/><circle cx="164" cy="196" r="10"/></g>
+    <g v-else-if="displayWeight === 'thin'"><circle cx="92" cy="60" r="8"/><circle cx="164" cy="60" r="8"/><circle cx="92" cy="128" r="8"/><circle cx="164" cy="128" r="8"/><circle cx="92" cy="196" r="8"/><circle cx="164" cy="196" r="8"/></g>
+    <g v-else-if="displayWeight === 'regular'"><circle cx="92" cy="60" r="12"/><circle cx="164" cy="60" r="12"/><circle cx="92" cy="128" r="12"/><circle cx="164" cy="128" r="12"/><circle cx="92" cy="196" r="12"/><circle cx="164" cy="196" r="12"/></g>
   </svg>
 </template>
 
@@ -66,9 +27,9 @@ import {
   IconProps,
   PropValidator,
   IconContext,
-  ContextGetter,
+  ContextGetter
 } from "../types";
-export default /*#__PURE__*/ Vue.extend<{}, {}, IconComputed, IconProps>({
+export default /*#__PURE__*/Vue.extend<{}, {}, IconComputed, IconProps>({
   name: "PhDotsSixVertical",
   props: PropValidator,
   inject: ContextGetter,
@@ -88,7 +49,7 @@ export default /*#__PURE__*/ Vue.extend<{}, {}, IconComputed, IconProps>({
     displayMirrored() {
       const { mirrored, contextMirrored } = this as IconProps & IconContext;
       return mirrored ?? contextMirrored ? "scale(-1, 1)" : undefined;
-    },
-  },
+    }
+  }
 });
 </script>
