@@ -33,7 +33,10 @@ function readFiles() {
     const files = fs.readdirSync(path.join(ASSETS_PATH, folder));
     files.forEach((filename) => {
       const filepath = path.join(ASSETS_PATH, folder, filename);
-      const weight = filename.split(".svg")[0].split("-").slice(-1)[0];
+      const weight = filename
+      .split(".svg")[0]
+      .split("-")
+      .slice(-1)[0];
       switch (weight) {
         case "thin":
         case "light":
@@ -92,7 +95,7 @@ function generateComponents() {
     if (!checkFiles(icon)) {
       fails += 1;
       console.error(
-        `${chalk.inverse.red(" FAIL ")} Ph${name} is missing weights`,
+        `${chalk.inverse.red(" FAIL ")} Ph${name} is missing weights`
       );
       console.group();
       console.error(weights.filter((w) => !Object.keys(icon).includes(w)));
@@ -120,7 +123,6 @@ import {
   IconContext,
   ContextGetter
 } from "../types";
-
 export default /*#__PURE__*/Vue.extend<{}, {}, IconComputed, IconProps>({
   name: "Ph${name}",
   props: PropValidator,
@@ -151,8 +153,8 @@ export default /*#__PURE__*/Vue.extend<{}, {}, IconComputed, IconProps>({
         path.join(COMPONENTS_PATH, `Ph${name}.vue`),
         componentString,
         {
-          flag: "w",
-        },
+          flag: "w"
+        }
       );
       console.log(`${chalk.inverse.green(" DONE ")} Ph${name}`);
       passes += 1;
@@ -169,7 +171,7 @@ export default /*#__PURE__*/Vue.extend<{}, {}, IconComputed, IconProps>({
   // TODO: implement logging with async writeFile()
   if (passes > 0)
     console.log(
-      chalk.green(`${passes} component${passes > 1 ? "s" : ""} generated`),
+      chalk.green(`${passes} component${passes > 1 ? "s" : ""} generated`)
     );
   if (fails > 0)
     console.log(chalk.red(`${fails} component${fails > 1 ? "s" : ""} failed`));
@@ -190,7 +192,7 @@ export { default as Ph${name} } from "./Ph${name}.vue";
   }
   try {
     fs.writeFileSync(INDEX_PATH, indexString, {
-      flag: "w",
+      flag: "w"
     });
     console.log(chalk.green("Export success"));
   } catch (err) {
