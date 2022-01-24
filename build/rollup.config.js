@@ -1,46 +1,48 @@
 // rollup.config.js
-import fs from 'fs';
-import path from 'path';
-import vue from 'rollup-plugin-vue';
-import alias from '@rollup/plugin-alias';
-import commonjs from '@rollup/plugin-commonjs';
-import resolve from '@rollup/plugin-node-resolve';
-import replace from '@rollup/plugin-replace';
-import babel from '@rollup/plugin-babel';
-import { terser } from 'rollup-plugin-terser';
-import ttypescript from 'ttypescript';
-import typescript from 'rollup-plugin-typescript2';
-import minimist from 'minimist';
+import fs from "fs";
+import path from "path";
+import vue from "rollup-plugin-vue";
+import alias from "@rollup/plugin-alias";
+import commonjs from "@rollup/plugin-commonjs";
+import resolve from "@rollup/plugin-node-resolve";
+import replace from "@rollup/plugin-replace";
+import babel from "@rollup/plugin-babel";
+import { terser } from "rollup-plugin-terser";
+import ttypescript from "ttypescript";
+import typescript from "rollup-plugin-typescript2";
+import minimist from "minimist";
 
 // Get browserslist config and remove ie from es build targets
-const esbrowserslist = fs.readFileSync('./.browserslistrc')
+const esbrowserslist = fs
+  .readFileSync("./.browserslistrc")
   .toString()
-  .split('\n')
-  .filter((entry) => entry && entry.substring(0, 2) !== 'ie');
+  .split("\n")
+  .filter((entry) => entry && entry.substring(0, 2) !== "ie");
 
 // Extract babel preset-env config, to combine with esbrowserslist
-const babelPresetEnvConfig = require('../babel.config')
-  .presets.filter((entry) => entry[0] === '@babel/preset-env')[0][1];
+const babelPresetEnvConfig = require("../babel.config").presets.filter(
+  (entry) => entry[0] === "@babel/preset-env"
+)[0][1];
 
 const argv = minimist(process.argv.slice(2));
 
-const projectRoot = path.resolve(__dirname, '..');
+const projectRoot = path.resolve(__dirname, "..");
 
 const baseConfig = {
-  input: 'src/entry.ts',
+  input: "src/entry.ts",
   plugins: {
     preVue: [
       alias({
         entries: [
           {
-            find: '@',
-            replacement: `${path.resolve(projectRoot, 'src')}`,
+            find: "@",
+            replacement: `${path.resolve(projectRoot, "src")}`,
           },
         ],
       }),
     ],
     replace: {
-      'process.env.NODE_ENV': JSON.stringify('production'),
+      "process.env.NODE_ENV": JSON.stringify("production"),
     },
     vue: {
       css: true,
@@ -50,14 +52,14 @@ const baseConfig = {
     },
     postVue: [
       resolve({
-        extensions: ['.js', '.jsx', '.ts', '.tsx', '.vue'],
+        extensions: [".js", ".jsx", ".ts", ".tsx", ".vue"],
       }),
       commonjs(),
     ],
     babel: {
-      exclude: 'node_modules/**',
-      extensions: ['.js', '.jsx', '.ts', '.tsx', '.vue'],
-      babelHelpers: 'bundled',
+      exclude: "node_modules/**",
+      extensions: [".js", ".jsx", ".ts", ".tsx", ".vue"],
+      babelHelpers: "bundled",
     },
   },
 };
@@ -67,7 +69,7 @@ const baseConfig = {
 const external = [
   // list external dependencies, exactly the way it is written in the import statement.
   // eg. 'jquery'
-  'vue',
+  "vue",
 ];
 
 // UMD/IIFE shared settings: output.globals
@@ -75,20 +77,20 @@ const external = [
 const globals = {
   // Provide global variable names to replace your external imports
   // eg. jquery: '$'
-  vue: 'Vue',
+  vue: "Vue",
 };
 
 // Customize configs for individual targets
 const buildFormats = [];
-if (!argv.format || argv.format === 'es') {
+if (!argv.format || argv.format === "es") {
   const esConfig = {
     ...baseConfig,
-    input: 'src/entry.esm.ts',
+    input: "src/entry.esm.ts",
     external,
     output: {
-      dir: 'dist/esm',
-      format: 'esm',
-      exports: 'named',
+      dir: "dist/esm",
+      format: "esm",
+      exports: "named",
       preserveModules: true,
     },
     plugins: [
@@ -107,7 +109,7 @@ if (!argv.format || argv.format === 'es') {
         ...baseConfig.plugins.babel,
         presets: [
           [
-            '@babel/preset-env',
+            "@babel/preset-env",
             {
               ...babelPresetEnvConfig,
               targets: esbrowserslist,
@@ -120,16 +122,16 @@ if (!argv.format || argv.format === 'es') {
   buildFormats.push(esConfig);
 }
 
-if (!argv.format || argv.format === 'cjs') {
+if (!argv.format || argv.format === "cjs") {
   const umdConfig = {
     ...baseConfig,
     external,
     output: {
       compact: true,
-      file: 'dist/phosphor-vue.ssr.js',
-      format: 'cjs',
-      name: 'PhosphorVue',
-      exports: 'auto',
+      file: "dist/phosphor-vue.ssr.js",
+      format: "cjs",
+      name: "PhosphorVue",
+      exports: "auto",
       globals,
     },
     plugins: [
@@ -149,16 +151,16 @@ if (!argv.format || argv.format === 'cjs') {
   buildFormats.push(umdConfig);
 }
 
-if (!argv.format || argv.format === 'iife') {
+if (!argv.format || argv.format === "iife") {
   const unpkgConfig = {
     ...baseConfig,
     external,
     output: {
       compact: true,
-      file: 'dist/phosphor-vue.min.js',
-      format: 'iife',
-      name: 'PhosphorVue',
-      exports: 'auto',
+      file: "dist/phosphor-vue.min.js",
+      format: "iife",
+      name: "PhosphorVue",
+      exports: "auto",
       globals,
     },
     plugins: [

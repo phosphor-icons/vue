@@ -34,7 +34,7 @@
     "build:unpkg": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format iife",
     "assemble": "node bin/assemble.js",
     "postbuild": "rimraf ./dist/types/dev ./dist/types/src/entry.d.ts",
-    "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,json,vue}\""
+    "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,json,vue}\" \"./build/**/*.{js,ts}\" \"./bin/**/*.{js,ts}\""
   },
   "dependencies": {},
   "devDependencies": {
