@@ -19,7 +19,7 @@ function readFile(folder, pathname, weight) {
     .replace(/stroke="#000"/g, ':stroke="displayColor"')
     .replace(
       /<rect width="25[\d,\.]+" height="25[\d,\.]+" fill="none".*?\/>/g,
-      "",
+      ""
     );
 }
 
@@ -34,9 +34,9 @@ function readFiles() {
     files.forEach((filename) => {
       const filepath = path.join(ASSETS_PATH, folder, filename);
       const weight = filename
-      .split(".svg")[0]
-      .split("-")
-      .slice(-1)[0];
+        .split(".svg")[0]
+        .split("-")
+        .slice(-1)[0];
       switch (weight) {
         case "thin":
         case "light":
@@ -160,7 +160,7 @@ export default /*#__PURE__*/Vue.extend<{}, {}, IconComputed, IconProps>({
       passes += 1;
     } catch (err) {
       console.error(
-        `${chalk.inverse.red(" FAIL ")} Ph${name} could not be saved`,
+        `${chalk.inverse.red(" FAIL ")} Ph${name} could not be saved`
       );
       console.group();
       console.error(err);

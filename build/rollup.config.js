@@ -28,12 +28,11 @@ const baseConfig = {
   plugins: {
     preVue: [
       alias({
-        entries: [
+        resolve: [".js", ".jsx", ".ts", ".tsx", ".vue"],
+        entries:
           {
-            find: "@",
-            replacement: `${path.resolve(projectRoot, "src")}`,
+            "@": path.resolve(projectRoot, "src"),
           },
-        ],
       }),
     ],
     replace: {
