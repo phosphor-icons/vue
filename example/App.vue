@@ -454,7 +454,7 @@
 
 <script lang="ts">
 import Vue from "vue";
-import * as Phosphor from "../src/entry.esm";
+import * as Phosphor from "phosphor-vue";
 import { ExtendedVue } from "vue/types/vue";
 import { IconProps, IconComputed } from "../src/types";
 
