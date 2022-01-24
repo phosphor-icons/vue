@@ -86,9 +86,10 @@ if (!argv.format || argv.format === 'es') {
     input: 'src/entry.esm.ts',
     external,
     output: {
-      file: 'dist/phosphor-vue.esm.js',
+      dir: 'dist/esm',
       format: 'esm',
       exports: 'named',
+      preserveModules: true,
     },
     plugins: [
       replace(baseConfig.plugins.replace),

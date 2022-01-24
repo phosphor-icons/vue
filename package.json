@@ -7,10 +7,10 @@
   "repository": "phosphor-icons/phosphor-vue",
   "homepage": "https://phosphoricons.com",
   "sideEffects": false,
-  "main": "dist/phosphor-vue.ssr.js",
-  "browser": "dist/phosphor-vue.esm.js",
-  "module": "dist/phosphor-vue.esm.js",
-  "unpkg": "dist/phosphor-vue.min.js",
+  "main": "dist/vue-phosphor-icons.ssr.js",
+  "browser": "dist/esm/src/entry.esm.js",
+  "module": "dist/esm/src/entry.esm.js",
+  "unpkg": "dist/vue-phosphor-icons.min.js",
   "types": "dist/types/src/entry.esm.d.ts",
   "files": [
     "dist"
