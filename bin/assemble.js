@@ -151,7 +151,7 @@ export default /*#__PURE__*/Vue.extend<{}, {}, IconComputed, IconProps>({
         path.join(COMPONENTS_PATH, `Ph${name}.vue`),
         componentString,
         {
-          flag: "w",
+          flag: "w"
         }
       );
       console.log(`${chalk.inverse.green(" DONE ")} Ph${name}`);
@@ -190,7 +190,7 @@ export { default as Ph${name} } from "./Ph${name}.vue";
   }
   try {
     fs.writeFileSync(INDEX_PATH, indexString, {
-      flag: "w",
+      flag: "w"
     });
     console.log(chalk.green("Export success"));
   } catch (err) {
