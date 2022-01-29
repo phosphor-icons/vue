@@ -30,31 +30,31 @@ const baseConfig = {
       alias({
         resolve: [".js", ".jsx", ".ts", ".tsx", ".vue"],
         entries: {
-          "@": path.resolve(projectRoot, "src")
-        }
-      })
+          "@": path.resolve(projectRoot, "src"),
+        },
+      }),
     ],
     replace: {
-      "process.env.NODE_ENV": JSON.stringify("production")
+      "process.env.NODE_ENV": JSON.stringify("production"),
     },
     vue: {
       css: true,
       template: {
-        isProduction: true
-      }
+        isProduction: true,
+      },
     },
     postVue: [
       resolve({
-        extensions: [".js", ".jsx", ".ts", ".tsx", ".vue"]
+        extensions: [".js", ".jsx", ".ts", ".tsx", ".vue"],
       }),
-      commonjs()
+      commonjs(),
     ],
     babel: {
       exclude: "node_modules/**",
       extensions: [".js", ".jsx", ".ts", ".tsx", ".vue"],
-      babelHelpers: "bundled"
-    }
-  }
+      babelHelpers: "bundled",
+    },
+  },
 };
 
 // ESM/UMD/IIFE shared settings: externals
@@ -62,7 +62,7 @@ const baseConfig = {
 const external = [
   // list external dependencies, exactly the way it is written in the import statement.
   // eg. 'jquery'
-  "vue"
+  "vue",
 ];
 
 // UMD/IIFE shared settings: output.globals
@@ -70,7 +70,7 @@ const external = [
 const globals = {
   // Provide global variable names to replace your external imports
   // eg. jquery: '$'
-  vue: "Vue"
+  vue: "Vue",
 };
 
 // Customize configs for individual targets
@@ -84,7 +84,7 @@ if (!argv.format || argv.format === "es") {
       dir: "dist/esm",
       format: "esm",
       exports: "named",
-      preserveModules: true
+      preserveModules: true,
     },
     plugins: [
       replace(baseConfig.plugins.replace),
@@ -96,7 +96,7 @@ if (!argv.format || argv.format === "es") {
       typescript({
         typescript: ttypescript,
         useTsconfigDeclarationDir: true,
-        emitDeclarationOnly: true
+        emitDeclarationOnly: true,
       }),
       babel({
         ...baseConfig.plugins.babel,
@@ -104,12 +104,12 @@ if (!argv.format || argv.format === "es") {
           [
             "@babel/preset-env",
             {
-              targets: esbrowserslist
-            }
-          ]
-        ]
-      })
-    ]
+              targets: esbrowserslist,
+            },
+          ],
+        ],
+      }),
+    ],
   };
   buildFormats.push(esConfig);
 }
@@ -124,7 +124,7 @@ if (!argv.format || argv.format === "cjs") {
       format: "cjs",
       name: "PhosphorVue",
       exports: "named",
-      globals
+      globals,
     },
     plugins: [
       replace(baseConfig.plugins.replace),
@@ -133,12 +133,12 @@ if (!argv.format || argv.format === "cjs") {
         ...baseConfig.plugins.vue,
         template: {
           ...baseConfig.plugins.vue.template,
-          optimizeSSR: true
-        }
+          optimizeSSR: true,
+        },
       }),
       ...baseConfig.plugins.postVue,
-      babel(baseConfig.plugins.babel)
-    ]
+      babel(baseConfig.plugins.babel),
+    ],
   };
   buildFormats.push(umdConfig);
 }
@@ -153,7 +153,7 @@ if (!argv.format || argv.format === "iife") {
       format: "iife",
       name: "PhosphorVue",
       exports: "named",
-      globals
+      globals,
     },
     plugins: [
       replace(baseConfig.plugins.replace),
@@ -163,10 +163,10 @@ if (!argv.format || argv.format === "iife") {
       babel(baseConfig.plugins.babel),
       terser({
         output: {
-          ecma: 5
-        }
-      })
-    ]
+          ecma: 5,
+        },
+      }),
+    ],
   };
   buildFormats.push(unpkgConfig);
 }
