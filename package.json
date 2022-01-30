@@ -10,7 +10,7 @@
   "main": "dist/vue-phosphor-icons.ssr.js",
   "browser": "dist/esm/src/entry.esm.js",
   "module": "dist/esm/src/entry.esm.js",
-  "unpkg": "dist/vue-phosphor-icons.min.js",
+  "unpkg": "dist/phosphor-vue.min.js",
   "types": "dist/types.ts",
   "files": [
     "dist"

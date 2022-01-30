@@ -260,9 +260,9 @@ export const ContextGetter = {
     fs.writeFileSync(TYPES_PATH, indexString, {
       flag: "w",
     });
-    console.log(chalk.green("Export success"));
+    console.log(chalk.green("Typegen success"));
   } catch (err) {
-    console.error(chalk.red("Export failed"));
+    console.error(chalk.red("Typegen failed"));
     console.group();
     console.error(err);
     console.groupEnd();
