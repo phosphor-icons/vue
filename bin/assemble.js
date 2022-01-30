@@ -3,7 +3,12 @@ const fs = require("fs");
 const path = require("path");
 const chalk = require("chalk");
 
-const { ASSETS_PATH, COMPONENTS_PATH, INDEX_PATH } = require("./index");
+const {
+  ASSETS_PATH,
+  COMPONENTS_PATH,
+  INDEX_PATH,
+  TYPES_PATH,
+} = require("./index");
 
 const icons = {};
 const weights = ["thin", "light", "regular", "bold", "fill", "duotone"];
@@ -200,6 +205,71 @@ export { default as Ph${name} } from "./Ph${name}.vue";
   }
 }
 
+function generateTypes() {
+  let indexString = `
+import { ExtendedVue } from "vue/types/vue"
+import Vue from "vue"
+
+type Weight = "thin" | "light" | "regular" | "bold" | "fill" | "duotone";
+type Size = string | number;
+
+export interface IconProps {
+  weight: Weight;
+  size: Size;
+  color: string;
+  mirrored: boolean;
+}
+
+export const PropValidator = {
+  color: String,
+  size: [String, Number],
+  weight: { type: String as () => Weight },
+  mirrored: Boolean,
+};
+
+export interface IconComputed {
+  displayWeight: Weight;
+  displaySize: Size;
+  displayColor: string;
+  displayMirrored: string | undefined;
+}
+
+export interface IconContext {
+  contextWeight?: Weight;
+  contextSize?: Size;
+  contextColor?: string;
+  contextMirrored?: boolean;
+}
+
+export const ContextGetter = {
+  contextWeight: { from: "weight", default: "regular" },
+  contextSize: { from: "size", default: "1em" },
+  contextColor: { from: "color", default: "currentColor" },
+  contextMirrored: { from: "mirrored", default: false },
+};
+  `;
+
+  for (let key in icons) {
+    const name = key
+      .split("-")
+      .map((substr) => substr.replace(/^\w/, (c) => c.toUpperCase()))
+      .join("");
+    indexString += `\nexport type Ph${name} = ExtendedVue<Vue, {}, {}, IconComputed, IconProps>;`;
+  }
+  try {
+    fs.writeFileSync(TYPES_PATH, indexString, {
+      flag: "w",
+    });
+    console.log(chalk.green("Export success"));
+  } catch (err) {
+    console.error(chalk.red("Export failed"));
+    console.group();
+    console.error(err);
+    console.groupEnd();
+  }
+}
+
 readFiles();
 generateComponents();
+generateTypes();
 generateExports();
