@@ -33,7 +33,7 @@
     "build:es": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format es",
     "build:unpkg": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format iife",
     "assemble": "node bin/assemble.js",
-    "postbuild": "cp ./src/types.ts ./dist/types.ts",
+    "postbuild": "cpy ./src/types.ts ./dist",
     "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,json,vue}\" \"./build/**/*.{js,ts}\" \"./bin/**/*.{js,ts}\""
   },
   "dependencies": {},
@@ -51,6 +51,7 @@
     "@vue/cli-plugin-typescript": "^4.5.13",
     "@vue/cli-service": "^4.5.13",
     "@zerollup/ts-transform-paths": "^1.7.18",
+    "cpy-cli": "^3.1.1",
     "cross-env": "^7.0.3",
     "minimist": "^1.2.5",
     "rimraf": "^3.0.2",
