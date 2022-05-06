@@ -5,6 +5,7 @@ node_modules
 build
 dist
 .cache
+vite.config.js
 
 # assets
 assets
