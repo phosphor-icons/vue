@@ -59,7 +59,7 @@
     "vue": "^3.2.26"
   },
   "peerDependencies": {
-    "vue": "^3.0.0 <3.0.3"
+    "vue": "^3.0.0"
   },
   "engines": {
     "node": ">=10"
