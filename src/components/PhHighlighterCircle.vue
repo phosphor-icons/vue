@@ -179,19 +179,19 @@ export default Vue.extend<{}, {}, IconComputed, IconProps>({
   computed: {
     displayWeight() {
       const { weight, contextWeight } = this as IconProps & IconContext;
-      return weight ?? contextWeight;
+      return weight || contextWeight;
     },
     displaySize() {
       const { size, contextSize } = this as IconProps & IconContext;
-      return size ?? contextSize;
+      return size || contextSize;
     },
     displayColor() {
       const { color, contextColor } = this as IconProps & IconContext;
-      return color ?? contextColor;
+      return color || contextColor;
     },
     displayMirrored() {
       const { mirrored, contextMirrored } = this as IconProps & IconContext;
-      return mirrored ?? contextMirrored ? "scale(-1, 1)" : undefined;
+      return mirrored || contextMirrored ? "scale(-1, 1)" : undefined;
     }
   }
 });
