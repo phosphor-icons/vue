@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-screen-lg w-full mx-auto grid grid-cols-10 gap-8 py-8">
+  <div class="max-w-screen-lg w-full mx-auto grid grid-cols-10 gap-8 p-8">
     <h1 class="col-span-full text-4xl">Phosphor Icons Vue 3</h1>
     <div class="col-span-full text-2xl text-gray-400">
       Total icon count: {{ total }}

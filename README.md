@@ -8,9 +8,9 @@
 [![Follow on GitHub](https://img.shields.io/github/followers/phosphor-icons?style=flat-square&label=Follow)](https://github.com/phosphor-icons)
 
 
-## Demo
+## Playground
 
-Check out our demo on [stackblitz](https://stackblitz.com/github/phosphor-icons/vue/tree/next/playground)
+Check out our playground on [stackblitz](https://stackblitz.com/github/phosphor-icons/vue/tree/next/playground) and start experimenting!
 ## Installation
 
 ```bash
