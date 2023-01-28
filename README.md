@@ -5,7 +5,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/phosphor-icons/vue?style=flat-square&label=Star)](https://github.com/phosphor-icons/vue)
 [![GitHub forks](https://img.shields.io/github/forks/phosphor-icons/vue?style=flat-square&label=Fork)](https://github.com/phosphor-icons/vue/fork)
 [![GitHub watchers](https://img.shields.io/github/watchers/phosphor-icons/vue?style=flat-square&label=Watch)](https://github.com/phosphor-icons/vue)
-[![Follow on GitHub](https://img.shields.io/github/followers/dnlsndr?style=flat-square&label=Follow)](https://github.com/dnlsndr)
+[![Follow on GitHub](https://img.shields.io/github/followers/phosphor-icons?style=flat-square&label=Follow)](https://github.com/phosphor-icons)
 
 ## Installation
 

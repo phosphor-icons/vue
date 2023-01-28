@@ -1,9 +1,8 @@
 {
-  "name": "@dnlsndr/vue-phosphor-icons",
-  "version": "3.1.1",
+  "name": "@phosphor-icons/vue",
   "description": "A clean and friendly icon family for Vue, too!",
   "license": "MIT",
-  "repository": "dnlsndr/vue-phosphor-icons",
+  "repository": "phosphor-icons/vue",
   "sideEffects": false,
   "types": "dist/vue-phosphor-icons.d.ts",
   "main": "dist/vue-phosphor-icons.mjs",
