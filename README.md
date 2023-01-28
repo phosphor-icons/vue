@@ -10,7 +10,7 @@
 
 ## Demo
 
-Check out our stackblitz demo at [](https://stackblitz.com/github/phosphor-icons/vue/tree/next/playground)
+Check out our demo on [stackblitz](https://stackblitz.com/github/phosphor-icons/vue/tree/next/playground)
 ## Installation
 
 ```bash
