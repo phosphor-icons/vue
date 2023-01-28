@@ -10,7 +10,7 @@
 
 ## Playground
 
-Check out our playground on stackblitz and start experimenting!
+Check out our playground in stackblitz and start experimenting!
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/phosphor-icons/vue/tree/next/playground)
 ## Installation
