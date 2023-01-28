@@ -7,6 +7,10 @@
 [![GitHub watchers](https://img.shields.io/github/watchers/phosphor-icons/vue?style=flat-square&label=Watch)](https://github.com/phosphor-icons/vue)
 [![Follow on GitHub](https://img.shields.io/github/followers/phosphor-icons?style=flat-square&label=Follow)](https://github.com/phosphor-icons)
 
+
+## Demo
+
+Check out our stackblitz demo at [](https://stackblitz.com/github/phosphor-icons/vue/tree/next/playground)
 ## Installation
 
 ```bash
