@@ -1,5 +1,6 @@
 {
   "name": "@phosphor-icons/vue",
+  "version": "1.5.0",
   "description": "A clean and friendly icon family for Vue, too!",
   "license": "MIT",
   "repository": "phosphor-icons/vue",
