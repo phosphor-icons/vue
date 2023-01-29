@@ -1,10 +1,8 @@
 <img src="/meta/phosphor-mark-tight-yellow.png" width="128" align="right" />
 
-# phosphor-vue
+# Vue Phosphor icons
 
 Phosphor is a flexible icon family for interfaces, diagrams, presentations — whatever, really. Explore all our icons at [phosphoricons.com](https://phosphoricons.com).
-
-For Vue 3 support, check out the [vue3](https://github.com/phosphor-icons/phosphor-vue/tree/vue3) branch.
 
 [![NPM](https://img.shields.io/npm/v/phosphor-vue.svg?style=flat-square)](https://www.npmjs.com/package/phosphor-vue) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg?style=flat-square)](https://standardjs.com) [![Travis](https://img.shields.io/travis/com/rektdeckard/phosphor-vue.svg?style=flat-square)](https://travis-ci.com/github/rektdeckard/phosphor-vue)
 
