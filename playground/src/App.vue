@@ -40,6 +40,7 @@
         rounded-3xl
         bg-gray-50
         text-gray-600
+        p-2
       "
     >
       <component :is="icon" size="32" />
