@@ -1,11 +1,17 @@
-# Vue Phosphor Icons
+<img src="/meta/phosphor-mark-tight-yellow.png" width="128" align="right" />
 
-## A Vue3 Phosphor Icons library
+# phosphor-vue
 
-[![GitHub stars](https://img.shields.io/github/stars/phosphor-icons/vue?style=flat-square&label=Star)](https://github.com/phosphor-icons/vue)
-[![GitHub forks](https://img.shields.io/github/forks/phosphor-icons/vue?style=flat-square&label=Fork)](https://github.com/phosphor-icons/vue/fork)
-[![GitHub watchers](https://img.shields.io/github/watchers/phosphor-icons/vue?style=flat-square&label=Watch)](https://github.com/phosphor-icons/vue)
-[![Follow on GitHub](https://img.shields.io/github/followers/phosphor-icons?style=flat-square&label=Follow)](https://github.com/phosphor-icons)
+Phosphor is a flexible icon family for interfaces, diagrams, presentations — whatever, really. Explore all our icons at [phosphoricons.com](https://phosphoricons.com).
+
+For Vue 3 support, check out the [vue3](https://github.com/phosphor-icons/phosphor-vue/tree/vue3) branch.
+
+[![NPM](https://img.shields.io/npm/v/phosphor-vue.svg?style=flat-square)](https://www.npmjs.com/package/phosphor-vue) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg?style=flat-square)](https://standardjs.com) [![Travis](https://img.shields.io/travis/com/rektdeckard/phosphor-vue.svg?style=flat-square)](https://travis-ci.com/github/rektdeckard/phosphor-vue)
+
+[![GitHub stars](https://img.shields.io/github/stars/phosphor-icons/phosphor-vue?style=flat-square&label=Star)](https://github.com/phosphor-icons/phosphor-vue)
+[![GitHub forks](https://img.shields.io/github/forks/phosphor-icons/phosphor-vue?style=flat-square&label=Fork)](https://github.com/phosphor-icons/phosphor-vue/fork)
+[![GitHub watchers](https://img.shields.io/github/watchers/phosphor-icons/phosphor-vue?style=flat-square&label=Watch)](https://github.com/phosphor-icons/phosphor-vue)
+[![Follow on GitHub](https://img.shields.io/github/followers/rektdeckard?style=flat-square&label=Follow)](https://github.com/rektdeckard)
 
 
 ## Playground
