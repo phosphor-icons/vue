@@ -18,7 +18,8 @@ Phosphor is a flexible icon family for interfaces, diagrams, presentations — w
 
 Check out our playground in StackBlitz and start experimenting!
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/phosphor-icons/vue/tree/next/playground)
+[![Open in StackBlitz](https://img.shields.io/static/v1?style=for-the-badge&label=Stackblitz&message=open%20playground&color=%231269D3&logo=stackblitz)](https://stackblitz.com/github/phosphor-icons/vue/tree/next/playground)
+
 ## Installation
 
 ```bash
