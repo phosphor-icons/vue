@@ -1,7 +1,31 @@
 <template>
-  <div class="max-w-screen-lg w-full mx-auto grid grid-cols-10 gap-8 p-8">
-    <h1 class="col-span-full text-4xl flex items-center">
-      <PhPhosphorLogo class="mr-2" /> Phosphor Icons Vue 3
+  <div
+    class="
+      max-w-screen-lg
+      w-full
+      mx-auto
+      grid grid-cols-4
+      sm:grid-cols-6
+      md:grid-cols-8
+      lg:grid-cols-10
+      gap-8
+      p-8
+    "
+  >
+    <h1
+      class="
+        col-span-full
+        text-4xl
+        flex
+        items-center
+        text-center
+        sm:text-left
+        flex-col
+        sm:flex-row
+        gap-6
+      "
+    >
+      <PhPhosphorLogo class="flex-shrink-0" /> Phosphor Icons Vue 3
     </h1>
     <div class="col-span-full text-2xl text-gray-400">
       Total icon count: {{ total }}
