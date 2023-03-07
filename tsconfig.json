@@ -3,6 +3,8 @@
     "target": "esnext",
     "moduleResolution": "node",
     "emitDeclarationOnly": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
     "module": "esnext",
     "outDir": "dist",
     "declaration": true,
