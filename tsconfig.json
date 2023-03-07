@@ -8,6 +8,5 @@
     "declaration": true,
     "types": ["vite/client"]
   },
-  "files": ["src/vue-phosphor-icons.ts"]
-  // "include": ["src"]
+  "files": ["src/index.ts"]
 }
