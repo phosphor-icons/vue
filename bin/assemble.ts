@@ -3,11 +3,13 @@ import fs from "fs";
 import path from "path";
 import chalk from "chalk";
 import * as url from "url";
+import { ALIASES } from "../core/bin/index.js";
+
 const __dirname = url.fileURLToPath(new URL(".", import.meta.url));
 
 const ASSETS_PATH = path.join(__dirname, "../core/assets");
-const COMPONENTS_PATH = path.join(__dirname, "../src/components");
-const INDEX_PATH = path.join(__dirname, "../src/components/index.ts");
+const COMPONENTS_PATH = path.join(__dirname, "../src/icons");
+const INDEX_PATH = path.join(__dirname, "../src/index.ts");
 
 if (!fs.existsSync(ASSETS_PATH)) {
   console.error(
@@ -89,10 +91,7 @@ function generateComponents(mappings: Record<string, Record<string, string>>) {
   for (const icon in mappings) {
     const variants = mappings[icon];
 
-    const name = icon
-      .split("-")
-      .map((substr) => substr.replace(/^\w/, (c) => c.toUpperCase()))
-      .join("");
+    const name = pascalize(icon);
 
     const content = Object.entries(variants)
       .map(([variant, content], index) => {
@@ -103,6 +102,7 @@ function generateComponents(mappings: Record<string, Record<string, string>>) {
       .join("");
 
     const componentString = `\
+/* GENERATED FILE */
 <script lang="ts">
 export default {
   name: "Ph${name}"
@@ -173,21 +173,20 @@ const displayMirrored = computed(() => (props.mirrored !== undefined ? (props.mi
     }
   }
 }
-// TODO: implement logging with async writeFile()
 
 function generateExports(mappings: Record<string, Record<string, string>>) {
   const indexString = Object.entries(mappings)
     .map(([name]) => {
-      const pascalCasedName = name
-        .split("-")
-        .map((substr) => substr.replace(/^\w/, (c) => c.toUpperCase()))
-        .join("");
+      const pascalName = pascalize(name);
+      const pascalAlias = ALIASES[name] ? pascalize(ALIASES[name]) : null;
 
-      return `\nexport { default as Ph${pascalCasedName} } from "./Ph${pascalCasedName}.vue";`;
+      return `export { default as Ph${pascalName}${
+        pascalAlias ? `, default as Ph${pascalAlias}` : ""
+      } } from "./icons/Ph${pascalName}.vue";\n`;
     })
     .reduce(
       (acc, cur) => acc + cur,
-      "/* eslint-disable import/prefer-default-export */",
+      `/* GENERATED FILE */\n/* eslint-disable import/prefer-default-export */\n\n`,
     );
 
   try {
@@ -201,4 +200,11 @@ function generateExports(mappings: Record<string, Record<string, string>>) {
     console.error(err);
     console.groupEnd();
   }
+}
+
+function pascalize(str: string): string {
+  return str
+    .split("-")
+    .map((substr) => substr.replace(/^\w/, (c) => c.toUpperCase()))
+    .join("");
 }

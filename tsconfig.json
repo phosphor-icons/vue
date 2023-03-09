@@ -3,11 +3,12 @@
     "target": "esnext",
     "moduleResolution": "node",
     "emitDeclarationOnly": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
     "module": "esnext",
     "outDir": "dist",
     "declaration": true,
     "types": ["vite/client"]
   },
-  "files": ["src/vue-phosphor-icons.ts"]
-  // "include": ["src"]
+  "files": ["src/index.ts"]
 }
