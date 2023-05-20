@@ -1,6 +1,6 @@
-import vue from '@vitejs/plugin-vue'
-import { defineConfig } from 'vite'
-import { resolve } from 'path'
+import vue from "@vitejs/plugin-vue";
+import { defineConfig } from "vite";
+import { resolve } from "path";
 
 const globals = {
   // Provide global variable names to replace your external imports
@@ -20,9 +20,15 @@ export default defineConfig({
       output: [
         {
           preserveModules: true,
-          format: 'esm',
+          format: "esm",
           entryFileNames: `[name].mjs`,
-          globals
+          globals,
+        },
+        {
+          preserveModules: false,
+          format: "esm",
+          entryFileNames: `[name].compact.mjs`,
+          globals,
         },
       ],
     },

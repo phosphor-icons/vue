@@ -5,7 +5,5 @@ import './main.css'
 
 let app = createApp(App)
 
-// app.use(PhosphorIcons)
-
 app.mount('#app')
 

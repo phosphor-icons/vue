@@ -29,7 +29,7 @@
   ],
   "scripts": {
     "serve": "vite",
-    "build": "vite build && vue-tsc",
+    "build": "npm run assemble && vite build && vue-tsc",
     "compile": "vue-tsc --emitDeclarationOnly",
     "analyze": "cross-env ANALYZE=true vite build",
     "assemble": "tsx bin/assemble.ts",
