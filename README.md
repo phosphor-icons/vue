@@ -53,6 +53,7 @@ Allthough we strongly advise against installing your icons globally, you can do 
 ```typescript
 import { createApp } from 'vue'
 import App from './App.vue'
+import PhosphorIcons from "@phosphor-icons/vue"
 
 let app = createApp(App)
 
