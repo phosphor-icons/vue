@@ -18,7 +18,7 @@ Phosphor is a flexible icon family for interfaces, diagrams, presentations — w
 
 Check out our playground in StackBlitz and start experimenting!
 
-[![Open in StackBlitz](https://img.shields.io/static/v1?style=for-the-badge&label=Stackblitz&message=open%20playground&color=%231269D3&logo=stackblitz)](https://stackblitz.com/github/phosphor-icons/vue/tree/main/playground?file=src%2FApp.vue)
+[![Open in StackBlitz](https://img.shields.io/static/v1?style=for-the-badge&label=Stackblitz&message=open%20playground&color=%231269D3&logo=stackblitz)](https://stackblitz.com/github/phosphor-icons/vue/tree/main?file=src%2FApp.vue)
 
 ## Installation
 
@@ -45,6 +45,25 @@ npm install @phosphor-icons/vue
   import { PhHorse, PhHeart, PhCube } from "@phosphor-icons/vue";
 </script>
 ```
+
+### Global install
+
+Allthough we strongly advise against installing your icons globally, you can do so by registering it in your app as follows:
+
+```typescript
+import { createApp } from 'vue'
+import App from './App.vue'
+
+let app = createApp(App)
+
+app.use(PhosphorIcons)
+
+app.mount('#app')
+```
+
+> Why do we advise against global installs?
+>
+> Bundlers such as Vite and Webpack rely on ESM imports to do tree-shaking. When you install entire library globally, you lose the ability to do tree-shaking, since all components are registered within vue, and the bundler cannot know which components are actually used in your app.
 
 ### Props
 

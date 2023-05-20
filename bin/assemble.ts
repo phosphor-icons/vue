@@ -175,19 +175,57 @@ const displayMirrored = computed(() => (props.mirrored !== undefined ? (props.mi
 }
 
 function generateExports(mappings: Record<string, Record<string, string>>) {
-  const indexString = Object.entries(mappings)
-    .map(([name]) => {
-      const pascalName = pascalize(name);
-      const pascalAlias = ALIASES[name] ? pascalize(ALIASES[name]) : null;
+  const imports = Object.entries(mappings).map(([name]) => {
+    const pascalName = pascalize(name);
 
-      return `export { default as Ph${pascalName}${
-        pascalAlias ? `, default as Ph${pascalAlias}` : ""
-      } } from "./icons/Ph${pascalName}.vue";\n`;
-    })
-    .reduce(
-      (acc, cur) => acc + cur,
-      `/* GENERATED FILE */\n/* eslint-disable import/prefer-default-export */\n\n`,
-    );
+    return `import Ph${pascalName} from "./icons/Ph${pascalName}.vue";`;
+  });
+
+  const installs: string[] = [];
+  Object.entries(mappings).forEach(([name]) => {
+    const pascalName = pascalize(name);
+    const pascalAlias = ALIASES[name] ? pascalize(ALIASES[name]) : null;
+
+    installs.push(`Vue.component("Ph${pascalName}", Ph${pascalName})`);
+
+    if (pascalAlias) {
+      installs.push(`Vue.component("Ph${pascalAlias}", Ph${pascalName})`);
+    }
+  });
+
+  const exports: string[] = [];
+  Object.entries(mappings).forEach(([name]) => {
+    const pascalName = pascalize(name);
+    const pascalAlias = ALIASES[name] ? pascalize(ALIASES[name]) : null;
+
+    exports.push(`Ph${pascalName}`);
+
+    if (pascalAlias) {
+      exports.push(`Ph${pascalName} as Ph${pascalAlias}`);
+    }
+  });
+
+  const indexString = `/* GENERATED FILE */
+/* eslint-disable import/prefer-default-export */
+
+import { App } from "vue";
+${imports.join("\n")}
+
+export default {
+    install(Vue: App) {
+        ${installs.join("\n\t\t")}
+    }
+}
+
+export {
+    ${exports.join(",\n\t")}
+}
+  `;
+
+  // .reduce(
+  //   (acc, cur) => acc + cur,
+  //   `/* GENERATED FILE */\n/* eslint-disable import/prefer-default-export */\n\n`,
+  // );
 
   try {
     fs.writeFileSync(INDEX_PATH, indexString, {
