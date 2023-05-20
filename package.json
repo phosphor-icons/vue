@@ -1,6 +1,6 @@
 {
   "name": "@phosphor-icons/vue",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "A clean and friendly icon family for Vue, too!",
   "license": "MIT",
   "repository": "phosphor-icons/vue",
@@ -11,7 +11,14 @@
   "module": "dist/index.mjs",
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.mjs",
       "import": "./dist/index.mjs"
+    },
+    "./compact": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.compact.mjs",
+      "import": "./dist/index.compact.mjs"
     }
   },
   "files": [
@@ -29,7 +36,7 @@
   ],
   "scripts": {
     "serve": "vite",
-    "build": "npm run assemble && vite build && vue-tsc && cp dist/index.d.ts dist/index.compact.d.ts",
+    "build": "rimraf dist && npm run assemble && vite build && vue-tsc",
     "compile": "vue-tsc --emitDeclarationOnly",
     "analyze": "cross-env ANALYZE=true vite build",
     "assemble": "tsx bin/assemble.ts",
@@ -55,6 +62,7 @@
     "eslint-plugin-unused-imports": "2.0.0",
     "eslint-plugin-vue": "9.13.0",
     "handlebars": "^4.7.7",
+    "rimraf": "^5.0.1",
     "rollup-plugin-visualizer": "5.9.0",
     "tsx": "^3.12.7",
     "typescript": "5.0.4",
