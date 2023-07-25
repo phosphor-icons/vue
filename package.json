@@ -12,13 +12,13 @@
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "default": "./dist/index.mjs",
-      "import": "./dist/index.mjs"
+      "import": "./dist/index.mjs",
+      "default": "./dist/index.mjs"
     },
     "./compact": {
       "types": "./dist/index.d.ts",
-      "default": "./dist/index.compact.mjs",
-      "import": "./dist/index.compact.mjs"
+      "import": "./dist/index.compact.mjs",
+      "default": "./dist/index.compact.mjs"
     }
   },
   "files": [
