@@ -31,13 +31,13 @@ We welcome many forms of contributions, though due to the creative nature of the
 
 ## I Have a Question
 
-> If you want to ask a question, we assume that you have read the available [documentation](https://github.com/phosphor-icons/core/blob/master/README.md).
+> If you want to ask a question, we assume that you have read the available [documentation](https://github.com/phosphor-icons/vue/blob/master/README.md).
 
-Before you ask a question, it is best to search for existing [issues](https://github.com/phosphor-icons/core/issues) that might help you. In case you have found a suitable issue and still need clarification, you can add your question as a comment in that issue. It is also advisable to search the internet for answers first.
+Before you ask a question, it is best to search for existing [issues](https://github.com/phosphor-icons/vue/issues) that might help you. In case you have found a suitable issue and still need clarification, you can add your question as a comment in that issue. It is also advisable to search the internet for answers first.
 
 If you then still feel the need to ask a question and need clarification, we recommend the following:
 
-- Open a new issue using an [issue template](https://github.com/phosphor-icons/core/issues/new/choose).
+- Open a new issue using an [issue template](https://github.com/phosphor-icons/vue/issues/new/choose).
 - Provide as much context as you can about what you're running into (the template has prompts to help you here).
 - Provide project and platform versions (`nodejs`, `npm`, etc), depending on what seems relevant.
 
@@ -63,8 +63,8 @@ A good bug report contains all the necessary information for us (or others in th
 
 - If your issue pertains to a specific library, please leave it on the relevant repository.
 - Make sure that you are using the latest version.
-- Determine if your bug is really a bug and not an error on your side, e.g. using incompatible environment components/versions (Make sure that you have read the [documentation](https://github.com/phosphor-icons/core/blob/master/README.md). If you are looking for support, you might want to check [this section](#i-have-a-question)).
-- To see if other users have experienced (and potentially already solved) the same issue you are having, check if there is not already a bug report existing for your bug or error in the [issue tracker](https://github.com/phosphor-icons/core/issues?q=label%3Abug).
+- Determine if your bug is really a bug and not an error on your side, e.g. using incompatible environment components/versions (Make sure that you have read the [documentation](https://github.com/phosphor-icons/vue/blob/master/README.md). If you are looking for support, you might want to check [this section](#i-have-a-question)).
+- To see if other users have experienced (and potentially already solved) the same issue you are having, check if there is not already a bug report existing for your bug or error in the [issue tracker](https://github.com/phosphor-icons/vue/issues?q=label%3Abug).
 - Also make sure to search elsewhere (including Stack Overflow, framework or environment docs) to see if users outside of the GitHub community have discussed the issue.
 - Collect information about the bug:
   - Stack trace (Traceback)
@@ -83,7 +83,7 @@ A good bug report contains all the necessary information for us (or others in th
 
 We use GitHub issues to track bugs and errors. If you run into an issue with the project:
 
-- Open an [issue](https://github.com/phosphor-icons/core/issues/new?assignees=rektdeckard&labels=bug&projects=&template=bug_report.md&title=).
+- Open an [issue](https://github.com/phosphor-icons/vue/issues/new?assignees=rektdeckard&labels=bug&projects=&template=bug_report.yml&title=).
 - Fill in the templated fields, making sure to:
   - Explain the behavior you would expect and the actual behavior.
   - Provide as much context as possible and describe the _reproduction steps_ that someone else can follow to recreate the issue on their own. This usually includes your code. For good bug reports you should isolate the problem and create a reduced test case.
@@ -106,15 +106,15 @@ This section guides you through submitting an enhancement suggestion for Phospho
 #### Before Submitting an Enhancement
 
 - Make sure that you are using the latest version.
-- Read the [documentation](https://github.com/phosphor-icons/core/blob/master/README.md) carefully and find out if the functionality is already covered, maybe by an individual configuration.
-- Search the [issues](https://github.com/phosphor-icons/core/issues) to see if the enhancement has already been suggested. If it has, add a comment to the existing issue instead of opening a new one.
+- Read the [documentation](https://github.com/phosphor-icons/vue/blob/master/README.md) carefully and find out if the functionality is already covered, maybe by an individual configuration.
+- Search the [issues](https://github.com/phosphor-icons/vue/issues) to see if the enhancement has already been suggested. If it has, add a comment to the existing issue instead of opening a new one.
 - Find out whether your idea fits with the scope and aims of the project. It's up to you to make a strong case to convince the project's developers of the merits of this feature. Keep in mind that we want features that will be useful to the majority of our users and not just a small subset. If you're just targeting a minority of users, consider writing an add-on/plugin library.
 
 <!-- omit in toc -->
 
 #### How Do I Submit a Good Enhancement Suggestion?
 
-Enhancement suggestions are tracked as [issues](https://github.com/phosphor-icons/core/issues).
+Enhancement suggestions are tracked as [issues](https://github.com/phosphor-icons/vue/issues).
 
 - Use a **clear and descriptive title** for the issue to identify the suggestion.
 - Provide a **step-by-step description of the suggested enhancement** in as many details as possible.
