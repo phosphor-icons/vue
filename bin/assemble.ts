@@ -3,7 +3,8 @@ import fs from "fs";
 import path from "path";
 import chalk from "chalk";
 import * as url from "url";
-import { ALIASES } from "../core/bin/index.js";
+
+import { icons } from "../core/src/icons.js";
 
 const __dirname = url.fileURLToPath(new URL(".", import.meta.url));
 
@@ -183,25 +184,38 @@ function generateExports(mappings: Record<string, Record<string, string>>) {
 
   const installs: string[] = [];
   Object.entries(mappings).forEach(([name]) => {
-    const pascalName = pascalize(name);
-    const pascalAlias = ALIASES[name] ? pascalize(ALIASES[name]) : null;
+    const iconData = icons.find((icon) => icon.name === name);
 
-    installs.push(`Vue.component("Ph${pascalName}", Ph${pascalName})`);
+    if (!iconData) {
+      throw new Error(`Could not find icon data for ${name}`);
+    }
 
-    if (pascalAlias) {
-      installs.push(`Vue.component("Ph${pascalAlias}", Ph${pascalName})`);
+    installs.push(
+      `Vue.component("Ph${iconData.pascal_name}", Ph${iconData.pascal_name})`,
+    );
+
+    if ("alias" in iconData) {
+      installs.push(
+        `Vue.component("Ph${iconData["alias"].pascal_name}", Ph${iconData.pascal_name})`,
+      );
     }
   });
 
   const exports: string[] = [];
+
   Object.entries(mappings).forEach(([name]) => {
-    const pascalName = pascalize(name);
-    const pascalAlias = ALIASES[name] ? pascalize(ALIASES[name]) : null;
+    const iconData = icons.find((icon) => icon.name === name);
 
-    exports.push(`Ph${pascalName}`);
+    if (!iconData) {
+      throw new Error(`Could not find icon data for ${name}`);
+    }
 
-    if (pascalAlias) {
-      exports.push(`Ph${pascalName} as Ph${pascalAlias}`);
+    exports.push(`Ph${iconData.pascal_name}`);
+
+    if ("alias" in iconData) {
+      exports.push(
+        `Ph${iconData.pascal_name} as Ph${iconData["alias"].pascal_name}`,
+      );
     }
   });
 
