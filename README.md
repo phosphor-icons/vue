@@ -1,4 +1,5 @@
-> **ATTENTION:** As part of a major update, we will be replacing the existing `phosphor-vue` package with `@phosphor-icons/vue`. We recommend using this new version, as it has improved performance and significantly smaller bundle size. No APIs have been changed, so drop-in replacement should be straightforward. The legacy package will continue to recieve maintenance, but will not be updated with new icons upstream. [Take me to the legacy version ➜](https://github.com/phosphor-icons/vue/tree/vue2)
+> [!IMPORTANT]
+> As part of a major update, we will be replacing the existing `phosphor-vue` package with `@phosphor-icons/vue`. We recommend using this new version, as it has improved performance and significantly smaller bundle size. No APIs have been changed, so drop-in replacement should be straightforward. The legacy package will continue to recieve maintenance, but will not be updated with new icons upstream. [Take me to the legacy version ➜](https://github.com/phosphor-icons/vue/tree/vue2)
 
 <img src="/meta/phosphor-mark-tight-yellow.png" width="128" align="right" />
 
@@ -62,6 +63,7 @@ app.use(PhosphorIcons)
 app.mount('#app')
 ```
 
+> [!NOTE]
 > Why do we advise against global installs?
 >
 > Bundlers such as Vite and Webpack rely on ESM imports to do tree-shaking. When you install entire library globally, you lose the ability to do tree-shaking, since all components are registered within vue, and the bundler cannot know which components are actually used in your app.
@@ -99,7 +101,8 @@ Phosphor takes advantage of Vue's `provide`/`inject` options to make applying a 
 
 You may create multiple providers for styling icons differently in separate regions of an application; icons use the nearest provider above them to determine their style.
 
-**Note:** The **color**, **size**, **weight**, and **mirrored** properties are all _optional_ props when creating a context, but default to `"currentColor"`, `"1em"`, `"regular"` and `false`.
+> [!NOTE]
+> The **color**, **size**, **weight**, and **mirrored** properties are all _optional_ props when creating a context, but default to `"currentColor"`, `"1em"`, `"regular"` and `false`.
 
 ### Slots
 
@@ -131,7 +134,8 @@ The following will cause the Cube icon to rotate and pulse:
 </template>
 ```
 
-**Note:** The coordinate space of slotted elements is relative to the contents of the icon `viewBox`, which is a 256x256 square. Only [valid SVG elements](https://developer.mozilla.org/en-US/docs/Web/SVG/Element#SVG_elements_by_category) will be rendered.
+> [!NOTE]
+> The coordinate space of slotted elements is relative to the contents of the icon `viewBox`, which is a 256x256 square. Only [valid SVG elements](https://developer.mozilla.org/en-US/docs/Web/SVG/Element#SVG_elements_by_category) will be rendered.
 
 ## Development
 
