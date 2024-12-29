@@ -163,6 +163,7 @@ To assemble the Vue components you will need to run `npm run assemble`. This wil
 
 NOTE: Upon cloning this repository, the `/src/components` directory does not exist yet. You will first need to run the `assemble` script for this directory to be generated.
 
+<!-- BEGIN_LINKS -->
 ## Our Related Projects
 
 - [@phosphor-icons/homepage](https://github.com/phosphor-icons/homepage) ▲ Phosphor homepage and general info
@@ -198,3 +199,4 @@ If you've made a port of Phosphor and you want to see it here, just open a PR [h
 ## License
 
 MIT © [Phosphor Icons](https://github.com/phosphor-icons)
+<!-- END_LINKS -->
