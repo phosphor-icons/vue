@@ -1,7 +1,7 @@
 > [!IMPORTANT]
 > As part of a major update, we will be replacing the existing `phosphor-vue` package with `@phosphor-icons/vue`. We recommend using this new version, as it has improved performance and significantly smaller bundle size. No APIs have been changed, so drop-in replacement should be straightforward. The legacy package will continue to recieve maintenance, but will not be updated with new icons upstream. [Take me to the legacy version ➜](https://github.com/phosphor-icons/vue/tree/vue2)
 
-<img src="/meta/phosphor-mark-tight-yellow.png" width="128" align="right" />
+<img src="/.github/phosphor-mark-tight-yellow.png" width="128" align="right" />
 
 # Vue Phosphor icons
 
@@ -106,7 +106,7 @@ You may create multiple providers for styling icons differently in separate regi
 
 ### Slots
 
-<img src="/meta/cube-rotate.svg" width="128" align="right" />
+<img src="/.github/cube-rotate.svg" width="128" align="right" />
 
 Components have a `<slot>` for arbitrary SVG elements, so long as they are valid children of the `<svg>` element. This can be used to modify an icon with background layers or shapes, filters, animations and more. The slotted children will be placed _below_ the normal icon contents.
 
