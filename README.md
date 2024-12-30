@@ -1,9 +1,11 @@
 > [!IMPORTANT]
 > As part of a major update, we will be replacing the existing `phosphor-vue` package with `@phosphor-icons/vue`. We recommend using this new version, as it has improved performance and significantly smaller bundle size. No APIs have been changed, so drop-in replacement should be straightforward. The legacy package will continue to recieve maintenance, but will not be updated with new icons upstream. [Take me to the legacy version ➜](https://github.com/phosphor-icons/vue/tree/vue2)
 
-<img src="/.github/phosphor-mark-tight-yellow.png" width="128" align="right" />
+# @phosphor-icons/vue
 
-# Vue Phosphor icons
+<!-- BEGIN_LOGO -->
+<img src="/.github/phosphor-mark-tight-yellow.png" width="128" align="right" />
+<!-- END_LOGO -->
 
 Phosphor is a flexible icon family for interfaces, diagrams, presentations — whatever, really. Explore all our icons at [phosphoricons.com](https://phosphoricons.com).
 
