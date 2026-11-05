@@ -79,6 +79,26 @@ Icon components accept all attributes that you can pass to a normal SVG element,
 - **weight?**: `"thin" | "light" | "regular" | "bold" | "fill" | "duotone"` – Icon weight/style. Can be used, for example, to "toggle" an icon's state: a rating component could use Stars with `weight="regular"` to denote an empty star, and `weight="fill"` to denote a filled star.
 - **mirrored?**: `boolean` – Flip the icon horizontally. Can be useful in RTL languages where normal icon orientation is not appropriate.
 
+### Types
+
+The package exports the `PhosphorIcon`, `PhosphorIconProps` and `PhosphorIconWeight` types. Use `PhosphorIcon` to accept an icon component as a prop:
+
+```vue
+<script setup lang="ts">
+import type { PhosphorIcon } from "@phosphor-icons/vue";
+
+defineProps<{
+  label: string;
+  icon: PhosphorIcon;
+}>();
+</script>
+
+<template>
+  <component :is="icon" :size="20" weight="fill" />
+  {{ label }}
+</template>
+```
+
 ### Composition
 
 Phosphor takes advantage of Vue's `provide`/`inject` options to make applying a default style to all icons simple. Create a `provide` object or function at the root of the app (or anywhere above the icons in the tree) that returns a configuration object with props to be applied by default to all icons below it in the tree:
