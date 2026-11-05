@@ -234,6 +234,8 @@ export default {
 export {
     ${exports.join(",\n\t")}
 }
+
+export type { PhosphorIcon, PhosphorIconProps, PhosphorIconWeight } from "./types";
   `;
 
   // .reduce(
